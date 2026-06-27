@@ -1,0 +1,35 @@
+{
+ "_meta": {
+  "verificado_em": "2026-06-27"
+ },
+ "fatos": [
+  {
+   "tema": "Fundo Clima — BNDES",
+   "valor": "R$ 27 bi em 2026 (maior da história) para transição energética, hidrogênio de baixo carbono, biometano, reflorestamento e infraestrutura verde. Exige enquadramento e métricas de desempenho/impacto.",
+   "status": "VIGENTE",
+   "norma": "BNDES · PAAR 2026 (Lei 12.114/2009 — Fundo Nacional sobre Mudança do Clima)",
+   "verificado_em": "2026-06-27"
+  },
+  {
+   "tema": "Eco Invest Brasil — Min. Fazenda",
+   "valor": "Financiamento misto (blended) + linha de hedge cambial; R$ 140+ bi mobilizados, 13 instituições credenciadas, leilões periódicos (4º em mai/2026). Atrai capital estrangeiro para projeto verde com lastro.",
+   "status": "VIGENTE",
+   "norma": "Ministério da Fazenda — Transformação Ecológica",
+   "verificado_em": "2026-06-27"
+  },
+  {
+   "tema": "Debêntures de Infraestrutura / incentivadas verdes",
+   "valor": "Benefício fiscal ao emissor; critérios de benefício ambiental relevante e tramitação simplificada para emissões verdes; válido até 31/12/2030. Exige relato de uso de recursos e de impacto.",
+   "status": "VIGENTE",
+   "norma": "Lei 14.801/2024 · Decreto 11.964/2024",
+   "verificado_em": "2026-06-27"
+  },
+  {
+   "tema": "Sustainability-Linked (SLL/SLB)",
+   "valor": "Custo de capital atrelado a KPIs de desempenho (ex.: % de energia renovável, intensidade de carbono). Falhar o KPI encarece a dívida — exige verificação independente e contínua do indicador.",
+   "status": "VIGENTE",
+   "norma": "Princípios ICMA/LMA (SLBP/SLLP) — instrumento de mercado",
+   "verificado_em": "2026-06-27"
+  }
+ ]
+}
