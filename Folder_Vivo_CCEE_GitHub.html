@@ -114,6 +114,7 @@ const SC={"VIGENTE":"#166534","AGENDADO":"#1C5AAD","ENCERRADO":"#6B7280","PENDEN
 function br(d){if(!d)return "—";const p=d.split("-");return p[2]+"/"+p[1]+"/"+p[0];}
 function pad(n){return n<10?"0"+n:n;}
 function fmtNow(){const d=new Date();return pad(d.getDate())+"/"+pad(d.getMonth()+1)+"/"+d.getFullYear()+" às "+pad(d.getHours())+"h"+pad(d.getMinutes());}
+const QSC={0:"#B91C1C",1:"#D97706",2:"#B26A00",3:"#166534",4:"#0D6E6E"};
 function render(data){
   const fatos=data.fatos||[];
   const meta=data._meta||{};
@@ -124,7 +125,8 @@ function render(data){
     const urlLink=f.url?`<a href="${f.url}" target="_blank" rel="noopener">${f.norma||'Ver fonte'}</a>`:(f.norma||"");
     const score=f.score_soa!==undefined?`<span class="score">score ${f.score_soa}</span>`:"";
     const vet=f.vetores_afetados&&f.vetores_afetados.length?`<span class="vetores">${f.vetores_afetados.join(' · ')}</span>`:"";
-    return `<div class="card"><div class="badges"><span class="badge" style="background:${color}">${f.status}</span>${score}${vet}</div><div class="t">${f.tema}</div><div class="v">${f.valor}</div><div class="meta"><div class="n">${urlLink}</div><div class="stamp">verificado em ${br(f.verificado_em)}</div></div></div>`;
+    const qsv=f.qsv_r!==undefined?`<span class="badge" style="background:${QSC[f.qsv_r]||'#4B5563'}">QSV-R ${f.qsv_r}/4</span>`:"";
+    return `<div class="card"><div class="badges"><span class="badge" style="background:${color}">${f.status}</span>${score}${vet}${qsv}</div><div class="t">${f.tema}</div><div class="v">${f.valor}</div><div class="meta"><div class="n">${urlLink}</div><div class="stamp">verificado em ${br(f.verificado_em)}</div></div></div>`;
   }).join("");
 }
 (async function(){for(const u of FACTS_URLS){try{const r=await fetch(u,{cache:"no-store"});if(r.ok){render(await r.json());return;}}catch(e){}}render(FALLBACK);})();

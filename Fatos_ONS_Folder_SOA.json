@@ -1,12 +1,13 @@
 {
   "_meta": {
     "orgao": "ONS",
-    "descricao": "Monitor exclusivo ONS (Operador Nacional do Sistema Elétrico) — fatos curados por relevância SOA (score ≥ 5). Foco em Notas Técnicas, Submódulos e regras operativas que afetam V1, V3, V4, V7. Atos puramente operacionais sem impacto regulatório-comercial não entram aqui.",
+    "schema_version": "1.1",
+    "descricao": "Monitor exclusivo ONS — schema v1.1 com score_soa, vetores_afetados, qsv_r e qsv_fontes. Foco em Notas Técnicas e Submódulos regulatórios. Dados Abertos NÃO entram aqui.",
     "verificado_em": "2026-06-28",
     "proxima_revisao_sugerida": "2026-07-15",
-    "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ONS (digest diário) + scoring automático conforme Arquitetura_Monitores_Curados_SOA_v1.md",
-    "regra_staleness": "Fato com verificado_em > 60 dias deve ser exibido com alerta e reconferido.",
-    "regra_curadoria": "Cada ato recebe score conforme Arquitetura_Monitores_Curados_SOA_v1.md. Threshold de exibição: score ≥ 5. Dados Abertos do ONS NÃO entram aqui (vão direto para o banco SOA via pipeline).",
+    "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ONS (digest diário) + scoring + QSV-R automáticos",
+    "regra_staleness": "Fato com verificado_em > 60 dias deve ser exibido com alerta.",
+    "regra_curadoria": "Threshold de destaque: score_soa ≥ 5 E qsv_r ≥ 2. Dados Abertos do ONS NÃO entram aqui (vão direto para banco SOA via pipeline).",
     "vetores_soa_atendidos": ["V1", "V3", "V4", "V7"],
     "fonte_canonica": "https://www.ons.org.br/"
   },
@@ -19,57 +20,69 @@
       "url": "https://www.ons.org.br/",
       "verificado_em": "2026-06-28",
       "score_soa": 15,
-      "vetores_afetados": ["V3", "V7"]
+      "vetores_afetados": ["V3", "V7"],
+      "qsv_r": 3,
+      "qsv_fontes": ["F1_pagina_oficial", "F3_imprensa_setorial", "F4_cruzamento"]
     },
     {
       "tema": "NT 02 PNAST — Capacidade por barramento + MUST",
-      "valor": "Nota Técnica que define capacidade dinâmica por barramento (PNAST 2026). Habilita TVM v2 — atualização do Transmission Value Map SOA com janela canônica de Access Risk. Saída esperada: 31/08/2026.",
+      "valor": "Nota Técnica que define capacidade dinâmica por barramento (PNAST 2026). Habilita TVM v2 — atualização do Transmission Value Map SOA. Saída esperada: 31/08/2026.",
       "status": "AGENDADO",
       "norma": "NT ONS PNAST 2026 (publicação 31/08/2026)",
       "url": "https://www.ons.org.br/",
       "verificado_em": "2026-06-28",
       "score_soa": 14,
-      "vetores_afetados": ["V1", "V2", "V3"]
+      "vetores_afetados": ["V1", "V2", "V3"],
+      "qsv_r": 2,
+      "qsv_fontes": ["F1_pagina_oficial", "F4_cruzamento"]
     },
     {
       "tema": "NT Capacidade Remanescente do SIN (Art. 15 §4º Portaria 136)",
-      "valor": "Nota Técnica que define limites de contratação por subárea no LRCAP. Muda competitividade locacional dos 129 barramentos β=0,9. Saída esperada: 30/09/2026. Disparo direto na Frente A.",
+      "valor": "Nota Técnica que define limites de contratação por subárea no LRCAP. Muda competitividade locacional dos 129 barramentos β=0,9. Saída esperada: 30/09/2026.",
       "status": "AGENDADO",
       "norma": "NT ONS · Art. 15 §4º Portaria MME 136/2026",
       "url": "https://www.ons.org.br/",
       "verificado_em": "2026-06-28",
       "score_soa": 13,
-      "vetores_afetados": ["V3", "V7"]
+      "vetores_afetados": ["V3", "V7"],
+      "qsv_r": 2,
+      "qsv_fontes": ["F1_pagina_oficial", "F4_cruzamento"]
     },
     {
       "tema": "Submódulo 9 — Liquidação CCEE (terminal institucional)",
-      "valor": "Procedimento de Rede que define o ponto terminal de classificação de cortes (ENE/CNF/REL). Princípio canônico SOA: 'protocolo opera ANTES e DEPOIS da liquidação, NUNCA durante'. Pré-condição estrutural de V4 (Curtailment Evidence).",
+      "valor": "Procedimento de Rede que define ponto terminal de classificação de cortes (ENE/CNF/REL). Princípio canônico SOA: 'protocolo opera ANTES e DEPOIS da liquidação, NUNCA durante'. Pré-condição estrutural de V4.",
       "status": "VIGENTE",
       "norma": "ONS · Submódulo 9 (Procedimentos de Rede)",
       "url": "https://www.ons.org.br/",
       "verificado_em": "2026-06-28",
       "score_soa": 10,
-      "vetores_afetados": ["V4", "V3"]
+      "vetores_afetados": ["V4", "V3"],
+      "qsv_r": 3,
+      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F4_cruzamento"]
     },
     {
       "tema": "Procedimentos de Rede — REN ANEEL 903/2020 (Submódulos 2.4, 3.3, 8.1, 10.6, 10.7, 26.2)",
-      "valor": "Conjunto de Submódulos que regulam operação SIN. Submódulo 26.2 (modelo Newave/Dessem) é referência para Validação SOA. Submódulo 10.6/10.7 (despacho) referencia janela ex-post.",
+      "valor": "Conjunto de Submódulos que regulam operação SIN. Submódulo 26.2 (modelo Newave/Dessem) é referência para Validação SOA. Submódulos 10.6/10.7 (despacho) referenciam janela ex-post.",
       "status": "VIGENTE",
       "norma": "ONS · REN ANEEL 903/2020",
       "url": "https://www.ons.org.br/",
       "verificado_em": "2026-06-28",
       "score_soa": 8,
-      "vetores_afetados": ["V4", "V3"]
+      "vetores_afetados": ["V4", "V3"],
+      "qsv_r": 4,
+      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F3_imprensa_setorial", "F4_cruzamento"]
     },
     {
       "tema": "Ato ONS · Sandbox Controle de Tensão — vencedores e cronograma",
-      "valor": "ONS publica regularmente comunicados sobre vencedores do Sandbox de Controle de Tensão e próximos ciclos. SOA fornece camada QSV + telemetria como evidência de prestação. Convergência V7.",
+      "valor": "ONS publica regularmente comunicados sobre vencedores do Sandbox e próximos ciclos. SOA fornece camada QSV + telemetria como evidência de prestação. Convergência V7.",
       "status": "VIGENTE",
       "norma": "ONS · Sandbox Controle de Tensão",
       "url": "https://www.ons.org.br/",
       "verificado_em": "2026-06-28",
       "score_soa": 7,
-      "vetores_afetados": ["V7"]
+      "vetores_afetados": ["V7"],
+      "qsv_r": 2,
+      "qsv_fontes": ["F1_pagina_oficial", "F4_cruzamento"]
     }
   ],
   "_historico_caidos": []

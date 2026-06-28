@@ -1,12 +1,13 @@
 {
   "_meta": {
     "orgao": "ANEEL",
-    "descricao": "Monitor exclusivo ANEEL — fatos curados por relevância SOA (score ≥ 5). Banco interno cobre tudo; este JSON expõe só o que importa pra ação comercial dos vetores V1, V2, V3, V4, V5, V6, V7.",
+    "schema_version": "1.1",
+    "descricao": "Monitor exclusivo ANEEL — schema v1.1 com score_soa, vetores_afetados, qsv_r e qsv_fontes. Curadoria por relevância SOA (score ≥ 5) + verificação multi-fonte QSV-R.",
     "verificado_em": "2026-06-28",
     "proxima_revisao_sugerida": "2026-07-15",
-    "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ANEEL (digest diário) + scoring automático conforme Arquitetura_Monitores_Curados_SOA_v1.md",
-    "regra_staleness": "Fato com verificado_em > 60 dias deve ser exibido com alerta e reconferido.",
-    "regra_curadoria": "Cada ato recebe score conforme Arquitetura_Monitores_Curados_SOA_v1.md. Threshold de exibição: score ≥ 5. Atos com score < 5 vão para _historico_caidos.",
+    "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ANEEL (digest diário) + scoring + QSV-R automáticos",
+    "regra_staleness": "Fato com verificado_em > 60 dias deve ser exibido com alerta.",
+    "regra_curadoria": "Threshold de destaque: score_soa ≥ 5 E qsv_r ≥ 2. Fatos qsv_r 0 vão para _historico_caidos.",
     "vetores_soa_atendidos": ["V1", "V2", "V3", "V4", "V5", "V6", "V7"],
     "fonte_canonica": "https://www.aneel.gov.br/"
   },
@@ -19,97 +20,117 @@
       "url": "https://www.aneel.gov.br/consultas-publicas",
       "verificado_em": "2026-06-28",
       "score_soa": 17,
-      "vetores_afetados": ["V4", "V3"]
+      "vetores_afetados": ["V4", "V3"],
+      "qsv_r": 3,
+      "qsv_fontes": ["F1_pagina_oficial", "F3_imprensa_setorial", "F4_cruzamento"]
     },
     {
       "tema": "REN ANEEL 1.161/2026 — Outorga de Armazenamento (BESS)",
-      "valor": "Publicada em 24/06/2026 (DOU). Regime de outorga de 35 anos para BESS, operação em até 54 meses, cobrança integral de rede mantida pós-Lei 15.269/2025. Reforço de pano de fundo do vetor de baterias. Convergência Frente A SOA (V3+V7).",
+      "valor": "Publicada em 24/06/2026 (DOU). Regime de outorga de 35 anos para BESS, operação em até 54 meses, cobrança integral de rede mantida pós-Lei 15.269/2025. Convergência Frente A SOA (V3+V7).",
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.161/2026 · DOU 24/06/2026",
       "url": "https://www.aneel.gov.br/",
       "verificado_em": "2026-06-28",
       "score_soa": 15,
-      "vetores_afetados": ["V3", "V7"]
+      "vetores_afetados": ["V3", "V7"],
+      "qsv_r": 4,
+      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F3_imprensa_setorial", "F4_cruzamento"]
     },
     {
       "tema": "CP ANEEL 009/2026 — Detecção de GD irregular (Gato Solar)",
-      "valor": "Consulta pública sobre métricas e procedimentos antifraude em geração distribuída. SOA contribui com lastro horário de detecção auditável. Convergência direta com vetor V2 (Geração Access Advisory) + V7 (Sandbox).",
+      "valor": "Consulta pública sobre métricas e procedimentos antifraude em geração distribuída. SOA contribui com lastro horário de detecção auditável. Convergência V2 + V7.",
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 009/2026",
       "url": "https://www.aneel.gov.br/consultas-publicas",
       "verificado_em": "2026-06-28",
       "score_soa": 14,
-      "vetores_afetados": ["V2", "V7"]
+      "vetores_afetados": ["V2", "V7"],
+      "qsv_r": 2,
+      "qsv_fontes": ["F1_pagina_oficial", "F3_imprensa_setorial"]
     },
     {
       "tema": "CP ANEEL 039/2023 — Armazenamento de energia (2ª fase)",
-      "valor": "2ª fase concluída com publicação da NT 03/2026; tratada tarifa dupla (TUST consumo + geração); destravou 1º LRCAP de baterias (~2 GW / ~R$ 10 bi previstos para 2026). Convergência forte com Frente A SOA.",
+      "valor": "2ª fase concluída com publicação da NT 03/2026; tratada tarifa dupla (TUST consumo + geração); destravou 1º LRCAP de baterias (~2 GW / ~R$ 10 bi). Convergência forte com Frente A SOA.",
       "status": "VIGENTE",
       "norma": "CP ANEEL 039/2023 · NT 03/2026",
       "url": "https://www.aneel.gov.br/consultas-publicas",
       "verificado_em": "2026-06-28",
       "score_soa": 13,
-      "vetores_afetados": ["V3", "V7"]
+      "vetores_afetados": ["V3", "V7"],
+      "qsv_r": 4,
+      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F3_imprensa_setorial", "F4_cruzamento"]
     },
     {
       "tema": "REN ANEEL 1.150/2026 — Plano Emergencial GD Tipo 3",
-      "valor": "Estabelece baseline verificável obrigatório para distribuidoras frente à GD Tipo 3. Cliente direto SOA: 53 distribuidoras (Light ancorou PDI-273). Convergência direta com vetor V2 + sHEC. Ticket SaaS R$ 100-200/alimentador/mês.",
+      "valor": "Estabelece baseline verificável obrigatório para distribuidoras frente à GD Tipo 3. Cliente direto SOA: 53 distribuidoras (Light ancorou PDI-273). Convergência V2 + sHEC. Ticket SaaS R$ 100-200/alimentador/mês.",
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.150/2026 + Ofício 553/2025-GDG",
       "url": "https://www.aneel.gov.br/",
       "verificado_em": "2026-06-28",
       "score_soa": 13,
-      "vetores_afetados": ["V2", "V6"]
+      "vetores_afetados": ["V2", "V6"],
+      "qsv_r": 3,
+      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F4_cruzamento"]
     },
     {
       "tema": "REN ANEEL 1.059/2023 — Regulamentação MMGD (Lei 14.300/2022)",
-      "valor": "Marco regulatório atual da MMGD. Limites de potência: > 75 kW até 3 MW (solar não-despachável) ou 5 MW (despachável/híbrida com bateria). Base para todos os estudos sobre 4,4M UCs MMGD do banco SOA.",
+      "valor": "Marco regulatório atual da MMGD. Limites: > 75 kW até 3 MW (solar não-despachável) ou 5 MW (despachável/híbrida com bateria). Base para estudos sobre 4,4M UCs MMGD do banco SOA.",
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.059/2023 (Lei 14.300/2022)",
       "url": "https://www.aneel.gov.br/",
       "verificado_em": "2026-06-28",
       "score_soa": 10,
-      "vetores_afetados": ["V2", "V3", "V7"]
+      "vetores_afetados": ["V2", "V3", "V7"],
+      "qsv_r": 4,
+      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F3_imprensa_setorial", "F4_cruzamento"]
     },
     {
       "tema": "Sandbox de Controle de Tensão — vencedores e novos ciclos",
-      "valor": "Programa ANEEL de inovação regulatória. Vencedores atuais usam evidência granular para comprovar prestação do serviço. SOA fornece camada QSV + telemetria como prova auditável. Cliente direto: vencedores e candidatos a próximos sandboxes.",
+      "valor": "Programa ANEEL de inovação regulatória. Vencedores usam evidência granular para comprovar prestação do serviço. SOA fornece QSV + telemetria como prova auditável. Cliente direto: vencedores e candidatos a próximos sandboxes.",
       "status": "VIGENTE",
       "norma": "ANEEL · Sandbox de Inovação",
       "url": "https://www.aneel.gov.br/sandbox-regulatorio",
       "verificado_em": "2026-06-28",
       "score_soa": 9,
-      "vetores_afetados": ["V7", "V3"]
+      "vetores_afetados": ["V7", "V3"],
+      "qsv_r": 2,
+      "qsv_fontes": ["F1_pagina_oficial", "F3_imprensa_setorial"]
     },
     {
       "tema": "CP ANEEL 046/2025 — Tarifa Branca",
-      "valor": "Consulta pública sobre revisão da Tarifa Branca (modulação horária para consumidor residencial). Convergência com V3 (sinal de preço horário) e tese geral SOA sobre granularidade. Janela de submissão aberta.",
+      "valor": "CP sobre revisão da Tarifa Branca (modulação horária para consumidor residencial). Convergência V3 (sinal de preço horário) e tese geral SOA sobre granularidade. Janela de submissão aberta.",
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 046/2025",
       "url": "https://www.aneel.gov.br/consultas-publicas",
       "verificado_em": "2026-06-28",
       "score_soa": 8,
-      "vetores_afetados": ["V3", "V6"]
+      "vetores_afetados": ["V3", "V6"],
+      "qsv_r": 2,
+      "qsv_fontes": ["F1_pagina_oficial", "F4_cruzamento"]
     },
     {
       "tema": "Portarias MME 126/2026 e 111/2025 — Medição digital obrigatória",
-      "valor": "Smart meter obrigatório, APIs abertas, meta 2%/ano de penetração até 2035. Base para o modelo SaaS B2B com distribuidoras (V2). Cruzamento estrutural com sHEC.",
+      "valor": "Smart meter obrigatório, APIs abertas, meta 2%/ano de penetração até 2035. Base para modelo SaaS B2B com distribuidoras (V2). Cruzamento estrutural com sHEC. Regulamentação ANEEL pendente.",
       "status": "VIGENTE",
       "norma": "MME · Portarias 126/2026 e 111/2025 (regulamentação ANEEL pendente)",
       "url": "https://www.aneel.gov.br/",
       "verificado_em": "2026-06-28",
       "score_soa": 8,
-      "vetores_afetados": ["V2", "V6"]
+      "vetores_afetados": ["V2", "V6"],
+      "qsv_r": 3,
+      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F4_cruzamento"]
     },
     {
       "tema": "TS ANEEL 23/2025 — Custos e Benefícios da GD",
-      "valor": "Tomada de Subsídios sobre quantificação de custos/benefícios da geração distribuída. Insumo direto para tese técnica do vetor V2 (Geração Access Advisory) e para subsídio em CPs (V6).",
+      "valor": "Tomada de Subsídios sobre quantificação de custos/benefícios da geração distribuída. Insumo direto para tese técnica V2 e para subsídio em CPs (V6).",
       "status": "VIGENTE",
       "norma": "TS ANEEL 23/2025",
       "url": "https://www.aneel.gov.br/",
       "verificado_em": "2026-06-28",
       "score_soa": 7,
-      "vetores_afetados": ["V2", "V6"]
+      "vetores_afetados": ["V2", "V6"],
+      "qsv_r": 2,
+      "qsv_fontes": ["F1_pagina_oficial", "F3_imprensa_setorial"]
     },
     {
       "tema": "REN ANEEL 1.071/2024 — LRCAP (regras de capacidade)",
@@ -119,7 +140,9 @@
       "url": "https://www.aneel.gov.br/",
       "verificado_em": "2026-06-28",
       "score_soa": 7,
-      "vetores_afetados": ["V3", "V7"]
+      "vetores_afetados": ["V3", "V7"],
+      "qsv_r": 4,
+      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F3_imprensa_setorial", "F4_cruzamento"]
     }
   ],
   "_historico_caidos": []
