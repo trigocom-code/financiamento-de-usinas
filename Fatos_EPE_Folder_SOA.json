@@ -1,0 +1,125 @@
+{
+  "_meta": {
+    "descricao": "Fonte ÚNICA de fatos sobre EPE (Empresa de Pesquisa Energética) consumidos pelo Folder Vivo EPE da SOA/SOS. O Monitor Regulatório SOA atualiza este arquivo quando um gatilho dispara em qualquer publicação, consulta pública, estudo prospectivo, revisão quadrimestral, evento ou mudança institucional da EPE; em seguida o folder é regenerado automaticamente.",
+    "verificado_em": "2026-06-28",
+    "proxima_revisao_sugerida": "2026-07-15",
+    "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina EPE (digest diário) + regeneração agendada",
+    "regra_staleness": "Fato com verificado_em > 60 dias deve ser exibido com alerta e reconferido. Para publicações periódicas (Boletim trimestral, Revisão Quadrimestral) usar regra específica do ciclo.",
+    "vetores_soa_atendidos": ["V1 Transmission Intelligence", "V2 Geração Access Advisory", "V3 Flex Asset Valuation", "V5 Carga Especial Compliance", "V6 Regulatory Submission Support", "V7 Sandbox & Ancillary"],
+    "fonte_canonica": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes"
+  },
+  "fatos": [
+    {
+      "tema": "PDE 2035 — Plano Decenal de Expansão de Energia",
+      "valor": "Horizonte 2026–2035. Consulta Pública aberta de 12/02 a 14/03/2026 (encerrada). 15 Cadernos temáticos publicados (Transmissão, MMGD+Baterias, Demanda Eletricidade, Custos Geração/Transmissão, entre outros). Dados brutos disponíveis em painel público. Próximo ciclo: PDE 2036 (publicação anual). Vetores SOA atendidos: V1, V3, V5.",
+      "status": "VIGENTE",
+      "norma": "EPE/MME · ciclo anual",
+      "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "PNE 2055 — Plano Nacional de Energia",
+      "valor": "Horizonte 30 anos (2026–2055). Publicação quinquenal. Consulta Pública aberta em 12/02/2026 por 30 dias (encerrada). Modelagem integrada que otimiza custos totais e garante consistência entre oferta, demanda e infraestrutura. Aponta potencial renovável brasileiro de ~1,6 bilhão tep/ano (5× consumo atual). Coordenação: Patricia Nunes (Assessora Presidência EPE).",
+      "status": "VIGENTE",
+      "norma": "EPE/MME · ciclo quinquenal",
+      "url": "https://www.epe.gov.br/pt/imprensa/noticias/mme-e-epe-lancam-consultas-publicas-do-pde-2035-e-do-pne-2055-e-reforcam-planejamento-estrategico-do-setor-energetico",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "Estudo Prospectivo de Cargas Eletrointensivas no Nordeste (CE+PI)",
+      "valor": "Publicado em 19/06/2026. Recomenda soluções estruturantes para conectar **até 4 GW de cargas eletrointensivas (data centers e plantas de H2V)** no Ceará e Piauí a partir de 2032, com solução de transmissão flexível e escalonável. Convergência direta com vetor V5 SOA (Carga Especial Compliance) — SOA traz a camada de prova horária 24/7 CFE ausente no estudo da EPE.",
+      "status": "VIGENTE",
+      "norma": "EPE · Estudo Prospectivo",
+      "url": "https://www.epe.gov.br/pt/imprensa/noticias",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "Estudo de Atendimento ao Sudeste do Pará",
+      "valor": "Publicado em 22/06/2026. Soluções estruturantes para superar esgotamento da capacidade de transmissão e limitações de controle de tensão no sistema elétrico local, viabilizando expansão de carga e novos acessos. Vetor SOA atendido: V1 (Transmission Intelligence) — entrada para análise de barramentos saturados na região Norte/Carajás.",
+      "status": "VIGENTE",
+      "norma": "EPE · Estudo de Atendimento Regional",
+      "url": "https://www.epe.gov.br/pt/imprensa/noticias",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "Mapa de Barramentos Candidatos à Bonificação Locacional (LRCAP)",
+      "valor": "EPE divulgou mapa em 09/06/2026 e detalhamento da base de dados em 27/06/2026. Universo de 129 barramentos com β=0,9 elegíveis ao primeiro Leilão de Reserva de Capacidade Armazenamento (LRCAP), agendado para 02 e 04/12/2026. Convergência direta com Frente A do SOA (Advisory LRCAP/BESS — V3+V7).",
+      "status": "VIGENTE",
+      "norma": "EPE · Portaria MME 136/2026 (LRCAP)",
+      "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "Boletim Trimestral de Consumo de Eletricidade nº 25 (1T/2026)",
+      "valor": "Publicado em 18/06/2026. Consumo nacional de energia elétrica recuou 0,3% no 1º trimestre de 2026 vs mesmo período de 2025. Queda concentrada na indústria; avanço nas classes residencial e comercial. Input direto para análises do vetor V3/V5 SOA (calibração de cenário de carga).",
+      "status": "VIGENTE",
+      "norma": "EPE · Boletim Trimestral",
+      "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Resenha-e-Boletim-do-Mercado-de-Energia-Eletrica",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "PET/PELP — Programa de Expansão da Transmissão / Plano de Longo Prazo",
+      "valor": "Publicação contínua da EPE listando reforços e novas instalações de transmissão planejadas para o SIN. Próximo ciclo PET/PELP esperado para 2026. Entrada estrutural para vetor V1 SOA (Transmission Intelligence) — reforços planejados mudam Access Risk e tese de corredor.",
+      "status": "AGENDADO",
+      "norma": "EPE · ciclo periódico (PET anual; PELP de longo prazo)",
+      "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Programa-de-Expansao-da-Transmissao-Plano-de-Expansao-de-Longo-Prazo-PET-PELP",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "Revisão Quadrimestral da Carga",
+      "valor": "EPE publica ~3×/ano revisão de previsão de carga elétrica. Última publicação na janela analisada não chegou na varredura de 27/06. Quando publicada, é input estrutural para vetores V3/V5 SOA — muda vale/excedente esperado e premissa de carga de data center; aciona análise previsto×verificado no banco SOA (curva_carga 26 anos).",
+      "status": "AGENDADO",
+      "norma": "EPE · ~3 revisões/ano",
+      "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Revisoes-Quadrimestrais-da-Carga",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "Anuário Estatístico de Energia Elétrica",
+      "valor": "Publicação anual da EPE com dados agregados consolidados do setor elétrico brasileiro. Última edição publicada e disponível. Referência de dado para qualquer estudo SOA que precise de série histórica oficial agregada.",
+      "status": "VIGENTE",
+      "norma": "EPE · publicação anual",
+      "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/anuario-estatistico-de-energia-eletrica",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "Caderno de MMGD e Baterias Atrás do Medidor (PDE 2035)",
+      "valor": "Caderno temático do PDE 2035 dedicado à Micro/Minigeração Distribuída e baterias atrás do medidor. Convergência com vetores V2 (Geração Access Advisory), V3 (Flex Asset Valuation), V7 (Sandbox & Ancillary) — SOA pode fornecer análise empírica de curtailment e flexibilidade MMGD a partir das tabelas mmgd_* (4,4M UCs no banco).",
+      "status": "VIGENTE",
+      "norma": "EPE · Caderno temático PDE 2035",
+      "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "Política Nacional de Transição Energética (PNTE) e Plante",
+      "valor": "PDE 2035 e PNE 2055 servem de base técnica para a PNTE, Plano Nacional de Transição Energética (Plante) e Fórum Nacional de Transição Energética (Fonte). Coordenação política: SNTEP/MME (Secretária substituta Lorena Silva). Entrada para vetor V6 SOA (Regulatory Submission Support) e diálogo institucional com FASE/Mário Menel.",
+      "status": "VIGENTE",
+      "norma": "MME · SNTEP",
+      "url": "https://www.epe.gov.br/pt/imprensa/noticias/mme-e-epe-lancam-consultas-publicas-do-pde-2035-e-do-pne-2055-e-reforcam-planejamento-estrategico-do-setor-energetico",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "Diretoria EPE — interlocutores técnicos canônicos",
+      "valor": "Presidente: Thiago Prado. Assessora Presidência (coordenação PDE/PNE): Patricia Nunes. Diretor Estudos Econômico-Energéticos e Ambientais (responsável PDE): Thiago Ivanoski. Diretora Estudos Petróleo, Gás e Biocombustíveis (responsável PNE): Heloisa Borges. Outros diretores: Carlos Cabral, Reinaldo Garcia. Mapeamento canônico para diálogo técnico SOA → EPE.",
+      "status": "VIGENTE",
+      "norma": "EPE · estrutura organizacional 2026",
+      "url": "https://www.epe.gov.br/pt/a-epe",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "Próximas Consultas Públicas EPE — janela de submissão SOA",
+      "valor": "CP do PDE 2035 e PNE 2055 ENCERRADAS (fev-mar 2026). Próxima janela natural: PDE 2036 (esperado fev-mar 2027) e Caderno de MMGD atualizado. Vetor SOA atendido: V6 (Regulatory Submission Support) — preparar contribuição técnica com dado horário ONS/CCEE.",
+      "status": "AGENDADO",
+      "norma": "EPE · ciclo anual de consulta pública",
+      "url": "https://www.epe.gov.br/pt/leiloes-de-energia/consultas-publicas",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "tema": "Status do Monitor EPE no Monitor Regulatório SOA",
+      "valor": "EPE já está listada como fonte primária no `Monitor_Regulatorio_SOA_Design.md` (v1.1 de 17/06/2026) junto com ANEEL, MME, ONS, CCEE e Congresso. Este folder vivo dedicado à EPE complementa o monitor geral com foco específico e cobertura ampliada das publicações periódicas (Cadernos, Boletins, Revisões, Estudos Prospectivos).",
+      "status": "VIGENTE",
+      "norma": "SOA/SOS · arquitetura interna",
+      "url": "https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_EPE_GitHub.html",
+      "verificado_em": "2026-06-28"
+    }
+  ]
+}
