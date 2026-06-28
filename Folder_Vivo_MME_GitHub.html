@@ -114,20 +114,28 @@ const SC={"VIGENTE":"#166534","AGENDADO":"#1C5AAD","ENCERRADO":"#6B7280","PENDEN
 function br(d){if(!d)return "—";const p=d.split("-");return p[2]+"/"+p[1]+"/"+p[0];}
 function pad(n){return n<10?"0"+n:n;}
 function fmtNow(){const d=new Date();return pad(d.getDate())+"/"+pad(d.getMonth()+1)+"/"+d.getFullYear()+" às "+pad(d.getHours())+"h"+pad(d.getMinutes());}
-const QSC={0:"#B91C1C",1:"#D97706",2:"#B26A00",3:"#166534",4:"#0D6E6E"};
+// QSV-R v2.0 (cores) + backward-compat com v1.1
+const COR_QSV={LARANJA:"#D97706",AZUL:"#1C5AAD",VERDE:"#166534"};
+const ICONE_TIPO={FISICO_QUANTITATIVO:"📊",REGULATORIO_DECISORIO:"⚖️",HIBRIDO:"🔗"};
+function badgeQSV(f){if(f.qsv_cor)return `<span class="badge" style="background:${COR_QSV[f.qsv_cor]||'#4B5563'}">${f.qsv_cor}</span>`;if(f.qsv_r!==undefined){const c=f.qsv_r>=3?"VERDE":f.qsv_r>=2?"AZUL":f.qsv_r>=1?"LARANJA":null;return c?`<span class="badge" style="background:${COR_QSV[c]}">${c}</span>`:"";}return "";}
+function badgeTipo(f){if(!f.tipo_fato)return "";const ic=ICONE_TIPO[f.tipo_fato]||"·";const lbl=f.tipo_fato.replace(/_/g," ").toLowerCase();return `<span title="${lbl}" style="display:inline-block;font-size:11px;color:#4B5563;background:#F1F5F9;padding:3px 8px;border-radius:999px;border:1px solid #E0E2E8">${ic} ${lbl}</span>`;}
+function alertaNumero(f){if(f.numero_status==="ALEGADO_NAO_ANCORADO")return `<span title="número sem frase-fonte colada" style="display:inline-block;font-size:11px;color:#fff;background:#B91C1C;padding:3px 8px;border-radius:999px">⚠ não-ancorado</span>`;return "";}
 function render(data){
   const fatos=data.fatos||[];
+  const pendentes=data._pendentes_verificacao||[];
   const meta=data._meta||{};
   const ver=meta.verificado_em||fatos.reduce((a,f)=>f.verificado_em>a?f.verificado_em:a,"2000-01-01");
   document.getElementById("verstamp").textContent="Última verificação do monitor: "+br(ver);
-  document.getElementById("cards").innerHTML=fatos.map(f=>{
+  function renderCard(f){
     const color=SC[f.status]||"#4B5563";
     const urlLink=f.url?`<a href="${f.url}" target="_blank" rel="noopener">${f.norma||'Ver fonte'}</a>`:(f.norma||"");
     const score=f.score_soa!==undefined?`<span class="score">score ${f.score_soa}</span>`:"";
     const vet=f.vetores_afetados&&f.vetores_afetados.length?`<span class="vetores">${f.vetores_afetados.join(' · ')}</span>`:"";
-    const qsv=f.qsv_r!==undefined?`<span class="badge" style="background:${QSC[f.qsv_r]||'#4B5563'}">QSV-R ${f.qsv_r}/4</span>`:"";
-    return `<div class="card"><div class="badges"><span class="badge" style="background:${color}">${f.status}</span>${score}${vet}${qsv}</div><div class="t">${f.tema}</div><div class="v">${f.valor}</div><div class="meta"><div class="n">${urlLink}</div><div class="stamp">verificado em ${br(f.verificado_em)}</div></div></div>`;
-  }).join("");
+    return `<div class="card"><div class="badges"><span class="badge" style="background:${color}">${f.status}</span>${score}${vet}${badgeQSV(f)}${badgeTipo(f)}${alertaNumero(f)}</div><div class="t">${f.tema}</div><div class="v">${f.valor}</div><div class="meta"><div class="n">${urlLink}</div><div class="stamp">verificado em ${br(f.verificado_em)}</div></div></div>`;
+  }
+  let html=fatos.map(renderCard).join("");
+  if(pendentes.length){html+=`<h2 style="margin-top:32px;font-family:'DM Serif Display',Georgia,serif;font-size:20px;color:#92400E;border-bottom:2px solid #FCD34D;padding-bottom:8px">Pendentes de verificação · LARANJA</h2><p style="font-size:13px;color:#5a3a00;margin-bottom:16px">Fatos com 1 fonte oficial só — uso interno. NÃO vão a material externo.</p>`+pendentes.map(renderCard).join("");}
+  document.getElementById("cards").innerHTML=html;
 }
 (async function(){for(const u of FACTS_URLS){try{const r=await fetch(u,{cache:"no-store"});if(r.ok){render(await r.json());return;}}catch(e){}}render(FALLBACK);})();
 document.getElementById("liveStamp").textContent="● Aberto em "+fmtNow();

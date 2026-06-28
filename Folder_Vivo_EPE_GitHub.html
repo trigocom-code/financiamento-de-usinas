@@ -191,7 +191,31 @@ function render(data) {
 
   document.getElementById("verstamp").textContent = "Última verificação do monitor: " + br(ver);
 
-  const QSC = {0:"#B91C1C", 1:"#D97706", 2:"#B26A00", 3:"#166534", 4:"#0D6E6E"};
+  // QSV-R v2.0 (cores) + backward-compat com v1.1 (QSV-R 0-4)
+  const COR_QSV = {LARANJA:"#D97706", AZUL:"#1C5AAD", VERDE:"#166534"};
+  const ICONE_TIPO = {FISICO_QUANTITATIVO:"📊", REGULATORIO_DECISORIO:"⚖️", HIBRIDO:"🔗"};
+  const STYLE_BADGE = "display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:3px 10px;border-radius:999px;color:#fff;margin-left:6px";
+  function badgeQSV(f) {
+    if (f.qsv_cor) return `<span style="${STYLE_BADGE};background:${COR_QSV[f.qsv_cor]||'#4B5563'}">${f.qsv_cor}</span>`;
+    if (f.qsv_r !== undefined) {
+      const cor = f.qsv_r>=3 ? "VERDE" : f.qsv_r>=2 ? "AZUL" : f.qsv_r>=1 ? "LARANJA" : null;
+      return cor ? `<span style="${STYLE_BADGE};background:${COR_QSV[cor]}">${cor}</span>` : "";
+    }
+    return "";
+  }
+  function badgeTipo(f) {
+    if (!f.tipo_fato) return "";
+    const ic = ICONE_TIPO[f.tipo_fato] || "·";
+    const lbl = f.tipo_fato.replace(/_/g," ").toLowerCase();
+    return `<span title="${lbl}" style="display:inline-block;font-size:11px;color:#4B5563;background:#F1F5F9;padding:3px 8px;border-radius:999px;border:1px solid #E0E2E8;margin-left:6px">${ic} ${lbl}</span>`;
+  }
+  function alertaNumero(f) {
+    if (f.numero_status === "ALEGADO_NAO_ANCORADO") {
+      return `<span title="número sem frase-fonte colada — não publicável externamente" style="${STYLE_BADGE};background:#B91C1C">⚠ não-ancorado</span>`;
+    }
+    return "";
+  }
+
   const cardsHtml = fatos.map(f => {
     const color = SC[f.status] || "#4B5563";
     const urlLink = f.url
@@ -199,10 +223,9 @@ function render(data) {
       : (f.norma || "");
     const score = f.score_soa !== undefined ? `<span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:3px 10px;border-radius:999px;background:#F1F5F9;color:#0F2B46;border:1px solid #E0E2E8;margin-left:6px">score ${f.score_soa}</span>` : "";
     const vet = f.vetores_afetados && f.vetores_afetados.length ? `<span style="display:inline-block;font-size:10.5px;font-weight:600;color:#1C5AAD;background:#EEF2FA;padding:3px 8px;border-radius:999px;margin-left:6px">${f.vetores_afetados.join(' · ')}</span>` : "";
-    const qsv = f.qsv_r !== undefined ? `<span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:3px 10px;border-radius:999px;background:${QSC[f.qsv_r]||'#4B5563'};color:#fff;margin-left:6px">QSV-R ${f.qsv_r}/4</span>` : "";
     return `
       <div class="card">
-        <span class="badge" style="background:${color}">${f.status}</span>${score}${vet}${qsv}
+        <span class="badge" style="background:${color}">${f.status}</span>${score}${vet}${badgeQSV(f)}${badgeTipo(f)}${alertaNumero(f)}
         <div class="t">${f.tema}</div>
         <div class="v">${f.valor}</div>
         <div class="meta">
