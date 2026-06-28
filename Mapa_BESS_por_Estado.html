@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Onde instalar baterias no Brasil — por estado</title>
+<style>
+  :root{--navy:#040F2F;--royal:#1C5AAD;--orange:#FC9D27;--gold:#FEC73D;--ink:#081D3A;--body:#3B4658;--muted:#7A8597;--line:#E2E6EC;--card:#F6F8FB;}
+  *{box-sizing:border-box;} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--body);background:#fff;}
+  .wrap{max-width:1180px;margin:0 auto;padding:26px 28px 60px;}
+  .sub{color:var(--royal);font-weight:bold;font-size:12px;letter-spacing:.07em;text-transform:uppercase;}
+  h1{margin:4px 0 8px;font-size:27px;color:var(--ink);} header p{font-size:15px;line-height:1.55;max-width:900px;margin:0;}
+  .top{display:flex;gap:26px;align-items:stretch;flex-wrap:wrap;margin-top:22px;}
+  .mapbox{flex:0 0 500px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;}
+  #map{width:100%;height:auto;}
+  .legend{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.6;}
+  .legend b{color:var(--ink);} .sw{display:inline-block;width:11px;height:11px;border-radius:2px;vertical-align:-1px;margin:0 3px 0 8px;}
+  .kpis{flex:1;min-width:300px;display:flex;flex-direction:column;gap:11px;}
+  .kpi{background:var(--navy);color:#fff;border-radius:10px;padding:13px 16px;}
+  .kpi .b{font-size:25px;font-weight:bold;color:var(--gold);} .kpi .l{font-size:13px;color:#C7D0DE;margin-top:3px;line-height:1.45;}
+  .kpi.lite{background:var(--card);color:var(--body);border:1px solid var(--line);} .kpi.lite .b{color:var(--royal);} .kpi.lite .l{color:var(--body);}
+  h2.sec{font-size:18px;color:var(--navy);border-bottom:2px solid var(--royal);padding-bottom:6px;margin:38px 0 18px;}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+  .st{border:1px solid var(--line);border-radius:11px;overflow:hidden;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+  .st .h{background:var(--navy);color:#fff;padding:11px 16px;display:flex;justify-content:space-between;align-items:center;}
+  .st .h .uf{font-size:20px;font-weight:bold;} .st .h .uf small{font-weight:normal;color:#AEB8C8;font-size:12px;margin-left:8px;}
+  .st .h .n{font-size:12px;color:var(--gold);font-weight:bold;text-align:right;line-height:1.3;}
+  .st .body{padding:14px 16px;}
+  .st .fonte{font-size:11px;color:var(--royal);font-weight:bold;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px;}
+  .st p{font-size:13.5px;line-height:1.55;margin:0 0 11px;}
+  .chips{display:flex;flex-wrap:wrap;gap:5px;}
+  .chip{font-size:11px;background:#EEF3FA;color:#1C3D63;border:1px solid #D6E2F2;border-radius:11px;padding:2px 8px;}
+  .chip.r{background:#FDEEDB;color:#9A5B0C;border-color:#F6D6AD;font-weight:bold;}
+  .chip.k5{background:#E2ECF9;border-color:#c2d6f0;font-weight:bold;}
+  .foot{margin-top:32px;font-size:11px;color:var(--muted);font-style:italic;line-height:1.55;border-top:1px solid var(--line);padding-top:13px;}
+  .tip{position:fixed;pointer-events:none;background:var(--navy);color:#fff;font-size:12px;padding:6px 9px;border-radius:6px;opacity:0;transition:opacity .1s;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.3);}
+  @media(max-width:780px){.grid{grid-template-columns:1fr;}.mapbox{flex:1 1 100%;}}
+</style></head><body><div class="soa-stamp" style="position:fixed;top:9px;right:12px;z-index:99999"><span style="display:inline-block;background:#0b1f4d;color:#FEC73D;font:600 11px/1.1 Arial,Helvetica,sans-serif;letter-spacing:.03em;padding:5px 11px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.35)">● Atualizado em 27/06/2026 às 23h40</span></div>
+<div class="wrap">
+<header>
+  <div class="sub">SOA/SOS · Inteligência de siting · uso interno</div>
+  <h1>Onde instalar baterias no Brasil — por estado</h1>
+  <p>Os barramentos bonificados do Anexo II da Portaria MME 136/2026, cruzados com curtailment e ponto de conexão real. O mapa colore cada estado pela densidade de barramentos elegíveis e marca os pontos já localizados; os cartões trazem o detalhe estado a estado — o que cada um captura, por que e como.</p>
+</header>
+
+<div class="top">
+  <div class="mapbox">
+    <svg id="map" viewBox="0 0 500 540" role="img" aria-label="Mapa do Brasil colorido por número de barramentos bonificados por estado"></svg>
+    <div class="legend">
+      <b>Cor do estado</b> = nº de barramentos bonificados
+      <span class="sw" style="background:#cfe0f4"></span>baixo
+      <span class="sw" style="background:#3f86d6"></span>médio
+      <span class="sw" style="background:#0C447C"></span>alto.<br>
+      <b>Pontos</b> = barramentos localizados (maior = 500 kV). <span class="sw" style="background:#fff;border:2px solid #FC9D27;border-radius:50%"></span>anel laranja = curtailment classificado medido. Passe o mouse.
+    </div>
+  </div>
+  <div class="kpis">
+    <div class="kpi"><div class="b">98</div><div class="l">subestações bonificadas (129 barramentos) — onde a bateria ganha o bônus β (−10% no preço de classificação no leilão)</div></div>
+    <div class="kpi lite"><div class="b">157</div><div class="l">conjuntos renováveis já conectados num barramento bonificado · 52 barramentos ocupados, 46 "vazios" para entrada limpa</div></div>
+    <div class="kpi lite"><div class="b">CE · PI · BA</div><div class="l">as três frentes onde rede fraca e captura de curtailment se encontram — núcleo da tese</div></div>
+  </div>
+</div>
+
+<h2 class="sec">Comentário estado a estado</h2>
+<div class="grid" id="states"></div>
+
+<div class="foot">Barramentos conforme Anexo II da Portaria Normativa MME nº 136/2026 (DOU 03/06/2026). Curtailment (definição canônica D1) e pontos de conexão da base ONS; magnitudes provisórias, para priorização. "Medido" = curtailment classificado disponível na janela analisada. Camada de prova SOA: tecnologia proprietária com três pedidos de patente no INPI; leitura observacional e ex-post. Confidencial · uso interno SOA/SOS.</div>
+</div>
+<div class="tip" id="tip"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script>
+const COUNT={'Bahia':42,'Ceará':39,'Minas Gerais':18,'Piauí':17,'Pernambuco':6,'Alagoas':3,'Paraíba':2,'Rio Grande do Norte':2};
+const REAL={'Russas II':92,'Sobral III':85,'Ibiapina II':66,'Curral Novo do Piauí II':97};
+const P=[
+['Barreiras',-12.15,-45.0,230],['Barreiras II',-12.17,-44.81,500],['Brotas de Macaúbas',-12.31,-42.34,230],['Brumado II',-14.03,-41.53,230],['Campo Formoso',-10.58,-40.61,230],['Futura',-9.66,-40.69,500],['Gentio do Ouro II',-11.43,-42.17,500],['Igaporã II',-14.10,-42.61,230],['Igaporã III',-14.01,-42.67,500],['Irecê',-11.31,-41.81,230],['Juazeiro da Bahia II',-9.53,-40.49,230],['Morro do Chapéu II',-11.59,-41.33,500],['Ourolândia II',-10.87,-41.34,500],['Pindaí II',-14.45,-42.59,230],['Sobradinho',-9.75,-41.01,500],['Senhor do Bonfim II',-10.40,-40.48,230],['Tabocas do Brejo Velho',-12.59,-44.09,230],['Sol do Sertão',-12.45,-42.40,500],
+['Acaraú II',-2.92,-40.11,230],['Alex',-5.27,-37.97,230],['Aquiraz II',-3.98,-38.39,230],['Banabuiú',-5.32,-38.83,230],['Cauípe',-3.79,-38.93,230],['Ibiapina II',-3.91,-41.13,230],['Icó',-6.36,-38.86,230],['Jaguaruana II',-4.94,-37.70,500],['Mossoró IV',-4.78,-37.31,230],['Pecém II',-3.34,-39.26,230],['Quixeré',-5.03,-37.79,230],['Russas II',-4.50,-37.72,230],['Sobral III',-3.01,-39.67,230],
+['Arinos 2',-15.74,-45.97,500],['Janaúba 3',-15.89,-43.48,500],['Pirapora 2',-17.40,-44.92,345],['Várzea da Palma 4',-17.58,-44.64,345],['Jaíba',-15.38,-43.72,500],
+['Coremas',-6.97,-37.99,230],['Santa Luzia II',-6.91,-36.91,500],
+['Bom Nome',-7.87,-38.83,230],['Tacaratu',-9.06,-38.13,230],
+['Chapada I',-7.56,-40.72,230],['Chapada II',-7.48,-40.76,230],['Chapada III',-7.39,-40.68,230],['Curral Novo do Piauí II',-8.04,-40.67,500],['Gilbués II',-10.10,-45.28,500],['Queimada Nova II',-8.87,-41.60,500],['São João do Piauí',-8.26,-42.15,500],['Marangatu',-4.08,-41.27,230],
+['Mossoró II',-4.98,-36.94,230]];
+const svg=d3.select('#map'),tip=document.getElementById('tip');
+const W=500,H=540;
+const cval=d3.scaleSqrt().domain([1,42]).range([0,1]);
+const cramp=d3.interpolateRgb('#cfe0f4','#0C447C');
+function tipmove(html){return e=>{tip.style.opacity=1;tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY+12)+'px';tip.innerHTML=html;};}
+d3.json('https://cdn.jsdelivr.net/npm/datamaps@0.5.10/src/js/data/bra.topo.json').then(topo=>{
+  const feats=topojson.feature(topo,topo.objects.bra).features;
+  const proj=d3.geoMercator().fitExtent([[8,8],[W-8,H-8]],{type:'FeatureCollection',features:feats});
+  const path=d3.geoPath(proj);
+  svg.selectAll('path').data(feats).join('path').attr('d',path)
+    .attr('fill',d=>{const c=COUNT[d.properties.name];return c?cramp(cval(c)):'#EEF1F5';})
+    .attr('stroke','#fff').attr('stroke-width',.7)
+    .on('mousemove',(e,d)=>{const c=COUNT[d.properties.name];tipmove(`<b>${d.properties.name}</b>${c?' · '+c+' barramentos bonificados':' · sem bônus'}`)(e);})
+    .on('mouseleave',()=>tip.style.opacity=0);
+  for(const nm in COUNT){const f=feats.find(x=>x.properties.name===nm);if(!f)continue;const[x,y]=path.centroid(f);
+    const uf={'Bahia':'BA','Ceará':'CE','Minas Gerais':'MG','Piauí':'PI','Pernambuco':'PE','Alagoas':'AL','Paraíba':'PB','Rio Grande do Norte':'RN'}[nm];
+    const dark=cval(COUNT[nm])>.55;
+    svg.append('text').attr('x',x).attr('y',y).attr('text-anchor','middle').attr('font-size',11).attr('font-weight','bold')
+      .attr('fill',dark?'#fff':'#0C447C').attr('pointer-events','none').text(uf);}
+  P.sort((a,b)=>a[3]-b[3]).forEach(p=>{const xy=proj([p[2],p[1]]);if(!xy)return;const r=p[3]>=500?5:p[3]>=345?4:3.2;
+    if(REAL[p[0]]!==undefined)svg.append('circle').attr('cx',xy[0]).attr('cy',xy[1]).attr('r',r+3.5).attr('fill','none').attr('stroke','#FC9D27').attr('stroke-width',2);
+    svg.append('circle').attr('cx',xy[0]).attr('cy',xy[1]).attr('r',r).attr('fill','#081D3A').attr('stroke','#fff').attr('stroke-width',.8).style('cursor','pointer')
+      .on('mousemove',tipmove(`<b>${p[0]}</b> · ${p[3]} kV${REAL[p[0]]!==undefined?'<br>'+REAL[p[0]]+'% do corte por razão energética (medido)':''}`))
+      .on('mouseleave',()=>tip.style.opacity=0);});
+});
+
+const STATES=[
+['CE','Ceará','39 barramentos','Eólica costeira + eólica/solar do Jaguaribe',
+ 'Quatro frentes: o <b>litoral oeste</b> (Sobral, Acaraú, Tianguá) com eólica costeira de curtailment alto e recorrente; o <b>baixo Jaguaribe</b> (Russas, Quixeré, Jaguaruana, Morada Nova, Icó), nó de convergência de geração e rede fraca; a <b>serra de Ibiapina</b>; e <b>Fortaleza/Pecém</b>, suporte de tensão junto à carga e ao porto. Captura medida em Sobral III (85% ENE), Russas II (92%) e Ibiapina II (66%).',
+ [['Jaguaruana II',5],['Milagres',5],['Milagres II',5],['Fortaleza II',5],['Pacatuba',5],['Morada Nova',5],['Russas II',1],['Sobral III',1],['Ibiapina II',1],['Quixeré',0],['Icó',0],['Alex',0],['Crato II',0],['Tauá II',0],['Banabuiú',0],['Cauípe',0],['Aquiraz II',0],['Sobral II',0],['Acaraú II',0],['Acaraú III',0],['Tianguá II',0],['Pecém II',0]]],
+['PI','Piauí','17 barramentos','Solar + eólica do sul',
+ 'O <b>eixo sul/sudeste</b> (Curral Novo do Piauí, São João do Piauí, Queimada Nova, Gilbués, Cristiano Castro) concentra a <b>maior fração não-ressarcível do país</b> — curtailment solar de razão energética. <b>Caso de ouro:</b> Curral Novo do Piauí II (Sol do Piauí) tem 97% do corte por razão energética, num barramento bonificado de 500 kV. Mais a Chapada do Araripe (Chapada I/II/III, Picos, Eliseu Martins).',
+ [['Curral Novo do Piauí II',1],['Queimada Nova II',5],['São João do Piauí',5],['Gilbués II',5],['Cristiano Castro',5],['Chapada I',0],['Chapada II',0],['Chapada III',0],['Picos',0],['Eliseu Martins',0],['Bom Jesus II',0],['Marangatu',0]]],
+['BA','Bahia','42 barramentos','Eólica de serra + solar do São Francisco',
+ 'O estado com <b>mais barramentos bonificados</b>. Duas vocações: a <b>eólica de serra do Espinhaço/Caetité</b> (Igaporã, Pindaí, Brumado, Morro do Chapéu, Ourolândia, Gentio do Ouro) — maior densidade eólica baiana, rede fraca de tensão com muitos inversores, alvo central do MISCR; e a <b>solar/eólica do vale e oeste do São Francisco</b> (Sobradinho, Juazeiro, Bom Jesus da Lapa, Barreiras, Sol do Sertão), com rede 500 kV em expansão e curtailment de escoamento.',
+ [['Sol do Sertão',5],['Gentio do Ouro II',5],['Igaporã III',5],['Sobradinho',5],['Morro do Chapéu II',5],['Ourolândia II',5],['Barreiras II',5],['Futura',5],['Igaporã II',0],['Pindaí II',0],['Brumado II',0],['Juazeiro da Bahia II',0],['Senhor do Bonfim II',0],['Brotas de Macaúbas',0],['Irecê',0],['Campo Formoso',0],['Barreiras',0],['Bom Jesus da Lapa',0]]],
+['MG','Minas Gerais','18 barramentos','Solar do cerrado (submercado SE)',
+ 'Núcleo <b>solar do norte mineiro</b> (Janaúba, Jaíba, Pirapora, Várzea da Palma, Arinos, Três Marias, Montes Claros), em 345/500 kV. O bônus vem da <b>robustez de tensão</b>; a captura de curtailment local ainda a confirmar com dado dedicado — é o cluster onde o valor é proxy, não medido.',
+ [['Arinos 2',5],['Jaíba',5],['Janaúba 3',5],['Montes Claros 2',2],['Várzea da Palma 4',2],['Pirapora 2',2],['Irapê',2],['Três Marias',2],['Buritizeiro 3',2],['Araçuaí 2',0]]],
+['PE','Pernambuco','6 barramentos','Eólica + solar do sertão',
+ 'Eixo do <b>sertão do São Francisco</b> (Bom Nome, Tacaratu, Floresta II) — eólica e solar interior em rede de 230/500 kV, pontos de rede fraca bonificados.',
+ [['Bom Nome II',5],['Bom Nome',0],['Tacaratu',0],['Floresta II',0]]],
+['PB','Paraíba','2 barramentos','Eólica do Seridó',
+ 'O <b>Seridó eólico</b>: Santa Luzia II (500 kV), onde se conectam grandes complexos como Chafariz e Serra do Seridó, e Coremas (230 kV).',
+ [['Santa Luzia II',5],['Coremas',0]]],
+['AL','Alagoas','3 barramentos','Eólica + solar',
+ 'Subestação <b>Zebu</b> (II e III), em 500/230 kV — ponto bonificado de eólica/solar no oeste alagoano.',
+ [['Zebu III',5],['Zebu II',0]]],
+['RN','Rio Grande do Norte','2 barramentos','Eólica costeira (só Mossoró)',
+ 'Atenção: o <b>maior curtailment do RN</b> (cluster de Açu — Rei dos Ventos, Miassaba, Alegria, Assú V) <b>ficou de fora</b> do Anexo II; só <b>Mossoró II/IV</b> foram bonificados. Ali a tese é <b>co-location</b> (captura + prova), sem o bônus do leilão.',
+ [['Mossoró II',0],['Mossoró IV',0]]]
+];
+const cont=document.getElementById('states');
+STATES.forEach(s=>{
+  let chips=s[5].map(c=>`<span class="chip ${c[1]===1?'r':c[1]>=5?'k5':''}">${c[0]}${c[1]>=5?' · 500kV':''}${c[1]===1?' ★ medido':''}</span>`).join('');
+  cont.insertAdjacentHTML('beforeend',`<div class="st"><div class="h"><div class="uf">${s[0]}<small>${s[1]}</small></div><div class="n">${s[2]}</div></div>
+   <div class="body"><div class="fonte">${s[3]}</div><p>${s[4]}</p><div class="chips">${chips}</div></div></div>`);
+});
+</script>
+</body></html>
