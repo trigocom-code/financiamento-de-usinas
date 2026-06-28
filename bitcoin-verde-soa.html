@@ -73,7 +73,7 @@ ul{font-size:14px}li{margin-bottom:4px}
 <p>A mineração é a solução perfeita: com <b>carga flexível</b> e instalação <b>behind-the-meter</b> (na própria usina, antes da rede), o minerador consome exatamente a energia que seria cortada pelo ONS — estabilizando o grid e gerando receita para o gerador.</p>
 
 <h2>3 · Arquitetura "Proof-of-Green-Work" (PoGW)</h2>
-<p>Para que a mineração com energia <i>curtailed</i> seja reconhecida como "Bitcoin Verde" pelo capital institucional, é preciso prova incontestável da origem. A arquitetura <b>Proof-of-Green-Work (PoGW)</b> une a segurança criptográfica do Bitcoin à validação física do protocolo SOA.</p>
+<p>Para que a mineração com energia <i>curtailed</i> seja reconhecida como "Bitcoin Verde" pelo capital institucional, é preciso prova robusta e auditável da origem. A arquitetura <b>Proof-of-Green-Work (PoGW)</b> une a segurança criptográfica do Bitcoin à validação física do protocolo SOA.</p>
 <div class="steps">
 <div class="step"><div class="n">1</div><div class="t">O ONS determina o corte por sobreoferta na usina solar/eólica.</div></div>
 <div class="step"><div class="n">2</div><div class="t">A usina desvia o excedente para o data center de mineração modular no local.</div></div>
@@ -94,8 +94,8 @@ ul{font-size:14px}li{margin-bottom:4px}
 </div>
 <h3>O gêmeo digital termodinâmico (Fonte 3)</h3>
 <p>Não é uma leitura simples de irradiância. O SOA aplica um modelo rigoroso via <b>pvlib</b>: decompõe a irradiância (DISC), ajusta o tipo de rastreador (single-axis), calcula a temperatura da célula (SAPM) e as perdas por sujeira (soiling), gerando uma curva de Fator de Capacidade esperada <b>independente da medição física</b> da usina.</p>
-<h3>Auditor cirúrgico: alta precisão, recall conservador</h3>
-<p>Com satélite gratuito (~50 km), o QSV-3 prioriza <b>precisão</b> sobre recall: de cada 100 anomalias flagradas, <b>mais de 81 são eventos reais de curtailment confirmados pelo ONS</b>. A migração para satélite de alta resolução (NSRDB, ~4 km) elevará o recall para &gt;30%, mantendo o rigor. Quando o SOA emite um certificado, a energia verde é real e inquestionável.</p>
+<h3>Auditor conservador: alta precisão, recall limitado</h3>
+<p>Com satélite gratuito (~50 km), o QSV-3 prioriza <b>precisão</b> sobre recall: de cada 100 anomalias flagradas, <b>mais de 81 são eventos reais de curtailment confirmados pelo ONS</b>. A migração para satélite de alta resolução (NSRDB, ~4 km) elevará o recall para &gt;30%, mantendo o rigor. Quando o SOA emite um certificado, a energia verde é verificável e auditável.</p>
 
 <h2>5 · Valor de mercado, prêmio verde e demanda institucional</h2>
 <p>O "Bitcoin Verde" institucional <b>não é uma moeda separada</b> — 1 BTC continua fungível. O diferencial de sustentabilidade é capturado por um <b>certificado ambiental separado</b>, análogo a um REC. O benchmark global é o <b>Sustainable Bitcoin Certificate (SBC)</b>.</p>
@@ -120,7 +120,7 @@ ul{font-size:14px}li{margin-bottom:4px}
 <ul>
 <li><b>Integração piloto:</b> acoplar a emissão de sHEC/HEC aos projetos de mineração em estruturação no Nordeste.</li>
 <li><b>Aderência regulatória:</b> alinhar a tokenização e atestação às diretrizes da CVM para ativos verdes e aos padrões internacionais (ISO 14064, MiCA).</li>
-<li><b>Apresentação a fundos ESG:</b> usar o rigor da Fonte 3 (gêmeo digital) para demonstrar a inviolabilidade do Green Bitcoin ancorado no SOA.</li>
+<li><b>Apresentação a fundos ESG:</b> usar o rigor da Fonte 3 (gêmeo digital) para demonstrar a robustez do Green Bitcoin ancorado no SOA.</li>
 </ul>
 
 <div class="note"><b>Estado do produto.</b> A plataforma HEC opera em <b>estágio pré-operacional (MVP validado)</b>. Tecnologia com pedidos de patente depositados junto ao INPI. As empresas mencionadas são referências públicas de mercado.</div>
