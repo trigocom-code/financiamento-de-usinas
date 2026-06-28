@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>SOA/SOS · Anatomia da Copa SIN · Jogo 3 — Brasil 3×0 Escócia</title>
+  <meta name="description" content="Reconstrução horária do impacto do terceiro jogo do Brasil na Copa 2026 (Brasil 3×0 Escócia, quarta 24/06 às 19h) sobre o Sistema Interligado Nacional. Carga, PLD, anomalia solar do meio-dia. Padrão SOA/SOS, dado público ONS/CCEE, SQL versionado."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --navy:#0F2B46;--navy2:#163c61;--teal:#0D6E6E;--royal:#1C5AAD;
+      --orange:#E07B00;--orange-lt:#FEF3D7;
+      --grey:#4B5563;--grey2:#6B7280;--line:#E0E2E8;--wash:#F4F6F8;--snow:#F9FAFB;
+      --white:#FFFFFF;--green:#166534;--green-lt:#DCFCE7;
+      --amber-d:#92400E;--amber-lt:#FEF3C7;
+      --red:#B91C1C;--red-lt:#FEE2E2;
+      --r-sm:6px;--r-md:12px;--r-lg:20px;
+      --sh-sm:0 1px 4px rgba(15,43,70,.1);--sh-md:0 4px 16px rgba(15,43,70,.12);
+      --f-serif:"DM Serif Display",Georgia,serif;
+      --f-sans:"Inter",system-ui,Arial,sans-serif;
+      --mw:980px;
+    }
+    body{font-family:var(--f-sans);font-size:15px;line-height:1.6;color:var(--navy);background:var(--white);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--mw);margin:0 auto;padding:clamp(20px,5vw,40px)}
+    img.cc{width:100%;display:block;border-radius:var(--r-md);margin:8px 0 22px;box-shadow:var(--sh-md)}
+    a{color:var(--royal);text-decoration:none}
+    p{font-size:14.5px;margin-bottom:11px;color:var(--navy)}
+    code{background:#F1F5F9;padding:1px 6px;border-radius:4px;font-family:Consolas,Menlo,monospace;font-size:13px}
+
+    .doc-h h1{font-family:var(--f-serif);font-size:clamp(28px,5vw,42px);color:var(--navy);line-height:1.1;margin-bottom:6px;letter-spacing:-.02em}
+    .doc-sub{font-size:13px;color:var(--grey2);margin-bottom:5px}
+    .doc-tag{font-size:14px;font-weight:600;color:var(--royal);margin-bottom:14px}
+
+    .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:var(--white);border-radius:var(--r-lg);padding:28px 32px;margin:14px 0 20px;border-left:6px solid var(--teal);position:relative;overflow:hidden}
+    .hero::after{content:"";position:absolute;top:-50px;right:-50px;width:220px;height:220px;background:radial-gradient(circle,rgba(13,110,110,.25) 0%,transparent 70%);pointer-events:none}
+    .hero-pill{display:inline-flex;align-items:center;gap:7px;background:rgba(13,110,110,.2);border:1px solid rgba(13,110,110,.4);border-radius:999px;font-size:11px;font-weight:700;color:#7de8d8;padding:4px 12px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:14px}
+    .hero-q{font-family:var(--f-serif);font-size:clamp(18px,3vw,24px);line-height:1.35;margin-bottom:12px;color:var(--white)}
+    .hero-q .hl{color:#7de8d8;font-style:italic}
+    .hero-s{font-size:13.5px;color:#c8ddf0;line-height:1.6}
+
+    .lastro{background:var(--orange-lt);border-left:5px solid var(--orange);border-radius:var(--r-md);padding:14px 18px;font-size:14px;color:#5a3a00;margin:0 0 20px}
+    .lastro b{color:var(--orange)}
+
+    .pipeline-alert{background:var(--red-lt);border-left:5px solid var(--red);border-radius:var(--r-md);padding:14px 18px;font-size:14px;color:#5a1a1a;margin:18px 0 24px}
+    .pipeline-alert b{color:var(--red)}
+
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 22px}
+    .stat{border:1.5px solid var(--line);border-radius:var(--r-md);padding:18px 12px;text-align:center;background:var(--snow);transition:box-shadow .15s}
+    .stat:hover{box-shadow:var(--sh-md)}
+    .stat .n{font-family:var(--f-serif);font-size:30px;color:var(--royal);display:block;line-height:1.1;margin-bottom:4px}
+    .stat .l{font-size:11.5px;color:var(--grey);line-height:1.35}
+    .stat.alert .n{color:var(--orange)}
+    .stat.bad .n{color:var(--red)}
+
+    h2.sec{font-family:var(--f-serif);font-size:24px;color:var(--navy);border-bottom:2px solid var(--line);padding-bottom:8px;margin:34px 0 6px}
+    .sec-sub{color:var(--grey);font-size:13.5px;margin:0 0 16px}
+
+    table.t{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;margin:8px 0 18px}
+    table.t th,table.t td{padding:8px 10px;border:1px solid var(--line);text-align:left;vertical-align:top}
+    table.t th{background:var(--wash);color:var(--navy);font-weight:700;font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+    table.t td.n{text-align:right;font-variant-numeric:tabular-nums}
+    table.t tr.jogo td{background:#FFFAEB;font-weight:600}
+    table.t tr.jogo td.n{color:var(--orange)}
+
+    .note{background:var(--snow);border-left:4px solid var(--royal);border-radius:var(--r-sm);padding:12px 16px;font-size:13.5px;color:var(--grey);margin:14px 0}
+    .note b{color:var(--navy)}
+    .note.warn{border-left-color:var(--orange);background:var(--orange-lt);color:#5a3a00}
+    .note.warn b{color:var(--orange)}
+
+    .three-q{background:#FFFAEB;border:2px solid var(--orange);border-radius:var(--r-lg);padding:24px 28px;margin:24px 0}
+    .three-q h3{font-family:var(--f-serif);font-size:22px;color:var(--navy);margin:0 0 6px}
+    .three-q .pre{font-size:13px;color:#5a3a00;margin-bottom:18px;font-weight:500}
+    .qitem{margin-bottom:18px}
+    .qitem:last-child{margin-bottom:0}
+    .qitem .num{display:inline-block;background:var(--orange);color:#fff;font-family:var(--f-serif);width:34px;height:34px;border-radius:50%;line-height:34px;text-align:center;font-size:18px;margin-right:10px;vertical-align:top}
+    .qitem .body{display:inline-block;width:calc(100% - 50px);font-size:14px;color:var(--navy);line-height:1.55}
+    .qitem .body b{color:var(--orange)}
+
+    .cta{background:var(--navy);color:#fff;border-radius:12px;padding:22px 24px;margin:24px 0 16px;text-align:center}
+    .cta .ctah{font-size:20px;font-weight:bold;color:#FEC73D;margin-bottom:4px;font-family:var(--f-serif)}
+    .cta .ctad{font-size:13.5px;margin-bottom:14px;color:#dbe4ee}
+    .cta .ctabtns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .cta .ctabtn{display:inline-block;background:var(--orange);color:#08203a;font-weight:bold;text-decoration:none;padding:11px 22px;border-radius:8px;font-size:14px}
+    .cta .ctabtn.alt{background:#25D366;color:#fff}
+
+    .live-stamp{position:fixed;top:9px;right:12px;z-index:99999;display:inline-block;background:#0b1f4d;color:#FEC73D;font:600 11px/1.1 Arial,Helvetica,sans-serif;letter-spacing:.03em;padding:5px 11px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+
+    .foot{border-top:3px solid var(--navy);margin-top:28px;padding-top:14px;font-size:12px;color:var(--grey2);line-height:1.7}
+    .foot b{color:var(--navy)}
+
+    @media(max-width:700px){
+      .stats{grid-template-columns:1fr 1fr}
+      table.t{font-size:12px}
+      table.t th,table.t td{padding:6px 7px}
+    }
+    @media(max-width:460px){.stats{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="live-stamp">● Atualizado em 28/06/2026 às 14h00 · v1.1</div>
+
+<div class="wrap">
+
+<img class="cc" src="https://trigocom-code.github.io/financiamento-de-usinas/Solar_One-Logo_capa.png" alt="SOA/SOS — Anatomia da Copa SIN"/>
+
+<div class="doc-h" style="margin-bottom:8px">
+  <h1>Anatomia da Copa SIN — Jogo 3</h1>
+  <div class="doc-sub">SOA/SOS · Sustainability Operating System · Soluções em Energia</div>
+  <div class="doc-tag">Brasil 3×0 Escócia · quarta 24/06/2026 · 19h05–20h55 BRT</div>
+</div>
+
+<div class="hero">
+  <span class="hero-pill">● Reconstrução horária · dado público ONS / CCEE</span>
+  <p class="hero-q">Três jogos do Brasil, três janelas operativas distintas — sábado tarde, sexta noturna, quarta noturna. <span class="hl">Mesma assinatura quantitativa na carga.</span> A torcida brasileira é, há três jogos seguidos, a maior resposta de demanda do mundo.</p>
+  <p class="hero-s">Jogo 1 (Marrocos): −11,75 GW · Jogo 2 (Haiti): −11,90 GW · <b>Jogo 3 (Escócia): −11,38 GW</b>. Magnitude variando apenas 4% entre 3 jogos com horário, dia da semana e contexto operativo diferentes. Um jogo é anedota. Dois é coincidência. <b>Três é estrutura.</b></p>
+</div>
+
+<div class="lastro">
+  <b>Lastro de dados.</b> ONS Dados Abertos (`curva_carga_horaria` para carga · `geracao_por_usina` e `constrainedoff_*` para fonte e curtailment), CCEE (`preco_ccee_horario` para PLD). Granularidade horária. SQL versionado em `Copa_SIN_2026/_jogo3_*.sql`. Versão deste relatório: v1.1 (28/06/2026).
+</div>
+
+<div class="pipeline-alert">
+  <b>⚠ Reconstrução parcial (v1.1).</b> O pipeline ONS Dados Abertos para geração e curtailment está parado em 21/06 desde 22/06 às ~16h UTC (6 dias). Por isso a decomposição por fonte (quem absorveu os 11 GW que sumiram) e o curtailment renovável durante a partida não estão fechados nesta versão. Carga (Seção 1) e PLD (Seção 4) chegaram normalmente e estão cravados.
+</div>
+
+<h2 class="sec">Indicadores-âncora do dia (24/06)</h2>
+
+<div class="stats">
+  <div class="stat"><span class="n">95,08</span><span class="l">Carga 18h (GW)<br/>pico pré-jogo</span></div>
+  <div class="stat alert"><span class="n">−11,38</span><span class="l">Queda 18h → 19h (GW)<br/>1ª hora do jogo</span></div>
+  <div class="stat bad"><span class="n">−14,97</span><span class="l">Queda 18h → 20h (GW)<br/>magnitude completa</span></div>
+  <div class="stat"><span class="n">232</span><span class="l">PLD 19h–21h (R$/MWh)<br/>vale do jogo</span></div>
+</div>
+
+<h2 class="sec">1. A queda em três regimes</h2>
+<p class="sec-sub">Comparativo entre três quartas-feiras de junho/2026 (controles 10/06 e 17/06 vs tratamento 24/06).</p>
+
+<table class="t">
+  <thead>
+    <tr>
+      <th>Hora</th>
+      <th class="n">10/06 (controle 1)</th>
+      <th class="n">17/06 (controle 2)</th>
+      <th class="n">24/06 (Brasil × Escócia)</th>
+      <th>Sinal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>17h</td><td class="n">89,64</td><td class="n">89,00</td><td class="n">89,96</td><td>rampa pré-jogo</td></tr>
+    <tr><td>18h</td><td class="n">92,96</td><td class="n">94,28</td><td class="n">95,08</td><td>pico pré-jogo</td></tr>
+    <tr class="jogo"><td>19h</td><td class="n">91,71</td><td class="n">93,62</td><td class="n">83,70</td><td>1º tempo · vale</td></tr>
+    <tr class="jogo"><td>20h</td><td class="n">89,71</td><td class="n">91,72</td><td class="n">80,11</td><td>2º tempo · vale</td></tr>
+    <tr><td>21h</td><td class="n">87,56</td><td class="n">88,90</td><td class="n">83,80</td><td>rampa pós-apito</td></tr>
+    <tr><td>22h</td><td class="n">83,38</td><td class="n">84,15</td><td class="n">81,36</td><td>recomposição</td></tr>
+  </tbody>
+</table>
+
+<table class="t">
+  <thead>
+    <tr><th>Métrica</th><th class="n">10/06</th><th class="n">17/06</th><th class="n">24/06 (jogo)</th><th>Diferença</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Queda 18h → 19h (GW)</td><td class="n">−1,25</td><td class="n">−0,66</td><td class="n"><b>−11,38</b></td><td><b>~10× maior</b></td></tr>
+    <tr><td>Queda 18h → 20h (GW)</td><td class="n">−3,25</td><td class="n">−2,56</td><td class="n"><b>−14,97</b></td><td><b>~5× maior</b></td></tr>
+  </tbody>
+</table>
+
+<p><b>Leitura:</b> o vale durante o jogo é da ordem de −10 GW <i>abaixo</i> do que seria a carga esperada para uma quarta às 19h de junho. A queda 18h→19h é a mais íngreme das três quartas — e na ordem de grandeza dos dois jogos anteriores (Marrocos −11,75 GW · Haiti −11,90 GW). <b>Três jogos, três quedas próximas de 12 GW · estrutura confirmada.</b></p>
+
+<h2 class="sec">2. Decomposição por fonte</h2>
+<p class="sec-sub">Quem absorveu os 11 GW que sumiram do consumo durante o jogo.</p>
+<div class="note warn">
+  <b>⏸ Aguardando destrave do pipeline ONS.</b> Em 28/06/2026, `geracao_por_usina` está parado em 21/06 23h (último pipeline rodou em 22/06 16h22 UTC). Sem dados de 24/06 para hidráulica, térmica, eólica e solar. Esta seção será fechada na v1.2 quando o CTO destravar a ingestão.
+</div>
+<p><b>Hipótese (cravada nos jogos 1 e 2):</b> a hidráulica absorve quase tudo (modulação para baixo de ~12 GW), a térmica permanece rígida (~10 GW, inflexibilidade declarada), a eólica continua sua rampa noturna natural, a solar já está fora da curva no horário do jogo. <b>Verificar nos dados se padrão se repete em 24/06.</b></p>
+
+<h2 class="sec">3. Curtailment renovável durante o jogo</h2>
+<p class="sec-sub">A outra metade da história: quanto cada fonte foi <i>cortada</i> — energia que não foi gerada porque a rede não absorveu.</p>
+<div class="note warn">
+  <b>⏸ Aguardando destrave do pipeline ONS.</b> `constrainedoff_eolica` e `constrainedoff_fotovoltaica` parados em 21/06 23h30 (último pipeline rodou em 22/06 ~16h28 UTC). Sem dados de 24/06 para curtailment.
+</div>
+<p><b>Curtailment dos controles (já cravado, base de comparação):</b></p>
+<table class="t">
+  <thead>
+    <tr><th>Hora</th><th class="n">10/06 (controle)</th><th class="n">17/06 (controle)</th><th class="n">24/06 (jogo)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>18h</td><td class="n">6,107 GW</td><td class="n">4,984 GW</td><td class="n">⏸</td></tr>
+    <tr class="jogo"><td>19h</td><td class="n">7,546 GW</td><td class="n">7,077 GW</td><td class="n">⏸</td></tr>
+    <tr class="jogo"><td>20h</td><td class="n">9,190 GW</td><td class="n">8,370 GW</td><td class="n">⏸</td></tr>
+    <tr><td>21h</td><td class="n">10,640 GW</td><td class="n">9,445 GW</td><td class="n">⏸</td></tr>
+    <tr><td>22h</td><td class="n">11,188 GW</td><td class="n">10,847 GW</td><td class="n">⏸</td></tr>
+  </tbody>
+</table>
+<p><b>Hipótese:</b> no jogo 2 (Haiti, sexta noturna), 41% do vento disponível foi cortado durante a partida. Para 24/06 (quarta noturna, carga base maior), o efeito pode ser mais atenuado — mas a janela é estruturalmente similar.</p>
+
+<h2 class="sec">4. O preço do jogo — PLD horário</h2>
+<p class="sec-sub">Carga e geração medem o que aconteceu fisicamente. PLD horário mede o que valeu, em R$/MWh, no momento exato.</p>
+
+<table class="t">
+  <thead>
+    <tr>
+      <th>Hora</th>
+      <th class="n">10/06 SE/CO</th>
+      <th class="n">17/06 SE/CO</th>
+      <th class="n">24/06 SE/CO</th>
+      <th>Sinal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>17h</td><td class="n">244,09</td><td class="n">229,71</td><td class="n">249,20</td><td>pico pré-jogo</td></tr>
+    <tr><td>18h</td><td class="n">247,05</td><td class="n">258,08</td><td class="n">246,95</td><td>pico esperado</td></tr>
+    <tr class="jogo"><td>19h</td><td class="n">241,77</td><td class="n">226,51</td><td class="n">232,67</td><td>1º tempo · −R$ 14,28 vs 18h</td></tr>
+    <tr class="jogo"><td>20h</td><td class="n">240,84</td><td class="n">219,58</td><td class="n">231,31</td><td>vale · −R$ 15,64 vs 18h</td></tr>
+    <tr><td>21h</td><td class="n">239,25</td><td class="n">214,67</td><td class="n">232,83</td><td>recomposição</td></tr>
+    <tr><td>22h</td><td class="n">237,51</td><td class="n">211,95</td><td class="n">231,85</td><td>patamar noturno</td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <b>Nota metodológica.</b> O controle 17/06 também teve queda forte do PLD entre 18h e 20h (−R$ 38/MWh). O efeito do jogo no PLD do dia 24/06 (queda de R$ 14–16/MWh) é da ordem de grandeza do que acontece em quartas "normais" — <b>não da ordem vista no jogo 1</b> (que recuou ~50% sobre o pico noturno do sábado). Em quartas-feiras, a curva de PLD já comporta variação significativa entre tarde e noite — o jogo aprofunda mas não cria uma assinatura única no PLD.
+</div>
+
+<p><b>Valor monetário do vácuo:</b> os 14,97 GW que sumiram da carga durante 2h equivalem a 29,94 GWh de energia, ao PLD médio de R$ 231,99/MWh = <b>~R$ 6,95 milhões</b> de valor de energia deslocado pelo jogo (proxy ao PLD da hora, não é receita líquida perdida).</p>
+
+<h2 class="sec">4.1. Anomalia separada — PLD desabou ao piso CCEE entre 10h e 13h</h2>
+<p class="sec-sub">Achado paralelo (independente do jogo, que foi à noite).</p>
+
+<table class="t">
+  <thead>
+    <tr><th>Hora</th><th class="n">SE/CO</th><th class="n">NE</th><th class="n">S</th><th class="n">N</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>08h</td><td class="n">225,12</td><td class="n" style="color:var(--red);font-weight:700">57,31</td><td class="n">225,13</td><td class="n">159,17</td></tr>
+    <tr><td>09h</td><td class="n">215,98</td><td class="n" style="color:var(--red);font-weight:700">57,31</td><td class="n">217,83</td><td class="n">152,71</td></tr>
+    <tr><td>10h</td><td class="n" style="color:var(--red);font-weight:700">57,31</td><td class="n" style="color:var(--red);font-weight:700">57,31</td><td class="n">105,88</td><td class="n" style="color:var(--red);font-weight:700">57,31</td></tr>
+    <tr><td>11h</td><td class="n" style="color:var(--red);font-weight:700">57,31</td><td class="n" style="color:var(--red);font-weight:700">57,31</td><td class="n" style="color:var(--red);font-weight:700">57,31</td><td class="n" style="color:var(--red);font-weight:700">57,31</td></tr>
+    <tr><td>12h</td><td class="n" style="color:var(--red);font-weight:700">57,31</td><td class="n" style="color:var(--red);font-weight:700">57,31</td><td class="n" style="color:var(--red);font-weight:700">57,31</td><td class="n" style="color:var(--red);font-weight:700">57,31</td></tr>
+    <tr><td>13h</td><td class="n">211,23</td><td class="n">211,22</td><td class="n">211,24</td><td class="n">211,23</td></tr>
+  </tbody>
+</table>
+
+<p><b>Leitura sistêmica:</b> sobreoferta de solar centralizada na janela do almoço de uma quarta-feira saturou o sistema. R$ 57,31/MWh é o <b>piso regulamentar CCEE</b> em 2026 — quando o PLD horário toca esse valor, é saturação por sobreoferta. <b>Esse padrão é independente do jogo</b> (que foi à noite), mas reforça a tese central da SOA/SOS — a granularidade horária do PLD revela episódios curtos de excedente renovável que a granularidade diária esconde, e cuja contrapartida é curtailment ativo no NE.</p>
+
+<h2 class="sec">5. O terceiro padrão que confirma a estrutura</h2>
+
+<table class="t">
+  <thead>
+    <tr><th>Jogo</th><th>Adversário</th><th>Dia / Hora</th><th class="n">Queda na janela</th><th class="n">PLD 19h–21h</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Marrocos</td><td>sáb 13/06, 18h</td><td class="n">−11,75 GW</td><td class="n">−50% sobre pico</td></tr>
+    <tr><td>2</td><td>Haiti</td><td>sex 19/06, 21h30</td><td class="n">−11,90 GW</td><td>—</td></tr>
+    <tr class="jogo"><td><b>3</b></td><td><b>Escócia</b></td><td><b>qua 24/06, 19h</b></td><td class="n"><b>−11,38 GW</b></td><td class="n">−6,3% sobre pico</td></tr>
+  </tbody>
+</table>
+
+<p>A assinatura na <b>carga</b> é robusta nos 3 jogos (variação de apenas 4% na magnitude). A assinatura no <b>PLD</b> é mais sutil em quartas-feiras do que em sábados — o que faz sentido fisicamente, dado que a curva de PLD em dia útil já é mais "tensa" entre tarde e noite.</p>
+
+<div class="three-q">
+  <h3>Três perguntas a quem desenha mercado</h3>
+  <p class="pre">Formuladas após observar a assinatura repetida em três jogos consecutivos.</p>
+
+  <div class="qitem">
+    <span class="num">1</span>
+    <div class="body"><b>A torcida brasileira é, há três jogos seguidos, a maior resposta de demanda do mundo</b> — cerca de 11 GW em janela inferior a 15 minutos. Nenhum instrumento de mercado a remunera. Quem desenha mercado tem interesse em criar essa categoria, dado o exemplo empírico repetido?</div>
+  </div>
+
+  <div class="qitem">
+    <span class="num">2</span>
+    <div class="body"><b>Em 24/06, durante o meio do dia, o PLD desabou ao piso CCEE (R$ 57,31/MWh) em três submercados simultaneamente</b>, por sobreoferta solar. O mesmo dia tem o jogo à noite, com queda de 11 GW na demanda. O mercado horário tem 24 horas em que a oferta e a demanda se desencontram de formas previsíveis — pela manhã, sobra solar; à noite, falta demanda. Ainda assim, <b>a maior parte dos contratos brasileiros é remunerada em base anual ou mensal</b>. Faz sentido?</div>
+  </div>
+
+  <div class="qitem">
+    <span class="num">3</span>
+    <div class="body"><b>A queda de demanda do jogo derrubou o PLD em R$ 14–15/MWh no SE/CO durante a janela do jogo.</b> Sobre os 30 GWh "deslocados" pela queda de carga, isso representa um vácuo de aproximadamente <b>R$ 7 milhões em valor de energia</b> numa janela de 2 horas. O autoprodutor industrial que poderia consumir nesse vácuo (e poupar combustível próprio) hoje <b>vê o sinal de preço com 24h de atraso</b>. Quem desenha mercado pretende encurtar esse delay?</div>
+  </div>
+</div>
+
+<h2 class="sec">Próxima versão (v1.2)</h2>
+<p class="sec-sub">O que falta para fechar e quando esperamos.</p>
+<ul style="padding-left:22px;font-size:14px;color:var(--navy)">
+  <li style="margin-bottom:6px"><b>Destrave do pipeline ONS</b> (responsável CTO Otávio) — bloqueio atual desde 22/06.</li>
+  <li style="margin-bottom:6px"><b>Re-rodar</b> `_jogo3_consolidado_v3.sql` com pipeline atualizado.</li>
+  <li style="margin-bottom:6px"><b>Fechar Seções 2 e 3</b> (decomposição por fonte e curtailment) — espera-se cravar quem absorveu os 11 GW (provavelmente hidráulica, conforme jogos 1 e 2) e quanto de vento foi cortado durante a partida.</li>
+  <li style="margin-bottom:6px"><b>Próximo jogo</b>: Brasil × Japão · segunda 29/06/2026 · 14h (oitavas). <b>Primeiro jogo do Brasil em horário diurno e dia útil</b> — solar ativa durante a partida pode inverter o padrão observado nos 3 jogos noturnos.</li>
+</ul>
+
+<div class="cta">
+  <div class="ctah">Discutir este material</div>
+  <div class="ctad">Reconstrução horária do SIN, padrão SOA/SOS, dado público auditável. Vamos conversar sobre flexibilidade, mercado horário e o que isso significa para o seu ativo ou operação.</div>
+  <div class="ctabtns">
+    <a class="ctabtn" href="mailto:limonta@solaroneaccount.com?subject=Anatomia%20Copa%20SIN%20Jogo%203%20%E2%80%94%20Brasil%20x%20Esc%C3%B3cia&body=Ol%C3%A1%2C%20vi%20a%20Anatomia%20da%20Copa%20SIN%20do%20jogo%20Brasil%20x%20Esc%C3%B3cia%20%2824%2F06%29%20e%20gostaria%20de%20conversar%20sobre%3A">Falar por e-mail</a>
+    <a class="ctabtn alt" href="https://wa.me/5544999720477?text=Ol%C3%A1%2C%20vi%20a%20Anatomia%20da%20Copa%20SIN%20do%20jogo%20Brasil%20x%20Esc%C3%B3cia%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</div>
+
+<div class="note">
+  <b>Sobre este material.</b> Leitura ex-post sobre rastro público da operação. Fato, não interpretação. A SOA/SOS reconstrói o evento com método declarado e SQL versionado — não antecipa interpretação regulatória nem propõe pleito. Granularidade horária declarada; não tem ambição de substituir o painel oficial do ONS que opera com SCADA proprietário.
+</div>
+
+<div class="foot">
+  <b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · Sustainability Operating System · Anatomia da Copa SIN · Jogo 3 · v1.1<br/>
+  Rua Pais Leme, 215 · Conj. 1713 · Pinheiros · São Paulo / SP ·
+  <a href="mailto:limonta@solaroneaccount.com" style="color:#1C5AAD;">limonta@solaroneaccount.com</a> ·
+  <a href="mailto:pedro@solaroneaccount.com" style="color:#1C5AAD;">pedro@solaroneaccount.com</a> ·
+  <a href="https://wa.me/5544999720477" target="_blank" rel="noopener" style="color:#25D366;">WhatsApp</a><br/>
+  Três pedidos de patente depositados no INPI: BR 10 2026 003913-6 · BR 10 2026 010655-0 · BR 10 2026 011466-9<br/>
+  Lastro: ONS (`curva_carga_horaria`, `geracao_por_usina`, `constrainedoff_*`), CCEE (`preco_ccee_horario`). Documento institucional · circulação interna.
+</div>
+
+</div>
+</body>
+</html>
