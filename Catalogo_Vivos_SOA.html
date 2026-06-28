@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>SOA/SOS · Catálogo de Materiais Vivos (regenerados diariamente)</title>
+  <meta name="description" content="Materiais SOA/SOS regenerados diariamente pelo monitor regulatório. Cada cartão mostra a hora exata da última regeneração e um selo de frescor — verde se atualizado nas últimas 24h, amarelo se 1-7 dias, vermelho se está defasado. Acompanhe a evolução do mercado elétrico sem passar vergonha."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --navy:#0F2B46;--navy2:#163c61;--teal:#0D6E6E;--royal:#1C5AAD;
+      --orange:#E07B00;--orange-lt:#FEF3D7;
+      --grey:#4B5563;--grey2:#6B7280;--line:#E0E2E8;--wash:#F4F6F8;--snow:#F9FAFB;
+      --white:#FFFFFF;--green:#166534;--green-lt:#DCFCE7;
+      --amber-d:#92400E;--amber-lt:#FEF3C7;
+      --red:#B91C1C;--red-lt:#FEE2E2;
+      --r-sm:6px;--r-md:12px;--r-lg:20px;
+      --sh-sm:0 1px 4px rgba(15,43,70,.1);--sh-md:0 4px 16px rgba(15,43,70,.12);
+      --f-serif:"DM Serif Display",Georgia,serif;
+      --f-sans:"Inter",system-ui,Arial,sans-serif;
+      --mw:1100px;
+    }
+    body{font-family:var(--f-sans);font-size:15px;line-height:1.6;color:var(--navy);background:var(--white);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--mw);margin:0 auto;padding:clamp(20px,5vw,40px)}
+    img.cc{width:100%;display:block;border-radius:var(--r-md);margin:8px 0 22px;box-shadow:var(--sh-md)}
+    a{color:var(--royal);text-decoration:none}
+    p{font-size:14.5px;margin-bottom:11px;color:var(--navy)}
+
+    .doc-h h1{font-family:var(--f-serif);font-size:clamp(28px,5vw,40px);color:var(--navy);line-height:1.1;margin-bottom:6px;letter-spacing:-.02em}
+    .doc-sub{font-size:13px;color:var(--grey2);margin-bottom:5px}
+    .doc-tag{font-size:14px;font-weight:600;color:var(--royal);margin-bottom:14px}
+
+    .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:var(--white);border-radius:var(--r-lg);padding:28px 32px;margin:14px 0 20px;border-left:6px solid var(--teal);position:relative;overflow:hidden}
+    .hero::after{content:"";position:absolute;top:-50px;right:-50px;width:220px;height:220px;background:radial-gradient(circle,rgba(13,110,110,.25) 0%,transparent 70%);pointer-events:none}
+    .hero-pill{display:inline-flex;align-items:center;gap:7px;background:rgba(13,110,110,.2);border:1px solid rgba(13,110,110,.4);border-radius:999px;font-size:11px;font-weight:700;color:#7de8d8;padding:4px 12px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:14px}
+    .hero-q{font-family:var(--f-serif);font-size:clamp(17px,3vw,23px);line-height:1.35;margin-bottom:12px;color:var(--white)}
+    .hero-q .hl{color:#7de8d8;font-style:italic}
+    .hero-s{font-size:13.5px;color:#c8ddf0;line-height:1.6}
+
+    .lastro{background:var(--orange-lt);border-left:5px solid var(--orange);border-radius:var(--r-md);padding:14px 18px;font-size:14px;color:#5a3a00;margin:0 0 20px}
+    .lastro b{color:var(--orange)}
+
+    .legend{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 18px;font-size:12.5px;color:var(--grey)}
+    .legend .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+    .dot.g{background:var(--green)}
+    .dot.a{background:#D97706}
+    .dot.r{background:var(--red)}
+
+    h2.sec{font-family:var(--f-serif);font-size:22px;color:var(--navy);border-bottom:2px solid var(--line);padding-bottom:8px;margin:34px 0 6px}
+    .sec-sub{color:var(--grey);font-size:13.5px;margin:0 0 16px}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+    .card{background:var(--white);border:1.5px solid var(--line);border-radius:var(--r-md);padding:16px 18px 14px;display:flex;flex-direction:column;transition:.15s;box-shadow:var(--sh-sm);position:relative}
+    .card:hover{border-color:var(--royal);box-shadow:var(--sh-md);transform:translateY(-2px)}
+    .card .top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:8px}
+    .card .vetor{font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--royal);background:#EEF2FA;padding:3px 8px;border-radius:999px;text-transform:uppercase}
+    .card .fresh{font-size:10.5px;font-weight:700;letter-spacing:.04em;padding:3px 9px;border-radius:999px;text-transform:uppercase;display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+    .fresh.g{background:var(--green-lt);color:var(--green);border:1px solid #BBF7D0}
+    .fresh.a{background:var(--amber-lt);color:var(--amber-d);border:1px solid #FCD34D}
+    .fresh.r{background:var(--red-lt);color:var(--red);border:1px solid #FCA5A5}
+    .fresh.loading{background:#E5E7EB;color:#6B7280;border:1px solid #D1D5DB}
+    .card h3{font-family:var(--f-sans);font-size:16px;font-weight:700;color:var(--navy);line-height:1.25;margin-bottom:5px}
+    .card .desc{font-size:13px;color:var(--grey);line-height:1.5;margin:0 0 12px;flex:1}
+    .card .meta{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px dashed var(--line);padding-top:10px;margin-top:auto}
+    .card .ts{font-size:11.5px;color:var(--grey2);line-height:1.3}
+    .card .ts b{color:var(--navy);font-weight:600}
+    .card .open{background:var(--royal);color:#fff;font-size:12px;font-weight:700;padding:7px 12px;border-radius:6px;text-decoration:none;flex-shrink:0}
+    .card .open:hover{background:#16498d}
+    .card.hub{background:var(--navy);color:#fff;border-color:var(--navy)}
+    .card.hub h3,.card.hub .desc{color:#fff}
+    .card.hub .desc{color:#cbd5e1}
+    .card.hub .ts b{color:#FEC73D}
+    .card.hub .ts{color:#94a3b8}
+    .card.hub .vetor{background:#FEC73D;color:#08203a}
+    .card.dyn{background:linear-gradient(135deg,#FFF8E6 0%,#FEF3D7 100%);border-color:var(--orange)}
+    .card.dyn .vetor{background:var(--orange);color:#fff}
+
+    .live-stamp{position:fixed;top:9px;right:12px;z-index:99999;display:inline-block;background:#0b1f4d;color:#FEC73D;font:600 11px/1.1 Arial,Helvetica,sans-serif;letter-spacing:.03em;padding:5px 11px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+
+    .note{background:var(--snow);border-left:4px solid var(--royal);border-radius:var(--r-sm);padding:12px 16px;font-size:13.5px;color:var(--grey);margin:16px 0}
+    .note b{color:var(--navy)}
+    .note.warn{border-left-color:var(--orange);background:var(--orange-lt);color:#5a3a00}
+    .note.warn b{color:var(--orange)}
+
+    .foot{border-top:3px solid var(--navy);margin-top:28px;padding-top:14px;font-size:12px;color:var(--grey2);line-height:1.7}
+    .foot b{color:var(--navy)}
+
+    @media(max-width:780px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="live-stamp" id="liveStamp">● Carregando…</div>
+
+<div class="wrap">
+
+<img class="cc" src="https://trigocom-code.github.io/financiamento-de-usinas/Solar_One-Logo_capa.png" alt="SOA/SOS — Catálogo de Materiais Vivos"/>
+
+<div class="doc-h" style="margin-bottom:8px">
+  <h1>Catálogo de Materiais Vivos</h1>
+  <div class="doc-sub">SOA/SOS · Sustainability Operating System · Soluções em Energia</div>
+  <div class="doc-tag">Regenerados diariamente · selo de frescor por cartão · sem passar vergonha</div>
+</div>
+
+<div class="hero">
+  <span class="hero-pill">● Monitor regulatório SOA · regeneração programada</span>
+  <p class="hero-q">O mercado elétrico se <span class="hl">auto-regula diariamente</span>. Estes materiais acompanham a evolução: cada cartão consulta o repositório no carregamento e mostra <span class="hl">a hora exata da última regeneração</span> e um <span class="hl">selo de frescor</span>.</p>
+  <p class="hero-s">Verde = atualizado nas últimas 24h, pode compartilhar à vontade. Amarelo = 1 a 7 dias, ainda confiável mas confira antes de cravar dado. Vermelho = mais de 7 dias, NÃO compartilhe — material defasado, peça regeneração ao monitor.</p>
+</div>
+
+<div class="lastro">
+  <b>Como o frescor é medido.</b> Cada cartão faz uma consulta à API pública do GitHub (`api.github.com/repos/.../commits?path=…`) no momento em que você abre este catálogo. O timestamp exibido é o do último commit que tocou aquele arquivo no repositório — quando o monitor regulatório SOA (digest diário + regeneração agendada) o reescreveu pela última vez. O carimbo no canto superior direito mostra a hora EM QUE VOCÊ está vendo este catálogo.
+</div>
+
+<div class="legend">
+  <span><span class="dot g"></span>Atualizado nas últimas 24h</span>
+  <span><span class="dot a"></span>1 a 7 dias</span>
+  <span><span class="dot r"></span>Mais de 7 dias — atenção</span>
+</div>
+
+<h2 class="sec">Hub</h2>
+<p class="sec-sub">Entrada para os 9 folders comerciais por vetor.</p>
+<div class="grid">
+  <div class="card hub" data-file="index.html">
+    <div class="top">
+      <span class="vetor">HUB</span>
+      <span class="fresh loading" data-fresh></span>
+    </div>
+    <h3>Folder Vivo — Hub dos Vetores</h3>
+    <div class="desc">Página de entrada que reúne e linka os 9 folders vivos comerciais por vetor. Use ao apresentar o conjunto.</div>
+    <div class="meta">
+      <span class="ts" data-ts>—</span>
+      <a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/index.html">Abrir</a>
+    </div>
+  </div>
+</div>
+
+<h2 class="sec">9 Folders comerciais (vivos · monitor regenera)</h2>
+<p class="sec-sub">Cada vetor entrega uma tese auditável. O monitor regenera estes 9 arquivos automaticamente quando o quadro regulatório do tema muda.</p>
+
+<div class="grid">
+
+  <div class="card" data-file="baterias-curtailment.html">
+    <div class="top"><span class="vetor">V3 · V4 · Armazenamento</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Baterias × Curtailment</h3>
+    <div class="desc">BESS co-localizado para capturar energia cortada · arbitragem · LRCAP × REN 1.071 · dimensionamento · modelo financeiro (CAPEX/DSCR/TIR/break-even).</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/baterias-curtailment.html">Abrir</a></div>
+  </div>
+
+  <div class="card" data-file="contencioso-curtailment.html">
+    <div class="top"><span class="vetor">V4 · Contencioso</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Contencioso de Curtailment</h3>
+    <div class="desc">Evidência horária auditável de geração frustrada para disputa e ressarcimento sob a Lei 15.269/2025.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/contencioso-curtailment.html">Abrir</a></div>
+  </div>
+
+  <div class="card" data-file="prova-horaria-datacenters.html">
+    <div class="top"><span class="vetor">V5 · Data Centers</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Prova Horária — Data Centers</h3>
+    <div class="desc">Matching 24/7 de consumo × renovável para Scope 2, no contexto do REDATA. Para hyperscalers, H2V e grandes cargas.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/prova-horaria-datacenters.html">Abrir</a></div>
+  </div>
+
+  <div class="card" data-file="certificacao-esg-auditavel.html">
+    <div class="top"><span class="vetor">V5 · V8 · ESG</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Certificação ESG Auditável</h3>
+    <div class="desc">Lastro horário para relato CVM/IFRS S2/CBAM/GHG Scope 2. Evidence Pack ISAE 3000 / ISO 14064.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/certificacao-esg-auditavel.html">Abrir</a></div>
+  </div>
+
+  <div class="card" data-file="seguros-renovaveis-soa.html">
+    <div class="top"><span class="vetor">V8 · Seguros</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Seguros de Renováveis</h3>
+    <div class="desc">Camada de prova de risco — do sinistro ao gatilho paramétrico. Para corretoras, resseguradoras e segurados.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/seguros-renovaveis-soa.html">Abrir</a></div>
+  </div>
+
+  <div class="card" data-file="gato-solar-soa.html">
+    <div class="top"><span class="vetor">V2 · V7 · GD</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Gato Solar</h3>
+    <div class="desc">Detecção auditável de GD irregular (CP ANEEL 009/2026). A SOA prova, não acusa.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/gato-solar-soa.html">Abrir</a></div>
+  </div>
+
+  <div class="card" data-file="iptu-verde-auditavel.html">
+    <div class="top"><span class="vetor">V2 · V7 · Municipal</span><span class="fresh loading" data-fresh></span></div>
+    <h3>IPTU Verde Auditável</h3>
+    <div class="desc">Incentivos municipais + excedente certificando prédios públicos e frota.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/iptu-verde-auditavel.html">Abrir</a></div>
+  </div>
+
+  <div class="card" data-file="icleansolar-limpeza-auditavel.html">
+    <div class="top"><span class="vetor">V7 · B2C</span><span class="fresh loading" data-fresh></span></div>
+    <h3>iCleanSolar</h3>
+    <div class="desc">Limpeza de placas com prova de ganho · motor regulatório NR-35/10/06 (responsabilidade solidária).</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/icleansolar-limpeza-auditavel.html">Abrir</a></div>
+  </div>
+
+  <div class="card" data-file="bitcoin-verde-soa.html">
+    <div class="top"><span class="vetor">V5 · Carga flexível</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Bitcoin Verde</h3>
+    <div class="desc">Prova de origem renovável para mineração e carga flexível que absorve excedente do SIN.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/bitcoin-verde-soa.html">Abrir</a></div>
+  </div>
+
+</div>
+
+<h2 class="sec">Quadro regulatório vivo (fetch + JSON em tempo real)</h2>
+<p class="sec-sub">Única peça que atualiza no browser do leitor — faz fetch do JSON do monitor a cada visita.</p>
+
+<div class="grid">
+  <div class="card dyn" data-file="Folder_Vivo_Regulatorio_GitHub.html">
+    <div class="top"><span class="vetor">Regulatório · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Folder Regulatório Vivo (GitHub)</h3>
+    <div class="desc">Cards de regras com status (VIGENTE / AGENDADO / PENDENTE / EM DELIBERAÇÃO). Consome <code>Fatos_Regulatorios_Folder_SOA.json</code> em runtime — qualquer atualização do monitor aparece automaticamente.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_Regulatorio_GitHub.html">Abrir</a></div>
+  </div>
+</div>
+
+<div class="note warn">
+  <b>O que NÃO está aqui.</b> Materiais estáticos (Atlas de Curtailment, Mapa BESS por Estado, Copa SIN, OnePager, Institucional, Catálogo de Vetores) estão fora deste catálogo porque NÃO são regenerados automaticamente — são snapshots de referência. Eles continuam disponíveis no <a href="https://trigocom-code.github.io/financiamento-de-usinas/_Catalogo_SOA.html" target="_blank" rel="noopener">_Catalogo_SOA.html</a> (catálogo geral), mas só use após confirmar com a equipe se ainda estão atuais.
+</div>
+
+<div class="foot">
+  <b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · Sustainability Operating System · Catálogo de Materiais Vivos · v1.0<br/>
+  Rua Pais Leme, 215 · Conj. 1713 · Pinheiros · São Paulo / SP ·
+  <a href="mailto:limonta@solaroneaccount.com" style="color:#1C5AAD;">limonta@solaroneaccount.com</a> ·
+  <a href="mailto:pedro@solaroneaccount.com" style="color:#1C5AAD;">pedro@solaroneaccount.com</a> ·
+  <a href="https://wa.me/5544999720477" target="_blank" rel="noopener" style="color:#25D366;">WhatsApp</a><br/>
+  Três pedidos de patente depositados no INPI: BR 10 2026 003913-6 · BR 10 2026 010655-0 · BR 10 2026 011466-9<br/>
+  <span style="color:#9ca3af;">Selos de frescor consultam a API pública do GitHub no carregamento · sem credenciais · sem rastreamento.</span>
+</div>
+
+</div>
+
+<script>
+(function() {
+  // Carimbo do próprio catálogo: hora local agora
+  function pad(n) { return n < 10 ? '0' + n : n; }
+  function fmt(d) {
+    return pad(d.getDate()) + '/' + pad(d.getMonth()+1) + '/' + d.getFullYear() +
+           ' às ' + pad(d.getHours()) + 'h' + pad(d.getMinutes());
+  }
+  document.getElementById('liveStamp').textContent = '● Catálogo aberto em ' + fmt(new Date());
+
+  // Selo de frescor por cartão (consulta API GitHub)
+  const REPO = 'trigocom-code/financiamento-de-usinas';
+
+  function classify(diffHours) {
+    if (diffHours < 24) return {cls:'g', label:'atualizado hoje'};
+    if (diffHours < 24*7) return {cls:'a', label: Math.floor(diffHours/24) + 'd atrás'};
+    return {cls:'r', label: Math.floor(diffHours/24) + 'd · DEFASADO'};
+  }
+
+  async function loadOne(card) {
+    const file = card.dataset.file;
+    const tsEl = card.querySelector('[data-ts]');
+    const fEl = card.querySelector('[data-fresh]');
+    try {
+      const url = 'https://api.github.com/repos/' + REPO + '/commits?path=' + encodeURIComponent(file) + '&per_page=1';
+      const r = await fetch(url, {cache: 'no-store'});
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      const commits = await r.json();
+      if (!commits.length) throw new Error('sem commits');
+      const c = commits[0];
+      const d = new Date(c.commit.author.date);
+      const diffH = (Date.now() - d.getTime()) / 36e5;
+      const cls = classify(diffH);
+      tsEl.innerHTML = '<b>Última regeneração:</b><br>' + fmt(d);
+      fEl.className = 'fresh ' + cls.cls;
+      fEl.textContent = cls.label;
+    } catch(e) {
+      tsEl.innerHTML = '<b>—</b> ' + e.message;
+      fEl.className = 'fresh r';
+      fEl.textContent = 'erro';
+    }
+  }
+
+  document.querySelectorAll('.card').forEach(loadOne);
+})();
+</script>
+</body>
+</html>
