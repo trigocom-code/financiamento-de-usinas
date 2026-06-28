@@ -207,8 +207,8 @@
 
 </div>
 
-<h2 class="sec">Quadro regulatório vivo (fetch + JSON em tempo real)</h2>
-<p class="sec-sub">Única peça que atualiza no browser do leitor — faz fetch do JSON do monitor a cada visita.</p>
+<h2 class="sec">Monitores vivos (fetch + JSON em tempo real)</h2>
+<p class="sec-sub">Peças que atualizam no browser do leitor — cada uma faz fetch do seu JSON canônico a cada visita. O monitor regulatório SOA atualiza os JSONs por digest diário; o folder reflete na hora.</p>
 
 <div class="grid">
   <div class="card dyn" data-file="Folder_Vivo_Regulatorio_GitHub.html">
@@ -217,6 +217,13 @@
     <div class="desc">Cards de regras com status (VIGENTE / AGENDADO / PENDENTE / EM DELIBERAÇÃO). Consome <code>Fatos_Regulatorios_Folder_SOA.json</code> em runtime — qualquer atualização do monitor aparece automaticamente.</div>
     <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_Regulatorio_GitHub.html">Abrir</a></div>
   </div>
+
+  <div class="card dyn" data-file="Folder_Vivo_EPE_GitHub.html">
+    <div class="top"><span class="vetor">EPE · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Monitor EPE — Folder Vivo</h3>
+    <div class="desc">Monitor exclusivo da Empresa de Pesquisa Energética. Acompanha PDE, PNE, PET/PELP, Revisão Quadrimestral, Estudos Prospectivos, Boletins e CPs. Consome <code>Fatos_EPE_Folder_SOA.json</code>. Convergência direta com V1, V3, V5, V6.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_EPE_GitHub.html">Abrir</a></div>
+  </div>
 </div>
 
 <div class="note warn">
@@ -224,7 +231,7 @@
 </div>
 
 <div class="foot">
-  <b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · Sustainability Operating System · Catálogo de Materiais Vivos · v1.0<br/>
+  <b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · Sustainability Operating System · Catálogo de Materiais Vivos · v1.1 (28/06/2026 · +Monitor EPE)<br/>
   Rua Pais Leme, 215 · Conj. 1713 · Pinheiros · São Paulo / SP ·
   <a href="mailto:limonta@solaroneaccount.com" style="color:#1C5AAD;">limonta@solaroneaccount.com</a> ·
   <a href="mailto:pedro@solaroneaccount.com" style="color:#1C5AAD;">pedro@solaroneaccount.com</a> ·
