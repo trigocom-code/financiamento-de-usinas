@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>SOA/SOS · Monitor MME — Folder Vivo</title>
+  <meta name="description" content="Monitor exclusivo do MME. Curadoria por relevância SOA: só entram fatos com score ≥ 5. Foco em Portarias, Decretos e Programas que disparam ação nos vetores V1, V3, V5, V6, V7."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --navy:#0F2B46;--navy2:#163c61;--teal:#0D6E6E;--royal:#1C5AAD;
+      --orange:#E07B00;--orange-lt:#FEF3D7;
+      --grey:#4B5563;--grey2:#6B7280;--line:#E0E2E8;--wash:#F4F6F8;--snow:#F9FAFB;
+      --white:#FFFFFF;--green:#166534;--green-lt:#DCFCE7;
+      --amber-d:#92400E;--amber-lt:#FEF3C7;
+      --red:#B91C1C;--red-lt:#FEE2E2;
+      --accent:#1C5AAD;
+      --r-sm:6px;--r-md:12px;--r-lg:20px;
+      --sh-sm:0 1px 4px rgba(15,43,70,.1);--sh-md:0 4px 16px rgba(15,43,70,.12);
+      --f-serif:"DM Serif Display",Georgia,serif;
+      --f-sans:"Inter",system-ui,Arial,sans-serif;
+      --mw:1000px;
+    }
+    body{font-family:var(--f-sans);font-size:15px;line-height:1.6;color:var(--navy);background:var(--white);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--mw);margin:0 auto;padding:clamp(20px,5vw,40px)}
+    img.cc{width:100%;display:block;border-radius:var(--r-md);margin:8px 0 22px;box-shadow:var(--sh-md)}
+    a{color:var(--royal);text-decoration:none}
+    p{font-size:14.5px;margin-bottom:11px;color:var(--navy)}
+    code{background:#F1F5F9;padding:1px 6px;border-radius:4px;font-family:Consolas,Menlo,monospace;font-size:13px}
+    .doc-h h1{font-family:var(--f-serif);font-size:clamp(28px,5vw,42px);color:var(--navy);line-height:1.1;margin-bottom:6px;letter-spacing:-.02em}
+    .doc-sub{font-size:13px;color:var(--grey2);margin-bottom:5px}
+    .doc-tag{font-size:14px;font-weight:600;color:var(--royal);margin-bottom:14px}
+    .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:var(--white);border-radius:var(--r-lg);padding:28px 32px;margin:14px 0 20px;border-left:6px solid var(--accent);position:relative;overflow:hidden}
+    .hero::after{content:"";position:absolute;top:-50px;right:-50px;width:220px;height:220px;background:radial-gradient(circle,rgba(28,90,173,.30) 0%,transparent 70%);pointer-events:none}
+    .hero-pill{display:inline-flex;align-items:center;gap:7px;background:rgba(28,90,173,.2);border:1px solid rgba(28,90,173,.4);border-radius:999px;font-size:11px;font-weight:700;color:#9EC2F0;padding:4px 12px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:14px}
+    .hero-q{font-family:var(--f-serif);font-size:clamp(18px,3vw,24px);line-height:1.35;margin-bottom:12px;color:var(--white)}
+    .hero-q .hl{color:#9EC2F0;font-style:italic}
+    .hero-s{font-size:13.5px;color:#c8ddf0;line-height:1.6}
+    .lastro{background:#EEF2FA;border-left:5px solid var(--accent);border-radius:var(--r-md);padding:14px 18px;font-size:14px;color:#143E86;margin:0 0 20px}
+    .lastro b{color:var(--accent)}
+    .verstamp{display:inline-block;background:var(--navy);color:#FEC73D;font-weight:600;font-size:12px;padding:5px 12px;border-radius:999px;letter-spacing:.03em;margin:0 0 16px}
+    h2.sec{font-family:var(--f-serif);font-size:24px;color:var(--navy);border-bottom:2px solid var(--line);padding-bottom:8px;margin:34px 0 6px}
+    .sec-sub{color:var(--grey);font-size:13.5px;margin:0 0 16px}
+    #cards{display:grid;grid-template-columns:1fr;gap:14px;margin:0 0 18px}
+    .card{border:1.5px solid var(--line);border-radius:var(--r-md);padding:18px 22px;background:var(--white);transition:box-shadow .15s}
+    .card:hover{box-shadow:var(--sh-md);border-color:var(--royal)}
+    .card .badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+    .card .badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:3px 10px;border-radius:999px;color:#fff;text-transform:uppercase}
+    .card .score{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:3px 10px;border-radius:999px;background:#F1F5F9;color:var(--navy);border:1px solid var(--line)}
+    .card .vetores{display:inline-block;font-size:10.5px;font-weight:600;color:var(--royal);background:#EEF2FA;padding:3px 8px;border-radius:999px}
+    .card .t{font-family:var(--f-serif);font-size:18px;color:var(--navy);margin-bottom:6px;line-height:1.3}
+    .card .v{font-size:14px;color:var(--navy);margin-bottom:8px;line-height:1.55}
+    .card .meta{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:8px;margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+    .card .meta .n{font-size:12px;color:var(--grey2)}
+    .card .meta .n a{color:var(--royal)}
+    .card .meta .stamp{font-size:11.5px;color:var(--grey2);font-style:italic}
+    .cta{background:var(--navy);color:#fff;border-radius:12px;padding:22px 24px;margin:24px 0 16px;text-align:center}
+    .cta .ctah{font-size:20px;font-weight:bold;color:#FEC73D;margin-bottom:4px;font-family:var(--f-serif)}
+    .cta .ctad{font-size:13.5px;margin-bottom:14px;color:#dbe4ee}
+    .cta .ctabtns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .cta .ctabtn{display:inline-block;background:var(--accent);color:#fff;font-weight:bold;text-decoration:none;padding:11px 22px;border-radius:8px;font-size:14px}
+    .cta .ctabtn.alt{background:#25D366;color:#fff}
+    .live-stamp{position:fixed;top:9px;right:12px;z-index:99999;display:inline-block;background:#0b1f4d;color:#FEC73D;font:600 11px/1.1 Arial,Helvetica,sans-serif;letter-spacing:.03em;padding:5px 11px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+    .foot{border-top:3px solid var(--navy);margin-top:28px;padding-top:14px;font-size:12px;color:var(--grey2);line-height:1.7}
+    .foot b{color:var(--navy)}
+  </style>
+</head>
+<body>
+<div class="live-stamp" id="liveStamp">● Carregando…</div>
+<div class="wrap">
+<img class="cc" src="https://trigocom-code.github.io/financiamento-de-usinas/Solar_One-Logo_capa.png" alt="SOA/SOS · Monitor MME"/>
+<div class="doc-h" style="margin-bottom:8px">
+  <h1>Monitor MME — Folder Vivo</h1>
+  <div class="doc-sub">SOA/SOS · Sustainability Operating System · Soluções em Energia</div>
+  <div class="doc-tag">Ministério de Minas e Energia · Portarias, Decretos, Programas — só score ≥ 5</div>
+</div>
+<div class="hero">
+  <span class="hero-pill">● Monitor ativo · curadoria automática</span>
+  <p class="hero-q">O MME <span class="hl">define a política</span>. Cada Portaria é um pacto: REDATA, LRCAP via 136/2026, Smart Meter via 126/2026, PNH2 via 14.948. Este monitor mostra os atos que <span class="hl">disparam ação comercial direta</span> nos vetores SOA.</p>
+  <p class="hero-s">Programas estruturais (PNTE, Plante, PNH2) mais Portarias com prazo agendado têm prioridade. Atos administrativos internos ficam no banco. Cardinalidade baixa por design — MME publica menos atos que ANEEL.</p>
+</div>
+<div class="lastro">
+  <b>Curadoria, não amontoado.</b> Schema do JSON estendido com `score_soa` e `vetores_afetados`. Threshold canônico: score ≥ 5. Atos do MME geralmente viram regulamentação ANEEL — cruzamento explícito evita duplicação.
+</div>
+<span class="verstamp" id="verstamp">atualizado em —</span>
+<h2 class="sec">Fatos curados · MME</h2>
+<p class="sec-sub">Ordenados por score SOA decrescente. Status colorido; score em cinza; vetores afetados em azul.</p>
+<div id="cards">Carregando fatos do monitor…</div>
+<div class="cta">
+  <div class="ctah">Discutir uma Portaria, Decreto ou Programa MME</div>
+  <div class="ctad">REDATA, LRCAP, Smart Meter, PNH2, Decreto de Acesso, PNTE — leitura técnica e mapeamento ao vetor SOA correspondente.</div>
+  <div class="ctabtns">
+    <a class="ctabtn" href="mailto:limonta@solaroneaccount.com?subject=Monitor%20MME%20%E2%80%94%20SOA%2FSOS&body=Ol%C3%A1%2C%20vi%20o%20Monitor%20MME%20do%20SOA%2FSOS%20e%20gostaria%20de%20conversar%20sobre%3A">Falar por e-mail</a>
+    <a class="ctabtn alt" href="https://wa.me/5544999720477?text=Ol%C3%A1%2C%20vi%20o%20Monitor%20MME%20do%20SOA%2FSOS%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</div>
+<div class="foot">
+  <b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · Monitor MME · Folder Vivo · v1.0<br/>
+  Rua Pais Leme, 215 · Conj. 1713 · Pinheiros · São Paulo / SP ·
+  <a href="mailto:limonta@solaroneaccount.com" style="color:#1C5AAD;">limonta@solaroneaccount.com</a> ·
+  <a href="mailto:pedro@solaroneaccount.com" style="color:#1C5AAD;">pedro@solaroneaccount.com</a> ·
+  <a href="https://wa.me/5544999720477" target="_blank" rel="noopener" style="color:#25D366;">WhatsApp</a><br/>
+  Três pedidos de patente depositados no INPI: BR 10 2026 003913-6 · BR 10 2026 010655-0 · BR 10 2026 011466-9<br/>
+  Lastro: MME (publicações oficiais), cruzado com EPE/ANEEL/ONS/CCEE. Documento institucional · circulação interna.
+</div>
+</div>
+<script>
+const FACTS_URLS = ["https://raw.githubusercontent.com/trigocom-code/financiamento-de-usinas/main/Fatos_MME_Folder_SOA.json"];
+const FALLBACK = {"_meta":{"verificado_em":"2026-06-28"},"fatos":[{"tema":"Portaria MME 136/2026 — LRCAP de Armazenamento (calendário)","valor":"Leilões 02 e 04/12/2026. Cadastro EPE 15/06–31/07. Suprimento desde 01/08/2028.","status":"AGENDADO","norma":"Portaria MME 136/2026","verificado_em":"2026-06-28","score_soa":18,"vetores_afetados":["V3","V7"]}]};
+const SC={"VIGENTE":"#166534","AGENDADO":"#1C5AAD","ENCERRADO":"#6B7280","PENDENTE":"#9A3412","EM DELIBERAÇÃO":"#B26A00"};
+function br(d){if(!d)return "—";const p=d.split("-");return p[2]+"/"+p[1]+"/"+p[0];}
+function pad(n){return n<10?"0"+n:n;}
+function fmtNow(){const d=new Date();return pad(d.getDate())+"/"+pad(d.getMonth()+1)+"/"+d.getFullYear()+" às "+pad(d.getHours())+"h"+pad(d.getMinutes());}
+function render(data){
+  const fatos=data.fatos||[];
+  const meta=data._meta||{};
+  const ver=meta.verificado_em||fatos.reduce((a,f)=>f.verificado_em>a?f.verificado_em:a,"2000-01-01");
+  document.getElementById("verstamp").textContent="Última verificação do monitor: "+br(ver);
+  document.getElementById("cards").innerHTML=fatos.map(f=>{
+    const color=SC[f.status]||"#4B5563";
+    const urlLink=f.url?`<a href="${f.url}" target="_blank" rel="noopener">${f.norma||'Ver fonte'}</a>`:(f.norma||"");
+    const score=f.score_soa!==undefined?`<span class="score">score ${f.score_soa}</span>`:"";
+    const vet=f.vetores_afetados&&f.vetores_afetados.length?`<span class="vetores">${f.vetores_afetados.join(' · ')}</span>`:"";
+    return `<div class="card"><div class="badges"><span class="badge" style="background:${color}">${f.status}</span>${score}${vet}</div><div class="t">${f.tema}</div><div class="v">${f.valor}</div><div class="meta"><div class="n">${urlLink}</div><div class="stamp">verificado em ${br(f.verificado_em)}</div></div></div>`;
+  }).join("");
+}
+(async function(){for(const u of FACTS_URLS){try{const r=await fetch(u,{cache:"no-store"});if(r.ok){render(await r.json());return;}}catch(e){}}render(FALLBACK);})();
+document.getElementById("liveStamp").textContent="● Aberto em "+fmtNow();
+</script>
+</body>
+</html>
