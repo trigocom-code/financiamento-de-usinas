@@ -1,7 +1,7 @@
 {
   "_meta": {
     "descricao": "Fonte ÚNICA de fatos regulatórios do Folder 'Onde Entramos'. O folder e a versão viva (artifact) consomem DESTE arquivo. O monitor regulatório SOA atualiza este arquivo quando um gatilho dispara; em seguida o folder é regenerado.",
-    "verificado_em": "2026-06-26",
+    "verificado_em": "2026-06-27",
     "proxima_revisao_sugerida": "2026-07-31",
     "responsavel_atualizacao": "Monitor Regulatório SOA (digest diário) + regeneração agendada",
     "regra_staleness": "Fato com verificado_em > 90 dias deve ser exibido com alerta e reconferido."
@@ -22,16 +22,16 @@
       "valor": "Leilões 02/12/2026 (Nacional, c/ requisito de nacionalização) e 04/12/2026 (Aberto). Cadastro EPE 15/06–31/07/2026. Suprimento 15 anos, início 01/08/2028.",
       "status": "AGENDADO",
       "norma": "Portaria MME 136/2026",
-      "verificado_em": "2026-06-26",
+      "verificado_em": "2026-06-27",
       "gatilho_revisao": "publicação/alteração do edital ANEEL; mudança de datas"
     },
     {
       "id": "lrcap_edital",
       "tema": "Edital ANEEL do LRCAP Armazenamento (preço-teto + regra de TUST)",
-      "valor": "NÃO PUBLICADO — preço-teto e tratamento de TUST (risco de dupla cobrança consumo+injeção) pendentes",
+      "valor": "NÃO PUBLICADO — preço-teto e tratamento de TUST (risco de dupla cobrança consumo+injeção) pendentes. Sinal de 24/06: na REN 1.161 de outorga de armazenamento a ANEEL MANTEVE a cobrança integral pelo uso da rede após a Lei 15.269/2025; a regra de TUST específica do leilão segue no edital, ainda não publicado.",
       "status": "PENDENTE",
       "norma": "ANEEL (edital do leilão)",
-      "verificado_em": "2026-06-26",
+      "verificado_em": "2026-06-27",
       "gatilho_revisao": "publicação do edital (item nº 1 de prioridade do monitor)"
     },
     {
@@ -53,12 +53,21 @@
       "gatilho_revisao": "revisão da NT de requisitos"
     },
     {
+      "id": "sae_outorga",
+      "tema": "Regime de outorga de Sistemas de Armazenamento de Energia (SAE autônomo)",
+      "valor": "Autorização por 35 anos; operação comercial em até 54 meses; prorrogação com aviso de 6 meses; ANEEL analisa histórico setorial do agente. Mantida a cobrança integral pelo uso da rede.",
+      "status": "VIGENTE",
+      "norma": "REN ANEEL 1.161/2026 (assinada 02/06; publicada no DOU 24/06/2026)",
+      "verificado_em": "2026-06-27",
+      "gatilho_revisao": "revisão da REN 1.161 ou regra de TUST do edital LRCAP"
+    },
+    {
       "id": "curtailment",
       "tema": "Tratamento do curtailment (constrained-off)",
       "valor": "Critérios operativos e rateio em deliberação; parecer AGU admite corte FÍSICO de MMGD, mas rejeita o corte CONTÁBIL (rateio entre fontes). Corte medido pela regra canônica.",
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 45/2019 (3ª fase)",
-      "verificado_em": "2026-06-26",
+      "verificado_em": "2026-06-27",
       "gatilho_revisao": "publicação de REN/voto cobrindo eólicas e/ou MMGD"
     },
     {
