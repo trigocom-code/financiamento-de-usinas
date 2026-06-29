@@ -1,89 +1,153 @@
 {
   "_meta": {
     "orgao": "CCEE",
-    "schema_version": "1.1",
-    "descricao": "Monitor exclusivo CCEE — schema v1.1 com score_soa, vetores_afetados, qsv_r e qsv_fontes. Foco em Processo Sancionador, Procedimentos de Comercialização e regras de mercado. PLD horário NÃO entra aqui.",
+    "schema_version": "1.3",
+    "descricao": "Monitor exclusivo CCEE — schema v1.3. Aplicada Precedência v1.2.",
     "verificado_em": "2026-06-28",
     "proxima_revisao_sugerida": "2026-07-15",
-    "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina CCEE (digest diário) + scoring + QSV-R automáticos",
-    "regra_staleness": "Fato com verificado_em > 60 dias deve ser exibido com alerta.",
-    "regra_curadoria": "Threshold de destaque: score_soa ≥ 5 E qsv_r ≥ 2. PLD horário NÃO entra aqui (vai para banco SOA via pipeline diário).",
+    "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina CCEE conforme QSV-R v3.0",
+    "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. PLD horário vai pro banco SOA via pipeline.",
+    "regra_banco_SOA": "Banco SOA valida FISICO (PLD, volumes); NUNCA valida REGULATORIO.",
+    "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json LIBERADA.",
     "vetores_soa_atendidos": ["V3", "V4", "V5", "V6", "V8"],
     "fonte_canonica": "https://www.ccee.org.br/"
   },
   "fatos": [
     {
+      "fato_id": "CCEE-LEI-15269-2025",
+      "tema": "Lei 15.269/2025 — Ressarcimento parcial por curtailment",
+      "valor": "Conversão da MP 1.304/2025. Lei que reformula setor elétrico e cria mecanismo de ressarcimento parcial por curtailment (apenas indisponibilidade de transmissão e confiabilidade; sobreoferta vetada). F1 canônica é Planalto/Senado (CCEE é referência técnica). Disparo direto do V4. PENDÊNCIA: número de vetos e data de sanção em DIVERGÊNCIA (fontes apontam 15/16/20/1). Nenhum número de vetos entra em material externo até CEO abrir Planalto.",
+      "status": "VIGENTE",
+      "norma": "Lei 15.269/2025 (regulamentação CCEE pendente)",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm",
+      "verificado_em": "2026-06-28",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "score_soa": 17,
+      "vetores_afetados": ["V4", "V3"],
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm — PENDENTE_REABERTURA pelo CEO", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F2_DOU", "ref": "Lei 15.269/2025 sancionada e publicada no DOU (data divergente entre fontes)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura ampla Valor/MegaWhat/EpBR/Agência Senado (originou MP 1.304/2025)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "_aviso_condicao_C2_CEO": "Condição C2 do CEO 28/06/2026: NÃO subir nenhum número de vetos (nem 15, nem 16, nem 20). Pendente do Planalto aberto pelo CEO."
+    },
+    {
+      "fato_id": "CCEE-CP-17-2026-PSM",
       "tema": "CP 17/2026 PSM — Processo Sancionador e Monitoramento Prudencial",
-      "valor": "Consulta pública sobre conduta irregular, manipulação de preço, fraude em sistemas CCEE. Tipifica condutas no mercado livre. Janela de submissão para federações setoriais. Material auditável SOA é instrumento de defesa preventiva. Convergência V4+V5+V6+V7.",
+      "valor": "CP sobre conduta irregular, manipulação de preço, fraude em sistemas CCEE. Tipifica condutas no mercado livre. Janela de submissão para federações setoriais. Material auditável SOA é instrumento de defesa preventiva.",
       "status": "EM DELIBERAÇÃO",
       "norma": "CP CCEE 17/2026 (PSM)",
       "url": "https://www.ccee.org.br/web/guest/consultas-publicas",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 18,
       "vetores_afetados": ["V4", "V5", "V6", "V7"],
-      "qsv_r": 3,
-      "qsv_fontes": ["F1_pagina_oficial", "F3_imprensa_setorial", "F4_cruzamento"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.ccee.org.br/web/guest/consultas-publicas", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura ampla setorial (PSM tema dominante 2026)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     },
     {
+      "fato_id": "CCEE-SUBMODULO-9",
       "tema": "Submódulo 9 da CCEE — Liquidação mensal e contabilização",
-      "valor": "Procedimento de Comercialização que define liquidação mensal e classificação final de cortes (ENE/CNF/REL). Terminal institucional canônico SOA — protocolo opera ANTES (insumo decisório) e DEPOIS (prova ex-post).",
+      "valor": "Procedimento de Comercialização que define liquidação mensal e classificação final de cortes (ENE/CNF/REL). Terminal institucional canônico SOA.",
       "status": "VIGENTE",
       "norma": "CCEE · Submódulo 9 (Procedimentos de Comercialização)",
       "url": "https://www.ccee.org.br/",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": ["V4", "V3"],
-      "qsv_r": 4,
-      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F3_imprensa_setorial", "F4_cruzamento"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.ccee.org.br/ — Submódulo 9", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F2_DOU", "ref": "Procedimentos CCEE aprovados por REN ANEEL específicas (DOU)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     },
     {
-      "tema": "Lei 15.269/2025 — Ressarcimento parcial por curtailment",
-      "valor": "Lei que reformula setor elétrico e cria mecanismo de ressarcimento parcial por curtailment (com vetos presidenciais sobre sobreoferta energética). Disparo direto do V4 — geradoras precisam comprovar energia frustrada hora-a-hora para pleito.",
+      "fato_id": "CCEE-MODULOS-6-7",
+      "tema": "Procedimentos de Comercialização — Módulos 6 (Liquidação) e 7 (Encargos)",
+      "valor": "Módulos canônicos que regem liquidação e cálculo de encargos. Insumo regulatório de fundo para estudos SOA sobre custo total de energia (V5, V8).",
       "status": "VIGENTE",
-      "norma": "Lei 15.269/2025 (regulamentação CCEE pendente)",
+      "norma": "CCEE · Procedimentos de Comercialização (Módulos 6 e 7)",
       "url": "https://www.ccee.org.br/",
       "verificado_em": "2026-06-28",
-      "score_soa": 17,
-      "vetores_afetados": ["V4", "V3"],
-      "qsv_r": 4,
-      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F3_imprensa_setorial", "F4_cruzamento"]
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "score_soa": 6,
+      "vetores_afetados": ["V5", "V8"],
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.ccee.org.br/ — Módulos 6 e 7", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F2_DOU", "ref": "Aprovados por REN ANEEL específicas (DOU)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     },
     {
+      "fato_id": "CCEE-GRUDEM",
       "tema": "GRUDEM — Grupo de Estudos sobre Mecanismos de Despacho do MRE",
-      "valor": "Grupo CCEE que estuda modificações no MRE (Mecanismo de Realocação de Energia). Relevante para V3 — mudanças no MRE alteram o valor da flexibilidade hidráulica.",
+      "valor": "Grupo CCEE que estuda modificações no MRE (Mecanismo de Realocação de Energia). Mudanças no MRE alteram o valor da flexibilidade hidráulica (V3).",
       "status": "EM DELIBERAÇÃO",
       "norma": "CCEE · GRUDEM (estudos em curso)",
       "url": "https://www.ccee.org.br/",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": ["V3", "V6"],
-      "qsv_r": 2,
-      "qsv_fontes": ["F1_pagina_oficial", "F3_imprensa_setorial"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "mecanismo_v3.0",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.ccee.org.br/ — GRUDEM", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura técnica ocasional sobre MRE", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     },
     {
+      "fato_id": "CCEE-BOLETIM-MENSAL",
       "tema": "Boletim Mensal de Comercialização — relatório de mercado livre",
       "valor": "Publicação mensal CCEE com indicadores de mercado livre (preços, volumes, contratos). Insumo periódico para análises SOA sobre dinâmica do ACL e contratos de longo prazo de data centers (V5).",
       "status": "VIGENTE",
       "norma": "CCEE · Boletim Mensal Comercialização",
       "url": "https://www.ccee.org.br/web/guest/relatorios/boletim",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 7,
       "vetores_afetados": ["V5", "V3"],
-      "qsv_r": 2,
-      "qsv_fontes": ["F1_pagina_oficial", "F3_imprensa_setorial"]
-    },
-    {
-      "tema": "Procedimentos de Comercialização — Módulos 6 (Liquidação) e 7 (Encargos)",
-      "valor": "Módulos canônicos que regem liquidação de operações de energia e cálculo de encargos. Insumo regulatório de fundo para qualquer estudo SOA sobre custo total de energia (V5, V8).",
-      "status": "VIGENTE",
-      "norma": "CCEE · Procedimentos de Comercialização (Módulos 6 e 7)",
-      "url": "https://www.ccee.org.br/",
-      "verificado_em": "2026-06-28",
-      "score_soa": 6,
-      "vetores_afetados": ["V5", "V8"],
-      "qsv_r": 3,
-      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F4_cruzamento"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "mecanismo_v3.0",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.ccee.org.br/web/guest/relatorios/boletim", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura mensal do Boletim em veículos setoriais", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": "energia_publica.preco_ccee_horario (banco SOA · agregar mensal)", "resultado": "PENDENTE_QUERY", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     }
   ],
+  "_pendentes_verificacao": [],
   "_historico_caidos": []
 }

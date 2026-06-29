@@ -1,184 +1,334 @@
 {
   "_meta": {
     "orgao": "EPE",
-    "schema_version": "1.1",
-    "descricao": "Monitor exclusivo EPE (Empresa de Pesquisa Energética) — schema v1.1 com score_soa, vetores_afetados, qsv_r e qsv_fontes. Curadoria por relevância SOA (score ≥ 5) + verificação multi-fonte (QSV-R ≥ 2 para destaque pleno).",
+    "schema_version": "1.3",
+    "descricao": "Monitor exclusivo EPE — schema v1.3. Aplicada Precedência v1.2.",
     "verificado_em": "2026-06-28",
     "proxima_revisao_sugerida": "2026-07-15",
-    "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina EPE (digest diário) + scoring automático conforme Arquitetura_Monitores_Curados_SOA_v1.md + QSV-R conforme QSV-R_Validacao_Monitores_v1.md",
-    "regra_staleness": "Fato com verificado_em > 60 dias deve ser exibido com alerta e reconferido. Para publicações periódicas usar regra específica do ciclo.",
-    "regra_curadoria": "Cada ato recebe score_soa + qsv_r. Threshold de destaque: score_soa ≥ 5 E qsv_r ≥ 2. Fatos com qsv_r 0 vão para _historico_caidos como rumor.",
+    "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina EPE conforme QSV-R v3.0",
+    "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. qsv_cor LARANJA → _pendentes_verificacao.",
+    "regra_staleness": "Fato com verificado_em > 60 dias deve ser exibido com alerta.",
+    "regra_banco_SOA": "Banco SOA valida apenas FISICO_QUANTITATIVO ou metade física de HIBRIDO. NUNCA valida REGULATORIO_DECISORIO.",
+    "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json LIBERADA. Aplicar registro a registro.",
     "vetores_soa_atendidos": ["V1", "V2", "V3", "V5", "V6", "V7"],
     "fonte_canonica": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes"
   },
   "fatos": [
     {
+      "fato_id": "EPE-PDE-2035",
       "tema": "PDE 2035 — Plano Decenal de Expansão de Energia",
-      "valor": "Horizonte 2026–2035. Consulta Pública aberta de 12/02 a 14/03/2026 (encerrada). 15 Cadernos temáticos publicados (Transmissão, MMGD+Baterias, Demanda Eletricidade, Custos Geração/Transmissão, entre outros). Dados brutos disponíveis em painel público. Próximo ciclo: PDE 2036.",
+      "valor": "Horizonte 2026–2035. CP aberta de 12/02 a 14/03/2026 (encerrada). 15 Cadernos temáticos publicados. Dados brutos em painel público.",
       "status": "VIGENTE",
       "norma": "EPE/MME · ciclo anual",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": ["V1", "V3", "V5", "V6"],
-      "qsv_r": 4,
-      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F3_imprensa_setorial", "F4_cruzamento"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F2_DOU", "ref": "Portaria SE/MME que abriu a CP em 12/02/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura ampla Canal Solar/MegaWhat/EpBR fev/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     },
     {
+      "fato_id": "EPE-PNE-2055",
       "tema": "PNE 2055 — Plano Nacional de Energia",
-      "valor": "Horizonte 30 anos (2026–2055). Publicação quinquenal. CP aberta em 12/02/2026 por 30 dias (encerrada). Modelagem integrada otimiza custos totais e garante consistência oferta-demanda-infraestrutura. Aponta potencial renovável de ~1,6 bilhão tep/ano. Coord. Patricia Nunes.",
+      "valor": "Horizonte 30 anos (2026–2055). CP aberta em 12/02/2026 por 30 dias. Coord. Patricia Nunes (EPE). Aponta potencial renovável de ~1,6 bilhão tep/ano.",
       "status": "VIGENTE",
       "norma": "EPE/MME · ciclo quinquenal",
       "url": "https://www.epe.gov.br/pt/imprensa/noticias/mme-e-epe-lancam-consultas-publicas-do-pde-2035-e-do-pne-2055-e-reforcam-planejamento-estrategico-do-setor-energetico",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": ["V1", "V3", "V5", "V6"],
-      "qsv_r": 4,
-      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F3_imprensa_setorial", "F4_cruzamento"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/imprensa/noticias/...", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F2_DOU", "ref": "Portaria MME de lançamento da CP em 12/02/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura Valor/MegaWhat/EpBR lançamento conjunto PDE+PNE fev/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     },
     {
+      "fato_id": "EPE-CARGAS-CE-PI",
       "tema": "Estudo Prospectivo de Cargas Eletrointensivas no Nordeste (CE+PI)",
-      "valor": "Publicado em 19/06/2026. Recomenda soluções estruturantes para conectar até 4 GW de data centers e plantas de H2V no Ceará e Piauí a partir de 2032. Solução de transmissão flexível e escalonável. Convergência V5 SOA (SOA traz prova horária 24/7 CFE).",
+      "valor": "Publicado em 19/06/2026. Recomenda soluções para conectar até 4 GW de data centers e plantas de H2V no CE e PI a partir de 2032.",
       "status": "VIGENTE",
       "norma": "EPE · Estudo Prospectivo",
       "url": "https://www.epe.gov.br/pt/imprensa/noticias",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "HIBRIDO",
       "score_soa": 14,
       "vetores_afetados": ["V5", "V1"],
-      "qsv_r": 2,
-      "qsv_fontes": ["F1_pagina_oficial", "F4_cruzamento"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "mecanismo_v3.0",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/imprensa/noticias", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F4_cruzamento", "ref": "Cruza com REDATA e MP 1.318/2025 caducada", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": null, "resultado": "PENDENTE_QUERY_FISICA", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     },
     {
-      "tema": "Estudo de Atendimento ao Sudeste do Pará",
-      "valor": "Publicado em 22/06/2026. Soluções para superar esgotamento de capacidade de transmissão e limitações de controle de tensão no sistema elétrico local; viabiliza expansão de carga e novos acessos. Convergência V1 (Transmission Intelligence).",
-      "status": "VIGENTE",
-      "norma": "EPE · Estudo de Atendimento Regional",
-      "url": "https://www.epe.gov.br/pt/imprensa/noticias",
-      "verificado_em": "2026-06-28",
-      "score_soa": 10,
-      "vetores_afetados": ["V1"],
-      "qsv_r": 1,
-      "qsv_fontes": ["F1_pagina_oficial"]
-    },
-    {
-      "tema": "Mapa de Barramentos Candidatos à Bonificação Locacional (LRCAP)",
-      "valor": "EPE divulgou mapa em 09/06/2026 e detalhamento da base de dados em 27/06/2026. Universo de 129 barramentos com β=0,9 elegíveis ao 1º LRCAP (02 e 04/12/2026). Convergência direta com Frente A SOA (V3+V7).",
+      "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
+      "tema": "Mapa de Barramentos LRCAP (critério de bonificação locacional)",
+      "valor": "EPE divulgou em 09/06/2026 e detalhamento da base em 27/06/2026. Universo de barramentos elegíveis ao 1º LRCAP (02 e 04/12/2026). Convergência com Frente A SOA (V3+V7). Os números específicos (129/β=0,9/86% NE/Bahia 33%/Ceará 30%) permanecem como ALEGADO_NAO_ANCORADO até dupla ancoragem (DOU + banco SOA).",
       "status": "VIGENTE",
       "norma": "EPE · Portaria MME 136/2026 (LRCAP)",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "HIBRIDO",
       "score_soa": 16,
       "vetores_afetados": ["V3", "V7"],
-      "qsv_r": 4,
-      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F3_imprensa_setorial", "F4_cruzamento"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F2_DOU", "ref": "Portaria MME 136/2026 publicada no DOU 03/06/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F4_cruzamento", "ref": "Cruza REN ANEEL 1.071/2023+1.162/2026 + NT-ONS DPL 0111/2025", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": "Master_Barramentos_v1.5.1 (SOA · 714 barramentos canônicos)", "resultado": "PENDENTE_QUERY_METADE_FISICA", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "_aviso_precedencia": "Precedência v1.2: VERDE só com dupla ancoragem (DOU para o critério + banco SOA para os barramentos). Até lá, AZUL (R2/R3)."
     },
     {
+      "fato_id": "EPE-BOLETIM-CONSUMO-25",
       "tema": "Boletim Trimestral de Consumo de Eletricidade nº 25 (1T/2026)",
-      "valor": "Publicado em 18/06/2026. Consumo nacional de eletricidade recuou 0,3% no 1º trimestre de 2026 vs mesmo período de 2025. Queda concentrada na indústria; avanço nas classes residencial e comercial. Input direto para análises V3/V5.",
+      "valor": "Publicado em 18/06/2026. Consumo nacional de eletricidade recuou 0,3% no 1º trimestre de 2026 vs mesmo período de 2025. Queda na indústria, avanço residencial+comercial.",
       "status": "VIGENTE",
       "norma": "EPE · Boletim Trimestral",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Resenha-e-Boletim-do-Mercado-de-Energia-Eletrica",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 8,
       "vetores_afetados": ["V3", "V5"],
-      "qsv_r": 3,
-      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F3_imprensa_setorial"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "mecanismo_v3.0",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/.../Resenha-e-Boletim", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura Canal Solar/MegaWhat boletim trimestral EPE", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": "energia_publica.curva_carga_horaria (banco SOA — calcular 1T/2026 vs 1T/2025)", "resultado": "PENDENTE_QUERY", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     },
     {
+      "fato_id": "EPE-PET-PELP",
       "tema": "PET/PELP — Programa de Expansão da Transmissão / Plano de Longo Prazo",
-      "valor": "Publicação contínua da EPE listando reforços e novas instalações de transmissão planejadas para o SIN. Próximo ciclo PET/PELP esperado para 2026. Entrada estrutural para V1 SOA — reforços planejados mudam Access Risk.",
+      "valor": "Publicação contínua da EPE listando reforços e novas instalações de transmissão planejadas. Próximo ciclo PET/PELP esperado para 2026. Entrada para V1 SOA — reforços mudam Access Risk.",
       "status": "AGENDADO",
       "norma": "EPE · ciclo periódico (PET anual; PELP de longo prazo)",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Programa-de-Expansao-da-Transmissao-Plano-de-Expansao-de-Longo-Prazo-PET-PELP",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": ["V1"],
-      "qsv_r": 2,
-      "qsv_fontes": ["F1_pagina_oficial", "F4_cruzamento"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/.../PET-PELP", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F2_DOU", "ref": "Portaria MME que oficializa ciclo PET/PELP", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F4_cruzamento", "ref": "Cruzamento estrutural com Portaria MME 129/2026 + Decreto 12.772/2025", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     },
     {
-      "tema": "Revisão Quadrimestral da Carga",
-      "valor": "EPE publica ~3×/ano revisão de previsão de carga elétrica. Última publicação na janela não chegou na varredura de 27/06. Input estrutural para V3/V5 — muda vale/excedente esperado e premissa de carga de data center.",
-      "status": "AGENDADO",
-      "norma": "EPE · ~3 revisões/ano",
-      "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Revisoes-Quadrimestrais-da-Carga",
-      "verificado_em": "2026-06-28",
-      "score_soa": 7,
-      "vetores_afetados": ["V3", "V5"],
-      "qsv_r": 1,
-      "qsv_fontes": ["F1_pagina_oficial"]
-    },
-    {
+      "fato_id": "EPE-ANUARIO",
       "tema": "Anuário Estatístico de Energia Elétrica",
-      "valor": "Publicação anual da EPE com dados agregados consolidados do setor elétrico. Última edição disponível. Referência de dado para qualquer estudo SOA que precise de série histórica oficial agregada.",
+      "valor": "Publicação anual da EPE com dados agregados consolidados do setor elétrico. Referência de dado para estudos SOA com série histórica oficial.",
       "status": "VIGENTE",
       "norma": "EPE · publicação anual",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/anuario-estatistico-de-energia-eletrica",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 6,
       "vetores_afetados": ["V3"],
-      "qsv_r": 2,
-      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "mecanismo_v3.0",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/.../anuario-estatistico", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura técnica periódica do Anuário", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": "banco SOA cruza com várias tabelas (geração, carga, MMGD)", "resultado": "PENDENTE_QUERY", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     },
     {
+      "fato_id": "EPE-CADERNO-MMGD-BATERIAS",
       "tema": "Caderno de MMGD e Baterias Atrás do Medidor (PDE 2035)",
-      "valor": "Caderno temático dedicado à Micro/Minigeração Distribuída e baterias atrás do medidor. Convergência V2/V3/V7 — SOA pode fornecer análise empírica de curtailment e flexibilidade MMGD a partir das tabelas mmgd_* (4,4M UCs no banco).",
+      "valor": "Caderno temático dedicado à MMGD e baterias atrás do medidor. Convergência V2/V3/V7 — SOA pode fornecer análise empírica a partir das tabelas mmgd_* (4,4M UCs no banco).",
       "status": "VIGENTE",
       "norma": "EPE · Caderno temático PDE 2035",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 11,
       "vetores_afetados": ["V2", "V3", "V7"],
-      "qsv_r": 2,
-      "qsv_fontes": ["F1_pagina_oficial", "F4_cruzamento"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "mecanismo_v3.0",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/.../plano-decenal-2035", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F4_cruzamento", "ref": "Sub-caderno do PDE 2035", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     },
     {
+      "fato_id": "EPE-PNTE-PLANTE",
       "tema": "Política Nacional de Transição Energética (PNTE) e Plante",
-      "valor": "PDE 2035 e PNE 2055 servem de base técnica para a PNTE, Plano Nacional de Transição Energética (Plante) e Fórum Nacional (Fonte). Coordenação política: SNTEP/MME (Lorena Silva). Entrada para V6 SOA + diálogo com FASE/Mário Menel.",
+      "valor": "PDE 2035 e PNE 2055 servem de base técnica para PNTE, Plante e Fonte. Coord. política: SNTEP/MME (Lorena Silva). Entrada para V6 SOA.",
       "status": "VIGENTE",
       "norma": "MME · SNTEP",
       "url": "https://www.epe.gov.br/pt/imprensa/noticias/mme-e-epe-lancam-consultas-publicas-do-pde-2035-e-do-pne-2055-e-reforcam-planejamento-estrategico-do-setor-energetico",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": ["V6", "V5"],
-      "qsv_r": 3,
-      "qsv_fontes": ["F1_pagina_oficial", "F2_DOU", "F4_cruzamento"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/imprensa/noticias/...", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F2_DOU", "ref": "Base legal da PNTE no DOU", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F4_cruzamento", "ref": "Cruza PDE 2035 + PNE 2055 + Fórum FASE", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     },
     {
+      "fato_id": "EPE-DIRETORIA",
       "tema": "Diretoria EPE — interlocutores técnicos canônicos",
-      "valor": "Presidente: Thiago Prado. Assessora Presidência (coord. PDE/PNE): Patricia Nunes. Dir. Estudos Econômico-Energéticos e Ambientais (PDE): Thiago Ivanoski. Dir. Estudos Petróleo, Gás e Biocombustíveis (PNE): Heloisa Borges. Outros: Carlos Cabral, Reinaldo Garcia.",
+      "valor": "Presidente: Thiago Prado. Assessora Presidência (coord. PDE/PNE): Patricia Nunes. Dir. Estudos Econômico-Energéticos: Thiago Ivanoski. Dir. Estudos Petróleo/Gás/Biocombustíveis: Heloisa Borges.",
       "status": "VIGENTE",
       "norma": "EPE · estrutura organizacional 2026",
       "url": "https://www.epe.gov.br/pt/a-epe",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 5,
       "vetores_afetados": ["V6"],
-      "qsv_r": 2,
-      "qsv_fontes": ["F1_pagina_oficial", "F3_imprensa_setorial"]
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "mecanismo_v3.0",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/a-epe", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura setorial de nomeações", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
+    }
+  ],
+  "_pendentes_verificacao": [
+    {
+      "fato_id": "EPE-ATENDIMENTO-PARA",
+      "tema": "Estudo de Atendimento ao Sudeste do Pará",
+      "valor": "Publicado em 22/06/2026. Soluções para esgotamento de capacidade de transmissão no sistema elétrico local. Convergência V1.",
+      "status": "VIGENTE",
+      "norma": "EPE · Estudo de Atendimento Regional",
+      "url": "https://www.epe.gov.br/pt/imprensa/noticias",
+      "verificado_em": "2026-06-28",
+      "tipo_fato": "HIBRIDO",
+      "score_soa": 10,
+      "vetores_afetados": ["V1"],
+      "qsv_cor": "LARANJA",
+      "qsv_origem_classificacao": "mecanismo_v3.0",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/imprensa/noticias", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": null, "resultado": "PENDENTE_QUERY_METADE_FISICA", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "motivo_pendencia": "Só F1 — aguarda 2ª fonte oficial independente"
     },
     {
+      "fato_id": "EPE-REVISAO-QUADRIMESTRAL",
+      "tema": "Revisão Quadrimestral da Carga",
+      "valor": "EPE publica ~3×/ano revisão de previsão de carga. Aguardando próxima publicação. Input estrutural para V3/V5 quando sair.",
+      "status": "AGENDADO",
+      "norma": "EPE · ~3 revisões/ano",
+      "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Revisoes-Quadrimestrais-da-Carga",
+      "verificado_em": "2026-06-28",
+      "tipo_fato": "FISICO_QUANTITATIVO",
+      "score_soa": 7,
+      "vetores_afetados": ["V3", "V5"],
+      "qsv_cor": "LARANJA",
+      "qsv_origem_classificacao": "mecanismo_v3.0",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/.../Revisoes-Quadrimestrais-da-Carga", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": null, "resultado": "PENDENTE_QUERY", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "motivo_pendencia": "Aguarda próxima publicação periódica"
+    },
+    {
+      "fato_id": "EPE-PROXIMAS-CPS",
       "tema": "Próximas Consultas Públicas EPE — janela de submissão SOA",
-      "valor": "CP do PDE 2035 e PNE 2055 ENCERRADAS (fev-mar 2026). Próxima janela natural: PDE 2036 (esperado fev-mar 2027) e Caderno de MMGD atualizado. Vetor V6 SOA — preparar contribuição técnica com dado horário ONS/CCEE.",
+      "valor": "CP do PDE 2035 e PNE 2055 ENCERRADAS (fev-mar 2026). Próxima janela: PDE 2036 (esperado fev-mar 2027) e Caderno de MMGD atualizado. V6 SOA.",
       "status": "AGENDADO",
       "norma": "EPE · ciclo anual de consulta pública",
       "url": "https://www.epe.gov.br/pt/leiloes-de-energia/consultas-publicas",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
       "vetores_afetados": ["V6"],
-      "qsv_r": 1,
-      "qsv_fontes": ["F1_pagina_oficial"]
+      "qsv_cor": "LARANJA",
+      "qsv_origem_classificacao": "mecanismo_v3.0",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/.../consultas-publicas", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "motivo_pendencia": "Previsão futura — aguarda calendário do PDE 2036"
     },
     {
+      "fato_id": "EPE-STATUS-MONITOR",
       "tema": "Status do Monitor EPE no Monitor Regulatório SOA",
-      "valor": "EPE listada como fonte primária no `Monitor_Regulatorio_SOA_Design.md` (v1.1 de 17/06/2026) junto com ANEEL, MME, ONS, CCEE e Congresso. Este folder vivo complementa o monitor geral com foco específico e cobertura ampliada das publicações periódicas.",
+      "valor": "EPE listada como fonte primária no Monitor_Regulatorio_SOA_Design v1.1 (17/06/2026) junto com ANEEL, MME, ONS, CCEE e Congresso.",
       "status": "VIGENTE",
       "norma": "SOA/SOS · arquitetura interna",
       "url": "https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_EPE_GitHub.html",
       "verificado_em": "2026-06-28",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 5,
       "vetores_afetados": ["V6"],
-      "qsv_r": 2,
-      "qsv_fontes": ["F1_pagina_oficial", "F4_cruzamento"]
+      "qsv_cor": "LARANJA",
+      "qsv_origem_classificacao": "mecanismo_v3.0",
+      "qsv_fontes_independentes": [
+        {"tipo": "F1_pagina_oficial", "ref": "Monitor_Regulatorio_SOA_Design.md (interno SOA)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "motivo_pendencia": "Fato meta-interno — sem fonte externa independente por design"
     }
   ],
   "_historico_caidos": []
