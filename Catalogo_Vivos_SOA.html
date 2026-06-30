@@ -67,7 +67,12 @@
     .fresh.a{background:var(--amber-lt);color:var(--amber-d);border:1px solid #FCD34D}
     .fresh.r{background:var(--red-lt);color:var(--red);border:1px solid #FCA5A5}
     .fresh.static{background:var(--slate-lt);color:var(--slate);border:1px solid #CBD5E1}
+    .fresh.pend{background:var(--amber-lt);color:var(--amber-d);border:1px solid #FCD34D}
+    .fresh.mudou{background:#FFEDD5;color:#9A3412;border:1px solid #FB923C}
+    .fresh.rep{background:var(--red-lt);color:var(--red);border:1px solid #FCA5A5}
     .fresh.loading{background:#E5E7EB;color:#6B7280;border:1px solid #D1D5DB}
+    .trig-banner{background:var(--amber-lt);border:1px solid #FCD34D;border-left:5px solid var(--orange);border-radius:var(--r-md);padding:12px 16px;margin:0 0 16px;font-size:13.5px;color:#7a4a00;display:none}
+    .trig-banner.on{display:block}.trig-banner b{color:var(--orange)}
     .card h3{font-family:var(--f-sans);font-size:16px;font-weight:700;color:var(--navy);line-height:1.25;margin-bottom:5px}
     .card .desc{font-size:13px;color:var(--grey);line-height:1.5;margin:0 0 12px;flex:1}
     .card .meta{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px dashed var(--line);padding-top:10px;margin-top:auto}
@@ -170,8 +175,10 @@
   </div>
 </div>
 
-<h2 class="sec">Materiais de referência <span class="tag ref">estáticos · edição manual</span></h2>
-<p class="sec-sub">Cada vetor entrega uma tese auditável. <b>São materiais estáticos, atualizados à mão</b> — não fazem fetch de dado e não se regeneram sozinhos. O carimbo mostra a <b>data da última edição real</b> (não há alarme de "defasado": material estático é estável, não desatualizado).</p>
+<h2 class="sec">Materiais comerciais por vetor <span class="tag ref">sob gatilho regulatório</span></h2>
+<p class="sec-sub">Cada vetor sustenta uma tese ancorada num quadro regulatório. Enquanto o quadro não muda, o folder é <b>estável</b> e o carimbo mostra a data da última edição. Quando um fato de que ele depende muda, o selo acende <b>"quadro mudou — revisar"</b> — e a regeneração do texto passa pelo gate humano (nunca automática). O Hub é índice estático.</p>
+
+<div class="trig-banner" id="trigBanner"></div>
 
 <div class="grid">
 
@@ -265,58 +272,64 @@
 
 <script>
 (function() {
-  function pad(n) { return n < 10 ? '0' + n : n; }
-  function fmt(d) {
-    return pad(d.getDate()) + '/' + pad(d.getMonth()+1) + '/' + d.getFullYear() +
-           ' às ' + pad(d.getHours()) + 'h' + pad(d.getMinutes());
-  }
+  function pad(n){return n<10?'0'+n:n;}
+  function fmt(d){return pad(d.getDate())+'/'+pad(d.getMonth()+1)+'/'+d.getFullYear()+' às '+pad(d.getHours())+'h'+pad(d.getMinutes());}
   document.getElementById('liveStamp').textContent = '● Catálogo aberto em ' + fmt(new Date());
 
-  const REPO = 'trigocom-code/financiamento-de-usinas';
+  const REPO='trigocom-code/financiamento-de-usinas';
+  const RAW='https://raw.githubusercontent.com/'+REPO+'/main/';
+  function classify(h){ if(h<24)return{cls:'g',label:'atualizado hoje'}; if(h<168)return{cls:'a',label:Math.floor(h/24)+'d atrás'}; return{cls:'r',label:Math.floor(h/24)+'d · peça regeneração'}; }
 
-  function classify(diffHours) {
-    if (diffHours < 24) return {cls:'g', label:'atualizado hoje'};
-    if (diffHours < 24*7) return {cls:'a', label: Math.floor(diffHours/24) + 'd atrás'};
-    return {cls:'r', label: Math.floor(diffHours/24) + 'd · peça regeneração'};
-  }
+  // estado do gatilho -> selo
+  const TRIG={
+    estavel:{cls:'static',txt:'estável'},
+    estavel_com_ressalva:{cls:'a',txt:'estável · ressalva'},
+    estatico:{cls:'static',txt:'estático'},
+    dependencia_nao_confirmada:{cls:'static',txt:'vínculo a definir'},
+    herda_pendente:{cls:'pend',txt:'aguarda verificação'},
+    quadro_mudou:{cls:'mudou',txt:'quadro mudou — revisar'},
+    avaliacao_represada:{cls:'rep',txt:'avaliação represada'}
+  };
 
-  async function loadOne(card) {
-    const file = card.dataset.file;
-    const isStatic = card.dataset.static === '1';
-    const tsEl = card.querySelector('[data-ts]');
-    const fEl = card.querySelector('[data-fresh]');
-    try {
-      const url = 'https://api.github.com/repos/' + REPO + '/commits?path=' + encodeURIComponent(file) + '&per_page=1';
-      const r = await fetch(url, {cache: 'no-store'});
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      const commits = await r.json();
-      if (!commits.length) throw new Error('sem commits');
-      const d = new Date(commits[0].commit.author.date);
-      if (isStatic) {
-        tsEl.innerHTML = '<b>Última edição:</b><br>' + fmt(d);
-        fEl.className = 'fresh static';
-        fEl.textContent = 'estático';
-      } else {
-        const diffH = (Date.now() - d.getTime()) / 36e5;
-        const cls = classify(diffH);
-        tsEl.innerHTML = '<b>Última regeneração:</b><br>' + fmt(d);
-        fEl.className = 'fresh ' + cls.cls;
-        fEl.textContent = cls.label;
-      }
-    } catch(e) {
-      if (isStatic) {
-        tsEl.innerHTML = '<b>—</b>';
-        fEl.className = 'fresh static';
-        fEl.textContent = 'estático';
-      } else {
-        tsEl.innerHTML = '<b>—</b> ' + e.message;
-        fEl.className = 'fresh r';
-        fEl.textContent = 'erro';
-      }
+  let STATE=null;
+  async function loadState(){
+    try{ const r=await fetch(RAW+'_folder_triggers_state.json',{cache:'no-store'}); if(r.ok) STATE=await r.json(); }catch(e){}
+    const ind = STATE && STATE._meta && STATE._meta.indicador_aguardando_fonte;
+    if(ind && ind.n>0){
+      const fatos=(ind.fatos||[]).map(f=>f.ref).join(', ');
+      const b=document.getElementById('trigBanner');
+      b.innerHTML='⚠ <b>'+ind.n+' folder(s) aguardando verificação na fonte</b> — fatos pendentes: '+fatos+'. Herdam pendência até o CEO fechar na fonte.';
+      b.className='trig-banner on';
     }
   }
 
-  document.querySelectorAll('.card').forEach(loadOne);
+  async function commitDate(file){
+    try{ const r=await fetch('https://api.github.com/repos/'+REPO+'/commits?path='+encodeURIComponent(file)+'&per_page=1',{cache:'no-store'});
+      if(r.ok){const c=await r.json(); if(c.length) return new Date(c[0].commit.author.date);} }catch(e){}
+    return null;
+  }
+
+  async function loadOne(card){
+    const file=card.dataset.file;
+    const isStatic=card.dataset.static==='1';
+    const tsEl=card.querySelector('[data-ts]');
+    const fEl=card.querySelector('[data-fresh]');
+    const trig=(STATE && STATE.folders && STATE.folders[file])?STATE.folders[file]:null;
+    const d=await commitDate(file);
+    if(trig){
+      const m=TRIG[trig.estado]||{cls:'static',txt:trig.estado};
+      fEl.className='fresh '+m.cls; fEl.textContent=m.txt;
+      tsEl.innerHTML='<b>Última edição:</b><br>'+(d?fmt(d):'—')+(trig.motivo?'<br><span style="color:#9A3412;font-size:11px">'+trig.motivo+'</span>':'');
+    } else if(isStatic){
+      fEl.className='fresh static'; fEl.textContent='estático';
+      tsEl.innerHTML='<b>Última edição:</b><br>'+(d?fmt(d):'—');
+    } else {
+      if(d){const h=(Date.now()-d.getTime())/36e5;const cls=classify(h);fEl.className='fresh '+cls.cls;fEl.textContent=cls.label;tsEl.innerHTML='<b>Última regeneração:</b><br>'+fmt(d);}
+      else{fEl.className='fresh r';fEl.textContent='erro';tsEl.innerHTML='<b>—</b>';}
+    }
+  }
+
+  (async function(){ await loadState(); document.querySelectorAll('.card').forEach(loadOne); })();
 })();
 </script>
 </body>
