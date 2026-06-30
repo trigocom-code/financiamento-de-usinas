@@ -1,0 +1,249 @@
+﻿{
+    "_meta":  {
+                  "gerado_em":  "2026-06-30 11:10",
+                  "indicador_aguardando_fonte":  {
+                                                     "n":  4,
+                                                     "folders":  [
+                                                                     "baterias-curtailment.html",
+                                                                     "prova-horaria-datacenters.html",
+                                                                     "gato-solar-soa.html",
+                                                                     "contencioso-curtailment.html"
+                                                                 ],
+                                                     "fatos":  [
+                                                                   {
+                                                                       "ref":  "EPE-MAPA-BARRAMENTOS-LRCAP",
+                                                                       "pendencia":  "coeficiente beta vs gama na Portaria 136 — nao verificado na fonte"
+                                                                   },
+                                                                   {
+                                                                       "ref":  "ANEEL-CP-009-GATO-SOLAR",
+                                                                       "pendencia":  "numeracao CP 009 (2025 vs 2026) — nao confirmada na ANEEL"
+                                                                   },
+                                                                   {
+                                                                       "ref":  "MME-MP-1318-2025",
+                                                                       "pendencia":  "MP 1.318 caducada; conteudo no PL 278 — confirmar regime vigente"
+                                                                   },
+                                                                   {
+                                                                       "ref":  "CCEE-LEI-15269-2025",
+                                                                       "pendencia":  "numero de vetos divergente — nao cravar (condicao C2 do CEO)"
+                                                                   }
+                                                               ]
+                                                 },
+                  "regra":  "modo X: detecta e sinaliza; NUNCA reescreve conteudo que mova a tese (gate humano)."
+              },
+    "baseline":  {
+                     "Fatos_CCEE::CCEE-LEI-15269-2025":  "5EF1819507043CFA",
+                     "Fatos_ANEEL::ANEEL-REN-1161-2026-BESS":  "68ACE2ECD5CC3DE4",
+                     "Fatos_ESG::Mercado regulado de carbono (SBCE)":  "C6D8C1F9FA5A9F2B",
+                     "Fatos_MME::MME-PORTARIA-136-2026-LRCAP":  "8CC6838BDA4323C8",
+                     "Fatos_ANEEL::ANEEL-REN-1059-2023":  "726CFEA76D95120E",
+                     "Fatos_ESG::Relato de sustentabilidade (IFRS S1/S2) — CVM":  "2B355FE6BC577D6A",
+                     "Fatos_ANEEL::ANEEL-CP-045-2019":  "15BF1960EAC33B79",
+                     "Fatos_ANEEL::ANEEL-REN-1071-LRCAP":  "10743202D3588DBC",
+                     "Fatos_ANEEL::ANEEL-CP-009-GATO-SOLAR":  "AA7D897607D2D509",
+                     "Fatos_MME::MME-REDATA":  "32EC513B13CA598C",
+                     "Fatos_EPE::EPE-MAPA-BARRAMENTOS-LRCAP":  "CC92207C0716A92D",
+                     "Fatos_MME::MME-MP-1318-2025":  "08EC65A76A28E939",
+                     "Fatos_ONS::ONS-NT-DPL-0111-2025":  "804772A3496A3907"
+                 },
+    "folders":  {
+                    "baterias-curtailment.html":  {
+                                                      "ciclo":  "2026-06-28",
+                                                      "categoria":  "vivo_sob_gatilho",
+                                                      "rodada":  "completa",
+                                                      "estado":  "herda_pendente",
+                                                      "motivo":  "depende de fato pendente: EPE-MAPA-BARRAMENTOS-LRCAP [aguarda fonte: beta_vs_gama]",
+                                                      "deps":  [
+                                                                   {
+                                                                       "json":  "Fatos_ANEEL",
+                                                                       "ref":  "ANEEL-REN-1161-2026-BESS",
+                                                                       "verificado_em":  "2026-06-28",
+                                                                       "qsv_cor":  "VERDE",
+                                                                       "achou":  true,
+                                                                       "mudou":  false
+                                                                   },
+                                                                   {
+                                                                       "json":  "Fatos_MME",
+                                                                       "ref":  "MME-PORTARIA-136-2026-LRCAP",
+                                                                       "verificado_em":  "2026-06-28",
+                                                                       "qsv_cor":  "VERDE",
+                                                                       "achou":  true,
+                                                                       "mudou":  false
+                                                                   },
+                                                                   {
+                                                                       "json":  "Fatos_ANEEL",
+                                                                       "ref":  "ANEEL-REN-1071-LRCAP",
+                                                                       "verificado_em":  "2026-06-28",
+                                                                       "qsv_cor":  "VERDE",
+                                                                       "achou":  true,
+                                                                       "mudou":  false
+                                                                   },
+                                                                   {
+                                                                       "json":  "Fatos_ONS",
+                                                                       "ref":  "ONS-NT-DPL-0111-2025",
+                                                                       "verificado_em":  "2026-06-28",
+                                                                       "qsv_cor":  "AZUL",
+                                                                       "achou":  true,
+                                                                       "mudou":  false
+                                                                   },
+                                                                   {
+                                                                       "json":  "Fatos_EPE",
+                                                                       "ref":  "EPE-MAPA-BARRAMENTOS-LRCAP",
+                                                                       "verificado_em":  "2026-06-28",
+                                                                       "qsv_cor":  "AZUL",
+                                                                       "achou":  true,
+                                                                       "mudou":  false
+                                                                   }
+                                                               ],
+                                                      "fato_gatilho":  null,
+                                                      "tipo":  null,
+                                                      "proposta_ref":  null
+                                                  },
+                    "prova-horaria-datacenters.html":  {
+                                                           "ciclo":  "2026-06-28",
+                                                           "categoria":  "vivo_sob_gatilho",
+                                                           "rodada":  "completa",
+                                                           "estado":  "herda_pendente",
+                                                           "motivo":  "depende de fato pendente: MME-REDATA (EM DELIBERAÇÃO); MME-MP-1318-2025 [aguarda fonte: mp_1318_redata]",
+                                                           "deps":  [
+                                                                        {
+                                                                            "json":  "Fatos_MME",
+                                                                            "ref":  "MME-REDATA",
+                                                                            "verificado_em":  "2026-06-28",
+                                                                            "qsv_cor":  "AZUL",
+                                                                            "achou":  true,
+                                                                            "mudou":  false
+                                                                        },
+                                                                        {
+                                                                            "json":  "Fatos_MME",
+                                                                            "ref":  "MME-MP-1318-2025",
+                                                                            "verificado_em":  "2026-06-28",
+                                                                            "qsv_cor":  "LARANJA",
+                                                                            "achou":  true,
+                                                                            "mudou":  false
+                                                                        }
+                                                                    ],
+                                                           "fato_gatilho":  null,
+                                                           "tipo":  null,
+                                                           "proposta_ref":  null
+                                                       },
+                    "gato-solar-soa.html":  {
+                                                "ciclo":  "2026-06-28",
+                                                "categoria":  "vivo_sob_gatilho",
+                                                "rodada":  "completa",
+                                                "estado":  "herda_pendente",
+                                                "motivo":  "depende de fato pendente: ANEEL-CP-009-GATO-SOLAR [aguarda fonte: cp_009_numeracao]",
+                                                "deps":  [
+                                                             {
+                                                                 "json":  "Fatos_ANEEL",
+                                                                 "ref":  "ANEEL-CP-009-GATO-SOLAR",
+                                                                 "verificado_em":  "2026-06-28",
+                                                                 "qsv_cor":  "LARANJA",
+                                                                 "achou":  true,
+                                                                 "mudou":  false
+                                                             },
+                                                             {
+                                                                 "json":  "Fatos_ANEEL",
+                                                                 "ref":  "ANEEL-REN-1059-2023",
+                                                                 "verificado_em":  "2026-06-28",
+                                                                 "qsv_cor":  "AZUL",
+                                                                 "achou":  true,
+                                                                 "mudou":  false
+                                                             }
+                                                         ],
+                                                "fato_gatilho":  null,
+                                                "tipo":  null,
+                                                "proposta_ref":  null
+                                            },
+                    "contencioso-curtailment.html":  {
+                                                         "ciclo":  "2026-06-28",
+                                                         "categoria":  "vivo_sob_gatilho",
+                                                         "rodada":  "completa",
+                                                         "estado":  "herda_pendente",
+                                                         "motivo":  "depende de fato pendente: CCEE-LEI-15269-2025 [aguarda fonte: vetos_15269]; ANEEL-CP-045-2019 (EM DELIBERAÇÃO)",
+                                                         "deps":  [
+                                                                      {
+                                                                          "json":  "Fatos_CCEE",
+                                                                          "ref":  "CCEE-LEI-15269-2025",
+                                                                          "verificado_em":  "2026-06-28",
+                                                                          "qsv_cor":  "AZUL",
+                                                                          "achou":  true,
+                                                                          "mudou":  false
+                                                                      },
+                                                                      {
+                                                                          "json":  "Fatos_ANEEL",
+                                                                          "ref":  "ANEEL-CP-045-2019",
+                                                                          "verificado_em":  "2026-06-28",
+                                                                          "qsv_cor":  "AZUL",
+                                                                          "achou":  true,
+                                                                          "mudou":  false
+                                                                      }
+                                                                  ],
+                                                         "fato_gatilho":  null,
+                                                         "tipo":  null,
+                                                         "proposta_ref":  null
+                                                     },
+                    "bitcoin-verde-soa.html":  {
+                                                   "ciclo":  "2026-06-28",
+                                                   "categoria":  "vivo_sob_gatilho",
+                                                   "rodada":  "completa",
+                                                   "estado":  "herda_pendente",
+                                                   "motivo":  "depende de fato pendente: MME-REDATA (EM DELIBERAÇÃO)",
+                                                   "deps":  [
+                                                                {
+                                                                    "json":  "Fatos_MME",
+                                                                    "ref":  "MME-REDATA",
+                                                                    "verificado_em":  "2026-06-28",
+                                                                    "qsv_cor":  "AZUL",
+                                                                    "achou":  true,
+                                                                    "mudou":  false
+                                                                }
+                                                            ],
+                                                   "fato_gatilho":  null,
+                                                   "tipo":  null,
+                                                   "proposta_ref":  null
+                                               },
+                    "certificacao-esg-auditavel.html":  {
+                                                            "ciclo":  "2026-06-29",
+                                                            "categoria":  "vivo_sob_gatilho",
+                                                            "rodada":  "completa",
+                                                            "estado":  "estavel_com_ressalva",
+                                                            "motivo":  "dependencia em deliberacao (ex.: SBCE)",
+                                                            "deps":  [
+                                                                         {
+                                                                             "json":  "Fatos_ESG",
+                                                                             "ref":  "Relato de sustentabilidade (IFRS S1/S2) — CVM",
+                                                                             "verificado_em":  "2026-06-29",
+                                                                             "qsv_cor":  "",
+                                                                             "achou":  true,
+                                                                             "mudou":  false
+                                                                         },
+                                                                         {
+                                                                             "json":  "Fatos_ESG",
+                                                                             "ref":  "Mercado regulado de carbono (SBCE)",
+                                                                             "verificado_em":  "2026-06-29",
+                                                                             "qsv_cor":  "",
+                                                                             "achou":  true,
+                                                                             "mudou":  false
+                                                                         }
+                                                                     ],
+                                                            "fato_gatilho":  null,
+                                                            "tipo":  null,
+                                                            "proposta_ref":  null
+                                                        },
+                    "icleansolar-limpeza-auditavel.html":  {
+                                                               "categoria":  "estatico_puro",
+                                                               "estado":  "estatico",
+                                                               "motivo":  "NR-35 / NR-10 sao normas trabalhistas, fora dos monitores regulatorios. Sem gatilho regulatorio monitorado."
+                                                           },
+                    "seguros-renovaveis-soa.html":  {
+                                                        "categoria":  "estatico_provisorio",
+                                                        "estado":  "dependencia_nao_confirmada",
+                                                        "motivo":  "Vinculo regulatorio NAO definido pelo CEO. Nao inventar. Candidatos a definir: Lei 15.269 / CP 045 / nenhum (atuarial)."
+                                                    },
+                    "iptu-verde-auditavel.html":  {
+                                                      "categoria":  "estatico_provisorio",
+                                                      "estado":  "dependencia_nao_confirmada",
+                                                      "motivo":  "Vinculo regulatorio NAO definido pelo CEO. Nao inventar. Candidatos a definir: REN 1.059 / Portarias 126-111 / lei municipal (nao monitorada)."
+                                                  }
+                }
+}
