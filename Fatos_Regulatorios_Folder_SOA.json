@@ -167,7 +167,7 @@
       "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
       "orgao": "EPE",
       "tema": "Mapa de Barramentos LRCAP (bonificação locacional)",
-      "valor": "ANCORADO: o bônus locacional é a constante ß=0,9 para barramentos do ANEXO II (redução de 10% no preço de lance), ß=1 para os demais — Portaria MME 136/2026, ANEXO I, Art. 2º §12 (Pdisp=(RFdisp/Disp)×ß) + corpo Art. 17 §3. O ANEXO II lista os barramentos bonificados (AL, BA, CE, MG, PB, PE, PI, RN — predominância NE, BA/CE concentrando). Metodologia EPE-DEE-NT-086/2025 (MISCR/P30).",
+      "valor": "ANCORADO: o bônus locacional é a constante ß=0,9 para barramentos do ANEXO II (redução de 10% no preço de lance), ß=1 para os demais — Portaria MME 136/2026, ANEXO I, Art. 2º §12 (Pdisp=(RFdisp/Disp)×ß) + corpo Art. 17 §3. O ANEXO II (TABELA 1) lista 129 barramentos bonificados em 98 subestações, 8 estados: BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste. Vantagem efetiva 1/0,9 ≈ +11,1% de Receita Fixa. Metodologia EPE-DEE-NT-086/2025 (MISCR/P30).",
       "status": "VIGENTE",
       "qsv_cor": "VERDE",
       "norma": "Portaria MME 136/2026 ANEXO I Art. 2º §12 + Art. 17 §3 + ANEXO II (lista) · EPE-DEE-NT-086/2025",
