@@ -242,16 +242,16 @@
   "_pendentes_verificacao": [
     {
       "fato_id": "ANEEL-CP-009-GATO-SOLAR",
-      "tema": "CP Gato Solar (numeração a confirmar)",
-      "valor": "Numeração em disputa: 'CP 009/2026' versus possível confusão com CP 009/2025 (curtailment fotovoltaico, fechada abr/2025). Tese 'duas CPs distintas' NÃO verificada na fonte ANEEL.",
-      "status": "PENDENTE",
-      "norma": "PENDENTE_REABERTURA — aneel.gov.br",
+      "tema": "CP ANEEL 009/2026 — combate à MMGD irregular ('geração invisível')",
+      "valor": "CONFIRMADA: CP 009/2026 (distinta da 009/2025, sobre curtailment fotovoltaico, fechada abr/2025) — são duas CPs distintas. Aberta 22/04/2026, contribuições até 06/06/2026. Combate à ampliação/alteração à revelia de MMGD (11,8–14,6 GW não registrados): redefine potência instalada como potência nominal CA na saída dos inversores; auditoria em até 60 dias (satélite/drones); faturamento retroativo de até 36 ciclos; risco de perda da GD I (Fio B até 2045). Paralela: CP 011/2026 (créditos vencidos / validade 60 meses).",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "CP ANEEL 009/2026 (aberta 22/04/2026) · CP ANEEL 011/2026",
       "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-06-28",
+      "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": ["V2", "V7"],
-      "qsv_cor": "LARANJA",
+      "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
       "qsv_fontes_independentes": [
         {"tipo": "F1_pagina_oficial", "ref": "PENDENTE — aneel.gov.br", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
