@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "descricao": "Mapa folder->fatos para a arquitetura 'vivo sob gatilho regulatorio' (modo X: deteccao + flag sobre HTML hardcoded, ZERO auto-reescrita).",
+    "gerado_em": "2026-06-30",
+    "regras": {
+      "estado_vem_do_fato": "O folder LISTA a dependencia; o estado e derivado do(s) fato(s). Pior estado vence.",
+      "nunca_verde_se_pendente": "Fato pendente da conferencia do CEO na fonte NUNCA marca o folder como estavel/verde. O folder herda a pendencia.",
+      "atomicidade": "Um folder so e avaliado quando TODAS as suas dependencias foram varridas no MESMO ciclo_id. Faltou um monitor -> avaliacao_represada (nunca 'estavel').",
+      "precedencia_estado": ["avaliacao_represada", "herda_pendente", "quadro_mudou", "estavel_com_ressalva", "estavel"],
+      "regra_dura": "A automacao detecta e propoe; NUNCA crava conteudo que mova a tese. Mudanca em status/qsv_cor/norma/numero_status -> gate. Mudanca so em verificado_em -> ignora."
+    },
+    "fatos_aguardando_fonte_CEO": [
+      {"ref": "EPE-MAPA-BARRAMENTOS-LRCAP", "pendencia": "coeficiente beta vs gama na Portaria 136 — nao verificado na fonte"},
+      {"ref": "ANEEL-CP-009-GATO-SOLAR",    "pendencia": "numeracao CP 009 (2025 vs 2026) — nao confirmada na ANEEL"},
+      {"ref": "MME-MP-1318-2025",           "pendencia": "MP 1.318 caducada; conteudo no PL 278 — confirmar regime vigente"},
+      {"ref": "CCEE-LEI-15269-2025",        "pendencia": "numero de vetos divergente — nao cravar (condicao C2 do CEO)"}
+    ],
+    "nota_indicador": "O catalogo deve exibir: 'N folders aguardando verificacao na fonte' = folders cujo estado herdado aponta para um item de fatos_aguardando_fonte_CEO. Esses fatos NAO podem ficar confortaveis no sistema ate o CEO fecha-los."
+  },
+  "folders": [
+    {
+      "folder": "baterias-curtailment.html",
+      "categoria": "vivo_sob_gatilho",
+      "depende_de": [
+        {"json": "Fatos_ANEEL", "ref": "ANEEL-REN-1161-2026-BESS", "ref_tipo": "fato_id"},
+        {"json": "Fatos_MME",   "ref": "MME-PORTARIA-136-2026-LRCAP", "ref_tipo": "fato_id"},
+        {"json": "Fatos_ANEEL", "ref": "ANEEL-REN-1071-LRCAP", "ref_tipo": "fato_id"},
+        {"json": "Fatos_ONS",   "ref": "ONS-NT-DPL-0111-2025", "ref_tipo": "fato_id"},
+        {"json": "Fatos_EPE",   "ref": "EPE-MAPA-BARRAMENTOS-LRCAP", "ref_tipo": "fato_id", "pendencia_fonte": "beta_vs_gama"}
+      ]
+    },
+    {
+      "folder": "prova-horaria-datacenters.html",
+      "categoria": "vivo_sob_gatilho",
+      "depende_de": [
+        {"json": "Fatos_MME", "ref": "MME-REDATA", "ref_tipo": "fato_id"},
+        {"json": "Fatos_MME", "ref": "MME-MP-1318-2025", "ref_tipo": "fato_id", "pendencia_fonte": "mp_1318_redata"}
+      ]
+    },
+    {
+      "folder": "gato-solar-soa.html",
+      "categoria": "vivo_sob_gatilho",
+      "depende_de": [
+        {"json": "Fatos_ANEEL", "ref": "ANEEL-CP-009-GATO-SOLAR", "ref_tipo": "fato_id", "pendencia_fonte": "cp_009_numeracao"},
+        {"json": "Fatos_ANEEL", "ref": "ANEEL-REN-1059-2023", "ref_tipo": "fato_id"}
+      ]
+    },
+    {
+      "folder": "contencioso-curtailment.html",
+      "categoria": "vivo_sob_gatilho",
+      "depende_de": [
+        {"json": "Fatos_CCEE",  "ref": "CCEE-LEI-15269-2025", "ref_tipo": "fato_id", "pendencia_fonte": "vetos_15269"},
+        {"json": "Fatos_ANEEL", "ref": "ANEEL-CP-045-2019", "ref_tipo": "fato_id"}
+      ]
+    },
+    {
+      "folder": "bitcoin-verde-soa.html",
+      "categoria": "vivo_sob_gatilho",
+      "depende_de": [
+        {"json": "Fatos_MME", "ref": "MME-REDATA", "ref_tipo": "fato_id"}
+      ],
+      "nota": "Herda 'em deliberacao' do REDATA (mesma logica de data centers)."
+    },
+    {
+      "folder": "certificacao-esg-auditavel.html",
+      "categoria": "vivo_sob_gatilho",
+      "depende_de": [
+        {"json": "Fatos_ESG", "ref": "Relato de sustentabilidade (IFRS S1/S2) — CVM", "ref_tipo": "tema"},
+        {"json": "Fatos_ESG", "ref": "Mercado regulado de carbono (SBCE)", "ref_tipo": "tema", "ressalva": "SBCE em deliberacao -> estavel_com_ressalva"}
+      ]
+    },
+    {
+      "folder": "icleansolar-limpeza-auditavel.html",
+      "categoria": "estatico_puro",
+      "depende_de": [],
+      "motivo": "NR-35 / NR-10 sao normas trabalhistas, fora dos monitores regulatorios. Sem gatilho regulatorio monitorado."
+    },
+    {
+      "folder": "seguros-renovaveis-soa.html",
+      "categoria": "estatico_provisorio",
+      "dependencia_nao_confirmada": true,
+      "depende_de": [],
+      "motivo": "Vinculo regulatorio NAO definido pelo CEO. Nao inventar. Candidatos a definir: Lei 15.269 / CP 045 / nenhum (atuarial)."
+    },
+    {
+      "folder": "iptu-verde-auditavel.html",
+      "categoria": "estatico_provisorio",
+      "dependencia_nao_confirmada": true,
+      "depende_de": [],
+      "motivo": "Vinculo regulatorio NAO definido pelo CEO. Nao inventar. Candidatos a definir: REN 1.059 / Portarias 126-111 / lei municipal (nao monitorada)."
+    }
+  ]
+}
