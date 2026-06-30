@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-06-30 15:42",
+                  "gerado_em":  "2026-06-30 15:56",
                   "modo":  "v2 canario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
@@ -18,39 +18,39 @@
                                                                       "ultimo":  "2026-06-30"
                                                                   },
                                        "monitor-seguros-soa":  {
-                                                                   "hoje":  "NAO",
-                                                                   "ultimo":  "2026-06-29"
+                                                                   "hoje":  "SIM",
+                                                                   "ultimo":  "2026-06-30"
                                                                },
                                        "monitor-esg-soa":  {
-                                                               "hoje":  "NAO",
-                                                               "ultimo":  "2026-06-29"
+                                                               "hoje":  "SIM",
+                                                               "ultimo":  "2026-06-30"
                                                            },
                                        "monitor-regulatorio-soa":  {
                                                                        "hoje":  "SIM",
                                                                        "ultimo":  "2026-06-30"
                                                                    },
                                        "monitor-capital-verde-soa":  {
-                                                                         "hoje":  "NAO",
-                                                                         "ultimo":  "2026-06-29"
+                                                                         "hoje":  "SIM",
+                                                                         "ultimo":  "2026-06-30"
                                                                      },
                                        "monitor-eventos-soa":  {
-                                                                   "hoje":  "NAO",
-                                                                   "ultimo":  "2026-06-29"
+                                                                   "hoje":  "SIM",
+                                                                   "ultimo":  "2026-06-30"
                                                                },
                                        "monitor-gato-solar-soa":  {
-                                                                      "hoje":  "NAO",
-                                                                      "ultimo":  "2026-06-29"
+                                                                      "hoje":  "SIM",
+                                                                      "ultimo":  "2026-06-30"
                                                                   },
                                        "monitor-iptu-verde-soa":  {
-                                                                      "hoje":  "NAO",
-                                                                      "ultimo":  "2026-06-29"
+                                                                      "hoje":  "SIM",
+                                                                      "ultimo":  "2026-06-30"
                                                                   }
                                    }
               },
     "baseline":  {
                      "Fatos_CCEE::CCEE-LEI-15269-2025":  "10D3D6A57C752A0E",
                      "Fatos_ANEEL::ANEEL-REN-1161-2026-BESS":  "68ACE2ECD5CC3DE4",
-                     "Fatos_ESG::Mercado regulado de carbono (SBCE)":  "C6D8C1F9FA5A9F2B",
+                     "Fatos_ESG::Mercado regulado de carbono (SBCE)":  "039693A52E9E690D",
                      "Fatos_MME::MME-PORTARIA-136-2026-LRCAP":  "8CC6838BDA4323C8",
                      "Fatos_ANEEL::ANEEL-REN-1059-2023":  "726CFEA76D95120E",
                      "Fatos_ESG::Relato de sustentabilidade (IFRS S1/S2) — CVM":  "2B355FE6BC577D6A",
@@ -66,8 +66,8 @@
                     "baterias-curtailment.html":  {
                                                       "ciclo":  "2026-06-30",
                                                       "categoria":  "vivo_sob_gatilho",
-                                                      "estado":  "quadro_mudou",
-                                                      "motivo":  "fato(s) mudaram: EPE-MAPA-BARRAMENTOS-LRCAP",
+                                                      "estado":  "estavel",
+                                                      "motivo":  "quadro parado; monitores rodaram no ciclo e dado fresco",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-regulatorio-soa"
@@ -120,12 +120,12 @@
                                                                        "qsv_cor":  "AZUL",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  true
+                                                                       "mudou":  false
                                                                    }
                                                                ],
-                                                      "fato_gatilho":  "EPE-MAPA-BARRAMENTOS-LRCAP",
-                                                      "tipo":  "gate (modo X: sinaliza, NAO reescreve)",
-                                                      "proposta_ref":  "_folders_revisao_pendente.md"
+                                                      "fato_gatilho":  null,
+                                                      "tipo":  null,
+                                                      "proposta_ref":  null
                                                   },
                     "prova-horaria-datacenters.html":  {
                                                            "ciclo":  "2026-06-30",
@@ -157,7 +157,7 @@
                                                                             "qsv_cor":  "LARANJA",
                                                                             "monitor":  "monitor-regulatorio-soa",
                                                                             "achou":  true,
-                                                                            "mudou":  true
+                                                                            "mudou":  false
                                                                         }
                                                                     ],
                                                            "fato_gatilho":  null,
@@ -185,7 +185,7 @@
                                                                  "qsv_cor":  "AZUL",
                                                                  "monitor":  "monitor-regulatorio-soa",
                                                                  "achou":  true,
-                                                                 "mudou":  true
+                                                                 "mudou":  false
                                                              },
                                                              {
                                                                  "json":  "Fatos_ANEEL",
@@ -222,7 +222,7 @@
                                                                           "qsv_cor":  "AZUL",
                                                                           "monitor":  "monitor-regulatorio-soa",
                                                                           "achou":  true,
-                                                                          "mudou":  true
+                                                                          "mudou":  false
                                                                       },
                                                                       {
                                                                           "json":  "Fatos_ANEEL",
@@ -269,21 +269,21 @@
                     "certificacao-esg-auditavel.html":  {
                                                             "ciclo":  "2026-06-30",
                                                             "categoria":  "vivo_sob_gatilho",
-                                                            "estado":  "avaliacao_represada",
-                                                            "motivo":  "monitor(es) nao rodou no ciclo 2026-06-30: monitor-esg-soa",
+                                                            "estado":  "quadro_mudou",
+                                                            "motivo":  "fato(s) mudaram: Mercado regulado de carbono (SBCE)",
                                                             "aguarda_fonte":  false,
                                                             "monitores_dependentes":  [
                                                                                           "monitor-esg-soa"
                                                                                       ],
                                                             "monitores_parados":  [
-                                                                                      "monitor-esg-soa"
+
                                                                                   ],
-                                                            "idade_max_dias":  1,
+                                                            "idade_max_dias":  0,
                                                             "deps":  [
                                                                          {
                                                                              "json":  "Fatos_ESG",
                                                                              "ref":  "Relato de sustentabilidade (IFRS S1/S2) — CVM",
-                                                                             "verificado_em":  "2026-06-29",
+                                                                             "verificado_em":  "2026-06-30",
                                                                              "qsv_cor":  "",
                                                                              "monitor":  "monitor-esg-soa",
                                                                              "achou":  true,
@@ -292,16 +292,16 @@
                                                                          {
                                                                              "json":  "Fatos_ESG",
                                                                              "ref":  "Mercado regulado de carbono (SBCE)",
-                                                                             "verificado_em":  "2026-06-29",
+                                                                             "verificado_em":  "2026-06-30",
                                                                              "qsv_cor":  "",
                                                                              "monitor":  "monitor-esg-soa",
                                                                              "achou":  true,
-                                                                             "mudou":  false
+                                                                             "mudou":  true
                                                                          }
                                                                      ],
-                                                            "fato_gatilho":  null,
-                                                            "tipo":  null,
-                                                            "proposta_ref":  null
+                                                            "fato_gatilho":  "Mercado regulado de carbono (SBCE)",
+                                                            "tipo":  "gate (modo X: sinaliza, NAO reescreve)",
+                                                            "proposta_ref":  "_folders_revisao_pendente.md"
                                                         },
                     "icleansolar-limpeza-auditavel.html":  {
                                                                "categoria":  "estatico_puro",
