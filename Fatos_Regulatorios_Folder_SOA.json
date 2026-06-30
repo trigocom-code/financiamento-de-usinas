@@ -1,83 +1,177 @@
 {
   "_meta": {
-    "descricao": "Fonte ÚNICA de fatos regulatórios do Folder 'Onde Entramos'. O folder e a versão viva (artifact) consomem DESTE arquivo. O monitor regulatório SOA atualiza este arquivo quando um gatilho dispara; em seguida o folder é regenerado.",
-    "verificado_em": "2026-06-27",
+    "schema_version": "1.3",
+    "descricao": "Fonte ÚNICA de fatos regulatórios do Folder 'Onde Entramos'. Schema 1.3 (alinhado aos monitores per-órgão e à Tabela de Precedência QSV v1.2). O folder Folder_Vivo_Regulatorio_GitHub.html consome DESTE arquivo (data.fatos[]). O monitor regulatório SOA mantém este arquivo. Schema legado aposentado em Fatos_Regulatorios_Folder_SOA.legacy.deprecated.json.",
+    "verificado_em": "2026-06-29",
+    "schema_migrado_em": "2026-06-29",
     "proxima_revisao_sugerida": "2026-07-31",
-    "responsavel_atualizacao": "Monitor Regulatório SOA (digest diário) + regeneração agendada",
-    "regra_staleness": "Fato com verificado_em > 90 dias deve ser exibido com alerta e reconferido."
+    "responsavel_atualizacao": "Monitor Regulatório SOA (digest diário) — escreve schema 1.3, aplica Tabela_Precedencia_QSV_v1_2",
+    "fonte_canonica_per_orgao": "Fatos_MME/ANEEL/ONS/CCEE/EPE_Folder_SOA.json (detalhe granular por órgão; este arquivo é a visão consolidada publicada)",
+    "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json prevalece sobre classificação automática (R1). VERDE exige fonte oficial reaberta + número ancorado (R2). Fato fora da lista tem teto AZUL (R7).",
+    "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO.",
+    "regra_staleness": "Fato com verificado_em > 90 dias deve ser exibido com alerta e reconferido.",
+    "nota_render": "O folder lê f.tema/f.valor/f.status/f.norma. Campos QSV (fato_id/orgao/qsv_cor/numero_status) são metadados de governança, não renderizados. _pendentes_verificacao NÃO é renderizado (fica fora de fatos[])."
   },
   "fatos": [
     {
       "id": "gd_limites",
+      "fato_id": "ANEEL-REN-1059-2023",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Limite de potência da Geração Distribuída (minigeração)",
       "valor": "> 75 kW até 3 MW (solar/não despachável) ou 5 MW (despachável, inclui solar híbrida com bateria ≥20%)",
       "status": "VIGENTE",
+      "qsv_cor": "AZUL",
       "norma": "REN ANEEL 1.059/2023 (regulamenta a Lei 14.300/2022)",
+      "numero_status": "ALEGADO_NAO_ANCORADO",
       "verificado_em": "2026-06-26",
       "gatilho_revisao": "alteração da REN 1.059 ou novo marco legal da GD"
     },
     {
       "id": "lrcap_datas",
+      "fato_id": "MME-PORTARIA-136-2026-LRCAP",
+      "orgao": "MME",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "LRCAP de Armazenamento (baterias) — calendário",
       "valor": "Leilões 02/12/2026 (Nacional, c/ requisito de nacionalização) e 04/12/2026 (Aberto). Cadastro EPE 15/06–31/07/2026. Suprimento 15 anos, início 01/08/2028.",
       "status": "AGENDADO",
-      "norma": "Portaria MME 136/2026",
-      "verificado_em": "2026-06-27",
+      "qsv_cor": "VERDE",
+      "norma": "Portaria MME 136/2026 (DOU 03/06/2026)",
+      "numero_status": "ANCORADO",
+      "verificado_em": "2026-06-29",
       "gatilho_revisao": "publicação/alteração do edital ANEEL; mudança de datas"
     },
     {
       "id": "lrcap_edital",
+      "fato_id": "ANEEL-EDITAL-LRCAP-ARMAZ",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Edital ANEEL do LRCAP Armazenamento (preço-teto + regra de TUST)",
       "valor": "NÃO PUBLICADO — preço-teto e tratamento de TUST (risco de dupla cobrança consumo+injeção) pendentes. Sinal de 24/06: na REN 1.161 de outorga de armazenamento a ANEEL MANTEVE a cobrança integral pelo uso da rede após a Lei 15.269/2025; a regra de TUST específica do leilão segue no edital, ainda não publicado.",
       "status": "PENDENTE",
+      "qsv_cor": "LARANJA",
       "norma": "ANEEL (edital do leilão)",
-      "verificado_em": "2026-06-27",
+      "numero_status": "SEM_NUMEROS",
+      "verificado_em": "2026-06-29",
       "gatilho_revisao": "publicação do edital (item nº 1 de prioridade do monitor)"
     },
     {
       "id": "lrcap_ancora",
+      "fato_id": "ANEEL-CCEE-LRCAP-TERMICA-REF",
+      "orgao": "ANEEL/CCEE",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Referência de valor de capacidade (LRCAP térmica)",
       "valor": "Preço-teto térmica a gás R$ 1,12–2,25 mi/MW-ano (2º LRCAP, 18/03/2026; ~R$ 39 bi de receita fixa contratada)",
       "status": "VIGENTE (referência)",
+      "qsv_cor": "AZUL",
       "norma": "ANEEL/CCEE — homologação LRCAP 2026",
+      "numero_status": "ALEGADO_NAO_ANCORADO",
       "verificado_em": "2026-06-26",
       "gatilho_revisao": "novo LRCAP ou divulgação do preço-teto de armazenamento"
     },
     {
       "id": "bess_nt",
+      "fato_id": "ONS-NT-DPL-0111-2025",
+      "orgao": "ONS",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Requisitos técnicos mínimos das baterias (LRCAP)",
       "valor": "≥ 30 MW, ≥ 4 h de operação contínua, ≥ 85% de eficiência, padrão Grid Forming obrigatório",
       "status": "VIGENTE",
+      "qsv_cor": "AZUL",
       "norma": "NT-ONS DPL 0111/2025 · EPE-DEE-NT-095/2025 (publicada 23/06/2026)",
+      "numero_status": "ALEGADO_NAO_ANCORADO",
       "verificado_em": "2026-06-26",
-      "gatilho_revisao": "revisão da NT de requisitos"
+      "gatilho_revisao": "revisão da NT de requisitos; par 0111 vs 0114/2025 a confirmar"
     },
     {
       "id": "sae_outorga",
+      "fato_id": "ANEEL-REN-1161-2026-BESS",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Regime de outorga de Sistemas de Armazenamento de Energia (SAE autônomo)",
       "valor": "Autorização por 35 anos; operação comercial em até 54 meses; prorrogação com aviso de 6 meses; ANEEL analisa histórico setorial do agente. Mantida a cobrança integral pelo uso da rede.",
       "status": "VIGENTE",
+      "qsv_cor": "VERDE",
       "norma": "REN ANEEL 1.161/2026 (assinada 02/06; publicada no DOU 24/06/2026)",
-      "verificado_em": "2026-06-27",
+      "numero_status": "ANCORADO",
+      "verificado_em": "2026-06-28",
       "gatilho_revisao": "revisão da REN 1.161 ou regra de TUST do edital LRCAP"
     },
     {
       "id": "curtailment",
+      "fato_id": "ANEEL-CP-045-2019",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Tratamento do curtailment (constrained-off)",
       "valor": "Critérios operativos e rateio em deliberação; parecer AGU admite corte FÍSICO de MMGD, mas rejeita o corte CONTÁBIL (rateio entre fontes). Corte medido pela regra canônica.",
       "status": "EM DELIBERAÇÃO",
+      "qsv_cor": "AZUL",
       "norma": "CP ANEEL 45/2019 (3ª fase)",
-      "verificado_em": "2026-06-27",
+      "numero_status": "SEM_NUMEROS",
+      "verificado_em": "2026-06-29",
       "gatilho_revisao": "publicação de REN/voto cobrindo eólicas e/ou MMGD"
     },
     {
       "id": "fontes_dados",
+      "fato_id": "SOA-FONTES-OFICIAIS",
+      "orgao": "multi",
+      "tipo_fato": "ESTRUTURAL",
       "tema": "Fontes oficiais do estudo SOA/SOS",
       "valor": "ONS (geração, corte canônico), CCEE (PLD), ANEEL (SIGA/SIGET), EPE, MMGD, NASA POWER",
       "status": "VIGENTE",
+      "qsv_cor": "AZUL",
       "norma": "bases públicas oficiais",
+      "numero_status": "SEM_NUMEROS",
       "verificado_em": "2026-06-26",
       "gatilho_revisao": "n/a (estrutural)"
     }
-  ]
+  ],
+  "_pendentes_verificacao": [
+    {
+      "fato_id": "MME-MP-1318-2025",
+      "orgao": "MME",
+      "tema": "MP 1.318/2025 — REDATA",
+      "valor": "CADUCADA em 25/02/2026 (não convertida no prazo). Conteúdo migrou para o PL 278/2026, travado no Senado. NÃO usar como regime vigente.",
+      "status": "CADUCADA",
+      "qsv_cor": "LARANJA",
+      "norma": "MP 1.318/2025 (sem efeito jurídico atual)",
+      "numero_status": "ANCORADO",
+      "fonte": "Agência Senado, 27/02/2026",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "fato_id": "ANEEL-CP-009-GATO-SOLAR",
+      "orgao": "ANEEL",
+      "tema": "CP Gato Solar — numeração a confirmar",
+      "valor": "Numeração em disputa (009/2026 vs 009/2025). Tese 'duas CPs distintas' não verificada. Não cravar a numeração até abrir aneel.gov.br.",
+      "status": "PENDENTE",
+      "qsv_cor": "LARANJA",
+      "norma": "PENDENTE_REABERTURA — aneel.gov.br",
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "fato_id": "CCEE-LEI-15269-2025",
+      "orgao": "CCEE",
+      "tema": "Lei 15.269/2025 — ressarcimento parcial por curtailment",
+      "valor": "Conversão da MP 1.304/2025; ressarce só indisponibilidade de transmissão e confiabilidade (sobreoferta vetada). F1 = Planalto, não CCEE. NENHUM número de vetos (15/16/20) entra em material externo.",
+      "status": "VIGENTE",
+      "qsv_cor": "AZUL",
+      "norma": "Lei 15.269/2025",
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "verificado_em": "2026-06-28"
+    },
+    {
+      "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
+      "orgao": "EPE",
+      "tema": "Mapa de Barramentos LRCAP (bonificação locacional)",
+      "valor": "HÍBRIDO: critério na Portaria MME 136/2026; barramentos elegíveis no banco SOA. Números (129 barramentos, β=0,9, 86% NE, BA 33%, CE 30%) NÃO ancorados — não vão a material externo até dupla ancoragem (DOU + banco).",
+      "status": "EM DELIBERAÇÃO",
+      "qsv_cor": "AZUL",
+      "norma": "Portaria MME 136/2026 + banco SOA (query pendente)",
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "verificado_em": "2026-06-28"
+    }
+  ],
+  "_historico_caidos": []
 }
