@@ -85,9 +85,9 @@
     {
       "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
       "tema": "Mapa de Barramentos LRCAP (critério de bonificação locacional)",
-      "valor": "COEFICIENTE CONFIRMADO: o bônus locacional é β (não γ) — β=0,9 para barramentos do Anexo II (redução de 10% no preço de lance), β=1 para os demais (Portaria Normativa MME 878/2025, Anexo Art. 2º §11, fl.14). EPE divulgou o mapa em 09/06/2026 e o detalhamento da base em 27/06/2026. Os demais números (129 barramentos / 86% NE / Bahia 33% / Ceará 30%) permanecem ALEGADO_NAO_ANCORADO até ancoragem no banco SOA.",
+      "valor": "ANCORADO na fonte oficial: o bônus locacional é a constante ß (beta), com ß=0,9 para barramentos do ANEXO II (redução de 10% no preço de disponibilidade/lance) e ß=1 para os demais — Portaria MME 136/2026, ANEXO I, Art. 2º §12 (fórmula Pdisp=(RFdisp/Disp)×ß) e corpo Art. 17 §3. O ANEXO II lista os barramentos bonificados (subestações em AL, BA, CE, MG, PB, PE, PI, RN — predominância NE, com BA e CE concentrando). Metodologia: EPE-DEE-NT-086/2025 (MISCR/P30). O 'γ' anterior era de doc SOA interno (LMP), não oficial.",
       "status": "VIGENTE",
-      "norma": "Portaria MME 878/2025 §11 (coeficiente β) · Portaria MME 136/2026 (LRCAP) · EPE",
+      "norma": "Portaria MME 136/2026 ANEXO I Art. 2º §12 + Art. 17 §3 + ANEXO II (lista) · EPE-DEE-NT-086/2025 (MISCR)",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes",
       "verificado_em": "2026-06-30",
       "tipo_fato": "HIBRIDO",
