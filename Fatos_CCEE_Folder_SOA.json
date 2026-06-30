@@ -27,11 +27,11 @@
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm — PENDENTE_REABERTURA pelo CEO", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Lei 15.269/2025 sancionada e publicada no DOU (data divergente entre fontes)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F1_pagina_oficial", "ref": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm", "trecho_literal": "art. 1º-B (inserido na Lei 10.848/2004) — ressarcimento do curtailment de 1º/09/2023 até a vigência", "associacao_origem": null, "gt_origem": null},
+        {"tipo": "F2_DOU", "ref": "Lei 15.269/2025 sancionada em 24/11/2025 com 12 dispositivos vetados", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
         {"tipo": "F3_imprensa_editorial", "ref": "Cobertura ampla Valor/MegaWhat/EpBR/Agência Senado (originou MP 1.304/2025)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "numero_status": "ANCORADO",
       "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
