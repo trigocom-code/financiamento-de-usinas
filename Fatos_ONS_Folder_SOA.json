@@ -16,11 +16,11 @@
     {
       "fato_id": "ONS-NT-DPL-0111-2025",
       "tema": "NT-ONS DPL 0111/2025 — Requisitos técnicos de baterias (LRCAP)",
-      "valor": "Estabelece requisitos para participação no LRCAP: ≥30 MW, ≥4h de duração, ≥85% de eficiência, Grid Forming obrigatório. Pré-condição técnica da Frente A SOA.",
+      "valor": "Requisitos técnicos de conexão de baterias (grid-forming) — NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (mesmo doc conjunto ONS/EPE, rev.4). Os limiares de ELEGIBILIDADE do LRCAP (≥30 MW, ≥4h, ≥85% RTE) NÃO estão nesta NT: estão na Portaria MME 136/2026, Art. 7º (III/IV/VI); o grid-forming obrigatório está na Portaria 136/2026 Art. 4º §13 e detalhado aqui. Pré-condição técnica da Frente A SOA.",
       "status": "VIGENTE",
-      "norma": "NT-ONS DPL 0111/2025 + EPE-DEE-NT-095/2025",
+      "norma": "NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (conexão/grid-forming) · limiares na Portaria MME 136/2026 Art. 7º + Art. 4º §13",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-06-28",
+      "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": ["V3", "V7"],
@@ -103,12 +103,12 @@
     },
     {
       "fato_id": "ONS-NT-CAPACIDADE-REMANESCENTE",
-      "tema": "NT Capacidade Remanescente do SIN (Art. 15 §4º Portaria 136)",
-      "valor": "Nota Técnica que define limites de contratação por subárea no LRCAP. Muda competitividade locacional dos barramentos β=0,9. Saída esperada: 30/09/2026.",
+      "tema": "NT Quantitativos da Capacidade Remanescente do SIN (Art. 11 §4º Portaria 136)",
+      "valor": "Nota Técnica de Quantitativos da Capacidade Remanescente do SIN para Escoamento — define a capacidade por barramento/subárea usada na classificação dos lances do LRCAP. ANCORADO: a Portaria MME 136/2026, Art. 11 §4º, determina que esta NT 'deverá ser publicada até 30 de setembro de 2026'. (A citação anterior 'Art. 15 §4º' estava errada — o Art. 15 trata da não aplicação do art. 9º da Portaria 514.)",
       "status": "AGENDADO",
-      "norma": "NT ONS · Art. 15 §4º Portaria MME 136/2026",
+      "norma": "Nota Técnica ONS/EPE · Art. 11 §4º da Portaria MME 136/2026 (prazo 30/09/2026)",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-06-28",
+      "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": ["V3", "V7"],
@@ -116,7 +116,7 @@
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
         {"tipo": "F1_pagina_oficial", "ref": "https://www.ons.org.br/ — calendário NT", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F4_cruzamento", "ref": "Sub-determinada pela Portaria MME 136/2026 Art. 15 §4º", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {"tipo": "F2_DOU", "ref": "Portaria MME 136/2026 Art. 11 §4º (DOU 03/06/2026)", "trecho_literal": "A Nota Técnica de Quantitativos da Capacidade Remanescente do SIN para Escoamento ... deverá ser publicada até 30 de setembro de 2026", "associacao_origem": null, "gt_origem": null}
       ],
       "numero_status": "ALEGADO_NAO_ANCORADO",
       "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
