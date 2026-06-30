@@ -153,7 +153,7 @@
     {
       "fato_id": "ANEEL-MME-PORTARIAS-126-111",
       "tema": "Portarias MME 126/2026 e 111/2025 — Medição digital obrigatória",
-      "valor": "Smart meter obrigatório, APIs abertas, meta 2%/ano de penetração até 2035. Base SaaS B2B com distribuidoras (V2). Cruzamento estrutural com sHEC.",
+      "valor": "Smart meter obrigatório, APIs abertas. Meta de 2% a.a. das unidades consumidoras por 24 meses a partir de 1º/03/2026 (até mar/2028); expansão de médio/longo prazo via ACB ANEEL (entrega até 29/02/2028). [CORREÇÃO: NÃO é 'meta até 2035'.] Base SaaS B2B com distribuidoras (V2). Cruzamento estrutural com sHEC.",
       "status": "VIGENTE",
       "norma": "MME · Portarias 126/2026 e 111/2025 (regulamentação ANEEL pendente)",
       "url": "https://www.aneel.gov.br/",
@@ -165,9 +165,9 @@
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
         {"tipo": "F1_pagina_oficial", "ref": "https://www.aneel.gov.br/ (regulamentação pendente)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Portarias 126/2026 e 111/2025 publicadas no DOU", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {"tipo": "F2_DOU", "ref": "Portaria MME 111/2025 + Portaria MME 126/2026 (altera a 111)", "trecho_literal": "implantação adicional de 2% ao ano das unidades consumidoras, pelo prazo de 24 meses a partir de 1º de março de 2026", "associacao_origem": null, "gt_origem": null}
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "numero_status": "ANCORADO",
       "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
@@ -254,13 +254,13 @@
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "PENDENTE — aneel.gov.br", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {"tipo": "F3_imprensa_editorial", "ref": "Portal Solar 05/05/2026 + ANEEL", "trecho_literal": "Consulta Pública nº 009/2026 — combate à 'geração invisível' / ampliação à revelia de MMGD", "associacao_origem": null, "gt_origem": null}
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "numero_status": "ANCORADO",
+      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-30"},
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "motivo_pendencia": "R5 — numeração não confirmada. Tese 'duas CPs 009 distintas' não verificada (Precedência v1.2). Manter LARANJA até CEO abrir aneel.gov.br."
+      "motivo_pendencia": "RESOLVIDO 30/06: numeração confirmada — CP 009/2026 (distinta da 009/2025-curtailment FV, fechada abr/2025). Promover de _pendentes para fatos[] na próxima curadoria; falta só o voto final na ANEEL."
     }
   ],
   "_historico_caidos": []
