@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-06-30 15:56",
+                  "gerado_em":  "2026-06-30 16:01",
                   "modo":  "v2 canario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
@@ -12,6 +12,23 @@
 
                                                                ]
                                                  },
+                  "rodou_hoje":  {
+                                     "monitor-regulatorio-soa":  {
+                                                                     "rodou_hoje":  true,
+                                                                     "via_digest":  true,
+                                                                     "via_canario":  true
+                                                                 },
+                                     "monitor-capital-verde-soa":  {
+                                                                       "rodou_hoje":  true,
+                                                                       "via_digest":  true,
+                                                                       "via_canario":  true
+                                                                   },
+                                     "monitor-esg-soa":  {
+                                                             "rodou_hoje":  true,
+                                                             "via_digest":  true,
+                                                             "via_canario":  true
+                                                         }
+                                 },
                   "canario_lido":  {
                                        "monitor-absolar-grupos":  {
                                                                       "hoje":  "SIM",
@@ -269,8 +286,8 @@
                     "certificacao-esg-auditavel.html":  {
                                                             "ciclo":  "2026-06-30",
                                                             "categoria":  "vivo_sob_gatilho",
-                                                            "estado":  "quadro_mudou",
-                                                            "motivo":  "fato(s) mudaram: Mercado regulado de carbono (SBCE)",
+                                                            "estado":  "estavel_com_ressalva",
+                                                            "motivo":  "dependencia em deliberacao (ex.: SBCE)",
                                                             "aguarda_fonte":  false,
                                                             "monitores_dependentes":  [
                                                                                           "monitor-esg-soa"
@@ -296,12 +313,12 @@
                                                                              "qsv_cor":  "",
                                                                              "monitor":  "monitor-esg-soa",
                                                                              "achou":  true,
-                                                                             "mudou":  true
+                                                                             "mudou":  false
                                                                          }
                                                                      ],
-                                                            "fato_gatilho":  "Mercado regulado de carbono (SBCE)",
-                                                            "tipo":  "gate (modo X: sinaliza, NAO reescreve)",
-                                                            "proposta_ref":  "_folders_revisao_pendente.md"
+                                                            "fato_gatilho":  null,
+                                                            "tipo":  null,
+                                                            "proposta_ref":  null
                                                         },
                     "icleansolar-limpeza-auditavel.html":  {
                                                                "categoria":  "estatico_puro",
