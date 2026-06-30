@@ -2,7 +2,7 @@
   "_meta": {
     "schema_version": "1.3",
     "descricao": "Fonte ÚNICA de fatos regulatórios do Folder 'Onde Entramos'. Schema 1.3 (alinhado aos monitores per-órgão e à Tabela de Precedência QSV v1.2). O folder Folder_Vivo_Regulatorio_GitHub.html consome DESTE arquivo (data.fatos[]). O monitor regulatório SOA mantém este arquivo. Schema legado aposentado em Fatos_Regulatorios_Folder_SOA.legacy.deprecated.json.",
-    "verificado_em": "2026-06-29",
+    "verificado_em": "2026-06-30",
     "schema_migrado_em": "2026-06-29",
     "proxima_revisao_sugerida": "2026-07-31",
     "responsavel_atualizacao": "Monitor Regulatório SOA (digest diário) — escreve schema 1.3, aplica Tabela_Precedencia_QSV_v1_2",
@@ -131,46 +131,49 @@
       "fato_id": "MME-MP-1318-2025",
       "orgao": "MME",
       "tema": "MP 1.318/2025 — REDATA",
-      "valor": "CADUCADA em 25/02/2026 (não convertida no prazo). Conteúdo migrou para o PL 278/2026, travado no Senado. NÃO usar como regime vigente.",
+      "valor": "CADUCADA (não convertida no prazo). Conteúdo migrou para o PL 278/2026, APROVADO na Câmara e TRAVADO no Senado → regime REDATA NÃO vigente. O Art. 11-B exige energia limpa 'na totalidade' com prova publicada — convergente com a tese de prova horária. Confirmado na fonte 30/06.",
       "status": "CADUCADA",
       "qsv_cor": "LARANJA",
-      "norma": "MP 1.318/2025 (sem efeito jurídico atual)",
+      "norma": "MP 1.318/2025 (sem efeito jurídico atual) · PL 278/2026 (Senado)",
       "numero_status": "ANCORADO",
-      "fonte": "Agência Senado, 27/02/2026",
-      "verificado_em": "2026-06-28"
+      "fonte": "PL 278/2026 (tramitação Câmara/Senado), confirmado 30/06/2026",
+      "verificado_em": "2026-06-30"
     },
     {
       "fato_id": "ANEEL-CP-009-GATO-SOLAR",
       "orgao": "ANEEL",
-      "tema": "CP Gato Solar — numeração a confirmar",
-      "valor": "Numeração em disputa (009/2026 vs 009/2025). Tese 'duas CPs distintas' não verificada. Não cravar a numeração até abrir aneel.gov.br.",
-      "status": "PENDENTE",
-      "qsv_cor": "LARANJA",
-      "norma": "PENDENTE_REABERTURA — aneel.gov.br",
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-06-28"
+      "tema": "CP ANEEL 009/2026 — combate à MMGD irregular ('geração invisível')",
+      "valor": "CONFIRMADA: é a CP 009/2026 (distinta da 009/2025, sobre curtailment FV). Aberta 22/04/2026, contribuições até 06/06/2026. Combate à ampliação/alteração à revelia de MMGD (11,8–14,6 GW de capacidade não registrada): redefine potência instalada como potência nominal CA na saída dos inversores; auditoria em até 60 dias (satélite/drones); faturamento retroativo de até 36 ciclos; risco de perda da GD I (Fio B até 2045). Paralela: CP 011/2026 (créditos vencidos / validade 60 meses).",
+      "status": "EM DELIBERAÇÃO",
+      "qsv_cor": "AZUL",
+      "norma": "CP ANEEL 009/2026 (aberta 22/04/2026) · CP ANEEL 011/2026",
+      "numero_status": "ANCORADO",
+      "fonte": "Portal Solar 05/05/2026 + ANEEL (confirmar voto final)",
+      "verificado_em": "2026-06-30"
     },
     {
       "fato_id": "CCEE-LEI-15269-2025",
       "orgao": "CCEE",
       "tema": "Lei 15.269/2025 — ressarcimento parcial por curtailment",
-      "valor": "Conversão da MP 1.304/2025; ressarce só indisponibilidade de transmissão e confiabilidade (sobreoferta vetada). F1 = Planalto, não CCEE. NENHUM número de vetos (15/16/20) entra em material externo.",
+      "valor": "Sancionada 24/11/2025 com 12 dispositivos vetados. Canônico: art. 1º-B inserido na Lei 10.848/2004 → ressarcimento do curtailment eólico/solar com RECORTE TEMPORAL FECHADO: de 1º/09/2023 até a vigência da lei (não é janela aberta). Ressarce só indisponibilidade de transmissão (REL) e confiabilidade (CNF); sobreoferta/ENE vetada. F1 = Planalto.",
       "status": "VIGENTE",
       "qsv_cor": "AZUL",
-      "norma": "Lei 15.269/2025",
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-06-28"
+      "norma": "Lei 15.269/2025 (art. 1º-B da Lei 10.848/2004)",
+      "numero_status": "ANCORADO",
+      "fonte": "Planalto — texto oficial Lei 15.269/2025, confirmado 30/06/2026",
+      "verificado_em": "2026-06-30"
     },
     {
       "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
       "orgao": "EPE",
       "tema": "Mapa de Barramentos LRCAP (bonificação locacional)",
-      "valor": "HÍBRIDO: critério na Portaria MME 136/2026; barramentos elegíveis no banco SOA. Números (129 barramentos, β=0,9, 86% NE, BA 33%, CE 30%) NÃO ancorados — não vão a material externo até dupla ancoragem (DOU + banco).",
+      "valor": "COEFICIENTE CONFIRMADO: o bônus locacional é β (não γ) — β=0,9 para barramentos do Anexo II (redução de 10% no preço de lance), β=1 para os demais. Fonte: Portaria Normativa MME 878/2025, Anexo Art. 2º §11 (fl.14). Os demais números (129 barramentos, 86% NE, BA/CE) seguem pendentes de ancoragem no banco SOA antes de irem a material externo.",
       "status": "EM DELIBERAÇÃO",
       "qsv_cor": "AZUL",
-      "norma": "Portaria MME 136/2026 + banco SOA (query pendente)",
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-06-28"
+      "norma": "Portaria MME 878/2025 §11 (coeficiente β) + Portaria 136/2026 (LRCAP) + banco SOA (barramentos, query pendente)",
+      "numero_status": "ANCORADO_PARCIAL",
+      "fonte": "Portaria MME 878/2025 §11 (coeficiente β=0,9), confirmado 30/06/2026",
+      "verificado_em": "2026-06-30"
     }
   ],
   "_historico_caidos": []
