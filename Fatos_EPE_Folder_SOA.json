@@ -85,7 +85,7 @@
     {
       "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
       "tema": "Mapa de Barramentos LRCAP (critério de bonificação locacional)",
-      "valor": "ANCORADO na fonte oficial: o bônus locacional é a constante ß (beta), com ß=0,9 para barramentos do ANEXO II (redução de 10% no preço de disponibilidade/lance) e ß=1 para os demais — Portaria MME 136/2026, ANEXO I, Art. 2º §12 (fórmula Pdisp=(RFdisp/Disp)×ß) e corpo Art. 17 §3. O ANEXO II lista os barramentos bonificados (subestações em AL, BA, CE, MG, PB, PE, PI, RN — predominância NE, com BA e CE concentrando). Metodologia: EPE-DEE-NT-086/2025 (MISCR/P30). O 'γ' anterior era de doc SOA interno (LMP), não oficial.",
+      "valor": "ANCORADO na fonte oficial: o bônus locacional é a constante ß (beta), com ß=0,9 para barramentos do ANEXO II (redução de 10% no preço de disponibilidade/lance) e ß=1 para os demais — Portaria MME 136/2026, ANEXO I, Art. 2º §12 (fórmula Pdisp=(RFdisp/Disp)×ß) e corpo Art. 17 §3. O ANEXO II (TABELA 1) lista 129 barramentos bonificados em 98 subestações, em 8 estados: BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste. Vantagem efetiva da bonificação: 1/0,9 ≈ +11,1% de Receita Fixa para empatar na classificação. Metodologia: EPE-DEE-NT-086/2025 (MISCR/P30); memória de cálculo locacional EPE de 26/06/2026. O 'γ' anterior era de doc SOA interno (LMP), não oficial.",
       "status": "VIGENTE",
       "norma": "Portaria MME 136/2026 ANEXO I Art. 2º §12 + Art. 17 §3 + ANEXO II (lista) · EPE-DEE-NT-086/2025 (MISCR)",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes",
@@ -93,18 +93,18 @@
       "tipo_fato": "HIBRIDO",
       "score_soa": 16,
       "vetores_afetados": ["V3", "V7"],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
+      "qsv_cor": "VERDE",
+      "qsv_origem_classificacao": "ancorado_DOU_portaria136_30jun2026",
       "qsv_fontes_independentes": [
         {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
         {"tipo": "F2_DOU", "ref": "Portaria MME 136/2026 publicada no DOU 03/06/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
         {"tipo": "F4_cruzamento", "ref": "Cruza REN ANEEL 1.071/2023+1.162/2026 + NT-ONS DPL 0111/2025", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": "Master_Barramentos_v1.5.1 (SOA · 714 barramentos canônicos)", "resultado": "PENDENTE_QUERY_METADE_FISICA", "verificado_em": "2026-06-28"},
+      "numero_status": "ANCORADO",
+      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": "Master_Barramentos_v1.5.1 (SOA · 714 barramentos canônicos)", "resultado": "ANCORADO_DOU — ANEXO II TABELA 1 da Portaria 136/2026 é a lista oficial; banco SOA = cross-check opcional", "verificado_em": "2026-06-30"},
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "_aviso_precedencia": "Precedência v1.2: VERDE só com dupla ancoragem (DOU para o critério + banco SOA para os barramentos). Até lá, AZUL (R2/R3)."
+      "_aviso_precedencia": "Dupla ancoragem CONCLUÍDA no DOU: critério em ANEXO I Art. 2º §12 + lista de 129 barramentos em ANEXO II TABELA 1 (Portaria 136/2026, DOU 03/06/2026). VERDE liberado."
     },
     {
       "fato_id": "EPE-BOLETIM-CONSUMO-25",
