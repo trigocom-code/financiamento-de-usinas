@@ -1,0 +1,75 @@
+{
+  "_meta": {
+    "orgao": "IPTU Verde (municipal) + NR (MTE) + GD",
+    "schema_version": "1.0",
+    "descricao": "Monitor IPTU Verde — incentivos municipais verdes, gate de segurança da limpeza de placas (NR-35/NR-10) e contexto de GD (Lei 14.300). SOA/SOS = camada de VERIFICAÇÃO (prova de geração mantida), não emissora do benefício.",
+    "verificado_em": "2026-06-30",
+    "fonte_canonica": "Leis/decretos municipais + Portarias MTE (NR) + Lei 14.300/2022",
+    "disciplina": "Percentuais/critérios municipais marcados [A VERIFICAR] vêm de fonte secundária (imprensa); confirmar na lei de origem antes de material de cliente."
+  },
+  "fatos": [
+    {
+      "tema": "Mapa de IPTU Verde municipal — desconto por geração solar",
+      "valor": "Mais de 50 municípios oferecem desconto de IPTU (até 40%) para imóveis com geração solar e/ou critérios ambientais. A concessão é tipicamente anual (jan–mar), por solicitação (nota fiscal + laudo técnico), NÃO automática — e raramente há refiscalização. É exatamente o gargalo que a SOA endereça: prova contínua de que a geração incentivada é mantida. [A VERIFICAR percentuais/critérios na lei de cada município.]",
+      "status": "VIGENTE",
+      "norma": "Leis/decretos municipais",
+      "verificado_em": "2026-06-30"
+    },
+    {
+      "tema": "Cuiabá (MT) — IPTU Sustentável",
+      "valor": "Desconto de até 25% no IPTU para imóveis sustentáveis (inclui geração solar). Programa vigente.",
+      "status": "VIGENTE",
+      "norma": "LC municipal Cuiabá 515/2022",
+      "verificado_em": "2026-06-30"
+    },
+    {
+      "tema": "Palmas (TO) — IPTU Verde",
+      "valor": "Desconto de até 40% — o maior percentual mapeado. Norma de 2015.",
+      "status": "VIGENTE",
+      "norma": "LC municipal Palmas 327/2015",
+      "verificado_em": "2026-06-30"
+    },
+    {
+      "tema": "Porto Alegre (RS) — IPTU Sustentável",
+      "valor": "Lei aprovada na Câmara em 12/04/2025; desconto até 10% por certificação multicritério (Diamante 10% / Ouro 7% / Prata 5% / Bronze 3%), em que geração renovável é um dos itens. Ciclo 2026 com ~978 imóveis deferidos. [A VERIFICAR texto da lei e regras de certificação na origem.]",
+      "status": "VIGENTE",
+      "norma": "Lei municipal de Porto Alegre (abr/2025)",
+      "verificado_em": "2026-06-30"
+    },
+    {
+      "tema": "PEC 13/2019 — IPTU Verde nacional",
+      "valor": "Proposta que autoriza desconto de IPTU por práticas sustentáveis. Aprovada no Senado, aguarda a Câmara. Programas municipais em tramitação: Goiânia (CCJ), Corumbá/MS (no Executivo), Paulínia/SP (aprovado fev/2026, pendente de sanção).",
+      "status": "EM TRAMITAÇÃO",
+      "norma": "PEC 13/2019",
+      "verificado_em": "2026-06-30"
+    },
+    {
+      "tema": "São Paulo — solar em UBS (prédios públicos)",
+      "valor": "PL para painéis solares em Unidades Básicas de Saúde: PPP de ~R$ 32 mi, 172 UBS (80 diretas + 92 por autoconsumo remoto), ~3,45 MW / ~5,5 GWh/ano. Caso-modelo da tese do excedente do prosumidor público, onde a SOA certificaria geração/excedente. CCJ em jun/2025.",
+      "status": "EM TRAMITAÇÃO",
+      "norma": "PL municipal SP 521/2025",
+      "verificado_em": "2026-06-30"
+    },
+    {
+      "tema": "NR-35 — Trabalho em Altura (gate da limpeza de placas)",
+      "valor": "Portaria MTE 1.860/2025, vigência a partir de 02/01/2026. É o gate de segurança do iCleanSolar (limpeza de telhados/placas em altura): responsabilidade solidária pela qualificação de quem executa. [A VERIFICAR redação no DOU antes de material de cliente.]",
+      "status": "VIGENTE",
+      "norma": "Portaria MTE 1.860/2025 (NR-35)",
+      "verificado_em": "2026-06-30"
+    },
+    {
+      "tema": "NR-10 — Segurança em Instalações Elétricas",
+      "valor": "Portaria MTE 737/2026 (DOU 01/06/2026), vigência a partir de 01/06/2027. Em par com a NR-35, forma o gate de segurança da limpeza/manutenção de placas — base regulatória do iCleanSolar.",
+      "status": "AGENDADO",
+      "norma": "Portaria MTE 737/2026 (NR-10)",
+      "verificado_em": "2026-06-30"
+    },
+    {
+      "tema": "Fio B — 60% em 2026 (Lei 14.300)",
+      "valor": "O cronograma de cobrança do Fio B sobe para 60% em 2026 (Lei 14.300/2022). Pressiona a margem da GD e reforça o valor do autoconsumo/excedente verificável — terreno da camada de prova SOA.",
+      "status": "VIGENTE",
+      "norma": "Lei 14.300/2022 (cronograma Fio B)",
+      "verificado_em": "2026-06-30"
+    }
+  ]
+}
