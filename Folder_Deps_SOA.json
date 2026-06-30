@@ -6,17 +6,18 @@
     "regras": {
       "estado_vem_do_fato": "O folder LISTA a dependencia; o estado e derivado do(s) fato(s). Pior estado vence.",
       "nunca_verde_se_pendente": "Fato pendente da conferencia do CEO na fonte NUNCA marca o folder como estavel/verde. O folder herda a pendencia.",
-      "atomicidade": "Um folder so e avaliado quando TODAS as suas dependencias foram varridas no MESMO ciclo_id. Faltou um monitor -> avaliacao_represada (nunca 'estavel').",
-      "precedencia_estado": ["avaliacao_represada", "herda_pendente", "quadro_mudou", "estavel_com_ressalva", "estavel"],
-      "regra_dura": "A automacao detecta e propoe; NUNCA crava conteudo que mova a tese. Mudanca em status/qsv_cor/norma/numero_status -> gate. Mudanca so em verificado_em -> ignora."
+      "atomicidade": "Um folder so e avaliado quando TODAS as suas dependencias foram varridas no MESMO ciclo. Faltou um monitor -> avaliacao_represada (nunca 'estavel').",
+      "regra_dura": "A automacao detecta e propoe; NUNCA crava conteudo que mova a tese sem gate."
     },
-    "fatos_aguardando_fonte_CEO": [
-      {"ref": "EPE-MAPA-BARRAMENTOS-LRCAP", "pendencia": "coeficiente beta vs gama na Portaria 136 — nao verificado na fonte"},
-      {"ref": "ANEEL-CP-009-GATO-SOLAR",    "pendencia": "numeracao CP 009 (2025 vs 2026) — nao confirmada na ANEEL"},
-      {"ref": "MME-MP-1318-2025",           "pendencia": "MP 1.318 caducada; conteudo no PL 278 — confirmar regime vigente"},
-      {"ref": "CCEE-LEI-15269-2025",        "pendencia": "numero de vetos divergente — nao cravar (condicao C2 do CEO)"}
-    ],
-    "nota_indicador": "O catalogo deve exibir: 'N folders aguardando verificacao na fonte' = folders cujo estado herdado aponta para um item de fatos_aguardando_fonte_CEO. Esses fatos NAO podem ficar confortaveis no sistema ate o CEO fecha-los."
+    "fatos_aguardando_fonte_CEO": [],
+    "nota_indicador": "Indicador 'N folders aguardando verificacao na fonte' = folders cujo dep tem pendencia_fonte. Em 30/06/2026 os 4 itens foram FECHADOS pelo CEO na fonte (ver _fontes_fechadas_30jun). Lista vazia -> indicador 0.",
+    "_fontes_fechadas_30jun": [
+      {"ref": "EPE-MAPA-BARRAMENTOS-LRCAP", "resolucao": "Coeficiente e BETA (nao gama): beta=0,9 p/ barramentos do Anexo II (reducao de 10% no preco de lance), beta=1 p/ demais.", "fonte": "Portaria Normativa MME 878/2025, Anexo Art. 2o par.11 (fl.14)"},
+      {"ref": "ANEEL-CP-009-GATO-SOLAR", "resolucao": "E a CP 009/2026 (distinta da 009/2025-curtailment FV). Tema: combate a MMGD irregular/geracao invisivel (11,8-14,6 GW nao registrados; potencia = CA na saida do inversor; auditoria 60 dias; faturamento retroativo 36 ciclos; risco perda GD I). Aberta 22/04/2026, contribuicoes ate 06/06/2026. Paralela: CP 011/2026 (creditos vencidos).", "fonte": "Portal Solar 05/05/2026 + ANEEL; confirmar voto final na ANEEL"},
+      {"ref": "MME-MP-1318-2025", "resolucao": "MP caducada; conteudo no PL 278/2026, aprovado na Camara, TRAVADO no Senado -> regime REDATA NAO vigente. Art. 11-B exige energia limpa 'na totalidade' com prova publicada.", "fonte": "PL 278/2026 (Camara/Senado)"},
+      {"ref": "CCEE-LEI-15269-2025", "resolucao": "Lei sancionada 24/11/2025 (Alckmin), 12 dispositivos vetados. Canonico: art. 1o-B inserido na Lei 10.848 -> ressarcimento de curtailment eol/solar de 1o/09/2023 ate a vigencia (recorte temporal FECHADO, nao amplo).", "fonte": "Planalto, Lei 15.269/2025 (texto oficial)"},
+      {"ref": "ANEEL-EDITAL-LRCAP-ARMAZ", "resolucao": "O edital/precos-teto aprovados que apareceram eram do LRCAP TERMICO (02/03), NAO baterias. O edital do LRCAP de ARMAZENAMENTO segue NAO publicado (ANEEL elabora). TUST e preco-teto do armazenamento ficam nele.", "fonte": "confirmacao CEO 30/06"}
+    ]
   },
   "folders": [
     {
@@ -27,7 +28,7 @@
         {"json": "Fatos_MME",   "ref": "MME-PORTARIA-136-2026-LRCAP", "ref_tipo": "fato_id"},
         {"json": "Fatos_ANEEL", "ref": "ANEEL-REN-1071-LRCAP", "ref_tipo": "fato_id"},
         {"json": "Fatos_ONS",   "ref": "ONS-NT-DPL-0111-2025", "ref_tipo": "fato_id"},
-        {"json": "Fatos_EPE",   "ref": "EPE-MAPA-BARRAMENTOS-LRCAP", "ref_tipo": "fato_id", "pendencia_fonte": "beta_vs_gama"}
+        {"json": "Fatos_EPE",   "ref": "EPE-MAPA-BARRAMENTOS-LRCAP", "ref_tipo": "fato_id"}
       ]
     },
     {
@@ -35,14 +36,14 @@
       "categoria": "vivo_sob_gatilho",
       "depende_de": [
         {"json": "Fatos_MME", "ref": "MME-REDATA", "ref_tipo": "fato_id"},
-        {"json": "Fatos_MME", "ref": "MME-MP-1318-2025", "ref_tipo": "fato_id", "pendencia_fonte": "mp_1318_redata"}
+        {"json": "Fatos_MME", "ref": "MME-MP-1318-2025", "ref_tipo": "fato_id"}
       ]
     },
     {
       "folder": "gato-solar-soa.html",
       "categoria": "vivo_sob_gatilho",
       "depende_de": [
-        {"json": "Fatos_ANEEL", "ref": "ANEEL-CP-009-GATO-SOLAR", "ref_tipo": "fato_id", "pendencia_fonte": "cp_009_numeracao"},
+        {"json": "Fatos_ANEEL", "ref": "ANEEL-CP-009-GATO-SOLAR", "ref_tipo": "fato_id"},
         {"json": "Fatos_ANEEL", "ref": "ANEEL-REN-1059-2023", "ref_tipo": "fato_id"}
       ]
     },
@@ -50,7 +51,7 @@
       "folder": "contencioso-curtailment.html",
       "categoria": "vivo_sob_gatilho",
       "depende_de": [
-        {"json": "Fatos_CCEE",  "ref": "CCEE-LEI-15269-2025", "ref_tipo": "fato_id", "pendencia_fonte": "vetos_15269"},
+        {"json": "Fatos_CCEE",  "ref": "CCEE-LEI-15269-2025", "ref_tipo": "fato_id"},
         {"json": "Fatos_ANEEL", "ref": "ANEEL-CP-045-2019", "ref_tipo": "fato_id"}
       ]
     },
