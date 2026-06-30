@@ -3,7 +3,7 @@
     "orgao": "MME",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo MME — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-06-28",
+    "verificado_em": "2026-06-30",
     "proxima_revisao_sugerida": "2026-07-31",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina MME conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
@@ -40,11 +40,11 @@
     {
       "fato_id": "MME-PORTARIA-129-DEC-12772",
       "tema": "Portaria MME 129/2026 + Decreto 12.772/2025 — Novo regime de acesso",
-      "valor": "Reorganiza processo de acesso ao SIN (Diagnóstico Prévio, Temporada de Acesso, fila SGAcesso). Altera Access Risk nos 714 barramentos canônicos SOA.",
+      "valor": "ANCORADO: o Decreto 12.772/2025 institui a PNAST (Política Nacional de Acesso ao Sistema de Transmissão); a Portaria MME 129/2026 estabelece as Temporadas de Acesso — janelas periódicas com análise centralizada, substituindo a lógica de 'ordem de chegada'. Diagnóstico Prévio de Acesso é etapa confirmada (necessária p/ celebração de contrato). Nota: SGAcesso é o SISTEMA; o regime chama-se PNAST/Temporada de Acesso. Altera Access Risk nos 714 barramentos canônicos SOA.",
       "status": "VIGENTE",
-      "norma": "Portaria MME 129/2026 + Decreto 12.772/2025",
+      "norma": "Decreto 12.772/2025 (institui a PNAST) + Portaria MME 129/2026 (Temporadas de Acesso)",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-06-28",
+      "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": ["V1", "V2"],
@@ -52,21 +52,21 @@
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
         {"tipo": "F1_pagina_oficial", "ref": "https://www.gov.br/mme/pt-br", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Ambos publicados no DOU", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {"tipo": "F2_DOU", "ref": "Decreto 12.772/2025 (DOU 08/12/2025) + Portaria MME 129/2026", "trecho_literal": "institui a Política Nacional de Acesso ao Sistema de Transmissão (PNAST)", "associacao_origem": null, "gt_origem": null}
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "numero_status": "ANCORADO",
       "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
     {
       "fato_id": "MME-PNH2",
-      "tema": "PNH2 — Leis 14.948/2024 e 15.042/2024 (Hidrogênio Verde + SBCE)",
-      "valor": "Marco do hidrogênio verde. Pré-condição para V5 (H2V industrial — Piauí, Pecém, Suape, Açu). Lei 15.042/2024 também ancora o SBCE.",
+      "tema": "PNH2 — Leis 14.948/2024 e 15.042/2024 (H2 de baixo carbono + SBCE)",
+      "valor": "ANCORADO: Lei 14.948/2024 institui o marco legal do hidrogênio de BAIXA EMISSÃO DE CARBONO (termo legal; 'hidrogênio verde' é subconjunto comercial) + PNH2 + certificação voluntária. Lei 15.042/2024 institui o SBCE. Pré-condição para V5 (H2 de baixo carbono industrial — Piauí, Pecém, Suape, Açu).",
       "status": "VIGENTE",
-      "norma": "MME · Leis 14.948/2024 e 15.042/2024",
+      "norma": "Lei 14.948/2024 (PNH2) + Lei 15.042/2024 (SBCE) · Planalto",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-06-28",
+      "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": ["V5", "V6"],
@@ -74,9 +74,9 @@
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
         {"tipo": "F1_pagina_oficial", "ref": "https://www.gov.br/mme/pt-br — PNH2", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Leis 14.948/2024 e 15.042/2024 publicadas no DOU", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {"tipo": "F2_DOU", "ref": "Lei 14.948/2024 (02/08/2024) + Lei 15.042/2024 (11/12/2024) · Planalto", "trecho_literal": "hidrogênio de baixa emissão de carbono", "associacao_origem": null, "gt_origem": null}
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "numero_status": "ANCORADO",
       "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
@@ -84,11 +84,11 @@
     {
       "fato_id": "MME-PORTARIAS-126-111",
       "tema": "Portarias MME 126/2026 e 111/2025 — Smart meter + APIs",
-      "valor": "Medição digital obrigatória, APIs abertas, meta 2%/ano de penetração até 2035. Base SaaS B2B (V2) e produto sHEC.",
+      "valor": "ANCORADO (com correção de horizonte): a Portaria 126/2026 altera a 111/2025 e cria a 1ª meta obrigatória — implantação adicional de 2% a.a. das unidades consumidoras por 24 meses a partir de 1º/03/2026 (até mar/2028). Expansão de médio/longo prazo definida por Análise de Custo-Benefício (ACB) a ser entregue à ANEEL até 29/02/2028 (horizonte mín. 10 anos). [CORREÇÃO: NÃO é 'meta até 2035' — esse horizonte estava errado.] Funcionalidades mínimas: leitura remota, tarifação horária, interoperabilidade, segurança cibernética, registro de interrupções, corte/religamento remoto. Base SaaS B2B (V2) e produto sHEC.",
       "status": "VIGENTE",
-      "norma": "Portarias MME 126/2026 e 111/2025",
+      "norma": "Portaria MME 111/2025 (18/06/2025) + Portaria MME 126/2026 (28/01/2026, altera a 111)",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-06-28",
+      "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": ["V2", "V6"],
@@ -96,9 +96,9 @@
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
         {"tipo": "F1_pagina_oficial", "ref": "https://www.gov.br/mme/pt-br", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Portarias publicadas no DOU", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {"tipo": "F2_DOU", "ref": "Portaria MME 111/2025 (18/06/2025) + Portaria MME 126/2026 (28/01/2026)", "trecho_literal": "implantação adicional de 2% ao ano das unidades consumidoras, pelo prazo de 24 meses a partir de 1º de março de 2026", "associacao_origem": null, "gt_origem": null}
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "numero_status": "ANCORADO",
       "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
