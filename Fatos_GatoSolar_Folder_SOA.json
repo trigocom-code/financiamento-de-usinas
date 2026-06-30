@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "orgao": "ANEEL (MMGD / gato solar)",
+    "schema_version": "1.0",
+    "descricao": "Monitor Gato Solar / GD irregular. Disciplina dura: irregularidade NÃO é energia falsa (a energia injetada é real); a SOA PROVA a inconsistência, NÃO acusa fraude; números de auditoria (ONS/ANEEL) são de TERCEIROS — atribuir, não apresentar como dado SOA. NUNCA '5,7 GW'. Não confundir ~R$ 5 bi (impacto das irregularidades, estimativa) com ~R$ 16 bi (subsídio da MMGD via CDE).",
+    "verificado_em": "2026-06-30",
+    "fonte_canonica": "gov.br/aneel + NT ANEEL + Agência iNFRA/Canal Solar (secundárias, [A VERIFICAR])"
+  },
+  "fatos": [
+    {
+      "tema": "CP ANEEL 009/2026 — combate à MMGD irregular ('geração invisível')",
+      "valor": "Consulta Pública para aprimorar o tratamento de excedentes e combater a ampliação de MMGD à revelia. Verificados pela ANEEL (terceiros): 88 MW irregulares = 0,31% da potência MMGD registrada, em 22,7 mil inspeções (59% com alguma irregularidade), 19 distribuidoras, base de 43 mi de UCs. Medidas PROPOSTAS: exclusão do SCEE, cobrança retroativa de até 36 ciclos, corte físico em casos graves, vistoria em 90 dias, auditoria emergencial em 60 dias. Contribuições encerradas em 06/06/2026; em consolidação (relator Gentil Nogueira de Sá Júnior; base NT 148/2025-STD).",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "CP ANEEL 009/2026 · NT 148/2025-STD",
+      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/consulta-publica-propoe-aprimorar-o-tratamento-de-excedentes-de-energia",
+      "verificado_em": "2026-06-30"
+    },
+    {
+      "tema": "Parecer ANEEL — corte de GD solar e corresponsabilização pelo curtailment",
+      "valor": "EM DEBATE (não é norma): área técnica/diretoria sinaliza que distribuidoras podem cortar geração — inclusive MMGD — por segurança operativa, e discute corresponsabilizar a GD solar pelos custos do curtailment. Se a GD passa a ser cortável e potencialmente corresponsável, cresce a necessidade de medir e provar, hora a hora, quanto cada gerador injetou × quanto foi cortado — a camada de prova SOA. [A VERIFICAR status formal — segue como parecer/discussão, sem ato vinculante.]",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "ANEEL — parecer/discussão técnica (acopla-se à CP 009)",
+      "url": "https://canalsolar.com.br/aneel-corresponsabilizar-gd-solar-pelo-curtailment/",
+      "verificado_em": "2026-06-30"
+    },
+    {
+      "tema": "CP ANEEL 011/2026 — créditos vencidos de MMGD (adjacente)",
+      "valor": "Consulta paralela (aberta 28/04/2026) para definir o tratamento regulatório e contábil dos créditos vencidos de MMGD, revertendo-os à modicidade tarifária. NÃO é gato solar (não é potência irregular), mas integra o mesmo pacote de aperto da ANEEL sobre a MMGD. Registrada para não ser confundida com a CP 009.",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "CP ANEEL 011/2026",
+      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/consulta-publica-vai-tratar-dos-creditos-excedentes-de-mmgd-para-modicidade-tarifaria",
+      "verificado_em": "2026-06-30"
+    },
+    {
+      "tema": "Lastro de escala — GD não declarada",
+      "valor": "Estimativa de terceiros (atribuir à ONS): ~14 GW de GD não declarada (faixa 11,8–14,6 GW, ≈ Itaipu); estimativa ANEEL própria de 12–15 GW circula em paralelo. Impacto estimado das irregularidades ~R$ 5 bi — NÃO confundir com os ~R$ 16 bi de subsídio/desconto da GD via CDE. A inspeção física amostral não escala para 43 mi de UCs nem para os ~14 GW potenciais → reconciliação potência declarada × geração fisicamente possível (QSV/gêmeo digital) é o caminho de auditoria contínua e remota.",
+      "status": "VIGENTE (referência)",
+      "norma": "ONS/ANEEL (estimativas de terceiros)",
+      "url": "https://agenciainfra.com/blog/aneel-inspecao-de-distribuidoras-encontra-88-mw-de-gato-solar/",
+      "verificado_em": "2026-06-30"
+    },
+    {
+      "tema": "Posição setorial (ABSOLAR/ABGD)",
+      "valor": "As associações (nota de 12/06) apoiam a fiscalização, mas cobram 'critérios e metodologias passíveis de auditoria independente' — abertura natural para a camada de prova neutra da SOA (a SOA prova a inconsistência; quem suspende/penaliza é a distribuidora/ANEEL).",
+      "status": "VIGENTE",
+      "norma": "ABSOLAR/ABGD — manifestação setorial",
+      "verificado_em": "2026-06-30"
+    }
+  ]
+}
