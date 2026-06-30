@@ -75,13 +75,13 @@
       "orgao": "ONS",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Requisitos técnicos mínimos das baterias (LRCAP)",
-      "valor": "≥ 30 MW, ≥ 4 h de operação contínua, ≥ 85% de eficiência, padrão Grid Forming obrigatório",
+      "valor": "≥ 30 MW, ≥ 4 h de operação contínua, ≥ 85% de eficiência (RTE), padrão Grid Forming obrigatório. Limiares ancorados na Portaria MME 136/2026, Art. 7º (III ≥30MW · IV ≥4h · VI ≥85% RTE); Grid Forming no Art. 4º §13 e detalhado na NT-ONS DPL 0111/2025 (= EPE-DEE-NT-095/2025, requisitos de conexão).",
       "status": "VIGENTE",
-      "qsv_cor": "AZUL",
-      "norma": "NT-ONS DPL 0111/2025 · EPE-DEE-NT-095/2025 (publicada 23/06/2026)",
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-06-26",
-      "gatilho_revisao": "revisão da NT de requisitos; par 0111 vs 0114/2025 a confirmar"
+      "qsv_cor": "VERDE",
+      "norma": "Portaria MME 136/2026 Art. 7º (III/IV/VI) + Art. 4º §13 (grid-forming) · NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025",
+      "numero_status": "ANCORADO",
+      "verificado_em": "2026-06-30",
+      "gatilho_revisao": "revisão da NT de requisitos; NT-ONS 0111 = EPE-095 (mesmo doc conjunto)"
     },
     {
       "id": "sae_outorga",
@@ -167,12 +167,12 @@
       "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
       "orgao": "EPE",
       "tema": "Mapa de Barramentos LRCAP (bonificação locacional)",
-      "valor": "COEFICIENTE CONFIRMADO: o bônus locacional é β (não γ) — β=0,9 para barramentos do Anexo II (redução de 10% no preço de lance), β=1 para os demais. Fonte: Portaria Normativa MME 878/2025, Anexo Art. 2º §11 (fl.14). Os demais números (129 barramentos, 86% NE, BA/CE) seguem pendentes de ancoragem no banco SOA antes de irem a material externo.",
-      "status": "EM DELIBERAÇÃO",
-      "qsv_cor": "AZUL",
-      "norma": "Portaria MME 878/2025 §11 (coeficiente β) + Portaria 136/2026 (LRCAP) + banco SOA (barramentos, query pendente)",
-      "numero_status": "ANCORADO_PARCIAL",
-      "fonte": "Portaria MME 878/2025 §11 (coeficiente β=0,9), confirmado 30/06/2026",
+      "valor": "ANCORADO: o bônus locacional é a constante ß=0,9 para barramentos do ANEXO II (redução de 10% no preço de lance), ß=1 para os demais — Portaria MME 136/2026, ANEXO I, Art. 2º §12 (Pdisp=(RFdisp/Disp)×ß) + corpo Art. 17 §3. O ANEXO II lista os barramentos bonificados (AL, BA, CE, MG, PB, PE, PI, RN — predominância NE, BA/CE concentrando). Metodologia EPE-DEE-NT-086/2025 (MISCR/P30).",
+      "status": "VIGENTE",
+      "qsv_cor": "VERDE",
+      "norma": "Portaria MME 136/2026 ANEXO I Art. 2º §12 + Art. 17 §3 + ANEXO II (lista) · EPE-DEE-NT-086/2025",
+      "numero_status": "ANCORADO",
+      "fonte": "Portaria MME 136/2026 ANEXO I Art. 2º §12 (texto integral DOU 03/06/2026); a 878/2025 foi DESCARTADA como âncora",
       "verificado_em": "2026-06-30"
     }
   ],
