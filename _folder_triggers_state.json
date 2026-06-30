@@ -1,6 +1,8 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-06-30 11:26",
+                  "gerado_em":  "2026-06-30 14:07",
+                  "modo":  "v2 canario+stale",
+                  "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
                                                      "n":  4,
                                                      "folders":  [
@@ -28,7 +30,40 @@
                                                                    }
                                                                ]
                                                  },
-                  "regra":  "modo X: detecta e sinaliza; NUNCA reescreve conteudo que mova a tese (gate humano)."
+                  "canario_lido":  {
+                                       "monitor-absolar-grupos":  {
+                                                                      "hoje":  "SIM",
+                                                                      "ultimo":  "2026-06-30"
+                                                                  },
+                                       "monitor-seguros-soa":  {
+                                                                   "hoje":  "NAO",
+                                                                   "ultimo":  "2026-06-29"
+                                                               },
+                                       "monitor-esg-soa":  {
+                                                               "hoje":  "NAO",
+                                                               "ultimo":  "2026-06-29"
+                                                           },
+                                       "monitor-regulatorio-soa":  {
+                                                                       "hoje":  "SIM",
+                                                                       "ultimo":  "2026-06-30"
+                                                                   },
+                                       "monitor-capital-verde-soa":  {
+                                                                         "hoje":  "NAO",
+                                                                         "ultimo":  "2026-06-29"
+                                                                     },
+                                       "monitor-eventos-soa":  {
+                                                                   "hoje":  "NAO",
+                                                                   "ultimo":  "2026-06-29"
+                                                               },
+                                       "monitor-gato-solar-soa":  {
+                                                                      "hoje":  "NAO",
+                                                                      "ultimo":  "2026-06-29"
+                                                                  },
+                                       "monitor-iptu-verde-soa":  {
+                                                                      "hoje":  "NAO",
+                                                                      "ultimo":  "2026-06-29"
+                                                                  }
+                                   }
               },
     "baseline":  {
                      "Fatos_CCEE::CCEE-LEI-15269-2025":  "5EF1819507043CFA",
@@ -47,17 +82,25 @@
                  },
     "folders":  {
                     "baterias-curtailment.html":  {
-                                                      "ciclo":  "2026-06-28",
+                                                      "ciclo":  "2026-06-30",
                                                       "categoria":  "vivo_sob_gatilho",
-                                                      "rodada":  "completa",
                                                       "estado":  "herda_pendente",
                                                       "motivo":  "depende de fato pendente: EPE-MAPA-BARRAMENTOS-LRCAP [aguarda fonte: beta_vs_gama]",
+                                                      "aguarda_fonte":  true,
+                                                      "monitores_dependentes":  [
+                                                                                    "monitor-regulatorio-soa"
+                                                                                ],
+                                                      "monitores_parados":  [
+
+                                                                            ],
+                                                      "idade_max_dias":  2,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_ANEEL",
                                                                        "ref":  "ANEEL-REN-1161-2026-BESS",
                                                                        "verificado_em":  "2026-06-28",
                                                                        "qsv_cor":  "VERDE",
+                                                                       "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
                                                                        "mudou":  false
                                                                    },
@@ -66,6 +109,7 @@
                                                                        "ref":  "MME-PORTARIA-136-2026-LRCAP",
                                                                        "verificado_em":  "2026-06-28",
                                                                        "qsv_cor":  "VERDE",
+                                                                       "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
                                                                        "mudou":  false
                                                                    },
@@ -74,6 +118,7 @@
                                                                        "ref":  "ANEEL-REN-1071-LRCAP",
                                                                        "verificado_em":  "2026-06-28",
                                                                        "qsv_cor":  "VERDE",
+                                                                       "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
                                                                        "mudou":  false
                                                                    },
@@ -82,6 +127,7 @@
                                                                        "ref":  "ONS-NT-DPL-0111-2025",
                                                                        "verificado_em":  "2026-06-28",
                                                                        "qsv_cor":  "AZUL",
+                                                                       "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
                                                                        "mudou":  false
                                                                    },
@@ -90,6 +136,7 @@
                                                                        "ref":  "EPE-MAPA-BARRAMENTOS-LRCAP",
                                                                        "verificado_em":  "2026-06-28",
                                                                        "qsv_cor":  "AZUL",
+                                                                       "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
                                                                        "mudou":  false
                                                                    }
@@ -99,17 +146,25 @@
                                                       "proposta_ref":  null
                                                   },
                     "prova-horaria-datacenters.html":  {
-                                                           "ciclo":  "2026-06-28",
+                                                           "ciclo":  "2026-06-30",
                                                            "categoria":  "vivo_sob_gatilho",
-                                                           "rodada":  "completa",
                                                            "estado":  "herda_pendente",
                                                            "motivo":  "depende de fato pendente: MME-REDATA (EM DELIBERAÇÃO); MME-MP-1318-2025 [aguarda fonte: mp_1318_redata]",
+                                                           "aguarda_fonte":  true,
+                                                           "monitores_dependentes":  [
+                                                                                         "monitor-regulatorio-soa"
+                                                                                     ],
+                                                           "monitores_parados":  [
+
+                                                                                 ],
+                                                           "idade_max_dias":  2,
                                                            "deps":  [
                                                                         {
                                                                             "json":  "Fatos_MME",
                                                                             "ref":  "MME-REDATA",
                                                                             "verificado_em":  "2026-06-28",
                                                                             "qsv_cor":  "AZUL",
+                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                             "achou":  true,
                                                                             "mudou":  false
                                                                         },
@@ -118,6 +173,7 @@
                                                                             "ref":  "MME-MP-1318-2025",
                                                                             "verificado_em":  "2026-06-28",
                                                                             "qsv_cor":  "LARANJA",
+                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                             "achou":  true,
                                                                             "mudou":  false
                                                                         }
@@ -127,17 +183,25 @@
                                                            "proposta_ref":  null
                                                        },
                     "gato-solar-soa.html":  {
-                                                "ciclo":  "2026-06-28",
+                                                "ciclo":  "2026-06-30",
                                                 "categoria":  "vivo_sob_gatilho",
-                                                "rodada":  "completa",
                                                 "estado":  "herda_pendente",
                                                 "motivo":  "depende de fato pendente: ANEEL-CP-009-GATO-SOLAR [aguarda fonte: cp_009_numeracao]",
+                                                "aguarda_fonte":  true,
+                                                "monitores_dependentes":  [
+                                                                              "monitor-regulatorio-soa"
+                                                                          ],
+                                                "monitores_parados":  [
+
+                                                                      ],
+                                                "idade_max_dias":  2,
                                                 "deps":  [
                                                              {
                                                                  "json":  "Fatos_ANEEL",
                                                                  "ref":  "ANEEL-CP-009-GATO-SOLAR",
                                                                  "verificado_em":  "2026-06-28",
                                                                  "qsv_cor":  "LARANJA",
+                                                                 "monitor":  "monitor-regulatorio-soa",
                                                                  "achou":  true,
                                                                  "mudou":  false
                                                              },
@@ -146,6 +210,7 @@
                                                                  "ref":  "ANEEL-REN-1059-2023",
                                                                  "verificado_em":  "2026-06-28",
                                                                  "qsv_cor":  "AZUL",
+                                                                 "monitor":  "monitor-regulatorio-soa",
                                                                  "achou":  true,
                                                                  "mudou":  false
                                                              }
@@ -155,17 +220,25 @@
                                                 "proposta_ref":  null
                                             },
                     "contencioso-curtailment.html":  {
-                                                         "ciclo":  "2026-06-28",
+                                                         "ciclo":  "2026-06-30",
                                                          "categoria":  "vivo_sob_gatilho",
-                                                         "rodada":  "completa",
                                                          "estado":  "herda_pendente",
                                                          "motivo":  "depende de fato pendente: CCEE-LEI-15269-2025 [aguarda fonte: vetos_15269]; ANEEL-CP-045-2019 (EM DELIBERAÇÃO)",
+                                                         "aguarda_fonte":  true,
+                                                         "monitores_dependentes":  [
+                                                                                       "monitor-regulatorio-soa"
+                                                                                   ],
+                                                         "monitores_parados":  [
+
+                                                                               ],
+                                                         "idade_max_dias":  2,
                                                          "deps":  [
                                                                       {
                                                                           "json":  "Fatos_CCEE",
                                                                           "ref":  "CCEE-LEI-15269-2025",
                                                                           "verificado_em":  "2026-06-28",
                                                                           "qsv_cor":  "AZUL",
+                                                                          "monitor":  "monitor-regulatorio-soa",
                                                                           "achou":  true,
                                                                           "mudou":  false
                                                                       },
@@ -174,6 +247,7 @@
                                                                           "ref":  "ANEEL-CP-045-2019",
                                                                           "verificado_em":  "2026-06-28",
                                                                           "qsv_cor":  "AZUL",
+                                                                          "monitor":  "monitor-regulatorio-soa",
                                                                           "achou":  true,
                                                                           "mudou":  false
                                                                       }
@@ -183,17 +257,25 @@
                                                          "proposta_ref":  null
                                                      },
                     "bitcoin-verde-soa.html":  {
-                                                   "ciclo":  "2026-06-28",
+                                                   "ciclo":  "2026-06-30",
                                                    "categoria":  "vivo_sob_gatilho",
-                                                   "rodada":  "completa",
                                                    "estado":  "herda_pendente",
                                                    "motivo":  "depende de fato pendente: MME-REDATA (EM DELIBERAÇÃO)",
+                                                   "aguarda_fonte":  false,
+                                                   "monitores_dependentes":  [
+                                                                                 "monitor-regulatorio-soa"
+                                                                             ],
+                                                   "monitores_parados":  [
+
+                                                                         ],
+                                                   "idade_max_dias":  2,
                                                    "deps":  [
                                                                 {
                                                                     "json":  "Fatos_MME",
                                                                     "ref":  "MME-REDATA",
                                                                     "verificado_em":  "2026-06-28",
                                                                     "qsv_cor":  "AZUL",
+                                                                    "monitor":  "monitor-regulatorio-soa",
                                                                     "achou":  true,
                                                                     "mudou":  false
                                                                 }
@@ -203,17 +285,25 @@
                                                    "proposta_ref":  null
                                                },
                     "certificacao-esg-auditavel.html":  {
-                                                            "ciclo":  "2026-06-29",
+                                                            "ciclo":  "2026-06-30",
                                                             "categoria":  "vivo_sob_gatilho",
-                                                            "rodada":  "completa",
-                                                            "estado":  "estavel_com_ressalva",
-                                                            "motivo":  "dependencia em deliberacao (ex.: SBCE)",
+                                                            "estado":  "avaliacao_represada",
+                                                            "motivo":  "monitor(es) nao rodou no ciclo 2026-06-30: monitor-esg-soa",
+                                                            "aguarda_fonte":  false,
+                                                            "monitores_dependentes":  [
+                                                                                          "monitor-esg-soa"
+                                                                                      ],
+                                                            "monitores_parados":  [
+                                                                                      "monitor-esg-soa"
+                                                                                  ],
+                                                            "idade_max_dias":  1,
                                                             "deps":  [
                                                                          {
                                                                              "json":  "Fatos_ESG",
                                                                              "ref":  "Relato de sustentabilidade (IFRS S1/S2) — CVM",
                                                                              "verificado_em":  "2026-06-29",
                                                                              "qsv_cor":  "",
+                                                                             "monitor":  "monitor-esg-soa",
                                                                              "achou":  true,
                                                                              "mudou":  false
                                                                          },
@@ -222,6 +312,7 @@
                                                                              "ref":  "Mercado regulado de carbono (SBCE)",
                                                                              "verificado_em":  "2026-06-29",
                                                                              "qsv_cor":  "",
+                                                                             "monitor":  "monitor-esg-soa",
                                                                              "achou":  true,
                                                                              "mudou":  false
                                                                          }
