@@ -1,33 +1,15 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-06-30 14:07",
+                  "gerado_em":  "2026-06-30 15:42",
                   "modo":  "v2 canario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
-                                                     "n":  4,
+                                                     "n":  0,
                                                      "folders":  [
-                                                                     "baterias-curtailment.html",
-                                                                     "prova-horaria-datacenters.html",
-                                                                     "gato-solar-soa.html",
-                                                                     "contencioso-curtailment.html"
+
                                                                  ],
                                                      "fatos":  [
-                                                                   {
-                                                                       "ref":  "EPE-MAPA-BARRAMENTOS-LRCAP",
-                                                                       "pendencia":  "coeficiente beta vs gama na Portaria 136 — nao verificado na fonte"
-                                                                   },
-                                                                   {
-                                                                       "ref":  "ANEEL-CP-009-GATO-SOLAR",
-                                                                       "pendencia":  "numeracao CP 009 (2025 vs 2026) — nao confirmada na ANEEL"
-                                                                   },
-                                                                   {
-                                                                       "ref":  "MME-MP-1318-2025",
-                                                                       "pendencia":  "MP 1.318 caducada; conteudo no PL 278 — confirmar regime vigente"
-                                                                   },
-                                                                   {
-                                                                       "ref":  "CCEE-LEI-15269-2025",
-                                                                       "pendencia":  "numero de vetos divergente — nao cravar (condicao C2 do CEO)"
-                                                                   }
+
                                                                ]
                                                  },
                   "canario_lido":  {
@@ -66,7 +48,7 @@
                                    }
               },
     "baseline":  {
-                     "Fatos_CCEE::CCEE-LEI-15269-2025":  "5EF1819507043CFA",
+                     "Fatos_CCEE::CCEE-LEI-15269-2025":  "10D3D6A57C752A0E",
                      "Fatos_ANEEL::ANEEL-REN-1161-2026-BESS":  "68ACE2ECD5CC3DE4",
                      "Fatos_ESG::Mercado regulado de carbono (SBCE)":  "C6D8C1F9FA5A9F2B",
                      "Fatos_MME::MME-PORTARIA-136-2026-LRCAP":  "8CC6838BDA4323C8",
@@ -74,19 +56,19 @@
                      "Fatos_ESG::Relato de sustentabilidade (IFRS S1/S2) — CVM":  "2B355FE6BC577D6A",
                      "Fatos_ANEEL::ANEEL-CP-045-2019":  "15BF1960EAC33B79",
                      "Fatos_ANEEL::ANEEL-REN-1071-LRCAP":  "10743202D3588DBC",
-                     "Fatos_ANEEL::ANEEL-CP-009-GATO-SOLAR":  "AA7D897607D2D509",
+                     "Fatos_ANEEL::ANEEL-CP-009-GATO-SOLAR":  "1FF31D482F1495ED",
                      "Fatos_MME::MME-REDATA":  "32EC513B13CA598C",
-                     "Fatos_EPE::EPE-MAPA-BARRAMENTOS-LRCAP":  "CC92207C0716A92D",
-                     "Fatos_MME::MME-MP-1318-2025":  "08EC65A76A28E939",
+                     "Fatos_EPE::EPE-MAPA-BARRAMENTOS-LRCAP":  "E7F9DEB5432A2C5B",
+                     "Fatos_MME::MME-MP-1318-2025":  "32D0920A05F518C7",
                      "Fatos_ONS::ONS-NT-DPL-0111-2025":  "804772A3496A3907"
                  },
     "folders":  {
                     "baterias-curtailment.html":  {
                                                       "ciclo":  "2026-06-30",
                                                       "categoria":  "vivo_sob_gatilho",
-                                                      "estado":  "herda_pendente",
-                                                      "motivo":  "depende de fato pendente: EPE-MAPA-BARRAMENTOS-LRCAP [aguarda fonte: beta_vs_gama]",
-                                                      "aguarda_fonte":  true,
+                                                      "estado":  "quadro_mudou",
+                                                      "motivo":  "fato(s) mudaram: EPE-MAPA-BARRAMENTOS-LRCAP",
+                                                      "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-regulatorio-soa"
                                                                                 ],
@@ -138,19 +120,19 @@
                                                                        "qsv_cor":  "AZUL",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  false
+                                                                       "mudou":  true
                                                                    }
                                                                ],
-                                                      "fato_gatilho":  null,
-                                                      "tipo":  null,
-                                                      "proposta_ref":  null
+                                                      "fato_gatilho":  "EPE-MAPA-BARRAMENTOS-LRCAP",
+                                                      "tipo":  "gate (modo X: sinaliza, NAO reescreve)",
+                                                      "proposta_ref":  "_folders_revisao_pendente.md"
                                                   },
                     "prova-horaria-datacenters.html":  {
                                                            "ciclo":  "2026-06-30",
                                                            "categoria":  "vivo_sob_gatilho",
                                                            "estado":  "herda_pendente",
-                                                           "motivo":  "depende de fato pendente: MME-REDATA (EM DELIBERAÇÃO); MME-MP-1318-2025 [aguarda fonte: mp_1318_redata]",
-                                                           "aguarda_fonte":  true,
+                                                           "motivo":  "depende de fato pendente: MME-REDATA (EM DELIBERAÇÃO); MME-MP-1318-2025 (CADUCADA)",
+                                                           "aguarda_fonte":  false,
                                                            "monitores_dependentes":  [
                                                                                          "monitor-regulatorio-soa"
                                                                                      ],
@@ -175,7 +157,7 @@
                                                                             "qsv_cor":  "LARANJA",
                                                                             "monitor":  "monitor-regulatorio-soa",
                                                                             "achou":  true,
-                                                                            "mudou":  false
+                                                                            "mudou":  true
                                                                         }
                                                                     ],
                                                            "fato_gatilho":  null,
@@ -186,8 +168,8 @@
                                                 "ciclo":  "2026-06-30",
                                                 "categoria":  "vivo_sob_gatilho",
                                                 "estado":  "herda_pendente",
-                                                "motivo":  "depende de fato pendente: ANEEL-CP-009-GATO-SOLAR [aguarda fonte: cp_009_numeracao]",
-                                                "aguarda_fonte":  true,
+                                                "motivo":  "depende de fato pendente: ANEEL-CP-009-GATO-SOLAR (EM DELIBERAÇÃO)",
+                                                "aguarda_fonte":  false,
                                                 "monitores_dependentes":  [
                                                                               "monitor-regulatorio-soa"
                                                                           ],
@@ -200,10 +182,10 @@
                                                                  "json":  "Fatos_ANEEL",
                                                                  "ref":  "ANEEL-CP-009-GATO-SOLAR",
                                                                  "verificado_em":  "2026-06-28",
-                                                                 "qsv_cor":  "LARANJA",
+                                                                 "qsv_cor":  "AZUL",
                                                                  "monitor":  "monitor-regulatorio-soa",
                                                                  "achou":  true,
-                                                                 "mudou":  false
+                                                                 "mudou":  true
                                                              },
                                                              {
                                                                  "json":  "Fatos_ANEEL",
@@ -223,8 +205,8 @@
                                                          "ciclo":  "2026-06-30",
                                                          "categoria":  "vivo_sob_gatilho",
                                                          "estado":  "herda_pendente",
-                                                         "motivo":  "depende de fato pendente: CCEE-LEI-15269-2025 [aguarda fonte: vetos_15269]; ANEEL-CP-045-2019 (EM DELIBERAÇÃO)",
-                                                         "aguarda_fonte":  true,
+                                                         "motivo":  "depende de fato pendente: ANEEL-CP-045-2019 (EM DELIBERAÇÃO)",
+                                                         "aguarda_fonte":  false,
                                                          "monitores_dependentes":  [
                                                                                        "monitor-regulatorio-soa"
                                                                                    ],
@@ -240,7 +222,7 @@
                                                                           "qsv_cor":  "AZUL",
                                                                           "monitor":  "monitor-regulatorio-soa",
                                                                           "achou":  true,
-                                                                          "mudou":  false
+                                                                          "mudou":  true
                                                                       },
                                                                       {
                                                                           "json":  "Fatos_ANEEL",
