@@ -9,8 +9,14 @@
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Dados Abertos vão direto pro banco SOA.",
     "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO. Submódulos e NTs são regulatórios — banco cego.",
     "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json LIBERADA.",
-    "vetores_soa_atendidos": ["V1", "V3", "V4", "V7"],
-    "fonte_canonica": "https://www.ons.org.br/"
+    "vetores_soa_atendidos": [
+      "V1",
+      "V3",
+      "V4",
+      "V7"
+    ],
+    "fonte_canonica": "https://www.ons.org.br/",
+    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
   "fatos": [
     {
@@ -23,15 +29,35 @@
       "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
-      "vetores_afetados": ["V3", "V7"],
+      "vetores_afetados": [
+        "V3",
+        "V7"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.ons.org.br/ — NT DPL 0111/2025", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F4_cruzamento", "ref": "Cruza REN ANEEL 1.161/2026 + Portaria MME 136/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.ons.org.br/ — NT DPL 0111/2025",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F4_cruzamento",
+          "ref": "Cruza REN ANEEL 1.161/2026 + Portaria MME 136/2026",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -45,15 +71,35 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
-      "vetores_afetados": ["V4", "V3"],
+      "vetores_afetados": [
+        "V4",
+        "V3"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.ons.org.br/ — Submódulo 9", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Procedimentos de Rede aprovados por REN ANEEL 903/2020 (DOU)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.ons.org.br/ — Submódulo 9",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Procedimentos de Rede aprovados por REN ANEEL 903/2020 (DOU)",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -67,15 +113,35 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
-      "vetores_afetados": ["V4", "V3"],
+      "vetores_afetados": [
+        "V4",
+        "V3"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.ons.org.br/", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "REN ANEEL 903/2020 publicada no DOU", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.ons.org.br/",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "REN ANEEL 903/2020 publicada no DOU",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -89,15 +155,36 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
-      "vetores_afetados": ["V1", "V2", "V3"],
+      "vetores_afetados": [
+        "V1",
+        "V2",
+        "V3"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.ons.org.br/ — calendário PNAST", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F4_cruzamento", "ref": "Cruza Portaria MME 129/2026 + Decreto 12.772/2025", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.ons.org.br/ — calendário PNAST",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F4_cruzamento",
+          "ref": "Cruza Portaria MME 129/2026 + Decreto 12.772/2025",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -111,15 +198,35 @@
       "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
-      "vetores_afetados": ["V3", "V7"],
+      "vetores_afetados": [
+        "V3",
+        "V7"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.ons.org.br/ — calendário NT", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Portaria MME 136/2026 Art. 11 §4º (DOU 03/06/2026)", "trecho_literal": "A Nota Técnica de Quantitativos da Capacidade Remanescente do SIN para Escoamento ... deverá ser publicada até 30 de setembro de 2026", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.ons.org.br/ — calendário NT",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Portaria MME 136/2026 Art. 11 §4º (DOU 03/06/2026)",
+          "trecho_literal": "A Nota Técnica de Quantitativos da Capacidade Remanescente do SIN para Escoamento ... deverá ser publicada até 30 de setembro de 2026",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -133,15 +240,34 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
-      "vetores_afetados": ["V7"],
+      "vetores_afetados": [
+        "V7"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.ons.org.br/ — comunicados Sandbox", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F4_cruzamento", "ref": "Cruza Sandbox ANEEL e participantes do programa", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.ons.org.br/ — comunicados Sandbox",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F4_cruzamento",
+          "ref": "Cruza Sandbox ANEEL e participantes do programa",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     }

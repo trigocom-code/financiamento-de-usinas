@@ -3,8 +3,9 @@
     "orgao": "ANEEL (MMGD / gato solar)",
     "schema_version": "1.0",
     "descricao": "Monitor Gato Solar / GD irregular. Disciplina dura: irregularidade NÃO é energia falsa (a energia injetada é real); a SOA PROVA a inconsistência, NÃO acusa fraude; números de auditoria (ONS/ANEEL) são de TERCEIROS — atribuir, não apresentar como dado SOA. NUNCA '5,7 GW'. Não confundir ~R$ 5 bi (impacto das irregularidades, estimativa) com ~R$ 16 bi (subsídio da MMGD via CDE).",
-    "verificado_em": "2026-06-30",
-    "fonte_canonica": "gov.br/aneel + NT ANEEL + Agência iNFRA/Canal Solar (secundárias, [A VERIFICAR])"
+    "verificado_em": "2026-07-01",
+    "fonte_canonica": "gov.br/aneel + NT ANEEL + Agência iNFRA/Canal Solar (secundárias, [A VERIFICAR])",
+    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
   "fatos": [
     {
@@ -17,7 +18,7 @@
     },
     {
       "tema": "Parecer ANEEL — corte de GD solar e corresponsabilização pelo curtailment",
-      "valor": "EM DEBATE (não é norma): área técnica/diretoria sinaliza que distribuidoras podem cortar geração — inclusive MMGD — por segurança operativa, e discute corresponsabilizar a GD solar pelos custos do curtailment. Se a GD passa a ser cortável e potencialmente corresponsável, cresce a necessidade de medir e provar, hora a hora, quanto cada gerador injetou × quanto foi cortado — a camada de prova SOA. [A VERIFICAR status formal — segue como parecer/discussão, sem ato vinculante.]",
+      "valor": "EM DEBATE (não é norma): área técnica/diretoria sinaliza que distribuidoras podem cortar geração — inclusive MMGD — por segurança operativa, e discute corresponsabilizar a GD solar pelos custos do curtailment. Se a GD passa a ser cortável e potencialmente corresponsável, cresce a necessidade de medir e provar, hora a hora, quanto cada gerador injetou × quanto foi cortado — a camada de prova SOA. (a verificar: status formal — segue como parecer/discussão, sem ato vinculante.)",
       "status": "EM DELIBERAÇÃO",
       "norma": "ANEEL — parecer/discussão técnica (acopla-se à CP 009)",
       "url": "https://canalsolar.com.br/aneel-corresponsabilizar-gd-solar-pelo-curtailment/",

@@ -10,7 +10,8 @@
     "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json prevalece sobre classificação automática (R1). VERDE exige fonte oficial reaberta + número ancorado (R2). Fato fora da lista tem teto AZUL (R7).",
     "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO.",
     "regra_staleness": "Fato com verificado_em > 90 dias deve ser exibido com alerta e reconferido.",
-    "nota_render": "O folder lê f.tema/f.valor/f.status/f.norma. Campos QSV (fato_id/orgao/qsv_cor/numero_status) são metadados de governança, não renderizados. _pendentes_verificacao NÃO é renderizado (fica fora de fatos[])."
+    "nota_render": "O folder lê f.tema/f.valor/f.status/f.norma. Campos QSV (fato_id/orgao/qsv_cor/numero_status) são metadados de governança, não renderizados. _pendentes_verificacao NÃO é renderizado (fica fora de fatos[]).",
+    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
   "fatos": [
     {
@@ -124,6 +125,73 @@
       "numero_status": "SEM_NUMEROS",
       "verificado_em": "2026-07-01",
       "gatilho_revisao": "n/a (estrutural)"
+    },
+    {
+      "id": "medicao_inteligente_cp001",
+      "fato_id": "ANEEL-CP-001-2026",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Medição inteligente (smart meter) — regulamentação ANEEL",
+      "valor": "CP ANEEL nº 001/2026 (medição inteligente) em 2ª fase (aberta 30/06/2026, comunicada no GT Geração Distribuída da ABSOLAR). Relatório do Diretor-Relator prevê 5 temas: corte/religamento remoto (além de inadimplência), monitoramento de qualidade até a 40ª harmônica, armazenamento dos dados de medição, interoperabilidade e leitura remota. Complementa o mandato das Portarias MME 111/2025 + 126/2026 (meta 2% a.a. por 24 meses, 01/03/2026→mar/2028). É a 'resolução específica' da ANEEL que operacionaliza o smart meter.",
+      "status": "EM DELIBERAÇÃO",
+      "qsv_cor": "AZUL",
+      "norma": "CP ANEEL nº 001/2026 (medição inteligente) · mandato: Portarias MME 111/2025 + 126/2026",
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "fonte": "F3 ABSOLAR (GT Geração Distribuída, 30/06/2026) + F1 ANEEL (abrir CP no site para ancorar)",
+      "vetores_afetados": [
+        "V2",
+        "sHEC"
+      ]
+    },
+    {
+      "id": "armazenamento_ren_1161_1162",
+      "fato_id": "ANEEL-REN-1161-1162-2026",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Sistemas de Armazenamento de Energia — consolidação regulatória",
+      "valor": "REN ANEEL nº 1.161 e 1.162/2026 (oriundas da CP 039/2023) consolidam as regras para Sistemas de Armazenamento de Energia (BESS). Publicadas/comunicadas no GT Armazenamento da ABSOLAR (24/06/2026). Já constam VERDE na Tabela de Precedência QSV v1.2.",
+      "status": "VIGENTE",
+      "qsv_cor": "VERDE",
+      "norma": "REN ANEEL nº 1.161/2026 + nº 1.162/2026 (CP 039/2023)",
+      "numero_status": "ANCORADO",
+      "fonte": "F3 ABSOLAR (GT Armazenamento, 24/06/2026) + F1 ANEEL/DOU · Tabela_Precedencia_QSV_v1_2",
+      "vetores_afetados": [
+        "V3",
+        "V7"
+      ]
+    },
+    {
+      "id": "lrcap_faq_manual_armazenamento",
+      "fato_id": "EPE-LRCAP-2026-FAQ-MANUAL",
+      "orgao": "EPE",
+      "tipo_fato": "REGULATORIO_INSTRUMENTAL",
+      "tema": "LRCAP 2026 Armazenamento — cadastro e habilitação técnica",
+      "valor": "FAQ + Manual de Cadastramento e Habilitação Técnica do LRCAP 2026 (Armazenamento), referência operacional para participação no leilão. Comunicado no GT Armazenamento da ABSOLAR (15/06/2026). Complementa os limiares da Portaria MME 136/2026 (Art. 7º: ≥30MW/≥4h/≥85% RTE) e o bônus locacional β=0,9 (ANEXO II).",
+      "status": "VIGENTE",
+      "qsv_cor": "AZUL",
+      "norma": "EPE · FAQ/Manual LRCAP 2026 (Armazenamento) · Portaria MME 136/2026",
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "fonte": "F3 ABSOLAR (GT Armazenamento, 15/06/2026) + F1 EPE (confirmar no portal LRCAP)",
+      "vetores_afetados": [
+        "V3",
+        "V7"
+      ]
+    },
+    {
+      "id": "lei_15269_curtailment",
+      "fato_id": "CCEE-LEI-15269-2025",
+      "orgao": "CCEE",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Lei 15.269/2025 — ressarcimento parcial de curtailment",
+      "valor": "Lei 15.269/2025 (originária da MP 1.304/2025) — publicada no DOU em 25/11/2025, sancionada com 16 vetos (Mensagem/VEP nº 1.755/2025), atingindo 20 dispositivos do PLV 10/2025 (fonte primária: contagem direta na Mensagem 1.755; Agência Senado confirma 16). Ressarcimento parcial por curtailment (eólica/solar no SIN): o art. 1º-A, que abrangia todos os cortes de origem externa independentemente da causa, foi VETADO; manteve-se o §11 do art. 1º; o art. 1º-B (restritivo) cobre apenas 01/09/2023 a 25/11/2025, sem previsão para cortes futuros. Compensáveis: indisponibilidade externa (REL) e confiabilidade elétrica (CNF, condicionada); razões energéticas/sobreoferta (ENE) não compensáveis. Recuperação retroativa e one-time, atualmente suspensa (ANEEL, cautelar; CCEE suspendeu o lançamento até a regulação — CP MME 210/2025).",
+      "status": "VIGENTE (compensação retroativa suspensa)",
+      "qsv_cor": "VERDE",
+      "norma": "Lei nº 15.269/2025 (MP 1.304/2025) · Mensagem/VEP nº 1.755/2025 · CP MME 210/2025",
+      "numero_status": "ANCORADO",
+      "fonte": "F1 Planalto (Mensagem 1.755/2025, DOU 25/11/2025) + Agência Senado",
+      "vetores_afetados": [
+        "V4"
+      ]
     }
   ],
   "_pendentes_verificacao": [
@@ -155,7 +223,7 @@
       "fato_id": "CCEE-LEI-15269-2025",
       "orgao": "CCEE",
       "tema": "Lei 15.269/2025 — ressarcimento parcial por curtailment",
-      "valor": "Sancionada 24/11/2025 com 12 dispositivos vetados. Canônico: art. 1º-B inserido na Lei 10.848/2004 → ressarcimento do curtailment eólico/solar com RECORTE TEMPORAL FECHADO: de 1º/09/2023 até a vigência da lei (não é janela aberta). Ressarce só indisponibilidade de transmissão (REL) e confiabilidade (CNF); sobreoferta/ENE vetada. F1 = Planalto.",
+      "valor": "com 16 vetos (Mensagem 1.755/2025), 20 dispositivos. Canônico: art. 1º-B inserido na Lei 10.848/2004 → ressarcimento do curtailment eólico/solar com RECORTE TEMPORAL FECHADO: de 1º/09/2023 até a vigência da lei (não é janela aberta). Ressarce só indisponibilidade de transmissão (REL) e confiabilidade (CNF); sobreoferta/ENE vetada. F1 = Planalto.",
       "status": "VIGENTE",
       "qsv_cor": "AZUL",
       "norma": "Lei 15.269/2025 (art. 1º-B da Lei 10.848/2004)",

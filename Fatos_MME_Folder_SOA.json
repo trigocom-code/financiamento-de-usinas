@@ -9,8 +9,15 @@
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
     "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO.",
     "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json LIBERADA. Aplicar registro a registro.",
-    "vetores_soa_atendidos": ["V1", "V3", "V5", "V6", "V7"],
-    "fonte_canonica": "https://www.gov.br/mme/pt-br"
+    "vetores_soa_atendidos": [
+      "V1",
+      "V3",
+      "V5",
+      "V6",
+      "V7"
+    ],
+    "fonte_canonica": "https://www.gov.br/mme/pt-br",
+    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
   "fatos": [
     {
@@ -23,17 +30,49 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 18,
-      "vetores_afetados": ["V3", "V7"],
+      "vetores_afetados": [
+        "V3",
+        "V7"
+      ],
       "qsv_cor": "VERDE",
       "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.gov.br/mme/pt-br — Portaria 136/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "DOU 03/06/2026", "trecho_literal": "Portaria Normativa MME nº 136, de 1º de junho de 2026 ... publicada no Diário Oficial da União em 3 de junho de 2026", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura ampla Canal Solar/MegaWhat/EpBR/Cenário Energia", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F4_cruzamento", "ref": "Define calendário regulado por REN ANEEL 1.071/2023+1.162/2026 + sub-determina NT ONS + cadastro EPE", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.gov.br/mme/pt-br — Portaria 136/2026",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "DOU 03/06/2026",
+          "trecho_literal": "Portaria Normativa MME nº 136, de 1º de junho de 2026 ... publicada no Diário Oficial da União em 3 de junho de 2026",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura ampla Canal Solar/MegaWhat/EpBR/Cenário Energia",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F4_cruzamento",
+          "ref": "Define calendário regulado por REN ANEEL 1.071/2023+1.162/2026 + sub-determina NT ONS + cadastro EPE",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -47,15 +86,35 @@
       "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
-      "vetores_afetados": ["V1", "V2"],
+      "vetores_afetados": [
+        "V1",
+        "V2"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.gov.br/mme/pt-br", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Decreto 12.772/2025 (DOU 08/12/2025) + Portaria MME 129/2026", "trecho_literal": "institui a Política Nacional de Acesso ao Sistema de Transmissão (PNAST)", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.gov.br/mme/pt-br",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Decreto 12.772/2025 (DOU 08/12/2025) + Portaria MME 129/2026",
+          "trecho_literal": "institui a Política Nacional de Acesso ao Sistema de Transmissão (PNAST)",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -69,37 +128,77 @@
       "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
-      "vetores_afetados": ["V5", "V6"],
+      "vetores_afetados": [
+        "V5",
+        "V6"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.gov.br/mme/pt-br — PNH2", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Lei 14.948/2024 (02/08/2024) + Lei 15.042/2024 (11/12/2024) · Planalto", "trecho_literal": "hidrogênio de baixa emissão de carbono", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.gov.br/mme/pt-br — PNH2",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Lei 14.948/2024 (02/08/2024) + Lei 15.042/2024 (11/12/2024) · Planalto",
+          "trecho_literal": "hidrogênio de baixa emissão de carbono",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
     {
       "fato_id": "MME-PORTARIAS-126-111",
       "tema": "Portarias MME 126/2026 e 111/2025 — Smart meter + APIs",
-      "valor": "ANCORADO (com correção de horizonte): a Portaria 126/2026 altera a 111/2025 e cria a 1ª meta obrigatória — implantação adicional de 2% a.a. das unidades consumidoras por 24 meses a partir de 1º/03/2026 (até mar/2028). Expansão de médio/longo prazo definida por Análise de Custo-Benefício (ACB) a ser entregue à ANEEL até 29/02/2028 (horizonte mín. 10 anos). [CORREÇÃO: NÃO é 'meta até 2035' — esse horizonte estava errado.] Funcionalidades mínimas: leitura remota, tarifação horária, interoperabilidade, segurança cibernética, registro de interrupções, corte/religamento remoto. Base SaaS B2B (V2) e produto sHEC.",
+      "valor": "ANCORADO (com correção de horizonte): a Portaria 126/2026 altera a 111/2025 e cria a 1ª meta obrigatória — implantação adicional de 2% a.a. das unidades consumidoras por 24 meses a partir de 1º/03/2026 (até mar/2028). Expansão de médio/longo prazo definida por Análise de Custo-Benefício (ACB) a ser entregue à ANEEL até 29/02/2028 (horizonte mín. 10 anos). Funcionalidades mínimas: leitura remota, tarifação horária, interoperabilidade, segurança cibernética, registro de interrupções, corte/religamento remoto. Base SaaS B2B (V2) e produto sHEC.",
       "status": "VIGENTE",
       "norma": "Portaria MME 111/2025 (18/06/2025) + Portaria MME 126/2026 (28/01/2026, altera a 111)",
       "url": "https://www.gov.br/mme/pt-br",
       "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
-      "vetores_afetados": ["V2", "V6"],
+      "vetores_afetados": [
+        "V2",
+        "V6"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.gov.br/mme/pt-br", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Portaria MME 111/2025 (18/06/2025) + Portaria MME 126/2026 (28/01/2026)", "trecho_literal": "implantação adicional de 2% ao ano das unidades consumidoras, pelo prazo de 24 meses a partir de 1º de março de 2026", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.gov.br/mme/pt-br",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Portaria MME 111/2025 (18/06/2025) + Portaria MME 126/2026 (28/01/2026)",
+          "trecho_literal": "implantação adicional de 2% ao ano das unidades consumidoras, pelo prazo de 24 meses a partir de 1º de março de 2026",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -113,15 +212,35 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
-      "vetores_afetados": ["V6", "V5"],
+      "vetores_afetados": [
+        "V6",
+        "V5"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.gov.br/mme/pt-br", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Base legal da PNTE no DOU", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.gov.br/mme/pt-br",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Base legal da PNTE no DOU",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -135,15 +254,35 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
-      "vetores_afetados": ["V5", "V1"],
+      "vetores_afetados": [
+        "V5",
+        "V1"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.gov.br/mme/pt-br — REDATA", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura intensa Valor/EpBR/MegaWhat (REDATA tema dominante data centers)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.gov.br/mme/pt-br — REDATA",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura intensa Valor/EpBR/MegaWhat (REDATA tema dominante data centers)",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     }
@@ -159,14 +298,28 @@
       "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
-      "vetores_afetados": ["V5", "V6"],
+      "vetores_afetados": [
+        "V5",
+        "V6"
+      ],
       "qsv_cor": "LARANJA",
       "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "Agência Senado, 27/02/2026", "trecho_literal": "Vencida no dia 25 de fevereiro, a MP 1.318/2025 havia instituído o Regime Especial de Tributação para Serviços de Datacenter (Redata).", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "Agência Senado, 27/02/2026",
+          "trecho_literal": "Vencida no dia 25 de fevereiro, a MP 1.318/2025 havia instituído o Regime Especial de Tributação para Serviços de Datacenter (Redata).",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "CADUCADA em 25/02/2026. Mantida em LARANJA conforme Precedência v1.2: só deixa de ser pendência quando texto for completamente reescrito como caducada em todos materiais. Conteúdo no PL 278/2026 (Senado)."

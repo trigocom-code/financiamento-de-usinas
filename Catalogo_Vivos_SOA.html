@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>SOA/SOS · Catálogo de Materiais (vivos × referência)</title>
-  <meta name="description" content="Catálogo SOA/SOS separado em duas seções honestas: materiais VIVOS (folders que consomem JSON em tempo real e se atualizam sozinhos, com selo de frescor) e materiais de REFERÊNCIA estáticos (editados à mão, com carimbo da data real da última edição — sem alarme de defasagem)."/>
+  <meta name="description" content="Catálogo SOA/SOS separado em duas seções honestas: materiais VIVOS (folders que consomem JSON em tempo real e se atualizam sozinhos, com selo de frescor) e materiais de REFERÊNCIA estáticos. Cada cartão consulta a API pública do GitHub e mostra a hora do último commit."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
@@ -17,7 +17,6 @@
       --white:#FFFFFF;--green:#166534;--green-lt:#DCFCE7;
       --amber-d:#92400E;--amber-lt:#FEF3C7;
       --red:#B91C1C;--red-lt:#FEE2E2;
-      --slate:#475569;--slate-lt:#EEF2FA;
       --r-sm:6px;--r-md:12px;--r-lg:20px;
       --sh-sm:0 1px 4px rgba(15,43,70,.1);--sh-md:0 4px 16px rgba(15,43,70,.12);
       --f-serif:"DM Serif Display",Georgia,serif;
@@ -49,12 +48,8 @@
     .dot.g{background:var(--green)}
     .dot.a{background:#D97706}
     .dot.r{background:var(--red)}
-    .dot.s{background:var(--slate)}
 
     h2.sec{font-family:var(--f-serif);font-size:22px;color:var(--navy);border-bottom:2px solid var(--line);padding-bottom:8px;margin:34px 0 6px}
-    h2.sec .tag{font-family:var(--f-sans);font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 10px;border-radius:999px;vertical-align:middle;margin-left:8px}
-    h2.sec .tag.live{background:var(--orange);color:#fff}
-    h2.sec .tag.ref{background:var(--slate-lt);color:var(--slate);border:1px solid #CBD5E1}
     .sec-sub{color:var(--grey);font-size:13.5px;margin:0 0 16px}
 
     .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
@@ -66,13 +61,7 @@
     .fresh.g{background:var(--green-lt);color:var(--green);border:1px solid #BBF7D0}
     .fresh.a{background:var(--amber-lt);color:var(--amber-d);border:1px solid #FCD34D}
     .fresh.r{background:var(--red-lt);color:var(--red);border:1px solid #FCA5A5}
-    .fresh.static{background:var(--slate-lt);color:var(--slate);border:1px solid #CBD5E1}
-    .fresh.pend{background:var(--amber-lt);color:var(--amber-d);border:1px solid #FCD34D}
-    .fresh.mudou{background:#FFEDD5;color:#9A3412;border:1px solid #FB923C}
-    .fresh.rep{background:var(--red-lt);color:var(--red);border:1px solid #FCA5A5}
     .fresh.loading{background:#E5E7EB;color:#6B7280;border:1px solid #D1D5DB}
-    .trig-banner{background:var(--amber-lt);border:1px solid #FCD34D;border-left:5px solid var(--orange);border-radius:var(--r-md);padding:12px 16px;margin:0 0 16px;font-size:13.5px;color:#7a4a00;display:none}
-    .trig-banner.on{display:block}.trig-banner b{color:var(--orange)}
     .card h3{font-family:var(--f-sans);font-size:16px;font-weight:700;color:var(--navy);line-height:1.25;margin-bottom:5px}
     .card .desc{font-size:13px;color:var(--grey);line-height:1.5;margin:0 0 12px;flex:1}
     .card .meta{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px dashed var(--line);padding-top:10px;margin-top:auto}
@@ -80,10 +69,14 @@
     .card .ts b{color:var(--navy);font-weight:600}
     .card .open{background:var(--royal);color:#fff;font-size:12px;font-weight:700;padding:7px 12px;border-radius:6px;text-decoration:none;flex-shrink:0}
     .card .open:hover{background:#16498d}
+    .card.hub{background:var(--navy);color:#fff;border-color:var(--navy)}
+    .card.hub h3,.card.hub .desc{color:#fff}
+    .card.hub .desc{color:#cbd5e1}
+    .card.hub .ts b{color:#FEC73D}
+    .card.hub .ts{color:#94a3b8}
+    .card.hub .vetor{background:#FEC73D;color:#08203a}
     .card.dyn{background:linear-gradient(135deg,#FFF8E6 0%,#FEF3D7 100%);border-color:var(--orange)}
     .card.dyn .vetor{background:var(--orange);color:#fff}
-    .card.ref{background:var(--snow)}
-    .card.ref .vetor{background:#E2E8F0;color:var(--slate)}
 
     .live-stamp{position:fixed;top:9px;right:12px;z-index:99999;display:inline-block;background:#0b1f4d;color:#FEC73D;font:600 11px/1.1 Arial,Helvetica,sans-serif;letter-spacing:.03em;padding:5px 11px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.35)}
 
@@ -108,177 +101,104 @@
 <div class="doc-h" style="margin-bottom:8px">
   <h1>Catálogo de Materiais</h1>
   <div class="doc-sub">SOA/SOS · Sustainability Operating System · Soluções em Energia</div>
-  <div class="doc-tag">Duas seções: vivos (tempo real) · referência (estáticos)</div>
+  <div class="doc-tag">Vivos (tempo real) · referência (estáticos) · selo de frescor por cartão</div>
 </div>
 
 <div class="hero">
   <span class="hero-pill">● Catálogo honesto · vivo × estático</span>
-  <p class="hero-q">Nem todo material é "vivo". Aqui eles estão <span class="hl">separados pelo que realmente são</span>: os que se atualizam sozinhos e os que são editados à mão.</p>
-  <p class="hero-s"><b>Vivos</b> — folders que fazem fetch de um JSON canônico a cada visita; quando o monitor regulatório atualiza o JSON, o folder reflete na hora. Têm selo de frescor (verde/amarelo/vermelho). <b>Referência</b> — materiais estáticos, atualizados manualmente; o carimbo mostra a <b>data da última edição real</b> — sem alarme de "defasado", porque material estático não fica defasado, fica estável.</p>
+  <p class="hero-q">Nem todo material é <span class="hl">"vivo"</span>. Aqui eles estão separados pelo que realmente são: os que <span class="hl">se atualizam sozinhos</span> (fetch de JSON canônico a cada visita) e os que são <span class="hl">editados à mão</span>.</p>
+  <p class="hero-s">Vivos têm selo de frescor: verde = últimas 24h · amarelo = 1 a 7 dias · vermelho = mais de 7 dias (peça regeneração). Referência = estático, o carimbo mostra a data da última edição real — sem alarme de defasagem.</p>
 </div>
 
 <div class="lastro">
-  <b>Como o frescor é medido.</b> Cada cartão consulta a API pública do GitHub (`api.github.com/repos/.../commits?path=…`) ao abrir, e mostra o timestamp do último commit que tocou aquele arquivo. Nos <b>vivos</b>, esse timestamp é a última regeneração pelo monitor. Nos <b>de referência</b>, é a data da última edição manual. O carimbo no canto é a hora em que você abriu este catálogo.
+  <b>Como o frescor é medido.</b> Cada cartão consulta a API pública do GitHub (`api.github.com/repos/.../commits?path=…`) ao abrir e mostra o timestamp do último commit que tocou aquele arquivo. Nos vivos, é a última regeneração pelo monitor. <b>Fontes do monitor:</b> F1 (páginas oficiais/DOU), F2 (imprensa setorial) e <b>F3 — associações que entregam ponteiro por e-mail (hoje: ABSOLAR, via seus Grupos de Trabalho)</b>. F3 não fecha um fato em VERDE sozinha quando a matéria exige F1.
 </div>
 
 <div class="legend">
-  <span><span class="dot g"></span>Vivo · atualizado nas últimas 24h</span>
-  <span><span class="dot a"></span>Vivo · 1 a 7 dias</span>
-  <span><span class="dot r"></span>Vivo · mais de 7 dias (peça regeneração)</span>
-  <span><span class="dot s"></span>Referência · estático (data da edição)</span>
+  <span><span class="dot g"></span>Atualizado nas últimas 24h</span>
+  <span><span class="dot a"></span>1 a 7 dias</span>
+  <span><span class="dot r"></span>Mais de 7 dias — atenção</span>
 </div>
 
-<h2 class="sec">Materiais vivos <span class="tag live">tempo real</span></h2>
-<p class="sec-sub">Folders que consomem o JSON canônico em runtime e se atualizam sozinhos no browser do leitor. O monitor regulatório SOA escreve o JSON por digest; o folder reflete na hora. Selo de frescor aplicável.</p>
-
+<h2 class="sec">Folder-mestre</h2>
+<p class="sec-sub">Página inicial do site (URL nua). Reúne e linka os 9 folders comerciais por vetor + o Quadro Regulatório vivo.</p>
 <div class="grid">
-  <div class="card dyn" data-file="Folder_Vivo_Regulatorio_GitHub.html">
-    <div class="top"><span class="vetor">Regulatório · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
-    <h3>Quadro Regulatório Vivo (autônomo)</h3>
-    <div class="desc">Versão enxuta e autônoma do Quadro Regulatório — só os cards de normas (VIGENTE / AGENDADO / PENDENTE / EM DELIBERAÇÃO), para compartilhar isolado. Consome o mesmo <code>Fatos_Regulatorios_Folder_SOA.json</code> do folder-mestre em runtime, sem duplicar o restante do material.</div>
-    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_Regulatorio_GitHub.html">Abrir</a></div>
-  </div>
-
-  <div class="card dyn" data-file="Folder_Vivo_ANEEL_GitHub.html">
-    <div class="top"><span class="vetor">ANEEL · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
-    <h3>Monitor ANEEL — Folder Vivo</h3>
-    <div class="desc">Curadoria por score SOA ≥ 5. CP 045/2019, REN 1.161/2026, REN 1.150/2026, CP 046/2025 e mais. Consome <code>Fatos_ANEEL_Folder_SOA.json</code>. Cobre V1–V7.</div>
-    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_ANEEL_GitHub.html">Abrir</a></div>
-  </div>
-
-  <div class="card dyn" data-file="Folder_Vivo_MME_GitHub.html">
-    <div class="top"><span class="vetor">MME · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
-    <h3>Monitor MME — Folder Vivo</h3>
-    <div class="desc">Portarias e programas estruturais: LRCAP 136/2026, REDATA, Smart Meter 126/2026, Acesso 129/2026, PNTE, PNH2. Consome <code>Fatos_MME_Folder_SOA.json</code>. Cobre V1, V3, V5, V6, V7.</div>
-    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_MME_GitHub.html">Abrir</a></div>
-  </div>
-
-  <div class="card dyn" data-file="Folder_Vivo_ONS_GitHub.html">
-    <div class="top"><span class="vetor">ONS · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
-    <h3>Monitor ONS — Folder Vivo</h3>
-    <div class="desc">Só Notas Técnicas e Submódulos regulatórios. NT-ONS DPL 0111/2025, NT 02 PNAST, NT Capacidade Remanescente. Consome <code>Fatos_ONS_Folder_SOA.json</code>. Cobre V1, V3, V4, V7.</div>
-    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_ONS_GitHub.html">Abrir</a></div>
-  </div>
-
-  <div class="card dyn" data-file="Folder_Vivo_CCEE_GitHub.html">
-    <div class="top"><span class="vetor">CCEE · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
-    <h3>Monitor CCEE — Folder Vivo</h3>
-    <div class="desc">CP 17/2026 PSM (score 18), Lei 15.269/2025, Submódulo 9, GRUDEM, Boletim Mensal. Consome <code>Fatos_CCEE_Folder_SOA.json</code>. Cobre V3, V4, V5, V6, V8.</div>
-    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_CCEE_GitHub.html">Abrir</a></div>
-  </div>
-  <div class="card dyn" data-file="Folder_Vivo_GatoSolar_GitHub.html">
-    <div class="top"><span class="vetor">GATO SOLAR · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
-    <h3>Monitor Gato Solar — Folder Vivo</h3>
-    <div class="desc">CP ANEEL 009/2026, auditoria de potência MMGD, corte/corresponsabilização da GD. A SOA prova, não acusa. Consome <code>Fatos_GatoSolar_Folder_SOA.json</code>. Cobre V2, V4.</div>
-    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_GatoSolar_GitHub.html">Abrir</a></div>
-  </div>
-
-  <div class="card dyn" data-file="Folder_Vivo_Seguros_GitHub.html">
-    <div class="top"><span class="vetor">SEGUROS · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
-    <h3>Monitor Seguros (V8) — Folder Vivo</h3>
-    <div class="desc">SUSEP/CNSP, ADI 7074, Lei 15.040, Sandbox e resseguro. Paramétrico de renováveis; SOA = provedor neutro de índice. Consome <code>Fatos_Seguros_Folder_SOA.json</code>.</div>
-    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_Seguros_GitHub.html">Abrir</a></div>
-  </div>
-
-  <div class="card dyn" data-file="Folder_Vivo_ESG_GitHub.html">
-    <div class="top"><span class="vetor">ESG · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
-    <h3>Monitor ESG — Folder Vivo</h3>
-    <div class="desc">Relato de sustentabilidade (CVM 193/244, IFRS S1/S2), carbono (SBCE), Taxonomia, CBAM e GHG Scope 2. Consome <code>Fatos_ESG_Folder_SOA.json</code> em runtime. Cobre V5, V8.</div>
-    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_ESG_GitHub.html">Abrir</a></div>
-  </div>
-
-  <div class="card dyn" data-file="Folder_Vivo_CapitalVerde_GitHub.html">
-    <div class="top"><span class="vetor">CAPITAL VERDE · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
-    <h3>Monitor Capital Verde — Folder Vivo</h3>
-    <div class="desc">Acesso a capital verde: Fundo Clima/BNDES, Eco Invest, debêntures verdes e sustainability-linked. Consome <code>Fatos_CapitalVerde_Folder_SOA.json</code> em runtime. Cobre D·Banca, A·Geração.</div>
-    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_CapitalVerde_GitHub.html">Abrir</a></div>
-  </div>
-  <div class="card dyn" data-file="Folder_Vivo_IPTUVerde_GitHub.html">
-    <div class="top"><span class="vetor">IPTU VERDE · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
-    <h3>Monitor IPTU Verde — Folder Vivo</h3>
-    <div class="desc">Incentivos municipais verdes (50+ cidades, até 40%), gate NR-35/NR-10 (iCleanSolar) e GD (Lei 14.300/Fio B). Consome <code>Fatos_IPTUVerde_Folder_SOA.json</code> em runtime. Cobre V2, V7, C·Consumidor.</div>
-    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_IPTUVerde_GitHub.html">Abrir</a></div>
-  </div>
-
-  <div class="card dyn" data-file="Folder_Vivo_EPE_GitHub.html">
-    <div class="top"><span class="vetor">EPE · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
-    <h3>Monitor EPE — Folder Vivo</h3>
-    <div class="desc">PDE 2035, PNE 2055, PET/PELP, Revisão Quadrimestral, Estudos Prospectivos, Boletins, CPs. Consome <code>Fatos_EPE_Folder_SOA.json</code>. Convergência com V1, V3, V5, V6.</div>
-    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_EPE_GitHub.html">Abrir</a></div>
-  </div>
-</div>
-
-<h2 class="sec">Materiais comerciais por vetor <span class="tag ref">sob gatilho regulatório</span></h2>
-<p class="sec-sub">Cada vetor sustenta uma tese ancorada num quadro regulatório. Enquanto o quadro não muda, o folder é <b>estável</b> e o carimbo mostra a data da última edição. Quando um fato de que ele depende muda, o selo acende <b>"quadro mudou — revisar"</b> — e a regeneração do texto passa pelo gate humano (nunca automática). O Hub é índice estático.</p>
-
-<div class="trig-banner" id="trigBanner"></div>
-
-<div class="grid">
-
-  <div class="card ref" data-file="index.html" data-static="1">
-    <div class="top"><span class="vetor">Folder-mestre · página inicial</span><span class="fresh loading" data-fresh></span></div>
+  <div class="card hub" data-file="index.html">
+    <div class="top">
+      <span class="vetor">Folder-mestre · página inicial</span>
+      <span class="fresh loading" data-fresh></span>
+    </div>
     <h3>Folder Vivo — Inteligência e asseguração no financiamento de usinas</h3>
-    <div class="desc">Folder-mestre do lote (é a página inicial do site, na URL nua). Etapas do financiamento, QSV, casos de uso e o Quadro Regulatório — este vivo, consumindo <code>Fatos_Regulatorios_Folder_SOA.json</code> em runtime — mais a grade que linka os 9 folders comerciais por vetor.</div>
-    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/index.html">Abrir</a></div>
+    <div class="desc">Folder-mestre do lote (página inicial, na URL nua): etapas do financiamento, QSV, casos de uso e o Quadro Regulatório — este vivo, consumindo <code>Fatos_Regulatorios_Folder_SOA.json</code> em runtime — mais a grade que linka os 9 folders comerciais por vetor.</div>
+    <div class="meta">
+      <span class="ts" data-ts>—</span>
+      <a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/index.html">Abrir</a>
+    </div>
   </div>
+</div>
 
-  <div class="card ref" data-file="baterias-curtailment.html" data-static="1">
+<h2 class="sec">9 Folders comerciais (por vetor · sob gatilho regulatório)</h2>
+<p class="sec-sub">Cada vetor entrega uma tese auditável. Quando um fato de que o folder depende muda, o selo acende — a regeneração do texto passa por gate humano (nunca automática).</p>
+
+<div class="grid">
+
+  <div class="card" data-file="baterias-curtailment.html">
     <div class="top"><span class="vetor">V3 · V4 · Armazenamento</span><span class="fresh loading" data-fresh></span></div>
     <h3>Baterias × Curtailment</h3>
-    <div class="desc">BESS co-localizado para capturar energia cortada · arbitragem · LRCAP × REN 1.071/2023 · dimensionamento · modelo financeiro (CAPEX/DSCR/TIR/break-even).</div>
+    <div class="desc">BESS co-localizado para capturar energia cortada · arbitragem · LRCAP · REN 1.161/1.162/2026 (armazenamento) · dimensionamento · modelo financeiro (CAPEX/DSCR/TIR/break-even).</div>
     <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/baterias-curtailment.html">Abrir</a></div>
   </div>
 
-  <div class="card ref" data-file="contencioso-curtailment.html" data-static="1">
+  <div class="card" data-file="contencioso-curtailment.html">
     <div class="top"><span class="vetor">V4 · Contencioso</span><span class="fresh loading" data-fresh></span></div>
     <h3>Contencioso de Curtailment</h3>
-    <div class="desc">Evidência horária auditável de geração frustrada para disputa e ressarcimento sob a Lei 15.269/2025.</div>
+    <div class="desc">Evidência horária auditável de geração frustrada para disputa e ressarcimento sob a Lei 15.269/2025 (16 vetos · Mensagem 1.755/2025).</div>
     <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/contencioso-curtailment.html">Abrir</a></div>
   </div>
 
-  <div class="card ref" data-file="prova-horaria-datacenters.html" data-static="1">
+  <div class="card" data-file="prova-horaria-datacenters.html">
     <div class="top"><span class="vetor">V5 · Data Centers</span><span class="fresh loading" data-fresh></span></div>
     <h3>Prova Horária — Data Centers</h3>
     <div class="desc">Matching 24/7 de consumo × renovável para Scope 2, no contexto do REDATA. Para hyperscalers, H2V e grandes cargas.</div>
     <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/prova-horaria-datacenters.html">Abrir</a></div>
   </div>
 
-  <div class="card ref" data-file="certificacao-esg-auditavel.html" data-static="1">
+  <div class="card" data-file="certificacao-esg-auditavel.html">
     <div class="top"><span class="vetor">V5 · V8 · ESG</span><span class="fresh loading" data-fresh></span></div>
     <h3>Certificação ESG Auditável</h3>
     <div class="desc">Lastro horário para relato CVM/IFRS S2/CBAM/GHG Scope 2. Evidence Pack ISAE 3000 / ISO 14064.</div>
     <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/certificacao-esg-auditavel.html">Abrir</a></div>
   </div>
 
-  <div class="card ref" data-file="seguros-renovaveis-soa.html" data-static="1">
+  <div class="card" data-file="seguros-renovaveis-soa.html">
     <div class="top"><span class="vetor">V8 · Seguros</span><span class="fresh loading" data-fresh></span></div>
     <h3>Seguros de Renováveis</h3>
     <div class="desc">Camada de prova de risco — do sinistro ao gatilho paramétrico. Para corretoras, resseguradoras e segurados.</div>
     <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/seguros-renovaveis-soa.html">Abrir</a></div>
   </div>
 
-  <div class="card ref" data-file="gato-solar-soa.html" data-static="1">
+  <div class="card" data-file="gato-solar-soa.html">
     <div class="top"><span class="vetor">V2 · V7 · GD</span><span class="fresh loading" data-fresh></span></div>
     <h3>Gato Solar</h3>
     <div class="desc">Detecção auditável de GD irregular (CP ANEEL Gato Solar). A SOA prova, não acusa.</div>
     <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/gato-solar-soa.html">Abrir</a></div>
   </div>
 
-  <div class="card ref" data-file="iptu-verde-auditavel.html" data-static="1">
+  <div class="card" data-file="iptu-verde-auditavel.html">
     <div class="top"><span class="vetor">V2 · V7 · Municipal</span><span class="fresh loading" data-fresh></span></div>
     <h3>IPTU Verde Auditável</h3>
     <div class="desc">Incentivos municipais + excedente certificando prédios públicos e frota.</div>
     <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/iptu-verde-auditavel.html">Abrir</a></div>
   </div>
 
-  <div class="card ref" data-file="icleansolar-limpeza-auditavel.html" data-static="1">
+  <div class="card" data-file="icleansolar-limpeza-auditavel.html">
     <div class="top"><span class="vetor">V7 · B2C</span><span class="fresh loading" data-fresh></span></div>
     <h3>iCleanSolar</h3>
     <div class="desc">Limpeza de placas com prova de ganho · motor regulatório NR-35/10/06 (responsabilidade solidária).</div>
     <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/icleansolar-limpeza-auditavel.html">Abrir</a></div>
   </div>
 
-  <div class="card ref" data-file="bitcoin-verde-soa.html" data-static="1">
+  <div class="card" data-file="bitcoin-verde-soa.html">
     <div class="top"><span class="vetor">V5 · Carga flexível</span><span class="fresh loading" data-fresh></span></div>
     <h3>Bitcoin Verde</h3>
     <div class="desc">Prova de origem renovável para mineração e carga flexível que absorve excedente do SIN.</div>
@@ -287,83 +207,146 @@
 
 </div>
 
+<h2 class="sec">Monitores vivos (fetch + JSON em tempo real)</h2>
+<p class="sec-sub">Peças que atualizam no browser do leitor — cada uma faz fetch do seu JSON canônico por órgão a cada visita. O monitor regulatório SOA reescreve os JSONs por digest diário; o folder reflete na hora. Fontes F1/F2/F3 (F3 = ABSOLAR via GTs).</p>
+
+<div class="grid">
+  <div class="card dyn" data-file="Folder_Vivo_Regulatorio_GitHub.html">
+    <div class="top"><span class="vetor">Regulatório · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Quadro Regulatório Vivo (autônomo)</h3>
+    <div class="desc">Versão enxuta — só os cards de normas (VIGENTE / AGENDADO / PENDENTE / EM DELIBERAÇÃO). Consome <code>Fatos_Regulatorios_Folder_SOA.json</code> em runtime — qualquer atualização do monitor aparece automaticamente.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_Regulatorio_GitHub.html">Abrir</a></div>
+  </div>
+
+  <div class="card dyn" data-file="Folder_Vivo_EPE_GitHub.html">
+    <div class="top"><span class="vetor">EPE · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Monitor EPE — Folder Vivo</h3>
+    <div class="desc">PDE 2035, PNE 2055, PET/PELP, Revisão Quadrimestral, Estudos Prospectivos (CE+PI, Sudeste do Pará), Boletins e CPs. Consome <code>Fatos_EPE_Folder_SOA.json</code>. Convergência com V1, V3, V5, V6.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_EPE_GitHub.html">Abrir</a></div>
+  </div>
+
+  <div class="card dyn" data-file="Folder_Vivo_ANEEL_GitHub.html">
+    <div class="top"><span class="vetor">ANEEL · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Monitor ANEEL — Folder Vivo</h3>
+    <div class="desc">Curadoria por score SOA ≥ 5. CP 045/2019, REN 1.161 e 1.162/2026 (armazenamento), CP 001/2026 (medição inteligente), CP 009/2026, REN 1.150/2026 e mais. Consome <code>Fatos_ANEEL_Folder_SOA.json</code>. Cobre V1–V7.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_ANEEL_GitHub.html">Abrir</a></div>
+  </div>
+
+  <div class="card dyn" data-file="Folder_Vivo_MME_GitHub.html">
+    <div class="top"><span class="vetor">MME · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Monitor MME — Folder Vivo</h3>
+    <div class="desc">Portarias e programas estruturais: LRCAP 136/2026, REDATA, Smart Meter 111/2025 + 126/2026, Acesso 129/2026 (PNAST), PNTE, PNH2. Consome <code>Fatos_MME_Folder_SOA.json</code>. Cobre V1, V3, V5, V6, V7.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_MME_GitHub.html">Abrir</a></div>
+  </div>
+
+  <div class="card dyn" data-file="Folder_Vivo_ONS_GitHub.html">
+    <div class="top"><span class="vetor">ONS · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Monitor ONS — Folder Vivo</h3>
+    <div class="desc">Só Notas Técnicas e Submódulos regulatórios. NT-ONS DPL 0111/2025, NT 02 PNAST, NT Capacidade Remanescente (Art. 11 §4º Portaria 136, prazo 30/09/2026). Consome <code>Fatos_ONS_Folder_SOA.json</code>. Cobre V1, V3, V4, V7.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_ONS_GitHub.html">Abrir</a></div>
+  </div>
+
+  <div class="card dyn" data-file="Folder_Vivo_CCEE_GitHub.html">
+    <div class="top"><span class="vetor">CCEE · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Monitor CCEE — Folder Vivo</h3>
+    <div class="desc">CP 17/2026 PSM (score 18). Lei 15.269/2025 (ressarcimento; 16 vetos · Mensagem 1.755/2025), Submódulo 9, GRUDEM, Boletim Mensal. Consome <code>Fatos_CCEE_Folder_SOA.json</code>. Cobre V3, V4, V5, V6, V8.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_CCEE_GitHub.html">Abrir</a></div>
+  </div>
+
+  <div class="card dyn" data-file="Folder_Vivo_GatoSolar_GitHub.html">
+    <div class="top"><span class="vetor">Gato Solar · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Monitor Gato Solar — Folder Vivo</h3>
+    <div class="desc">CP ANEEL 009/2026, auditoria de potência MMGD, corte/corresponsabilização da GD. A SOA prova, não acusa. Consome <code>Fatos_GatoSolar_Folder_SOA.json</code>. Cobre V2, V4.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_GatoSolar_GitHub.html">Abrir</a></div>
+  </div>
+
+  <div class="card dyn" data-file="Folder_Vivo_Seguros_GitHub.html">
+    <div class="top"><span class="vetor">Seguros · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Monitor Seguros (V8) — Folder Vivo</h3>
+    <div class="desc">SUSEP/CNSP, ADI 7074, Lei 15.040, Sandbox e resseguro. Paramétrico de renováveis; SOA = provedor neutro de índice. Consome <code>Fatos_Seguros_Folder_SOA.json</code>.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_Seguros_GitHub.html">Abrir</a></div>
+  </div>
+
+  <div class="card dyn" data-file="Folder_Vivo_ESG_GitHub.html">
+    <div class="top"><span class="vetor">ESG · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Monitor ESG — Folder Vivo</h3>
+    <div class="desc">Relato de sustentabilidade (CVM 193/244, IFRS S1/S2), carbono (SBCE — setor elétrico na Fase 2 do cronograma, ~2029), Taxonomia, CBAM e GHG Scope 2. Consome <code>Fatos_ESG_Folder_SOA.json</code>. Cobre V5, V8.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_ESG_GitHub.html">Abrir</a></div>
+  </div>
+
+  <div class="card dyn" data-file="Folder_Vivo_CapitalVerde_GitHub.html">
+    <div class="top"><span class="vetor">Capital Verde · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Monitor Capital Verde — Folder Vivo</h3>
+    <div class="desc">Acesso a capital verde: Fundo Clima/BNDES, Eco Invest, debêntures verdes e sustainability-linked. Consome <code>Fatos_CapitalVerde_Folder_SOA.json</code>. Cobre D·Banca, A·Geração.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_CapitalVerde_GitHub.html">Abrir</a></div>
+  </div>
+
+  <div class="card dyn" data-file="Folder_Vivo_IPTUVerde_GitHub.html">
+    <div class="top"><span class="vetor">IPTU Verde · TEMPO REAL</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Monitor IPTU Verde — Folder Vivo</h3>
+    <div class="desc">Incentivos municipais verdes (50+ cidades, até 40%), gate NR-35/NR-10 (iCleanSolar) e GD (Lei 14.300/Fio B). Consome <code>Fatos_IPTUVerde_Folder_SOA.json</code>. Cobre V2, V7, C·Consumidor.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_IPTUVerde_GitHub.html">Abrir</a></div>
+  </div>
+</div>
+
 <div class="note warn">
-  <b>O que NÃO está aqui.</b> Outros materiais estáticos (Atlas de Curtailment, Mapa BESS por Estado, Copa SIN, OnePager, Institucional, Catálogo de Vetores) são snapshots de referência e estão no <a href="https://trigocom-code.github.io/financiamento-de-usinas/catalogo.html" target="_blank" rel="noopener">catálogo geral</a> — confirme com a equipe se ainda estão atuais antes de usar.
+  <b>O que NÃO está aqui.</b> Materiais estáticos (Atlas de Curtailment, Mapa BESS por Estado, Copa SIN, OnePager, Institucional, Catálogo de Vetores) são snapshots de referência e não são regenerados automaticamente. Estão no <a href="https://trigocom-code.github.io/financiamento-de-usinas/_Catalogo_SOA.html" target="_blank" rel="noopener">catálogo geral</a> — confirme com a equipe se ainda estão atuais antes de usar.
 </div>
 
 <div class="foot">
-  <b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · Sustainability Operating System · Catálogo de Materiais · v1.3 (30/06/2026 · 2 seções: vivos × referência estática · selo de alarme só nos vivos)<br/>
+  <b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · Sustainability Operating System · Catálogo de Materiais · v1.4 (01/07/2026 · +5 monitores setoriais · ABSOLAR como fonte F3 · correções da auditoria de 01/07: REN 1.162/2026, CP ANEEL 001/2026, Lei 15.269 = 16 vetos)<br/>
   Rua Pais Leme, 215 · Conj. 1713 · Pinheiros · São Paulo / SP ·
   <a href="mailto:limonta@solaroneaccount.com" style="color:#1C5AAD;">limonta@solaroneaccount.com</a> ·
   <a href="mailto:pedro@solaroneaccount.com" style="color:#1C5AAD;">pedro@solaroneaccount.com</a> ·
   <a href="https://wa.me/5544999720477" target="_blank" rel="noopener" style="color:#25D366;">WhatsApp</a><br/>
   Três pedidos de patente depositados no INPI: BR 10 2026 003913-6 · BR 10 2026 010655-0 · BR 10 2026 011466-9<br/>
-  <span style="color:#9ca3af;">Selos consultam a API pública do GitHub no carregamento · sem credenciais · sem rastreamento.</span>
+  <span style="color:#9ca3af;">Selos de frescor consultam a API pública do GitHub no carregamento · sem credenciais · sem rastreamento.</span>
 </div>
 
 </div>
 
 <script>
 (function() {
-  function pad(n){return n<10?'0'+n:n;}
-  function fmt(d){return pad(d.getDate())+'/'+pad(d.getMonth()+1)+'/'+d.getFullYear()+' às '+pad(d.getHours())+'h'+pad(d.getMinutes());}
+  function pad(n) { return n < 10 ? '0' + n : n; }
+  function fmt(d) {
+    return pad(d.getDate()) + '/' + pad(d.getMonth()+1) + '/' + d.getFullYear() +
+           ' às ' + pad(d.getHours()) + 'h' + pad(d.getMinutes());
+  }
   document.getElementById('liveStamp').textContent = '● Catálogo aberto em ' + fmt(new Date());
 
-  const REPO='trigocom-code/financiamento-de-usinas';
-  const RAW='https://raw.githubusercontent.com/'+REPO+'/main/';
-  function classify(h){ if(h<24)return{cls:'g',label:'atualizado hoje'}; if(h<168)return{cls:'a',label:Math.floor(h/24)+'d atrás'}; return{cls:'r',label:Math.floor(h/24)+'d · peça regeneração'}; }
+  const REPO = 'trigocom-code/financiamento-de-usinas';
 
-  // estado do gatilho -> selo
-  const TRIG={
-    estavel:{cls:'static',txt:'estável'},
-    estavel_com_ressalva:{cls:'a',txt:'estável · ressalva'},
-    estatico:{cls:'static',txt:'estático'},
-    dependencia_nao_confirmada:{cls:'static',txt:'vínculo a definir'},
-    herda_pendente:{cls:'pend',txt:'aguarda verificação'},
-    quadro_mudou:{cls:'mudou',txt:'quadro mudou — revisar'},
-    stale:{cls:'mudou',txt:'dado defasado'},
-    avaliacao_represada:{cls:'rep',txt:'avaliação represada · monitor não rodou'}
-  };
+  function classify(diffHours) {
+    if (diffHours < 24) return {cls:'g', label:'atualizado hoje'};
+    if (diffHours < 24*7) return {cls:'a', label: Math.floor(diffHours/24) + 'd atrás'};
+    return {cls:'r', label: Math.floor(diffHours/24) + 'd · DEFASADO'};
+  }
 
-  let STATE=null;
-  async function loadState(){
-    try{ const r=await fetch(RAW+'_folder_triggers_state.json',{cache:'no-store'}); if(r.ok) STATE=await r.json(); }catch(e){}
-    const ind = STATE && STATE._meta && STATE._meta.indicador_aguardando_fonte;
-    if(ind && ind.n>0){
-      const fatos=(ind.fatos||[]).map(f=>f.ref).join(', ');
-      const b=document.getElementById('trigBanner');
-      b.innerHTML='⚠ <b>'+ind.n+' folder(s) aguardando verificação na fonte</b> — fatos pendentes: '+fatos+'. Herdam pendência até o CEO fechar na fonte.';
-      b.className='trig-banner on';
+  async function loadOne(card) {
+    const file = card.dataset.file;
+    const tsEl = card.querySelector('[data-ts]');
+    const fEl = card.querySelector('[data-fresh]');
+    try {
+      const url = 'https://api.github.com/repos/' + REPO + '/commits?path=' + encodeURIComponent(file) + '&per_page=1';
+      const r = await fetch(url, {cache: 'no-store'});
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      const commits = await r.json();
+      if (!commits.length) throw new Error('sem commits');
+      const c = commits[0];
+      const d = new Date(c.commit.author.date);
+      const diffH = (Date.now() - d.getTime()) / 36e5;
+      const cls = classify(diffH);
+      tsEl.innerHTML = '<b>Última regeneração:</b><br>' + fmt(d);
+      fEl.className = 'fresh ' + cls.cls;
+      fEl.textContent = cls.label;
+    } catch(e) {
+      tsEl.innerHTML = '<b>—</b> ' + e.message;
+      fEl.className = 'fresh r';
+      fEl.textContent = 'erro';
     }
   }
 
-  async function commitDate(file){
-    try{ const r=await fetch('https://api.github.com/repos/'+REPO+'/commits?path='+encodeURIComponent(file)+'&per_page=1',{cache:'no-store'});
-      if(r.ok){const c=await r.json(); if(c.length) return new Date(c[0].commit.author.date);} }catch(e){}
-    return null;
-  }
-
-  async function loadOne(card){
-    const file=card.dataset.file;
-    const isStatic=card.dataset.static==='1';
-    const tsEl=card.querySelector('[data-ts]');
-    const fEl=card.querySelector('[data-fresh]');
-    const trig=(STATE && STATE.folders && STATE.folders[file])?STATE.folders[file]:null;
-    const d=await commitDate(file);
-    if(trig){
-      const m=TRIG[trig.estado]||{cls:'static',txt:trig.estado};
-      fEl.className='fresh '+m.cls; fEl.textContent=m.txt;
-      tsEl.innerHTML='<b>Última edição:</b><br>'+(d?fmt(d):'—')+(trig.motivo?'<br><span style="color:#9A3412;font-size:11px">'+trig.motivo+'</span>':'');
-    } else if(isStatic){
-      fEl.className='fresh static'; fEl.textContent='estático';
-      tsEl.innerHTML='<b>Última edição:</b><br>'+(d?fmt(d):'—');
-    } else {
-      if(d){const h=(Date.now()-d.getTime())/36e5;const cls=classify(h);fEl.className='fresh '+cls.cls;fEl.textContent=cls.label;tsEl.innerHTML='<b>Última regeneração:</b><br>'+fmt(d);}
-      else{fEl.className='fresh r';fEl.textContent='erro';tsEl.innerHTML='<b>—</b>';}
-    }
-  }
-
-  (async function(){ await loadState(); document.querySelectorAll('.card').forEach(loadOne); })();
+  document.querySelectorAll('.card').forEach(loadOne);
 })();
 </script>
 </body>

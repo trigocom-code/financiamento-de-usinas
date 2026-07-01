@@ -3,14 +3,15 @@
     "orgao": "IPTU Verde (municipal) + NR (MTE) + GD",
     "schema_version": "1.0",
     "descricao": "Monitor IPTU Verde — incentivos municipais verdes, gate de segurança da limpeza de placas (NR-35/NR-10) e contexto de GD (Lei 14.300). SOA/SOS = camada de VERIFICAÇÃO (prova de geração mantida), não emissora do benefício.",
-    "verificado_em": "2026-06-30",
+    "verificado_em": "2026-07-01",
     "fonte_canonica": "Leis/decretos municipais + Portarias MTE (NR) + Lei 14.300/2022",
-    "disciplina": "Percentuais/critérios municipais marcados [A VERIFICAR] vêm de fonte secundária (imprensa); confirmar na lei de origem antes de material de cliente."
+    "disciplina": "Percentuais/critérios municipais marcados [A VERIFICAR] vêm de fonte secundária (imprensa); confirmar na lei de origem antes de material de cliente.",
+    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
   "fatos": [
     {
       "tema": "Mapa de IPTU Verde municipal — desconto por geração solar",
-      "valor": "Mais de 50 municípios oferecem desconto de IPTU (até 40%) para imóveis com geração solar e/ou critérios ambientais. A concessão é tipicamente anual (jan–mar), por solicitação (nota fiscal + laudo técnico), NÃO automática — e raramente há refiscalização. É exatamente o gargalo que a SOA endereça: prova contínua de que a geração incentivada é mantida. [A VERIFICAR percentuais/critérios na lei de cada município.]",
+      "valor": "Mais de 50 municípios oferecem desconto de IPTU (até 40%) para imóveis com geração solar e/ou critérios ambientais. A concessão é tipicamente anual (jan–mar), por solicitação (nota fiscal + laudo técnico), NÃO automática — e raramente há refiscalização. É exatamente o gargalo que a SOA endereça: prova contínua de que a geração incentivada é mantida. (a verificar: percentuais/critérios na lei de cada município.)",
       "status": "VIGENTE",
       "norma": "Leis/decretos municipais",
       "verificado_em": "2026-06-30"
@@ -31,7 +32,7 @@
     },
     {
       "tema": "Porto Alegre (RS) — IPTU Sustentável",
-      "valor": "Lei aprovada na Câmara em 12/04/2025; desconto até 10% por certificação multicritério (Diamante 10% / Ouro 7% / Prata 5% / Bronze 3%), em que geração renovável é um dos itens. Ciclo 2026 com ~978 imóveis deferidos. [A VERIFICAR texto da lei e regras de certificação na origem.]",
+      "valor": "Lei aprovada na Câmara em 12/04/2025; desconto até 10% por certificação multicritério (Diamante 10% / Ouro 7% / Prata 5% / Bronze 3%), em que geração renovável é um dos itens. Ciclo 2026 com ~978 imóveis deferidos. (a verificar: texto da lei e regras de certificação na origem.)",
       "status": "VIGENTE",
       "norma": "Lei municipal de Porto Alegre (abr/2025)",
       "verificado_em": "2026-06-30"
@@ -52,7 +53,7 @@
     },
     {
       "tema": "NR-35 — Trabalho em Altura (gate da limpeza de placas)",
-      "valor": "Portaria MTE 1.860/2025, vigência a partir de 02/01/2026. É o gate de segurança do iCleanSolar (limpeza de telhados/placas em altura): responsabilidade solidária pela qualificação de quem executa. [A VERIFICAR redação no DOU antes de material de cliente.]",
+      "valor": "Portaria MTE 1.860/2025, vigência a partir de 02/01/2026. É o gate de segurança do iCleanSolar (limpeza de telhados/placas em altura): responsabilidade solidária pela qualificação de quem executa. (a verificar: redação no DOU antes de material de cliente.)",
       "status": "VIGENTE",
       "norma": "Portaria MTE 1.860/2025 (NR-35)",
       "verificado_em": "2026-06-30"

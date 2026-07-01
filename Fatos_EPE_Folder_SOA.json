@@ -10,8 +10,16 @@
     "regra_staleness": "Fato com verificado_em > 60 dias deve ser exibido com alerta.",
     "regra_banco_SOA": "Banco SOA valida apenas FISICO_QUANTITATIVO ou metade física de HIBRIDO. NUNCA valida REGULATORIO_DECISORIO.",
     "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json LIBERADA. Aplicar registro a registro.",
-    "vetores_soa_atendidos": ["V1", "V2", "V3", "V5", "V6", "V7"],
-    "fonte_canonica": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes"
+    "vetores_soa_atendidos": [
+      "V1",
+      "V2",
+      "V3",
+      "V5",
+      "V6",
+      "V7"
+    ],
+    "fonte_canonica": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes",
+    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
   "fatos": [
     {
@@ -24,16 +32,44 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
-      "vetores_afetados": ["V1", "V3", "V5", "V6"],
+      "vetores_afetados": [
+        "V1",
+        "V3",
+        "V5",
+        "V6"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Portaria SE/MME que abriu a CP em 12/02/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura ampla Canal Solar/MegaWhat/EpBR fev/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Portaria SE/MME que abriu a CP em 12/02/2026",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura ampla Canal Solar/MegaWhat/EpBR fev/2026",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -47,16 +83,44 @@
       "verificado_em": "2026-06-28",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
-      "vetores_afetados": ["V1", "V3", "V5", "V6"],
+      "vetores_afetados": [
+        "V1",
+        "V3",
+        "V5",
+        "V6"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/imprensa/noticias/...", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Portaria MME de lançamento da CP em 12/02/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura Valor/MegaWhat/EpBR lançamento conjunto PDE+PNE fev/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.epe.gov.br/pt/imprensa/noticias/...",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Portaria MME de lançamento da CP em 12/02/2026",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura Valor/MegaWhat/EpBR lançamento conjunto PDE+PNE fev/2026",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -70,15 +134,35 @@
       "verificado_em": "2026-06-28",
       "tipo_fato": "HIBRIDO",
       "score_soa": 14,
-      "vetores_afetados": ["V5", "V1"],
+      "vetores_afetados": [
+        "V5",
+        "V1"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/imprensa/noticias", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F4_cruzamento", "ref": "Cruza com REDATA e MP 1.318/2025 caducada", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.epe.gov.br/pt/imprensa/noticias",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F4_cruzamento",
+          "ref": "Cruza com REDATA e MP 1.318/2025 caducada",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": null, "resultado": "ANCORADO_RELEASE_EPE_19jun2026 (validado Manus AI 30/06)", "verificado_em": "2026-06-30"},
+      "validacao_banco_SOA": {
+        "aplicavel": true,
+        "query_versionada": null,
+        "resultado": "ANCORADO_RELEASE_EPE_19jun2026 (validado Manus AI 30/06)",
+        "verificado_em": "2026-06-30"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -92,16 +176,42 @@
       "verificado_em": "2026-06-30",
       "tipo_fato": "HIBRIDO",
       "score_soa": 16,
-      "vetores_afetados": ["V3", "V7"],
+      "vetores_afetados": [
+        "V3",
+        "V7"
+      ],
       "qsv_cor": "VERDE",
       "qsv_origem_classificacao": "ancorado_DOU_portaria136_30jun2026",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Portaria MME 136/2026 publicada no DOU 03/06/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F4_cruzamento", "ref": "Cruza REN ANEEL 1.071/2023+1.162/2026 + NT-ONS DPL 0111/2025", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Portaria MME 136/2026 publicada no DOU 03/06/2026",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F4_cruzamento",
+          "ref": "Cruza REN ANEEL 1.071/2023+1.162/2026 + NT-ONS DPL 0111/2025",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": "Master_Barramentos_v1.5.1 (SOA · 714 barramentos canônicos)", "resultado": "ANCORADO_DOU — ANEXO II TABELA 1 da Portaria 136/2026 é a lista oficial; banco SOA = cross-check opcional", "verificado_em": "2026-06-30"},
+      "validacao_banco_SOA": {
+        "aplicavel": true,
+        "query_versionada": "Master_Barramentos_v1.5.1 (SOA · 714 barramentos canônicos)",
+        "resultado": "ANCORADO_DOU — ANEXO II TABELA 1 da Portaria 136/2026 é a lista oficial; banco SOA = cross-check opcional",
+        "verificado_em": "2026-06-30"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "_aviso_precedencia": "Dupla ancoragem CONCLUÍDA no DOU: critério em ANEXO I Art. 2º §12 + lista de 129 barramentos em ANEXO II TABELA 1 (Portaria 136/2026, DOU 03/06/2026). VERDE liberado."
@@ -116,15 +226,35 @@
       "verificado_em": "2026-06-28",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 8,
-      "vetores_afetados": ["V3", "V5"],
+      "vetores_afetados": [
+        "V3",
+        "V5"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/.../Resenha-e-Boletim", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura Canal Solar/MegaWhat boletim trimestral EPE", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.epe.gov.br/.../Resenha-e-Boletim",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura Canal Solar/MegaWhat boletim trimestral EPE",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": "energia_publica.curva_carga_horaria (banco SOA — cross-check 1T/2026 vs 1T/2025)", "resultado": "ANCORADO_RELEASE_EPE_18jun2026; banco SOA = cross-check opcional", "verificado_em": "2026-06-30"},
+      "validacao_banco_SOA": {
+        "aplicavel": true,
+        "query_versionada": "energia_publica.curva_carga_horaria (banco SOA — cross-check 1T/2026 vs 1T/2025)",
+        "resultado": "ANCORADO_RELEASE_EPE_18jun2026; banco SOA = cross-check opcional",
+        "verificado_em": "2026-06-30"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -138,16 +268,41 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
-      "vetores_afetados": ["V1"],
+      "vetores_afetados": [
+        "V1"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/.../PET-PELP", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Portaria MME que oficializa ciclo PET/PELP", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F4_cruzamento", "ref": "Cruzamento estrutural com Portaria MME 129/2026 + Decreto 12.772/2025", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.epe.gov.br/.../PET-PELP",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Portaria MME que oficializa ciclo PET/PELP",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F4_cruzamento",
+          "ref": "Cruzamento estrutural com Portaria MME 129/2026 + Decreto 12.772/2025",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -161,15 +316,34 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 6,
-      "vetores_afetados": ["V3"],
+      "vetores_afetados": [
+        "V3"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/.../anuario-estatistico", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura técnica periódica do Anuário", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.epe.gov.br/.../anuario-estatistico",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura técnica periódica do Anuário",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": "banco SOA cruza com várias tabelas (geração, carga, MMGD)", "resultado": "PENDENTE_QUERY", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": true,
+        "query_versionada": "banco SOA cruza com várias tabelas (geração, carga, MMGD)",
+        "resultado": "PENDENTE_QUERY",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -183,15 +357,36 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 11,
-      "vetores_afetados": ["V2", "V3", "V7"],
+      "vetores_afetados": [
+        "V2",
+        "V3",
+        "V7"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/.../plano-decenal-2035", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F4_cruzamento", "ref": "Sub-caderno do PDE 2035", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.epe.gov.br/.../plano-decenal-2035",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F4_cruzamento",
+          "ref": "Sub-caderno do PDE 2035",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -205,16 +400,42 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
-      "vetores_afetados": ["V6", "V5"],
+      "vetores_afetados": [
+        "V6",
+        "V5"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/imprensa/noticias/...", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Base legal da PNTE no DOU", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F4_cruzamento", "ref": "Cruza PDE 2035 + PNE 2055 + Fórum FASE", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.epe.gov.br/pt/imprensa/noticias/...",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Base legal da PNTE no DOU",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F4_cruzamento",
+          "ref": "Cruza PDE 2035 + PNE 2055 + Fórum FASE",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -228,15 +449,34 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 5,
-      "vetores_afetados": ["V6"],
+      "vetores_afetados": [
+        "V6"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/pt/a-epe", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura setorial de nomeações", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.epe.gov.br/pt/a-epe",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura setorial de nomeações",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -250,15 +490,34 @@
       "verificado_em": "2026-06-30",
       "tipo_fato": "HIBRIDO",
       "score_soa": 10,
-      "vetores_afetados": ["V1"],
+      "vetores_afetados": [
+        "V1"
+      ],
       "qsv_cor": "VERDE",
       "qsv_origem_classificacao": "ancorado_relatorio_R1_30jun2026",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "EPE — publicações de expansão da transmissão", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_documento_oficial", "ref": "EPE-DEE-RE-016/2026-REV1 (relatório R1 integral, lido)", "trecho_literal": "As obras recomendadas neste estudo totalizam aproximadamente R$ 1,315 bilhões em investimentos", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "EPE — publicações de expansão da transmissão",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_documento_oficial",
+          "ref": "EPE-DEE-RE-016/2026-REV1 (relatório R1 integral, lido)",
+          "trecho_literal": "As obras recomendadas neste estudo totalizam aproximadamente R$ 1,315 bilhões em investimentos",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": null, "resultado": "ANCORADO_RELATORIO_R1 (cargas de mineração; banco SOA = cross-check opcional)", "verificado_em": "2026-06-30"},
+      "validacao_banco_SOA": {
+        "aplicavel": true,
+        "query_versionada": null,
+        "resultado": "ANCORADO_RELATORIO_R1 (cargas de mineração; banco SOA = cross-check opcional)",
+        "verificado_em": "2026-06-30"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -272,16 +531,48 @@
       "verificado_em": "2026-06-30",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 13,
-      "vetores_afetados": ["V2", "V3", "V7"],
+      "vetores_afetados": [
+        "V2",
+        "V3",
+        "V7"
+      ],
       "qsv_cor": "VERDE",
       "qsv_origem_classificacao": "ancorado_dados_abertos_EPE_30jun2026",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "EPE — Dados Abertos Mercado de Distribuição 2025 (xlsx + dicionário)", "trecho_literal": "Einj_MMGD_GWh 2024 = 39.475; projeção 2025 = 52.499", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "EPE — Dados Abertos Mercado de Distribuição 2025 (xlsx + dicionário)",
+          "trecho_literal": "Einj_MMGD_GWh 2024 = 39.475; projeção 2025 = 52.499",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": "cross-check potência/UCs vs energia_publica.mmgd_*", "resultado": "PENDENTE_CROSS_CHECK", "verificado_em": "2026-06-30"},
+      "validacao_banco_SOA": {
+        "aplicavel": true,
+        "query_versionada": "cross-check potência/UCs vs energia_publica.mmgd_*",
+        "resultado": "PENDENTE_CROSS_CHECK",
+        "verificado_em": "2026-06-30"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
+    },
+    {
+      "id": "lrcap_faq_manual_armazenamento",
+      "fato_id": "EPE-LRCAP-2026-FAQ-MANUAL",
+      "orgao": "EPE",
+      "tipo_fato": "REGULATORIO_INSTRUMENTAL",
+      "tema": "LRCAP 2026 Armazenamento — cadastro e habilitação técnica",
+      "valor": "FAQ + Manual de Cadastramento e Habilitação Técnica do LRCAP 2026 (Armazenamento), referência operacional para participação no leilão. Comunicado no GT Armazenamento da ABSOLAR (15/06/2026). Complementa os limiares da Portaria MME 136/2026 (Art. 7º: ≥30MW/≥4h/≥85% RTE) e o bônus locacional β=0,9 (ANEXO II).",
+      "status": "VIGENTE",
+      "qsv_cor": "AZUL",
+      "norma": "EPE · FAQ/Manual LRCAP 2026 (Armazenamento) · Portaria MME 136/2026",
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "fonte": "F3 ABSOLAR (GT Armazenamento, 15/06/2026) + F1 EPE (confirmar no portal LRCAP)",
+      "vetores_afetados": [
+        "V3",
+        "V7"
+      ]
     }
   ],
   "_pendentes_verificacao": [
@@ -295,14 +586,28 @@
       "verificado_em": "2026-06-28",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 7,
-      "vetores_afetados": ["V3", "V5"],
+      "vetores_afetados": [
+        "V3",
+        "V5"
+      ],
       "qsv_cor": "LARANJA",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/.../Revisoes-Quadrimestrais-da-Carga", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.epe.gov.br/.../Revisoes-Quadrimestrais-da-Carga",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": null, "resultado": "PENDENTE_QUERY", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": true,
+        "query_versionada": null,
+        "resultado": "PENDENTE_QUERY",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Aguarda próxima publicação periódica"
@@ -317,14 +622,27 @@
       "verificado_em": "2026-06-28",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
-      "vetores_afetados": ["V6"],
+      "vetores_afetados": [
+        "V6"
+      ],
       "qsv_cor": "LARANJA",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.epe.gov.br/.../consultas-publicas", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.epe.gov.br/.../consultas-publicas",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Previsão futura — aguarda calendário do PDE 2036"
@@ -339,14 +657,27 @@
       "verificado_em": "2026-06-28",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 5,
-      "vetores_afetados": ["V6"],
+      "vetores_afetados": [
+        "V6"
+      ],
       "qsv_cor": "LARANJA",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "Monitor_Regulatorio_SOA_Design.md (interno SOA)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "Monitor_Regulatorio_SOA_Design.md (interno SOA)",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Fato meta-interno — sem fonte externa independente por design"

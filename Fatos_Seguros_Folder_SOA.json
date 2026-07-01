@@ -3,13 +3,14 @@
     "orgao": "SUSEP/CNSP/STF (seguros · vetor V8)",
     "schema_version": "1.0",
     "descricao": "Monitor Regulatório de Seguros (V8). Trava canônica: a SOA/SOS é provedor NEUTRO de dado/índice/evidência — NUNCA seguradora, corretora ou MGA; NUNCA precifica, garante ou transfere risco. Cada item é PERÍMETRO/RISCO, HABILITADOR ou DEVER DO DADO. Validação jurídica de advogado de seguros é necessária antes de uso externo — o monitor sinaliza, não dá parecer.",
-    "verificado_em": "2026-06-30",
-    "fonte_canonica": "gov.br/susep + CNSP + STF (ADI) + DOU"
+    "verificado_em": "2026-07-01",
+    "fonte_canonica": "gov.br/susep + CNSP + STF (ADI) + DOU",
+    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
   "fatos": [
     {
       "tema": "ADI 7074 (CNSP 407/21 · grandes riscos) no STF",
-      "valor": "[PERÍMETRO/RISCO] Item mais quente do V8. A CNSP 407/21 é o regime de liberdade contratual onde o seguro paramétrico de grandes riscos (terreno natural das renováveis) opera hoje. A ADI segue EM JULGAMENTO, remetida ao plenário físico após destaque do min. Flávio Dino (relator Gilmar Mendes + Moraes/Toffoli/Zanin/Fux já haviam votado por manter a norma no virtual). Sem data de pauta física confirmada. [A VERIFICAR data de pauta.]",
+      "valor": "[PERÍMETRO/RISCO] Item mais quente do V8. A CNSP 407/21 é o regime de liberdade contratual onde o seguro paramétrico de grandes riscos (terreno natural das renováveis) opera hoje. A ADI segue EM JULGAMENTO, remetida ao plenário físico após destaque do min. Flávio Dino (relator Gilmar Mendes + Moraes/Toffoli/Zanin/Fux já haviam votado por manter a norma no virtual). Sem data de pauta física confirmada. (a verificar: data de pauta.)",
       "status": "EM DELIBERAÇÃO",
       "norma": "ADI 7074 / CNSP 407/2021",
       "url": "https://portal.stf.jus.br/",
@@ -17,7 +18,7 @@
     },
     {
       "tema": "CP SUSEP 10/2025 — nova resolução de Seguros de Danos (Lei 15.040/2024)",
-      "valor": "[HABILITADOR] Minuta em consolidação (CP aberta em 04/11/2025, prazo encerrado). Revoga/atualiza a Circular 621/2021 e absorve grandes riscos hoje na CNSP 407/21. Pendência-chave: se o texto reconhece índice/gatilho paramétrico e a figura de PROVEDOR DE ÍNDICE / AGENTE DE CÁLCULO — exatamente o papel neutro da SOA. [A VERIFICAR no texto final.]",
+      "valor": "[HABILITADOR] Minuta em consolidação (CP aberta em 04/11/2025, prazo encerrado). Revoga/atualiza a Circular 621/2021 e absorve grandes riscos hoje na CNSP 407/21. Pendência-chave: se o texto reconhece índice/gatilho paramétrico e a figura de PROVEDOR DE ÍNDICE / AGENTE DE CÁLCULO — exatamente o papel neutro da SOA. (a verificar: no texto final.)",
       "status": "EM DELIBERAÇÃO",
       "norma": "CP SUSEP 10/2025 · Lei 15.040/2024",
       "url": "https://www.gov.br/susep/",

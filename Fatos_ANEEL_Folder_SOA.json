@@ -9,8 +9,17 @@
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Threshold.",
     "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO.",
     "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json LIBERADA. Fatos com fato_id na Tabela aplicam veredito direto. Demais ficam com teto AZUL (R7).",
-    "vetores_soa_atendidos": ["V1", "V2", "V3", "V4", "V5", "V6", "V7"],
-    "fonte_canonica": "https://www.aneel.gov.br/"
+    "vetores_soa_atendidos": [
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6",
+      "V7"
+    ],
+    "fonte_canonica": "https://www.aneel.gov.br/",
+    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
   "fatos": [
     {
@@ -23,16 +32,42 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
-      "vetores_afetados": ["V3", "V7"],
+      "vetores_afetados": [
+        "V3",
+        "V7"
+      ],
       "qsv_cor": "VERDE",
       "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.aneel.gov.br/ — REN 1.161/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.161-de-2-de-junho-de-2026-714430510", "trecho_literal": "A outorga terá prazo de vigência de 35 anos contados a partir de sua publicação. O prazo determinado para a entrada em operação comercial de todas as unidades armazenadoras é de até 54 meses.", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_associacao_email", "ref": "E-mail GT Armazenamento ABSOLAR 24/06/2026", "trecho_literal": "(F3 com ponteiro para DOU — âncora é o link)", "associacao_origem": "ABSOLAR", "gt_origem": "Armazenamento"}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.aneel.gov.br/ — REN 1.161/2026",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.161-de-2-de-junho-de-2026-714430510",
+          "trecho_literal": "A outorga terá prazo de vigência de 35 anos contados a partir de sua publicação. O prazo determinado para a entrada em operação comercial de todas as unidades armazenadoras é de até 54 meses.",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_associacao_email",
+          "ref": "E-mail GT Armazenamento ABSOLAR 24/06/2026",
+          "trecho_literal": "(F3 com ponteiro para DOU — âncora é o link)",
+          "associacao_origem": "ABSOLAR",
+          "gt_origem": "Armazenamento"
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -46,16 +81,42 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
-      "vetores_afetados": ["V3", "V7"],
+      "vetores_afetados": [
+        "V3",
+        "V7"
+      ],
       "qsv_cor": "VERDE",
       "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.aneel.gov.br/ — REN 1.071/2023 e 1.162/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.162-de-2-de-junho-de-2026-714416734", "trecho_literal": "alterando uma série de normas vigentes (RENs nº 846/2019, nº 905/2020, nº 1.000/2021, nº 1.029/2022 e nº 1.071/2023) para incorporar o armazenamento de energia elétrica", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_associacao_email", "ref": "E-mail GT Armazenamento ABSOLAR 24/06/2026", "trecho_literal": "(F3 ponteiro — âncora é o DOU)", "associacao_origem": "ABSOLAR", "gt_origem": "Armazenamento"}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.aneel.gov.br/ — REN 1.071/2023 e 1.162/2026",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.162-de-2-de-junho-de-2026-714416734",
+          "trecho_literal": "alterando uma série de normas vigentes (RENs nº 846/2019, nº 905/2020, nº 1.000/2021, nº 1.029/2022 e nº 1.071/2023) para incorporar o armazenamento de energia elétrica",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_associacao_email",
+          "ref": "E-mail GT Armazenamento ABSOLAR 24/06/2026",
+          "trecho_literal": "(F3 ponteiro — âncora é o DOU)",
+          "associacao_origem": "ABSOLAR",
+          "gt_origem": "Armazenamento"
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -69,17 +130,49 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
-      "vetores_afetados": ["V4", "V3"],
+      "vetores_afetados": [
+        "V4",
+        "V3"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.aneel.gov.br/consultas-publicas", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Aviso de CP 045/2019 publicado no DOU", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura Canal Solar/MegaWhat/EpBR sobre 3ª fase", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F4_cruzamento", "ref": "Cruza Lei 15.269/2025 + AGU/parecer", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.aneel.gov.br/consultas-publicas",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Aviso de CP 045/2019 publicado no DOU",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura Canal Solar/MegaWhat/EpBR sobre 3ª fase",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F4_cruzamento",
+          "ref": "Cruza Lei 15.269/2025 + AGU/parecer",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -93,16 +186,42 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
-      "vetores_afetados": ["V3", "V7"],
+      "vetores_afetados": [
+        "V3",
+        "V7"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.aneel.gov.br/consultas-publicas", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "NT 03/2026 publicada", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura ampla setorial sobre conclusão 2ª fase", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.aneel.gov.br/consultas-publicas",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "NT 03/2026 publicada",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura ampla setorial sobre conclusão 2ª fase",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -116,15 +235,35 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
-      "vetores_afetados": ["V2", "V6"],
+      "vetores_afetados": [
+        "V2",
+        "V6"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.aneel.gov.br/ — REN 1.150/2026", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "REN 1.150/2026 publicada no DOU", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.aneel.gov.br/ — REN 1.150/2026",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "REN 1.150/2026 publicada no DOU",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -138,37 +277,78 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
-      "vetores_afetados": ["V2", "V3", "V7"],
+      "vetores_afetados": [
+        "V2",
+        "V3",
+        "V7"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.aneel.gov.br/ — REN 1.059/2023", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "REN 1.059/2023 publicada no DOU 2023", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.aneel.gov.br/ — REN 1.059/2023",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "REN 1.059/2023 publicada no DOU 2023",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
     {
       "fato_id": "ANEEL-MME-PORTARIAS-126-111",
       "tema": "Portarias MME 126/2026 e 111/2025 — Medição digital obrigatória",
-      "valor": "Smart meter obrigatório, APIs abertas. Meta de 2% a.a. das unidades consumidoras por 24 meses a partir de 1º/03/2026 (até mar/2028); expansão de médio/longo prazo via ACB ANEEL (entrega até 29/02/2028). [CORREÇÃO: NÃO é 'meta até 2035'.] Base SaaS B2B com distribuidoras (V2). Cruzamento estrutural com sHEC.",
+      "valor": "Smart meter obrigatório, APIs abertas. Meta de 2% a.a. das unidades consumidoras por 24 meses a partir de 1º/03/2026 (até mar/2028); expansão de médio/longo prazo via ACB ANEEL (entrega até 29/02/2028). Base SaaS B2B com distribuidoras (V2). Cruzamento estrutural com sHEC.",
       "status": "VIGENTE",
       "norma": "MME · Portarias 126/2026 e 111/2025 (regulamentação ANEEL pendente)",
       "url": "https://www.aneel.gov.br/",
       "verificado_em": "2026-06-28",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
-      "vetores_afetados": ["V2", "V6"],
+      "vetores_afetados": [
+        "V2",
+        "V6"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.aneel.gov.br/ (regulamentação pendente)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Portaria MME 111/2025 + Portaria MME 126/2026 (altera a 111)", "trecho_literal": "implantação adicional de 2% ao ano das unidades consumidoras, pelo prazo de 24 meses a partir de 1º de março de 2026", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.aneel.gov.br/ (regulamentação pendente)",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Portaria MME 111/2025 + Portaria MME 126/2026 (altera a 111)",
+          "trecho_literal": "implantação adicional de 2% ao ano das unidades consumidoras, pelo prazo de 24 meses a partir de 1º de março de 2026",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -182,15 +362,35 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
-      "vetores_afetados": ["V7", "V3"],
+      "vetores_afetados": [
+        "V7",
+        "V3"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.aneel.gov.br/sandbox-regulatorio", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura setorial periódica do Sandbox", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.aneel.gov.br/sandbox-regulatorio",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura setorial periódica do Sandbox",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -204,15 +404,35 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
-      "vetores_afetados": ["V3", "V6"],
+      "vetores_afetados": [
+        "V3",
+        "V6"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.aneel.gov.br/consultas-publicas", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F4_cruzamento", "ref": "Cruza tese geral V3 de granularidade horária", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.aneel.gov.br/consultas-publicas",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F4_cruzamento",
+          "ref": "Cruza tese geral V3 de granularidade horária",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -226,17 +446,54 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
-      "vetores_afetados": ["V2", "V6"],
+      "vetores_afetados": [
+        "V2",
+        "V6"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.aneel.gov.br/", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura técnica setorial da TS 23/2025", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.aneel.gov.br/",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura técnica setorial da TS 23/2025",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
+    },
+    {
+      "id": "medicao_inteligente_cp001",
+      "fato_id": "ANEEL-CP-001-2026",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Medição inteligente (smart meter) — regulamentação ANEEL",
+      "valor": "CP ANEEL nº 001/2026 (medição inteligente) em 2ª fase (aberta 30/06/2026, comunicada no GT Geração Distribuída da ABSOLAR). Relatório do Diretor-Relator prevê 5 temas: corte/religamento remoto (além de inadimplência), monitoramento de qualidade até a 40ª harmônica, armazenamento dos dados de medição, interoperabilidade e leitura remota. Complementa o mandato das Portarias MME 111/2025 + 126/2026 (meta 2% a.a. por 24 meses, 01/03/2026→mar/2028). É a 'resolução específica' da ANEEL que operacionaliza o smart meter.",
+      "status": "EM DELIBERAÇÃO",
+      "qsv_cor": "AZUL",
+      "norma": "CP ANEEL nº 001/2026 (medição inteligente) · mandato: Portarias MME 111/2025 + 126/2026",
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "fonte": "F3 ABSOLAR (GT Geração Distribuída, 30/06/2026) + F1 ANEEL (abrir CP no site para ancorar)",
+      "vetores_afetados": [
+        "V2",
+        "sHEC"
+      ]
     }
   ],
   "_pendentes_verificacao": [
@@ -250,14 +507,28 @@
       "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
-      "vetores_afetados": ["V2", "V7"],
+      "vetores_afetados": [
+        "V2",
+        "V7"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
       "qsv_fontes_independentes": [
-        {"tipo": "F3_imprensa_editorial", "ref": "Portal Solar 05/05/2026 + ANEEL", "trecho_literal": "Consulta Pública nº 009/2026 — combate à 'geração invisível' / ampliação à revelia de MMGD", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Portal Solar 05/05/2026 + ANEEL",
+          "trecho_literal": "Consulta Pública nº 009/2026 — combate à 'geração invisível' / ampliação à revelia de MMGD",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-30"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-30"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "RESOLVIDO 30/06: numeração confirmada — CP 009/2026 (distinta da 009/2025-curtailment FV, fechada abr/2025). Promover de _pendentes para fatos[] na próxima curadoria; falta só o voto final na ANEEL."

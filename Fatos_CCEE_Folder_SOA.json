@@ -9,33 +9,65 @@
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. PLD horário vai pro banco SOA via pipeline.",
     "regra_banco_SOA": "Banco SOA valida FISICO (PLD, volumes); NUNCA valida REGULATORIO.",
     "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json LIBERADA.",
-    "vetores_soa_atendidos": ["V3", "V4", "V5", "V6", "V8"],
-    "fonte_canonica": "https://www.ccee.org.br/"
+    "vetores_soa_atendidos": [
+      "V3",
+      "V4",
+      "V5",
+      "V6",
+      "V8"
+    ],
+    "fonte_canonica": "https://www.ccee.org.br/",
+    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
   "fatos": [
     {
       "fato_id": "CCEE-LEI-15269-2025",
       "tema": "Lei 15.269/2025 — Ressarcimento parcial por curtailment",
-      "valor": "Sancionada 24/11/2025 com 12 dispositivos vetados (confirmado no Planalto, 30/06). Canônico: art. 1º-B inserido na Lei 10.848/2004 cria ressarcimento do curtailment eólico/solar com RECORTE TEMPORAL FECHADO — de 1º/09/2023 até a vigência da lei (não é janela aberta). Ressarce apenas indisponibilidade de transmissão (REL) e confiabilidade (CNF); sobreoferta/ENE vetada. F1 canônica = Planalto. Disparo direto do V4.",
+      "valor": "Lei 15.269/2025 (originária da MP 1.304/2025) — publicada no DOU em 25/11/2025, sancionada com 16 vetos (Mensagem/VEP nº 1.755/2025), atingindo 20 dispositivos do PLV 10/2025 (fonte primária: contagem direta na Mensagem 1.755; Agência Senado confirma 16). Ressarcimento parcial por curtailment (eólica/solar no SIN): o art. 1º-A, que abrangia todos os cortes de origem externa independentemente da causa, foi VETADO; manteve-se o §11 do art. 1º; o art. 1º-B (restritivo) cobre apenas 01/09/2023 a 25/11/2025, sem previsão para cortes futuros. Compensáveis: indisponibilidade externa (REL) e confiabilidade elétrica (CNF, condicionada); razões energéticas/sobreoferta (ENE) não compensáveis. Recuperação retroativa e one-time, atualmente suspensa (ANEEL, cautelar; CCEE suspendeu o lançamento até a regulação — CP MME 210/2025).",
       "status": "VIGENTE",
       "norma": "Lei 15.269/2025 (art. 1º-B da Lei 10.848/2004)",
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm",
       "verificado_em": "2026-06-30",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
-      "vetores_afetados": ["V4", "V3"],
+      "vetores_afetados": [
+        "V4",
+        "V3"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm", "trecho_literal": "art. 1º-B (inserido na Lei 10.848/2004) — ressarcimento do curtailment de 1º/09/2023 até a vigência", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Lei 15.269/2025 sancionada em 24/11/2025 com 12 dispositivos vetados", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura ampla Valor/MegaWhat/EpBR/Agência Senado (originou MP 1.304/2025)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm",
+          "trecho_literal": "art. 1º-B (inserido na Lei 10.848/2004) — ressarcimento do curtailment de 1º/09/2023 até a vigência",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Lei 15.269/2025 com 16 vetos (Mensagem 1.755/2025), 20 dispositivos",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura ampla Valor/MegaWhat/EpBR/Agência Senado (originou MP 1.304/2025)",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null,
-      "_aviso_condicao_C2_CEO": "Condição C2 do CEO 28/06/2026: NÃO subir nenhum número de vetos (nem 15, nem 16, nem 20). Pendente do Planalto aberto pelo CEO."
+      "agente_comercial_envolvido": null
     },
     {
       "fato_id": "CCEE-CP-17-2026-PSM",
@@ -47,15 +79,37 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 18,
-      "vetores_afetados": ["V4", "V5", "V6", "V7"],
+      "vetores_afetados": [
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.ccee.org.br/web/guest/consultas-publicas", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura ampla setorial (PSM tema dominante 2026)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.ccee.org.br/web/guest/consultas-publicas",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura ampla setorial (PSM tema dominante 2026)",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -69,15 +123,35 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
-      "vetores_afetados": ["V4", "V3"],
+      "vetores_afetados": [
+        "V4",
+        "V3"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.ccee.org.br/ — Submódulo 9", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Procedimentos CCEE aprovados por REN ANEEL específicas (DOU)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.ccee.org.br/ — Submódulo 9",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Procedimentos CCEE aprovados por REN ANEEL específicas (DOU)",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -91,15 +165,35 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
-      "vetores_afetados": ["V5", "V8"],
+      "vetores_afetados": [
+        "V5",
+        "V8"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "rebaixado_por_R7",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.ccee.org.br/ — Módulos 6 e 7", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F2_DOU", "ref": "Aprovados por REN ANEEL específicas (DOU)", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.ccee.org.br/ — Módulos 6 e 7",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "Aprovados por REN ANEEL específicas (DOU)",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -113,15 +207,35 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
-      "vetores_afetados": ["V3", "V6"],
+      "vetores_afetados": [
+        "V3",
+        "V6"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.ccee.org.br/ — GRUDEM", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura técnica ocasional sobre MRE", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.ccee.org.br/ — GRUDEM",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura técnica ocasional sobre MRE",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {"aplicavel": false, "query_versionada": null, "resultado": "N/A_REGULATORIO", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     },
@@ -135,15 +249,35 @@
       "verificado_em": "2026-07-01",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 7,
-      "vetores_afetados": ["V5", "V3"],
+      "vetores_afetados": [
+        "V5",
+        "V3"
+      ],
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
-        {"tipo": "F1_pagina_oficial", "ref": "https://www.ccee.org.br/web/guest/relatorios/boletim", "trecho_literal": "", "associacao_origem": null, "gt_origem": null},
-        {"tipo": "F3_imprensa_editorial", "ref": "Cobertura mensal do Boletim em veículos setoriais", "trecho_literal": "", "associacao_origem": null, "gt_origem": null}
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.ccee.org.br/web/guest/relatorios/boletim",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Cobertura mensal do Boletim em veículos setoriais",
+          "trecho_literal": "",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ],
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {"aplicavel": true, "query_versionada": "energia_publica.preco_ccee_horario (banco SOA · agregar mensal)", "resultado": "PENDENTE_QUERY", "verificado_em": "2026-06-28"},
+      "validacao_banco_SOA": {
+        "aplicavel": true,
+        "query_versionada": "energia_publica.preco_ccee_horario (banco SOA · agregar mensal)",
+        "resultado": "PENDENTE_QUERY",
+        "verificado_em": "2026-06-28"
+      },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
     }
