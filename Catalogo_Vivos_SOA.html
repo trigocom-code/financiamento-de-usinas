@@ -137,6 +137,34 @@
   </div>
 </div>
 
+<h2 class="sec">Camada 3 — Motor QSV (a base de prova dos folders)</h2>
+<p class="sec-sub">A terceira camada liga os dados oficiais (Camada 1) aos folders (Camada 2) com <b>prova auditável por terceiro</b>. Um único motor, um manifesto por folder — nenhum número chega ao folder sem passar pelo QSV, o diferencial da SOA/SOS.</p>
+
+<div class="grid">
+
+  <div class="card" data-file="SOA_SOS_Arquitetura_Camada3_MotorQSV_v1.pdf">
+    <div class="top"><span class="vetor">Arquitetura · CTO / due-diligence</span></div>
+    <h3>Arquitetura do Motor QSV</h3>
+    <div class="desc">Pipeline C1&rarr;C5 &middot; score 0&ndash;3/hora por hex&aacute;gono H3 &middot; Evidence Pack (SQL reexecut&aacute;vel + hash + Merkle + &acirc;ncora on-chain) &middot; QSV Manifest por folder &middot; roadmap de desenvolvimento para o CTO. Documento t&eacute;cnico completo (PDF, 12 p&aacute;ginas).</div>
+    <div class="meta"><span class="ts">PDF &middot; jul/2026</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/SOA_SOS_Arquitetura_Camada3_MotorQSV_v1.pdf">Abrir</a></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="vetor">Pipeline de prova</span></div>
+    <h3>Como o motor produz a evid&ecirc;ncia</h3>
+    <div class="desc">&#9312; Ingest&atilde;o (SQL versionado, read-only) &rarr; C1 hash &rarr; C2 timestamp &rarr; C3 g&ecirc;meo digital (pvlib) &rarr; C4 vizinhos (H3) &rarr; &Sigma; score 0&ndash;3 &rarr; Evidence Pack &rarr; C5 batch on-chain (Polygon) &rarr; Feed &rarr; Folder. Degrada&ccedil;&atilde;o graciosa: <code>qsvDegraded</code>, nunca n&uacute;mero sem lastro.</div>
+    <div class="meta"><span class="ts">off-chain first &middot; 5 TX/dia</span></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="vetor">Auditável por terceiro</span></div>
+    <h3>Verifica&ccedil;&atilde;o independente</h3>
+    <div class="desc">De posse do Evidence Pack, o auditor re-executa o SQL, confere o input hash, valida o Merkle proof e checa a root on-chain &mdash; reproduzindo o n&uacute;mero <b>bit a bit</b>, sem depender da SOA.</div>
+    <div class="meta"><span class="ts">SQL + Merkle + on-chain</span></div>
+  </div>
+
+</div>
+
 <h2 class="sec">9 Folders comerciais (por vetor · sob gatilho regulatório)</h2>
 <p class="sec-sub">Cada vetor entrega uma tese auditável. Quando um fato de que o folder depende muda, o selo acende — a regeneração do texto passa por gate humano (nunca automática).</p>
 
