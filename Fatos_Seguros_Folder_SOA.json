@@ -10,19 +10,21 @@
   "fatos": [
     {
       "tema": "ADI 7074 (CNSP 407/21 · grandes riscos) no STF",
-      "valor": "[PERÍMETRO/RISCO] Item mais quente do V8. A CNSP 407/21 é o regime de liberdade contratual onde o seguro paramétrico de grandes riscos (terreno natural das renováveis) opera hoje. A ADI segue EM JULGAMENTO, remetida ao plenário físico após destaque do min. Flávio Dino (relator Gilmar Mendes + Moraes/Toffoli/Zanin/Fux já haviam votado por manter a norma no virtual). Sem data de pauta física confirmada. (a verificar: data de pauta.)",
+      "valor": "[PERÍMETRO/RISCO] Item mais quente do V8. A CNSP 407/21 é o regime de liberdade contratual onde o seguro paramétrico de grandes riscos (terreno natural das renováveis) opera hoje. A ADI segue EM JULGAMENTO, remetida ao plenário físico após destaque do min. Flávio Dino (relator Gilmar Mendes + Moraes/Toffoli/Zanin/Fux já haviam votado por manter a norma no virtual). Sem data de pauta física confirmada.",
       "status": "EM DELIBERAÇÃO",
       "norma": "ADI 7074 / CNSP 407/2021",
       "url": "https://portal.stf.jus.br/",
-      "verificado_em": "2026-06-30"
+      "verificado_em": "2026-06-30",
+      "pendencia_verificacao": "A verificar: data de pauta."
     },
     {
       "tema": "CP SUSEP 10/2025 — nova resolução de Seguros de Danos (Lei 15.040/2024)",
-      "valor": "[HABILITADOR] Minuta em consolidação (CP aberta em 04/11/2025, prazo encerrado). Revoga/atualiza a Circular 621/2021 e absorve grandes riscos hoje na CNSP 407/21. Pendência-chave: se o texto reconhece índice/gatilho paramétrico e a figura de PROVEDOR DE ÍNDICE / AGENTE DE CÁLCULO — exatamente o papel neutro da SOA. (a verificar: no texto final.)",
+      "valor": "[HABILITADOR] Minuta em consolidação (CP aberta em 04/11/2025, prazo encerrado). Revoga/atualiza a Circular 621/2021 e absorve grandes riscos hoje na CNSP 407/21. Pendência-chave: se o texto reconhece índice/gatilho paramétrico e a figura de PROVEDOR DE ÍNDICE / AGENTE DE CÁLCULO — exatamente o papel neutro da SOA.",
       "status": "EM DELIBERAÇÃO",
       "norma": "CP SUSEP 10/2025 · Lei 15.040/2024",
       "url": "https://www.gov.br/susep/",
-      "verificado_em": "2026-06-30"
+      "verificado_em": "2026-06-30",
+      "pendencia_verificacao": "A verificar: no texto final."
     },
     {
       "tema": "Sandbox Regulatório SUSEP — 3ª edição (transformação ecológica)",
