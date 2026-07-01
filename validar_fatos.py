@@ -1,52 +1,170 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Gatekeeper dos Fatos_*_Folder_SOA.json (SOA/SOS). CI barra drift. exit 1 se houver."""
-import json, sys, os, glob, re
-TERMOS_PROIBIDOS_MARCA = ["líder","lider","patentead","anti-fraude","antifraude","padrão mundial","padrao mundial"]
-FRASES_ERRO = ["12 dispositivos","dispositivos vetados","22 dispositivos vetados","meta até 2035"]
-ANDAIME = [r"\[CORRE[ÇC][ÃA]O", r"\[A VERIFICAR", r"\[TODO", r"\[FIXME", r"\[NOTA:"]
+"""Gatekeeper SOA/SOS v2.0 (01/07/2026) — 3 estagios + anti-regressao."""
+import json, sys, os, glob, re, html, subprocess
+
+TERMOS_PROIBIDOS_MARCA = ["líder","lider","patentead","anti-fraude","antifraude",
+                          "padrão mundial","padrao mundial","ninguém mais tem","ninguem mais tem",
+                          "mais profundo do brasil","maior banco d","incontestável","incontestavel"]
+FRASES_ERRO = ["12 dispositivos","dispositivos vetados","22 dispositivos vetados","meta até 2035",
+               "portaria normativa mme 878/2025","5,7 gw"]
+EMAILS_PROIBIDOS = ["solaroneaccount.com.br","contato@solaroneaccount"]
+ANDAIME = [r"\[CORRE[ÇC][ÃA]O", r"\[A VERIFICAR", r"\(a verificar", r"\[TODO", r"\[FIXME", r"\[NOTA:"]
 CAMPOS_RENDERIZADOS = ("valor","tema","norma")
-DATA_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
-def erros(path):
+DATA_RE = re.compile(r"^\d{4}-\d{2}-\d{2}([T ]\d{2}:\d{2})?$")
+VETOS_RE = re.compile(r"\b(\d{1,2})\s+vetos\b")
+
+NEGACOES = ("nunca","não é","nao e","não confundir","nao confundir","não '","nao '")
+def _negado(low, i):
+    ctx = low[max(0,i-30):i]
+    return any(ng in ctx for ng in NEGACOES)
+
+def _scan_texto(blob, rotulo, e):
+    low = blob.lower()
+    for fr in FRASES_ERRO:
+        j = low.find(fr)
+        while j >= 0:
+            if not _negado(low, j): e.append("%s: frase de erro '%s'" % (rotulo, fr)); break
+            j = low.find(fr, j+1)
+    for t in TERMOS_PROIBIDOS_MARCA:
+        j = low.find(t)
+        while j >= 0:
+            if not _negado(low, j): e.append("%s: termo de marca '%s'" % (rotulo, t)); break
+            j = low.find(t, j+1)
+    for em in EMAILS_PROIBIDOS:
+        if em in low: e.append("%s: e-mail proibido '%s' (canonico: @solaroneaccount.com)" % (rotulo, em))
+    for m in VETOS_RE.finditer(low):
+        if m.group(1) != "16" and not _negado(low, m.start()):
+            e.append("%s: vetos divergente '%s' (canonico: 16 vetos)" % (rotulo, m.group(0)))
+
+def erros_fatos(path):
     e=[]; n=os.path.basename(path)
     try:
         with open(path,encoding="utf-8-sig") as f: d=json.load(f)
-    except Exception as ex: return [f"{n}: JSON inválido — {ex}"]
+    except Exception as ex: return ["%s: JSON inválido — %s" % (n, ex)]
     m=d.get("_meta",{})
-    if "regra_fonte_associacao" not in m: e.append(f"{n}: falta _meta.regra_fonte_associacao")
-    if not DATA_RE.match(str(m.get("verificado_em",""))): e.append(f"{n}: verificado_em ausente/fmt")
+    if "regra_fonte_associacao" not in m: e.append("%s: falta _meta.regra_fonte_associacao" % n)
+    if not DATA_RE.match(str(m.get("verificado_em",""))): e.append("%s: verificado_em ausente/fmt" % n)
     def walk(o,c=""):
         if isinstance(o,dict):
             for k,v in o.items():
-                if "C2_CEO" in k: e.append(f"{n}: chave andaime '{k}'")
+                if "C2_CEO" in k: e.append("%s: chave andaime '%s'" % (n, k))
                 walk(v,c+"/"+k)
         elif isinstance(o,list):
-            for i,v in enumerate(o): walk(v,c+f"[{i}]")
+            for i,v in enumerate(o): walk(v,c+"[%d]"%i)
         elif isinstance(o,str):
-            low=o.lower(); campo=c.rsplit("/",1)[-1].split("[")[0]
-            for fr in FRASES_ERRO:
-                if fr in low: e.append(f"{n}{c}: frase de erro '{fr}'")
-            for t in TERMOS_PROIBIDOS_MARCA:
-                if t in low: e.append(f"{n}{c}: termo de marca '{t}'")
+            campo=c.rsplit("/",1)[-1].split("[")[0]
             if campo in CAMPOS_RENDERIZADOS:
                 for p in ANDAIME:
-                    if re.search(p,o,re.I): e.append(f"{n}{c}: andaime em campo renderizado ({p})")
+                    if re.search(p,o,re.I):
+                        e.append("%s%s: andaime em campo renderizado (%s) — mover p/ 'pendencia_verificacao'" % (n,c,p))
     walk(d)
-    blob=json.dumps(d,ensure_ascii=False)
-    for mm in re.finditer(r"\b(\d{1,2})\s+vetos\b",blob):
-        if mm.group(1)!="16": e.append(f"{n}: vetos divergente '{mm.group(0)}'")
+    _scan_texto(json.dumps(d,ensure_ascii=False), n, e)
     return e
+
+def erros_cruzados(base):
+    e=[]
+    deps_p=os.path.join(base,"Folder_Deps_SOA.json")
+    if not os.path.exists(deps_p): return e
+    try:
+        with open(deps_p,encoding="utf-8-sig") as f: deps=json.load(f)
+    except Exception as ex: return ["Folder_Deps_SOA.json: JSON inválido — %s" % ex]
+    _scan_texto(json.dumps(deps,ensure_ascii=False),"Folder_Deps_SOA.json",e)
+    st_p=os.path.join(base,"_folder_triggers_state.json")
+    if os.path.exists(st_p):
+        try:
+            with open(st_p,encoding="utf-8-sig") as f:
+                _scan_texto(f.read(),"_folder_triggers_state.json",e)
+        except Exception: pass
+    cache={}
+    def ids_de(nb):
+        if nb in cache: return cache[nb]
+        p=os.path.join(base,nb+"_Folder_SOA.json"); s=set()
+        if os.path.exists(p):
+            try:
+                with open(p,encoding="utf-8-sig") as f: d=json.load(f)
+                for lista in ("fatos","_pendentes_verificacao"):
+                    for fa in d.get(lista) or []:
+                        for k in ("fato_id","tema"):
+                            if fa.get(k): s.add(str(fa[k]))
+            except Exception: pass
+        cache[nb]=s; return s
+    for fd in deps.get("folders",[]):
+        for dep in fd.get("depende_de") or []:
+            nb, ref = dep.get("json"), dep.get("ref")
+            if not nb or not ref: continue
+            if ref not in ids_de(nb):
+                e.append("Folder_Deps: '%s' depende de %s::%s — fato NAO encontrado (orfao)" % (fd.get('folder'), nb, ref))
+    return e
+
+def erros_html(base):
+    e=[]
+    for p in sorted(glob.glob(os.path.join(base,"*.html"))):
+        n=os.path.basename(p)
+        try:
+            with open(p,encoding="utf-8",errors="replace") as f: txt=html.unescape(f.read())
+        except Exception as ex: e.append("%s: leitura falhou — %s" % (n, ex)); continue
+        low=re.sub(r"<script[^>]*src=[^>]*>","",txt.lower())
+        for t in ["ninguém mais tem","ninguem mais tem","mais profundo do brasil","maior banco d",
+                  "incontestável","incontestavel","padrão mundial","padrao mundial","anti-fraude","antifraude"]:
+            j=low.find(t)
+            while j>=0:
+                if not _negado(low,j): e.append("%s: termo proibido em material '%s'" % (n, t)); break
+                j=low.find(t,j+1)
+        for em in EMAILS_PROIBIDOS:
+            if em in low: e.append("%s: e-mail proibido '%s'" % (n, em))
+        for m in VETOS_RE.finditer(low):
+            if m.group(1)!="16" and not _negado(low,m.start()): e.append("%s: vetos divergente '%s'" % (n, m.group(0)))
+    return e
+
+def erros_regressao(base):
+    e=[]
+    try:
+        msg=subprocess.check_output(["git","log","-1","--pretty=%B"],cwd=base,
+                                    stderr=subprocess.DEVNULL).decode("utf-8","replace")
+        if "[regressao-aprovada]" in msg.lower(): return []
+        mudados=subprocess.check_output(["git","diff","--name-only","HEAD^","HEAD"],cwd=base,
+                                        stderr=subprocess.DEVNULL).decode().split()
+    except Exception:
+        return []
+    def parse(txt):
+        try:
+            d=json.loads(txt)
+            return str(d.get("_meta",{}).get("schema_version","")), len(d.get("fatos") or [])
+        except Exception: return None,None
+    for f in mudados:
+        if not re.match(r"Fatos_.*_Folder_SOA\.json$",os.path.basename(f)): continue
+        try:
+            antes=subprocess.check_output(["git","show","HEAD^:"+f],cwd=base,stderr=subprocess.DEVNULL).decode("utf-8","replace")
+        except Exception: continue
+        p=os.path.join(base,f)
+        if not os.path.exists(p): e.append("%s: REMOVIDO sem [regressao-aprovada]" % f); continue
+        if antes and antes[0]=="﻿": antes=antes[1:]
+        sv_a,n_a=parse(antes); sv_d,n_d=parse(open(p,encoding="utf-8-sig").read())
+        def num(s):
+            try: return tuple(int(x) for x in str(s).split("."))
+            except Exception: return (0,)
+        if sv_a and sv_d and num(sv_d)<num(sv_a):
+            e.append("%s: REGRESSAO schema_version %s -> %s (use [regressao-aprovada] se intencional)" % (f, sv_a, sv_d))
+        if n_a is not None and n_d is not None and n_d<n_a:
+            e.append("%s: REGRESSAO qtde de fatos %d -> %d (use [regressao-aprovada] se intencional)" % (f, n_a, n_d))
+    return e
+
 def main():
     base=sys.argv[1] if len(sys.argv)>1 else "."
     arqs=[p for p in sorted(glob.glob(os.path.join(base,"Fatos_*_Folder_SOA.json")))
           if "legacy" not in p.lower() and "deprecated" not in p.lower()]
-    if not arqs: print(f"[gate] nenhum Fatos_*_Folder_SOA.json em {base}"); sys.exit(2)
+    if not arqs: print("[gate] nenhum Fatos_*_Folder_SOA.json em %s" % base); sys.exit(2)
     todos=[]
-    for a in arqs: todos+=erros(a)
-    print(f"[gate] validados {len(arqs)} arquivos.")
+    for a in arqs: todos+=erros_fatos(a)
+    n1=len(todos)
+    todos+=erros_regressao(base);            n0=len(todos)-n1
+    todos+=erros_cruzados(base);             n2=len(todos)-n1-n0
+    todos+=erros_html(base);                 n3=len(todos)-n1-n0-n2
+    print("[gate v2] E1 fatos(%d arqs): %d | E0 regressao: %d | E2 cruzado: %d | E3 html: %d" % (len(arqs),n1,n0,n2,n3))
     if todos:
-        print(f"[gate] ❌ {len(todos)} problema(s) — push BARRADO:")
+        print("[gate v2] ❌ %d problema(s) — push BARRADO:" % len(todos))
         for x in todos: print("   -",x)
         sys.exit(1)
-    print("[gate] ✅ 0 problemas."); sys.exit(0)
+    print("[gate v2] ✅ 0 problemas."); sys.exit(0)
 if __name__=="__main__": main()
