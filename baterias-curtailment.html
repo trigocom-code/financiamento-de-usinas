@@ -132,3 +132,7 @@ function render(data){
 
 (function(){var a=document.getElementById("studylink");if(!a)return;if(STUDY_URL.indexOf("COLE_AQUI")===0){a.style.display="none";}else{a.href=STUDY_URL;}})();
 </script></body></html>
+
+<!-- SELO DE FRESCOR (SOA/SOS) 01/07/2026 -->
+<div id="qv-fresh-seal" title="Frescor do JSON que este folder consome" style="position:fixed;bottom:12px;right:12px;z-index:99999;background:#E5E7EB;color:#6B7280;font:600 11px/1.1 Arial,Helvetica,sans-serif;padding:5px 11px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.3)">&#9679; frescor...</div>div>
+<script>(function(){var API="https://api.github.com/repos/trigocom-code/financiamento-de-usinas/commits?path=Fatos_Regulatorios_Folder_SOA.json&per_page=1";function p(n){return n<10?"0"+n:n;}fetch(API,{cache:"no-store"}).then(function(r){return r.ok?r.json():[];}).then(function(cm){var s=document.getElementById("qv-fresh-seal");if(!cm||!cm.length){s.textContent="● frescor n/d";return;}var dt=new Date(cm[0].commit.author.date),dh=(Date.now()-dt.getTime())/36e5,cls=dh<24?["#DCFCE7","#166534","atualizado hoje"]:dh<168?["#FEF3C7","#92400E",Math.floor(dh/24)+"d atras"]:["#FEE2E2","#B91C1C",Math.floor(dh/24)+"d DEFASADO"];s.style.background=cls[0];s.style.color=cls[1];s.textContent="● dado "+cls[2]+" ("+p(dt.getDate())+"/"+p(dt.getMonth()+1)+"/"+dt.getFullYear()+")";}).catch(function(){document.getElementById("qv-fresh-seal").textContent="● frescor n/d";});})();</script></script>
