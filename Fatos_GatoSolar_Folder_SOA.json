@@ -59,13 +59,14 @@
     },
     {
       "tema": "Parecer ANEEL — corte de GD solar e corresponsabilização pelo curtailment",
-      "valor": "EM DEBATE (não é norma): área técnica/diretoria sinaliza que distribuidoras podem cortar geração — inclusive MMGD — por segurança operativa, e discute corresponsabilizar a GD solar pelos custos do curtailment. Se a GD passa a ser cortável e potencialmente corresponsável, cresce a necessidade de medir e provar, hora a hora, quanto cada gerador injetou × quanto foi cortado — a camada de prova SOA. [A verificar status formal — segue como parecer/discussão, sem ato vinculante.]",
+      "valor": "EM DEBATE (não é norma): área técnica/diretoria sinaliza que distribuidoras podem cortar geração — inclusive MMGD — por segurança operativa, e discute corresponsabilizar a GD solar pelos custos do curtailment. Se a GD passa a ser cortável e potencialmente corresponsável, cresce a necessidade de medir e provar, hora a hora, quanto cada gerador injetou × quanto foi cortado — a camada de prova SOA.",
       "status": "EM DELIBERAÇÃO",
       "norma": "ANEEL — parecer/discussão técnica (acopla-se à CP 009)",
       "fonte": "F2 (Canal Solar) — a confirmar em F1",
       "url": "https://canalsolar.com.br/aneel-corresponsabilizar-gd-solar-pelo-curtailment/",
       "verificado_em": "2026-06-30",
-      "vetores_afetados": ["V4", "sHEC"]
+      "vetores_afetados": ["V4", "sHEC"],
+      "pendencia_verificacao": "A verificar: status formal — segue como parecer/discussão, sem ato vinculante."
     },
     {
       "tema": "CP ANEEL 011/2026 — créditos vencidos de MMGD (adjacente)",
