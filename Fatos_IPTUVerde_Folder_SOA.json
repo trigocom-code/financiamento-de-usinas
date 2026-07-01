@@ -11,10 +11,11 @@
   "fatos": [
     {
       "tema": "Mapa de IPTU Verde municipal — desconto por geração solar",
-      "valor": "Mais de 50 municípios oferecem desconto de IPTU (até 40%) para imóveis com geração solar e/ou critérios ambientais. A concessão é tipicamente anual (jan–mar), por solicitação (nota fiscal + laudo técnico), NÃO automática — e raramente há refiscalização. É exatamente o gargalo que a SOA endereça: prova contínua de que a geração incentivada é mantida. (a verificar: percentuais/critérios na lei de cada município.)",
+      "valor": "Mais de 50 municípios oferecem desconto de IPTU (até 40%) para imóveis com geração solar e/ou critérios ambientais. A concessão é tipicamente anual (jan–mar), por solicitação (nota fiscal + laudo técnico), NÃO automática — e raramente há refiscalização. É exatamente o gargalo que a SOA endereça: prova contínua de que a geração incentivada é mantida.",
       "status": "VIGENTE",
       "norma": "Leis/decretos municipais",
-      "verificado_em": "2026-06-30"
+      "verificado_em": "2026-06-30",
+      "pendencia_verificacao": "A verificar: percentuais/critérios na lei de cada município."
     },
     {
       "tema": "Cuiabá (MT) — IPTU Sustentável",
@@ -32,10 +33,11 @@
     },
     {
       "tema": "Porto Alegre (RS) — IPTU Sustentável",
-      "valor": "Lei aprovada na Câmara em 12/04/2025; desconto até 10% por certificação multicritério (Diamante 10% / Ouro 7% / Prata 5% / Bronze 3%), em que geração renovável é um dos itens. Ciclo 2026 com ~978 imóveis deferidos. (a verificar: texto da lei e regras de certificação na origem.)",
+      "valor": "Lei aprovada na Câmara em 12/04/2025; desconto até 10% por certificação multicritério (Diamante 10% / Ouro 7% / Prata 5% / Bronze 3%), em que geração renovável é um dos itens. Ciclo 2026 com ~978 imóveis deferidos.",
       "status": "VIGENTE",
       "norma": "Lei municipal de Porto Alegre (abr/2025)",
-      "verificado_em": "2026-06-30"
+      "verificado_em": "2026-06-30",
+      "pendencia_verificacao": "A verificar: texto da lei e regras de certificação na origem."
     },
     {
       "tema": "PEC 13/2019 — IPTU Verde nacional",
@@ -53,10 +55,11 @@
     },
     {
       "tema": "NR-35 — Trabalho em Altura (gate da limpeza de placas)",
-      "valor": "Portaria MTE 1.860/2025, vigência a partir de 02/01/2026. É o gate de segurança do iCleanSolar (limpeza de telhados/placas em altura): responsabilidade solidária pela qualificação de quem executa. (a verificar: redação no DOU antes de material de cliente.)",
+      "valor": "Portaria MTE 1.860/2025, vigência a partir de 02/01/2026. É o gate de segurança do iCleanSolar (limpeza de telhados/placas em altura): responsabilidade solidária pela qualificação de quem executa.",
       "status": "VIGENTE",
       "norma": "Portaria MTE 1.860/2025 (NR-35)",
-      "verificado_em": "2026-06-30"
+      "verificado_em": "2026-06-30",
+      "pendencia_verificacao": "A verificar: redação no DOU antes de material de cliente."
     },
     {
       "tema": "NR-10 — Segurança em Instalações Elétricas",
