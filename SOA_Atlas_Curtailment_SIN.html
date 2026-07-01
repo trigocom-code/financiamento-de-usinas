@@ -91,4 +91,5 @@ function render(){
 document.querySelectorAll('th').forEach(function(th){th.onclick=function(){var k=th.dataset.k;if(sortk==k){sortd=-sortd}else{sortk=k;sortd=(k=='nome'||k=='uf'||k=='fonte'||k=='rank')?1:-1}render()}});
 ['q','ff','uf','nv'].forEach(function(id){document.getElementById(id).oninput=render});
 render();
-</script></body></html>
+</script><script src="/financiamento-de-usinas/soa-carimbo.js" defer></script>
+</body></html>
