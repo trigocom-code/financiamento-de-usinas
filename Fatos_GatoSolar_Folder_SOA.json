@@ -1,51 +1,90 @@
 {
   "_meta": {
     "orgao": "ANEEL (MMGD / gato solar)",
-    "schema_version": "1.0",
-    "descricao": "Monitor Gato Solar / GD irregular. Disciplina dura: irregularidade NÃO é energia falsa (a energia injetada é real); a SOA PROVA a inconsistência, NÃO acusa fraude; números de auditoria (ONS/ANEEL) são de TERCEIROS — atribuir, não apresentar como dado SOA. NUNCA '5,7 GW'. Não confundir ~R$ 5 bi (impacto das irregularidades, estimativa) com ~R$ 16 bi (subsídio da MMGD via CDE).",
+    "schema_version": "1.1",
+    "descricao": "Monitor Gato Solar / GD irregular. Disciplina dura: irregularidade NÃO é energia falsa (a energia injetada é real); a SOA PROVA a inconsistência de potência declarada, NÃO acusa fraude; números de auditoria (ONS/ANEEL) são de TERCEIROS — atribuir à fonte, não apresentar como dado SOA. NUNCA '5,7 GW'. Não confundir ~R$ 5 bi (impacto estimado das irregularidades, fonte secundária) com ~R$ 16 bi (subsídio da MMGD via CDE). Ancoragem F1 nesta v1.1: NT 107/2026-SFT/ANEEL (22/06/2026).",
     "verificado_em": "2026-07-01",
-    "fonte_canonica": "gov.br/aneel + NT ANEEL + Agência iNFRA/Canal Solar (secundárias, [A VERIFICAR])",
+    "fonte_canonica": "F1 — NT 107/2026-SFT/ANEEL (SEI 0388524, processo 48500.015900/2026-94, assinada 23/06/2026) + gov.br/aneel. Secundárias (Agência iNFRA/Canal Solar) só para itens não cobertos pela NT.",
+    "fonte_primaria_novo": "Nota Técnica nº 107/2026-SFT/ANEEL — 'Avaliação da manifestação das distribuidoras ao Ofício Circular nº 12/2026-SFT/ANEEL' (combate à alteração à revelia das características originais de MMGD). Avalia 50 distribuidoras. Fundamento legal: Lei 14.300/2022 + REN ANEEL 1.000/2021.",
     "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
   "fatos": [
     {
-      "tema": "CP ANEEL 009/2026 — combate à MMGD irregular ('geração invisível')",
-      "valor": "Consulta Pública para aprimorar o tratamento de excedentes e combater a ampliação de MMGD à revelia. Verificados pela ANEEL (terceiros): 88 MW irregulares = 0,31% da potência MMGD registrada, em 22,7 mil inspeções (59% com alguma irregularidade), 19 distribuidoras, base de 43 mi de UCs. Medidas PROPOSTAS: exclusão do SCEE, cobrança retroativa de até 36 ciclos, corte físico em casos graves, vistoria em 90 dias, auditoria emergencial em 60 dias. Contribuições encerradas em 06/06/2026; em consolidação (relator Gentil Nogueira de Sá Júnior; base NT 148/2025-STD).",
+      "tema": "NT 107/2026-SFT/ANEEL — a fotografia oficial do combate ao 'gato solar'",
+      "valor": "Nota Técnica que consolida a resposta de 50 distribuidoras ao Ofício Circular nº 12/2026-SFT/ANEEL. Confirma (F1) que quase todos os agentes já têm processos estruturados de detecção da 'alteração à revelia' de MMGD e adota uma estratégia em DUAS camadas: (1) triagem analítica por dados e (2) fiscalização/vistoria em campo. Resultados de terceiros, atribuídos à ANEEL: 70.187 UCs suspeitas, 22.739 inspeções realizadas (32% do universo suspeito), 13.402 irregularidades identificadas (59%) e 87,93 MW de potência à revelia — equivalente a 0,31% da potência de MMGD total registrada (Tabela 1 + §51). Recomenda dar ciência ao Diretor-Relator da CP nº 009/2026 e cobrar o ONS sobre a metodologia do relatório DPL 0149/2026.",
+      "status": "VIGENTE",
+      "norma": "NT 107/2026-SFT/ANEEL (22/06/2026) · Ofício Circular 12/2026-SFT · Ref. 48500.015900/2026-94",
+      "fonte": "F1 ANEEL (SEI 0388524, CRC 78D83A6B, assinada 23/06/2026)",
+      "url": "https://sei.aneel.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0",
+      "verificado_em": "2026-07-01",
+      "vetores_afetados": ["V2", "sHEC"]
+    },
+    {
+      "tema": "A detecção hoje é por ESTIMATIVA (observado × esperado) — a cunha da prova física SOA",
+      "valor": "F1 (NT 107/2026, §III.1 e §III.7): toda a triagem das distribuidoras compara geração OBSERVADA com uma geração ESPERADA calculada por modelo. CEMIG-D usa Eg = Pg × FC × 24 × 30 (FC de referência 16%, adotado 160 h/mês); CPFL usa o indicador Ra = P_máx_injetada / P_aprovada (Ra>1 = indício) para o Grupo A e um indicador RB para o Grupo B; CELESC usa coeficiente de geração (kWh/kW). As PRÓPRIAS distribuidoras reconhecem o limite: a Light aponta a lacuna do ILR (Inverter Loading Ratio) e que 'limitações de medição/modelagem podem ampliar o espaço para questionamentos sobre a detecção baseada em estimativas'; a Nova Palma aponta 'ausência de previsão suficientemente objetiva'. É exatamente aqui que entra a prova SOA: reconciliação potência declarada × geração fisicamente possível (irradiância NASA POWER × modelo pvlib), hora a hora — medida, não estimada.",
+      "status": "VIGENTE",
+      "norma": "NT 107/2026-SFT/ANEEL §III.1 (detecção) e §III.7 (desafios)",
+      "fonte": "F1 ANEEL",
+      "verificado_em": "2026-07-01",
+      "vetores_afetados": ["V2", "sHEC"]
+    },
+    {
+      "tema": "Zona cinzenta técnica — overpaneling / overdelivery / ILR",
+      "valor": "F1 (NT 107/2026, §III.7.2): há situações limítrofes que a detecção por estimativa não separa bem. 'Overpaneling' (ou overload) = acréscimo de módulos sem atualização formal do projeto, elevando a energia injetada. 'Overdelivery' = inversor injetando potência ativa acima da nominal de placa, próximo à máxima aparente dos módulos, sem substituição formal do inversor. CPFL e Neoenergia pedem clareza sobre a potência de referência a considerar (nominal × máxima efetiva na saída do inversor). O gêmeo digital horário da SOA mede a injeção real contra o teto físico do sistema declarado — endereçando a distinção entre fenômeno técnico-operacional e irregularidade que hoje fica em aberto.",
       "status": "EM DELIBERAÇÃO",
-      "norma": "CP ANEEL 009/2026 · NT 148/2025-STD",
+      "norma": "NT 107/2026-SFT/ANEEL §III.7.2 (ambiguidades técnicas) · insumo à CP 009/2026",
+      "fonte": "F1 ANEEL",
+      "verificado_em": "2026-07-01",
+      "vetores_afetados": ["V2", "sHEC"]
+    },
+    {
+      "tema": "CP ANEEL 009/2026 + determinação de auditoria (decisão de 22/04/2026)",
+      "valor": "Na 8ª Reunião Pública Ordinária (22/04/2026) a Diretoria da ANEEL tomou DUAS medidas conexas: (a) abriu a CP nº 009/2026, para subsídios sobre o tratamento de excedentes de energia e a ampliação da flexibilidade operativa na Rede de Distribuição (relator dir. Gentil Nogueira; base na NT 148/2025-STD); e (b) determinou, de forma imediata, a sinalização sistêmica de restrições estruturais na transmissão para novas conexões E a realização de auditoria pelas distribuidoras, em até 60 dias, para identificar aumentos de potência à revelia — priorizando a minigeração e os maiores desvios entre potência autorizada e injetada. Contribuições da CP encerradas em 06/06/2026; em consolidação.",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "CP ANEEL 009/2026 · Decisão 8ª RPO 22/04/2026 · NT 148/2025-STD",
+      "fonte": "F1 ANEEL (confirmado pela NT 107/2026, §6 e recomendação 'e')",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/consulta-publica-propoe-aprimorar-o-tratamento-de-excedentes-de-energia",
-      "verificado_em": "2026-06-30"
+      "verificado_em": "2026-07-01",
+      "vetores_afetados": ["V2", "V4", "sHEC"]
+    },
+    {
+      "tema": "Lastro de escala — GD não declarada (ONS DPL 0149/2026)",
+      "valor": "Estimativa oficial do ONS, atribuída ao Operador: potência faltante de ~11,8 GW a 14,6 GW decorrente de MMGD não registrada ou não plenamente refletida nos registros (relatório técnico ONS DPL 0149/2026, encaminhado à ANEEL pela CTA-ONS DPL 0571/2026 em 17/04/2026, e citado na NT 107/2026). Ordem de grandeza de uma Itaipu. A inspeção física amostral (32% do universo suspeito) não escala para 43 mi de UCs nem para os ~14 GW potenciais → a reconciliação remota potência declarada × geração fisicamente possível (QSV/gêmeo digital) é o caminho de auditoria contínua. NÃO confundir o impacto estimado das irregularidades (~R$ 5 bi, fonte secundária) com os ~R$ 16 bi de subsídio/desconto da GD via CDE.",
+      "status": "VIGENTE (referência)",
+      "norma": "ONS DPL 0149/2026 (via CTA-ONS DPL 0571/2026) · citado na NT 107/2026",
+      "fonte": "F1-referenciado (ONS, citado por ANEEL na NT 107/2026)",
+      "url": "https://agenciainfra.com/blog/aneel-inspecao-de-distribuidoras-encontra-88-mw-de-gato-solar/",
+      "verificado_em": "2026-07-01",
+      "vetores_afetados": ["V2", "sHEC"]
     },
     {
       "tema": "Parecer ANEEL — corte de GD solar e corresponsabilização pelo curtailment",
-      "valor": "EM DEBATE (não é norma): área técnica/diretoria sinaliza que distribuidoras podem cortar geração — inclusive MMGD — por segurança operativa, e discute corresponsabilizar a GD solar pelos custos do curtailment. Se a GD passa a ser cortável e potencialmente corresponsável, cresce a necessidade de medir e provar, hora a hora, quanto cada gerador injetou × quanto foi cortado — a camada de prova SOA. (a verificar: status formal — segue como parecer/discussão, sem ato vinculante.)",
+      "valor": "EM DEBATE (não é norma): área técnica/diretoria sinaliza que distribuidoras podem cortar geração — inclusive MMGD — por segurança operativa, e discute corresponsabilizar a GD solar pelos custos do curtailment. Se a GD passa a ser cortável e potencialmente corresponsável, cresce a necessidade de medir e provar, hora a hora, quanto cada gerador injetou × quanto foi cortado — a camada de prova SOA. [A verificar status formal — segue como parecer/discussão, sem ato vinculante.]",
       "status": "EM DELIBERAÇÃO",
       "norma": "ANEEL — parecer/discussão técnica (acopla-se à CP 009)",
+      "fonte": "F2 (Canal Solar) — a confirmar em F1",
       "url": "https://canalsolar.com.br/aneel-corresponsabilizar-gd-solar-pelo-curtailment/",
-      "verificado_em": "2026-06-30"
+      "verificado_em": "2026-06-30",
+      "vetores_afetados": ["V4", "sHEC"]
     },
     {
       "tema": "CP ANEEL 011/2026 — créditos vencidos de MMGD (adjacente)",
       "valor": "Consulta paralela (aberta 28/04/2026) para definir o tratamento regulatório e contábil dos créditos vencidos de MMGD, revertendo-os à modicidade tarifária. NÃO é gato solar (não é potência irregular), mas integra o mesmo pacote de aperto da ANEEL sobre a MMGD. Registrada para não ser confundida com a CP 009.",
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 011/2026",
+      "fonte": "F1 ANEEL (portal)",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/consulta-publica-vai-tratar-dos-creditos-excedentes-de-mmgd-para-modicidade-tarifaria",
-      "verificado_em": "2026-06-30"
-    },
-    {
-      "tema": "Lastro de escala — GD não declarada",
-      "valor": "Estimativa de terceiros (atribuir à ONS): ~14 GW de GD não declarada (faixa 11,8–14,6 GW, ≈ Itaipu); estimativa ANEEL própria de 12–15 GW circula em paralelo. Impacto estimado das irregularidades ~R$ 5 bi — NÃO confundir com os ~R$ 16 bi de subsídio/desconto da GD via CDE. A inspeção física amostral não escala para 43 mi de UCs nem para os ~14 GW potenciais → reconciliação potência declarada × geração fisicamente possível (QSV/gêmeo digital) é o caminho de auditoria contínua e remota.",
-      "status": "VIGENTE (referência)",
-      "norma": "ONS/ANEEL (estimativas de terceiros)",
-      "url": "https://agenciainfra.com/blog/aneel-inspecao-de-distribuidoras-encontra-88-mw-de-gato-solar/",
-      "verificado_em": "2026-06-30"
+      "verificado_em": "2026-06-30",
+      "vetores_afetados": ["V2"]
     },
     {
       "tema": "Posição setorial (ABSOLAR/ABGD)",
       "valor": "As associações (nota de 12/06) apoiam a fiscalização, mas cobram 'critérios e metodologias passíveis de auditoria independente' — abertura natural para a camada de prova neutra da SOA (a SOA prova a inconsistência; quem suspende/penaliza é a distribuidora/ANEEL).",
       "status": "VIGENTE",
       "norma": "ABSOLAR/ABGD — manifestação setorial",
-      "verificado_em": "2026-06-30"
+      "fonte": "F3 ABSOLAR (associação; não fecha VERDE sozinha)",
+      "verificado_em": "2026-06-30",
+      "vetores_afetados": ["V2", "sHEC"]
     }
   ]
 }
