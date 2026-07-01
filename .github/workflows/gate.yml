@@ -1,3 +1,3 @@
 name: Gate SOA/SOS - Fatos
-'on': { push: { paths: ['Fatos_*_Folder_SOA.json'] }, pull_request: { paths: ['Fatos_*_Folder_SOA.json'] }, workflow_dispatch: {} }
-jobs: { validar-fatos: { runs-on: ubuntu-latest, steps: [ { uses: 'actions/checkout@v4' }, { uses: 'actions/setup-python@v5', with: { python-version: '3.12' } }, { name: 'Rodar gatekeeper', run: 'python3 validar_fatos.py .' } ] } }
+'on': { push: {}, pull_request: {}, workflow_dispatch: {} }
+jobs: { validar-fatos: { runs-on: ubuntu-latest, steps: [ { uses: 'actions/checkout@v4', with: { fetch-depth: 2 } }, { uses: 'actions/setup-python@v5', with: { python-version: '3.12' } }, { name: 'Rodar gatekeeper v2 (E0 regressao + E1 fatos + E2 cruzado + E3 html)', run: 'python3 validar_fatos.py .' } ] } }
