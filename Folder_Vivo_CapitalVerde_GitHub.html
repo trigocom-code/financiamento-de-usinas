@@ -135,7 +135,7 @@ function render(data){
   document.getElementById("cards").innerHTML=cardsHtml || "<p>Sem fatos no momento.</p>";
 }
 (async function(){
-  for(const u of FACTS_URLS){ try{ const r=await fetch(u,{cache:"no-store"}); if(r.ok){ render(await r.json()); return; } }catch(e){} }
+  for(const u of FACTS_URLS){ try{ const r=await fetch(u+(u.indexOf("?")>=0?"&":"?")+"v="+Date.now(),{cache:"no-store"}); if(r.ok){ render(await r.json()); return; } }catch(e){} }
   render(FALLBACK);
 })();
 document.getElementById("liveStamp").textContent="● Aberto em "+fmtNow();
