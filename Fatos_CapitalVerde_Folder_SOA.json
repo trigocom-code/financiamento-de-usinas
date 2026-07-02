@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "verificado_em": "2026-07-01",
+    "verificado_em": "2026-07-02",
     "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
   "fatos": [
@@ -9,35 +9,35 @@
       "valor": "R$ 27 bi em 2026 (maior da história) para transição energética, hidrogênio de baixo carbono, biometano, reflorestamento e infraestrutura verde. Exige enquadramento e métricas de desempenho/impacto. (Fontes do governo citam R$ 27,5 bi no PAAR 2026 — a verificar na publicação oficial.)",
       "status": "VIGENTE",
       "norma": "BNDES · PAAR 2026 (Lei 12.114/2009 — Fundo Nacional sobre Mudança do Clima)",
-      "verificado_em": "2026-07-01"
+      "verificado_em": "2026-07-02"
     },
     {
       "tema": "Eco Invest Brasil — Min. Fazenda",
       "valor": "Financiamento misto (blended) + linha de hedge cambial. 5º Leilão (Fundos de Inovação): inscrições abertas em 19/06/2026, propostas até 20/08/2026 às 18h; projeção de mobilizar ~R$ 50 bi (não realizado). Empréstimo a 1% a.a., teto R$ 1,5 bi por cadeia, 1 banco vencedor por cadeia. Internacionalização da captação: roadshow Ásia (24/06) e 1º passo formal para Panda Bonds soberanos em yuan na China (25/06), articulando também a Plataforma Brasil de Investimentos Climáticos (BIP). Atrai capital estrangeiro para projeto verde com lastro.",
       "status": "AGENDADO",
       "norma": "Ministério da Fazenda / Tesouro Nacional — Transformação Ecológica · Leilão Eco Invest nº 05/2026 · Linha regulamentada pela Resolução CMN nº 5.286, de 26/03/2026 (FNMC)",
-      "verificado_em": "2026-07-01"
+      "verificado_em": "2026-07-02"
     },
     {
       "tema": "Debêntures de Infraestrutura / incentivadas verdes",
       "valor": "Benefício fiscal ao emissor; critérios de benefício ambiental relevante e tramitação simplificada para emissões verdes; válido até 31/12/2030. Exige relato de uso de recursos e de impacto. Em curso: governo estrutura Portal MRV (Serpro) e sistema de avaliação de conformidade para títulos sustentáveis (Inmetro) na 2ª edição da Taxonomia Sustentável Brasileira — define o padrão de verificação para rótulo verde.",
       "status": "VIGENTE",
       "norma": "Lei 14.801/2024 · Decreto 11.964/2024",
-      "verificado_em": "2026-07-01"
+      "verificado_em": "2026-07-02"
     },
     {
       "tema": "Sustainability-Linked (SLL/SLB)",
       "valor": "Custo de capital atrelado a KPIs de desempenho (ex.: % de energia renovável, intensidade de carbono). Falhar o KPI encarece a dívida — exige verificação independente e contínua do indicador.",
       "status": "VIGENTE",
       "norma": "Princípios ICMA/LMA (SLBP/SLLP) — instrumento de mercado",
-      "verificado_em": "2026-07-01"
+      "verificado_em": "2026-07-02"
     },
     {
       "tema": "Finep Mais Inovação Brasil — Rodada 2 · Transição Energética",
       "valor": "Chamada pública nº 772 (recursos FNDCT). Subvenção econômica reportada em R$ 500 mi (fonte secundária — a verificar na página oficial Finep). Submissão de propostas até 31/08/2026 (sistema aberto desde 03/03/2026; publicada 06/02/2026). Foco: geração elétrica, armazenamento de energia, hidrogênio de baixo carbono, biocombustíveis, biogás/biometano, captura de carbono. Exige empresa brasileira com receita + parceria obrigatória com ICT + contrapartida financeira. NÃO confundir com o FIP Petrobras+BNDES+Finep gerido pela Valetec (04/06/2025), instrumento distinto que coincide na cifra R$ 500 mi. Para a SOA/SOS (MVP pré-operacional, receita zero): encaixe por parceria com ICT/consórcio, não captação direta no estágio atual.",
       "status": "ABERTO",
       "norma": "Finep — Programa Mais Inovação Brasil · Chamada Pública nº 772 (FNDCT)",
-      "verificado_em": "2026-07-01"
+      "verificado_em": "2026-07-02"
     }
   ]
 }
