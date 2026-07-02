@@ -137,35 +137,7 @@
   </div>
 </div>
 
-<h2 class="sec">Camada 3 — Motor QSV (a base de prova dos folders)</h2>
-<p class="sec-sub">A terceira camada liga os dados oficiais (Camada 1) aos folders (Camada 2) com <b>prova auditável por terceiro</b>. Um único motor, um manifesto por folder — nenhum número chega ao folder sem passar pelo QSV, o diferencial da SOA/SOS.</p>
-
-<div class="grid">
-
-  <div class="card" data-file="SOA_SOS_Arquitetura_Camada3_MotorQSV_v2.pdf">
-    <div class="top"><span class="vetor">Arquitetura &middot; CTO / due-diligence &middot; v2.0</span></div>
-    <h3>Arquitetura do Motor QSV — v2.0</h3>
-    <div class="desc">Pipeline C1&rarr;C5 &middot; score 0&ndash;3/hora por hex&aacute;gono H3 &middot; Evidence Pack determin&iacute;stico (predicado temporal fechado + extrato congelado + fontes versionadas) &middot; duas classes de fun&ccedil;&atilde;o (DETECTA_E_REGISTRA &times; ATUA_E_BLOQUEIA, R1&ndash;R5) &middot; QSV Manifest com bloco enforcement &middot; mapa dos 12 folders &middot; roadmap. Consolida os adendos v1.1 e v1.2 (PDF, 12 p&aacute;ginas).</div>
-    <div class="meta"><span class="ts">PDF &middot; v2.0 &middot; 01/07/2026</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/SOA_SOS_Arquitetura_Camada3_MotorQSV_v2.pdf">Abrir</a></div>
-  </div>
-
-  <div class="card">
-    <div class="top"><span class="vetor">Pipeline de prova</span></div>
-    <h3>Como o motor produz a evid&ecirc;ncia</h3>
-    <div class="desc">&#9312; Ingest&atilde;o (SQL versionado, read-only) &rarr; C1 hash &rarr; C2 timestamp &rarr; C3 g&ecirc;meo digital (pvlib) &rarr; C4 vizinhos (H3) &rarr; &Sigma; score 0&ndash;3 &rarr; Evidence Pack &rarr; C5 batch on-chain (Polygon) &rarr; Feed &rarr; Folder. Degrada&ccedil;&atilde;o graciosa: <code>qsvDegraded</code>, nunca n&uacute;mero sem lastro.</div>
-    <div class="meta"><span class="ts">off-chain first &middot; 5 TX/dia</span></div>
-  </div>
-
-  <div class="card">
-    <div class="top"><span class="vetor">Auditável por terceiro</span></div>
-    <h3>Verifica&ccedil;&atilde;o independente</h3>
-    <div class="desc">De posse do Evidence Pack, o auditor re-executa o SQL, confere o input hash, valida o Merkle proof e checa a root on-chain &mdash; reproduzindo o n&uacute;mero <b>bit a bit</b>, sem depender da SOA.</div>
-    <div class="meta"><span class="ts">SQL + Merkle + on-chain</span></div>
-  </div>
-
-</div>
-
-<h2 class="sec">12 Folders comerciais (por vetor · sob gatilho regulatório)</h2>
+<h2 class="sec">1ª Camada · 12 Folders comerciais (por vetor · sob gatilho regulatório)</h2>
 <p class="sec-sub">Cada vetor entrega uma tese auditável. Quando um fato de que o folder depende muda, o selo acende — a regeneração do texto passa por gate humano (nunca automática).</p>
 
 <div class="grid">
@@ -256,7 +228,7 @@
 
 </div>
 
-<h2 class="sec">Monitores vivos (fetch + JSON em tempo real)</h2>
+<h2 class="sec">2ª Camada · Monitores vivos (fetch + JSON em tempo real)</h2>
 <p class="sec-sub">Peças que atualizam no browser do leitor — cada uma faz fetch do seu JSON canônico por órgão a cada visita. O monitor regulatório SOA reescreve os JSONs por digest diário; o folder reflete na hora. Fontes F1/F2/F3 (F3 = ABSOLAR via GTs).</p>
 
 <div class="grid">
@@ -338,12 +310,108 @@
   </div>
 </div>
 
+<h2 class="sec">3ª Camada · Os 8 vetores SOA/SOS — discriminados</h2>
+<p class="sec-sub">Cada vetor é uma linha de serviço com cliente-tipo próprio (Matriz Cliente × Vetor: <b>A</b>·Geração · <b>B</b>·Transmissão · <b>C</b>·Consumidor · <b>D</b>·Banca · <b>E</b>·Institucional · <b>F</b>·Seguros). Os folders da 1ª camada são as vitrines; os monitores da 2ª camada são os gatilhos; o Motor QSV da 4ª camada é a prova.</p>
+
+<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 16px;font-size:12px;color:#4B5563">
+  <span style="background:#040F2F;color:#FEC73D;border-radius:999px;padding:5px 12px;font-weight:700">1ª · Folders (vitrine)</span><span>&rarr;</span>
+  <span style="background:#040F2F;color:#FEC73D;border-radius:999px;padding:5px 12px;font-weight:700">2ª · Monitores (gatilho)</span><span>&rarr;</span>
+  <span style="background:#040F2F;color:#FEC73D;border-radius:999px;padding:5px 12px;font-weight:700">3ª · Vetores (linhas de serviço)</span><span>&rarr;</span>
+  <span style="background:#040F2F;color:#FEC73D;border-radius:999px;padding:5px 12px;font-weight:700">4ª · Motor QSV (prova)</span>
+</div>
+
+<div class="grid">
+
+  <div class="card" style="border-top:4px solid #1C5AAD">
+    <div class="top"><span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#1C5AAD;color:#fff;font-weight:800;font-size:13px">V1</span><span class="vetor">B·Transmissão · D·Banca</span></div>
+    <h3>Transmission Intelligence</h3>
+    <div class="desc">Inteligência de transmissão para M&amp;A, due diligence e originação (Transmission Value Map · score dual técnico + comercial). Lastro: SIGET/RAP, LTs e subestações do SIN.<br><b>Vitrine:</b> <a href="https://trigocom-code.github.io/financiamento-de-usinas/acesso-transmissao-pnast.html" target="_blank" rel="noopener">Acesso &amp; Transmissão — PNAST</a> · <b>Gatilhos:</b> MME · ONS · EPE</div>
+  </div>
+
+  <div class="card" style="border-top:4px solid #FC9D27">
+    <div class="top"><span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#FC9D27;color:#040F2F;font-weight:800;font-size:13px">V2</span><span class="vetor">A·Geração</span></div>
+    <h3>Geração Access Advisory</h3>
+    <div class="desc">Risco técnico de conexão por barramento para novos projetos (Access Risk Map, classes Crítico/Alto/Atenção/Baixo) — apoio à decisão pré-investimento.<br><b>Vitrines:</b> <a href="https://trigocom-code.github.io/financiamento-de-usinas/acesso-transmissao-pnast.html" target="_blank" rel="noopener">PNAST</a> · <a href="https://trigocom-code.github.io/financiamento-de-usinas/gato-solar-soa.html" target="_blank" rel="noopener">Gato Solar</a> · <a href="https://trigocom-code.github.io/financiamento-de-usinas/iptu-verde-auditavel.html" target="_blank" rel="noopener">IPTU Verde</a> · <b>Gatilhos:</b> ANEEL · MME · Gato Solar</div>
+  </div>
+
+  <div class="card" style="border-top:4px solid #040F2F">
+    <div class="top"><span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#040F2F;color:#FEC73D;font-weight:800;font-size:13px">V3</span><span class="vetor">A·Geração · investidores BESS</span></div>
+    <h3>Flex Asset Valuation</h3>
+    <div class="desc">Valor da flexibilidade: arbitragem de PLD, mitigação de curtailment e dimensionamento de armazenamento por barramento (Flex Map).<br><b>Vitrine:</b> <a href="https://trigocom-code.github.io/financiamento-de-usinas/baterias-curtailment.html" target="_blank" rel="noopener">Baterias × Curtailment</a> · <b>Gatilhos:</b> ANEEL · MME · ONS · CCEE (LRCAP)</div>
+  </div>
+
+  <div class="card" style="border-top:4px solid #1C5AAD">
+    <div class="top"><span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#1C5AAD;color:#fff;font-weight:800;font-size:13px">V4</span><span class="vetor">A·Geração · D·Banca (contencioso)</span></div>
+    <h3>Curtailment Evidence Pack</h3>
+    <div class="desc">Prova auditável da energia renovável frustrada — hora a hora, por usina (modo sHEC: prova de frustração, não de consumo).<br><b>Vitrines:</b> <a href="https://trigocom-code.github.io/financiamento-de-usinas/contencioso-curtailment.html" target="_blank" rel="noopener">Contencioso de Curtailment</a> · <a href="https://trigocom-code.github.io/financiamento-de-usinas/baterias-curtailment.html" target="_blank" rel="noopener">Baterias</a> · <b>Gatilhos:</b> CCEE (Lei 15.269) · ANEEL (CP 045) · ONS</div>
+  </div>
+
+  <div class="card" style="border-top:4px solid #FC9D27">
+    <div class="top"><span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#FC9D27;color:#040F2F;font-weight:800;font-size:13px">V5</span><span class="vetor">C·Consumidor (data centers · H2)</span></div>
+    <h3>Carga Especial Compliance</h3>
+    <div class="desc">Matching horário de consumo limpo para grandes cargas — 24/7 CFE, Escopo 2 horário, correlação temporal do hidrogênio de baixo carbono.<br><b>Vitrines:</b> <a href="https://trigocom-code.github.io/financiamento-de-usinas/prova-horaria-datacenters.html" target="_blank" rel="noopener">Prova Horária DC</a> · <a href="https://trigocom-code.github.io/financiamento-de-usinas/hidrogenio-prova-horaria.html" target="_blank" rel="noopener">Hidrogênio</a> · <a href="https://trigocom-code.github.io/financiamento-de-usinas/bitcoin-verde-soa.html" target="_blank" rel="noopener">Bitcoin Verde</a> · <b>Gatilhos:</b> MME (REDATA) · EPE · ESG</div>
+  </div>
+
+  <div class="card" style="border-top:4px solid #040F2F">
+    <div class="top"><span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#040F2F;color:#FEC73D;font-weight:800;font-size:13px">V6</span><span class="vetor">E·Institucional (federações)</span></div>
+    <h3>Regulatory Submission Support</h3>
+    <div class="desc">Subsídio técnico rastreável a consultas públicas, notas técnicas e análise de impacto — alimentado por dado oficial reexecutável.<br><b>Vitrine:</b> <a href="https://trigocom-code.github.io/financiamento-de-usinas/certificacao-esg-auditavel.html" target="_blank" rel="noopener">Certificação ESG Auditável</a> · <b>Gatilhos:</b> todos os monitores (CPs abertas)</div>
+  </div>
+
+  <div class="card" style="border-top:4px solid #1C5AAD">
+    <div class="top"><span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#1C5AAD;color:#fff;font-weight:800;font-size:13px">V7</span><span class="vetor">A·Geração · C·Consumidor</span></div>
+    <h3>Sandbox &amp; Ancillary Services</h3>
+    <div class="desc">Medição e evidência para serviços ancilares e sandbox regulatório (ex.: controle de tensão) — a SOA prova a prestação; não opera o serviço.<br><b>Vitrines:</b> <a href="https://trigocom-code.github.io/financiamento-de-usinas/baterias-curtailment.html" target="_blank" rel="noopener">Baterias</a> · <a href="https://trigocom-code.github.io/financiamento-de-usinas/iptu-verde-auditavel.html" target="_blank" rel="noopener">IPTU Verde</a> · <b>Gatilhos:</b> ANEEL · ONS (Sandbox)</div>
+  </div>
+
+  <div class="card" style="border-top:4px solid #FC9D27">
+    <div class="top"><span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#FC9D27;color:#040F2F;font-weight:800;font-size:13px">V8</span><span class="vetor">F·Seguros</span></div>
+    <h3>Insurance Risk Evidence &amp; Index</h3>
+    <div class="desc">Evidência e índice neutro para o mercado segurador de renováveis: prova de sinistro imutável (claims), dado-verdade para subscrição e índice para paramétrico. A SOA fornece o dado; quem subscreve precifica.<br><b>Vitrine:</b> <a href="https://trigocom-code.github.io/financiamento-de-usinas/seguros-renovaveis-soa.html" target="_blank" rel="noopener">Seguros de Renováveis</a> · <b>Gatilhos:</b> Seguros (SUSEP/CNSP) · CCEE · ESG</div>
+  </div>
+
+  <div class="card" style="border-top:4px solid #FEC73D">
+    <div class="top"><span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#FEC73D;color:#040F2F;font-weight:800;font-size:12px">+</span><span class="vetor">Transversais</span></div>
+    <h3>Linhas transversais</h3>
+    <div class="desc"><b>Capital Verde</b> (D·Banca — janelas de financiamento com lastro auditável) · <b>iCleanSolar</b> (B2C — manutenção com prova, gate NR-35/NR-10) · <b>sHEC</b> (prova de frustração renovável — nunca claim ambiental). Atravessam os vetores e usam a mesma máquina.<br><b>Vitrines:</b> <a href="https://trigocom-code.github.io/financiamento-de-usinas/capital-verde-usinas.html" target="_blank" rel="noopener">Capital Verde</a> · <a href="https://trigocom-code.github.io/financiamento-de-usinas/icleansolar-limpeza-auditavel.html" target="_blank" rel="noopener">iCleanSolar</a></div>
+  </div>
+
+</div>
+
+<h2 class="sec">4ª Camada · Motor QSV — a base de prova dos folders</h2>
+<p class="sec-sub">A camada que liga os dados oficiais aos folders com <b>prova auditável por terceiro</b> (na arquitetura técnica, é a "Camada 3": dados &rarr; folders &rarr; prova). Um único motor, um manifesto por folder — nenhum número chega ao folder sem passar pelo QSV, o diferencial da SOA/SOS.</p>
+
+<div class="grid">
+
+  <div class="card" data-file="SOA_SOS_Arquitetura_Camada3_MotorQSV_v2.pdf">
+    <div class="top"><span class="vetor">Arquitetura &middot; CTO / due-diligence &middot; v2.0</span></div>
+    <h3>Arquitetura do Motor QSV — v2.0</h3>
+    <div class="desc">Pipeline C1&rarr;C5 &middot; score 0&ndash;3/hora por hex&aacute;gono H3 &middot; Evidence Pack determin&iacute;stico (predicado temporal fechado + extrato congelado + fontes versionadas) &middot; duas classes de fun&ccedil;&atilde;o (DETECTA_E_REGISTRA &times; ATUA_E_BLOQUEIA, R1&ndash;R5) &middot; QSV Manifest com bloco enforcement &middot; mapa dos 12 folders &middot; roadmap. Consolida os adendos v1.1 e v1.2 (PDF, 12 p&aacute;ginas).</div>
+    <div class="meta"><span class="ts">PDF &middot; v2.0 &middot; 01/07/2026</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/SOA_SOS_Arquitetura_Camada3_MotorQSV_v2.pdf">Abrir</a></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="vetor">Pipeline de prova</span></div>
+    <h3>Como o motor produz a evid&ecirc;ncia</h3>
+    <div class="desc">&#9312; Ingest&atilde;o (SQL versionado, read-only) &rarr; C1 hash &rarr; C2 timestamp &rarr; C3 g&ecirc;meo digital (pvlib) &rarr; C4 vizinhos (H3) &rarr; &Sigma; score 0&ndash;3 &rarr; Evidence Pack &rarr; C5 batch on-chain (Polygon) &rarr; Feed &rarr; Folder. Degrada&ccedil;&atilde;o graciosa: <code>qsvDegraded</code>, nunca n&uacute;mero sem lastro.</div>
+    <div class="meta"><span class="ts">off-chain first &middot; 5 TX/dia</span></div>
+  </div>
+
+  <div class="card">
+    <div class="top"><span class="vetor">Auditável por terceiro</span></div>
+    <h3>Verifica&ccedil;&atilde;o independente</h3>
+    <div class="desc">De posse do Evidence Pack, o auditor re-executa o SQL, confere o input hash, valida o Merkle proof e checa a root on-chain &mdash; reproduzindo o n&uacute;mero <b>bit a bit</b>, sem depender da SOA.</div>
+    <div class="meta"><span class="ts">SQL + Merkle + on-chain</span></div>
+  </div>
+
+</div>
+
 <div class="note warn">
   <b>O que NÃO está aqui.</b> Materiais estáticos (Atlas de Curtailment, Mapa BESS por Estado, Copa SIN, OnePager, Institucional, Catálogo de Vetores) são snapshots de referência e não são regenerados automaticamente. Estão no <a href="https://trigocom-code.github.io/financiamento-de-usinas/_Catalogo_SOA.html" target="_blank" rel="noopener">catálogo geral</a> — confirme com a equipe se ainda estão atuais antes de usar.
 </div>
 
 <div class="foot">
-  <b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · Sustainability Operating System · Catálogo de Materiais · v1.4 (01/07/2026 · +5 monitores setoriais · ABSOLAR como fonte F3 · correções da auditoria de 01/07: REN 1.162/2026, CP ANEEL 001/2026, Lei 15.269 = 16 vetos)<br/>
+  <b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · Sustainability Operating System · Catálogo de Materiais · v1.5 (02/07/2026 · organização em 4 camadas: Folders → Monitores → Vetores discriminados → Motor QSV · pedido do CTO)<br/>
   Rua Pais Leme, 215 · Conj. 1713 · Pinheiros · São Paulo / SP ·
   <a href="mailto:limonta@solaroneaccount.com" style="color:#1C5AAD;">limonta@solaroneaccount.com</a> ·
   <a href="mailto:pedro@solaroneaccount.com" style="color:#1C5AAD;">pedro@solaroneaccount.com</a> ·
