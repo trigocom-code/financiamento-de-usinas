@@ -3,7 +3,7 @@
     "orgao": "SUSEP/CNSP/STF (seguros · vetor V8)",
     "schema_version": "1.0",
     "descricao": "Monitor Regulatório de Seguros (V8). Trava canônica: a SOA/SOS é provedor NEUTRO de dado/índice/evidência — NUNCA seguradora, corretora ou MGA; NUNCA precifica, garante ou transfere risco. Cada item é PERÍMETRO/RISCO, HABILITADOR ou DEVER DO DADO. Validação jurídica de advogado de seguros é necessária antes de uso externo — o monitor sinaliza, não dá parecer.",
-    "verificado_em": "2026-07-01",
+    "verificado_em": "2026-07-02",
     "fonte_canonica": "gov.br/susep + CNSP + STF (ADI) + DOU",
     "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
