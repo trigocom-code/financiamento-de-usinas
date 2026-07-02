@@ -38,8 +38,8 @@
       "qsv_fontes_independentes": [
         {
           "tipo": "F1_pagina_oficial",
-          "ref": "https://www.ons.org.br/ — NT DPL 0111/2025",
-          "trecho_literal": "",
+          "ref": "https://www.ons.org.br/ — NT DPL 0111/2025 (documento integral em mãos, lido 01/07/2026)",
+          "trecho_literal": "Nota Técnica Conjunta ONS e EPE · NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 · 'Requisitos técnicos mínimos para a conexão de sistemas de armazenamento de energia via baterias' (Revisão 4). Grid forming: 'Esta estratégia corresponde à operação como formador de rede (Grid Forming) e fonte de tensão.'",
           "associacao_origem": null,
           "gt_origem": null
         },
@@ -51,7 +51,7 @@
           "gt_origem": null
         }
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "numero_status": "ANCORADO",
       "validacao_banco_SOA": {
         "aplicavel": false,
         "query_versionada": null,

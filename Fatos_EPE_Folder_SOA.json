@@ -94,8 +94,8 @@
       "qsv_fontes_independentes": [
         {
           "tipo": "F1_pagina_oficial",
-          "ref": "https://www.epe.gov.br/pt/imprensa/noticias/...",
-          "trecho_literal": "",
+          "ref": "https://www.epe.gov.br/pt/imprensa/noticias/mme-e-epe-lancam-consultas-publicas-do-pde-2035-e-do-pne-2055-e-reforcam-planejamento-estrategico-do-setor-energetico",
+          "trecho_literal": "o país possui potencial renovável anual estimado em cerca de 1,6 bilhão de toneladas equivalentes de petróleo",
           "associacao_origem": null,
           "gt_origem": null
         },
@@ -114,7 +114,7 @@
           "gt_origem": null
         }
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "numero_status": "ANCORADO",
       "validacao_banco_SOA": {
         "aplicavel": false,
         "query_versionada": null,
@@ -380,7 +380,7 @@
           "gt_origem": null
         }
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "numero_status": "SEM_NUMEROS",
       "validacao_banco_SOA": {
         "aplicavel": false,
         "query_versionada": null,
@@ -567,8 +567,9 @@
       "status": "VIGENTE",
       "qsv_cor": "AZUL",
       "norma": "EPE · FAQ/Manual LRCAP 2026 (Armazenamento) · Portaria MME 136/2026",
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "fonte": "F3 ABSOLAR (GT Armazenamento, 15/06/2026) + F1 EPE (confirmar no portal LRCAP)",
+      "numero_status": "ANCORADO",
+      "fonte": "F1 EPE — 'FAQ Leilões · LRCAP de 2026 – Armazenamento Nacional e Armazenamento · Portaria Normativa MME n. 136, de 1° de junho de 2026' (Versão 2, 16/06/2026, documento em mãos, lido 01/07/2026) + F3 ABSOLAR (GT Armazenamento, 15/06/2026)",
+      "trecho_literal": "Conforme o Art 7° da Portaria Normativa MME n. 136/2026, inciso IV, não serão habilitados tecnicamente 'SAEs cuja eficiência total (Round-Trip Efficiency - RTE) seja inferior a 85% referenciada ao PMI, ao longo do horizonte contratual'.",
       "vetores_afetados": [
         "V3",
         "V7"

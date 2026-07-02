@@ -271,7 +271,7 @@
           "gt_origem": null
         }
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "numero_status": "SEM_NUMEROS",
       "validacao_banco_SOA": {
         "aplicavel": true,
         "query_versionada": "energia_publica.preco_ccee_horario (banco SOA · agregar mensal)",
