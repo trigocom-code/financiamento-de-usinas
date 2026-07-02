@@ -72,6 +72,39 @@
       ]
     },
     {
+      "folder": "acesso-transmissao-pnast.html",
+      "categoria": "vivo_sob_gatilho",
+      "depende_de": [
+        {"json": "Fatos_MME", "ref": "MME-PORTARIA-129-DEC-12772", "ref_tipo": "fato_id"},
+        {"json": "Fatos_ONS", "ref": "ONS-NT-PNAST", "ref_tipo": "fato_id"},
+        {"json": "Fatos_EPE", "ref": "EPE-PET-PELP", "ref_tipo": "fato_id"},
+        {"json": "Fatos_EPE", "ref": "EPE-ATENDIMENTO-PARA", "ref_tipo": "fato_id"}
+      ],
+      "nota": "Folder novo 01/07/2026 - vetor V1/V2 (Temporadas de Acesso / PNAST)."
+    },
+    {
+      "folder": "capital-verde-usinas.html",
+      "categoria": "vivo_sob_gatilho",
+      "depende_de": [
+        {"json": "Fatos_CapitalVerde", "ref": "Fundo Clima — BNDES", "ref_tipo": "tema"},
+        {"json": "Fatos_CapitalVerde", "ref": "Eco Invest Brasil — Min. Fazenda", "ref_tipo": "tema"},
+        {"json": "Fatos_CapitalVerde", "ref": "Debêntures de Infraestrutura / incentivadas verdes", "ref_tipo": "tema"},
+        {"json": "Fatos_CapitalVerde", "ref": "Sustainability-Linked (SLL/SLB)", "ref_tipo": "tema"},
+        {"json": "Fatos_CapitalVerde", "ref": "Finep Mais Inovação Brasil — Rodada 2 · Transição Energética", "ref_tipo": "tema"}
+      ],
+      "nota": "Folder novo 01/07/2026 - janelas de capital verde (monitor diario proprio)."
+    },
+    {
+      "folder": "hidrogenio-prova-horaria.html",
+      "categoria": "vivo_sob_gatilho",
+      "depende_de": [
+        {"json": "Fatos_MME", "ref": "MME-PNH2", "ref_tipo": "fato_id"},
+        {"json": "Fatos_EPE", "ref": "EPE-CARGAS-CE-PI", "ref_tipo": "fato_id"},
+        {"json": "Fatos_ESG", "ref": "Mercado regulado de carbono (SBCE)", "ref_tipo": "tema"}
+      ],
+      "nota": "Folder novo 01/07/2026 - V5 hidrogenio de baixo carbono (correlacao temporal)."
+    },
+    {
       "folder": "icleansolar-limpeza-auditavel.html",
       "categoria": "estatico_puro",
       "depende_de": [],
