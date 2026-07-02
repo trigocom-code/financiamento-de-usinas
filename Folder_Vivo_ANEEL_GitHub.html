@@ -140,10 +140,12 @@ function badgeTipo(f){
 }
 
 function alertaNumero(f){
-  if(f.numero_status==="ALEGADO_NAO_ANCORADO"){
-    return `<span title="número sem frase-fonte colada — não publicável externamente" style="display:inline-block;font-size:11px;color:#fff;background:#B91C1C;padding:3px 8px;border-radius:999px">⚠ não-ancorado</span>`;
+  if(f.numero_status!=="ALEGADO_NAO_ANCORADO") return "";
+  const st=(f.status||"").toUpperCase();
+  if(["AGENDADO","EM DELIBERA","EM TRAMITA","EM DEBATE","ABERTO"].some(s=>st.indexOf(s)>=0)){
+    return `<span title="a fonte oficial ainda não foi publicada (ato em deliberação/agendado) — o número será ancorado quando o ato sair; não é pendência de curadoria SOA" style="display:inline-block;font-size:11px;color:#7A4D00;background:#FEF3C7;border:1px solid #FC9D27;padding:3px 8px;border-radius:999px">⏳ aguarda regulamentação · não-ancorado</span>`;
   }
-  return "";
+  return `<span title="número sem frase-fonte colada — ancoragem pendente na fonte oficial; não publicável externamente" style="display:inline-block;font-size:11px;color:#fff;background:#B91C1C;padding:3px 8px;border-radius:999px">⚠ não-ancorado · ancoragem pendente</span>`;
 }
 
 function render(data){
