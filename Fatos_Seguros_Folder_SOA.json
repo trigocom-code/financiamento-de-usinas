@@ -35,19 +35,21 @@
       "verificado_em": "2026-06-30"
     },
     {
-      "tema": "CP SUSEP 14/2025 — resseguro / retrocessão / cosseguro",
-      "valor": "[HABILITADOR/contexto] Alinhamento à Lei 15.040 + LC 213/2025; contribuições encerradas 29/12/2025; resolução final esperada em 2026 (substitui a CNSP 451/2022). Importa ao V8 porque o paramétrico de grandes riscos de renováveis depende de capacidade de resseguro. Baseline a vigiar: publicação da resolução em 2026.",
+      "tema": "Minuta de Resolução CNSP de resseguro/retrocessão/cosseguro — aprovada no Conselho Diretor da SUSEP (17/06)",
+      "valor": "[HABILITADOR] Minuta pós-CP 14/2025 (sucessora da CNSP 451/2022; adequação à Lei 15.040/2024 + LC 213/2025) aprovada na 11ª reunião ordinária do Conselho Diretor da SUSEP em 17/06/2026 e encaminhada ao CNSP (Processo 15414.632309/2025-35, relator Carlos Roberto A. de Queiroz/Diore). Vigência proposta: 02/01/2027 (art. 47). Pontos que importam ao V8: (a) supressão das cláusulas de claims cooperation/claims control (incompatíveis com o art. 76 da Lei 15.040 — a seguradora é a única responsável pela regulação do sinistro), COM dispositivo interpretativo: consultar o ressegurador não é vedado, a decisão final é da seguradora → sem controle contratual do sinistro, cresce a demanda do ressegurador por prova neutra e auditável da regulação feita pela cedente (Evidence Pack/Módulo A); (b) oferta preferencial mínima de 40% a resseguradores locais (art. 6º; não se aplica à retrocessão); (c) formalização contratual em 90 dias; (d) reforço de monitoramento de concentração/acúmulo de riscos (princípios IAIS) — relevante para carteiras de curtailment, risco correlacionado; (e) a minuta é ESTRUTURAL (cessão/retrocessão/cosseguro): não trata de seguro paramétrico nem da figura do provedor de índice. Próximo passo regulatório: revisão da Circular SUSEP 683/2022 (procedimentos operacionais). 204 contribuições na CP (48 acatadas, 46 parciais, 109 não, 1 desconsiderada).",
       "status": "EM DELIBERAÇÃO",
-      "norma": "CP SUSEP 14/2025 · CNSP 451/2022",
-      "url": "https://www.gov.br/susep/",
-      "verificado_em": "2026-06-30"
+      "norma": "Minuta Resolução CNSP (pós-CP SUSEP 14/2025) · substitui CNSP 451/2022 · Lei 15.040/2024 · LC 213/2025",
+      "url": "https://legismap.com.br/conteudos/artigos-e-noticias/susep-aprova-minuta-de-resolucao-sobre-resseguro-retrocessao-e-operacoes-de-cosseguro",
+      "verificado_em": "2026-07-02",
+      "pendencia_verificacao": "NÃO é norma vigente: aprovada no Conselho Diretor da SUSEP e encaminhada ao CNSP — falta deliberação do CNSP e publicação no DOU. Desfecho relatado por LegisMap/Roncarati (18/06, fonte secundária qualificada) + pauta oficial SUSEP [ATO]; ata oficial da 11ª reunião a conferir. Vigência 02/01/2027 e art. 47 = texto da minuta, sujeitos a alteração no CNSP. Flexibilização do limite de 70% de retrocessão mediante justificativa: consta da cobertura da fase de CP — confirmar no texto final. Validação jurídica de advogado de seguros necessária antes de uso externo."
     },
     {
       "tema": "Lacuna — norma dedicada ao paramétrico com 'agente de cálculo'",
-      "valor": "[DEVER DO DADO] Não há norma SUSEP dedicada ao seguro paramétrico com figura formal de 'agente de cálculo'. A PSR reconhece o paramétrico, mas falta padronização de índice/metodologia/validação atuarial — é o vazio que pode virar argumento para o provedor neutro de índice (a SOA), sem nunca subscrever risco.",
+      "valor": "[DEVER DO DADO] Não há norma SUSEP dedicada ao seguro paramétrico com figura formal de 'agente de cálculo'. A PSR reconhece o paramétrico, mas falta padronização de índice/metodologia/validação atuarial — é o vazio que pode virar argumento para o provedor neutro de índice (a SOA), sem nunca subscrever risco. Confirmação adicional (17/06): a minuta CNSP de resseguro aprovada no Conselho Diretor também NÃO trata de paramétrico nem de provedor de índice — a lacuna persiste. Ambivalência a manter: é oportunidade de posicionamento E risco de falta de reconhecimento formal do gatilho (mitigar contratualmente o basis risk nos termos da Lei 15.040).",
       "status": "PENDENTE",
       "norma": "lacuna regulatória (SUSEP)",
-      "verificado_em": "2026-06-30"
+      "verificado_em": "2026-07-02",
+      "pendencia_verificacao": "Reavaliar quando sair o texto final da resolução de seguros de danos (CP 10/2025) e da resolução de resseguro (pós-CNSP)."
     }
   ]
 }
