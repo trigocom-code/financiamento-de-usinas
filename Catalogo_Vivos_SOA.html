@@ -417,7 +417,7 @@
   <a href="mailto:pedro@solaroneaccount.com" style="color:#1C5AAD;">pedro@solaroneaccount.com</a> ·
   <a href="https://wa.me/5544999720477" target="_blank" rel="noopener" style="color:#25D366;">WhatsApp</a><br/>
   Três pedidos de patente depositados no INPI: BR 10 2026 003913-6 · BR 10 2026 010655-0 · BR 10 2026 011466-9<br/>
-  <span style="color:#9ca3af;">Selos de frescor consultam a API pública do GitHub no carregamento · sem credenciais · sem rastreamento.</span>
+  <span style="color:#9ca3af;">Selos de frescor: manifesto publicado junto com o site (_frescor.json, gerado pela rotina diária) · fallback: API pública do GitHub com cache de 30 min · sem credenciais · sem rastreamento.</span>
 </div>
 
 </div>
@@ -439,31 +439,59 @@
     return {cls:'r', label: Math.floor(diffHours/24) + 'd · DEFASADO'};
   }
 
-  async function loadOne(card) {
-    const file = card.dataset.file;
+  function render(card, d, origem) {
     const tsEl = card.querySelector('[data-ts]');
     const fEl = card.querySelector('[data-fresh]');
+    const diffH = (Date.now() - d.getTime()) / 36e5;
+    const cls = classify(diffH);
+    tsEl.innerHTML = '<b>Última regeneração' + (origem ? ' (' + origem + ')' : '') + ':</b><br>' + fmt(d);
+    fEl.className = 'fresh ' + cls.cls;
+    fEl.textContent = cls.label;
+  }
+  function renderIndisponivel(card, msg) {
+    const tsEl = card.querySelector('[data-ts]');
+    const fEl = card.querySelector('[data-fresh]');
+    tsEl.innerHTML = '<b>Selo indisponível</b><br>' + msg;
+    fEl.className = 'fresh a';
+    fEl.textContent = 'selo indisponível';
+  }
+
+  // Fallback: API do GitHub com cache local de 30 min (limite anonimo = 60 req/h/IP)
+  async function viaApi(card, file) {
+    const ck = 'frescor:' + file;
+    try {
+      const hit = JSON.parse(localStorage.getItem(ck) || 'null');
+      if (hit && (Date.now() - hit.t) < 30*60*1000) { render(card, new Date(hit.d), 'cache'); return; }
+    } catch(e) {}
     try {
       const url = 'https://api.github.com/repos/' + REPO + '/commits?path=' + encodeURIComponent(file) + '&per_page=1';
       const r = await fetch(url, {cache: 'no-store'});
       if (!r.ok) throw new Error('HTTP ' + r.status);
       const commits = await r.json();
       if (!commits.length) throw new Error('sem commits');
-      const c = commits[0];
-      const d = new Date(c.commit.author.date);
-      const diffH = (Date.now() - d.getTime()) / 36e5;
-      const cls = classify(diffH);
-      tsEl.innerHTML = '<b>Última regeneração:</b><br>' + fmt(d);
-      fEl.className = 'fresh ' + cls.cls;
-      fEl.textContent = cls.label;
+      const d = new Date(commits[0].commit.author.date);
+      try { localStorage.setItem(ck, JSON.stringify({t: Date.now(), d: d.toISOString()})); } catch(e) {}
+      render(card, d, 'commit');
     } catch(e) {
-      tsEl.innerHTML = '<b>—</b> ' + e.message;
-      fEl.className = 'fresh r';
-      fEl.textContent = 'erro';
+      if (String(e.message).indexOf('403') >= 0) renderIndisponivel(card, 'limite de consultas da API atingido — o material abre normalmente; recarregue em ~1h');
+      else renderIndisponivel(card, e.message);
     }
   }
 
-  document.querySelectorAll('.card').forEach(loadOne);
+  // Fonte primária do selo: manifesto estático _frescor.json (1 fetch, sem API, sem limite)
+  async function boot() {
+    let manifesto = null;
+    try {
+      const r = await fetch('_frescor.json?v=' + Date.now(), {cache: 'no-store'});
+      if (r.ok) { const j = await r.json(); manifesto = j.arquivos || null; }
+    } catch(e) {}
+    document.querySelectorAll('.card').forEach(function(card) {
+      const file = card.dataset.file;
+      if (manifesto && manifesto[file]) render(card, new Date(manifesto[file]), 'manifesto');
+      else viaApi(card, file);
+    });
+  }
+  boot();
 })();
 </script>
 </body>
