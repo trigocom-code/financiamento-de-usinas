@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "verificado_em": "2026-07-02",
+    "verificado_em": "2026-07-03",
     "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
   "fatos": [
