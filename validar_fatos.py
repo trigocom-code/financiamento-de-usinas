@@ -185,6 +185,10 @@ def erros_beneficios(path):
             if ref not in ids: e.append("%s pacotes[%d] (%s): ref de benefício inexistente '%s'" % (n,i,p.get("id"),ref))
         for v in (p.get("vetores") or []):
             if v not in VETORES_CANON: e.append("%s pacotes[%d] (%s): vetor fora do canônico '%s'" % (n,i,p.get("id"),v))
+    for i,c in enumerate(d.get("cruzamento_regulatorio") or []):
+        if not c.get("fato_id"): e.append("%s cruzamento_regulatorio[%d]: falta fato_id" % (n,i))
+        for v in (c.get("vetores") or []):
+            if v not in VETORES_CANON: e.append("%s cruzamento_regulatorio[%d] (%s): vetor fora do canônico '%s'" % (n,i,c.get("fato_id"),v))
     return e
 
 def main():

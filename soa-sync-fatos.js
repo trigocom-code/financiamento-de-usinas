@@ -4,11 +4,14 @@
  * Governança: só LÊ status=="verificado"; nunca crava; nunca renderiza "pendente".
  * Segurança: injeta via textContent/DOM (nunca innerHTML com dado do JSON).
  *
- * Placeholder principal (os TRÊS tópicos do protocolo SOA, num único bloco):
+ * Placeholder principal (os tópicos do protocolo SOA, num único bloco):
  *   <div data-composicao-vetor="BESS auditável"></div>
  *     1 · O que entregamos   (Evidence Pack / HEC / sHEC do vetor)
  *     2 · O que o cliente ganha  (benefícios filtrados, só verificado)
- *     3 · O que você pode acessar  (adjacências que a composição destrava)
+ *     3 · O que o monitor regulatório exige agora  (fatos vivos cruzados por fato_id, com semáforo — só se houver)
+ *     4 · O que você pode acessar  (adjacências que a composição destrava)
+ *   Overview da raiz: <div data-protocolo-overview></div> (agrega os 4 tópicos)
+ *   Cruzamento regulatório: Fatos_Beneficios.cruzamento_regulatorio[] liga fato_id→vetor; conteúdo vem AO VIVO de Fatos_Regulatorios.fatos[].
  *
  * Placeholders auxiliares (retrocompatíveis):
  *   <div data-entregaveis-vetor="X"></div> · <div data-beneficios-vetor|ator|canal="X"></div>
@@ -45,6 +48,17 @@
       ".soa-ben-tbl tr:nth-child(even) td{background:#f4f5f6}.soa-ben-tit{font-weight:bold;color:#040F2F}.soa-ben-sem{color:#9a3412;font-weight:600}"+
       ".soa-pkg{border:1.5px solid #1C5AAD;border-radius:14px;padding:16px 18px;background:#e7eefb;margin:8px 0}"+
       ".soa-pkg h4{margin:0 0 6px;color:#040F2F;font:700 16px Arial}.soa-pkg .tese{color:#4a4f55;font-size:13.5px;margin:0;line-height:1.55}.soa-pkg .vet{font:700 11px Arial;color:#1C5AAD;margin-top:8px}"+
+      ".soa-reg{display:flex;flex-direction:column;gap:10px;margin:8px 0}"+
+      ".soa-regc{border:1.5px solid #E0E2E2;border-left:5px solid #9aa0a6;border-radius:12px;padding:13px 15px;background:#fff}"+
+      ".soa-regc.v{border-left-color:#1a9c4a}.soa-regc.a{border-left-color:#1C5AAD}.soa-regc.l{border-left-color:#FC9D27}"+
+      ".soa-regc .rh{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:5px}"+
+      ".soa-regc .rdot{width:11px;height:11px;border-radius:50%;background:#9aa0a6;flex:none}"+
+      ".soa-regc.v .rdot{background:#1a9c4a}.soa-regc.a .rdot{background:#1C5AAD}.soa-regc.l .rdot{background:#FC9D27}"+
+      ".soa-regc .rtema{font:700 14px Arial;color:#040F2F}"+
+      ".soa-regc .rstatus{font:700 10.5px Arial;letter-spacing:.03em;color:#40474f;background:#eef0f3;border-radius:999px;padding:2px 9px;text-transform:uppercase}"+
+      ".soa-regc .rporque{font:600 13px Arial;color:#1C5AAD;margin:2px 0 5px}"+
+      ".soa-regc .rval{font:400 13px Arial;color:#4a4f55;line-height:1.5}"+
+      ".soa-regc .rnorma{font:400 12px Arial;color:#6b7178;margin-top:5px}"+
       "@media(max-width:640px){.soa-ent{grid-template-columns:1fr}}";
     var s=el("style"); s.id="soa-sync-style"; s.textContent=css; document.head.appendChild(s);
   }
@@ -95,10 +109,30 @@
     return { pkgs:pkgs, beneficios:out };
   }
 
+  function corClass(qsv){ var c=String(qsv||"").toUpperCase(); return c==="VERDE"?"v":c==="LARANJA"?"l":c==="AZUL"?"a":""; }
+  function regsDoVetor(vetor, regs, cruz){
+    var mapa={}; cruz.forEach(function(c){ if(Array.isArray(c.vetores)&&c.vetores.indexOf(vetor)!==-1) mapa[c.fato_id]=c.porque_certificar||""; });
+    var out=[];
+    regs.forEach(function(f){ if(mapa.hasOwnProperty(f.fato_id)) out.push({ f:f, porque:mapa[f.fato_id] }); });
+    return out;
+  }
+  function cardsRegulatorios(lista){
+    var g=el("div","soa-reg");
+    lista.forEach(function(x){ var f=x.f, c=el("div","soa-regc "+corClass(f.qsv_cor));
+      var h=el("div","rh"); h.appendChild(el("span","rdot")); h.appendChild(el("span","rtema",f.tema));
+      if(f.status) h.appendChild(el("span","rstatus",f.status)); c.appendChild(h);
+      if(x.porque) c.appendChild(el("div","rporque","▸ "+x.porque));
+      c.appendChild(el("div","rval",f.valor||""));
+      if(f.norma) c.appendChild(el("div","rnorma","Base: "+f.norma));
+      g.appendChild(c); });
+    return g;
+  }
+
   function renderComposicao(host, vetor, all){
     ensureStyle(); host.className=(host.className+" soa-comp").trim(); host.innerHTML="";
     var ent=all.entregaveis.filter(function(e){ return e.vetor===vetor; });
     var gan=filtrar(all.beneficios,{vetor:vetor});
+    var regs=regsDoVetor(vetor, all.regulatorios, all.cruzamento);
     var adj=adjacentes(vetor, all.beneficios, all.pacotes);
 
     host.appendChild(topic("1 · O que entregamos","O selo probatório SOA para este vetor — Evidence Pack / HEC / sHEC"));
@@ -107,7 +141,14 @@
     host.appendChild(topic("2 · O que o cliente ganha","Benefícios com base legal — só o que é direito verificado"));
     host.appendChild(gan.length ? tabelaBeneficios(gan) : fallback());
 
-    host.appendChild(topic("3 · O que você pode acessar","Adjacências que a composição do protocolo SOA destrava"));
+    var nAcessar="3";
+    if(regs.length){
+      host.appendChild(topic("3 · O que o monitor regulatório exige agora","Fatos vivos que tornam a certificação um requisito — 🟢 vigente/ancorado · 🔵 referência · 🟠 pendente"));
+      host.appendChild(cardsRegulatorios(regs));
+      nAcessar="4";
+    }
+
+    host.appendChild(topic(nAcessar+" · O que você pode acessar","Adjacências que a composição do protocolo SOA destrava"));
     if(adj.pkgs.length || adj.beneficios.length){
       adj.pkgs.forEach(function(p){ host.appendChild(pacoteBox(p, all.beneficios)); });
       if(adj.beneficios.length) host.appendChild(tabelaBeneficios(adj.beneficios));
@@ -127,7 +168,12 @@
     host.appendChild(topic("2 · O que o cliente ganha","Direitos com base legal, lidos ao vivo — só o que é verificado"));
     host.appendChild(gan.length ? tabelaBeneficios(gan) : fallback());
 
-    host.appendChild(topic("3 · O que você pode acessar","Composições do protocolo SOA — vetores que se somam num só selo"));
+    var idsCruz={}; (all.cruzamento||[]).forEach(function(c){ idsCruz[c.fato_id]=true; });
+    var regsAll=(all.regulatorios||[]).filter(function(f){ return idsCruz[f.fato_id]; }).map(function(f){ return { f:f, porque:"" }; });
+    host.appendChild(topic("3 · O que o monitor regulatório exige agora","Fatos vivos cruzados aos vetores — 🟢 vigente/ancorado · 🔵 referência · 🟠 pendente"));
+    host.appendChild(regsAll.length ? cardsRegulatorios(regsAll) : fallback());
+
+    host.appendChild(topic("4 · O que você pode acessar","Composições do protocolo SOA — vetores que se somam num só selo"));
     if(pkgs.length){ pkgs.forEach(function(p){ host.appendChild(pacoteBox(p, all.beneficios)); }); }
     else { host.appendChild(fallback()); }
     host.setAttribute("data-fato-status","sincronizado");
@@ -135,7 +181,8 @@
 
   function aplicar(ns){
     ensureStyle();
-    var all={ beneficios:collectArray(ns,"beneficios"), pacotes:collectArray(ns,"pacotes"), entregaveis:collectArray(ns,"entregaveis") };
+    var all={ beneficios:collectArray(ns,"beneficios"), pacotes:collectArray(ns,"pacotes"), entregaveis:collectArray(ns,"entregaveis"),
+              regulatorios:(ns.regulatorios&&ns.regulatorios.fatos)||[], cruzamento:collectArray(ns,"cruzamento_regulatorio") };
 
     document.querySelectorAll("[data-protocolo-overview]").forEach(function(h){ renderOverview(h, all); });
 
