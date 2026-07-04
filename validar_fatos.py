@@ -12,8 +12,19 @@ EMAILS_PROIBIDOS = ["solaroneaccount.com.br","contato@solaroneaccount"]
 ANDAIME = [r"\[CORRE[ÇC][ÃA]O", r"\[A VERIFICAR", r"\(a verificar", r"\[TODO", r"\[FIXME", r"\[NOTA:"]
 CAMPOS_RENDERIZADOS = ("valor","tema","norma")
 # --- schema unificado de benefícios (v1) ---
-VETORES_CANON = {"BESS auditável","CBAM exportável","Compliance SBCE","Contencioso regulatório",
-                 "Data centers 24/7 CFE","H2V certificado","MMGD não observável"}
+# Taxonomia ÚNICA (Opção B, decidida 04/07/2026): 7 vetores de PROVA + 3 frentes NÃO-prova.
+# V-codes V1..V8 APOSENTADOS — ver _CANON_Mapa_Vetores_Vcode_v1.md (ponte de migração).
+VETORES_CANON = {  # Opção B (04/07/2026): 7 de PROVA + 7 NÃO-prova = 14. Nomes canônicos da régua §5.
+                 "BESS auditável","CBAM exportável","Compliance SBCE","Contencioso regulatório",
+                 "Data centers 24/7 CFE","H2V certificado","MMGD não observável",
+                 # 6 propostas de expansão da régua §5 (adotadas sob B) + Mercado & PSM (Monitor v1.2, gap CP17/2026):
+                 "Ancilares auditáveis","Bancabilidade & seguros","Cidades/IPTU Verde","GEC biometano",
+                 "M2M & IoT","PNAST & acesso","Mercado & PSM"}
+# V-codes legados aceitos SÓ como metadado v_origem (nunca como vetor de destino renderizado):
+VCODES_LEGADO = {"V1","V2","V3","V4","V5","V6","V7","V8"}
+VCODE_PARA_CANON = {"V1":"PNAST & acesso","V2":"MMGD não observável","V3":"BESS auditável",
+                    "V4":"Contencioso regulatório","V5":"Data centers 24/7 CFE","V6":"Mercado & PSM",
+                    "V7":"Ancilares auditáveis","V8":"Bancabilidade & seguros"}
 ATORES_CANON = {"pf","pj","industria","municipio","estado","uniao","comercial"}
 CANAIS_CANON = {"conta","imposto","credito","captacao","mercado","carbono","relato"}
 STATUS_CANON = {"verificado","pendente"}
