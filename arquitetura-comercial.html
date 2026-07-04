@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arquitetura Comercial SOA/SOS — v1.0</title>
+<style>
+:root{
+  --navy:#040F2F;--royal:#1C5AAD;--laranja:#FC9D27;--amarelo:#FEC73D;
+  --verde:#1a9c4a;--cinza:#E0E2E2;--texto:#0d1424;--sub:#4a4f55;
+  --vermelho:#A12C3A;--bg:#f4f5f6
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--texto);background:var(--bg);line-height:1.58}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 22px 80px}
+
+/* HEADER */
+header{background:var(--navy);color:#fff;border-radius:16px;padding:30px 34px;margin-bottom:28px}
+header h1{font-size:26px;margin-bottom:6px}
+header .sub{color:#c7cfe0;font-size:14px;line-height:1.5}
+header .meta{margin-top:14px;font-size:12px;color:#aeb8cf;border-top:1px solid #23315c;padding-top:12px}
+
+/* SECTION TITLES */
+h2{color:var(--navy);font-size:20px;margin:36px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--cinza)}
+h2 .badge{display:inline-block;font-size:11px;font-weight:700;color:#fff;border-radius:999px;padding:3px 11px;vertical-align:middle;margin-left:8px}
+h3{color:var(--navy);font-size:15px;margin:18px 0 8px}
+p.lead{color:var(--sub);font-size:13.5px;margin-bottom:10px}
+
+/* CARDS */
+.card{background:#fff;border:1.5px solid var(--cinza);border-radius:14px;padding:20px 22px;margin:12px 0}
+.card.v1{border-left:6px solid var(--royal)}
+.card.v2{border-left:6px solid #0097A7}
+.card.v3{border-left:6px solid var(--laranja)}
+.card.v4{border-left:6px solid var(--vermelho)}
+.card.v5{border-left:6px solid #7B1FA2}
+.card.v7{border-left:6px solid #2E7D32}
+.card.v8{border-left:6px solid #5D4037}
+.card.found{border-left:6px solid var(--verde)}
+
+/* TABLES */
+table{width:100%;border-collapse:collapse;font-size:13px;background:#fff;border:1.5px solid var(--cinza);border-radius:10px;overflow:hidden;margin:10px 0}
+thead th{background:var(--navy);color:#fff;text-align:left;padding:9px 12px;font-size:12px}
+td{padding:8px 12px;border-top:1px solid var(--cinza);vertical-align:top}
+tr:nth-child(even) td{background:#f7f8fa}
+td.k{font-weight:700;color:var(--navy);white-space:nowrap;width:160px}
+td.price{font-weight:700;color:var(--verde);white-space:nowrap}
+td.seg{font-size:12px;color:var(--sub)}
+
+/* CALLOUTS */
+.callout{background:#fffaf0;border:1px solid var(--amarelo);border-left:6px solid var(--laranja);border-radius:12px;padding:14px 18px;margin:14px 0;font-size:13.5px;color:var(--sub)}
+.ok{background:#f0f9f2;border:1px solid #bfe6cb;border-left:6px solid var(--verde);border-radius:12px;padding:14px 18px;margin:14px 0;font-size:13.5px;color:#14532d}
+.alert{background:#fff5f5;border:1px solid #fca5a5;border-left:6px solid var(--vermelho);border-radius:12px;padding:14px 18px;margin:14px 0;font-size:13.5px;color:#7f1d1d}
+
+/* GRID */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:10px 0}
+@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:10px 0}
+@media(max-width:780px){.grid3{grid-template-columns:1fr}}
+
+/* FLOW */
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0;font-size:12.5px}
+.flow .n{background:#eef2fb;border:1px solid #cdd9f0;border-radius:8px;padding:6px 10px;font-weight:600;color:var(--navy)}
+.flow .ar{color:#9aa0a6;font-weight:700;font-size:16px}
+
+/* VCODE PILL */
+.vcode{display:inline-block;font:700 11px Arial;color:#fff;border-radius:6px;padding:2px 9px;vertical-align:middle;margin-right:6px}
+.vcode.v1{background:var(--royal)}.vcode.v2{background:#0097A7}.vcode.v3{background:var(--laranja)}
+.vcode.v4{background:var(--vermelho)}.vcode.v5{background:#7B1FA2}
+.vcode.v7{background:#2E7D32}.vcode.v8{background:#5D4037}
+
+code{background:#eef0f3;padding:1px 5px;border-radius:4px;font-size:12px}
+.tag{font:700 10px Arial;background:#eef2fb;color:var(--royal);border:1px solid #cdd9f0;border-radius:999px;padding:2px 8px;vertical-align:middle;margin-left:4px}
+.foot{margin-top:40px;font-size:12px;color:#9aa0a6;text-align:center;border-top:1px solid var(--cinza);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<h1>Arquitetura Comercial SOA/SOS — v1.0</h1>
+<div class="sub">
+  Mapa canônico V-code → vetor nomeado · produtos por vetor · clientes-alvo · precificação · sequência de adoção · go-to-market.<br>
+  <b>Fundação única para Monitor Regulatório, folders vivos e QSV-R.</b>
+</div>
+<div class="meta">
+  Baseado em: Arquitetura v1.0 CTO (15/06/2026) · 14 Vetores SOA (06/06/2026) · Modelo Precificação Rede Básica · Briefing EnergyHub/PNAST · Relatório Painitec · Accel Pitch · Regras de Fechamento QSV v2.0 · Monitor Regulatório v1.2<br>
+  <b>Carimbo: 04/07/2026 · 17:38 BRT · v1.0</b>
+</div>
+</header>
+
+<!-- =========================================================
+     SEÇÃO 1 — MAPA CANÔNICO V-CODE → VETOR
+     ========================================================= -->
+<h2>1. Mapa canônico V-code → Vetor <span class="badge" style="background:var(--royal)">Fundação</span></h2>
+<p class="lead">Fonte única de verdade. Monitor Regulatório §3, folders vivos, QSV-R e toda comunicação externa usam esta tabela. Nunca usar V-code sem nome; nunca usar nome sem V-code. V6 (gamificação/dNFT prosumer) e V9–V14 são vetores técnicos internos — não aparecem em material externo nesta versão.</p>
+
+<table>
+<thead><tr><th>V-code</th><th>Nome comercial canônico</th><th>Dor central</th><th>Entregável principal</th><th>Vetores técnicos do banco</th></tr></thead>
+<tbody>
+<tr>
+  <td class="k"><span class="vcode v1">V1</span>Transmission &amp; Access Intelligence</td>
+  <td>Risco de acesso à Rede Básica por barramento</td>
+  <td>Defensibilidade PNAST, capacidade remanescente, risco locacional, project finance</td>
+  <td>Dossiê de risco de acesso por SPE; matriz de carteira; coordenação de Temporada</td>
+  <td>V10 (Flex Map) · SIGET · <code>linha_transmissao</code> · <code>subestacao</code></td>
+</tr>
+<tr>
+  <td class="k"><span class="vcode v2">V2</span>GD Access &amp; MMGD Intelligence</td>
+  <td>Risco regulatório e de acesso para geração distribuída</td>
+  <td>CP 001/2026 smart meter, Fio B, Lei 14.300, mudanças MMGD</td>
+  <td>Monitor de risco GD; dossiê por distribuidora; análise de impacto tarifário</td>
+  <td>V14 (MMGD) · <code>mmgd_empreendimento</code> · <code>mmgd_info_tecnica_fotovoltaica</code></td>
+</tr>
+<tr>
+  <td class="k"><span class="vcode v3">V3</span>BESS &amp; Flex Auditável</td>
+  <td>Certificação e prova de desempenho de armazenamento (SAE/BESS)</td>
+  <td>LRCAP 15 anos: RTE ≥85%, apuração mensal PMI, nenhum documento define quem verifica → entrada SOA</td>
+  <td>Dossiê de desempenho SAE; evidência auditável de RTE; prova de PMI para CONCAP</td>
+  <td>V8 (Curtailment) · V10 · <code>fator_capacidade</code> · <code>geracao_por_usina</code></td>
+</tr>
+<tr>
+  <td class="k"><span class="vcode v4">V4</span>Contencioso &amp; Curtailment Evidence</td>
+  <td>Prova técnica auditável de curtailment para defesa jurídica e ressarcimento</td>
+  <td>20,6% curtailment BR 2025 = R$6,5bi em perdas; Lei 15.269 abriu o mercado; falta prova reexecutável</td>
+  <td>Relatório de curtailment por usina/hora; dossiê para contencioso; prova de constrained-off</td>
+  <td>V8 · <code>constrainedoff_eolica</code> · <code>constrainedoff_fotovoltaica</code> · QSV score</td>
+</tr>
+<tr>
+  <td class="k"><span class="vcode v5">V5</span>Data Centers &amp; Cargas Especiais</td>
+  <td>Inteligência de conexão e prova horária de energia para grandes cargas</td>
+  <td>REDATA em reconstrução, carga de IA disparando, necessidade de atribuição horária de energia limpa</td>
+  <td>Relatório de risco de conexão; prova horária de energia; dossiê ESG para data center</td>
+  <td>V8 · V9 (Precificação dinâmica) · <code>preco_ccee_horario</code> · HEC/mHEC</td>
+</tr>
+<tr>
+  <td class="k"><span class="vcode v7">V7</span>Flex &amp; Ancilares</td>
+  <td>Mapeamento e qualificação de flexibilidade e serviços ancilares</td>
+  <td>Sandbox ANEEL, serviços ancilares, controle de tensão, reserva girante</td>
+  <td>Mapa de flexibilidade por barramento; dossiê de qualificação para ancilares; site selection BESS</td>
+  <td>V10 · V11 (pvlib/teórico) · <code>disponibilidade_transmissao</code></td>
+</tr>
+<tr>
+  <td class="k"><span class="vcode v8">V8</span>Seguros &amp; Risco Paramétrico</td>
+  <td>Evidência para seguro paramétrico de curtailment e risco renovável</td>
+  <td>Mercado paramétrico US$17-33bi; seguro exige prova horária reexecutável; mercado BR sem produto</td>
+  <td>Evidence pack paramétrico; dossiê de sinistro; laudo de curtailment para seguradora</td>
+  <td>V8 · sHEC (energia frustrada) · Evidence Pack · <code>constrainedoff</code></td>
+</tr>
+</tbody>
+</table>
+
+<div class="callout">
+  <b>Regra de uso:</b> V6 (gamificação/prosumer) é vetor interno da plataforma HEC — não aparece em proposta comercial B2B. Vetores V9–V14 são propostos no banco e estão em construção — não aparecem em material externo. Quando o Monitor Regulatório §3 menciona "V7", refere-se ao vetor Flex &amp; Ancilares acima, não a um sétimo vetor da plataforma.
+</div>
+
+<!-- =========================================================
+     SEÇÃO 2 — VETORES DETALHADOS
+     ========================================================= -->
+<h2>2. Vetores detalhados — produto, cliente, preço</h2>
+
+<!-- V1 -->
+<div class="card v1">
+<h3><span class="vcode v1">V1</span>Transmission &amp; Access Intelligence</h3>
+<p class="lead">Transforma risco de acesso à Rede Básica em rating técnico-regulatório por SPE — linguagem de crédito, valuation e defensibilidade. Produto mais maduro: V4 já entregue (ABIAPE), V1 é o próximo na sequência de adoção.</p>
+
+<div class="grid2">
+<div>
+<h3>Clientes-alvo</h3>
+<table><tbody>
+<tr><td class="k">Desenvolvedores</td><td>Carteira de SPEs em viabilidade, CAPEX comprometido sem clareza de barramento</td></tr>
+<tr><td class="k">CFO / Finanças</td><td>Precisa de linguagem de risco para comitê de crédito e valuation</td></tr>
+<tr><td class="k">Bancos / Credores</td><td>Diligência de project finance — risco de acesso não precificado</td></tr>
+<tr><td class="k">M&amp;A / Compradores</td><td>Comparar SPEs com risco locacional diferente antes da aquisição</td></tr>
+<tr><td class="k">Consultorias</td><td>Parceiros que levam o dossiê ao cliente final (30% comissão)</td></tr>
+</tbody></table>
+</div>
+<div>
+<h3>Contas-alvo identificadas (lista pública MME/ONS)</h3>
+<table><tbody>
+<tr><td class="k">Data Centers</td><td>Scala AI City, Ascenty, ODATA, Elea/Rio AI City, CloudHQ, TIVIT/Takoda</td></tr>
+<tr><td class="k">H2V / e-fuels</td><td>Fortescue Brasil, Casa dos Ventos, Qair, Voltalia, Green Energy Park, Auren</td></tr>
+<tr><td class="k">Geradores</td><td>Carteiras com processo no MME/ONS listado publicamente</td></tr>
+<tr><td class="k">Parceiros</td><td>EnergyHub (Armando Winter / Luiz Mandarino) — 30% originação</td></tr>
+</tbody></table>
+</div>
+</div>
+
+<h3>Produtos e precificação</h3>
+<table>
+<thead><tr><th>Produto</th><th>Escopo</th><th>Prazo</th><th>Faixa (R$)</th></tr></thead>
+<tbody>
+<tr><td class="k">Piloto / Diagnóstico SPE</td><td>1 SPE · barramento · risco · margem · recomendações</td><td>7–10 dias úteis</td><td class="price">25k–180k (por porte)</td></tr>
+<tr><td class="k">Matriz de carteira</td><td>3–15+ SPEs · ranking · mapa de exposição · priorização</td><td>2–3 semanas</td><td class="price">100k–700k</td></tr>
+<tr><td class="k">Coordenação de Temporada</td><td>Sprints PNAST · habilitação · processo competitivo</td><td>Duração da temporada</td><td class="price">200k–1,5mi</td></tr>
+<tr><td class="k">Monitoramento contínuo</td><td>Alertas regulatórios · reclassificação · relatório mensal</td><td>Recorrente</td><td class="price">10k–70k/mês</td></tr>
+<tr><td class="k">Dossiê de bancabilidade</td><td>Resumo executivo para crédito · cenários · auditável</td><td>Caso a caso</td><td class="price">80k–180k/SPE</td></tr>
+<tr><td class="k">Success fee (opcional)</td><td>Venda, captação, reposicionamento</td><td>—</td><td class="price">0,3%–1,5% do valor</td></tr>
+</tbody></table>
+<p class="lead"><b>Caminho A</b> (piloto): R$25k–50k · <b>Caminho B</b> (carteira): R$180k–500k · <b>Caminho C</b> (temporada): R$600k–1,5mi · <b>Caminho D</b> (anual integrado): R$1,2mi–2,0mi</p>
+</div>
+
+<!-- V3 -->
+<div class="card v3">
+<h3><span class="vcode v3">V3</span>BESS &amp; Flex Auditável</h3>
+<p class="lead">O GAP mais urgente do mercado: a Portaria MME 136/2026 exige apuração mensal de RTE ≥85% por 15 anos no LRCAP, mas nenhum documento define quem faz a verificação independente. A SOA/SOS é a infraestrutura de medição já pronta para isso.</p>
+<div class="grid2">
+<div>
+<h3>Clientes-alvo</h3>
+<table><tbody>
+<tr><td class="k">Empreendedores BESS</td><td>Participantes dos leilões 02/12 e 04/12/2026 — cadastro EPE fecha 31/07/2026</td></tr>
+<tr><td class="k">Bancos financiadores</td><td>BNDES Fundo Clima (SAE 6,5% a.a., 24 anos, 80%) precisa de evidência de RTE</td></tr>
+<tr><td class="k">CONCAP</td><td>Precisa de prova de desempenho para liberar Receita Fixa mensal</td></tr>
+<tr><td class="k">Seguradoras</td><td>Risco de performance de bateria — paramétrico baseado em RTE auditável</td></tr>
+</tbody></table>
+</div>
+<div>
+<h3>Argumento comercial central</h3>
+<div class="ok" style="margin:0">
+  <b>"A Portaria 136 exige comprovação de desempenho por todo o contrato de 15 anos. O edital ANEEL ainda não definiu como. A SOA/SOS é a infraestrutura de medição independente que já está pronta para isso."</b><br><br>
+  PMI (Ponto de Medição Individual) como ponto de entrega · apuração mensal · abatimento de Receita Fixa por indisponibilidade · RTE ≥85% durante 15 anos · verificação independente = GAP aberto = entrada SOA.
+</div>
+</div>
+</div>
+<h3>Produtos e precificação</h3>
+<table>
+<thead><tr><th>Produto</th><th>Escopo</th><th>Faixa (R$)</th></tr></thead>
+<tbody>
+<tr><td class="k">Laudo de desempenho SAE</td><td>Evidência mensal de RTE para CONCAP · PMI · auditável</td><td class="price">15k–40k/mês por SAE</td></tr>
+<tr><td class="k">Dossiê de bancabilidade BESS</td><td>Histórico de RTE · prova auditável · evidência para banco/BNDES</td><td class="price">80k–160k/projeto</td></tr>
+<tr><td class="k">Site selection BESS</td><td>129 barramentos · competitividade locacional · curtailment esperado</td><td class="price">50k–120k/análise</td></tr>
+<tr><td class="k">Monitoramento LRCAP (15 anos)</td><td>Contrato de medição independente durante vigência LRCAP</td><td class="price">Negociado por projeto</td></tr>
+</tbody></table>
+</div>
+
+<!-- V4 -->
+<div class="card v4">
+<h3><span class="vcode v4">V4</span>Contencioso &amp; Curtailment Evidence</h3>
+<p class="lead">Produto mais maduro — já entregue (material ABIAPE). Primeira prioridade na sequência de adoção. Lei 15.269/2025 abriu o mercado de ressarcimento: 223 pedidos de anistia, 211 solar, 9,3 GW afetados.</p>
+<div class="grid2">
+<div>
+<h3>Clientes-alvo</h3>
+<table><tbody>
+<tr><td class="k">Geradores FV/EOL</td><td>Usinas com histórico de constrained-off — base de 140M+ registros SOA</td></tr>
+<tr><td class="k">Escritórios jurídicos</td><td>Precisam de prova técnica reexecutável para contestação e ressarcimento</td></tr>
+<tr><td class="k">Bancos / credores</td><td>Risco de receita comprometida por curtailment em ativos financiados</td></tr>
+<tr><td class="k">ABRACEEL / ABSOLAR</td><td>Federações submetendo no PSM CCEE (CP17/2026 — prazo 03/08/2026)</td></tr>
+</tbody></table>
+</div>
+<div>
+<h3>Diferencial técnico</h3>
+<table><tbody>
+<tr><td class="k">140M+ registros</td><td>Banco histórico ONS desde 2019 — cobertura nacional</td></tr>
+<tr><td class="k">Reexecutável</td><td>Evidence Pack com SQL versionado + CSV pinado IPFS + hash SHA-256</td></tr>
+<tr><td class="k">sHEC</td><td>Certificado de energia frustrada — prova a hora, o MWh e a causa do corte</td></tr>
+<tr><td class="k">trava XOR</td><td>HEC e sHEC nunca emitidos na mesma hora — integridade garantida</td></tr>
+</tbody></table>
+</div>
+</div>
+<h3>Precificação</h3>
+<table>
+<thead><tr><th>Produto</th><th>Escopo</th><th>Faixa (R$)</th></tr></thead>
+<tbody>
+<tr><td class="k">Relatório de curtailment</td><td>Por usina · por período · causa declarada · MWh frustrado</td><td class="price">25k–80k/usina</td></tr>
+<tr><td class="k">Dossiê para contencioso</td><td>Prova técnica completa para uso jurídico · reexecutável</td><td class="price">60k–180k/caso</td></tr>
+<tr><td class="k">Carteira de usinas</td><td>Múltiplas SPEs · ranking por exposição · priorização</td><td class="price">150k–500k</td></tr>
+<tr><td class="k">Contribuição regulatória</td><td>Submissão em CP/PSM com evidência técnica SOA (ex: CP17/2026)</td><td class="price">40k–120k</td></tr>
+</tbody></table>
+</div>
+
+<!-- V5 -->
+<div class="card v5">
+<h3><span class="vcode v5">V5</span>Data Centers &amp; Cargas Especiais</h3>
+<p class="lead">REDATA (MP 1.318) caducou em 25/02/2026. PL 278/2026 ainda no Senado. Enquanto isso, data centers precisam de prova horária de energia limpa para ESG/CBAM e de defensibilidade de conexão na PNAST.</p>
+<div class="grid2">
+<div>
+<h3>Clientes-alvo</h3>
+<table><tbody>
+<tr><td class="k">Hyperscalers</td><td>Google, Microsoft, Amazon — SLAs de energia 24/7 carbon-free</td></tr>
+<tr><td class="k">Colocation BR</td><td>Scala, Ascenty, ODATA, Elea, CloudHQ — expostos à PNAST</td></tr>
+<tr><td class="k">Exportadores</td><td>CBAM RED II/III — prova horária de atributo energético para UE</td></tr>
+<tr><td class="k">Indústrias H2V</td><td>Certificação de additionality para hidrogênio verde</td></tr>
+</tbody></table>
+</div>
+<div>
+<h3>Produtos</h3>
+<table><tbody>
+<tr><td class="k">Prova horária</td><td>HEC/mHEC por hora de consumo · EnergyTag · additionality</td></tr>
+<tr><td class="k">Dossiê de conexão</td><td>Risco PNAST · barramento · margem · defensibilidade</td></tr>
+<tr><td class="k">Relatório IFRS S2</td><td>CVM 244 (praticar ou explicar 2027) · Scope 2 horário</td></tr>
+<tr><td class="k">Auditoria ESG</td><td>Atributos verificáveis · trilha de auditoria · reexecutável</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>
+
+<!-- V7 e V8 em grid -->
+<div class="grid2">
+<div class="card v7">
+<h3><span class="vcode v7">V7</span>Flex &amp; Ancilares</h3>
+<p class="lead">Site selection de BESS para serviços ancilares. Sandbox ANEEL. Margem locacional por barramento dos 129 elegíveis LRCAP.</p>
+<table><tbody>
+<tr><td class="k">Clientes</td><td>Operadores BESS, agregadores, comercializadoras de serviços ancilares</td></tr>
+<tr><td class="k">Produto</td><td>Mapa de flexibilidade por barramento; qualificação para ancilares; análise de curtailment esperado por localização</td></tr>
+<tr><td class="k">Preço</td><td class="price">40k–150k/análise</td></tr>
+</tbody></table>
+</div>
+<div class="card v8">
+<h3><span class="vcode v8">V8</span>Seguros &amp; Risco Paramétrico</h3>
+<p class="lead">Mercado paramétrico renovável: US$17–33bi globalmente. 20,6% curtailment BR 2025 = R$6,5bi em perdas. Seguradoras precisam de prova horária reexecutável para sinistro.</p>
+<table><tbody>
+<tr><td class="k">Clientes</td><td>Seguradoras, resseguradoras, geradores com PPA, bancos financiadores</td></tr>
+<tr><td class="k">Produto</td><td>Evidence pack paramétrico (sHEC); dossiê de sinistro; laudo de curtailment auditável</td></tr>
+<tr><td class="k">Preço</td><td class="price">30k–120k/caso + retainer</td></tr>
+</tbody></table>
+</div>
+</div>
+
+<!-- =========================================================
+     SEÇÃO 3 — SEQUÊNCIA DE ADOÇÃO
+     ========================================================= -->
+<h2>3. Sequência de adoção <span class="badge" style="background:var(--verde)">CTO aprovado</span></h2>
+<p class="lead">Definida pelo CTO (Otávio) e endossada pelo CEO. Entra pela dor mais imediata, sobe para plataforma.</p>
+
+<div class="flow">
+  <span class="n" style="background:#fff5f5;border-color:#fca5a5"><span class="vcode v4" style="margin:0 6px 0 0">V4</span>Contencioso<br><small>já em produção</small></span>
+  <span class="ar">→</span>
+  <span class="n" style="background:#f0f4ff"><span class="vcode v1" style="margin:0 6px 0 0">V1</span>Transmission<br><small>próximo a construir</small></span>
+  <span class="ar">→</span>
+  <span class="n" style="background:#fff8f0"><span class="vcode v3" style="margin:0 6px 0 0">V3</span>BESS<br><small>leilão dez/2026</small></span>
+  <span class="ar">+</span>
+  <span class="n" style="background:#f0fff4"><span class="vcode v7" style="margin:0 6px 0 0">V7</span>Flex<br><small>pós BESS</small></span>
+  <span class="ar">→</span>
+  <span class="n" style="background:#faf0ff"><span class="vcode v5" style="margin:0 6px 0 0">V5</span>Data Centers<br><small>janela fiscal aberta</small></span>
+  <span class="ar">+</span>
+  <span class="n" style="background:#fff5f0"><span class="vcode v8" style="margin:0 6px 0 0">V8</span>Seguros<br><small>tese maturando</small></span>
+</div>
+
+<table>
+<thead><tr><th>Fase</th><th>Vetores</th><th>Janela</th><th>Driver</th></tr></thead>
+<tbody>
+<tr><td class="k">Fase 1 — Agora</td><td><span class="vcode v4">V4</span>Contencioso + <span class="vcode v1">V1</span>Transmission</td><td>2026 — imediato</td><td>Lei 15.269 + PNAST 1ª Temporada + 223 pedidos de anistia</td></tr>
+<tr><td class="k">Fase 2</td><td><span class="vcode v3">V3</span>BESS + <span class="vcode v7">V7</span>Flex</td><td>Ago–Dez 2026</td><td>Leilões LRCAP 02/12 e 04/12 · cadastro EPE fecha 31/07 · REN 1.161</td></tr>
+<tr><td class="k">Fase 3</td><td><span class="vcode v5">V5</span>Data Centers + <span class="vcode v8">V8</span>Seguros</td><td>2027</td><td>CVM 244 (IFRS S2 2027) · CBAM RED II · mercado paramétrico maduro</td></tr>
+</tbody></table>
+
+<!-- =========================================================
+     SEÇÃO 4 — MODELO DE RECEITA
+     ========================================================= -->
+<h2>4. Modelo de receita</h2>
+<p class="lead">Híbrido em 5 camadas. Precificação por SPE/ativo — nunca por MW. A unidade de decisão do cliente é o ativo, não o volume.</p>
+
+<table>
+<thead><tr><th>Camada</th><th>Produto</th><th>Recorrência</th><th>Ticket típico</th></tr></thead>
+<tbody>
+<tr><td class="k">1 · Diagnóstico</td><td>Piloto por SPE — baixa fricção, prova de valor</td><td>Pontual</td><td class="price">R$25k–180k</td></tr>
+<tr><td class="k">2 · Carteira</td><td>Matriz comparativa de múltiplas SPEs</td><td>Pontual</td><td class="price">R$100k–700k</td></tr>
+<tr><td class="k">3 · Temporada/Evento</td><td>Coordenação PNAST, leilão, processo competitivo</td><td>Por evento</td><td class="price">R$200k–1,5mi</td></tr>
+<tr><td class="k">4 · Monitoramento</td><td>Alertas regulatórios + atualização mensal de risco</td><td>Mensal/recorrente</td><td class="price">R$10k–70k/mês</td></tr>
+<tr><td class="k">5 · Success fee</td><td>Venda, captação, M&A, valor preservado</td><td>Por evento</td><td class="price">0,3%–1,5% do valor</td></tr>
+</tbody></table>
+
+<div class="grid3" style="margin-top:14px">
+<div class="ok" style="margin:0">
+  <b>Ancoragem de valor</b><br>
+  Não comparar com esforço-hora. Ancorar contra o risco financeiro: SPE com CAPEX de R$300mi — dossiê de R$80k é 0,03% do investimento para eliminar risco de barramento.
+</div>
+<div class="callout" style="margin:0">
+  <b>Regra de descoberta</b><br>
+  Nunca dar preço na primeira conversa. Discovery: número de SPEs, estágio, barramentos, exposição PNAST, estratégia de financiamento, decisor (CFO, jurídico, crédito).
+</div>
+<div class="card found" style="margin:0;padding:14px 16px">
+  <b>Descontos de carteira</b><br>
+  3–5 SPEs: 10–15% · 6–10 SPEs: 15–25% · +10 SPEs: 25–35% · Contrato anual: desconto em diagnósticos, preservar preço de monitoramento.
+</div>
+</div>
+
+<!-- =========================================================
+     SEÇÃO 5 — PROCESSO COMERCIAL
+     ========================================================= -->
+<h2>5. Processo comercial e handoff</h2>
+
+<div class="grid2">
+<div>
+<h3>Sequência de abordagem</h3>
+<table><tbody>
+<tr><td class="k">D0</td><td>CEO / Luiz valida o alvo e o contexto</td></tr>
+<tr><td class="k">D+1</td><td>Repasse para parceiro / originador (ex: Clarissa, EnergyHub)</td></tr>
+<tr><td class="k">D+2</td><td>Edição de voz e personalização</td></tr>
+<tr><td class="k">D+3</td><td>Envio ao decisor final</td></tr>
+<tr><td class="k">D+3–10</td><td>Janela de resposta</td></tr>
+<tr><td class="k">Se interesse</td><td>Reunião com Luiz + Otávio + parceiro</td></tr>
+</tbody></table>
+</div>
+<div>
+<h3>Regras de handoff</h3>
+<table><tbody>
+<tr><td class="k">Conversa comercial</td><td>Encaminhar para Luiz (CEO)</td></tr>
+<tr><td class="k">Validação técnica</td><td>Encaminhar para Otávio (CTO accountable)</td></tr>
+<tr><td class="k">IP / Metodologia</td><td>Nunca revelar sem NDA. Apresentar apenas taxonomia e entregáveis</td></tr>
+<tr><td class="k">Parceria originação</td><td>30% comissão sobre receita líquida originada (EnergyHub)</td></tr>
+</tbody></table>
+
+<h3 style="margin-top:14px">Script de abertura (sem preço)</h3>
+<div class="ok" style="margin:0;font-size:13px">
+"Consigo estruturar em três formatos: piloto em uma SPE para testar a entrega; matriz de risco para as SPEs prioritárias; ou modelo de temporada completa com acompanhamento das janelas críticas e dossiês para ativos em financiamento ou venda. Depois de entender o portfólio, envio os três caminhos com escopo e preço."
+</div>
+</div>
+</div>
+
+<h3>Perguntas de discovery</h3>
+<div class="grid2">
+<table><tbody>
+<tr><td>1. Quantas SPEs na carteira?</td></tr>
+<tr><td>2. Qual o estágio de cada ativo?</td></tr>
+<tr><td>3. Quais já têm DPA, CUST ou histórico de acesso?</td></tr>
+<tr><td>4. Quais estão mais próximos de financiamento ou venda?</td></tr>
+<tr><td>5. Barramentos candidatos em análise?</td></tr>
+</tbody></table>
+<table><tbody>
+<tr><td>6. Há exposição a processo competitivo PNAST?</td></tr>
+<tr><td>7. Existe estratégia de compartilhamento de conexão?</td></tr>
+<tr><td>8. Decisor: desenvolvimento, CFO, jurídico, investidor ou banco?</td></tr>
+<tr><td>9. Qual janela regulatória cria maior urgência?</td></tr>
+<tr><td>10. Precisa de relatório técnico, dossiê de crédito ou matriz?</td></tr>
+</tbody></table>
+</div>
+
+<!-- =========================================================
+     SEÇÃO 6 — REGRAS DE PROTEÇÃO
+     ========================================================= -->
+<h2>6. Regras de proteção de IP</h2>
+<div class="alert">
+  <b>Nunca revelar em material externo:</b> algoritmo de QSV · pesos S1–S4 · automações · prompts · arquitetura de agentes · código · base proprietária · nomes de tabelas do banco.<br><br>
+  <b>Apresentar apenas:</b> taxonomia comercial (V-codes) · entregáveis e formatos · exemplos agregados e anonimizados · frase de posicionamento.<br><br>
+  <b>Antes de metodologia:</b> NDA obrigatório. Posicionar o dossiê como insumo de diligência, não como garantia de acesso ou resultado financeiro. Linguagem: "pode apoiar", "pode reduzir incerteza", "pode melhorar a leitura de risco" — nunca "garante spread menor" ou "destrava valuation".
+</div>
+
+<!-- =========================================================
+     SEÇÃO 7 — GANCHOS REGULATÓRIOS NOVOS
+     ========================================================= -->
+<h2>7. Ganchos regulatórios novos <span class="badge" style="background:var(--laranja)">Monitor §3 atualizado</span></h2>
+<p class="lead">Identificados na sessão de hoje (04/07/2026) — ainda sem folder dedicado. Registrar como oportunidades futuras.</p>
+
+<table>
+<thead><tr><th>Gancho</th><th>Vetor</th><th>Status</th><th>Ação</th></tr></thead>
+<tbody>
+<tr>
+  <td class="k">PMI/RTE — verificação independente LRCAP</td>
+  <td><span class="vcode v3">V3</span></td>
+  <td>GAP aberto: Portaria 136 exige, edital não define quem verifica</td>
+  <td>Inserir no folder BESS como argumento central · já feito no baterias-curtailment.html</td>
+</tr>
+<tr>
+  <td class="k">PSM / Processo Sancionador CCEE (CP17/2026)</td>
+  <td><span class="vcode v4">V4</span></td>
+  <td>CP aberta até 03/08/2026 · prazo ABSOLAR: 31/07</td>
+  <td>Tese "evidência auditável = defesa preventiva no mercado livre" · novo folder a criar</td>
+</tr>
+<tr>
+  <td class="k">NT Capacidade Remanescente SIN (30/09/2026)</td>
+  <td><span class="vcode v1">V1</span><span class="vcode v3">V3</span></td>
+  <td>Prevista 30/09 · define competitividade locacional dos 129 barramentos</td>
+  <td>Monitor futuro · acionar V1 + V3 quando publicada</td>
+</tr>
+<tr>
+  <td class="k">PNAST — Decreto 12.772/2025 + Portaria MME 129/2026</td>
+  <td><span class="vcode v1">V1</span><span class="vcode v2">V2</span></td>
+  <td>Ancorado: novo regime de acesso confirmado no Monitor §3</td>
+  <td>Adicionar ao Fatos_Regulatorios.json · fechar flag de pendência PNAST</td>
+</tr>
+<tr>
+  <td class="k">Acórdão TCU 1.631/2026 — ESS autoprodutores</td>
+  <td><span class="vcode v4">V4</span></td>
+  <td>R$768mi não pagos 2018–2024 · MG e BA lideram</td>
+  <td>Gancho para V4 em autoprodutores · investigar se abre contencioso novo</td>
+</tr>
+</tbody></table>
+
+<div class="foot">
+  SOA/SOS · Solar One Account Ltda · CNPJ 65.312.574/0001-40<br>
+  Arquitetura Comercial v1.0 · 04/07/2026 · 17:38 BRT<br>
+  CEO: Luiz Henrique Limonta · CTO: Otávio Augusto Ferrari Pedro<br>
+  <b>Três pedidos de patente depositados no INPI · 31 reivindicações · PCT único até 19/02/2027</b>
+</div>
+
+</div>
+</body>
+</html>
