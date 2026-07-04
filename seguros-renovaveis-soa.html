@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8"/>
@@ -11,7 +11,7 @@
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{
-      --navy:#0F2B46;--navy2:#163c61;--teal:#0D6E6E;--royal:#1C5AAD;
+      --navy:#040F2F;--navy2:#163c61;--teal:#1C5AAD;--royal:#1C5AAD;
       --orange:#E07B00;--orange-lt:#FEF3D7;
       --grey:#4B5563;--grey2:#6B7280;--line:#E0E2E8;--wash:#F4F6F8;--snow:#F9FAFB;
       --white:#FFFFFF;--green:#166534;--green-lt:#DCFCE7;--amber-c:#92400E;
@@ -88,7 +88,7 @@
     .note.teal{border-left-color:var(--teal);background:#f0fdfa}
     .note.teal b{color:var(--teal)}
     .note.warn{border-left-color:var(--orange);background:var(--orange-lt);color:#5a3a00}
-    .note.warn b{color:#b26a00}
+    .note.warn b{color:#FC9D27}
 
     /* 2-COL */
     .cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
@@ -335,7 +335,7 @@
     <div class="bn">REN ANEEL 1.030/2022 · Acende Brasil · Energia Cooperativa</div>
   </div>
   <div class="rcard">
-    <span class="badge" style="background:#b26a00;">EM DELIBERAÇÃO</span>
+    <span class="badge" style="background:#FC9D27;">EM DELIBERAÇÃO</span>
     <div class="bt">MP 1304 e vetos ao ressarcimento ampliado do curtailment</div>
     <div class="bv">Governo vetou amplia&ccedil;&atilde;o do ressarcimento a solares e e&oacute;licas em cortes por excesso de oferta. ABEEólica estimou R$ 2,8 bi em ressarcimento pelos cortes desde set/2023. Incerteza regulat&oacute;ria &eacute; mais uma raz&atilde;o para transferência do risco ao mercado segurador.</div>
     <div class="bn">Canal Solar · Poder360 · ABEEólica (nov/2025)</div>
@@ -347,7 +347,7 @@
     <div class="bn">AXA Brasil (abr/2026) · SUSEP</div>
   </div>
   <div class="rcard">
-    <span class="badge" style="background:#0D6E6E;">REFERÊNCIA</span>
+    <span class="badge" style="background:#1C5AAD;">REFERÊNCIA</span>
     <div class="bt">GHG Protocol Scope 2 &mdash; revis&atilde;o para matching hor&aacute;rio</div>
     <div class="bv">Revisão em consulta pública (2026) propõe matching horário de energia renovável (em vez do anual). Quando adotada (~2028), vai aumentar a demanda por dados hora a hora de geração e curtailment como os que a SOA/SOS já produz.</div>
     <div class="bn">GHG Protocol · Repath (fev/2026)</div>
@@ -386,10 +386,10 @@
 
 <!-- ===== QUADRO REGULATÓRIO VIVO (SOA/SOS) · injetado 01/07/2026 · fetch runtime ===== -->
 <div id="qv-soa" style="max-width:1080px;margin:26px auto;font-family:Arial,Helvetica,sans-serif;padding:0 18px">
-  <h2 style="color:#0F2B46;border-top:2px solid #E0E2E8;padding-top:18px;font-size:20px;margin:0 0 2px">Quadro Regulatório Vivo
+  <h2 style="color:#040F2F;border-top:2px solid #E0E2E8;padding-top:18px;font-size:20px;margin:0 0 2px">Quadro Regulatório Vivo
     <span id="qv-fresh" style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;background:#E5E7EB;color:#6B7280;vertical-align:middle;margin-left:6px">carregando…</span>
   </h2>
-  <p style="font-size:12.5px;color:#4B5563;margin:2px 0 14px">Cards de normas lidos em runtime de <code>Fatos_Seguros_Folder_SOA.json</code> — reflete a última regeneração do monitor. Status: <b style="color:#166534">VIGENTE</b> · <b style="color:#1C5AAD">AGENDADO</b> · <b style="color:#9A3412">PENDENTE</b> · <b style="color:#B26A00">EM DELIBERAÇÃO</b>.</p>
+  <p style="font-size:12.5px;color:#4B5563;margin:2px 0 14px">Cards de normas lidos em runtime de <code>Fatos_Seguros_Folder_SOA.json</code> — reflete a última regeneração do monitor. Status: <b style="color:#166534">VIGENTE</b> · <b style="color:#1C5AAD">AGENDADO</b> · <b style="color:#9A3412">PENDENTE</b> · <b style="color:#FC9D27">EM DELIBERAÇÃO</b>.</p>
   <div id="qv-cards" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px">
     <div style="color:#6B7280;font-size:13px">● Carregando quadro regulatório…</div>
   </div>
@@ -398,7 +398,7 @@
 (function(){
   var RAW="https://raw.githubusercontent.com/trigocom-code/financiamento-de-usinas/main/Fatos_Seguros_Folder_SOA.json";
   var API="https://api.github.com/repos/trigocom-code/financiamento-de-usinas/commits?path=Fatos_Seguros_Folder_SOA.json&per_page=1";
-  var COL={"VIGENTE":"#166534","AGENDADO":"#1C5AAD","PENDENTE":"#9A3412","EM DELIBERA":"#B26A00"};
+  var COL={"VIGENTE":"#166534","AGENDADO":"#1C5AAD","PENDENTE":"#9A3412","EM DELIBERA":"#FC9D27"};
   function sc(s){s=(s||"").toUpperCase();for(var k in COL){if(s.indexOf(k)>=0)return COL[k];}return "#4B5563";}
   function esc(t){var d=document.createElement("div");d.textContent=t==null?"":String(t);return d.innerHTML;}
   fetch(RAW,{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){
@@ -407,7 +407,7 @@
     fatos.forEach(function(f){var c=sc(f.status),el=document.createElement("div");
       el.style.cssText="background:#fff;border:1.5px solid #E0E2E8;border-left:4px solid "+c+";border-radius:10px;padding:12px 14px";
       el.innerHTML="<div style='font-size:10.5px;font-weight:700;letter-spacing:.04em;color:"+c+";text-transform:uppercase;margin-bottom:4px'>"+esc(f.status||"")+"</div>"+
-        "<div style='font-size:13.5px;font-weight:700;color:#0F2B46;margin-bottom:4px'>"+esc(f.tema||"")+"</div>"+
+        "<div style='font-size:13.5px;font-weight:700;color:#040F2F;margin-bottom:4px'>"+esc(f.tema||"")+"</div>"+
         "<div style='font-size:12.5px;color:#374151;line-height:1.45;margin-bottom:6px'>"+esc(f.valor||"")+"</div>"+
         "<div style='font-size:11px;color:#6B7280'>"+esc(f.norma||"")+"</div>";
       box.appendChild(el);});
