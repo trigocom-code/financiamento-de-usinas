@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Gatekeeper SOA/SOS v2.0 (01/07/2026) — 3 estagios + anti-regressao."""
 import json, sys, os, glob, re, html, subprocess
@@ -11,6 +11,13 @@ FRASES_ERRO = ["12 dispositivos","dispositivos vetados","22 dispositivos vetados
 EMAILS_PROIBIDOS = ["solaroneaccount.com.br","contato@solaroneaccount"]
 ANDAIME = [r"\[CORRE[ÇC][ÃA]O", r"\[A VERIFICAR", r"\(a verificar", r"\[TODO", r"\[FIXME", r"\[NOTA:"]
 CAMPOS_RENDERIZADOS = ("valor","tema","norma")
+# --- schema unificado de benefícios (v1) ---
+VETORES_CANON = {"BESS auditável","CBAM exportável","Compliance SBCE","Contencioso regulatório",
+                 "Data centers 24/7 CFE","H2V certificado","MMGD não observável"}
+ATORES_CANON = {"pf","pj","industria","municipio","estado","uniao","comercial"}
+CANAIS_CANON = {"conta","imposto","credito","captacao","mercado","carbono","relato"}
+STATUS_CANON = {"verificado","pendente"}
+CAMPOS_BENEF = ("id","ator","vetores","canal","titulo","base_legal","mecanismo","vigencia","sem_soa","status","fonte")
 DATA_RE = re.compile(r"^\d{4}-\d{2}-\d{2}([T ]\d{2}:\d{2})?$")
 VETOS_RE = re.compile(r"\b(\d{1,2})\s+vetos\b")
 
@@ -150,6 +157,36 @@ def erros_regressao(base):
             e.append("%s: REGRESSAO qtde de fatos %d -> %d (use [regressao-aprovada] se intencional)" % (f, n_a, n_d))
     return e
 
+def erros_beneficios(path):
+    """Valida o schema unificado de benefícios (arquivos com chave 'beneficios')."""
+    e=[]; n=os.path.basename(path)
+    try:
+        with open(path,encoding="utf-8-sig") as f: d=json.load(f)
+    except Exception as ex: return ["%s: JSON inválido — %s" % (n, ex)]
+    if "beneficios" not in d: return []   # não é arquivo de benefícios; ignora
+    ids=set()
+    for i,b in enumerate(d.get("beneficios") or []):
+        if not isinstance(b,dict): e.append("%s beneficios[%d]: não é objeto" % (n,i)); continue
+        for c in CAMPOS_BENEF:
+            if c not in b: e.append("%s beneficios[%d]: falta campo '%s'" % (n,i,c))
+        bid=b.get("id")
+        if bid in ids: e.append("%s beneficios[%d]: id duplicado '%s'" % (n,i,bid))
+        ids.add(bid)
+        if b.get("status") not in STATUS_CANON: e.append("%s beneficios[%d] (%s): status inválido '%s'" % (n,i,bid,b.get("status")))
+        for v in (b.get("vetores") or []):
+            if v not in VETORES_CANON: e.append("%s beneficios[%d] (%s): vetor fora do canônico '%s'" % (n,i,bid,v))
+        for a in (b.get("ator") or []):
+            if a not in ATORES_CANON: e.append("%s beneficios[%d] (%s): ator inválido '%s'" % (n,i,bid,a))
+        if b.get("canal") and b.get("canal") not in CANAIS_CANON:
+            e.append("%s beneficios[%d] (%s): canal inválido '%s'" % (n,i,bid,b.get("canal")))
+    for i,p in enumerate(d.get("pacotes") or []):
+        if p.get("status") not in STATUS_CANON: e.append("%s pacotes[%d] (%s): status inválido" % (n,i,p.get("id")))
+        for ref in (p.get("beneficios") or []):
+            if ref not in ids: e.append("%s pacotes[%d] (%s): ref de benefício inexistente '%s'" % (n,i,p.get("id"),ref))
+        for v in (p.get("vetores") or []):
+            if v not in VETORES_CANON: e.append("%s pacotes[%d] (%s): vetor fora do canônico '%s'" % (n,i,p.get("id"),v))
+    return e
+
 def main():
     base=sys.argv[1] if len(sys.argv)>1 else "."
     arqs=[p for p in sorted(glob.glob(os.path.join(base,"Fatos_*_Folder_SOA.json")))
@@ -158,13 +195,16 @@ def main():
     todos=[]
     for a in arqs: todos+=erros_fatos(a)
     n1=len(todos)
-    todos+=erros_regressao(base);            n0=len(todos)-n1
-    todos+=erros_cruzados(base);             n2=len(todos)-n1-n0
-    todos+=erros_html(base);                 n3=len(todos)-n1-n0-n2
-    print("[gate v2] E1 fatos(%d arqs): %d | E0 regressao: %d | E2 cruzado: %d | E3 html: %d" % (len(arqs),n1,n0,n2,n3))
+    for a in arqs: todos+=erros_beneficios(a)
+    n4=len(todos)-n1
+    todos+=erros_regressao(base);            n0=len(todos)-n1-n4
+    todos+=erros_cruzados(base);             n2=len(todos)-n1-n4-n0
+    todos+=erros_html(base);                 n3=len(todos)-n1-n4-n0-n2
+    print("[gate v2] E1 fatos(%d arqs): %d | E4 beneficios: %d | E0 regressao: %d | E2 cruzado: %d | E3 html: %d" % (len(arqs),n1,n4,n0,n2,n3))
     if todos:
         print("[gate v2] ❌ %d problema(s) — push BARRADO:" % len(todos))
         for x in todos: print("   -",x)
         sys.exit(1)
     print("[gate v2] ✅ 0 problemas."); sys.exit(0)
 if __name__=="__main__": main()
+
