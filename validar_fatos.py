@@ -18,13 +18,13 @@ VETORES_CANON = {  # Opção B (04/07/2026): 7 de PROVA + 7 NÃO-prova = 14. Nom
                  "BESS auditável","CBAM exportável","Compliance SBCE","Contencioso regulatório",
                  "Data centers 24/7 CFE","H2V certificado","MMGD não observável",
                  # 6 propostas de expansão da régua §5 (adotadas sob B) + Mercado & PSM (Monitor v1.2, gap CP17/2026):
-                 "Ancilares auditáveis","Bancabilidade & seguros","Cidades/IPTU Verde","GEC biometano",
+                 "Ancilares auditáveis","Seguros & Prova de Risco","Cidades/IPTU Verde","GEC biometano",
                  "M2M & IoT","PNAST & acesso","Mercado & PSM"}
 # V-codes legados aceitos SÓ como metadado v_origem (nunca como vetor de destino renderizado):
 VCODES_LEGADO = {"V1","V2","V3","V4","V5","V6","V7","V8"}
 VCODE_PARA_CANON = {"V1":"PNAST & acesso","V2":"MMGD não observável","V3":"BESS auditável",
                     "V4":"Contencioso regulatório","V5":"Data centers 24/7 CFE","V6":"Mercado & PSM",
-                    "V7":"Ancilares auditáveis","V8":"Bancabilidade & seguros"}
+                    "V7":"Ancilares auditáveis","V8":"Seguros & Prova de Risco"}
 ATORES_CANON = {"pf","pj","industria","municipio","estado","uniao","comercial"}
 CANAIS_CANON = {"conta","imposto","credito","captacao","mercado","carbono","relato"}
 STATUS_CANON = {"verificado","pendente"}
