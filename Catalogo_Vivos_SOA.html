@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8"/>
@@ -11,7 +11,7 @@
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{
-      --navy:#0F2B46;--navy2:#163c61;--teal:#0D6E6E;--royal:#1C5AAD;
+      --navy:#040F2F;--navy2:#163c61;--teal:#1C5AAD;--royal:#1C5AAD;
       --orange:#E07B00;--orange-lt:#FEF3D7;
       --grey:#4B5563;--grey2:#6B7280;--line:#E0E2E8;--wash:#F4F6F8;--snow:#F9FAFB;
       --white:#FFFFFF;--green:#166534;--green-lt:#DCFCE7;
@@ -308,6 +308,13 @@
     <div class="desc">Incentivos municipais verdes (50+ cidades, até 40%), gate NR-35/NR-10 (iCleanSolar) e GD (Lei 14.300/Fio B). Consome <code>Fatos_IPTUVerde_Folder_SOA.json</code>. Cobre V2, V7, C·Consumidor.</div>
     <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Folder_Vivo_IPTUVerde_GitHub.html">Abrir</a></div>
   </div>
+
+  <div class="card dyn" data-file="Fatos_Beneficios_ESG_Folder_SOA.json">
+    <div class="top"><span class="vetor">Benefícios ESG · BASE</span><span class="fresh loading" data-fresh></span></div>
+    <h3>Base de Benefícios ESG por Ator</h3>
+    <div class="desc">Base estruturada “se eu certificar, ganho o quê?” por ator (PF/PJ/indústria/município/estado/União), com cruzamento de vetores em <b>pacotes</b> (ex.: data center 24/7 = solar+eólica+BESS). Consome os JSONs canônicos via <code>soa-sync-fatos.js</code> e alimenta os folders comerciais da 1ª camada. Só <code>status=verificado</code> renderiza; pendentes ficam na base.</div>
+    <div class="meta"><span class="ts" data-ts>—</span><a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/Fatos_Beneficios_ESG_Folder_SOA.json">Abrir base (JSON)</a></div>
+  </div>
 </div>
 
 <h2 class="sec">3ª Camada · Os 8 vetores SOA/SOS — discriminados</h2>
@@ -496,3 +503,4 @@
 </script>
 </body>
 </html>
+
