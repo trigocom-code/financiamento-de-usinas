@@ -91,18 +91,18 @@ ul{font-size:14px}li{margin-bottom:4px}
 </div>
 <div class="note">A atestação se apoia em <b>pedido de patente depositado junto ao INPI (BR102026003913-6)</b>. O SOA não minera nem gera energia: entrega a <b>camada de confiança</b> que destrava o valor institucional.</div>
 
-<h2>4 · Metodologia: o Quad-Source Validation (QSV-3)</h2>
-<p>O diferencial do SOA não é registrar em blockchain, e sim <b>garantir a veracidade do dado físico antes de ancorá-lo</b>. Fontes únicas (só o medidor da usina) são vulneráveis a injeção de dados falsos (greenwashing). O <b>QSV</b> exige a convergência de quatro fontes de linhagens independentes para cada par usina-hora. No regime atual de dados abertos, o SOA opera em <b>QSV-3</b> (fontes 1, 3 e 4):</p>
+<h2>4 · Metodologia: o Quad-Source Validation (modo atual de 3 fontes)</h2>
+<p>O diferencial do SOA não é registrar em blockchain, e sim <b>garantir a veracidade do dado físico antes de ancorá-lo</b>. Fontes únicas (só o medidor da usina) são vulneráveis a injeção de dados falsos (greenwashing). O <b>QSV</b> exige a convergência de quatro fontes de linhagens independentes para cada par usina-hora. No regime atual de dados abertos, o SOA opera com <b>3 das 4 fontes</b> (1, 3 e 4) — modo deliberadamente conservador; o score premium (QSV 3) exige a convergência das quatro:</p>
 <div class="cols">
-<div class="col s1"><div class="h">FONTE 1 — Telemetria</div><div class="b">Inversor (SunSpec Modbus) ou proxy ONS.<br><span class="tagx tagon">ativa no QSV-3</span></div></div>
-<div class="col s2"><div class="h">FONTE 2 — Medidor</div><div class="b">Medidor independente (PRODIST Mód.5).<br><span class="tagx tagoff">fora do QSV-3 atual</span></div></div>
-<div class="col s3"><div class="h">FONTE 3 — Gêmeo digital</div><div class="b">Irradiância satelital (NASA POWER/NSRDB) + modelo termodinâmico pvlib.<br><span class="tagx tagon">ativa no QSV-3</span></div></div>
-<div class="col s4"><div class="h">FONTE 4 — Consenso H3</div><div class="b">Mediana de desvio das usinas vizinhas (indexação geográfica H3).<br><span class="tagx tagon">ativa no QSV-3</span></div></div>
+<div class="col s1"><div class="h">FONTE 1 — Telemetria</div><div class="b">Inversor (SunSpec Modbus) ou proxy ONS.<br><span class="tagx tagon">ativa (modo atual)</span></div></div>
+<div class="col s2"><div class="h">FONTE 2 — Medidor</div><div class="b">Medidor independente (PRODIST Mód.5).<br><span class="tagx tagoff">fora do modo atual</span></div></div>
+<div class="col s3"><div class="h">FONTE 3 — Gêmeo digital</div><div class="b">Irradiância satelital (NASA POWER/NSRDB) + modelo termodinâmico pvlib.<br><span class="tagx tagon">ativa (modo atual)</span></div></div>
+<div class="col s4"><div class="h">FONTE 4 — Consenso H3</div><div class="b">Mediana de desvio das usinas vizinhas (indexação geográfica H3).<br><span class="tagx tagon">ativa (modo atual)</span></div></div>
 </div>
 <h3>O gêmeo digital termodinâmico (Fonte 3)</h3>
 <p>Não é uma leitura simples de irradiância. O SOA aplica um modelo rigoroso via <b>pvlib</b>: decompõe a irradiância (DISC), ajusta o tipo de rastreador (single-axis), calcula a temperatura da célula (SAPM) e as perdas por sujeira (soiling), gerando uma curva de Fator de Capacidade esperada <b>independente da medição física</b> da usina.</p>
 <h3>Auditor conservador: alta precisão, recall limitado</h3>
-<p>Com satélite gratuito (~50 km), o QSV-3 prioriza <b>precisão</b> sobre recall: de cada 100 anomalias flagradas, <b>mais de 81 são eventos reais de curtailment confirmados pelo ONS</b>. A migração para satélite de alta resolução (NSRDB, ~4 km) elevará o recall para &gt;30%, mantendo o rigor. Quando o SOA emite um certificado, a energia verde é verificável e auditável.</p>
+<p>Com satélite gratuito (~50 km), esse modo de 3 fontes prioriza <b>precisão</b> sobre recall: de cada 100 anomalias flagradas, <b>mais de 81 são eventos reais de curtailment confirmados pelo ONS</b>. A migração para satélite de alta resolução (NSRDB, ~4 km) elevará o recall para &gt;30%, mantendo o rigor. Quando o SOA emite um certificado, a energia verde é verificável e auditável.</p>
 
 <h2>5 · Valor de mercado, prêmio verde e demanda institucional</h2>
 <p>O "Bitcoin Verde" institucional <b>não é uma moeda separada</b> — 1 BTC continua fungível. O diferencial de sustentabilidade é capturado por um <b>certificado ambiental separado</b>, análogo a um REC. O benchmark global é o <b>Sustainable Bitcoin Certificate (SBC)</b>.</p>
