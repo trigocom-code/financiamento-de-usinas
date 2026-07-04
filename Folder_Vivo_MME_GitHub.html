@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8"/>
@@ -11,7 +11,7 @@
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{
-      --navy:#0F2B46;--navy2:#163c61;--teal:#0D6E6E;--royal:#1C5AAD;
+      --navy:#040F2F;--navy2:#163c61;--teal:#1C5AAD;--royal:#1C5AAD;
       --orange:#E07B00;--orange-lt:#FEF3D7;
       --grey:#4B5563;--grey2:#6B7280;--line:#E0E2E8;--wash:#F4F6F8;--snow:#F9FAFB;
       --white:#FFFFFF;--green:#166534;--green-lt:#DCFCE7;
@@ -110,7 +110,7 @@
 <script>
 const FACTS_URLS = ["https://raw.githubusercontent.com/trigocom-code/financiamento-de-usinas/main/Fatos_MME_Folder_SOA.json"];
 const FALLBACK = {"_meta":{"verificado_em":"2026-06-28"},"fatos":[{"tema":"Portaria MME 136/2026 — LRCAP de Armazenamento (calendário)","valor":"Leilões 02 e 04/12/2026. Cadastro EPE 15/06–31/07. Suprimento desde 01/08/2028.","status":"AGENDADO","norma":"Portaria MME 136/2026","verificado_em":"2026-06-28","score_soa":18,"vetores_afetados":["V3","V7"]}]};
-const SC={"VIGENTE":"#166534","AGENDADO":"#1C5AAD","ENCERRADO":"#6B7280","PENDENTE":"#9A3412","EM DELIBERAÇÃO":"#B26A00"};
+const SC={"VIGENTE":"#166534","AGENDADO":"#1C5AAD","ENCERRADO":"#6B7280","PENDENTE":"#9A3412","EM DELIBERAÇÃO":"#FC9D27"};
 function br(d){if(!d)return "—";const p=d.split("-");return p[2]+"/"+p[1]+"/"+p[0];}
 function pad(n){return n<10?"0"+n:n;}
 function fmtNow(){const d=new Date();return pad(d.getDate())+"/"+pad(d.getMonth()+1)+"/"+d.getFullYear()+" às "+pad(d.getHours())+"h"+pad(d.getMinutes());}
@@ -142,3 +142,4 @@ document.getElementById("liveStamp").textContent="● Aberto em "+fmtNow();
 </script>
 </body>
 </html>
+

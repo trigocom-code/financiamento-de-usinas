@@ -1,9 +1,9 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+﻿<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SOA/SOS · Quadro Regulatório Vivo</title>
 <style>
   :root{--navy:#040F2F;--royal:#1C5AAD;--orange:#FC9D27;--yellow:#FEC73D;--grey:#4B5563;--line:#E0E2E2;}
   *{box-sizing:border-box}
-  body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#0F2B46;background:#f7f8fa;line-height:1.5}
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#040F2F;background:#f7f8fa;line-height:1.5}
   .wrap{max-width:880px;margin:0 auto;padding:0 18px 40px}
   header.capa{background:linear-gradient(160deg,#040F2F 0%,#0a2350 100%);color:#fff;padding:34px 24px 30px;border-radius:0 0 18px 18px}
   header.capa .top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
@@ -13,7 +13,7 @@
   header.capa h1 .u{border-bottom:4px solid var(--orange);padding-bottom:2px}
   header.capa .sub{color:#cfdae8;font-size:14px;max-width:700px}
   .stamp{font-size:12px;color:var(--grey);text-align:right;margin:12px 2px 0}
-  .intro{margin:18px 2px 4px;font-size:14.5px;color:#0F2B46}
+  .intro{margin:18px 2px 4px;font-size:14.5px;color:#040F2F}
   .intro a{color:var(--royal);font-weight:bold;text-decoration:none}
   .legend{font-size:12px;color:var(--grey);margin:8px 2px 0}
   .legend b{padding:1px 7px;border-radius:20px;color:#fff;font-size:11px}
@@ -35,7 +35,7 @@
 <div class="wrap">
   <div class="stamp" id="stamp">carregando…</div>
   <div class="intro">Versão autônoma do Quadro Regulatório. Para o folder completo — etapas do financiamento, QSV, casos de uso e os vetores comerciais — veja o <a href="/financiamento-de-usinas/index.html">folder-mestre</a>.</div>
-  <div class="legend">Estados: <b style="background:#1B5E20">VIGENTE</b> &nbsp;<b style="background:#1C5AAD">AGENDADO</b> &nbsp;<b style="background:#B26A00">PENDENTE</b> &nbsp;<b style="background:#B26A00">EM DELIBERAÇÃO</b></div>
+  <div class="legend">Estados: <b style="background:#1B5E20">VIGENTE</b> &nbsp;<b style="background:#1C5AAD">AGENDADO</b> &nbsp;<b style="background:#FC9D27">PENDENTE</b> &nbsp;<b style="background:#FC9D27">EM DELIBERAÇÃO</b></div>
   <div class="grid" id="cards"><p style="color:#4B5563">Carregando o quadro regulatório…</p></div>
   <a class="back" href="/financiamento-de-usinas/index.html">← Voltar ao folder-mestre</a>
   <footer>
@@ -46,7 +46,7 @@
 </div>
 <script>
 (function(){
-  var COR={"VIGENTE":"#1B5E20","AGENDADO":"#1C5AAD","PENDENTE":"#B26A00","EM DELIBERA":"#B26A00"};
+  var COR={"VIGENTE":"#1B5E20","AGENDADO":"#1C5AAD","PENDENTE":"#FC9D27","EM DELIBERA":"#FC9D27"};
   function cor(st){ var s=(st||"").toUpperCase(); for(var k in COR){ if(s.indexOf(k)===0) return COR[k]; } return "#1C5AAD"; }
   function br(d){ if(!d) return ""; var p=String(d).substring(0,10).split("-"); return p.length===3? (p[2]+"/"+p[1]+"/"+p[0]) : String(d); }
   var U="https://raw.githubusercontent.com/trigocom-code/financiamento-de-usinas/main/Fatos_Regulatorios_Folder_SOA.json";
@@ -66,8 +66,9 @@
     });
     if(!fatos.length){ box.innerHTML='<p style="color:#4B5563">Sem fatos no momento.</p>'; }
   }).catch(function(){
-    document.getElementById("cards").innerHTML='<p style="color:#B26A00">Não foi possível carregar o quadro agora. Recarregue a página.</p>';
+    document.getElementById("cards").innerHTML='<p style="color:#FC9D27">Não foi possível carregar o quadro agora. Recarregue a página.</p>';
   });
 })();
 </script>
 </body></html>
+

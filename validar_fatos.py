@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Gatekeeper SOA/SOS v2.0 (01/07/2026) — 3 estagios + anti-regressao."""
 import json, sys, os, glob, re, html, subprocess
@@ -8,7 +8,7 @@ TERMOS_PROIBIDOS_MARCA = ["líder","lider","patentead","anti-fraude","antifraude
                           "mais profundo do brasil","maior banco d","incontestável","incontestavel"]
 FRASES_ERRO = ["12 dispositivos","dispositivos vetados","22 dispositivos vetados","meta até 2035",
                "portaria normativa mme 878/2025","5,7 gw"]
-EMAILS_PROIBIDOS = ["solaroneaccount.com.br","contato@solaroneaccount"]
+EMAILS_PROIBIDOS = ["solaroneaccount.com","limonta@solaroneaccount"]
 ANDAIME = [r"\[CORRE[ÇC][ÃA]O", r"\[A VERIFICAR", r"\(a verificar", r"\[TODO", r"\[FIXME", r"\[NOTA:"]
 CAMPOS_RENDERIZADOS = ("valor","tema","norma")
 DATA_RE = re.compile(r"^\d{4}-\d{2}-\d{2}([T ]\d{2}:\d{2})?$")
@@ -168,3 +168,4 @@ def main():
         sys.exit(1)
     print("[gate v2] ✅ 0 problemas."); sys.exit(0)
 if __name__=="__main__": main()
+
