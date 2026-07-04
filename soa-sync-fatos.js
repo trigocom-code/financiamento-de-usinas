@@ -217,7 +217,8 @@
     var c=firstCarimbo(ns)||{};
     document.querySelectorAll("[data-carimbo]").forEach(function(n){
       var q=c.atualizado_em?new Date(c.atualizado_em):null;
-      n.textContent=q ? ("Dados verificados e selados em "+q.toLocaleString("pt-BR")+(c.hash?" · "+String(c.hash).slice(0,20)+"…":"")) : "Dados do monitor regulatório SOA/SOS";
+      var hashOk=c.hash && !/a-selar|selar-no-gate|placeholder|xxxx/i.test(String(c.hash));
+      n.textContent=q ? ("Dados verificados e selados em "+q.toLocaleString("pt-BR")+(hashOk?" · "+String(c.hash).slice(0,20)+"…":"")) : "Dados do monitor regulatório SOA/SOS";
     });
     document.documentElement.setAttribute("data-soa-sync","ok");
   }
