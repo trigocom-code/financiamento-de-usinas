@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "orgao": "SUSEP/CNSP/STF (seguros · vetor Seguros de Renováveis)",
+    "orgao": "SUSEP/CNSP/STF (seguros · vetor Seguros & Prova de Risco)",
     "schema_version": "1.0",
     "descricao": "Monitor Regulatório de Seguros. Trava canônica: a SOA/SOS é provedor NEUTRO de dado/índice/evidência — NUNCA seguradora, corretora ou MGA; NUNCA precifica, garante ou transfere risco. Cada item é PERÍMETRO/RISCO, HABILITADOR ou DEVER DO DADO. Validação jurídica de advogado de seguros é necessária antes de uso externo — o monitor sinaliza, não dá parecer.",
     "verificado_em": "2026-07-02",
@@ -10,7 +10,7 @@
   "fatos": [
     {
       "tema": "ADI 7074 (CNSP 407/21 · grandes riscos) no STF",
-      "valor": "[PERÍMETRO/RISCO] Item mais quente do vetor Seguros. A CNSP 407/21 é o regime de liberdade contratual onde o seguro paramétrico de grandes riscos (terreno natural das renováveis) opera hoje. A ADI segue EM JULGAMENTO, remetida ao plenário físico após destaque do min. Flávio Dino (relator Gilmar Mendes + Moraes/Toffoli/Zanin/Fux já haviam votado por manter a norma no virtual). Sem data de pauta física confirmada.",
+      "valor": "[PERÍMETRO/RISCO] Item mais quente do vetor Seguros & Prova de Risco. A CNSP 407/21 é o regime de liberdade contratual onde o seguro paramétrico de grandes riscos (terreno natural das renováveis) opera hoje. A ADI segue EM JULGAMENTO, remetida ao plenário físico após destaque do min. Flávio Dino (relator Gilmar Mendes + Moraes/Toffoli/Zanin/Fux já haviam votado por manter a norma no virtual). Sem data de pauta física confirmada.",
       "status": "EM DELIBERAÇÃO",
       "norma": "ADI 7074 / CNSP 407/2021",
       "url": "https://portal.stf.jus.br/",
@@ -36,7 +36,7 @@
     },
     {
       "tema": "Minuta de Resolução CNSP de resseguro/retrocessão/cosseguro — aprovada no Conselho Diretor da SUSEP (17/06)",
-      "valor": "[HABILITADOR] Minuta pós-CP 14/2025 (sucessora da CNSP 451/2022; adequação à Lei 15.040/2024 + LC 213/2025) aprovada na 11ª reunião ordinária do Conselho Diretor da SUSEP em 17/06/2026 e encaminhada ao CNSP (Processo 15414.632309/2025-35, relator Carlos Roberto A. de Queiroz/Diore). Vigência proposta: 02/01/2027 (art. 47). Pontos que importam ao vetor Seguros: (a) supressão das cláusulas de claims cooperation/claims control (incompatíveis com o art. 76 da Lei 15.040 — a seguradora é a única responsável pela regulação do sinistro), COM dispositivo interpretativo: consultar o ressegurador não é vedado, a decisão final é da seguradora → sem controle contratual do sinistro, cresce a demanda do ressegurador por prova neutra e auditável da regulação feita pela cedente (Evidence Pack/Módulo A); (b) oferta preferencial mínima de 40% a resseguradores locais (art. 6º; não se aplica à retrocessão); (c) formalização contratual em 90 dias; (d) reforço de monitoramento de concentração/acúmulo de riscos (princípios IAIS) — relevante para carteiras de curtailment, risco correlacionado; (e) a minuta é ESTRUTURAL (cessão/retrocessão/cosseguro): não trata de seguro paramétrico nem da figura do provedor de índice. Próximo passo regulatório: revisão da Circular SUSEP 683/2022 (procedimentos operacionais). 204 contribuições na CP (48 acatadas, 46 parciais, 109 não, 1 desconsiderada).",
+      "valor": "[HABILITADOR] Minuta pós-CP 14/2025 (sucessora da CNSP 451/2022; adequação à Lei 15.040/2024 + LC 213/2025) aprovada na 11ª reunião ordinária do Conselho Diretor da SUSEP em 17/06/2026 e encaminhada ao CNSP (Processo 15414.632309/2025-35, relator Carlos Roberto A. de Queiroz/Diore). Vigência proposta: 02/01/2027 (art. 47). Pontos que importam ao vetor Seguros & Prova de Risco: (a) supressão das cláusulas de claims cooperation/claims control (incompatíveis com o art. 76 da Lei 15.040 — a seguradora é a única responsável pela regulação do sinistro), COM dispositivo interpretativo: consultar o ressegurador não é vedado, a decisão final é da seguradora → sem controle contratual do sinistro, cresce a demanda do ressegurador por prova neutra e auditável da regulação feita pela cedente (Evidence Pack/Módulo A); (b) oferta preferencial mínima de 40% a resseguradores locais (art. 6º; não se aplica à retrocessão); (c) formalização contratual em 90 dias; (d) reforço de monitoramento de concentração/acúmulo de riscos (princípios IAIS) — relevante para carteiras de curtailment, risco correlacionado; (e) a minuta é ESTRUTURAL (cessão/retrocessão/cosseguro): não trata de seguro paramétrico nem da figura do provedor de índice. Próximo passo regulatório: revisão da Circular SUSEP 683/2022 (procedimentos operacionais). 204 contribuições na CP (48 acatadas, 46 parciais, 109 não, 1 desconsiderada).",
       "status": "EM DELIBERAÇÃO",
       "norma": "Minuta Resolução CNSP (pós-CP SUSEP 14/2025) · substitui CNSP 451/2022 · Lei 15.040/2024 · LC 213/2025",
       "url": "https://legismap.com.br/conteudos/artigos-e-noticias/susep-aprova-minuta-de-resolucao-sobre-resseguro-retrocessao-e-operacoes-de-cosseguro",
