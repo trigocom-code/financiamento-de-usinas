@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8"/>
@@ -11,7 +11,7 @@
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{
-      --navy:#0F2B46;--navy2:#163c61;--teal:#0D6E6E;--royal:#1C5AAD;
+      --navy:#040F2F;--navy2:#163c61;--teal:#1C5AAD;--royal:#1C5AAD;
       --orange:#E07B00;--orange-lt:#FEF3D7;
       --grey:#4B5563;--grey2:#6B7280;--line:#E0E2E8;--wash:#F4F6F8;--snow:#F9FAFB;
       --white:#FFFFFF;--green:#166534;--green-lt:#DCFCE7;
@@ -167,7 +167,7 @@ const SC = {
   "AGENDADO": "#1C5AAD",
   "ENCERRADO": "#6B7280",
   "PENDENTE": "#9A3412",
-  "EM DELIBERAÇÃO": "#B26A00"
+  "EM DELIBERAÇÃO": "#FC9D27"
 };
 
 function br(d) {
@@ -223,7 +223,7 @@ function render(data) {
     const urlLink = f.url
       ? `<a href="${f.url}" target="_blank" rel="noopener">${f.norma || 'Ver fonte'}</a>`
       : (f.norma || "");
-    const score = f.score_soa !== undefined ? `<span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:3px 10px;border-radius:999px;background:#F1F5F9;color:#0F2B46;border:1px solid #E0E2E8;margin-left:6px">score ${f.score_soa}</span>` : "";
+    const score = f.score_soa !== undefined ? `<span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:3px 10px;border-radius:999px;background:#F1F5F9;color:#040F2F;border:1px solid #E0E2E8;margin-left:6px">score ${f.score_soa}</span>` : "";
     const vet = f.vetores_afetados && f.vetores_afetados.length ? `<span style="display:inline-block;font-size:10.5px;font-weight:600;color:#1C5AAD;background:#EEF2FA;padding:3px 8px;border-radius:999px;margin-left:6px">${f.vetores_afetados.join(' · ')}</span>` : "";
     return `
       <div class="card">
@@ -259,3 +259,4 @@ document.getElementById("liveStamp").textContent = "● Aberto em " + fmtNow();
 </script>
 </body>
 </html>
+
