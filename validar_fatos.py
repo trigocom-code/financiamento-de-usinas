@@ -23,7 +23,9 @@ VETORES_CANON = {  # Opção B (04/07/2026): 7 de PROVA + 7 NÃO-prova = 14. Nom
 # V-codes legados aceitos SÓ como metadado v_origem (nunca como vetor de destino renderizado):
 VCODES_LEGADO = {"V1","V2","V3","V4","V5","V6","V7","V8"}
 VCODE_PARA_CANON = {"V1":"PNAST & acesso","V2":"MMGD não observável","V3":"BESS auditável",
-                    "V4":"Contencioso regulatório","V5":"Data centers 24/7 CFE","V6":"Mercado & PSM",
+                    "V4":"Contencioso regulatório","V5":"Data centers 24/7 CFE",
+                    # V6 = gamificação/dNFT (vetor TÉCNICO interno, sem destino comercial renderizado) — não mapeia.
+                    # "Mercado & PSM" é vetor NOVO sem V-code (formalizado pós-CP17/2026), não é ex-V6.
                     "V7":"Ancilares auditáveis","V8":"Seguros & Prova de Risco"}
 ATORES_CANON = {"pf","pj","industria","municipio","estado","uniao","comercial"}
 CANAIS_CANON = {"conta","imposto","credito","captacao","mercado","carbono","relato"}
