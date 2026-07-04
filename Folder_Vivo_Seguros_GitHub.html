@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8"/>
@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--navy:#0F2B46;--navy2:#163c61;--teal:#0D6E6E;--royal:#1C5AAD;--orange:#E07B00;--orange-lt:#FEF3D7;--grey:#4B5563;--grey2:#6B7280;--line:#E0E2E8;--snow:#F9FAFB;--white:#FFFFFF;--r-md:12px;--r-lg:20px;--sh-sm:0 1px 4px rgba(15,43,70,.1);--sh-md:0 4px 16px rgba(15,43,70,.12);--f-serif:"DM Serif Display",Georgia,serif;--f-sans:"Inter",system-ui,Arial,sans-serif;--mw:1000px;}
+    :root{--navy:#040F2F;--navy2:#163c61;--teal:#1C5AAD;--royal:#1C5AAD;--orange:#E07B00;--orange-lt:#FEF3D7;--grey:#4B5563;--grey2:#6B7280;--line:#E0E2E8;--snow:#F9FAFB;--white:#FFFFFF;--r-md:12px;--r-lg:20px;--sh-sm:0 1px 4px rgba(15,43,70,.1);--sh-md:0 4px 16px rgba(15,43,70,.12);--f-serif:"DM Serif Display",Georgia,serif;--f-sans:"Inter",system-ui,Arial,sans-serif;--mw:1000px;}
     body{font-family:var(--f-sans);font-size:15px;line-height:1.6;color:var(--navy);background:var(--white);-webkit-font-smoothing:antialiased}
     .wrap{max-width:var(--mw);margin:0 auto;padding:clamp(20px,5vw,40px)}
     img.cc{width:100%;display:block;border-radius:var(--r-md);margin:8px 0 22px;box-shadow:var(--sh-md)}
@@ -103,7 +103,7 @@ const FALLBACK = {"_meta":{"verificado_em":"2026-06-30"},"fatos":[
   {"tema":"ADI 7074 (CNSP 407/21 · grandes riscos) no STF","valor":"Em julgamento, remetida ao plenário físico. Regime de liberdade contratual onde o paramétrico de renováveis opera. Sem data de pauta física.","status":"EM DELIBERAÇÃO","norma":"ADI 7074 / CNSP 407/2021","verificado_em":"2026-06-30"},
   {"tema":"Sandbox SUSEP 3ª edição (transformação ecológica)","valor":"Edital 02/2024, janela aberta, prioridade a projetos sustentáveis — via de menor atrito para piloto paramétrico via carrier parceiro.","status":"VIGENTE","norma":"SUSEP · Sandbox 02/2024","verificado_em":"2026-06-30"}
 ]};
-const SC = {"VIGENTE":"#166534","VIGENTE (referência)":"#166534","AGENDADO":"#1C5AAD","ENCERRADO":"#6B7280","PENDENTE":"#9A3412","EM DELIBERAÇÃO":"#B26A00"};
+const SC = {"VIGENTE":"#166534","VIGENTE (referência)":"#166534","AGENDADO":"#1C5AAD","ENCERRADO":"#6B7280","PENDENTE":"#9A3412","EM DELIBERAÇÃO":"#FC9D27"};
 function br(d){ if(!d) return "—"; const p=String(d).split("-"); return p.length===3? (p[2]+"/"+p[1]+"/"+p[0]) : d; }
 function pad(n){ return n<10? "0"+n : n; }
 function fmtNow(){ const d=new Date(); return pad(d.getDate())+"/"+pad(d.getMonth()+1)+"/"+d.getFullYear()+" às "+pad(d.getHours())+"h"+pad(d.getMinutes()); }
@@ -122,3 +122,4 @@ document.getElementById("liveStamp").textContent="● Aberto em "+fmtNow();
 </script>
 </body>
 </html>
+

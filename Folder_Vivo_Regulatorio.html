@@ -1,8 +1,8 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+﻿<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SOA/SOS · Folder Vivo</title>
 <style>
-:root{color-scheme:light;--navy:#0F2B46;--teal:#0D6E6E;--amber:#B26A00;--royal:#1C5AAD;--grey:#4B5563;--line:#E2E6EB}
-*{box-sizing:border-box}body{margin:0;background:#fff;color:#0F2B46;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+:root{color-scheme:light;--navy:#040F2F;--teal:#1C5AAD;--amber:#FC9D27;--royal:#1C5AAD;--grey:#4B5563;--line:#E2E6EB}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:#040F2F;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
 .wrap{max-width:880px;margin:0 auto;padding:22px}
 h1{font-size:30px;margin:0 0 2px}.sub{color:var(--grey);font-size:14px}
 .tag{color:var(--teal);font-weight:bold;font-size:18px;margin:8px 0 14px}
@@ -50,7 +50,7 @@ h2{color:var(--navy);font-size:19px;margin:22px 0 8px;border-bottom:2px solid va
 
 <h2>Quadro regulatório · <span id="verstamp"></span></h2>
 <div id="cards" class="cards"></div>
-<div class="legend">Status: <b style="color:#1B5E20">VIGENTE</b> · <b style="color:#1C5AAD">AGENDADO</b> · <b style="color:#9A3412">PENDENTE</b> · <b style="color:#B26A00">EM DELIBERAÇÃO</b>. Cada fato mostra há quantos dias foi verificado; acima de 90 dias, é sinalizado para revisão.</div>
+<div class="legend">Status: <b style="color:#1B5E20">VIGENTE</b> · <b style="color:#1C5AAD">AGENDADO</b> · <b style="color:#9A3412">PENDENTE</b> · <b style="color:#FC9D27">EM DELIBERAÇÃO</b>. Cada fato mostra há quantos dias foi verificado; acima de 90 dias, é sinalizado para revisão.</div>
 <div class="note"><b>Vida própria.</b> Este painel é gerado a partir da fonte única <b>Fatos_Regulatorios_Folder_SOA.json</b>, mantida pelo Monitor Regulatório SOA. Quando um gatilho dispara (ex.: sai o edital do LRCAP, muda a REN 1.059), o fato é atualizado e o folder regenerado. A defasagem é calculada ao vivo a cada abertura — o painel envelhece e se sinaliza sozinho.</div>
 
 <div class="foot"><b>Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · solaroneaccount.com · limonta@solaroneaccount.com
@@ -65,7 +65,7 @@ const FACTS={"verificado_em":"2026-06-26","fatos":[
 {"tema":"Requisitos técnicos das baterias (LRCAP)","valor":"≥30 MW, ≥4h, ≥85% eficiência, Grid Forming obrigatório","status":"VIGENTE","norma":"NT-ONS DPL 0111/2025 · EPE-DEE-NT-095/2025","verificado_em":"2026-06-26"},
 {"tema":"Curtailment (constrained-off)","valor":"Critérios e rateio em deliberação; AGU admite corte físico de MMGD, rejeita corte contábil; corte medido pela regra canônica","status":"EM DELIBERAÇÃO","norma":"CP ANEEL 45/2019 (3ª fase)","verificado_em":"2026-06-26"},
 {"tema":"Fontes oficiais do estudo","valor":"ONS, CCEE, ANEEL (SIGA/SIGET), EPE, MMGD, NASA POWER","status":"VIGENTE","norma":"bases públicas oficiais","verificado_em":"2026-06-26"}]};
-const SC={"VIGENTE":"#1B5E20","AGENDADO":"#1C5AAD","PENDENTE":"#9A3412","EM DELIBERAÇÃO":"#B26A00"};
+const SC={"VIGENTE":"#1B5E20","AGENDADO":"#1C5AAD","PENDENTE":"#9A3412","EM DELIBERAÇÃO":"#FC9D27"};
 function br(d){const[y,m,da]=d.split("-");return da+"/"+m+"/"+y;}
 function days(d){return Math.floor((Date.now()-new Date(d+"T12:00:00"))/86400000);}
 document.getElementById("verstamp").textContent="verificado em "+br(FACTS.verificado_em);
@@ -79,3 +79,4 @@ const fr=document.getElementById("fresh");
 if(maxAge>90){fr.className="fresh warn";fr.textContent="⚠ Quadro regulatório com fato(s) há mais de 90 dias — reconferir no Monitor Regulatório SOA.";}
 else{fr.className="fresh ok";fr.textContent="✓ Quadro regulatório atualizado — fato mais antigo verificado há "+maxAge+" dia(s). Fonte: Monitor Regulatório SOA.";}
 </script></body></html>
+
