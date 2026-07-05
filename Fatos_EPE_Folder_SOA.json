@@ -169,19 +169,19 @@
     {
       "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
       "tema": "Mapa de Barramentos LRCAP (critério de bonificação locacional)",
-      "valor": "ANCORADO na fonte oficial: o bônus locacional é a constante ß (beta), com ß=0,9 para barramentos do ANEXO II (redução de 10% no preço de disponibilidade/lance) e ß=1 para os demais — Portaria MME 136/2026, ANEXO I, Art. 2º §12 (fórmula Pdisp=(RFdisp/Disp)×ß) e corpo Art. 17 §3. O ANEXO II (TABELA 1) lista 129 barramentos bonificados em 98 subestações, em 8 estados: BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste. Vantagem efetiva da bonificação: 1/0,9 ≈ +11,1% de Receita Fixa para empatar na classificação. Metodologia: EPE-DEE-NT-086/2025 (MISCR/P30); memória de cálculo locacional EPE de 26/06/2026. O 'γ' anterior era de doc SOA interno (LMP), não oficial.",
+      "valor": "LISTA ANCORADA / NÚMERO A CONFIRMAR (conflito de leitura registrado). A LISTA é oficial e definitiva: ANEXO II (TABELA 1) da Portaria MME 136/2026 lista 129 barramentos bonificados em 98 subestações, 8 estados — BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste (inclui Pecém II 230 kV). O COEFICIENTE β=0,9 (vantagem 1/0,9 ≈ +11,1% de Receita Fixa; ß=1 nos demais) vem da metodologia EPE-DEE-NT-086/2025 (MISCR/P30). CONFLITO: o registro de 30/06 afirmou que a fórmula/coeficiente Pdisp=(RFdisp/Disp)×ß está no corpo (ANEXO I Art. 2º §12 + Art. 17 §3), porém com trecho_literal VAZIO (nunca citado); a leitura integral do CEO (04/07) NÃO localizou o valor numérico 0,9 no corpo. Resolver conferindo o Art. 2º §12 na fonte. Até lá: LISTA=portaria; β numérico=NT EPE. O 'γ' anterior era de doc SOA interno (LMP), não oficial.",
       "status": "VIGENTE",
-      "norma": "Portaria MME 136/2026 ANEXO I Art. 2º §12 + Art. 17 §3 + ANEXO II (lista) · EPE-DEE-NT-086/2025 (MISCR)",
+      "norma": "Portaria MME 136/2026 ANEXO II (lista 129 barramentos, definitiva) · β/MW → EPE-DEE-NT-086/2025 (MISCR) · confirmar Art. 2º §12 no corpo",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes",
-      "verificado_em": "2026-07-02",
+      "verificado_em": "2026-07-04",
       "tipo_fato": "HIBRIDO",
       "score_soa": 16,
       "vetores_afetados": [
         "V3",
         "V7"
       ],
-      "qsv_cor": "VERDE",
-      "qsv_origem_classificacao": "ancorado_DOU_portaria136_30jun2026",
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "conflito_leitura_30jun_x_04jul_reconciliar",
       "qsv_fontes_independentes": [
         {
           "tipo": "F1_pagina_oficial",
@@ -205,16 +205,16 @@
           "gt_origem": null
         }
       ],
-      "numero_status": "ANCORADO",
+      "numero_status": "PARCIAL_RECONCILIAR",
       "validacao_banco_SOA": {
         "aplicavel": true,
         "query_versionada": "Master_Barramentos_v1.5.1 (SOA · 714 barramentos canônicos)",
-        "resultado": "ANCORADO_DOU — ANEXO II TABELA 1 da Portaria 136/2026 é a lista oficial; banco SOA = cross-check opcional",
-        "verificado_em": "2026-06-30"
+        "resultado": "LISTA ANCORADA_DOU — ANEXO II TABELA 1 da Portaria 136/2026 é a lista oficial (129 barramentos); banco SOA = cross-check opcional. β numérico NÃO validado no corpo.",
+        "verificado_em": "2026-07-04"
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "_aviso_precedencia": "Dupla ancoragem CONCLUÍDA no DOU: critério em ANEXO I Art. 2º §12 + lista de 129 barramentos em ANEXO II TABELA 1 (Portaria 136/2026, DOU 03/06/2026). VERDE liberado."
+      "_aviso_precedencia": "CONFLITO DE LEITURA (reconciliar na fonte): a LISTA de 129 barramentos (ANEXO II TABELA 1) está ANCORADA no DOU e é definitiva. O valor numérico β=0,9 foi cravado em 30/06 como estando no ANEXO I Art. 2º §12, mas com trecho_literal vazio; a leitura integral do CEO em 04/07 não localizou o número no corpo e o atribui à NT EPE-DEE-NT-086/2025. Rebaixado para AZUL/PARCIAL até confirmar o Art. 2º §12 na fonte."
     },
     {
       "fato_id": "EPE-BOLETIM-CONSUMO-25",
@@ -563,7 +563,7 @@
       "orgao": "EPE",
       "tipo_fato": "REGULATORIO_INSTRUMENTAL",
       "tema": "LRCAP 2026 Armazenamento — cadastro e habilitação técnica",
-      "valor": "FAQ + Manual de Cadastramento e Habilitação Técnica do LRCAP 2026 (Armazenamento), referência operacional para participação no leilão. Comunicado no GT Armazenamento da ABSOLAR (15/06/2026). Complementa os limiares da Portaria MME 136/2026 (Art. 7º: ≥30MW/≥4h/≥85% RTE) e o bônus locacional β=0,9 (ANEXO II).",
+      "valor": "FAQ + Manual de Cadastramento e Habilitação Técnica do LRCAP 2026 (Armazenamento), referência operacional para participação no leilão. Comunicado no GT Armazenamento da ABSOLAR (15/06/2026). Complementa os limiares da Portaria MME 136/2026 (Art. 7º: ≥30MW/≥4h/≥85% RTE). Bônus locacional: a LISTA de 129 barramentos é do Anexo II (definitiva); o coeficiente β=0,9 vem da NT EPE (confirmar Art. 2º §12), não cravar como corpo da portaria.",
       "status": "VIGENTE",
       "qsv_cor": "AZUL",
       "norma": "EPE · FAQ/Manual LRCAP 2026 (Armazenamento) · Portaria MME 136/2026",

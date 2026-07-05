@@ -2,7 +2,7 @@
   "_meta": {
     "schema_version": "1.3",
     "descricao": "Fonte ÚNICA de fatos regulatórios do Folder 'Onde Entramos'. Schema 1.3 (alinhado aos monitores per-órgão e à Tabela de Precedência QSV v1.2). O folder Folder_Vivo_Regulatorio_GitHub.html consome DESTE arquivo (data.fatos[]). O monitor regulatório SOA mantém este arquivo. Schema legado aposentado em Fatos_Regulatorios_Folder_SOA.legacy.deprecated.json.",
-    "verificado_em": "2026-07-02",
+    "verificado_em": "2026-07-04",
     "schema_migrado_em": "2026-06-29",
     "proxima_revisao_sugerida": "2026-07-31",
     "responsavel_atualizacao": "Monitor Regulatório SOA (digest diário) — escreve schema 1.3, aplica Tabela_Precedencia_QSV_v1_2",
@@ -33,13 +33,13 @@
       "fato_id": "MME-PORTARIA-136-2026-LRCAP",
       "orgao": "MME",
       "tipo_fato": "REGULATORIO_DECISORIO",
-      "tema": "LRCAP de Armazenamento (baterias) — calendário",
-      "valor": "Leilões 02/12/2026 (Nacional, c/ requisito de nacionalização) e 04/12/2026 (Aberto). Cadastro EPE 15/06–31/07/2026. Suprimento 15 anos, início 01/08/2028.",
+      "tema": "LRCAP de Armazenamento (baterias) — calendário + regime de receita reduzível por indisponibilidade",
+      "valor": "Leilões 02/12/2026 (Nacional 2028A, c/ requisito de nacionalização Sistema-CFI BNDES) e 04/12/2026 (Aberto 2028B, sem conteúdo nacional; depende da capacidade produtiva apurada no 2028A, §4º). Cadastro EPE 15/06–31/07/2026. Suprimento 15 anos (CRCAP), início 01/08/2028, Receita Fixa indexada ao IPCA. COMPROMISSO = disponibilidade de POTÊNCIA em MW (não energia). REGIME DE RECEITA (gatilho de prova SOA / BESS auditável): Receita Fixa R$/ano por disponibilidade (art. 5º); apuração de desempenho operativo em BASE MENSAL, receita REDUZIDA conforme desempenho (art. 5º §1º + art. 9º §4º-IV); art. 9º §4º-IV exige cláusulas de ABATIMENTO/RESSARCIMENTO da Receita Fixa por indisponibilidade/não entrega; art. 9º §10 detalha PENALIDADES; art. 9º §6º-8º liquida a energia de carga/descarga no MCP ao PLD → CONCAP. É a arena onde a prova de disponibilidade horária ancorada no PMI vale receita por 15 anos.",
       "status": "AGENDADO",
       "qsv_cor": "VERDE",
-      "norma": "Portaria MME 136/2026 (DOU 03/06/2026)",
+      "norma": "Portaria MME 136/2026 (DOU 03/06/2026) · arts. 5º/9º + calendário",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-07-02",
+      "verificado_em": "2026-07-04",
       "gatilho_revisao": "publicação/alteração do edital ANEEL; mudança de datas"
     },
     {
@@ -166,7 +166,7 @@
       "orgao": "EPE",
       "tipo_fato": "REGULATORIO_INSTRUMENTAL",
       "tema": "LRCAP 2026 Armazenamento — cadastro e habilitação técnica",
-      "valor": "FAQ + Manual de Cadastramento e Habilitação Técnica do LRCAP 2026 (Armazenamento), referência operacional para participação no leilão. Comunicado no GT Armazenamento da ABSOLAR (15/06/2026). Complementa os limiares da Portaria MME 136/2026 (Art. 7º: ≥30MW/≥4h/≥85% RTE) e o bônus locacional β=0,9 (ANEXO II).",
+      "valor": "FAQ + Manual de Cadastramento e Habilitação Técnica do LRCAP 2026 (Armazenamento), referência operacional para participação no leilão. Comunicado no GT Armazenamento da ABSOLAR (15/06/2026). Complementa os limiares da Portaria MME 136/2026 (Art. 7º: ≥30MW/≥4h/≥85% RTE). CAVEAT QSV (leitura integral 04/07): o corpo da Portaria 136 + Anexo II traz a LISTA DEFINITIVA de barramentos elegíveis à bonificação locacional (129, NE+norte MG), mas NÃO o valor numérico do coeficiente (β=0,9) nem os MW por barramento — esses vêm da Nota Técnica da EPE (metodologia nov/2025; NT de Quantitativos até 30/09/2026). β=0,9 permanece ALEGADO_NAO_ANCORADO até confirmar na NT EPE.",
       "status": "VIGENTE",
       "qsv_cor": "AZUL",
       "norma": "EPE · FAQ/Manual LRCAP 2026 (Armazenamento) · Portaria MME 136/2026",
@@ -235,13 +235,13 @@
       "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
       "orgao": "EPE",
       "tema": "Mapa de Barramentos LRCAP (bonificação locacional)",
-      "valor": "ANCORADO: o bônus locacional é a constante ß=0,9 para barramentos do ANEXO II (redução de 10% no preço de lance), ß=1 para os demais — Portaria MME 136/2026, ANEXO I, Art. 2º §12 (Pdisp=(RFdisp/Disp)×ß) + corpo Art. 17 §3. O ANEXO II (TABELA 1) lista 129 barramentos bonificados em 98 subestações, 8 estados: BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste. Vantagem efetiva 1/0,9 ≈ +11,1% de Receita Fixa. Metodologia EPE-DEE-NT-086/2025 (MISCR/P30).",
+      "valor": "A LISTA de barramentos é ANCORADA e definitiva: ANEXO II (TABELA 1) da Portaria MME 136/2026 lista 129 barramentos elegíveis à bonificação locacional em 98 subestações, 8 estados: BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste (inclui Pecém II 230 kV/CE). RECONCILIAÇÃO QSV (conflito entre leituras — resolver na fonte): o registro de 30/06 cravava a constante ß=0,9 (Pdisp=(RFdisp/Disp)×ß; ß=1 nos demais; vantagem 1/0,9 ≈ +11,1% de Receita Fixa) como ANCORADA no corpo (ANEXO I Art. 2º §12 + Art. 17 §3). A leitura integral de 04/07 (CEO) NÃO localizou o valor numérico 0,9 no corpo e o atribui à Nota Técnica da EPE (EPE-DEE-NT-086/2025, metodologia MISCR/P30, nov/2025). Hipótese de reconciliação: a FÓRMULA/coeficiente ß está no ANEXO I Art. 2º §12, mas o VALOR 0,9 é fixado pela NT EPE. Até confirmar §12 na fonte, tratar β=0,9 como PARCIAL — a LISTA é da portaria; o NÚMERO do β é da NT EPE.",
       "status": "VIGENTE",
-      "qsv_cor": "VERDE",
-      "norma": "Portaria MME 136/2026 ANEXO I Art. 2º §12 + Art. 17 §3 + ANEXO II (lista) · EPE-DEE-NT-086/2025",
-      "numero_status": "ANCORADO",
-      "fonte": "Portaria MME 136/2026 ANEXO I Art. 2º §12 (texto integral DOU 03/06/2026); a 878/2025 foi DESCARTADA como âncora",
-      "verificado_em": "2026-06-30"
+      "qsv_cor": "AZUL",
+      "norma": "Portaria MME 136/2026 ANEXO II (lista 129 barramentos, definitiva) · β/MW → EPE-DEE-NT-086/2025 (a confirmar Art. 2º §12 no corpo)",
+      "numero_status": "PARCIAL_RECONCILIAR",
+      "fonte": "Portaria MME 136/2026 ANEXO II (lista, DOU 03/06/2026); valor de β=0,9: EPE-DEE-NT-086/2025 (verificar). Conflito 30/06×04/07 registrado.",
+      "verificado_em": "2026-07-04"
     }
   ],
   "_historico_caidos": []
