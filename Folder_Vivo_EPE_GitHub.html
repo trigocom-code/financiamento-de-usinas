@@ -102,7 +102,7 @@
 </div>
 
 <div class="lastro">
-  <b>Fonte canônica.</b> Publicações da EPE (epe.gov.br), com cruzamento sistemático contra: MME (portarias, programas), ANEEL (resoluções, CPs), CCEE (PLD horário, contabilização), ONS (Dados Abertos), DOU (publicação oficial). Lente analítica do SOA/SOS: <b>cada movimento da EPE é mapeado a um vetor comercial (V1, V2, V3, V5, V6, V7) e a um cliente-tipo (A·Geração, B·Transmissão, C·Consumidor, D·Banca, E·Institucional, F·Seguros)</b>.
+  <b>Fonte canônica.</b> Publicações da EPE (epe.gov.br), com cruzamento sistemático contra: MME (portarias, programas), ANEEL (resoluções, CPs), CCEE (PLD horário, contabilização), ONS (Dados Abertos), DOU (publicação oficial). Lente analítica do SOA/SOS: <b>cada movimento da EPE é mapeado a um vetor comercial (PNAST & acesso, MMGD, BESS auditável, Data centers 24/7 CFE, Mercado & PSM, Ancilares auditáveis) e a um cliente-tipo (A·Geração, B·Transmissão, C·Consumidor, D·Banca, E·Institucional, F·Seguros)</b>.
 </div>
 
 <span class="verstamp" id="verstamp">atualizado em —</span>
@@ -119,7 +119,7 @@
 
 <div class="three-q">
   <h3>Três oportunidades de aproximação SOA → EPE</h3>
-  <div class="qitem"><b>1.</b> <b>Estudo CE+PI (4 GW data centers + H2V)</b> de 19/06/2026 já posiciona EPE como interlocutor técnico do tema V5. SOA pode propor camada de prova horária 24/7 CFE como complemento ao estudo de transmissão — material auditável que a EPE pode incorporar como referência.</div>
+  <div class="qitem"><b>1.</b> <b>Estudo CE+PI (4 GW data centers + H2V)</b> de 19/06/2026 já posiciona EPE como interlocutor técnico do tema Data centers 24/7 CFE. SOA pode propor camada de prova horária 24/7 CFE como complemento ao estudo de transmissão — material auditável que a EPE pode incorporar como referência.</div>
   <div class="qitem"><b>2.</b> <b>Caderno de MMGD e Baterias Atrás do Medidor do PDE 2035</b> trata exatamente do universo que SOA tem dado granular (4,4M UCs MMGD no banco SOA, série completa). Próxima atualização do Caderno (PDE 2036) é janela natural para subsidiar tecnicamente via vetor V6.</div>
   <div class="qitem"><b>3.</b> <b>Mapa de barramentos para bonificação locacional (LRCAP)</b>, base detalhada disponibilizada pela EPE em 27/06, é exatamente o universo de 129 barramentos da Frente A do SOA. SOA pode cruzar com seus 714 barramentos canônicos e devolver à EPE uma leitura ex-post da convergência teoria × realidade operativa, alimentando os próximos ciclos de planejamento.</div>
 </div>
@@ -155,9 +155,9 @@ const FACTS_URLS = [
 const FALLBACK = {
   "_meta": {"verificado_em": "2026-06-28"},
   "fatos": [
-    {"tema": "PDE 2035 — Plano Decenal de Expansão de Energia", "valor": "Horizonte 2026–2035. 15 Cadernos temáticos publicados. CP encerrada em mar/2026. Vetores SOA: V1, V3, V5.", "status": "VIGENTE", "norma": "EPE/MME · ciclo anual", "verificado_em": "2026-06-28"},
+    {"tema": "PDE 2035 — Plano Decenal de Expansão de Energia", "valor": "Horizonte 2026–2035. 15 Cadernos temáticos publicados. CP encerrada em mar/2026. Vetores SOA: PNAST & acesso, BESS auditável, Data centers 24/7 CFE.", "status": "VIGENTE", "norma": "EPE/MME · ciclo anual", "verificado_em": "2026-06-28"},
     {"tema": "PNE 2055 — Plano Nacional de Energia", "valor": "Horizonte 30 anos. CP aberta em fev/2026. Coord. Patricia Nunes (EPE).", "status": "VIGENTE", "norma": "EPE/MME · ciclo quinquenal", "verificado_em": "2026-06-28"},
-    {"tema": "Estudo Cargas Eletrointensivas NE (4 GW data centers + H2V)", "valor": "Publicado em 19/06/2026. Convergência direta com V5 SOA.", "status": "VIGENTE", "norma": "EPE · Estudo Prospectivo", "verificado_em": "2026-06-28"},
+    {"tema": "Estudo Cargas Eletrointensivas NE (4 GW data centers + H2V)", "valor": "Publicado em 19/06/2026. Convergência direta com Data centers 24/7 CFE.", "status": "VIGENTE", "norma": "EPE · Estudo Prospectivo", "verificado_em": "2026-06-28"},
     {"tema": "Mapa de Barramentos LRCAP — bonificação locacional", "valor": "129 barramentos bonificados (lista definitiva do Anexo II da Portaria MME 136/2026; β citado no Art. 17 §3º como 'definida em estudos da EPE'); valor β=0,9 conforme NT da EPE — não consta do corpo da portaria. Convergência com a Frente A SOA.", "status": "VIGENTE", "norma": "EPE · Portaria MME 136/2026 (Anexo II + Art. 17 §3º) · valor β → NT EPE", "verificado_em": "2026-07-05"}
   ]
 };

@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>SOA/SOS · Monitor ANEEL — Folder Vivo</title>
-  <meta name="description" content="Monitor exclusivo da ANEEL. Curadoria por relevância SOA: só entram fatos com score ≥ 5. Banco interno cobre tudo; página mostra o que importa para os vetores V1, V2, V3, V4, V5, V6, V7."/>
+  <meta name="description" content="Monitor exclusivo da ANEEL. Curadoria por relevância SOA: só entram fatos com score ≥ 5. Banco interno cobre tudo; página mostra o que importa para os vetores PNAST & acesso, MMGD, BESS auditável, Contencioso regulatório, Data centers 24/7 CFE, Mercado & PSM, Ancilares auditáveis."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
@@ -109,7 +109,7 @@
 </div>
 <script>
 const FACTS_URLS = ["https://raw.githubusercontent.com/trigocom-code/financiamento-de-usinas/main/Fatos_ANEEL_Folder_SOA.json"];
-const FALLBACK = {"_meta":{"verificado_em":"2026-06-28"},"fatos":[{"tema":"CP ANEEL 045/2019 — Contabilização de cortes","valor":"3ª fase em deliberação. Vetor V4.","status":"EM DELIBERAÇÃO","norma":"CP ANEEL 045/2019","verificado_em":"2026-06-28","score_soa":17,"vetores_afetados":["V4","V3"]}]};
+const FALLBACK = {"_meta":{"verificado_em":"2026-06-28"},"fatos":[{"tema":"CP ANEEL 045/2019 — Contabilização de cortes","valor":"3ª fase em deliberação. Vetor Contencioso regulatório.","status":"EM DELIBERAÇÃO","norma":"CP ANEEL 045/2019","verificado_em":"2026-06-28","score_soa":17,"vetores_afetados":["V4","V3"]}]};
 const SC={"VIGENTE":"#166534","AGENDADO":"#1C5AAD","ENCERRADO":"#6B7280","PENDENTE":"#9A3412","EM DELIBERAÇÃO":"#FC9D27"};
 function br(d){if(!d)return "—";const p=d.split("-");return p[2]+"/"+p[1]+"/"+p[0];}
 function pad(n){return n<10?"0"+n:n;}

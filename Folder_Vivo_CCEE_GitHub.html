@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>SOA/SOS · Monitor CCEE — Folder Vivo</title>
-  <meta name="description" content="Monitor exclusivo da CCEE. Curadoria por relevância SOA: só entram fatos com score ≥ 5. Foco em Processo Sancionador, Procedimentos de Comercialização e regras de mercado que afetam V3, V4, V5, V6, V8. PLD horário NÃO entra aqui."/>
+  <meta name="description" content="Monitor exclusivo da CCEE. Curadoria por relevância SOA: só entram fatos com score ≥ 5. Foco em Processo Sancionador, Procedimentos de Comercialização e regras de mercado que afetam BESS auditável, Contencioso regulatório, Data centers 24/7 CFE, Mercado & PSM, Seguros & Prova de Risco. PLD horário NÃO entra aqui."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
@@ -79,7 +79,7 @@
 </div>
 <div class="hero">
   <span class="hero-pill">● Monitor ativo · curadoria automática</span>
-  <p class="hero-q">A CCEE define <span class="hl">como ganha e perde dinheiro</span> no mercado de energia. CP 17/2026 sobre PSM (Processo Sancionador) é o gatilho da temporada. Liquidação, contabilização e ressarcimento de curtailment passam por aqui — direto em V4, V5, V8.</p>
+  <p class="hero-q">A CCEE define <span class="hl">como ganha e perde dinheiro</span> no mercado de energia. CP 17/2026 sobre PSM (Processo Sancionador) é o gatilho da temporada. Liquidação, contabilização e ressarcimento de curtailment passam por aqui — direto em Contencioso regulatório, Data centers 24/7 CFE, Seguros & Prova de Risco.</p>
   <p class="hero-s">PLD horário (publicação diária) NÃO entra aqui — vai direto para o banco SOA via pipeline (284k linhas em produção). O monitor trata só de Procedimentos de Comercialização, CPs CCEE, GRUDEM e relatórios estruturantes. Foco em risco regulatório-comercial.</p>
 </div>
 <div class="lastro">
@@ -109,7 +109,7 @@
 </div>
 <script>
 const FACTS_URLS = ["https://raw.githubusercontent.com/trigocom-code/financiamento-de-usinas/main/Fatos_CCEE_Folder_SOA.json"];
-const FALLBACK = {"_meta":{"verificado_em":"2026-06-28"},"fatos":[{"tema":"CP 17/2026 PSM — Processo Sancionador CCEE","valor":"Em deliberação. Tipifica conduta no mercado livre. Convergência V4+V5+V6+V7.","status":"EM DELIBERAÇÃO","norma":"CP CCEE 17/2026","verificado_em":"2026-06-28","score_soa":18,"vetores_afetados":["V4","V5","V6","V7"]}]};
+const FALLBACK = {"_meta":{"verificado_em":"2026-06-28"},"fatos":[{"tema":"CP 17/2026 PSM — Processo Sancionador CCEE","valor":"Em deliberação. Tipifica conduta no mercado livre. Convergência Contencioso · Data centers · Mercado & PSM · Ancilares.","status":"EM DELIBERAÇÃO","norma":"CP CCEE 17/2026","verificado_em":"2026-06-28","score_soa":18,"vetores_afetados":["V4","V5","V6","V7"]}]};
 const SC={"VIGENTE":"#166534","AGENDADO":"#1C5AAD","ENCERRADO":"#6B7280","PENDENTE":"#9A3412","EM DELIBERAÇÃO":"#FC9D27"};
 function br(d){if(!d)return "—";const p=d.split("-");return p[2]+"/"+p[1]+"/"+p[0];}
 function pad(n){return n<10?"0"+n:n;}
