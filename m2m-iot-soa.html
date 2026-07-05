@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SOA/SOS · M2M &amp; IoT — energia com prova de origem, máquina a máquina</title>
+<title>SOA/SOS · M2M &amp; IoT — protocolo</title>
 <style>
 :root{--navy:#040F2F;--royal:#1C5AAD;--laranja:#FC9D27;--amarelo:#FEC73D;--verde:#1a9c4a;--vermelho:#A12C3A;--cinza:#E0E2E2;--texto:#0d1424;--sub:#4a4f55;--bg:#f4f5f6}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -14,104 +14,107 @@ header .eyebrow{color:var(--laranja);font:700 12px Arial;letter-spacing:.08em;te
 header h1{font-size:27px;margin:8px 0 8px}
 header .sub{color:#c7cfe0;font-size:14.5px;line-height:1.5}
 header .lastro{margin-top:14px;font-size:12.5px;color:#aeb8cf;border-top:1px solid #23315c;padding-top:12px}
-h2{color:var(--navy);font-size:21px;margin:34px 0 10px}
-h2 small{display:block;font:400 13px Arial;color:var(--sub);margin-top:4px}
-h3{color:var(--navy);font-size:15px;margin:16px 0 8px}
-p{color:var(--texto);font-size:14px;margin-bottom:10px}
-p.lead{color:var(--sub);font-size:13.5px}
-.card{background:#fff;border:1.5px solid var(--cinza);border-radius:14px;padding:20px 22px;margin:12px 0}
-.card.red{border-left:6px solid var(--vermelho)}
+.prot{background:#fff;border:1.5px solid var(--cinza);border-radius:16px;padding:8px 26px 22px;margin-bottom:22px}
+.prot .ph{color:var(--navy);font-size:24px;margin:16px 0 2px}
+.prot .pintro{color:var(--sub);font-size:13.5px;max-width:82ch}
+.analogy{background:#fbfcfd;border:1.5px solid var(--cinza);border-left:6px solid var(--laranja);border-radius:12px;padding:14px 18px;margin:12px 0;font-size:13.5px}
+.analogy b{color:var(--navy)}
+.sec{margin-top:24px;border-top:2px solid var(--cinza);padding-top:14px}
+.sec .num{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--royal);color:#fff;font:800 14px Arial;vertical-align:middle;margin-right:8px}
+.sec h2{display:inline;color:var(--navy);font-size:19px}
+.sec .ssub{color:var(--sub);font-size:13px;margin:6px 0 10px}
+.card{background:#fbfcfd;border:1.5px solid var(--cinza);border-radius:12px;padding:16px 18px;margin:10px 0}
 .card.blue{border-left:6px solid var(--royal)}
-.card.amber{border-left:6px solid var(--laranja)}
-table{width:100%;border-collapse:collapse;border:1.5px solid var(--cinza);border-radius:10px;overflow:hidden;font-size:13px;background:#fff;margin:10px 0}
-thead th{background:var(--navy);color:#fff;text-align:left;padding:9px 12px;font-size:12px}
-td{padding:8px 12px;border-top:1px solid var(--cinza);vertical-align:top}
+.deliver{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
+.deliver .t{font-weight:700;color:var(--navy);font-size:15px}
+.deliver .fmt{font:700 11px Arial;color:var(--royal);background:#eef2fb;border:1px solid #cdd9f0;border-radius:999px;padding:2px 8px}
+table{width:100%;border-collapse:collapse;border:1.5px solid var(--cinza);border-radius:10px;overflow:hidden;font-size:12.5px;background:#fff;margin:8px 0}
+thead th{background:var(--navy);color:#fff;text-align:left;padding:8px 10px;font-size:11.5px}
+td{padding:8px 10px;border-top:1px solid var(--cinza);vertical-align:top}
 tr:nth-child(even) td{background:#f7f8fa}
 td.k{font-weight:700;color:var(--navy);white-space:nowrap}
-td.price{font-weight:700;color:var(--sub);white-space:nowrap}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:10px 0}
-@media(max-width:680px){.grid2{grid-template-columns:1fr}}
-.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:10px 0}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:8px 0}
 @media(max-width:780px){.grid3{grid-template-columns:1fr}}
-.analogy{background:#fff;border:1.5px solid var(--cinza);border-left:6px solid var(--laranja);border-radius:12px;padding:16px 20px;margin:12px 0;font-size:14px}
-.analogy b{color:var(--navy)}
-.callout{background:#fffaf0;border:1px solid var(--amarelo);border-left:6px solid var(--laranja);border-radius:12px;padding:14px 18px;margin:14px 0;font-size:13.5px;color:var(--sub)}
-.ok{background:#f0f9f2;border:1px solid #bfe6cb;border-left:6px solid var(--verde);border-radius:12px;padding:14px 18px;margin:14px 0;font-size:13.5px;color:#14532d}
-.tag{font:700 10px Arial;background:#eef2fb;color:var(--royal);border:1px solid #cdd9f0;border-radius:999px;padding:2px 8px;vertical-align:middle;margin-left:4px}
+.mon{background:#fff;border:1.5px solid var(--cinza);border-radius:12px;padding:14px 16px}
+.mon .st{font:700 10px Arial;border-radius:999px;padding:2px 8px;letter-spacing:.03em}
+.st.g{background:#e9f7ee;color:#14532d;border:1px solid #bfe6cb}
+.st.b{background:#eef2fb;color:var(--royal);border:1px solid #cdd9f0}
+.st.o{background:#fff5ec;color:#9a3412;border:1px solid #f6c89a}
+.mon h4{color:var(--navy);font-size:13.5px;margin:8px 0 4px}
+.mon p{font-size:12.5px;color:var(--sub)}
+.mon .base{font-size:11.5px;color:#9aa0a6;margin-top:6px}
+.comp{background:#fbfcfd;border:1.5px solid var(--cinza);border-left:6px solid var(--laranja);border-radius:12px;padding:14px 16px;margin:8px 0}
+.comp h4{color:var(--navy);font-size:14px;margin-bottom:4px}
+.comp p{font-size:12.5px;color:var(--sub)}
+.tag{font:700 9.5px Arial;background:#f3f4f6;color:#6b7280;border:1px solid #d1d5db;border-radius:999px;padding:2px 7px;vertical-align:middle;margin-left:6px}
 .tag.warn{background:#fff5f5;color:var(--vermelho);border-color:#fca5a5}
-.tag.soon{background:#f3f4f6;color:#6b7280;border-color:#d1d5db}
+.callout{background:#fffaf0;border:1px solid var(--amarelo);border-left:6px solid var(--laranja);border-radius:12px;padding:14px 18px;margin:16px 0;font-size:13px;color:var(--sub)}
 code{background:#eef0f3;padding:1px 5px;border-radius:4px;font-size:12px}
-.foot{margin-top:44px;font-size:12px;color:#9aa0a6;text-align:center;border-top:1px solid var(--cinza);padding-top:16px}
+.foot{margin-top:40px;font-size:12px;color:#9aa0a6;text-align:center;border-top:1px solid var(--cinza);padding-top:16px}
 </style></head><body>
-<div class="stamp"><span>● Vetor M2M &amp; IoT · PROPOSTA · 04/07/2026</span></div>
+<div class="stamp"><span>● Vetor M2M &amp; IoT · PROPOSTA · 05/07/2026</span></div>
 <div class="wrap">
 
 <header>
 <div class="eyebrow">Máquina a máquina · IoT · selo horário de origem</div>
-<h1>M2M &amp; IoT — energia com prova de origem, transacionável entre máquinas</h1>
-<div class="sub">
-  Nem toda energia é igual. Energia <b>com prova de origem</b> (horária, rastreável) e energia <b>sem prova</b> são produtos diferentes — como gasolina aditivada e comum. A SOA/SOS transforma a evidência horária num <b>selo transacionável máquina a máquina</b>, para que dispositivos, cargas e sistemas escolham e comprovem a energia que consomem.
-</div>
-<div class="lastro">
-  Este vetor está em <b>estágio de proposta / visão de produto</b>. Ele se apoia na mesma camada de evidência dos demais vetores — a certificação horária reexecutável sobre dados oficiais (mais de 140 milhões de registros ONS/CCEE/ANEEL/EPE). O que é novo aqui é o <b>canal</b>: expor essa prova por API/SDK para consumo automatizado por máquinas.
-</div>
+<h1>M2M &amp; IoT — energia com prova de origem, entre máquinas</h1>
+<div class="sub">Nem toda energia é igual. Energia <b>com prova de origem</b> (horária, rastreável) e energia <b>sem prova</b> são produtos diferentes — como gasolina aditivada e comum. A SOA/SOS transforma a evidência horária num <b>selo transacionável máquina a máquina</b>.</div>
+<div class="lastro"><b>Estágio de proposta / visão de produto.</b> Apoia-se na mesma camada de evidência dos demais vetores — certificação horária reexecutável sobre dados oficiais (140M+ registros ONS/CCEE/ANEEL/EPE). O que é novo é o <b>canal</b>: expor a prova por API/SDK para consumo por máquinas.</div>
 </header>
 
-<h2>1. A ideia — energia certificada é um produto premium
-<small>Quando a origem passa a ter valor (ESG, CBAM, data centers 24/7), distinguir energia com e sem prova vira mercado.</small></h2>
-<div class="analogy">
-  <b>A analogia:</b> gasolina comum e gasolina aditivada saem da mesma bomba, mas têm preço e valor diferentes — porque uma carrega um atributo comprovável. Com energia é igual: o mesmo elétron pode vir com ou sem <b>prova horária de origem</b>. Quem precisa comprovar consumo limpo (data center, exportador sob CBAM, indústria com meta ESG) paga pelo atributo — desde que ele seja <b>verificável e não duplicável</b>.
-</div>
-<p>À medida que a prova de origem vira exigência regulatória e comercial, cresce a demanda por um mecanismo em que a energia certificada seja <b>identificada, transferida e verificada automaticamente</b> — sem intervenção manual, na velocidade das máquinas.</p>
+<div class="prot">
+<h2 class="ph">O protocolo SOA — M2M &amp; IoT</h2>
+<p class="pintro">O que entregamos, o que o cliente ganha e o que a composição destrava. <b>Vetor em estágio de proposta/visão</b>: o produto M2M está marcado <span class="tag">PROPOSTA</span>; os ganhos vêm de direitos já verificados que o selo de origem serve. Estrutura canônica dos 4 tópicos.</p>
 
-<h2>2. Onde a SOA/SOS entra
-<small>Camada de evidência neutra exposta como serviço — não é comercializadora, não vende energia.</small></h2>
-<div class="grid2">
-<div class="card blue">
-<h3>O selo horário transacionável</h3>
-<table><tbody>
-<tr><td class="k">Prova como dado</td><td>A certificação horária de origem vira um objeto verificável que pode acompanhar a transação de energia.</td></tr>
-<tr><td class="k">Verificação M2M</td><td>Dispositivos e sistemas consultam e validam a prova por API/SDK — sem confiar na palavra do vendedor.</td></tr>
-<tr><td class="k">Anti-dupla-contagem</td><td>Trilha de integridade que impede o mesmo atributo horário ser reivindicado duas vezes.</td></tr>
-</tbody></table>
-</div>
-<div class="card blue">
-<h3>Casos de uso IoT</h3>
-<table><tbody>
-<tr><td class="k">Carga inteligente</td><td>Equipamento que prioriza consumir energia com prova de origem quando disponível.</td></tr>
-<tr><td class="k">Data center / IA</td><td>Matching horário automatizado de carga contra energia limpa comprovada.</td></tr>
-<tr><td class="k">Mobilidade / recarga</td><td>Ponto de recarga que atesta a origem da energia entregue ao veículo.</td></tr>
-</tbody></table>
-</div>
-</div>
-<div class="ok"><b>Posição da SOA/SOS:</b> fonte de dado e evidência neutra exposta como serviço. Não comercializa energia, não opera o dispositivo, não garante disponibilidade de energia certificada. Entrega a prova reexecutável de origem que <b>pode apoiar</b> a distinção comercial — quem transaciona é o mercado.</div>
+<div class="analogy"><b>A analogia:</b> gasolina comum e aditivada saem da mesma bomba, mas valem diferente — uma carrega um atributo comprovável. Com energia é igual: o mesmo elétron pode vir com ou sem <b>prova horária de origem</b>. Quem precisa comprovar consumo limpo paga pelo atributo, desde que verificável e não duplicável.</div>
 
-<h2>3. Produtos <span class="tag soon">estágio proposta / visão</span></h2>
+<div class="sec">
+<span class="num">1</span><h2>O que entregamos</h2>
+<div class="ssub">O selo probatório SOA para este vetor — prova de origem servida a máquinas.</div>
+<div class="card blue">
+<div class="deliver"><span class="t">API/SDK de verificação de origem + Selo horário transacionável</span><span class="fmt">JSON assinado</span><span class="fmt">API/SDK</span></div>
+<p style="font-size:13px;color:var(--sub);margin-top:8px">Objeto de evidência horária (myhEC) que dispositivos e sistemas consultam e validam por API/SDK — sem confiar na palavra do vendedor —, com trilha de integridade anti-dupla-contagem.</p>
+</div>
+</div>
+
+<div class="sec">
+<span class="num">2</span><h2>O que o cliente ganha</h2>
+<div class="ssub">Benefícios com base legal — só o que é direito verificado; o produto M2M em si vem marcado PROPOSTA.</div>
 <table>
-<thead><tr><th>Produto</th><th>Escopo</th><th>Preço</th></tr></thead>
+<thead><tr><th>Benefício</th><th>Base legal</th><th>Mecanismo</th><th>Vigência</th><th>Sem SOA</th></tr></thead>
 <tbody>
-<tr><td class="k">API/SDK de verificação de origem</td><td>Consulta e validação da prova horária por sistemas e dispositivos</td><td class="price">sob diagnóstico</td></tr>
-<tr><td class="k">Selo horário transacionável</td><td>Objeto de evidência transferível junto à energia certificada</td><td class="price">sob diagnóstico</td></tr>
-<tr><td class="k">Piloto M2M</td><td>Prova de conceito com parceiro de IoT/carga em ambiente controlado</td><td class="price">sob diagnóstico</td></tr>
-</tbody></table>
-<p class="lead">Vetor em estágio de proposta e visão de produto: escopo técnico e precificação são definidos com o parceiro no piloto. Depende de integração com o sistema/dispositivo do cliente.</p>
+<tr><td class="k">Competitividade CBAM na exportação</td><td>Regulation (EU) 2023/956</td><td>Eletricidade renovável verificada evita valor-padrão penalizador; o selo de origem serve ao declarante CBAM.</td><td>fase definitiva</td><td>eletricidade renovável auditável</td></tr>
+<tr><td class="k">Escopo 2 no relato IFRS S2</td><td>CVM 193/2023 e 244/2026</td><td>Lastro horário de origem fortalece o market-based e reduz ressalva no assurance.</td><td>vigente (voluntário)</td><td>Escopo 2 com ressalva</td></tr>
+<tr><td class="k">Selo transacionável M2M <span class="tag">PROPOSTA</span></td><td>visão de produto (sem base legal específica)</td><td>Distinção comercial entre energia com e sem prova de origem, verificável e transferível por máquina.</td><td>a definir</td><td>não há como diferenciar o MWh comprovado</td></tr>
+</tbody>
+</table>
+</div>
 
-<h2>4. Para quem</h2>
+<div class="sec">
+<span class="num">3</span><h2>O que o monitor regulatório exige agora</h2>
+<div class="ssub">Fatos vivos que dão valor à prova de origem — 🟢 vigente/ancorado · 🔵 referência · 🟠 pendente.</div>
 <div class="grid3">
-<div class="card amber"><h3>Fabricantes de IoT / energia</h3><p class="lead">Integrando prova de origem em equipamentos e plataformas.</p></div>
-<div class="card amber"><h3>Data centers e grandes cargas</h3><p class="lead">Automatizando o matching horário de energia limpa comprovada.</p></div>
-<div class="card amber"><h3>Mobilidade e recarga</h3><p class="lead">Atestando origem da energia no ponto de entrega.</p></div>
+<div class="mon"><span class="st g">🟢 FASE DEFINITIVA</span><h4>CBAM</h4><p>Exige emissão incorporada verificada; eletricidade renovável comprovável reduz o fator reportado.</p><div class="base">Regulation (EU) 2023/956</div></div>
+<div class="mon"><span class="st b">🔵 REFERÊNCIA</span><h4>Relato de sustentabilidade</h4><p>IFRS S2 (Escopo 2) sob CVM 244 — o lastro horário de origem é o que sustenta o market-based.</p><div class="base">CVM 193/2023 e 244/2026</div></div>
+<div class="mon"><span class="st o">🟠 PROPOSTA</span><h4>Mercado M2M de energia certificada</h4><p>Transação máquina-a-máquina de energia com atributo — visão de produto, sem marco específico ainda.</p><div class="base">monitorar (EnergyTag · mercados de atributo)</div></div>
+</div>
 </div>
 
-<div class="callout">
-  A SOA/SOS fornece <b>dado e evidência</b> — não vende energia, não garante disponibilidade nem resultado comercial. O selo é insumo verificável: <b>pode apoiar</b> a distinção entre energia com e sem prova de origem. A metodologia proprietária é apresentada sob NDA.
+<div class="sec">
+<span class="num">4</span><h2>O que você pode acessar</h2>
+<div class="ssub">Adjacências que a composição do protocolo SOA destrava.</div>
+<div class="comp"><h4>Data centers 24/7 CFE + M2M</h4><p>A carga de IA faz o matching horário automatizado contra energia limpa comprovada — o selo de origem servido por API é o mesmo do vetor Data centers.</p></div>
+<div class="comp"><h4>Um selo, muitos canais</h4><p>A mesma certificação horária (HEC/myhEC) serve ao CBAM, ao IFRS S2 e à transação M2M — uma prova, vários usos.</p></div>
 </div>
+</div>
+
+<div class="callout">A SOA/SOS fornece <b>dado e evidência</b> — não vende energia, não garante disponibilidade nem resultado comercial. O selo é insumo verificável: <b>pode apoiar</b> a distinção entre energia com e sem prova de origem. Preço sob diagnóstico. Metodologia sob NDA.</div>
 
 <div class="foot">
-  <b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · Sustainability Operating System · Soluções em Energia<br>
-  Vetor M2M &amp; IoT · Folder Vivo v1.0 (proposta) · 04/07/2026<br>
-  Rua Pais Leme, 215 · Conj. 1713 · Pinheiros · São Paulo / SP · limonta@solaroneaccount.com<br>
-  <b>Três pedidos de patente depositados no INPI · 31 reivindicações · PCT único até 19/02/2027</b>
+<b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · Sustainability Operating System · Soluções em Energia<br>
+Vetor M2M &amp; IoT · Folder v1.1 (proposta · estrutura canônica) · 05/07/2026<br>
+Rua Pais Leme, 215 · Conj. 1713 · Pinheiros · São Paulo / SP · limonta@solaroneaccount.com<br>
+<b>Três pedidos de patente depositados no INPI · 31 reivindicações · PCT único até 19/02/2027</b>
 </div>
 
 </div></body></html>
