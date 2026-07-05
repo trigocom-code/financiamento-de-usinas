@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SOA/SOS · Ancilares auditáveis — prova de desempenho de serviço ancilar</title>
+<style>
+:root{--navy:#040F2F;--royal:#1C5AAD;--laranja:#FC9D27;--amarelo:#FEC73D;--verde:#1a9c4a;--vermelho:#A12C3A;--cinza:#E0E2E2;--texto:#0d1424;--sub:#4a4f55;--bg:#f4f5f6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--texto);background:var(--bg);line-height:1.58}
+.stamp{position:fixed;top:9px;right:12px;z-index:99}
+.stamp span{display:inline-block;background:#0b1f4d;color:#FEC73D;font:600 11px/1.1 Arial;letter-spacing:.03em;padding:5px 11px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.wrap{max-width:1080px;margin:0 auto;padding:30px 22px 70px}
+header{background:var(--navy);color:#fff;border-radius:16px;padding:30px 34px;margin-bottom:26px}
+header .eyebrow{color:var(--laranja);font:700 12px Arial;letter-spacing:.08em;text-transform:uppercase}
+header h1{font-size:27px;margin:8px 0 8px}
+header .sub{color:#c7cfe0;font-size:14.5px;line-height:1.5}
+header .lastro{margin-top:14px;font-size:12.5px;color:#aeb8cf;border-top:1px solid #23315c;padding-top:12px}
+h2{color:var(--navy);font-size:21px;margin:34px 0 10px}
+h2 small{display:block;font:400 13px Arial;color:var(--sub);margin-top:4px}
+h3{color:var(--navy);font-size:15px;margin:16px 0 8px}
+p{color:var(--texto);font-size:14px;margin-bottom:10px}
+p.lead{color:var(--sub);font-size:13.5px}
+.card{background:#fff;border:1.5px solid var(--cinza);border-radius:14px;padding:20px 22px;margin:12px 0}
+.card.red{border-left:6px solid var(--vermelho)}
+.card.blue{border-left:6px solid var(--royal)}
+.card.amber{border-left:6px solid var(--laranja)}
+table{width:100%;border-collapse:collapse;border:1.5px solid var(--cinza);border-radius:10px;overflow:hidden;font-size:13px;background:#fff;margin:10px 0}
+thead th{background:var(--navy);color:#fff;text-align:left;padding:9px 12px;font-size:12px}
+td{padding:8px 12px;border-top:1px solid var(--cinza);vertical-align:top}
+tr:nth-child(even) td{background:#f7f8fa}
+td.k{font-weight:700;color:var(--navy);white-space:nowrap}
+td.price{font-weight:700;color:var(--sub);white-space:nowrap}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:10px 0}
+@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:10px 0}
+@media(max-width:780px){.grid3{grid-template-columns:1fr}}
+.tl{background:#fff;border:1.5px solid var(--cinza);border-radius:12px;padding:14px 18px;margin:10px 0}
+.tl .row{display:flex;gap:12px;padding:7px 0;border-top:1px dashed var(--cinza);font-size:13px}
+.tl .row:first-child{border-top:none}
+.tl .d{font-weight:700;color:var(--royal);white-space:nowrap;min-width:120px}
+.callout{background:#fffaf0;border:1px solid var(--amarelo);border-left:6px solid var(--laranja);border-radius:12px;padding:14px 18px;margin:14px 0;font-size:13.5px;color:var(--sub)}
+.ok{background:#f0f9f2;border:1px solid #bfe6cb;border-left:6px solid var(--verde);border-radius:12px;padding:14px 18px;margin:14px 0;font-size:13.5px;color:#14532d}
+.tag{font:700 10px Arial;background:#eef2fb;color:var(--royal);border:1px solid #cdd9f0;border-radius:999px;padding:2px 8px;vertical-align:middle;margin-left:4px}
+.tag.warn{background:#fff5f5;color:var(--vermelho);border-color:#fca5a5}
+.tag.soon{background:#f3f4f6;color:#6b7280;border-color:#d1d5db}
+code{background:#eef0f3;padding:1px 5px;border-radius:4px;font-size:12px}
+.foot{margin-top:44px;font-size:12px;color:#9aa0a6;text-align:center;border-top:1px solid var(--cinza);padding-top:16px}
+</style></head><body>
+<div class="stamp"><span>● Vetor Ancilares auditáveis · PROPOSTA · 04/07/2026</span></div>
+<div class="wrap">
+
+<header>
+<div class="eyebrow">Serviços ancilares · armazenamento · sandbox ANEEL</div>
+<h1>Ancilares auditáveis — a prova do serviço, não só a promessa</h1>
+<div class="sub">
+  Serviços ancilares (controle de frequência, reserva, controle de tensão, partida) prestados por baterias e renováveis precisam de <b>comprovação de desempenho reexecutável</b>. A SOA/SOS entrega a evidência neutra que demonstra a entrega efetiva do serviço — reconciliada contra o registro do operador.
+</div>
+<div class="lastro">
+  Nosso lastro: a inteligência analítica da SOA/SOS roda sobre dados oficiais (ONS, CCEE, ANEEL, EPE) — mais de 140 milhões de registros rastreáveis e reexecutáveis. Para ancilares, o insumo é o histórico de despacho, disponibilidade e a margem locacional por barramento. A prova é o registro público reconciliado, verificável por qualquer perito.
+</div>
+</header>
+
+<h2>1. O que muda — o serviço ancilar passa a ser contratado e remunerado
+<small>Com mais baterias e renováveis no sistema, a flexibilidade vira produto — e produto precisa de medição confiável.</small></h2>
+<p>À medida que o SIN incorpora armazenamento e geração variável, os <b>serviços ancilares</b> deixam de ser um subproduto e passam a ser contratados e remunerados de forma explícita. O ponto sensível é o mesmo do curtailment: quem presta o serviço precisa <b>demonstrar</b> que o entregou — no tempo certo, na magnitude certa. Sem registro reexecutável, a remuneração é frágil e contestável.</p>
+
+<div class="card red">
+<h3>A janela regulatória em aberto <span class="tag warn">[VIA MONITOR · verificar no oficial]</span></h3>
+<div class="tl">
+  <div class="row"><span class="d">Sandbox ANEEL</span><span>Ambiente regulatório experimental para armazenamento e novos serviços — pilotos que testam remuneração de flexibilidade e ancilares.</span></div>
+  <div class="row"><span class="d">LRCAP 2026</span><span>Leilões de reserva de capacidade (02 e 04/12/2026) e a discussão de capacidade remanescente do SIN aproximam a contratação de flexibilidade firme.</span></div>
+  <div class="row"><span class="d">Depois</span><span>Consolidação das regras de medição e verificação de desempenho — a prova vira condição de pagamento.</span></div>
+</div>
+<p class="lead">Fonte: Monitor Regulatório SOA (agenda ANEEL/ONS) — <b>ancorar no ato oficial antes de uso externo</b>. Datas e números de terceiros: atribuídos, não apresentados como dado SOA.</p>
+</div>
+
+<h2>2. Onde a SOA/SOS entra
+<small>Camada de evidência neutra sobre a operação do ativo — não é operador nem parte contratante.</small></h2>
+<div class="grid2">
+<div class="card blue">
+<h3>Para quem presta o serviço (gerador / BESS)</h3>
+<table><tbody>
+<tr><td class="k">Prova de desempenho</td><td>Registro reexecutável da resposta do ativo (rampa, disponibilidade, entrega) reconciliado contra o operador — sustenta a remuneração.</td></tr>
+<tr><td class="k">Contraditório técnico</td><td>Evidence Pack que o contratante/regulador pode reproduzir — desloca o ônus da alegação de não-entrega.</td></tr>
+<tr><td class="k">Trilha de integridade</td><td>Hash + carimbo temporal + dado público — resistente a contestação de autenticidade.</td></tr>
+</tbody></table>
+</div>
+<div class="card blue">
+<h3>Para quem decide onde investir (site selection)</h3>
+<table><tbody>
+<tr><td class="k">Margem locacional</td><td>Leitura da atratividade por barramento — onde o serviço ancilar e a arbitragem valem mais, a partir do histórico do sistema.</td></tr>
+<tr><td class="k">Screening de ativos</td><td>Priorização de pontos de conexão para BESS com foco em flexibilidade e ancilares.</td></tr>
+<tr><td class="k">Enriquece Baterias</td><td>Complementa o material de BESS auditável com a camada de serviço ancilar.</td></tr>
+</tbody></table>
+</div>
+</div>
+<div class="ok"><b>Posição da SOA/SOS:</b> fonte de dado e evidência neutra. Não opera o ativo, não contrata o serviço, não garante remuneração. Entrega a prova reexecutável de desempenho que <b>pode apoiar</b> a contratação e o pagamento — quem opera e negocia é o agente.</div>
+
+<h2>3. Produtos <span class="tag soon">estágio proposta</span></h2>
+<table>
+<thead><tr><th>Produto</th><th>Escopo</th><th>Preço</th></tr></thead>
+<tbody>
+<tr><td class="k">Laudo de desempenho ancilar</td><td>Prova reexecutável da entrega do serviço por ativo/janela · reconciliação contra o operador</td><td class="price">sob diagnóstico</td></tr>
+<tr><td class="k">Site selection para ancilares</td><td>Margem locacional por barramento · screening de pontos para BESS</td><td class="price">sob diagnóstico</td></tr>
+<tr><td class="k">Monitoramento contínuo</td><td>Acompanhamento de desempenho + atualização periódica</td><td class="price">sob diagnóstico</td></tr>
+</tbody></table>
+<p class="lead">Vetor em estágio de proposta: escopo e precificação são desenhados a partir do diagnóstico do ativo/carteira. Folder próprio em construção; hoje a análise enriquece o material de Baterias.</p>
+
+<h2>4. Para quem</h2>
+<div class="grid3">
+<div class="card amber"><h3>Geradores com BESS</h3><p class="lead">Ativos que prestam ou pretendem prestar flexibilidade e ancilares.</p></div>
+<div class="card amber"><h3>Investidores / desenvolvedores</h3><p class="lead">Decidindo localização e dimensionamento de armazenamento.</p></div>
+<div class="card amber"><h3>Participantes de sandbox</h3><p class="lead">Pilotos que precisam de medição e verificação independentes.</p></div>
+</div>
+
+<div class="callout">
+  A SOA/SOS fornece <b>dado e evidência</b> — não garante remuneração nem resultado regulatório. O dossiê é insumo de diligência: <b>pode apoiar</b> a contratação, <b>pode reduzir a incerteza</b> sobre a entrega do serviço. A metodologia proprietária é apresentada sob NDA.
+</div>
+
+<div class="foot">
+  <b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40 · Sustainability Operating System · Soluções em Energia<br>
+  Vetor Ancilares auditáveis · Folder Vivo v1.0 (proposta) · 04/07/2026<br>
+  Rua Pais Leme, 215 · Conj. 1713 · Pinheiros · São Paulo / SP · limonta@solaroneaccount.com<br>
+  <b>Três pedidos de patente depositados no INPI · 31 reivindicações · PCT único até 19/02/2027</b>
+</div>
+
+</div></body></html>
