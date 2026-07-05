@@ -57,8 +57,8 @@ h2{color:var(--navy);font-size:19px;margin:22px 0 8px;border-bottom:2px solid va
 
 <h2>O Brasil entra no mapa — LRCAP</h2>
 <div class="cols">
-<div class="col b"><div class="h">O LEILÃO</div><ul><li>Portaria MME 136/2026 institui o LRCAP (Reserva de Capacidade de Armazenamento)</li><li>Leilões: 02 e 04 de dezembro de 2026</li><li>Suprimento a partir de 01/08/2028</li><li>Bônus locacional β = 0,9 para barramentos prioritários</li></ul></div>
-<div class="col p"><div class="h">O MAPA (Anexo II)</div><ul><li>129 barramentos bonificados em 98 subestações</li><li>8 estados: AL, BA, CE, MG, PB, PE, PI, RN</li><li>BA e CE concentram 63% dos pontos</li><li>Convergência com os corredores de maior curtailment</li></ul></div></div>
+<div class="col b"><div class="h">O LEILÃO</div><ul><li>Portaria MME 136/2026 institui o LRCAP (Reserva de Capacidade na forma de potência)</li><li>Compromisso = disponibilidade de <b>potência</b> em MW (não energia)</li><li>Leilões: 02/12/2026 (Nacional, conteúdo nacional) e 04/12/2026 (Aberto)</li><li>Contratos de <b>15 anos</b>, suprimento desde 01/08/2028, Receita Fixa ao IPCA</li><li>Bônus locacional para barramentos prioritários (coeficiente β; valor 0,9 vem da Nota Técnica da EPE, não do corpo da portaria)</li></ul></div>
+<div class="col p"><div class="h">O MAPA (Anexo II)</div><ul><li>129 barramentos bonificados em 98 subestações</li><li>8 estados: AL, BA, CE, MG, PB, PE, PI, RN</li><li>BA e CE concentram 63% dos pontos (inclui Pecém II 230 kV)</li><li>Convergência com os corredores de maior curtailment</li></ul></div></div>
 
 <h2>A perda de entrada — o curtailment</h2>
 <p class="lead2">O corte de geração renovável (constrained-off) é uma das maiores perdas evitáveis do SIN — e a bateria é a resposta direta. A energia é gerada, mas não entregue: receita desperdiçada e ativo subaproveitado.</p>
@@ -74,8 +74,17 @@ h2{color:var(--navy);font-size:19px;margin:22px 0 8px;border-bottom:2px solid va
 
 <h2>Dois produtos</h2>
 <div class="cols">
-<div class="col b"><div class="h">PRODUTO A · BESS no LRCAP</div><ul><li>Vende disponibilidade de potência ao sistema</li><li>Receita por contrato de capacidade — sem arbitragem de preço</li><li>Captura o bônus locacional β = 0,9</li><li>Receita previsível, menor complexidade operacional</li></ul></div>
+<div class="col b"><div class="h">PRODUTO A · BESS no LRCAP</div><ul><li>Vende disponibilidade de potência ao sistema</li><li>Receita Fixa por contrato de capacidade — sem arbitragem de preço</li><li>Captura o bônus locacional (β do barramento prioritário)</li><li>Receita previsível, menor complexidade operacional</li></ul></div>
 <div class="col p"><div class="h">PRODUTO B · Co-location na usina (REN 1.071/2023)</div><ul><li>Desloca a própria geração cortada (ENE)</li><li>Firma entrega contratada ou vende o excedente</li><li>Desconto no Fio condicionado à prova de origem renovável</li><li>Maior upside — exige camada de prova robusta e auditável</li></ul></div></div>
+
+<h2>O gatilho de prova — a receita depende de comprovar disponibilidade</h2>
+<p class="lead2">É aqui que a Portaria 136 vira endereço para a camada de prova. O contrato do LRCAP não paga por energia — paga por <b>estar disponível</b>. E a receita é cortada quando a disponibilidade não se confirma.</p>
+<div class="ugrid">
+<div class="ucard"><div class="ct">Receita Fixa reduzível (art. 5º)</div><div class="cd">Remuneração em R$/ano por disponibilidade de potência, com <b>apuração de desempenho em base mensal</b> — a receita cai conforme o desempenho apurado.</div></div>
+<div class="ucard"><div class="ct">Abatimento e penalidade (art. 9º §4º-IV / §10)</div><div class="cd">Os contratos de 15 anos (CRCAP) têm cláusula de <b>abatimento/ressarcimento</b> da Receita Fixa por indisponibilidade ou não entrega, e penalidades por não atendimento.</div></div>
+<div class="ucard"><div class="ct">Onde a SOA/SOS entra</div><div class="cd">Evidência horária, independente e reexecutável — ancorada no <b>PMI</b> — de que a potência estava disponível. Prova pré-constituída para 15 anos de aferição e para contestar indisponibilidade aferida. <span style="color:var(--grey)">Insumo de decisão; não garante remuneração.</span></div></div>
+</div>
+<div class="lastro"><b>Âncora:</b> Portaria MME 136/2026, arts. 5º, 7º e 9º (DOU 03/06/2026). A energia de carga/descarga é liquidada no MCP ao PLD, com resultado à CONCAP (art. 9º §6º–8º) — segunda frente onde a prova horária do injetado/consumido importa.</div>
 
 <h2>A camada de prova — sHEC <span style="font-weight:normal;font-size:13px;color:var(--grey)">(patente depositada no INPI)</span></h2>
 <p class="lead2">A SOA avalia o curtailment e classifica os atributos (ENE / REL / CNF). O <b>sHEC</b> roteia cada MWh: <b>captura</b> o ENE e o valida nas duas pontas — origem na carga, custódia na descarga — e <b>atesta</b> o REL/CNF cortado para o ressarcimento, sem capturá-lo.</p>
@@ -111,7 +120,7 @@ const FACTS_URLS = ["https://raw.githubusercontent.com/trigocom-code/financiamen
 /* Snapshot de fallback (usado se o fetch falhar / sem internet). Atualizado em 26/06/2026. */
 const FALLBACK={"_meta":{"verificado_em":"2026-06-26"},"fatos":[
 {"tema":"Limite de potência da GD (minigeração)","valor":"> 75 kW até 3 MW (solar/não despachável) ou 5 MW (despachável/híbrida com bateria)","status":"VIGENTE","norma":"REN ANEEL 1.059/2023 (Lei 14.300/2022)","verificado_em":"2026-06-26"},
-{"tema":"LRCAP de Armazenamento — calendário","valor":"Leilões 02/12/2026 (Nacional) e 04/12/2026 (Aberto); cadastro EPE 15/06–31/07; suprimento 15 anos desde 01/08/2028","status":"AGENDADO","norma":"Portaria MME 136/2026","verificado_em":"2026-06-26"},
+{"tema":"LRCAP de Armazenamento — calendário + receita reduzível","valor":"Leilões 02/12/2026 (Nacional) e 04/12/2026 (Aberto); cadastro EPE 15/06–31/07; contratos de 15 anos desde 01/08/2028. Receita Fixa por disponibilidade de potência, apurada mensalmente e REDUZÍVEL por indisponibilidade, com abatimento/penalidade (art. 5º + 9º §4º-IV/§10)","status":"AGENDADO","norma":"Portaria MME 136/2026 (arts. 5º/7º/9º)","verificado_em":"2026-07-04"},
 {"tema":"Edital ANEEL do LRCAP Armazenamento","valor":"Preço-teto e regra de TUST — NÃO PUBLICADO","status":"PENDENTE","norma":"ANEEL (edital)","verificado_em":"2026-06-26"},
 {"tema":"Referência de capacidade (LRCAP térmica)","valor":"Preço-teto térmica R$ 1,12–2,25 mi/MW-ano (2º LRCAP, mar/2026)","status":"VIGENTE","norma":"ANEEL/CCEE 2026","verificado_em":"2026-06-26"},
 {"tema":"Requisitos técnicos das baterias (LRCAP)","valor":"≥30 MW, ≥4h, ≥85% eficiência, Grid Forming obrigatório","status":"VIGENTE","norma":"NT-ONS DPL 0111/2025 · EPE-DEE-NT-095/2025","verificado_em":"2026-06-26"},
