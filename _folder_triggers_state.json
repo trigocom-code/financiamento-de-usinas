@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-07-05 14:31",
+                  "gerado_em":  "2026-07-05 14:55",
                   "modo":  "v2 canario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
@@ -55,12 +55,12 @@
                                                                    "ultimo":  "2026-07-05"
                                                                },
                                        "monitor-gato-solar-soa":  {
-                                                                      "hoje":  "NAO",
-                                                                      "ultimo":  "2026-07-03"
+                                                                      "hoje":  "SIM",
+                                                                      "ultimo":  "2026-07-05"
                                                                   },
                                        "monitor-iptu-verde-soa":  {
-                                                                      "hoje":  "NAO",
-                                                                      "ultimo":  "2026-07-03"
+                                                                      "hoje":  "SIM",
+                                                                      "ultimo":  "2026-07-05"
                                                                   }
                                    }
               },
