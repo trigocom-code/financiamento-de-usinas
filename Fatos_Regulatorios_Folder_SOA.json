@@ -2,7 +2,7 @@
   "_meta": {
     "schema_version": "1.3",
     "descricao": "Fonte ÚNICA de fatos regulatórios do Folder 'Onde Entramos'. Schema 1.3 (alinhado aos monitores per-órgão e à Tabela de Precedência QSV v1.2). O folder Folder_Vivo_Regulatorio_GitHub.html consome DESTE arquivo (data.fatos[]). O monitor regulatório SOA mantém este arquivo. Schema legado aposentado em Fatos_Regulatorios_Folder_SOA.legacy.deprecated.json.",
-    "verificado_em": "2026-07-04",
+    "verificado_em": "2026-07-05",
     "schema_migrado_em": "2026-06-29",
     "proxima_revisao_sugerida": "2026-07-31",
     "responsavel_atualizacao": "Monitor Regulatório SOA (digest diário) — escreve schema 1.3, aplica Tabela_Precedencia_QSV_v1_2",
@@ -25,7 +25,7 @@
       "qsv_cor": "AZUL",
       "norma": "REN ANEEL 1.059/2023 (regulamenta a Lei 14.300/2022)",
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-07-02",
+      "verificado_em": "2026-07-01",
       "gatilho_revisao": "alteração da REN 1.059 ou novo marco legal da GD"
     },
     {
@@ -33,13 +33,13 @@
       "fato_id": "MME-PORTARIA-136-2026-LRCAP",
       "orgao": "MME",
       "tipo_fato": "REGULATORIO_DECISORIO",
-      "tema": "LRCAP de Armazenamento (baterias) — calendário + regime de receita reduzível por indisponibilidade",
-      "valor": "Leilões 02/12/2026 (Nacional 2028A, c/ requisito de nacionalização Sistema-CFI BNDES) e 04/12/2026 (Aberto 2028B, sem conteúdo nacional; depende da capacidade produtiva apurada no 2028A, §4º). Cadastro EPE 15/06–31/07/2026. Suprimento 15 anos (CRCAP), início 01/08/2028, Receita Fixa indexada ao IPCA. COMPROMISSO = disponibilidade de POTÊNCIA em MW (não energia). REGIME DE RECEITA (gatilho de prova SOA / BESS auditável): Receita Fixa R$/ano por disponibilidade (art. 5º); apuração de desempenho operativo em BASE MENSAL, receita REDUZIDA conforme desempenho (art. 5º §1º + art. 9º §4º-IV); art. 9º §4º-IV exige cláusulas de ABATIMENTO/RESSARCIMENTO da Receita Fixa por indisponibilidade/não entrega; art. 9º §10 detalha PENALIDADES; art. 9º §6º-8º liquida a energia de carga/descarga no MCP ao PLD → CONCAP. É a arena onde a prova de disponibilidade horária ancorada no PMI vale receita por 15 anos.",
+      "tema": "LRCAP de Armazenamento (baterias) — calendário",
+      "valor": "Leilões 02/12/2026 (Nacional, c/ requisito de nacionalização) e 04/12/2026 (Aberto). Cadastro EPE 15/06–31/07/2026. Suprimento 15 anos, início 01/08/2028.",
       "status": "AGENDADO",
       "qsv_cor": "VERDE",
-      "norma": "Portaria MME 136/2026 (DOU 03/06/2026) · arts. 5º/9º + calendário",
+      "norma": "Portaria MME 136/2026 (DOU 03/06/2026)",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-07-04",
+      "verificado_em": "2026-07-01",
       "gatilho_revisao": "publicação/alteração do edital ANEEL; mudança de datas"
     },
     {
@@ -48,12 +48,12 @@
       "orgao": "ANEEL",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Edital ANEEL do LRCAP Armazenamento (preço-teto + regra de TUST)",
-      "valor": "NÃO PUBLICADO — preço-teto e tratamento de TUST (risco de dupla cobrança consumo+injeção) pendentes. Sinal de 24/06: na REN 1.161 de outorga de armazenamento a ANEEL MANTEVE a cobrança integral pelo uso da rede após a Lei 15.269/2025; a regra de TUST específica do leilão segue no edital, ainda não publicado.",
+      "valor": "NÃO PUBLICADO — preço-teto e tratamento de TUST (risco de dupla cobrança consumo+injeção) pendentes. Sinal de 24/06: na REN 1.161 de outorga de armazenamento a ANEEL MANTEVE a cobrança integral pelo uso da rede após a Lei 15.269/2025; a regra de TUST específica do leilão segue no edital, ainda não publicado. ⚠ Anti-falso-positivo (03/07, ato lido na íntegra): o 'Edital do Leilão nº 2/2026-ANEEL' (PDF na CCEE, SEI 0292412, datado 13/02/2026) é o LRCAP térmica/hidro de 18/03 — NÃO é o leilão de baterias.",
       "status": "PENDENTE",
       "qsv_cor": "LARANJA",
       "norma": "ANEEL (edital do leilão)",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-07-02",
+      "verificado_em": "2026-07-05",
       "gatilho_revisao": "publicação do edital (item nº 1 de prioridade do monitor)"
     },
     {
@@ -67,7 +67,7 @@
       "qsv_cor": "AZUL",
       "norma": "ANEEL/CCEE — homologação LRCAP 2026",
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-07-02",
+      "verificado_em": "2026-07-01",
       "gatilho_revisao": "novo LRCAP ou divulgação do preço-teto de armazenamento"
     },
     {
@@ -81,7 +81,7 @@
       "qsv_cor": "VERDE",
       "norma": "Portaria MME 136/2026 Art. 7º (III/IV/VI) + Art. 4º §13 (grid-forming) · NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-07-02",
+      "verificado_em": "2026-06-30",
       "gatilho_revisao": "revisão da NT de requisitos; NT-ONS 0111 = EPE-095 (mesmo doc conjunto)"
     },
     {
@@ -95,7 +95,7 @@
       "qsv_cor": "VERDE",
       "norma": "REN ANEEL 1.161/2026 (assinada 02/06; publicada no DOU 24/06/2026)",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-07-02",
+      "verificado_em": "2026-07-01",
       "gatilho_revisao": "revisão da REN 1.161 ou regra de TUST do edital LRCAP"
     },
     {
@@ -109,7 +109,7 @@
       "qsv_cor": "AZUL",
       "norma": "CP ANEEL 45/2019 (3ª fase)",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-07-02",
+      "verificado_em": "2026-07-05",
       "gatilho_revisao": "publicação de REN/voto cobrindo eólicas e/ou MMGD"
     },
     {
@@ -123,7 +123,7 @@
       "qsv_cor": "AZUL",
       "norma": "bases públicas oficiais",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-07-02",
+      "verificado_em": "2026-07-01",
       "gatilho_revisao": "n/a (estrutural)"
     },
     {
@@ -132,12 +132,14 @@
       "orgao": "ANEEL",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Medição inteligente (smart meter) — regulamentação ANEEL",
-      "valor": "CP ANEEL nº 001/2026 (medição inteligente) em 2ª fase (aberta 30/06/2026, comunicada no GT Geração Distribuída da ABSOLAR). Relatório do Diretor-Relator prevê 5 temas: corte/religamento remoto (além de inadimplência), monitoramento de qualidade até a 40ª harmônica, armazenamento dos dados de medição, interoperabilidade e leitura remota. Complementa o mandato das Portarias MME 111/2025 + 126/2026 (meta 2% a.a. por 24 meses, 01/03/2026→mar/2028). É a 'resolução específica' da ANEEL que operacionaliza o smart meter.",
+      "valor": "CP ANEEL nº 001/2026 (medição inteligente) — 2ª fase ANCORADA em F1 (notícia ANEEL 30/06/2026): contribuições de 01/07 a 14/08/2026, com MINUTA de REN que altera PRODIST e REN 1.000/2021. Medição inteligente definida como 4 componentes integrados (medidor, interface com consumidor, comunicação de dados, gestão de dados). Temas: requisitos mínimos; dados ao consumidor (proposta: até 24h após coleta); pré-pagamento; cibersegurança/interoperabilidade. 1ª fase (29/01–16/03, 53 participantes) consolidou registro de consumo E injeção (inclui MMGD), corte/religamento remotos, alarme antiviolação. Decisão prevista: 2S2026 (Agenda Regulatória 2026-2027, eixo T&D). Complementa o mandato das Portarias MME 111/2025 + 126/2026.",
       "status": "EM DELIBERAÇÃO",
       "qsv_cor": "AZUL",
       "norma": "CP ANEEL nº 001/2026 (medição inteligente) · mandato: Portarias MME 111/2025 + 126/2026",
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "fonte": "F3 ABSOLAR (GT Geração Distribuída, 30/06/2026) + F1 ANEEL (abrir CP no site para ancorar)",
+      "numero_status": "ANCORADO",
+      "fonte": "F1 ANEEL (notícia 30/06/2026, lida na íntegra em 03/07) + F3 ABSOLAR (GT Geração Distribuída, 30/06/2026)",
+      "verificado_em": "2026-07-03",
+      "gatilho_revisao": "voto final da CP 001/2026 (decisão prevista 2S2026); fim da janela de contribuições 14/08/2026",
       "vetores_afetados": [
         "V2",
         "sHEC"
@@ -166,7 +168,7 @@
       "orgao": "EPE",
       "tipo_fato": "REGULATORIO_INSTRUMENTAL",
       "tema": "LRCAP 2026 Armazenamento — cadastro e habilitação técnica",
-      "valor": "FAQ + Manual de Cadastramento e Habilitação Técnica do LRCAP 2026 (Armazenamento), referência operacional para participação no leilão. Comunicado no GT Armazenamento da ABSOLAR (15/06/2026). Complementa os limiares da Portaria MME 136/2026 (Art. 7º: ≥30MW/≥4h/≥85% RTE). CAVEAT QSV (leitura integral 04/07): o corpo da Portaria 136 + Anexo II traz a LISTA DEFINITIVA de barramentos elegíveis à bonificação locacional (129, NE+norte MG), mas NÃO o valor numérico do coeficiente (β=0,9) nem os MW por barramento — esses vêm da Nota Técnica da EPE (metodologia nov/2025; NT de Quantitativos até 30/09/2026). β=0,9 permanece ALEGADO_NAO_ANCORADO até confirmar na NT EPE.",
+      "valor": "FAQ + Manual de Cadastramento e Habilitação Técnica do LRCAP 2026 (Armazenamento), referência operacional para participação no leilão. Comunicado no GT Armazenamento da ABSOLAR (15/06/2026). Complementa os limiares da Portaria MME 136/2026 (Art. 7º: ≥30MW/≥4h/≥85% RTE) e o bônus locacional β=0,9 (ANEXO II).",
       "status": "VIGENTE",
       "qsv_cor": "AZUL",
       "norma": "EPE · FAQ/Manual LRCAP 2026 (Armazenamento) · Portaria MME 136/2026",
@@ -199,13 +201,13 @@
       "fato_id": "MME-MP-1318-2025",
       "orgao": "MME",
       "tema": "MP 1.318/2025 — REDATA",
-      "valor": "CADUCADA (não convertida no prazo). Conteúdo migrou para o PL 278/2026, APROVADO na Câmara e TRAVADO no Senado → regime REDATA NÃO vigente. O Art. 11-B exige energia limpa 'na totalidade' com prova publicada — convergente com a tese de prova horária. Confirmado na fonte 30/06.",
+      "valor": "CADUCADA (não convertida no prazo). Conteúdo migrou para o PL 278/2026, APROVADO na Câmara e TRAVADO no Senado → regime REDATA NÃO vigente. O Art. 11-B exige energia limpa 'na totalidade' com prova publicada — convergente com a tese de prova horária. Reconfirmado 05/07 (Senado: Requerimento de urgência 112/2026 segue aguardando inclusão em Ordem do Dia; 13 emendas, sem agendamento de votação).",
       "status": "CADUCADA",
       "qsv_cor": "LARANJA",
       "norma": "MP 1.318/2025 (sem efeito jurídico atual) · PL 278/2026 (Senado)",
       "numero_status": "ANCORADO",
-      "fonte": "PL 278/2026 (tramitação Câmara/Senado), confirmado 30/06/2026",
-      "verificado_em": "2026-06-30"
+      "fonte": "PL 278/2026 (tramitação Câmara/Senado), reconfirmado 05/07/2026",
+      "verificado_em": "2026-07-05"
     },
     {
       "fato_id": "ANEEL-CP-009-GATO-SOLAR",
@@ -235,13 +237,13 @@
       "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
       "orgao": "EPE",
       "tema": "Mapa de Barramentos LRCAP (bonificação locacional)",
-      "valor": "A LISTA é ANCORADA e definitiva: ANEXO II (TABELA 1) da Portaria MME 136/2026 lista 129 barramentos elegíveis à bonificação locacional em 98 subestações, 8 estados: BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste (inclui Pecém II 230 kV/CE). CONFLITO RESOLVIDO NA FONTE (leitura do texto da Portaria em 05/07/2026): o corpo referencia a constante de bonificação β no ART. 17 §3º e na seção de Definições, mas afirma EXPLICITAMENTE que β é 'definida em estudos da EPE (Nota Técnica de Metodologia Locacional, nov/2025)'; a Nota do ANEXO II crava que 'o valor numérico de β depende da Nota Técnica de Quantitativos do ONS/EPE (até 30/09/2026) — não consta desta Portaria'. Portanto: a LISTA é da portaria (definitiva); o VALOR β=0,9 (vantagem 1/0,9 ≈ +11,1%) vem da NT da EPE — a confirmar na própria NT. CORRIGE o registro de 30/06 que citava erroneamente 'Art. 2º §12' e cravava β no corpo: a referência correta é Art. 17 §3º, e o número não está na portaria.",
+      "valor": "ANCORADO: o bônus locacional é a constante ß=0,9 para barramentos do ANEXO II (redução de 10% no preço de lance), ß=1 para os demais — Portaria MME 136/2026, ANEXO I, Art. 2º §12 (Pdisp=(RFdisp/Disp)×ß) + corpo Art. 17 §3. O ANEXO II (TABELA 1) lista 129 barramentos bonificados em 98 subestações, 8 estados: BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste. Vantagem efetiva 1/0,9 ≈ +11,1% de Receita Fixa. Metodologia EPE-DEE-NT-086/2025 (MISCR/P30).",
       "status": "VIGENTE",
       "qsv_cor": "VERDE",
-      "norma": "Portaria MME 136/2026 ANEXO II (lista 129 barramentos, definitiva) + Art. 17 §3º (β como constante) · valor β=0,9 → NT EPE Metodologia Locacional nov/2025",
-      "numero_status": "LISTA_ANCORADA · β_NUMERICO_NT_EPE",
-      "fonte": "Portaria MME 136/2026 ANEXO II + Art. 17 §3º (texto lido 05/07/2026: β 'definida em estudos da EPE'; valor não consta da portaria). Valor β=0,9 a confirmar na NT EPE (Metodologia Locacional nov/2025).",
-      "verificado_em": "2026-07-05"
+      "norma": "Portaria MME 136/2026 ANEXO I Art. 2º §12 + Art. 17 §3 + ANEXO II (lista) · EPE-DEE-NT-086/2025",
+      "numero_status": "ANCORADO",
+      "fonte": "Portaria MME 136/2026 ANEXO I Art. 2º §12 (texto integral DOU 03/06/2026); a 878/2025 foi DESCARTADA como âncora",
+      "verificado_em": "2026-06-30"
     }
   ],
   "_historico_caidos": []

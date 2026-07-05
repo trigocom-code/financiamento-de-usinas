@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-07-05 08:20",
+                  "gerado_em":  "2026-07-05 14:31",
                   "modo":  "v2 canario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
@@ -14,45 +14,45 @@
                                                  },
                   "rodou_hoje":  {
                                      "monitor-regulatorio-soa":  {
-                                                                     "rodou_hoje":  false,
-                                                                     "via_digest":  false,
-                                                                     "via_canario":  false
+                                                                     "rodou_hoje":  true,
+                                                                     "via_digest":  true,
+                                                                     "via_canario":  true
                                                                  },
                                      "monitor-capital-verde-soa":  {
-                                                                       "rodou_hoje":  false,
-                                                                       "via_digest":  false,
-                                                                       "via_canario":  false
+                                                                       "rodou_hoje":  true,
+                                                                       "via_digest":  true,
+                                                                       "via_canario":  true
                                                                    },
                                      "monitor-esg-soa":  {
-                                                             "rodou_hoje":  false,
-                                                             "via_digest":  false,
-                                                             "via_canario":  false
+                                                             "rodou_hoje":  true,
+                                                             "via_digest":  true,
+                                                             "via_canario":  true
                                                          }
                                  },
                   "canario_lido":  {
                                        "monitor-absolar-grupos":  {
-                                                                      "hoje":  "NAO",
-                                                                      "ultimo":  "2026-07-03"
+                                                                      "hoje":  "SIM",
+                                                                      "ultimo":  "2026-07-05"
                                                                   },
                                        "monitor-seguros-soa":  {
-                                                                   "hoje":  "NAO",
-                                                                   "ultimo":  "2026-07-03"
+                                                                   "hoje":  "SIM",
+                                                                   "ultimo":  "2026-07-05"
                                                                },
                                        "monitor-esg-soa":  {
-                                                               "hoje":  "NAO",
-                                                               "ultimo":  "2026-07-03"
+                                                               "hoje":  "SIM",
+                                                               "ultimo":  "2026-07-05"
                                                            },
                                        "monitor-regulatorio-soa":  {
-                                                                       "hoje":  "NAO",
-                                                                       "ultimo":  "2026-07-03"
+                                                                       "hoje":  "SIM",
+                                                                       "ultimo":  "2026-07-05"
                                                                    },
                                        "monitor-capital-verde-soa":  {
-                                                                         "hoje":  "NAO",
-                                                                         "ultimo":  "2026-07-03"
+                                                                         "hoje":  "SIM",
+                                                                         "ultimo":  "2026-07-05"
                                                                      },
                                        "monitor-eventos-soa":  {
-                                                                   "hoje":  "NAO",
-                                                                   "ultimo":  "2026-07-03"
+                                                                   "hoje":  "SIM",
+                                                                   "ultimo":  "2026-07-05"
                                                                },
                                        "monitor-gato-solar-soa":  {
                                                                       "hoje":  "NAO",
@@ -94,14 +94,14 @@
                     "baterias-curtailment.html":  {
                                                       "ciclo":  "2026-07-05",
                                                       "categoria":  "vivo_sob_gatilho",
-                                                      "estado":  "avaliacao_represada",
-                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-07-05: monitor-regulatorio-soa",
+                                                      "estado":  "stale",
+                                                      "motivo":  "dado defasado: fato mais velho com 3 dias (\u003e 2); revalidar",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-regulatorio-soa"
                                                                                 ],
                                                       "monitores_parados":  [
-                                                                                "monitor-regulatorio-soa"
+
                                                                             ],
                                                       "idade_max_dias":  3,
                                                       "deps":  [
@@ -121,7 +121,7 @@
                                                                        "qsv_cor":  "VERDE",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  true
+                                                                       "mudou":  false
                                                                    },
                                                                    {
                                                                        "json":  "Fatos_ANEEL",
@@ -148,7 +148,7 @@
                                                                        "qsv_cor":  "VERDE",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  true
+                                                                       "mudou":  false
                                                                    }
                                                                ],
                                                       "fato_gatilho":  null,
@@ -158,14 +158,14 @@
                     "prova-horaria-datacenters.html":  {
                                                            "ciclo":  "2026-07-05",
                                                            "categoria":  "vivo_sob_gatilho",
-                                                           "estado":  "avaliacao_represada",
-                                                           "motivo":  "monitor(es) nao rodou no ciclo 2026-07-05: monitor-regulatorio-soa",
+                                                           "estado":  "herda_pendente",
+                                                           "motivo":  "depende de fato pendente: MME-REDATA (EM DELIBERAÇÃO); MME-MP-1318-2025 (CADUCADA)",
                                                            "aguarda_fonte":  false,
                                                            "monitores_dependentes":  [
                                                                                          "monitor-regulatorio-soa"
                                                                                      ],
                                                            "monitores_parados":  [
-                                                                                     "monitor-regulatorio-soa"
+
                                                                                  ],
                                                            "idade_max_dias":  1,
                                                            "deps":  [
@@ -195,14 +195,14 @@
                     "gato-solar-soa.html":  {
                                                 "ciclo":  "2026-07-05",
                                                 "categoria":  "vivo_sob_gatilho",
-                                                "estado":  "avaliacao_represada",
-                                                "motivo":  "monitor(es) nao rodou no ciclo 2026-07-05: monitor-regulatorio-soa",
+                                                "estado":  "stale",
+                                                "motivo":  "dado defasado: fato mais velho com 3 dias (\u003e 2); revalidar",
                                                 "aguarda_fonte":  false,
                                                 "monitores_dependentes":  [
                                                                               "monitor-regulatorio-soa"
                                                                           ],
                                                 "monitores_parados":  [
-                                                                          "monitor-regulatorio-soa"
+
                                                                       ],
                                                 "idade_max_dias":  3,
                                                 "deps":  [
@@ -232,14 +232,14 @@
                     "contencioso-curtailment.html":  {
                                                          "ciclo":  "2026-07-05",
                                                          "categoria":  "vivo_sob_gatilho",
-                                                         "estado":  "avaliacao_represada",
-                                                         "motivo":  "monitor(es) nao rodou no ciclo 2026-07-05: monitor-regulatorio-soa",
+                                                         "estado":  "stale",
+                                                         "motivo":  "dado defasado: fato mais velho com 3 dias (\u003e 2); revalidar",
                                                          "aguarda_fonte":  false,
                                                          "monitores_dependentes":  [
                                                                                        "monitor-regulatorio-soa"
                                                                                    ],
                                                          "monitores_parados":  [
-                                                                                   "monitor-regulatorio-soa"
+
                                                                                ],
                                                          "idade_max_dias":  3,
                                                          "deps":  [
@@ -269,14 +269,14 @@
                     "bitcoin-verde-soa.html":  {
                                                    "ciclo":  "2026-07-05",
                                                    "categoria":  "vivo_sob_gatilho",
-                                                   "estado":  "avaliacao_represada",
-                                                   "motivo":  "monitor(es) nao rodou no ciclo 2026-07-05: monitor-regulatorio-soa",
+                                                   "estado":  "herda_pendente",
+                                                   "motivo":  "depende de fato pendente: MME-REDATA (EM DELIBERAÇÃO)",
                                                    "aguarda_fonte":  false,
                                                    "monitores_dependentes":  [
                                                                                  "monitor-regulatorio-soa"
                                                                              ],
                                                    "monitores_parados":  [
-                                                                             "monitor-regulatorio-soa"
+
                                                                          ],
                                                    "idade_max_dias":  1,
                                                    "deps":  [
@@ -297,21 +297,21 @@
                     "certificacao-esg-auditavel.html":  {
                                                             "ciclo":  "2026-07-05",
                                                             "categoria":  "vivo_sob_gatilho",
-                                                            "estado":  "avaliacao_represada",
-                                                            "motivo":  "monitor(es) nao rodou no ciclo 2026-07-05: monitor-esg-soa",
+                                                            "estado":  "estavel_com_ressalva",
+                                                            "motivo":  "dependencia em deliberacao (ex.: SBCE)",
                                                             "aguarda_fonte":  false,
                                                             "monitores_dependentes":  [
                                                                                           "monitor-esg-soa"
                                                                                       ],
                                                             "monitores_parados":  [
-                                                                                      "monitor-esg-soa"
+
                                                                                   ],
-                                                            "idade_max_dias":  3,
+                                                            "idade_max_dias":  0,
                                                             "deps":  [
                                                                          {
                                                                              "json":  "Fatos_ESG",
                                                                              "ref":  "Relato de sustentabilidade (IFRS S1/S2) — CVM",
-                                                                             "verificado_em":  "2026-07-02",
+                                                                             "verificado_em":  "2026-07-05",
                                                                              "qsv_cor":  "",
                                                                              "monitor":  "monitor-esg-soa",
                                                                              "achou":  true,
@@ -320,7 +320,7 @@
                                                                          {
                                                                              "json":  "Fatos_ESG",
                                                                              "ref":  "Mercado regulado de carbono (SBCE)",
-                                                                             "verificado_em":  "2026-07-02",
+                                                                             "verificado_em":  "2026-07-05",
                                                                              "qsv_cor":  "",
                                                                              "monitor":  "monitor-esg-soa",
                                                                              "achou":  true,
@@ -334,14 +334,14 @@
                     "acesso-transmissao-pnast.html":  {
                                                           "ciclo":  "2026-07-05",
                                                           "categoria":  "vivo_sob_gatilho",
-                                                          "estado":  "avaliacao_represada",
-                                                          "motivo":  "monitor(es) nao rodou no ciclo 2026-07-05: monitor-regulatorio-soa",
+                                                          "estado":  "stale",
+                                                          "motivo":  "dado defasado: fato mais velho com 3 dias (\u003e 2); revalidar",
                                                           "aguarda_fonte":  false,
                                                           "monitores_dependentes":  [
                                                                                         "monitor-regulatorio-soa"
                                                                                     ],
                                                           "monitores_parados":  [
-                                                                                    "monitor-regulatorio-soa"
+
                                                                                 ],
                                                           "idade_max_dias":  3,
                                                           "deps":  [
@@ -389,14 +389,14 @@
                     "capital-verde-usinas.html":  {
                                                       "ciclo":  "2026-07-05",
                                                       "categoria":  "vivo_sob_gatilho",
-                                                      "estado":  "avaliacao_represada",
-                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-07-05: monitor-capital-verde-soa",
+                                                      "estado":  "estavel",
+                                                      "motivo":  "quadro parado; monitores rodaram no ciclo e dado fresco",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-capital-verde-soa"
                                                                                 ],
                                                       "monitores_parados":  [
-                                                                                "monitor-capital-verde-soa"
+
                                                                             ],
                                                       "idade_max_dias":  2,
                                                       "deps":  [
@@ -453,16 +453,15 @@
                     "hidrogenio-prova-horaria.html":  {
                                                           "ciclo":  "2026-07-05",
                                                           "categoria":  "vivo_sob_gatilho",
-                                                          "estado":  "avaliacao_represada",
-                                                          "motivo":  "monitor(es) nao rodou no ciclo 2026-07-05: monitor-regulatorio-soa, monitor-esg-soa",
+                                                          "estado":  "stale",
+                                                          "motivo":  "dado defasado: fato mais velho com 3 dias (\u003e 2); revalidar",
                                                           "aguarda_fonte":  false,
                                                           "monitores_dependentes":  [
                                                                                         "monitor-regulatorio-soa",
                                                                                         "monitor-esg-soa"
                                                                                     ],
                                                           "monitores_parados":  [
-                                                                                    "monitor-regulatorio-soa",
-                                                                                    "monitor-esg-soa"
+
                                                                                 ],
                                                           "idade_max_dias":  3,
                                                           "deps":  [
@@ -487,7 +486,7 @@
                                                                        {
                                                                            "json":  "Fatos_ESG",
                                                                            "ref":  "Mercado regulado de carbono (SBCE)",
-                                                                           "verificado_em":  "2026-07-02",
+                                                                           "verificado_em":  "2026-07-05",
                                                                            "qsv_cor":  "",
                                                                            "monitor":  "monitor-esg-soa",
                                                                            "achou":  true,
