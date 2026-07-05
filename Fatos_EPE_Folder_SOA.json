@@ -169,19 +169,19 @@
     {
       "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
       "tema": "Mapa de Barramentos LRCAP (critério de bonificação locacional)",
-      "valor": "LISTA ANCORADA / NÚMERO A CONFIRMAR (conflito de leitura registrado). A LISTA é oficial e definitiva: ANEXO II (TABELA 1) da Portaria MME 136/2026 lista 129 barramentos bonificados em 98 subestações, 8 estados — BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste (inclui Pecém II 230 kV). O COEFICIENTE β=0,9 (vantagem 1/0,9 ≈ +11,1% de Receita Fixa; ß=1 nos demais) vem da metodologia EPE-DEE-NT-086/2025 (MISCR/P30). CONFLITO: o registro de 30/06 afirmou que a fórmula/coeficiente Pdisp=(RFdisp/Disp)×ß está no corpo (ANEXO I Art. 2º §12 + Art. 17 §3), porém com trecho_literal VAZIO (nunca citado); a leitura integral do CEO (04/07) NÃO localizou o valor numérico 0,9 no corpo. Resolver conferindo o Art. 2º §12 na fonte. Até lá: LISTA=portaria; β numérico=NT EPE. O 'γ' anterior era de doc SOA interno (LMP), não oficial.",
+      "valor": "CONFLITO RESOLVIDO NA FONTE (texto da Portaria lido em 05/07/2026). A LISTA é oficial e definitiva: ANEXO II (TABELA 1) da Portaria MME 136/2026 lista 129 barramentos bonificados em 98 subestações, 8 estados — BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste (inclui Pecém II 230 kV). O corpo referencia a constante β no ART. 17 §3º e nas Definições, dizendo que β é 'definida em estudos da EPE (NT de Metodologia Locacional, nov/2025)'; a Nota do ANEXO II afirma que 'o valor numérico de β... não consta desta Portaria' (depende da NT de Quantitativos ONS/EPE, até 30/09/2026). Logo o VALOR β=0,9 (vantagem 1/0,9 ≈ +11,1%; ß=1 nos demais) vem da NT da EPE — a confirmar na própria NT. CORRIGE o registro de 30/06 que citava 'ANEXO I Art. 2º §12' e cravava β no corpo: a referência do corpo é Art. 17 §3º e o número não está na portaria. O 'γ' anterior era de doc SOA interno (LMP), não oficial.",
       "status": "VIGENTE",
-      "norma": "Portaria MME 136/2026 ANEXO II (lista 129 barramentos, definitiva) · β/MW → EPE-DEE-NT-086/2025 (MISCR) · confirmar Art. 2º §12 no corpo",
+      "norma": "Portaria MME 136/2026 ANEXO II (lista, definitiva) + Art. 17 §3º (β 'definida em estudos da EPE') · valor β=0,9 → NT EPE Metodologia Locacional nov/2025 (a confirmar na NT)",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes",
-      "verificado_em": "2026-07-04",
+      "verificado_em": "2026-07-05",
       "tipo_fato": "HIBRIDO",
       "score_soa": 16,
       "vetores_afetados": [
         "V3",
         "V7"
       ],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "conflito_leitura_30jun_x_04jul_reconciliar",
+      "qsv_cor": "VERDE",
+      "qsv_origem_classificacao": "resolvido_na_fonte_texto_portaria_05jul2026",
       "qsv_fontes_independentes": [
         {
           "tipo": "F1_pagina_oficial",
@@ -205,16 +205,16 @@
           "gt_origem": null
         }
       ],
-      "numero_status": "PARCIAL_RECONCILIAR",
+      "numero_status": "LISTA_ANCORADA · β_NUMERICO_NT_EPE",
       "validacao_banco_SOA": {
         "aplicavel": true,
         "query_versionada": "Master_Barramentos_v1.5.1 (SOA · 714 barramentos canônicos)",
-        "resultado": "LISTA ANCORADA_DOU — ANEXO II TABELA 1 da Portaria 136/2026 é a lista oficial (129 barramentos); banco SOA = cross-check opcional. β numérico NÃO validado no corpo.",
-        "verificado_em": "2026-07-04"
+        "resultado": "LISTA ANCORADA_DOU — ANEXO II TABELA 1 da Portaria 136/2026 é a lista oficial (129 barramentos); banco SOA = cross-check opcional. β numérico remete à NT EPE (não à portaria).",
+        "verificado_em": "2026-07-05"
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "_aviso_precedencia": "CONFLITO DE LEITURA (reconciliar na fonte): a LISTA de 129 barramentos (ANEXO II TABELA 1) está ANCORADA no DOU e é definitiva. O valor numérico β=0,9 foi cravado em 30/06 como estando no ANEXO I Art. 2º §12, mas com trecho_literal vazio; a leitura integral do CEO em 04/07 não localizou o número no corpo e o atribui à NT EPE-DEE-NT-086/2025. Rebaixado para AZUL/PARCIAL até confirmar o Art. 2º §12 na fonte."
+      "_aviso_precedencia": "CONFLITO RESOLVIDO NA FONTE (05/07/2026, leitura do texto da Portaria): a LISTA de 129 barramentos (ANEXO II TABELA 1) está ANCORADA e é definitiva. O corpo cita β no ART. 17 §3º como 'constante definida em estudos da EPE'; a Nota do Anexo II afirma que o VALOR de β NÃO consta da Portaria (vem da NT ONS/EPE, até 30/09/2026). Corrigido o registro de 30/06 (citava erroneamente 'Art. 2º §12' e cravava β no corpo). VERDE liberado: lista=portaria (Art. 17 §3º/Anexo II); β=0,9 numérico=NT EPE (a confirmar na NT)."
     },
     {
       "fato_id": "EPE-BOLETIM-CONSUMO-25",

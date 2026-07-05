@@ -235,13 +235,13 @@
       "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
       "orgao": "EPE",
       "tema": "Mapa de Barramentos LRCAP (bonificação locacional)",
-      "valor": "A LISTA de barramentos é ANCORADA e definitiva: ANEXO II (TABELA 1) da Portaria MME 136/2026 lista 129 barramentos elegíveis à bonificação locacional em 98 subestações, 8 estados: BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste (inclui Pecém II 230 kV/CE). RECONCILIAÇÃO QSV (conflito entre leituras — resolver na fonte): o registro de 30/06 cravava a constante ß=0,9 (Pdisp=(RFdisp/Disp)×ß; ß=1 nos demais; vantagem 1/0,9 ≈ +11,1% de Receita Fixa) como ANCORADA no corpo (ANEXO I Art. 2º §12 + Art. 17 §3). A leitura integral de 04/07 (CEO) NÃO localizou o valor numérico 0,9 no corpo e o atribui à Nota Técnica da EPE (EPE-DEE-NT-086/2025, metodologia MISCR/P30, nov/2025). Hipótese de reconciliação: a FÓRMULA/coeficiente ß está no ANEXO I Art. 2º §12, mas o VALOR 0,9 é fixado pela NT EPE. Até confirmar §12 na fonte, tratar β=0,9 como PARCIAL — a LISTA é da portaria; o NÚMERO do β é da NT EPE.",
+      "valor": "A LISTA é ANCORADA e definitiva: ANEXO II (TABELA 1) da Portaria MME 136/2026 lista 129 barramentos elegíveis à bonificação locacional em 98 subestações, 8 estados: BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste (inclui Pecém II 230 kV/CE). CONFLITO RESOLVIDO NA FONTE (leitura do texto da Portaria em 05/07/2026): o corpo referencia a constante de bonificação β no ART. 17 §3º e na seção de Definições, mas afirma EXPLICITAMENTE que β é 'definida em estudos da EPE (Nota Técnica de Metodologia Locacional, nov/2025)'; a Nota do ANEXO II crava que 'o valor numérico de β depende da Nota Técnica de Quantitativos do ONS/EPE (até 30/09/2026) — não consta desta Portaria'. Portanto: a LISTA é da portaria (definitiva); o VALOR β=0,9 (vantagem 1/0,9 ≈ +11,1%) vem da NT da EPE — a confirmar na própria NT. CORRIGE o registro de 30/06 que citava erroneamente 'Art. 2º §12' e cravava β no corpo: a referência correta é Art. 17 §3º, e o número não está na portaria.",
       "status": "VIGENTE",
-      "qsv_cor": "AZUL",
-      "norma": "Portaria MME 136/2026 ANEXO II (lista 129 barramentos, definitiva) · β/MW → EPE-DEE-NT-086/2025 (a confirmar Art. 2º §12 no corpo)",
-      "numero_status": "PARCIAL_RECONCILIAR",
-      "fonte": "Portaria MME 136/2026 ANEXO II (lista, DOU 03/06/2026); valor de β=0,9: EPE-DEE-NT-086/2025 (verificar). Conflito 30/06×04/07 registrado.",
-      "verificado_em": "2026-07-04"
+      "qsv_cor": "VERDE",
+      "norma": "Portaria MME 136/2026 ANEXO II (lista 129 barramentos, definitiva) + Art. 17 §3º (β como constante) · valor β=0,9 → NT EPE Metodologia Locacional nov/2025",
+      "numero_status": "LISTA_ANCORADA · β_NUMERICO_NT_EPE",
+      "fonte": "Portaria MME 136/2026 ANEXO II + Art. 17 §3º (texto lido 05/07/2026: β 'definida em estudos da EPE'; valor não consta da portaria). Valor β=0,9 a confirmar na NT EPE (Metodologia Locacional nov/2025).",
+      "verificado_em": "2026-07-05"
     }
   ],
   "_historico_caidos": []
