@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "titulo": "Agenda do Setor Elétrico — Monitor SOA/SOS",
+    "atualizado_em": "2026-07-05",
+    "fonte": "Monitor de Eventos SOA/SOS · fontes oficiais (gov.br/ANEEL · EPE · MME · CCEE · Senado) e imprensa setorial",
+    "nota": "Agenda pública de datas do setor elétrico. Sinais de fontes secundárias marcados 'A VERIFICAR'; confirmar no ato oficial antes de citar."
+  },
+  "recentes": [
+    { "data": "2026-07-03", "titulo": "Leilão de Transmissão nº 1/2026 (2ª etapa) — resultado", "detalhe": "Lotes 7–10 arrematados; deságio médio 53,2%, ~R$ 4,2 bi de economia ao consumidor e R$ 1,8 bi de investimento contratado (SP/MS/MT).", "status": "CONFIRMADO", "fonte": "gov.br/ANEEL" }
+  ],
+  "acao_7dias": [
+    { "data": "2026-07-07", "titulo": "Possível retorno de pauta de curtailment (CP 45/2019) — diretoria ANEEL", "detalhe": "Verificar a pauta da reunião pública da semana em gov.br/ANEEL na segunda 06/07.", "status": "A VERIFICAR" },
+    { "data": "2026-07-31", "titulo": "LRCAP Armazenamento — encerra cadastro/qualificação na EPE (12h)", "detalhe": "Projetos BESS: ≥30 MW, ≥4 h de duração, eficiência ≥85%, recarga ≤6 h.", "status": "CONFIRMADO", "fonte": "EPE · Portaria Normativa MME 136/2026" }
+  ],
+  "proximos_30d": [
+    { "data": "2026-07-13", "titulo": "CP nº 14/2026 ANEEL (revisão tarifária Celesc/SC) — encerra", "status": "CONFIRMADO" },
+    { "data": "2026-07-24", "titulo": "Habilitação dos vencedores — Leilão de Transmissão nº 1/2026", "status": "CONFIRMADO" },
+    { "data": "2026-07-27", "titulo": "ExpoElétrica 2026 — Frei Caneca / SP (até 28/07, entrada gratuita)", "status": "CONFIRMADO" },
+    { "data": "2026-08-03", "titulo": "CP nº 17/2026 (PSM / CCEE) — encerra contribuições", "status": "CONFIRMADO" }
+  ],
+  "horizonte": [
+    { "data": "2026-08-05", "titulo": "CINASE Goiânia 2026 — congresso regional (distribuição, redes inteligentes, transição)", "status": "A VERIFICAR" },
+    { "data": "2026-08-06", "titulo": "Leilão de Transmissão nº 4/2026 — fim do prazo de esclarecimentos do edital", "status": "A VERIFICAR" },
+    { "data": "2026-08-14", "titulo": "CP nº 1/2026 ANEEL (medição inteligente, 2ª fase) — encerra contribuições", "status": "CONFIRMADO" },
+    { "data": "2026-08-25", "titulo": "Intersolar South America 2026 — Expo Center Norte / SP (até 27/08)", "status": "CONFIRMADO" },
+    { "data": "2026-09-23", "titulo": "Proenergia Summit 2026 — Fortaleza / CE (até 24/09)", "status": "A VERIFICAR" },
+    { "data": "2026-09-30", "titulo": "NT de Capacidade Remanescente do SIN (Portaria 136) — prazo de norma", "status": "A VERIFICAR" },
+    { "data": "2026-10-06", "titulo": "Data Center World Brasil 2026 — São Paulo Expo (até 08/10, simultâneo à Futurecom)", "status": "CONFIRMADO" },
+    { "data": "2026-10-08", "titulo": "1ª Temporada de Acesso (PNAST) — fim da fase de análise", "status": "A VERIFICAR" },
+    { "data": "2026-10-30", "titulo": "Leilão de Transmissão nº 4/2026 — R$ 8,9 bi, 1.866 km + 13.564 MVA em 7 estados (sujeito a TCU)", "status": "CONFIRMADO (data-alvo)" },
+    { "data": "2026-12-02", "titulo": "Leilões LRCAP Armazenamento (baterias) — Nacional-BNDES (02/12) e Geral (04/12); contratos de 15 anos, suprimento a partir de 01/08/2028", "status": "CONFIRMADO" }
+  ]
+}
