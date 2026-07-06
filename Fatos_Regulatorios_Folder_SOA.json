@@ -1,8 +1,8 @@
-{
+﻿{
   "_meta": {
     "schema_version": "1.3",
     "descricao": "Fonte ÚNICA de fatos regulatórios do Folder 'Onde Entramos'. Schema 1.3 (alinhado aos monitores per-órgão e à Tabela de Precedência QSV v1.2). O folder Folder_Vivo_Regulatorio_GitHub.html consome DESTE arquivo (data.fatos[]). O monitor regulatório SOA mantém este arquivo. Schema legado aposentado em Fatos_Regulatorios_Folder_SOA.legacy.deprecated.json.",
-    "verificado_em": "2026-07-05",
+    "verificado_em": "2026-07-06",
     "schema_migrado_em": "2026-06-29",
     "proxima_revisao_sugerida": "2026-07-31",
     "responsavel_atualizacao": "Monitor Regulatório SOA (digest diário) — escreve schema 1.3, aplica Tabela_Precedencia_QSV_v1_2",
@@ -53,7 +53,7 @@
       "qsv_cor": "LARANJA",
       "norma": "ANEEL (edital do leilão)",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-07-05",
+      "verificado_em": "2026-07-06",
       "gatilho_revisao": "publicação do edital (item nº 1 de prioridade do monitor)"
     },
     {
@@ -109,7 +109,7 @@
       "qsv_cor": "AZUL",
       "norma": "CP ANEEL 45/2019 (3ª fase)",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-07-05",
+      "verificado_em": "2026-07-06",
       "gatilho_revisao": "publicação de REN/voto cobrindo eólicas e/ou MMGD"
     },
     {
@@ -206,8 +206,8 @@
       "qsv_cor": "LARANJA",
       "norma": "MP 1.318/2025 (sem efeito jurídico atual) · PL 278/2026 (Senado)",
       "numero_status": "ANCORADO",
-      "fonte": "PL 278/2026 (tramitação Câmara/Senado), reconfirmado 05/07/2026",
-      "verificado_em": "2026-07-05"
+      "fonte": "PL 278/2026 (tramitação Câmara/Senado), reconfirmado 06/07/2026",
+      "verificado_em": "2026-07-06"
     },
     {
       "fato_id": "ANEEL-CP-009-GATO-SOLAR",
