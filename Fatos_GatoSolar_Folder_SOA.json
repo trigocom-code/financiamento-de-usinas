@@ -3,7 +3,7 @@
     "orgao": "ANEEL (MMGD / gato solar)",
     "schema_version": "1.1",
     "descricao": "Monitor Gato Solar / GD irregular. Disciplina dura: irregularidade NÃO é energia falsa (a energia injetada é real); a SOA PROVA a inconsistência de potência declarada, NÃO acusa fraude; números de auditoria (ONS/ANEEL) são de TERCEIROS — atribuir à fonte, não apresentar como dado SOA. NUNCA '5,7 GW'. Não confundir ~R$ 5 bi (impacto estimado das irregularidades, fonte secundária) com ~R$ 16 bi (subsídio da MMGD via CDE). Ancoragem F1 nesta v1.1: NT 107/2026-SFT/ANEEL (22/06/2026).",
-    "verificado_em": "2026-07-01",
+    "verificado_em": "2026-07-06",
     "fonte_canonica": "F1 — NT 107/2026-SFT/ANEEL (SEI 0388524, processo 48500.015900/2026-94, assinada 23/06/2026) + gov.br/aneel. Secundárias (Agência iNFRA/Canal Solar) só para itens não cobertos pela NT.",
     "fonte_primaria_novo": "Nota Técnica nº 107/2026-SFT/ANEEL — 'Avaliação da manifestação das distribuidoras ao Ofício Circular nº 12/2026-SFT/ANEEL' (combate à alteração à revelia das características originais de MMGD). Avalia 50 distribuidoras. Fundamento legal: Lei 14.300/2022 + REN ANEEL 1.000/2021.",
     "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
@@ -16,7 +16,7 @@
       "norma": "NT 107/2026-SFT/ANEEL (22/06/2026) · Ofício Circular 12/2026-SFT · Ref. 48500.015900/2026-94",
       "fonte": "F1 ANEEL (SEI 0388524, CRC 78D83A6B, assinada 23/06/2026)",
       "url": "https://sei.aneel.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0",
-      "verificado_em": "2026-07-01",
+      "verificado_em": "2026-07-06",
       "vetores_afetados": ["V2", "sHEC"]
     },
     {
@@ -25,7 +25,7 @@
       "status": "VIGENTE",
       "norma": "NT 107/2026-SFT/ANEEL §III.1 (detecção) e §III.7 (desafios)",
       "fonte": "F1 ANEEL",
-      "verificado_em": "2026-07-01",
+      "verificado_em": "2026-07-06",
       "vetores_afetados": ["V2", "sHEC"]
     },
     {
@@ -34,7 +34,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "NT 107/2026-SFT/ANEEL §III.7.2 (ambiguidades técnicas) · insumo à CP 009/2026",
       "fonte": "F1 ANEEL",
-      "verificado_em": "2026-07-01",
+      "verificado_em": "2026-07-06",
       "vetores_afetados": ["V2", "sHEC"]
     },
     {
@@ -44,7 +44,7 @@
       "norma": "CP ANEEL 009/2026 · Decisão 8ª RPO 22/04/2026 · NT 148/2025-STD",
       "fonte": "F1 ANEEL (confirmado pela NT 107/2026, §6 e recomendação 'e')",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/consulta-publica-propoe-aprimorar-o-tratamento-de-excedentes-de-energia",
-      "verificado_em": "2026-07-01",
+      "verificado_em": "2026-07-06",
       "vetores_afetados": ["V2", "V4", "sHEC"]
     },
     {
@@ -54,7 +54,7 @@
       "norma": "ONS DPL 0149/2026 (via CTA-ONS DPL 0571/2026) · citado na NT 107/2026",
       "fonte": "F1-referenciado (ONS, citado por ANEEL na NT 107/2026)",
       "url": "https://agenciainfra.com/blog/aneel-inspecao-de-distribuidoras-encontra-88-mw-de-gato-solar/",
-      "verificado_em": "2026-07-01",
+      "verificado_em": "2026-07-06",
       "vetores_afetados": ["V2", "sHEC"]
     },
     {
@@ -64,7 +64,7 @@
       "norma": "ANEEL — parecer/discussão técnica (acopla-se à CP 009)",
       "fonte": "F2 (Canal Solar) — a confirmar em F1",
       "url": "https://canalsolar.com.br/aneel-corresponsabilizar-gd-solar-pelo-curtailment/",
-      "verificado_em": "2026-06-30",
+      "verificado_em": "2026-07-06",
       "vetores_afetados": ["V4", "sHEC"],
       "pendencia_verificacao": "A verificar: status formal — segue como parecer/discussão, sem ato vinculante."
     },
@@ -75,7 +75,7 @@
       "norma": "CP ANEEL 011/2026",
       "fonte": "F1 ANEEL (portal)",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/consulta-publica-vai-tratar-dos-creditos-excedentes-de-mmgd-para-modicidade-tarifaria",
-      "verificado_em": "2026-06-30",
+      "verificado_em": "2026-07-06",
       "vetores_afetados": ["V2"]
     },
     {
@@ -84,7 +84,7 @@
       "status": "VIGENTE",
       "norma": "ABSOLAR/ABGD — manifestação setorial",
       "fonte": "F3 ABSOLAR (associação; não fecha VERDE sozinha)",
-      "verificado_em": "2026-06-30",
+      "verificado_em": "2026-07-06",
       "vetores_afetados": ["V2", "sHEC"]
     }
   ]
