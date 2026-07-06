@@ -1,4 +1,4 @@
-﻿{
+{
   "_meta": {
     "schema_version": "1.3",
     "descricao": "Fonte ÚNICA de fatos regulatórios do Folder 'Onde Entramos'. Schema 1.3 (alinhado aos monitores per-órgão e à Tabela de Precedência QSV v1.2). O folder Folder_Vivo_Regulatorio_GitHub.html consome DESTE arquivo (data.fatos[]). O monitor regulatório SOA mantém este arquivo. Schema legado aposentado em Fatos_Regulatorios_Folder_SOA.legacy.deprecated.json.",
@@ -194,6 +194,20 @@
       "vetores_afetados": [
         "V4"
       ]
+    },
+    {
+      "id": "autoproducao_despacho_2414",
+      "fato_id": "ANEEL-DESPACHO-2414-2026",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Autoprodução — Despacho ANEEL nº 2.414/2026 (art. 16-B da Lei 9.074/1995)",
+      "valor": "Estabelece o procedimento de autoprodução de energia elétrica, inclusive por equiparação, decorrente da alteração do art. 16-B da Lei 9.074/1995 pela Lei 15.269/2025. A CCEE: a partir de 25/11/2025 cadastra para autoprodução (estrita e equiparada) apenas ativos de geração OUTORGADOS; concede até 3 anos (da publicação da Lei 15.269/2025) para manter modelagens lastreadas em usinas sem outorga; para equiparação com demanda contratada agregada ≥ 30.000 kW, exige que cada UC agregada tenha demanda individual ≥ 3.000 kW; afere participação mínima de 30% no capital e qualificações de grupo econômico (REN 948/2021; Lei 6.404/1976), conforme NT Conjunta 7/2026-SGM-SCE-SFF/ANEEL (29/05/2026). Aperta a porta da autoprodução por equiparação — vetor do mercado livre/autoconsumo em que a prova de geração/lastro é a camada SOA. [Confirmar publicação no DOU/SEI ANEEL.]",
+      "status": "VIGENTE",
+      "qsv_cor": "AZUL",
+      "norma": "Despacho ANEEL nº 2.414/2026 · art. 16-B da Lei 9.074/1995 (redação da Lei 15.269/2025) · NT Conjunta 7/2026-SGM-SCE-SFF/ANEEL",
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "verificado_em": "2026-07-06",
+      "gatilho_revisao": "publicação no DOU/SEI ANEEL confirmando o Despacho 2.414/2026; regulamentação da CCEE (Regras/Procedimentos de Comercialização)"
     }
   ],
   "_pendentes_verificacao": [
