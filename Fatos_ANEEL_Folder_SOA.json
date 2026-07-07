@@ -3,7 +3,7 @@
     "orgao": "ANEEL",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ANEEL — schema v1.3 com tipo_fato, qsv_cor, fontes independentes, associacao_origem, ancoragem numérica. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-07-06",
+    "verificado_em": "2026-07-07",
     "proxima_revisao_sugerida": "2026-07-15",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ANEEL conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Threshold.",
@@ -29,7 +29,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.161/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.161-de-2-de-junho-de-2026-714430510",
-      "verificado_em": "2026-07-06",
+      "verificado_em": "2026-07-07",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -78,7 +78,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.071/2023 + REN ANEEL 1.162/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.162-de-2-de-junho-de-2026-714416734",
-      "verificado_em": "2026-07-06",
+      "verificado_em": "2026-07-07",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -127,7 +127,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 045/2019 (3ª fase)",
       "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-07-06",
+      "verificado_em": "2026-07-07",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
       "vetores_afetados": [
@@ -183,7 +183,7 @@
       "status": "VIGENTE",
       "norma": "CP ANEEL 039/2023 · NT 03/2026",
       "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-07-06",
+      "verificado_em": "2026-07-07",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -232,7 +232,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.150/2026 + Ofício 553/2025-GDG",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-06",
+      "verificado_em": "2026-07-07",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -274,7 +274,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.059/2023 (Lei 14.300/2022)",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-06",
+      "verificado_em": "2026-07-07",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -317,7 +317,7 @@
       "status": "VIGENTE",
       "norma": "MME · Portarias 126/2026 e 111/2025 (regulamentação ANEEL pendente)",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-06",
+      "verificado_em": "2026-07-07",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -359,7 +359,7 @@
       "status": "VIGENTE",
       "norma": "ANEEL · Sandbox de Inovação",
       "url": "https://www.aneel.gov.br/sandbox-regulatorio",
-      "verificado_em": "2026-07-06",
+      "verificado_em": "2026-07-07",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -401,7 +401,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 046/2025",
       "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-07-06",
+      "verificado_em": "2026-07-07",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -443,7 +443,7 @@
       "status": "VIGENTE",
       "norma": "TS ANEEL 23/2025",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-06",
+      "verificado_em": "2026-07-07",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -494,7 +494,7 @@
         "V2",
         "sHEC"
       ],
-      "verificado_em": "2026-07-06"
+      "verificado_em": "2026-07-07"
     }
   ],
   "_pendentes_verificacao": [
