@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-07-08 08:20",
+                  "gerado_em":  "2026-07-08 17:59",
                   "modo":  "v2 canario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
@@ -59,12 +59,12 @@
                                                                 "ultimo":  "2026-07-07"
                                                             },
                                        "monitor-gato-solar-soa":  {
-                                                                      "hoje":  "NAO",
-                                                                      "ultimo":  "2026-07-07"
+                                                                      "hoje":  "SIM",
+                                                                      "ultimo":  "2026-07-08"
                                                                   },
                                        "monitor-iptu-verde-soa":  {
-                                                                      "hoje":  "NAO",
-                                                                      "ultimo":  "2026-07-06"
+                                                                      "hoje":  "SIM",
+                                                                      "ultimo":  "2026-07-08"
                                                                   }
                                    }
               },
@@ -180,7 +180,7 @@
                                                                             "qsv_cor":  "AZUL",
                                                                             "monitor":  "monitor-regulatorio-soa",
                                                                             "achou":  true,
-                                                                            "mudou":  true
+                                                                            "mudou":  false
                                                                         },
                                                                         {
                                                                             "json":  "Fatos_MME",
@@ -263,7 +263,7 @@
                                                                           "qsv_cor":  "AZUL",
                                                                           "monitor":  "monitor-regulatorio-soa",
                                                                           "achou":  true,
-                                                                          "mudou":  true
+                                                                          "mudou":  false
                                                                       }
                                                                   ],
                                                          "fato_gatilho":  null,
@@ -291,7 +291,7 @@
                                                                     "qsv_cor":  "AZUL",
                                                                     "monitor":  "monitor-regulatorio-soa",
                                                                     "achou":  true,
-                                                                    "mudou":  true
+                                                                    "mudou":  false
                                                                 }
                                                             ],
                                                    "fato_gatilho":  null,
@@ -338,8 +338,8 @@
                     "acesso-transmissao-pnast.html":  {
                                                           "ciclo":  "2026-07-08",
                                                           "categoria":  "vivo_sob_gatilho",
-                                                          "estado":  "quadro_mudou",
-                                                          "motivo":  "fato(s) mudaram: ONS-NT-PNAST",
+                                                          "estado":  "estavel",
+                                                          "motivo":  "quadro parado; monitores rodaram no ciclo e dado fresco",
                                                           "aguarda_fonte":  false,
                                                           "monitores_dependentes":  [
                                                                                         "monitor-regulatorio-soa"
@@ -365,7 +365,7 @@
                                                                            "qsv_cor":  "AZUL",
                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                            "achou":  true,
-                                                                           "mudou":  true
+                                                                           "mudou":  false
                                                                        },
                                                                        {
                                                                            "json":  "Fatos_EPE",
@@ -386,9 +386,9 @@
                                                                            "mudou":  false
                                                                        }
                                                                    ],
-                                                          "fato_gatilho":  "ONS-NT-PNAST",
-                                                          "tipo":  "gate (modo X: sinaliza, NAO reescreve)",
-                                                          "proposta_ref":  "_folders_revisao_pendente.md"
+                                                          "fato_gatilho":  null,
+                                                          "tipo":  null,
+                                                          "proposta_ref":  null
                                                       },
                     "capital-verde-usinas.html":  {
                                                       "ciclo":  "2026-07-08",
