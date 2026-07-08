@@ -2,7 +2,7 @@
   "_meta": {
     "schema_version": "1.3",
     "descricao": "Fonte ÚNICA de fatos regulatórios do Folder 'Onde Entramos'. Schema 1.3 (alinhado aos monitores per-órgão e à Tabela de Precedência QSV v1.2). O folder Folder_Vivo_Regulatorio_GitHub.html consome DESTE arquivo (data.fatos[]). O monitor regulatório SOA mantém este arquivo. Schema legado aposentado em Fatos_Regulatorios_Folder_SOA.legacy.deprecated.json.",
-    "verificado_em": "2026-07-07",
+    "verificado_em": "2026-07-08",
     "schema_migrado_em": "2026-06-29",
     "proxima_revisao_sugerida": "2026-07-31",
     "responsavel_atualizacao": "Monitor Regulatório SOA (digest diário) — escreve schema 1.3, aplica Tabela_Precedencia_QSV_v1_2",
@@ -53,7 +53,7 @@
       "qsv_cor": "LARANJA",
       "norma": "ANEEL (edital do leilão)",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-07-07",
+      "verificado_em": "2026-07-08",
       "gatilho_revisao": "publicação do edital (item nº 1 de prioridade do monitor)"
     },
     {
@@ -104,12 +104,12 @@
       "orgao": "ANEEL",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Tratamento do curtailment (constrained-off)",
-      "valor": "Critérios operativos e rateio em deliberação; parecer AGU admite corte FÍSICO de MMGD, mas rejeita o corte CONTÁBIL (rateio entre fontes). Corte medido pela regra canônica.",
+      "valor": "Critérios operativos e rateio em deliberação; parecer AGU admite corte FÍSICO de MMGD, mas rejeita o corte CONTÁBIL (rateio entre fontes). Corte medido pela regra canônica. MOVIMENTO 07/07/2026 (ponteiro F3 ABSOLAR, GT Geração Centralizada): reunião com o Diretor Fernando Mosna, relator do voto-vista da 3ª FASE — processo caminha para deliberação. Mantém AZUL: F3 não fecha VERDE; falta voto publicado no DOU. Núcleo da tese V4/sHEC.",
       "status": "EM DELIBERAÇÃO",
       "qsv_cor": "AZUL",
-      "norma": "CP ANEEL 45/2019 (3ª fase)",
+      "norma": "CP ANEEL 45/2019 (3ª fase · voto-vista Dir. Fernando Mosna em curso)",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-07-06",
+      "verificado_em": "2026-07-08",
       "gatilho_revisao": "publicação de REN/voto cobrindo eólicas e/ou MMGD"
     },
     {
@@ -137,8 +137,8 @@
       "qsv_cor": "AZUL",
       "norma": "CP ANEEL nº 001/2026 (medição inteligente) · mandato: Portarias MME 111/2025 + 126/2026",
       "numero_status": "ANCORADO",
-      "fonte": "F1 ANEEL (notícia 30/06/2026, lida na íntegra em 03/07; 2ª fase reconfirmada aberta 01/07–14/08 em 07/07) + F3 ABSOLAR (GT Geração Distribuída, 30/06/2026)",
-      "verificado_em": "2026-07-07",
+      "fonte": "F1 ANEEL (notícia 30/06/2026, lida na íntegra em 03/07; 2ª fase reconfirmada aberta 01/07–14/08 em 07/07 e 08/07) + F3 ABSOLAR (GT Geração Distribuída, 30/06/2026)",
+      "verificado_em": "2026-07-08",
       "gatilho_revisao": "voto final da CP 001/2026 (decisão prevista 2S2026); fim da janela de contribuições 14/08/2026",
       "vetores_afetados": [
         "V2",
@@ -206,8 +206,8 @@
       "qsv_cor": "AZUL",
       "norma": "Despacho ANEEL nº 2.414/2026 · art. 16-B da Lei 9.074/1995 (redação da Lei 15.269/2025) · NT Conjunta 7/2026-SGM-SCE-SFF/ANEEL",
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "fonte": "F3 ABSOLAR (GT Geração Centralizada, e-mail 06/07/2026: 'Foi publicado o Despacho nº 2.414/2026 sobre procedimento à autoprodução') — PONTEIRO, não âncora. Mantém AZUL até F1 DOU/SEI ANEEL (R2).",
-      "verificado_em": "2026-07-07",
+      "fonte": "F3 ABSOLAR (GT Geração Centralizada, e-mail 06/07/2026: 'Foi publicado o Despacho nº 2.414/2026 sobre procedimento à autoprodução') + cobertura editorial (XP/Canal Solar/atlaspublico, 08/07: publicação 30/06/2026) — PONTEIROS, não âncora F1. Link direto DOU/SEI ANEEL ainda não localizado. Mantém AZUL até F1 (R2).",
+      "verificado_em": "2026-07-08",
       "gatilho_revisao": "publicação no DOU/SEI ANEEL confirmando o Despacho 2.414/2026; regulamentação da CCEE (Regras/Procedimentos de Comercialização)"
     }
   ],
