@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-07-10T08:25:05-03:00",
+                  "gerado_em":  "2026-07-10T12:25:02-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
@@ -29,7 +29,7 @@
                      "Catalogo_Vivos_SOA.html":  "2026-07-05T14:53:48-03:00",
                      "catalogo-vetores-soa.html":  "2026-07-04T23:42:40-03:00",
                      "certificacao-esg-auditavel.html":  "2026-07-05T12:17:05-03:00",
-                     "contencioso-curtailment.html":  "2026-07-10T07:20:02-03:00",
+                     "contencioso-curtailment.html":  "2026-07-10T12:14:54-03:00",
                      "eventos-soa.html":  "2026-07-05T14:18:43-03:00",
                      "Fatos_ANEEL_Folder_SOA.json":  "2026-07-10T08:20:05-03:00",
                      "Fatos_Beneficios_ESG_Folder_SOA.json":  "2026-07-04T23:40:43-03:00",
