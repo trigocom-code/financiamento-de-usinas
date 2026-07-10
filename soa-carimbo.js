@@ -59,17 +59,42 @@
     el.setAttribute('data-soa-carimbo', 'dinamico');
   }
 
+  function docDate() {
+    try { var d = new Date(document.lastModified); return isNaN(d.getTime()) ? null : d; }
+    catch (e) { return null; }
+  }
+  function dateOnly(d) { return pad(d.getDate()) + '/' + pad(d.getMonth() + 1) + '/' + d.getFullYear(); }
+
   function run() {
+    var path = repoPath();
+    var CK = 'soa_carimbo_' + path, TTL = 6 * 3600 * 1000;
+
+    // 1) Fallback IMEDIATO e sempre fresco: a data de deploy da propria pagina
+    //    (document.lastModified). Garante que o valor hardcoded velho NUNCA
+    //    apareca, mesmo se a API do GitHub falhar (rate-limit / offline).
+    var dd = docDate();
+    if (dd) setStamp('● Atualizado em ' + dateOnly(dd));
+
+    // 2) Cache local (evita bater na API a cada refresh / em muitas abas —
+    //    era isso que estourava o rate-limit e ressuscitava a data velha).
+    try {
+      var raw = localStorage.getItem(CK);
+      if (raw) { var o = JSON.parse(raw);
+        if (o && o.t && (Date.now() - o.t) < TTL && o.d) { setStamp('● Atualizado em ' + o.d); return; } }
+    } catch (e) {}
+
+    // 3) Fonte da verdade: data/hora do ULTIMO COMMIT do proprio arquivo.
     var url = 'https://api.github.com/repos/' + REPO + '/commits?path=' +
-              encodeURIComponent(repoPath()) + '&per_page=1';
+              encodeURIComponent(path) + '&per_page=1';
     fetch(url, { cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw 0; return r.json(); })
       .then(function (c) {
         if (!c.length) throw 0;
-        var d = new Date(c[0].commit.committer.date);
-        setStamp('● Atualizado em ' + fmt(d));
+        var txt = fmt(new Date(c[0].commit.committer.date));
+        setStamp('● Atualizado em ' + txt);
+        try { localStorage.setItem(CK, JSON.stringify({ t: Date.now(), d: txt })); } catch (e) {}
       })
-      .catch(function () { /* mantem o carimbo existente se a API falhar */ });
+      .catch(function () { /* mantem o document.lastModified — nunca o hardcoded velho */ });
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
