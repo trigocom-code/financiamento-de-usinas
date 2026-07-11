@@ -36,7 +36,7 @@ header .note{margin-top:12px;font-size:12px;color:#aeb8cf;border-top:1px solid #
 .loading{color:#9aa0a6;font:italic 14px Arial;padding:20px 0}
 @media(max-width:560px){.item .date{min-width:58px}.item .date .d{font-size:16px}}
 </style></head><body>
-<div class="soa-stamp"><span>● Atualizado em 05/07/2026</span></div>
+<div class="soa-stamp"><span id="stampDate">●</span></div>
 <div class="wrap">
 <img class="cc" src="https://trigocom-code.github.io/financiamento-de-usinas/Solar_One-Logo_capa.png" alt="SOA/SOS — Agenda do Setor Elétrico"/>
 <header>
@@ -84,8 +84,10 @@ header .note{margin-top:12px;font-size:12px;color:#aeb8cf;border-top:1px solid #
   }
   fetch(RAW+"?v="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){
     var m=j._meta||{};
+    var _dt = (m.atualizado_em? m.atualizado_em.split("-").reverse().join("/") : "—");
     document.getElementById("metaNote").textContent =
-      "Atualizado em "+ (m.atualizado_em? m.atualizado_em.split("-").reverse().join("/") : "—") + " · " + (m.fonte||"");
+      "Atualizado em "+ _dt + " · " + (m.fonte||"");
+    var _sd=document.getElementById("stampDate"); if(_sd) _sd.textContent="● Atualizado em "+_dt;
     var html =
       secao("🆕 Recente","Confirmado na janela", j.recentes) +
       secao("⏱ Ação — próximos 7 dias","Prazos e compromissos imediatos", j.acao_7dias) +
@@ -98,5 +100,4 @@ header .note{margin-top:12px;font-size:12px;color:#aeb8cf;border-top:1px solid #
   });
 })();
 </script>
-<script src="/financiamento-de-usinas/soa-carimbo.js" defer></script>
 </body></html>
