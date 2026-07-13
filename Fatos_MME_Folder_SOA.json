@@ -3,7 +3,7 @@
     "orgao": "MME",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo MME — schema v1.3. Aplicada Precedência v1.2. Portaria 136/2026 enriquecida em 04/07/2026 (leitura integral: art. 5º/7º/9º + Anexo II).",
-    "verificado_em": "2026-07-10",
+    "verificado_em": "2026-07-13",
     "proxima_revisao_sugerida": "2026-07-31",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina MME conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
@@ -27,7 +27,7 @@
       "status": "AGENDADO",
       "norma": "Portaria MME 136/2026 · DOU 03/06/2026 · arts. 5º, 7º, 9º, 11 + Anexo II",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-10",
+      "verificado_em": "2026-07-13",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 18,
       "vetores_afetados": [
@@ -82,7 +82,7 @@
       "status": "VIGENTE",
       "norma": "Decreto 12.772/2025 (institui a PNAST) + Portaria MME 129/2026 (Temporadas de Acesso)",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-10",
+      "verificado_em": "2026-07-13",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -124,7 +124,7 @@
       "status": "VIGENTE",
       "norma": "Lei 14.948/2024 (PNH2) + Lei 15.042/2024 (SBCE) · Planalto",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-10",
+      "verificado_em": "2026-07-13",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -166,7 +166,7 @@
       "status": "VIGENTE",
       "norma": "Portaria MME 111/2025 (18/06/2025) + Portaria MME 126/2026 (28/01/2026, altera a 111)",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-10",
+      "verificado_em": "2026-07-13",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -208,7 +208,7 @@
       "status": "VIGENTE",
       "norma": "MME · SNTEP",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-10",
+      "verificado_em": "2026-07-13",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -250,7 +250,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "MME · REDATA · PL 278/2026 (Senado, travado)",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-10",
+      "verificado_em": "2026-07-13",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
