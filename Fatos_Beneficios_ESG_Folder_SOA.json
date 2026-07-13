@@ -2,11 +2,11 @@
   "_meta": {
     "orgao": "Benefícios da Certificação ESG (por ator)",
     "schema_version": "1.0",
-    "verificado_em": "2026-07-04",
+    "verificado_em": "2026-07-13",
     "regra_fonte_associacao": "F1 — fontes primárias (Planalto, CONFAZ, ANEEL, CVM, BNDES, BNB, BASA, Caixa, Tesouro, Comissão Europeia, leis municipais/estaduais). Só status=='verificado' renderiza; 'pendente' fica na base para acompanhamento e NÃO aparece em folder. SOA/SOS = camada de verificação, não emissora do benefício.",
     "fonte_canonica": "dossie_beneficios_v1 + verificacao_fontes_primarias"
   },
-  "_carimbo": { "atualizado_em": "2026-07-04T00:00:00-03:00", "hash": "sha256:a-selar-no-gate", "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias" },
+  "_carimbo": { "atualizado_em": "2026-07-13T00:00:00-03:00", "hash": "sha256:a-selar-no-gate", "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias" },
   "_schema": {
     "versao": "1.0",
     "regra": "Schema unificado de fato (canonico). Todo item — beneficio ou fato regulatorio — carrega: id, ator[], vetores[], canal, titulo, base_legal, mecanismo, vigencia, sem_soa, status, fonte. Cruzamento entre vetores expresso em 'pacotes'. So status=='verificado' renderiza; 'pendente' fica na base para acompanhamento e NAO aparece em folder.",
