@@ -83,7 +83,7 @@
       "titulo": "Município com parque solar e IPTU Verde",
       "vetores": ["MMGD não observável"],
       "ator": ["municipio"],
-      "tese": "A prefeitura institui o IPTU Verde, gera solar nos próprios prédios (autoconsumo) e capta crédito verde para eficiência — e a prova por imóvel permite renovar o benefício sem vistoria, defensável no Tribunal de Contas.",
+      "tese": "Para o MUNICÍPIO: institui o IPTU Verde, gera solar nos próprios prédios (autoconsumo) e capta crédito verde para eficiência; com a prova por imóvel, concede e renova o benefício por critério objetivo, sem vistoria, defensável perante o Tribunal de Contas. Para o CIDADÃO/GERADOR: renova o desconto sem burocracia e mantém a geração comprovada que sustenta o benefício — o desconto alcança quem efetivamente gera.",
       "beneficios": ["mun_iptu_instituir", "mun_autoconsumo", "mun_finem_eficiencia", "mun_compras_14133"],
       "sem_soa": "IPTU Verde sem comprovação contínua fica exposto a contestação e refiscalização",
       "status": "verificado"
