@@ -3,7 +3,7 @@
     "orgao": "EPE",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo EPE — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-07-13",
+    "verificado_em": "2026-07-14",
     "proxima_revisao_sugerida": "2026-07-15",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina EPE conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. qsv_cor LARANJA → _pendentes_verificacao.",
@@ -29,7 +29,7 @@
       "status": "VIGENTE",
       "norma": "EPE/MME · ciclo anual",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -80,7 +80,7 @@
       "status": "VIGENTE",
       "norma": "EPE/MME · ciclo quinquenal",
       "url": "https://www.epe.gov.br/pt/imprensa/noticias/mme-e-epe-lancam-consultas-publicas-do-pde-2035-e-do-pne-2055-e-reforcam-planejamento-estrategico-do-setor-energetico",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -131,7 +131,7 @@
       "status": "VIGENTE",
       "norma": "EPE · Estudo Prospectivo para Inserção de Cargas Eletrointensivas na Região Nordeste (19/06/2026)",
       "url": "https://www.epe.gov.br/pt/imprensa/noticias",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "HIBRIDO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -173,7 +173,7 @@
       "status": "VIGENTE",
       "norma": "Portaria MME 136/2026 ANEXO II (lista, definitiva) + Art. 17 §3º (β 'definida em estudos da EPE') · valor β=0,9 → NT EPE Metodologia Locacional nov/2025 (a confirmar na NT)",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "HIBRIDO",
       "score_soa": 16,
       "vetores_afetados": [
@@ -223,7 +223,7 @@
       "status": "VIGENTE",
       "norma": "EPE · Boletim Trimestral",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Resenha-e-Boletim-do-Mercado-de-Energia-Eletrica",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -265,7 +265,7 @@
       "status": "VIGENTE",
       "norma": "EPE · ciclo periódico (PET anual; PELP de longo prazo)",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/programa-de-expansao-da-transmissao-pet-plano-de-expansao-de-longo-prazo-pelp-ciclo-2026-1-semestre",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -313,7 +313,7 @@
       "status": "VIGENTE",
       "norma": "EPE · publicação anual",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/anuario-estatistico-de-energia-eletrica",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -354,7 +354,7 @@
       "status": "VIGENTE",
       "norma": "EPE · Caderno temático PDE 2035",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 11,
       "vetores_afetados": [
@@ -397,7 +397,7 @@
       "status": "VIGENTE",
       "norma": "MME · SNTEP",
       "url": "https://www.epe.gov.br/pt/imprensa/noticias/mme-e-epe-lancam-consultas-publicas-do-pde-2035-e-do-pne-2055-e-reforcam-planejamento-estrategico-do-setor-energetico",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -446,7 +446,7 @@
       "status": "VIGENTE",
       "norma": "EPE · estrutura organizacional 2026",
       "url": "https://www.epe.gov.br/pt/a-epe",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 5,
       "vetores_afetados": [
@@ -487,7 +487,7 @@
       "status": "VIGENTE",
       "norma": "EPE-DEE-RE-016/2026-REV1 (Estudo de Atendimento ao Sudeste do Pará, abril/2026) · NT socioambiental EPE-DEA-SMA-NT-011/2026",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "HIBRIDO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -528,7 +528,7 @@
       "status": "VIGENTE",
       "norma": "EPE · Plano de Dados Abertos — Mercado de Distribuição de Energia Elétrica 2025",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/dados-abertos",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -574,7 +574,7 @@
         "V3",
         "V7"
       ],
-      "verificado_em": "2026-07-13"
+      "verificado_em": "2026-07-14"
     }
   ],
   "_pendentes_verificacao": [

@@ -3,7 +3,7 @@
     "orgao": "SUSEP/CNSP/STF (seguros · vetor Seguros & Prova de Risco)",
     "schema_version": "1.0",
     "descricao": "Monitor Regulatório de Seguros. Trava canônica: a SOA/SOS é provedor NEUTRO de dado/índice/evidência — NUNCA seguradora, corretora ou MGA; NUNCA precifica, garante ou transfere risco. Cada item é PERÍMETRO/RISCO, HABILITADOR ou DEVER DO DADO. Validação jurídica de advogado de seguros é necessária antes de uso externo — o monitor sinaliza, não dá parecer.",
-    "verificado_em": "2026-07-13",
+    "verificado_em": "2026-07-14",
     "fonte_canonica": "gov.br/susep + CNSP + STF (ADI) + DOU",
     "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
   },
@@ -14,7 +14,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "ADI 7074 / CNSP 407/2021",
       "url": "https://portal.stf.jus.br/",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "pendencia_verificacao": "A verificar: data de pauta."
     },
     {
@@ -23,7 +23,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "CP SUSEP 10/2025 · Lei 15.040/2024",
       "url": "https://www.gov.br/susep/",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "pendencia_verificacao": "A verificar: no texto final."
     },
     {
@@ -32,7 +32,7 @@
       "status": "VIGENTE",
       "norma": "SUSEP · Edital Sandbox 02/2024",
       "url": "https://www.gov.br/susep/",
-      "verificado_em": "2026-07-13"
+      "verificado_em": "2026-07-14"
     },
     {
       "tema": "Minuta de Resolução CNSP de resseguro/retrocessão/cosseguro — aprovada no Conselho Diretor da SUSEP (17/06)",
@@ -40,7 +40,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "Minuta Resolução CNSP (pós-CP SUSEP 14/2025) · substitui CNSP 451/2022 · Lei 15.040/2024 · LC 213/2025",
       "url": "https://legismap.com.br/conteudos/artigos-e-noticias/susep-aprova-minuta-de-resolucao-sobre-resseguro-retrocessao-e-operacoes-de-cosseguro",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "pendencia_verificacao": "NÃO é norma vigente: aprovada no Conselho Diretor da SUSEP e encaminhada ao CNSP — falta deliberação do CNSP e publicação no DOU. Desfecho relatado por LegisMap/Roncarati (18/06, fonte secundária qualificada) + pauta oficial SUSEP [ATO]; ata oficial da 11ª reunião a conferir. Vigência 02/01/2027 e art. 47 = texto da minuta, sujeitos a alteração no CNSP. Flexibilização do limite de 70% de retrocessão mediante justificativa: consta da cobertura da fase de CP — confirmar no texto final. Validação jurídica de advogado de seguros necessária antes de uso externo."
     },
     {
@@ -48,7 +48,7 @@
       "valor": "[DEVER DO DADO] Não há norma SUSEP dedicada ao seguro paramétrico com figura formal de 'agente de cálculo'. A PSR reconhece o paramétrico, mas falta padronização de índice/metodologia/validação atuarial — é o vazio que pode virar argumento para o provedor neutro de índice (a SOA), sem nunca subscrever risco. Confirmação adicional (17/06): a minuta CNSP de resseguro aprovada no Conselho Diretor também NÃO trata de paramétrico nem de provedor de índice — a lacuna persiste. Ambivalência a manter: é oportunidade de posicionamento E risco de falta de reconhecimento formal do gatilho (mitigar contratualmente o basis risk nos termos da Lei 15.040).",
       "status": "PENDENTE",
       "norma": "lacuna regulatória (SUSEP)",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "pendencia_verificacao": "Reavaliar quando sair o texto final da resolução de seguros de danos (CP 10/2025) e da resolução de resseguro (pós-CNSP)."
     }
   ]
