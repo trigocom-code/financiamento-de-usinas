@@ -3,7 +3,7 @@
     "orgao": "ONS",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ONS — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-07-13",
+    "verificado_em": "2026-07-14",
     "proxima_revisao_sugerida": "2026-07-15",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ONS conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Dados Abertos vão direto pro banco SOA.",
@@ -26,7 +26,7 @@
       "status": "VIGENTE",
       "norma": "NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (conexão/grid-forming) · limiares na Portaria MME 136/2026 Art. 7º + Art. 4º §13",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -68,7 +68,7 @@
       "status": "VIGENTE",
       "norma": "ONS · Submódulo 9 (Procedimentos de Rede)",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -110,7 +110,7 @@
       "status": "VIGENTE",
       "norma": "ONS · REN ANEEL 903/2020",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -152,7 +152,7 @@
       "status": "AGENDADO",
       "norma": "NT ONS PNAST 2026 (publicação 31/08/2026) · 1ª Temporada de Acesso: 367 cadastramentos (07/07) · 20,31 GW habilitados = 14,56 GW geração + 5,74 GW consumo (08/07)",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -209,7 +209,7 @@
       "status": "AGENDADO",
       "norma": "NT metodologia: NT-ONS DPL 0057/2026 = EPE-DEE-RE-067/2026-R0 (publicada 07/07/2026) · NT quantitativos: Art. 11 §4º da Portaria MME 136/2026 (prazo 30/09/2026)",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -258,7 +258,7 @@
       "status": "VIGENTE",
       "norma": "ONS · Sandbox Controle de Tensão",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-07-13",
+      "verificado_em": "2026-07-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
