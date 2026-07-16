@@ -3,9 +3,10 @@
     "orgao": "ANEEL",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ANEEL — schema v1.3 com tipo_fato, qsv_cor, fontes independentes, associacao_origem, ancoragem numérica. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-07-14",
-    "proxima_revisao_sugerida": "2026-07-15",
+    "verificado_em": "2026-07-16",
+    "proxima_revisao_sugerida": "2026-07-17",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ANEEL conforme QSV-R v3.0",
+    "nota_run_2026_07_16": "Varredura de 16/07: nenhuma reabertura F1 efetiva → NENHUM fato teve verificado_em bumpado (postura conservadora, R2). _meta.verificado_em reflete a data da varredura, não a de reconferência de fato. Página-mãe de notícias da ANEEL veio JS-truncada (inconclusiva para 08–16/07); a subpasta /noticias/2026-defeso-eleitoral carimba 'Atualizado em 07/07/2026 17h39' e vale como negativo APENAS para essa subpasta. Detectados 6 itens novos via F3 (ABSOLAR GTGD 15/07 + Agência iNFRA 13/07), todos em _pendentes_verificacao. A run de 15/07 escreveu JSON mas não escreveu digest — lacuna reportada ao CEO.",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Threshold.",
     "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO.",
     "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json LIBERADA. Fatos com fato_id na Tabela aplicam veredito direto. Demais ficam com teto AZUL (R7).",
@@ -27,9 +28,9 @@
       "tema": "REN ANEEL 1.161/2026 — Outorga de Armazenamento (BESS)",
       "valor": "Assinada em 02/06/2026 e publicada no DOU 24/06/2026 (datas distintas). Outorga 35 anos a partir da publicação; DRO-SAE validade 4 anos; entrada em operação comercial até 54 meses. Consolida a CP 039/2023.",
       "status": "VIGENTE",
-      "norma": "REN ANEEL 1.161/2026 · DOU 24/06/2026",
+      "norma": "REN ANEEL 1.161/2026 · assinada 02/06/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.161-de-2-de-junho-de-2026-714430510",
-      "verificado_em": "2026-07-14",
+      "verificado_em": "2026-07-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -48,8 +49,9 @@
         },
         {
           "tipo": "F2_DOU",
-          "ref": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.161-de-2-de-junho-de-2026-714430510",
+          "ref": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.161-de-2-de-junho-de-2026-714430510 (DOU 24/06/2026)",
           "trecho_literal": "A outorga terá prazo de vigência de 35 anos contados a partir de sua publicação. O prazo determinado para a entrada em operação comercial de todas as unidades armazenadoras é de até 54 meses.",
+          "nota_qsv": "DOU 24/06/2026 (assinatura 02/06/2026), outorga 35 anos e operação comercial até 54 meses reconfirmados em 2026-07-15 por Canal Solar, Mattos Filho, Cescon Barrieu e boletim Saes Advogados. Fetch direto do in.gov.br falhou (bloqueio anti-bot).",
           "associacao_origem": null,
           "gt_origem": null
         },
@@ -73,12 +75,12 @@
     },
     {
       "fato_id": "ANEEL-REN-1071-LRCAP",
-      "tema": "REN ANEEL 1.071/2023 — alterada pela REN 1.162/2026 para incorporar armazenamento",
-      "valor": "NÃO existe 'REN 1.071/2024 sobre LRCAP'. A norma é REN 1.071/2023, alterada pela REN 1.162/2026 (DOU 24/06/2026) para incorporar armazenamento de energia elétrica. A norma do LRCAP é a Portaria MME 136/2026.",
+      "tema": "REN ANEEL 1.162/2026 — tratamento regulatório do Armazenamento (SAE); altera a REN 1.071/2023 e outras",
+      "valor": "NÃO existe 'REN 1.071/2024 sobre LRCAP'. A REN ANEEL 1.162/2026 (assinada 02/06/2026, publicada no DOU 24/06/2026, junto com a 1.161/2026) estabelece o tratamento regulatório para a implantação do Armazenamento de Energia Elétrica (SAE) e ALTERA uma série de RENs vigentes — entre elas a REN 1.071/2023 — para incorporar o armazenamento (conexão, uso da rede, medição, operação, faturamento e penalidades). Define que o faturamento de central geradora com SAE colocalizado ou de SAE autônomo deve contemplar, cumulativamente, a parcela de consumo e a parcela de injeção. A norma do LRCAP (leilão) é a Portaria MME 136/2026; a REN 1.071/2023 é a base pré-existente alterada, não uma 'REN 1.071/2024 sobre LRCAP'.",
       "status": "VIGENTE",
-      "norma": "REN ANEEL 1.071/2023 + REN ANEEL 1.162/2026 · DOU 24/06/2026",
+      "norma": "REN ANEEL 1.162/2026 (altera RENs 846/2019, 875/2020, 905/2020, 921/2021, 1.000/2021, 1.009/2022, 1.029/2022, 1.030/2022, 1.031/2022 e 1.071/2023) · assinada 02/06/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.162-de-2-de-junho-de-2026-714416734",
-      "verificado_em": "2026-07-14",
+      "verificado_em": "2026-07-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -97,8 +99,9 @@
         },
         {
           "tipo": "F2_DOU",
-          "ref": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.162-de-2-de-junho-de-2026-714416734",
-          "trecho_literal": "alterando uma série de normas vigentes (RENs nº 846/2019, nº 905/2020, nº 1.000/2021, nº 1.029/2022 e nº 1.071/2023) para incorporar o armazenamento de energia elétrica",
+          "ref": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.162-de-2-de-junho-de-2026-714416734 (DOU 24/06/2026)",
+          "trecho_literal": "Estabelece tratamento regulatório para a implantação de Armazenamento de Energia Elétrica, bem como altera as Resoluções Normativas nº 846/2019, nº 875/2020, nº 905/2020, nº 921/2021, nº 1.000/2021, nº 1.009/2022, nº 1.029/2022, nº 1.030/2022, nº 1.031/2022 e nº 1.071/2023.",
+          "nota_qsv": "Ementa reconfirmada em 2026-07-15 por múltiplas fontes que reproduzem o DOU (boletim Saes Advogados, Canal Solar, CanalEnergia, Cescon Barrieu). Fetch direto do in.gov.br falhou (bloqueio anti-bot); trecho não lido diretamente da página F1 do DOU nesta rodada.",
           "associacao_origem": null,
           "gt_origem": null
         },
@@ -127,7 +130,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 045/2019 (3ª fase · voto-vista Dir. Fernando Mosna · memorando de período sombra ampliado · deliberação esperada RPO 28/07/2026)",
       "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-07-14",
+      "verificado_em": "2026-07-16",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
       "vetores_afetados": [
@@ -190,7 +193,7 @@
       "status": "VIGENTE",
       "norma": "CP ANEEL 039/2023 · NT 03/2026",
       "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-07-14",
+      "verificado_em": "2026-07-16",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -239,7 +242,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.150/2026 + Ofício 553/2025-GDG",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-14",
+      "verificado_em": "2026-07-16",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -281,7 +284,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.059/2023 (Lei 14.300/2022)",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-14",
+      "verificado_em": "2026-07-16",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -324,7 +327,7 @@
       "status": "VIGENTE",
       "norma": "MME · Portarias 126/2026 e 111/2025 (regulamentação ANEEL pendente)",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-14",
+      "verificado_em": "2026-07-16",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -366,7 +369,7 @@
       "status": "VIGENTE",
       "norma": "ANEEL · Sandbox de Inovação",
       "url": "https://www.aneel.gov.br/sandbox-regulatorio",
-      "verificado_em": "2026-07-14",
+      "verificado_em": "2026-07-16",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -408,7 +411,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 046/2025",
       "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-07-14",
+      "verificado_em": "2026-07-16",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -450,7 +453,7 @@
       "status": "VIGENTE",
       "norma": "TS ANEEL 23/2025",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-14",
+      "verificado_em": "2026-07-16",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -501,7 +504,7 @@
         "V2",
         "sHEC"
       ],
-      "verificado_em": "2026-07-14"
+      "verificado_em": "2026-07-16"
     }
   ],
   "_pendentes_verificacao": [
@@ -540,6 +543,220 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "RESOLVIDO 30/06: numeração confirmada — CP 009/2026 (distinta da 009/2025-curtailment FV, fechada abr/2025). Promover de _pendentes para fatos[] na próxima curadoria; falta só o voto final na ANEEL."
+    },
+    {
+      "fato_id": "ANEEL-SORTEIO-RELATOR-LRCAP-BATERIAS",
+      "tema": "Sorteio de relator dos processos do LRCAP Armazenamento (leilão de baterias)",
+      "valor": "DETECTADO 16/07 (fato de 13/07/2026): o Diretor Gentil Nogueira foi SORTEADO relator de DOIS processos do leilão de baterias — (i) o edital do certame de Armazenamento Nacional (com conteúdo local) e (ii) o leilão sem exigência de conteúdo local. É MOVIMENTO PROCESSUAL, não publicação de edital: o edital do LRCAP Armazenamento segue NÃO PUBLICADO, e preço-teto e regra de TUST seguem pendentes. Contexto ancorado: Portaria Normativa MME 136/2026 mantém LRCAP 2026 Armazenamento Nacional em 02/12/2026 e LRCAP 2026 Armazenamento (aberto) em 04/12/2026, com potência disponibilizada ao sistema a partir de 2028.",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "ANEEL — sorteio de relatoria (13/07/2026) · Portaria Normativa MME 136/2026",
+      "url": "https://www.aneel.gov.br/",
+      "verificado_em": "2026-07-16",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "score_soa": 12,
+      "vetores_afetados": [
+        "V3",
+        "V7"
+      ],
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7_sem_F1",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F3_imprensa_editorial",
+          "ref": "Agência iNFRA — 'Diretor Gentil Nogueira será relator do leilão de baterias na ANEEL', publicado 13/07/2026 12h56, atualizado 14/07/2026 12h02",
+          "trecho_literal": "O diretor Gentil Nogueira, da ANEEL (Agência Nacional de Energia Elétrica), será o relator do leilão de baterias na reguladora. Ele foi sorteado nesta segunda-feira (13) para conduzir dois processos sobre o tema, um voltado ao edital do certame de armazenamento nacional, e o outro sobre o leilão sem exigência de conteúdo local.",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ],
+      "numero_status": "SEM_NUMEROS",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-07-16"
+      },
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "motivo_pendencia": "PRIORIDADE 1. F3 (imprensa) não fecha VERDE. A matéria da Agência iNFRA aponta para uma notícia F1 da ANEEL (www2.aneel.gov.br/aplicacoes_liferay/noticias_area/dsp_detalheNoticia.cfm?idNoticia=14779&idAreaNoticia=424) que NÃO foi reaberta nesta varredura (fora do conjunto de proveniência do fetch). Reabrir essa notícia em F1 para ancorar o sorteio. NÃO altera o fato ANEEL-EDITAL-LRCAP-ARMAZ, que segue LARANJA/PENDENTE (edital não publicado)."
+    },
+    {
+      "fato_id": "ANEEL-CP-016-2026",
+      "tema": "CP ANEEL 16/2026 — encargo fixo para custos comerciais na estrutura tarifária da baixa tensão",
+      "valor": "DETECTADO 16/07 via F3 (ABSOLAR, resumo da 26ª reunião semanal do GT Geração Distribuída, 15/07/2026). Trata da definição do encargo fixo destinado à cobertura dos custos comerciais na estrutura tarifária da baixa tensão. Prazos informados: contribuições à ABSOLAR até 25/08/2026; envio à ANEEL até 08/09/2026.",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "CP ANEEL nº 16/2026",
+      "url": "https://www.aneel.gov.br/consultas-publicas",
+      "verificado_em": "2026-07-16",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "score_soa": 5,
+      "vetores_afetados": [
+        "V2"
+      ],
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7_sem_F1",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F3_associacao_email",
+          "ref": "E-mail GTGD ABSOLAR 15/07/2026 — 'Resumo reunião semanal'",
+          "trecho_literal": "foram apresentados os encaminhamentos relativos à CP ANEEL nº 16/2026, que trata da definição do encargo fixo destinado à cobertura dos custos comerciais na estrutura tarifária da baixa tensão ... Permanecem os prazos de 25/08 para contribuições à ABSOLAR e 08/09 para envio à ANEEL.",
+          "associacao_origem": "ABSOLAR",
+          "gt_origem": "Geração Distribuída"
+        }
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-07-16"
+      },
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "motivo_pendencia": "F3 ponteiro. Abrir a CP 16/2026 em F1 (ANEEL) para ancorar número, objeto e janela de contribuições."
+    },
+    {
+      "fato_id": "ANEEL-CP-018-2026",
+      "tema": "CP ANEEL 18/2026 — aprimoramento do Programa de Eficiência Energética para a Transição Energética",
+      "valor": "DETECTADO 16/07 via F3 (ABSOLAR, GTGD 15/07/2026). Trata do aprimoramento do Programa de Eficiência Energética (PEE) para a Transição Energética. Prazos informados: contribuições à ABSOLAR até 25/08/2026; envio à ANEEL até 08/09/2026.",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "CP ANEEL nº 18/2026",
+      "url": "https://www.aneel.gov.br/consultas-publicas",
+      "verificado_em": "2026-07-16",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "score_soa": 6,
+      "vetores_afetados": [
+        "V6"
+      ],
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7_sem_F1",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F3_associacao_email",
+          "ref": "E-mail GTGD ABSOLAR 15/07/2026 — 'Resumo reunião semanal'",
+          "trecho_literal": "a CP ANEEL nº 18/2026, sobre o aperfeiçoamento do Programa de Eficiência Energética para a Transição Energética, com prazo para contribuições à ABSOLAR em 25/08 e envio à ANEEL em 08/09",
+          "associacao_origem": "ABSOLAR",
+          "gt_origem": "Geração Distribuída"
+        }
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-07-16"
+      },
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "motivo_pendencia": "F3 ponteiro. Abrir a CP 18/2026 em F1 (ANEEL) para ancorar."
+    },
+    {
+      "fato_id": "ANEEL-CP-020-2026-FATOR-X",
+      "tema": "CP ANEEL 20/2026 — Fator X (compartilhamento de ganhos de produtividade no reajuste tarifário)",
+      "valor": "DETECTADO 16/07 via F3 (ABSOLAR, GTGD 15/07/2026). Abertura comunicada de CP sobre o Fator X, mecanismo que influencia diretamente os reajustes tarifários das distribuidoras ao compartilhar ganhos de produtividade com os consumidores. RELEVÂNCIA SOA: a proposta poderá impactar a geração distribuída, especialmente pela forma como a EXPANSÃO DA MMGD é considerada nos cálculos regulatórios. Prazos informados: contribuições à ABSOLAR até 17/08/2026; envio à ANEEL até 31/08/2026.",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "CP ANEEL nº 20/2026 (Fator X)",
+      "url": "https://www.aneel.gov.br/consultas-publicas",
+      "verificado_em": "2026-07-16",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "score_soa": 9,
+      "vetores_afetados": [
+        "V2",
+        "V6"
+      ],
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7_sem_F1",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F3_associacao_email",
+          "ref": "E-mail GTGD ABSOLAR 15/07/2026 — 'Resumo reunião semanal'",
+          "trecho_literal": "Também foi comunicada a abertura da CP ANEEL nº 20/2026, referente ao Fator X ... Destacou-se que a proposta poderá impactar a geração distribuída, especialmente em razão da forma como a expansão da MMGD é considerada nos cálculos regulatórios ... cujo prazo interno será 17/08, com envio à ANEEL até 31/08.",
+          "associacao_origem": "ABSOLAR",
+          "gt_origem": "Geração Distribuída"
+        }
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-07-16"
+      },
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "motivo_pendencia": "F3 ponteiro — MAIOR BORDA das três CPs novas. Abrir a CP 20/2026 em F1 (ANEEL) para ancorar e avaliar o tratamento dado à expansão da MMGD no cálculo do Fator X."
+    },
+    {
+      "fato_id": "ANEEL-PROC-48500-015900-2026-94-MMGD-REVELIA",
+      "tema": "Processo ANEEL 48500.015900/2026-94 — alteração à revelia das características originais da MMGD (NT 107/2026-SFT)",
+      "valor": "DETECTADO 16/07 via F3 (ABSOLAR, GTGD 15/07/2026). A Nota Técnica nº 107/2026-SFT/ANEEL foi encaminhada ao ONS, solicitando apresentação técnica — preferencialmente em 29/07/2026 — para detalhamento da metodologia utilizada pelo Operador na identificação de AMPLIAÇÕES NÃO AUTORIZADAS DE CAPACIDADE INSTALADA da MMGD, dos mecanismos de monitoramento empregados e dos impactos técnicos, operacionais e regulatórios associados. CONVERGÊNCIA DIRETA com a borda SOA (evidência de capacidade real × cadastro declarado). ATENÇÃO: processo DISTINTO da CP 009/2026 (gato-solar) — não fundir os dois. O PDF da NT 107/2026 (SEI_ANEEL 0398228) veio ANEXO ao e-mail de 15/07 — documento primário disponível, ainda NÃO lido.",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "Processo ANEEL nº 48500.015900/2026-94 · Nota Técnica nº 107/2026-SFT/ANEEL",
+      "url": "https://www.aneel.gov.br/",
+      "verificado_em": "2026-07-16",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "score_soa": 13,
+      "vetores_afetados": [
+        "V2",
+        "V7"
+      ],
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7_sem_F1",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F3_associacao_email",
+          "ref": "E-mail GTGD ABSOLAR 15/07/2026 — 'Resumo reunião semanal' (com anexo SEI_ANEEL 0398228 — NT nº 107/2026)",
+          "trecho_literal": "Destacou-se o andamento do Processo ANEEL nº 48500.015900/2026-94, referente à alteração à revelia das características originais da MMGD, em que a Nota Técnica nº 107/2026-SFT/ANEEL foi encaminhada ao ONS, solicitando que a Agência realize apresentação técnica, preferencialmente em 29/07, para detalhamento da metodologia utilizada pelo Operador na identificação de ampliações não autorizadas de capacidade instalada",
+          "associacao_origem": "ABSOLAR",
+          "gt_origem": "Geração Distribuída"
+        }
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-07-16"
+      },
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "motivo_pendencia": "Ler a NT 107/2026 (PDF anexo, SEI 0398228) antes de qualquer uso — é documento primário chegado por ponteiro F3. Confirmar o processo no SEI/ANEEL. Acompanhar a apresentação do ONS de 29/07."
+    },
+    {
+      "fato_id": "ANEEL-PROC-48500-002211-2026-10-PRODIST-M3",
+      "tema": "Processo ANEEL 48500.002211/2026-10 — aprimoramento do Módulo 3 do PRODIST (observabilidade/operabilidade/controlabilidade)",
+      "valor": "DETECTADO 16/07 via F3 (ABSOLAR, GTGD 15/07/2026). Relatório preliminar propõe novos requisitos de OBSERVABILIDADE, OPERABILIDADE e CONTROLABILIDADE para novas conexões e alterações relevantes em sistemas existentes, INCLUINDO INSTALAÇÕES DE ARMAZENAMENTO DE ENERGIA. Baseado na NT nº 107/2026 e no RAIR nº 2/2026-STD. Prevê prazo de até 180 dias para adequação das mini GD e de 120 dias para empreendimentos enquadrados como geração tipo III. Tema deverá ser objeto de futura consulta pública da ANEEL. Borda SOA alta: observabilidade regulada é exatamente a camada de prova/evidência.",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "Processo ANEEL nº 48500.002211/2026-10 · Módulo 3 do PRODIST · NT 107/2026 · RAIR nº 2/2026-STD",
+      "url": "https://www.aneel.gov.br/",
+      "verificado_em": "2026-07-16",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "score_soa": 11,
+      "vetores_afetados": [
+        "V2",
+        "V3"
+      ],
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "rebaixado_por_R7_sem_F1",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F3_associacao_email",
+          "ref": "E-mail GTGD ABSOLAR 15/07/2026 — 'Resumo reunião semanal'",
+          "trecho_literal": "foi apresentado o relatório preliminar referente ao Processo nº 48500.002211/2026-10, que trata do aprimoramento do Módulo 3 do PRODIST. O documento propõe novos requisitos de observabilidade, operabilidade e controlabilidade para novas conexões e alterações relevantes em sistemas existentes, incluindo instalações de armazenamento de energia ... prevê prazo de até 180 dias para adequação das mini GD e de 120 dias para empreendimentos enquadrados como geração tipo III",
+          "associacao_origem": "ABSOLAR",
+          "gt_origem": "Geração Distribuída"
+        }
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-07-16"
+      },
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "motivo_pendencia": "F3 ponteiro. Confirmar no SEI/ANEEL e aguardar a abertura da CP. Fio de convergência estrutural com V2/V3 — acompanhar de perto."
     }
   ],
   "_historico_caidos": []

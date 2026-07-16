@@ -1,17 +1,19 @@
 {
   "_meta": {
     "titulo": "Agenda do Setor Elétrico — Monitor SOA/SOS",
-    "atualizado_em": "2026-07-15",
+    "atualizado_em": "2026-07-16",
     "fonte": "Monitor de Eventos SOA/SOS · fontes oficiais (gov.br/ANEEL · EPE · MME · CCEE · Senado) + associações do setor (CIGRE-Brasil, ANE, COGEN, APINE, ABGD, ABSOLAR, ABEEólica) e imprensa setorial",
     "nota": "Agenda pública de datas do setor elétrico. Eventos de associação e sinais de fontes secundárias marcados 'A VERIFICAR'; confirmar no ato/página oficial antes de citar."
   },
   "recentes": [
+    { "data": "2026-07-14", "titulo": "ANEEL aprova abertura da Consulta Pública nº 020/2026 — Metodologia do Fator X (Componente de Produtividade)", "detalhe": "Aprovada em Reunião Pública Ordinária. Revisa como se mede a produtividade das distribuidoras; a Nota Técnica registra que o modelo vigente não captura os efeitos da modernização tecnológica, digitalização, resiliência climática e expansão da MMGD. Contribuições de 16/07 a 31/08/2026.", "status": "CONFIRMADO", "fonte": "gov.br/ANEEL" },
     { "data": "2026-07-13", "titulo": "CP nº 14/2026 e CP nº 15/2026 ANEEL — encerraram contribuições", "detalhe": "Revisão tarifária Celesc/SC (14) e Critério de Eficiência / gestão econômico-financeira das distribuidoras (15).", "status": "CONFIRMADO", "fonte": "gov.br/ANEEL" },
     { "data": "2026-07-03", "titulo": "PDE 2036 — 1º caderno (Contexto, Perspectivas e Premissas) publicado", "detalhe": "Consulta Pública ainda sem data de abertura anunciada. Vigiar EPE/MME.", "status": "CONFIRMADO", "fonte": "EPE / MME" },
     { "data": "2026-07-01", "titulo": "Nova minuta da CP 45/2019 (curtailment) em circulação", "detalhe": "Sinal de imprensa setorial: adiaria o rateio entre fontes e restringiria recursos ao ONS. Texto aguarda análise do dir. Mosna após pedido de vista (22/06); sem data de retomada. Confirmar na fonte oficial.", "status": "A VERIFICAR", "fonte": "imprensa setorial" }
   ],
   "acao_7dias": [],
   "proximos_30d": [
+    { "data": "2026-07-16", "titulo": "CP nº 020/2026 ANEEL (Metodologia do Fator X — Componente de Produtividade) — abre contribuições", "detalhe": "Janela de 16/07 a 31/08/2026. Contribuições para cp020_2026@aneel.gov.br. Fundamento: art. 14 da Lei nº 9.427/1996.", "status": "CONFIRMADO", "fonte": "gov.br/ANEEL" },
     { "data": "2026-07-24", "titulo": "Habilitação dos vencedores — Leilão de Transmissão nº 1/2026", "status": "CONFIRMADO" },
     { "data": "2026-07-27", "titulo": "ExpoElétrica 2026 — Frei Caneca / SP (até 28/07, entrada gratuita)", "status": "CONFIRMADO" },
     { "data": "2026-07-28", "titulo": "BioComForest 2026 — COGEN, Botucatu / SP (até 30/07)", "status": "A VERIFICAR" },
@@ -26,6 +28,7 @@
   "horizonte": [
     { "data": "2026-08-19", "titulo": "4º JTCI — Jornada Técnica (ABEEólica), São Paulo (até 20/08)", "status": "A VERIFICAR" },
     { "data": "2026-08-25", "titulo": "Intersolar South America 2026 — Expo Center Norte / SP (até 27/08)", "status": "CONFIRMADO" },
+    { "data": "2026-08-31", "titulo": "CP nº 020/2026 ANEEL (Metodologia do Fator X — Produtividade) — encerra contribuições", "status": "CONFIRMADO", "fonte": "gov.br/ANEEL" },
     { "data": "2026-09-01", "titulo": "Gas & Energy Week 2026 — COGEN, Rio de Janeiro (até 03/09)", "status": "A VERIFICAR" },
     { "data": "2026-09-15", "titulo": "Seminário Anual da ANE — Academia Nacional de Engenharia, São Paulo (data a confirmar)", "detalhe": "Fórum do Comitê de Energia da ANE (força de sistema, regulação, confiabilidade).", "status": "A VERIFICAR" },
     { "data": "2026-09-23", "titulo": "Proenergia Summit 2026 — Fortaleza / CE (até 24/09)", "status": "A VERIFICAR" },
