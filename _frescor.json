@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-07-17T08:25:03-03:00",
+                  "gerado_em":  "2026-07-17T12:25:02-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
@@ -62,7 +62,7 @@
                      "icleansolar-limpeza-auditavel.html":  "2026-07-05T12:46:10-03:00",
                      "index.html":  "2026-07-05T12:17:09-03:00",
                      "inscricoes-eventos-soa.html":  "2026-07-11T14:47:29-03:00",
-                     "iptu-verde-auditavel.html":  "2026-07-13T15:44:49-03:00",
+                     "iptu-verde-auditavel.html":  "2026-07-17T09:09:45-03:00",
                      "m2m-iot-soa.html":  "2026-07-05T12:46:10-03:00",
                      "Mapa_BESS_por_Estado.html":  "2026-07-01T19:44:09-03:00",
                      "mercado-psm-soa.html":  "2026-07-05T12:46:10-03:00",
