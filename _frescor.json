@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-07-16T12:25:02-03:00",
+                  "gerado_em":  "2026-07-17T08:25:03-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
@@ -31,17 +31,17 @@
                      "certificacao-esg-auditavel.html":  "2026-07-05T12:17:05-03:00",
                      "contencioso-curtailment.html":  "2026-07-10T12:45:39-03:00",
                      "eventos-soa.html":  "2026-07-11T14:15:45-03:00",
-                     "Fatos_ANEEL_Folder_SOA.json":  "2026-07-16T08:20:06-03:00",
+                     "Fatos_ANEEL_Folder_SOA.json":  "2026-07-17T08:20:05-03:00",
                      "Fatos_Beneficios_ESG_Folder_SOA.json":  "2026-07-13T20:49:02-03:00",
-                     "Fatos_CapitalVerde_Folder_SOA.json":  "2026-07-16T08:20:06-03:00",
-                     "Fatos_CCEE_Folder_SOA.json":  "2026-07-16T08:20:06-03:00",
-                     "Fatos_EPE_Folder_SOA.json":  "2026-07-16T08:20:06-03:00",
-                     "Fatos_ESG_Folder_SOA.json":  "2026-07-16T08:20:06-03:00",
+                     "Fatos_CapitalVerde_Folder_SOA.json":  "2026-07-17T08:20:05-03:00",
+                     "Fatos_CCEE_Folder_SOA.json":  "2026-07-17T08:20:05-03:00",
+                     "Fatos_EPE_Folder_SOA.json":  "2026-07-17T08:20:05-03:00",
+                     "Fatos_ESG_Folder_SOA.json":  "2026-07-17T08:20:05-03:00",
                      "Fatos_GatoSolar_Folder_SOA.json":  "2026-07-08T17:59:37-03:00",
                      "Fatos_IPTUVerde_Folder_SOA.json":  "2026-07-13T16:40:49-03:00",
-                     "Fatos_MME_Folder_SOA.json":  "2026-07-16T08:20:06-03:00",
-                     "Fatos_ONS_Folder_SOA.json":  "2026-07-16T08:20:06-03:00",
-                     "Fatos_Regulatorios_Folder_SOA.json":  "2026-07-16T08:20:06-03:00",
+                     "Fatos_MME_Folder_SOA.json":  "2026-07-17T08:20:05-03:00",
+                     "Fatos_ONS_Folder_SOA.json":  "2026-07-17T08:20:05-03:00",
+                     "Fatos_Regulatorios_Folder_SOA.json":  "2026-07-17T08:20:05-03:00",
                      "Fatos_Seguros_Folder_SOA.json":  "2026-07-16T08:20:06-03:00",
                      "Folder_Vivo_ANEEL_GitHub.html":  "2026-07-05T06:47:11-03:00",
                      "Folder_Vivo_CapitalVerde_GitHub.html":  "2026-07-04T04:43:05-03:00",
