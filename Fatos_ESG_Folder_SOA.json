@@ -1,50 +1,51 @@
 {
-  "_meta": {
-    "verificado_em": "2026-07-16",
-    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
+ "_meta": {
+  "verificado_em": "2026-07-17",
+  "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1.",
+  "nota_run_2026_07_17": "Varredura de 17/07: SEM ALTERAÇÃO. Resolução CVM 244, de 29/05/2026, segue como o ato vigente que alterou a Resolução CVM 193 e REVOGOU a obrigatoriedade de divulgação do relatório financeiro de sustentabilidade/clima (padrões CBPS/ISSB), mantendo adoção VOLUNTÁRIA sob 'pratique ou explique'. Nenhum ato novo da CVM na janela. Reconfirmação por F2; sem reabertura F1 → nenhum verificado_em de fato bumpado."
+ },
+ "fatos": [
+  {
+   "tema": "Relato de sustentabilidade (IFRS S1/S2) — CVM",
+   "valor": "VOLUNTÁRIO para exercícios iniciados em 01/01/2026 — a CVM 244 revogou a obrigatoriedade. A partir de 2027, quem optar por não divulgar comunica ao mercado (pratique-ou-explique).",
+   "status": "VIGENTE",
+   "norma": "Resolução CVM 244/2026 (altera a CVM 193) · 29/05/2026",
+   "verificado_em": "2026-07-17"
   },
-  "fatos": [
-    {
-      "tema": "Relato de sustentabilidade (IFRS S1/S2) — CVM",
-      "valor": "VOLUNTÁRIO para exercícios iniciados em 01/01/2026 — a CVM 244 revogou a obrigatoriedade. A partir de 2027, quem optar por não divulgar comunica ao mercado (pratique-ou-explique).",
-      "status": "VIGENTE",
-      "norma": "Resolução CVM 244/2026 (altera a CVM 193) · 29/05/2026",
-      "verificado_em": "2026-07-16"
-    },
-    {
-      "tema": "Mercado regulado de carbono (SBCE)",
-      "valor": "Sistema instituído; regras de MRV (monitorar, relatar, verificar), alocação e cronograma em regulamentação infralegal. Proposta preliminar de cobertura setorial apresentada ao CTCP em 19/05/2026; consulta pública prevista para julho/2026; meta de concluir o arcabouço da 1ª fase até dez/2026. MRV inicia em 2027. Faseamento da proposta (em deliberação): Fase 1/2027 — papel/celulose, ferro e aço, cimento, alumínio primário, óleo e gás (E&P), refino, transporte aéreo; Fase 2/2029 — mineração, alumínio reciclado, SETOR ELÉTRICO, vidro, alimentos e bebidas, química, cerâmica, resíduos; Fase 3/2031 — transporte rodoviário, aquaviário e ferroviário. Limiares (Lei 15.042/2024): relato acima de 10 mil tCO₂e/ano; sujeição a limite acima de 25 mil tCO₂e/ano.",
-      "status": "EM DELIBERAÇÃO",
-      "norma": "Lei 15.042/2024 (DOU 12/12/2024)",
-      "verificado_em": "2026-07-16"
-    },
-    {
-      "tema": "Taxonomia Sustentável Brasileira (TSB)",
-      "valor": "Classificação de atividades e ativos por critérios técnicos verificáveis; em fase de implementação e testagem (CITSB instituído em 2026). 2ª edição da TSB projetada para fim de 2026.",
-      "status": "VIGENTE",
-      "norma": "Decreto 12.705/2025 · Portaria MF 1.039/2026",
-      "verificado_em": "2026-07-16"
-    },
-    {
-      "tema": "CBAM — ajuste de carbono na fronteira (UE)",
-      "valor": "Período definitivo desde 01/01/2026. Exportadores BR (aço, alumínio, cimento, fertilizantes etc.) precisam de dado de emissões embutidas; venda de certificados começa 01/02/2027 (1ª entrega referente a bens importados em 2026). Preço trimestral do certificado: Q1/2026 = EUR 75,36 (publicado 07/04); próximos releases 06/07 e 05/10/2026 e 04/01/2027. Extensão downstream (~180 produtos com alto conteúdo de aço/alumínio, efeito a partir de 01/01/2028): posição do Conselho da UE fechada em 12/06/2026 — EM NEGOCIAÇÃO com o Parlamento, não é regulamento final.",
-      "status": "VIGENTE",
-      "norma": "EU Regulation 2023/956",
-      "verificado_em": "2026-07-16"
-    },
-    {
-      "tema": "GHG Protocol Scope 2 — matching horário",
-      "valor": "Revisão propõe matching HORÁRIO + deliverability (no lugar do anual). 1ª rodada de consultas encerrou 31/01/2026; 2ª consulta pública esperada ainda em 2026; publicação final prevista para 2027; adoção faseada a partir de ~2028.",
-      "status": "EM DELIBERAÇÃO",
-      "norma": "GHG Protocol — revisão Scope 2",
-      "verificado_em": "2026-07-16"
-    },
-    {
-      "tema": "Padrão global de divulgação (ISSB)",
-      "valor": "IFRS S1 (geral) e S2 (clima) são a base do relato financeiro de sustentabilidade — assegurável por terceiro. No Brasil, adotados via CVM 193 (voluntários sob CVM 244). Emendas direcionadas ao IFRS S2 (dez/2025) vigentes para períodos a partir de 01/01/2027. Divulgações relacionadas à natureza: exposure draft de Practice Statement (complementar a S1/S2) previsto para out/2026.",
-      "status": "VIGENTE (referência)",
-      "norma": "ISSB — IFRS S1/S2",
-      "verificado_em": "2026-07-16"
-    }
-  ]
+  {
+   "tema": "Mercado regulado de carbono (SBCE)",
+   "valor": "Sistema instituído; regras de MRV (monitorar, relatar, verificar), alocação e cronograma em regulamentação infralegal. Proposta preliminar de cobertura setorial apresentada ao CTCP em 19/05/2026; consulta pública prevista para julho/2026; meta de concluir o arcabouço da 1ª fase até dez/2026. MRV inicia em 2027. Faseamento da proposta (em deliberação): Fase 1/2027 — papel/celulose, ferro e aço, cimento, alumínio primário, óleo e gás (E&P), refino, transporte aéreo; Fase 2/2029 — mineração, alumínio reciclado, SETOR ELÉTRICO, vidro, alimentos e bebidas, química, cerâmica, resíduos; Fase 3/2031 — transporte rodoviário, aquaviário e ferroviário. Limiares (Lei 15.042/2024): relato acima de 10 mil tCO₂e/ano; sujeição a limite acima de 25 mil tCO₂e/ano.",
+   "status": "EM DELIBERAÇÃO",
+   "norma": "Lei 15.042/2024 (DOU 12/12/2024)",
+   "verificado_em": "2026-07-17"
+  },
+  {
+   "tema": "Taxonomia Sustentável Brasileira (TSB)",
+   "valor": "Classificação de atividades e ativos por critérios técnicos verificáveis; em fase de implementação e testagem (CITSB instituído em 2026). 2ª edição da TSB projetada para fim de 2026.",
+   "status": "VIGENTE",
+   "norma": "Decreto 12.705/2025 · Portaria MF 1.039/2026",
+   "verificado_em": "2026-07-17"
+  },
+  {
+   "tema": "CBAM — ajuste de carbono na fronteira (UE)",
+   "valor": "Período definitivo desde 01/01/2026. Exportadores BR (aço, alumínio, cimento, fertilizantes etc.) precisam de dado de emissões embutidas; venda de certificados começa 01/02/2027 (1ª entrega referente a bens importados em 2026). Preço trimestral do certificado: Q1/2026 = EUR 75,36 (publicado 07/04); próximos releases 06/07 e 05/10/2026 e 04/01/2027. Extensão downstream (~180 produtos com alto conteúdo de aço/alumínio, efeito a partir de 01/01/2028): posição do Conselho da UE fechada em 12/06/2026 — EM NEGOCIAÇÃO com o Parlamento, não é regulamento final.",
+   "status": "VIGENTE",
+   "norma": "EU Regulation 2023/956",
+   "verificado_em": "2026-07-17"
+  },
+  {
+   "tema": "GHG Protocol Scope 2 — matching horário",
+   "valor": "Revisão propõe matching HORÁRIO + deliverability (no lugar do anual). 1ª rodada de consultas encerrou 31/01/2026; 2ª consulta pública esperada ainda em 2026; publicação final prevista para 2027; adoção faseada a partir de ~2028.",
+   "status": "EM DELIBERAÇÃO",
+   "norma": "GHG Protocol — revisão Scope 2",
+   "verificado_em": "2026-07-17"
+  },
+  {
+   "tema": "Padrão global de divulgação (ISSB)",
+   "valor": "IFRS S1 (geral) e S2 (clima) são a base do relato financeiro de sustentabilidade — assegurável por terceiro. No Brasil, adotados via CVM 193 (voluntários sob CVM 244). Emendas direcionadas ao IFRS S2 (dez/2025) vigentes para períodos a partir de 01/01/2027. Divulgações relacionadas à natureza: exposure draft de Practice Statement (complementar a S1/S2) previsto para out/2026.",
+   "status": "VIGENTE (referência)",
+   "norma": "ISSB — IFRS S1/S2",
+   "verificado_em": "2026-07-17"
+  }
+ ]
 }

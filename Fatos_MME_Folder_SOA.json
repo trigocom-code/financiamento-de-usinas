@@ -1,328 +1,386 @@
 {
-  "_meta": {
-    "orgao": "MME",
-    "schema_version": "1.3",
-    "descricao": "Monitor exclusivo MME — schema v1.3. Aplicada Precedência v1.2. Portaria 136/2026 enriquecida em 04/07/2026 (leitura integral: art. 5º/7º/9º + Anexo II).",
-    "verificado_em": "2026-07-16",
-    "proxima_revisao_sugerida": "2026-07-31",
-    "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina MME conforme QSV-R v3.0",
-    "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
-    "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO.",
-    "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json LIBERADA. Aplicar registro a registro.",
-    "vetores_soa_atendidos": [
-      "V1",
-      "V3",
-      "V5",
-      "V6",
-      "V7"
-    ],
-    "fonte_canonica": "https://www.gov.br/mme/pt-br",
-    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
+ "_meta": {
+  "orgao": "MME",
+  "schema_version": "1.3",
+  "descricao": "Monitor exclusivo MME — schema v1.3. Aplicada Precedência v1.2. Portaria 136/2026 enriquecida em 04/07/2026 (leitura integral: art. 5º/7º/9º + Anexo II).",
+  "verificado_em": "2026-07-17",
+  "proxima_revisao_sugerida": "2026-07-31",
+  "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina MME conforme QSV-R v3.0",
+  "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
+  "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO.",
+  "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json LIBERADA. Aplicar registro a registro.",
+  "vetores_soa_atendidos": [
+   "V1",
+   "V3",
+   "V5",
+   "V6",
+   "V7"
+  ],
+  "fonte_canonica": "https://www.gov.br/mme/pt-br",
+  "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1.",
+  "nota_run_2026_07_17": "Varredura de 17/07 com render JS (Chrome). A página de notícias do MME carimba 'Atualizado em 16/07/2026 14h26'. DOIS itens que a run de 16/07 NÃO capturou (MME havia sido marcado 'sem alteração'): (1) CP do POTEE 2026, aberta em 14/07 — fato NOVO, criado em fatos[] como AZUL, com F1 ancorada; (2) Resolução do CMSE sobre despacho térmico por GE, de 09/07 — criada em _pendentes_verificacao como LARANJA, ato não lido. Portaria Normativa MME 136/2026 permanece estável (cadastro EPE até 31/07; leilões 02/12 e 04/12), sem reconferência hoje. Itens do MME de 15–16/07 são conteúdo institucional (terras raras, biocombustíveis) sem ato normativo."
+ },
+ "fatos": [
+  {
+   "fato_id": "MME-PORTARIA-136-2026-LRCAP",
+   "tema": "Portaria MME 136/2026 — LRCAP de Armazenamento (calendário + parâmetros + regime de receita + Anexo II)",
+   "valor": "Portaria de 1º/06/2026, publicada no DOU 03/06/2026. Base: arts. 3º e 3º-A da Lei 10.848/2004, Decreto 10.707/2021, Processo 48360.000272/2024-22. Cria DOIS leilões de Reserva de Capacidade na forma de POTÊNCIA via baterias novas (SAE — Sistemas de Armazenamento de Energia) que acrescentem potência ao SIN: (a) LRCAP 2026 Armazenamento NACIONAL → Produto Potência 2028A, leilão 02/12/2026, com requisito de nacionalização (Sistema-CFI do BNDES); (b) LRCAP 2026 Armazenamento → Produto Potência 2028B, leilão 04/12/2026, sem conteúdo nacional, cuja realização depende da capacidade produtiva nacional apurada no 2028A (§4º). Cadastro EPE 15/06 a 31/07/2026. Suprimento desde 01/08/2028; contratos CRCAP de 15 anos, Receita Fixa indexada ao IPCA. COMPROMISSO = disponibilidade de POTÊNCIA em MW (não energia). PARÂMETROS TÉCNICOS MÍNIMOS DO SAE (art. 7º): potência ≥30 MW; duração ≥4h consecutivas; eficiência round-trip (RTE) ≥85% referenciada ao PMI; recarga completa ≤6h; capacidade grid-forming; CVU=zero; ciclo completo = potência × 4h, até 2 ciclos/dia, limitado a 366/ano; ONS pode despachar até 12h com potência proporcionalmente menor. REGIME DE RECEITA (gatilho de prova SOA — vetor BESS auditável): Receita Fixa em R$/ano por disponibilidade de potência (art. 5º); apuração de desempenho operativo em BASE MENSAL, receita REDUZIDA conforme desempenho (art. 5º §1º e art. 9º §4º-IV); o art. 9º §4º-IV exige que os CRCAP contenham cláusulas de ABATIMENTO/RESSARCIMENTO da Receita Fixa por indisponibilidade ou não entrega da potência requerida; art. 9º §10 detalha PENALIDADES por não atendimento à disponibilidade; art. 9º §6º-8º: energia de carga/descarga liquidada no MCP ao PLD, resultado à CONCAP. ANEXO II, Tabela 1: 129 barramentos (subestações) elegíveis à bonificação de LOCALIZAÇÃO, concentrados no NE + norte de MG — BA 42, CE 39 (≈63% juntas), MG 18, PI 17, PE 6, AL 3, RN 2, PB 2; inclui Pecém II 230 kV (CE). CAVEAT QSV: o coeficiente numérico de bonificação (ex.: β=0,9) e a capacidade remanescente em MW por barramento NÃO constam do corpo da portaria — vêm da Nota Técnica da EPE (metodologia de nov/2025; Nota Técnica de Quantitativos por Barramento até 30/09/2026 — Cap. V, art. 11 e §§). A LISTA DE NOMES é da portaria e é definitiva; o número do β e os MW, não. É a norma de referência do LRCAP de armazenamento (não a REN 1.071).",
+   "status": "AGENDADO",
+   "norma": "Portaria MME 136/2026 · DOU 03/06/2026 · arts. 5º, 7º, 9º, 11 + Anexo II",
+   "url": "https://www.gov.br/mme/pt-br",
+   "verificado_em": "2026-07-17",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 18,
+   "vetores_afetados": [
+    "V3",
+    "V7"
+   ],
+   "qsv_cor": "VERDE",
+   "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.gov.br/mme/pt-br — Portaria 136/2026",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F2_DOU",
+     "ref": "DOU 03/06/2026 · leitura integral das 27 págs. (arts. 5º/7º/9º/11 + Anexo II) pelo CEO em 04/07/2026",
+     "trecho_literal": "Portaria Normativa MME nº 136, de 1º de junho de 2026 ... publicada no Diário Oficial da União em 3 de junho de 2026. Art. 7º — potência mínima de 30 MW, duração mínima de 4 horas, eficiência round-trip mínima de 85% referenciada ao PMI. Art. 9º §4º-IV — cláusulas de abatimento ou ressarcimento da Receita Fixa por indisponibilidade ou não entrega da potência requerida.",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F3_imprensa_editorial",
+     "ref": "Cobertura ampla Canal Solar/MegaWhat/EpBR/Cenário Energia; artigo Reive Barros ('potência, não energia' + previsibilidade) — coerente com o texto",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F4_cruzamento",
+     "ref": "Calendário regulado por REN ANEEL 1.071/2023+1.162/2026 + sub-determina NT ONS + cadastro EPE. Anexo II (129 barramentos) é lista definitiva; β e MW por barramento remetem à NT EPE (metodologia nov/2025; quantitativos até 30/09/2026) — NÃO ao corpo da portaria.",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "numero_status": "ANCORADO",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
   },
-  "fatos": [
+  {
+   "fato_id": "MME-PORTARIA-129-DEC-12772",
+   "tema": "Portaria MME 129/2026 + Decreto 12.772/2025 — Novo regime de acesso",
+   "valor": "ANCORADO: o Decreto 12.772/2025 institui a PNAST (Política Nacional de Acesso ao Sistema de Transmissão); a Portaria MME 129/2026 estabelece as Temporadas de Acesso — janelas periódicas com análise centralizada, substituindo a lógica de 'ordem de chegada'. Diagnóstico Prévio de Acesso é etapa confirmada (necessária p/ celebração de contrato). Nota: SGAcesso é o SISTEMA; o regime chama-se PNAST/Temporada de Acesso. Altera Access Risk nos 714 barramentos canônicos SOA.",
+   "status": "VIGENTE",
+   "norma": "Decreto 12.772/2025 (institui a PNAST) + Portaria MME 129/2026 (Temporadas de Acesso)",
+   "url": "https://www.gov.br/mme/pt-br",
+   "verificado_em": "2026-07-17",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 12,
+   "vetores_afetados": [
+    "V1",
+    "V2"
+   ],
+   "qsv_cor": "AZUL",
+   "qsv_origem_classificacao": "rebaixado_por_R7",
+   "qsv_fontes_independentes": [
     {
-      "fato_id": "MME-PORTARIA-136-2026-LRCAP",
-      "tema": "Portaria MME 136/2026 — LRCAP de Armazenamento (calendário + parâmetros + regime de receita + Anexo II)",
-      "valor": "Portaria de 1º/06/2026, publicada no DOU 03/06/2026. Base: arts. 3º e 3º-A da Lei 10.848/2004, Decreto 10.707/2021, Processo 48360.000272/2024-22. Cria DOIS leilões de Reserva de Capacidade na forma de POTÊNCIA via baterias novas (SAE — Sistemas de Armazenamento de Energia) que acrescentem potência ao SIN: (a) LRCAP 2026 Armazenamento NACIONAL → Produto Potência 2028A, leilão 02/12/2026, com requisito de nacionalização (Sistema-CFI do BNDES); (b) LRCAP 2026 Armazenamento → Produto Potência 2028B, leilão 04/12/2026, sem conteúdo nacional, cuja realização depende da capacidade produtiva nacional apurada no 2028A (§4º). Cadastro EPE 15/06 a 31/07/2026. Suprimento desde 01/08/2028; contratos CRCAP de 15 anos, Receita Fixa indexada ao IPCA. COMPROMISSO = disponibilidade de POTÊNCIA em MW (não energia). PARÂMETROS TÉCNICOS MÍNIMOS DO SAE (art. 7º): potência ≥30 MW; duração ≥4h consecutivas; eficiência round-trip (RTE) ≥85% referenciada ao PMI; recarga completa ≤6h; capacidade grid-forming; CVU=zero; ciclo completo = potência × 4h, até 2 ciclos/dia, limitado a 366/ano; ONS pode despachar até 12h com potência proporcionalmente menor. REGIME DE RECEITA (gatilho de prova SOA — vetor BESS auditável): Receita Fixa em R$/ano por disponibilidade de potência (art. 5º); apuração de desempenho operativo em BASE MENSAL, receita REDUZIDA conforme desempenho (art. 5º §1º e art. 9º §4º-IV); o art. 9º §4º-IV exige que os CRCAP contenham cláusulas de ABATIMENTO/RESSARCIMENTO da Receita Fixa por indisponibilidade ou não entrega da potência requerida; art. 9º §10 detalha PENALIDADES por não atendimento à disponibilidade; art. 9º §6º-8º: energia de carga/descarga liquidada no MCP ao PLD, resultado à CONCAP. ANEXO II, Tabela 1: 129 barramentos (subestações) elegíveis à bonificação de LOCALIZAÇÃO, concentrados no NE + norte de MG — BA 42, CE 39 (≈63% juntas), MG 18, PI 17, PE 6, AL 3, RN 2, PB 2; inclui Pecém II 230 kV (CE). CAVEAT QSV: o coeficiente numérico de bonificação (ex.: β=0,9) e a capacidade remanescente em MW por barramento NÃO constam do corpo da portaria — vêm da Nota Técnica da EPE (metodologia de nov/2025; Nota Técnica de Quantitativos por Barramento até 30/09/2026 — Cap. V, art. 11 e §§). A LISTA DE NOMES é da portaria e é definitiva; o número do β e os MW, não. É a norma de referência do LRCAP de armazenamento (não a REN 1.071).",
-      "status": "AGENDADO",
-      "norma": "Portaria MME 136/2026 · DOU 03/06/2026 · arts. 5º, 7º, 9º, 11 + Anexo II",
-      "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-16",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 18,
-      "vetores_afetados": [
-        "V3",
-        "V7"
-      ],
-      "qsv_cor": "VERDE",
-      "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.gov.br/mme/pt-br — Portaria 136/2026",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F2_DOU",
-          "ref": "DOU 03/06/2026 · leitura integral das 27 págs. (arts. 5º/7º/9º/11 + Anexo II) pelo CEO em 04/07/2026",
-          "trecho_literal": "Portaria Normativa MME nº 136, de 1º de junho de 2026 ... publicada no Diário Oficial da União em 3 de junho de 2026. Art. 7º — potência mínima de 30 MW, duração mínima de 4 horas, eficiência round-trip mínima de 85% referenciada ao PMI. Art. 9º §4º-IV — cláusulas de abatimento ou ressarcimento da Receita Fixa por indisponibilidade ou não entrega da potência requerida.",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F3_imprensa_editorial",
-          "ref": "Cobertura ampla Canal Solar/MegaWhat/EpBR/Cenário Energia; artigo Reive Barros ('potência, não energia' + previsibilidade) — coerente com o texto",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F4_cruzamento",
-          "ref": "Calendário regulado por REN ANEEL 1.071/2023+1.162/2026 + sub-determina NT ONS + cadastro EPE. Anexo II (129 barramentos) é lista definitiva; β e MW por barramento remetem à NT EPE (metodologia nov/2025; quantitativos até 30/09/2026) — NÃO ao corpo da portaria.",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.gov.br/mme/pt-br",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
     },
     {
-      "fato_id": "MME-PORTARIA-129-DEC-12772",
-      "tema": "Portaria MME 129/2026 + Decreto 12.772/2025 — Novo regime de acesso",
-      "valor": "ANCORADO: o Decreto 12.772/2025 institui a PNAST (Política Nacional de Acesso ao Sistema de Transmissão); a Portaria MME 129/2026 estabelece as Temporadas de Acesso — janelas periódicas com análise centralizada, substituindo a lógica de 'ordem de chegada'. Diagnóstico Prévio de Acesso é etapa confirmada (necessária p/ celebração de contrato). Nota: SGAcesso é o SISTEMA; o regime chama-se PNAST/Temporada de Acesso. Altera Access Risk nos 714 barramentos canônicos SOA.",
-      "status": "VIGENTE",
-      "norma": "Decreto 12.772/2025 (institui a PNAST) + Portaria MME 129/2026 (Temporadas de Acesso)",
-      "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-16",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 12,
-      "vetores_afetados": [
-        "V1",
-        "V2"
-      ],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "rebaixado_por_R7",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.gov.br/mme/pt-br",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F2_DOU",
-          "ref": "Decreto 12.772/2025 (DOU 08/12/2025) + Portaria MME 129/2026",
-          "trecho_literal": "institui a Política Nacional de Acesso ao Sistema de Transmissão (PNAST)",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
-    },
-    {
-      "fato_id": "MME-PNH2",
-      "tema": "PNH2 — Leis 14.948/2024 e 15.042/2024 (H2 de baixo carbono + SBCE)",
-      "valor": "ANCORADO: Lei 14.948/2024 institui o marco legal do hidrogênio de BAIXA EMISSÃO DE CARBONO (termo legal; 'hidrogênio verde' é subconjunto comercial) + PNH2 + certificação voluntária. Lei 15.042/2024 institui o SBCE. Pré-condição para V5 (H2 de baixo carbono industrial — Piauí, Pecém, Suape, Açu).",
-      "status": "VIGENTE",
-      "norma": "Lei 14.948/2024 (PNH2) + Lei 15.042/2024 (SBCE) · Planalto",
-      "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-16",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 7,
-      "vetores_afetados": [
-        "V5",
-        "V6"
-      ],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "rebaixado_por_R7",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.gov.br/mme/pt-br — PNH2",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F2_DOU",
-          "ref": "Lei 14.948/2024 (02/08/2024) + Lei 15.042/2024 (11/12/2024) · Planalto",
-          "trecho_literal": "hidrogênio de baixa emissão de carbono",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
-    },
-    {
-      "fato_id": "MME-PORTARIAS-126-111",
-      "tema": "Portarias MME 126/2026 e 111/2025 — Smart meter + APIs",
-      "valor": "ANCORADO (com correção de horizonte): a Portaria 126/2026 altera a 111/2025 e cria a 1ª meta obrigatória — implantação adicional de 2% a.a. das unidades consumidoras por 24 meses a partir de 1º/03/2026 (até mar/2028). Expansão de médio/longo prazo definida por Análise de Custo-Benefício (ACB) a ser entregue à ANEEL até 29/02/2028 (horizonte mín. 10 anos). Funcionalidades mínimas: leitura remota, tarifação horária, interoperabilidade, segurança cibernética, registro de interrupções, corte/religamento remoto. Base SaaS B2B (V2) e produto sHEC.",
-      "status": "VIGENTE",
-      "norma": "Portaria MME 111/2025 (18/06/2025) + Portaria MME 126/2026 (28/01/2026, altera a 111)",
-      "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-16",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 10,
-      "vetores_afetados": [
-        "V2",
-        "V6"
-      ],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "rebaixado_por_R7",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.gov.br/mme/pt-br",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F2_DOU",
-          "ref": "Portaria MME 111/2025 (18/06/2025) + Portaria MME 126/2026 (28/01/2026)",
-          "trecho_literal": "implantação adicional de 2% ao ano das unidades consumidoras, pelo prazo de 24 meses a partir de 1º de março de 2026",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
-    },
-    {
-      "fato_id": "MME-PNTE-PLANTE",
-      "tema": "PNTE (Política Nacional de Transição Energética) + Plante",
-      "valor": "Política guarda-chuva da transição energética, com Plano Nacional (Plante) e Fórum (Fonte). Base para diálogo institucional V6. Coordenação: SNTEP/MME (Lorena Silva).",
-      "status": "VIGENTE",
-      "norma": "MME · SNTEP",
-      "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-16",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 8,
-      "vetores_afetados": [
-        "V6",
-        "V5"
-      ],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "rebaixado_por_R7",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.gov.br/mme/pt-br",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F2_DOU",
-          "ref": "Base legal da PNTE no DOU",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
-    },
-    {
-      "fato_id": "MME-REDATA",
-      "tema": "REDATA — Política Nacional de Data Centers",
-      "valor": "Programa estruturante de atração de hyperscalers e cargas eletrointensivas. Quando publicada a regulamentação infralegal, dispara ação direta em V5. Cliente: Casa dos Ventos / ByteDance (Pecém). STATUS LEGISLATIVO (reconfirmado 08/07/2026): o veículo é o PL 278/2026 (José Guimarães), que reproduz o conteúdo da MP 1.318/2025 (caducada 25/02). Segue TRAVADO no Senado — 13 emendas + requerimento de urgência, SEM data de votação agendada. Regime REDATA ainda NÃO vigente; benefícios não acessados. (A numeração/estado da MP 1.318 é o fato LARANJA pendente do CEO — ver _pendentes.)",
-      "status": "EM DELIBERAÇÃO",
-      "norma": "MME · REDATA · PL 278/2026 (Senado, travado)",
-      "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-16",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 13,
-      "vetores_afetados": [
-        "V5",
-        "V1"
-      ],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "mecanismo_v3.0",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.gov.br/mme/pt-br — REDATA",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F3_imprensa_editorial",
-          "ref": "Cobertura intensa Valor/EpBR/MegaWhat (REDATA tema dominante data centers)",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+     "tipo": "F2_DOU",
+     "ref": "Decreto 12.772/2025 (DOU 08/12/2025) + Portaria MME 129/2026",
+     "trecho_literal": "institui a Política Nacional de Acesso ao Sistema de Transmissão (PNAST)",
+     "associacao_origem": null,
+     "gt_origem": null
     }
-  ],
-  "_pendentes_verificacao": [
+   ],
+   "numero_status": "ANCORADO",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
+  },
+  {
+   "fato_id": "MME-PNH2",
+   "tema": "PNH2 — Leis 14.948/2024 e 15.042/2024 (H2 de baixo carbono + SBCE)",
+   "valor": "ANCORADO: Lei 14.948/2024 institui o marco legal do hidrogênio de BAIXA EMISSÃO DE CARBONO (termo legal; 'hidrogênio verde' é subconjunto comercial) + PNH2 + certificação voluntária. Lei 15.042/2024 institui o SBCE. Pré-condição para V5 (H2 de baixo carbono industrial — Piauí, Pecém, Suape, Açu).",
+   "status": "VIGENTE",
+   "norma": "Lei 14.948/2024 (PNH2) + Lei 15.042/2024 (SBCE) · Planalto",
+   "url": "https://www.gov.br/mme/pt-br",
+   "verificado_em": "2026-07-17",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 7,
+   "vetores_afetados": [
+    "V5",
+    "V6"
+   ],
+   "qsv_cor": "AZUL",
+   "qsv_origem_classificacao": "rebaixado_por_R7",
+   "qsv_fontes_independentes": [
     {
-      "fato_id": "MME-MP-1318-2025",
-      "tema": "MP 1.318/2025 — REDATA (CADUCADA em 25/02/2026)",
-      "valor": "Medida Provisória CADUCADA por não conversão no prazo constitucional (60+60 dias). Conteúdo migrou para o PL 278/2026 (José Guimarães), APROVADO na Câmara e TRAVADO no Senado → regime REDATA NÃO vigente; empresas nunca acessaram os benefícios. O Art. 11-B exige energia limpa 'na totalidade' com prova publicada — convergente com a tese de prova horária SOA. Confirmado na fonte 30/06.",
-      "status": "CADUCADA",
-      "norma": "MP 1.318/2025 (caducada — sem efeito jurídico atual) · PL 278/2026 (Senado)",
-      "url": "https://www12.senado.leg.br/noticias/",
-      "verificado_em": "2026-06-30",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 14,
-      "vetores_afetados": [
-        "V5",
-        "V6"
-      ],
-      "qsv_cor": "LARANJA",
-      "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "Agência Senado, 27/02/2026",
-          "trecho_literal": "Vencida no dia 25 de fevereiro, a MP 1.318/2025 havia instituído o Regime Especial de Tributação para Serviços de Datacenter (Redata).",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null,
-      "motivo_pendencia": "CADUCADA em 25/02/2026. Mantida em LARANJA conforme Precedência v1.2: só deixa de ser pendência quando texto for completamente reescrito como caducada em todos materiais. Conteúdo no PL 278/2026 (Senado)."
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.gov.br/mme/pt-br — PNH2",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F2_DOU",
+     "ref": "Lei 14.948/2024 (02/08/2024) + Lei 15.042/2024 (11/12/2024) · Planalto",
+     "trecho_literal": "hidrogênio de baixa emissão de carbono",
+     "associacao_origem": null,
+     "gt_origem": null
     }
-  ],
-  "_historico_caidos": []
+   ],
+   "numero_status": "ANCORADO",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
+  },
+  {
+   "fato_id": "MME-PORTARIAS-126-111",
+   "tema": "Portarias MME 126/2026 e 111/2025 — Smart meter + APIs",
+   "valor": "ANCORADO (com correção de horizonte): a Portaria 126/2026 altera a 111/2025 e cria a 1ª meta obrigatória — implantação adicional de 2% a.a. das unidades consumidoras por 24 meses a partir de 1º/03/2026 (até mar/2028). Expansão de médio/longo prazo definida por Análise de Custo-Benefício (ACB) a ser entregue à ANEEL até 29/02/2028 (horizonte mín. 10 anos). Funcionalidades mínimas: leitura remota, tarifação horária, interoperabilidade, segurança cibernética, registro de interrupções, corte/religamento remoto. Base SaaS B2B (V2) e produto sHEC.",
+   "status": "VIGENTE",
+   "norma": "Portaria MME 111/2025 (18/06/2025) + Portaria MME 126/2026 (28/01/2026, altera a 111)",
+   "url": "https://www.gov.br/mme/pt-br",
+   "verificado_em": "2026-07-17",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 10,
+   "vetores_afetados": [
+    "V2",
+    "V6"
+   ],
+   "qsv_cor": "AZUL",
+   "qsv_origem_classificacao": "rebaixado_por_R7",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.gov.br/mme/pt-br",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F2_DOU",
+     "ref": "Portaria MME 111/2025 (18/06/2025) + Portaria MME 126/2026 (28/01/2026)",
+     "trecho_literal": "implantação adicional de 2% ao ano das unidades consumidoras, pelo prazo de 24 meses a partir de 1º de março de 2026",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "numero_status": "ANCORADO",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
+  },
+  {
+   "fato_id": "MME-PNTE-PLANTE",
+   "tema": "PNTE (Política Nacional de Transição Energética) + Plante",
+   "valor": "Política guarda-chuva da transição energética, com Plano Nacional (Plante) e Fórum (Fonte). Base para diálogo institucional V6. Coordenação: SNTEP/MME (Lorena Silva).",
+   "status": "VIGENTE",
+   "norma": "MME · SNTEP",
+   "url": "https://www.gov.br/mme/pt-br",
+   "verificado_em": "2026-07-17",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 8,
+   "vetores_afetados": [
+    "V6",
+    "V5"
+   ],
+   "qsv_cor": "AZUL",
+   "qsv_origem_classificacao": "rebaixado_por_R7",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.gov.br/mme/pt-br",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F2_DOU",
+     "ref": "Base legal da PNTE no DOU",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "numero_status": "SEM_NUMEROS",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
+  },
+  {
+   "fato_id": "MME-REDATA",
+   "tema": "REDATA — Política Nacional de Data Centers",
+   "valor": "Programa estruturante de atração de hyperscalers e cargas eletrointensivas. Quando publicada a regulamentação infralegal, dispara ação direta em V5. Cliente: Casa dos Ventos / ByteDance (Pecém). STATUS LEGISLATIVO (reconfirmado 08/07/2026): o veículo é o PL 278/2026 (José Guimarães), que reproduz o conteúdo da MP 1.318/2025 (caducada 25/02). Segue TRAVADO no Senado — 13 emendas + requerimento de urgência, SEM data de votação agendada. Regime REDATA ainda NÃO vigente; benefícios não acessados. (A numeração/estado da MP 1.318 é o fato LARANJA pendente do CEO — ver _pendentes.)",
+   "status": "EM DELIBERAÇÃO",
+   "norma": "MME · REDATA · PL 278/2026 (Senado, travado)",
+   "url": "https://www.gov.br/mme/pt-br",
+   "verificado_em": "2026-07-17",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 13,
+   "vetores_afetados": [
+    "V5",
+    "V1"
+   ],
+   "qsv_cor": "AZUL",
+   "qsv_origem_classificacao": "mecanismo_v3.0",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.gov.br/mme/pt-br — REDATA",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F3_imprensa_editorial",
+     "ref": "Cobertura intensa Valor/EpBR/MegaWhat (REDATA tema dominante data centers)",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "numero_status": "SEM_NUMEROS",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
+  },
+  {
+   "fato_id": "MME-POTEE-2026-CP",
+   "tema": "POTEE 2026 — Consulta Pública do Plano de Outorgas de Transmissão (Ampliações e Reforços, 1ª emissão)",
+   "valor": "DETECTADO E ANCORADO EM F1 (17/07, fato de 14/07/2026): o Plano de Outorgas de Transmissão de Energia Elétrica — POTEE 2026 — Ampliações e Reforços — Rede Básica e Demais Instalações de Transmissão (1ª emissão) entrou em consulta pública em 14/07/2026, com prazo de 30 dias para contribuições em https://consultas-publicas.mme.gov.br/home. O documento reúne recomendações técnicas de reforço e expansão do SIN a partir dos estudos do ONS e da EPE, abrangendo Norte, Nordeste, Sudeste, Centro-Oeste e Sul. Prevê também a regularização do cadastramento, no SGPMR, dos reforços de pequeno porte associados a empreendimentos de grande porte. DESTAQUE: inclui o BIPOLO NORDESTE 2 — nova interligação em corrente contínua NE↔SE em tecnologia HVDC-VSC. RELEVÂNCIA SOA: a matéria F1 declara literalmente que o Bipolo Nordeste II 'prepara o SIN para o crescimento da demanda associado à expansão de cargas eletrointensivas, como data centers e empreendimentos voltados à produção de hidrogênio de baixo carbono' — convergência direta com REDATA/data centers e PNH2. Encerrada a CP, as obras servirão de base para licitação e autorização pela ANEEL.",
+   "status": "EM CONSULTA PÚBLICA",
+   "norma": "POTEE 2026 — Ampliações e Reforços (1ª emissão) · CP MME aberta em 14/07/2026",
+   "url": "https://www.gov.br/mme/pt-br/assuntos/noticias/consulta-publica-do-potee-2026-esta-aberta-para-contribuicoes-da-sociedade",
+   "verificado_em": "2026-07-17",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 9,
+   "vetores_afetados": [
+    "V2",
+    "V3",
+    "V6"
+   ],
+   "qsv_cor": "AZUL",
+   "qsv_origem_classificacao": "F1_reaberta_17jul2026_fora_da_Tabela_v1.2_teto_AZUL_R7",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.gov.br/mme/pt-br/assuntos/noticias/consulta-publica-do-potee-2026-esta-aberta-para-contribuicoes-da-sociedade (publicado 14/07/2026 14h32, atualizado 14h41)",
+     "trecho_literal": "O Plano de Outorgas de Transmissão de Energia Elétrica - POTEE 2026 - Ampliações e Reforços - Rede Básica e Demais Instalações de Transmissão (1ª emissão) está disponível para consulta pública a partir desta terça-feira (14/7). Os interessados terão 30 dias para enviar as contribuições [...] o Bipolo Nordeste II também prepara o SIN para o crescimento da demanda associado à expansão de cargas eletrointensivas, como data centers e empreendimentos voltados à produção de hidrogênio de baixo carbono.",
+     "nota_qsv": "Página oficial do MME reaberta em 17/07/2026 via render JS (Chrome).",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "pendencia_verificacao": "A data de ENCERRAMENTO da CP não é declarada em F1: a matéria diz apenas '30 dias' a partir de 14/07/2026. A contagem simples levaria a ~13/08/2026, mas NÃO está ancorada (não se sabe se são dias corridos ou úteis, nem o termo inicial exato) — não usar essa data como se fosse oficial. Para promoção a VERDE: abrir o edital/aviso da CP em consultas-publicas.mme.gov.br e ancorar o prazo e a numeração da consulta."
+  }
+ ],
+ "_pendentes_verificacao": [
+  {
+   "fato_id": "MME-MP-1318-2025",
+   "tema": "MP 1.318/2025 — REDATA (CADUCADA em 25/02/2026)",
+   "valor": "Medida Provisória CADUCADA por não conversão no prazo constitucional (60+60 dias). Conteúdo migrou para o PL 278/2026 (José Guimarães), APROVADO na Câmara e TRAVADO no Senado → regime REDATA NÃO vigente; empresas nunca acessaram os benefícios. O Art. 11-B exige energia limpa 'na totalidade' com prova publicada — convergente com a tese de prova horária SOA. Confirmado na fonte 30/06.",
+   "status": "CADUCADA",
+   "norma": "MP 1.318/2025 (caducada — sem efeito jurídico atual) · PL 278/2026 (Senado)",
+   "url": "https://www12.senado.leg.br/noticias/",
+   "verificado_em": "2026-06-30",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 14,
+   "vetores_afetados": [
+    "V5",
+    "V6"
+   ],
+   "qsv_cor": "LARANJA",
+   "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_pagina_oficial",
+     "ref": "Agência Senado, 27/02/2026",
+     "trecho_literal": "Vencida no dia 25 de fevereiro, a MP 1.318/2025 havia instituído o Regime Especial de Tributação para Serviços de Datacenter (Redata).",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "numero_status": "ANCORADO",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null,
+   "motivo_pendencia": "CADUCADA em 25/02/2026. Mantida em LARANJA conforme Precedência v1.2: só deixa de ser pendência quando texto for completamente reescrito como caducada em todos materiais. Conteúdo no PL 278/2026 (Senado)."
+  },
+  {
+   "fato_id": "MME-CMSE-RESOLUCAO-DESPACHO-TERMICO",
+   "tema": "Resolução do CMSE — novas diretrizes para despacho de geração térmica por garantia de suprimento energético (GE)",
+   "valor": "DETECTADO 17/07 (fato de 09/07/2026) — NÃO CRAVADO. O MME noticiou que 'Resolução do CMSE estabelece novas diretrizes para despacho de geração térmica', ato normativo publicado no Diário Oficial da União, tratando de deliberações relacionadas à geração por garantia de suprimento energético (GE). LACUNA DE MONITOR: este item é de 09/07 e não foi capturado por nenhuma run anterior; a run de 16/07 registrou o MME como 'sem alteração'. Nenhum número de resolução, data exata de publicação no DOU ou conteúdo dispositivo foi lido — apenas a manchete e a linha fina da página de notícias do MME.",
+   "status": "NÃO VERIFICADO",
+   "norma": "Resolução CMSE — numeração NÃO confirmada",
+   "url": "https://www.gov.br/mme/pt-br/assuntos/noticias",
+   "verificado_em": "2026-07-17",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 7,
+   "vetores_afetados": [
+    "V3",
+    "V5"
+   ],
+   "qsv_cor": "LARANJA",
+   "qsv_origem_classificacao": "detectado_17jul2026_sem_leitura_do_ato_LARANJA",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.gov.br/mme/pt-br/assuntos/noticias — item de 09/07/2026 (lista reaberta via Chrome em 17/07/2026)",
+     "trecho_literal": "Resolução do CMSE estabelece novas diretrizes para despacho de geração térmica — 09/07/2026 - Ato normativo, publicado no Diário Oficial da União, discorre sobre deliberações relacionadas à geração por garantia de suprimento energético (GE)",
+     "nota_qsv": "Apenas manchete + linha fina. A matéria em si NÃO foi aberta e o ato NÃO foi lido.",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "pendencia_verificacao": "Abrir a matéria do MME de 09/07/2026 e o ato no DOU para ancorar: número da Resolução CMSE, data de publicação e o teor das diretrizes de despacho térmico por GE. Só então classificar. Relevante porque toca despacho térmico (família geracao_termica_despacho do banco) — mas o Banco SOA NUNCA valida fato regulatório: a âncora tem de ser o ato."
+  }
+ ],
+ "_historico_caidos": []
 }
