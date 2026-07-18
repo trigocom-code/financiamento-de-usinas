@@ -3,7 +3,7 @@
   "orgao": "MME",
   "schema_version": "1.3",
   "descricao": "Monitor exclusivo MME — schema v1.3. Aplicada Precedência v1.2. Portaria 136/2026 enriquecida em 04/07/2026 (leitura integral: art. 5º/7º/9º + Anexo II).",
-  "verificado_em": "2026-07-17",
+  "verificado_em": "2026-07-18",
   "proxima_revisao_sugerida": "2026-07-31",
   "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina MME conforme QSV-R v3.0",
   "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
@@ -18,7 +18,8 @@
   ],
   "fonte_canonica": "https://www.gov.br/mme/pt-br",
   "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1.",
-  "nota_run_2026_07_17": "Varredura de 17/07 com render JS (Chrome). A página de notícias do MME carimba 'Atualizado em 16/07/2026 14h26'. DOIS itens que a run de 16/07 NÃO capturou (MME havia sido marcado 'sem alteração'): (1) CP do POTEE 2026, aberta em 14/07 — fato NOVO, criado em fatos[] como AZUL, com F1 ancorada; (2) Resolução do CMSE sobre despacho térmico por GE, de 09/07 — criada em _pendentes_verificacao como LARANJA, ato não lido. Portaria Normativa MME 136/2026 permanece estável (cadastro EPE até 31/07; leilões 02/12 e 04/12), sem reconferência hoje. Itens do MME de 15–16/07 são conteúdo institucional (terras raras, biocombustíveis) sem ato normativo."
+  "nota_run_2026_07_17": "Varredura de 17/07 com render JS (Chrome). A página de notícias do MME carimba 'Atualizado em 16/07/2026 14h26'. DOIS itens que a run de 16/07 NÃO capturou (MME havia sido marcado 'sem alteração'): (1) CP do POTEE 2026, aberta em 14/07 — fato NOVO, criado em fatos[] como AZUL, com F1 ancorada; (2) Resolução do CMSE sobre despacho térmico por GE, de 09/07 — criada em _pendentes_verificacao como LARANJA, ato não lido. Portaria Normativa MME 136/2026 permanece estável (cadastro EPE até 31/07; leilões 02/12 e 04/12), sem reconferência hoje. Itens do MME de 15–16/07 são conteúdo institucional (terras raras, biocombustíveis) sem ato normativo.",
+  "nota_run_2026_07_18": "Varredura de 18/07 (sábado). Nenhum ato oficial novo do MME na janela. NOVO ponteiro F3 (GTGC ABSOLAR 17/07): criado pendente MME-TERMO-COMPROMISSO-SOBREOFERTA (LARANJA) — Termo anunciado como pronto para publicação, sem reclassificação da sobreoferta MMGD/térmica; Despacho 1.669/2026 sem prorrogação; recontabilização CCEE 29/07. Ato não publicado. _meta.verificado_em reflete a data da varredura."
  },
  "fatos": [
   {
@@ -380,6 +381,43 @@
     }
    ],
    "pendencia_verificacao": "Abrir a matéria do MME de 09/07/2026 e o ato no DOU para ancorar: número da Resolução CMSE, data de publicação e o teor das diretrizes de despacho térmico por GE. Só então classificar. Relevante porque toca despacho térmico (família geracao_termica_despacho do banco) — mas o Banco SOA NUNCA valida fato regulatório: a âncora tem de ser o ato."
+  },
+  {
+   "fato_id": "MME-TERMO-COMPROMISSO-SOBREOFERTA",
+   "tema": "Termo de Compromisso do MME (sobreoferta / recontabilização) — anunciado pronto para publicação",
+   "valor": "DETECTADO 18/07 (ponteiro F3 ABSOLAR, GTGC 17/07): o MME comunicou que o 'Termo de Compromisso' está concluído e pronto para publicação, com expectativa de divulgação na semana de 14–18/07, o que NÃO ocorreu até 17/07. Preocupação das associações: o texto deverá ser publicado SEM incorporar o pleito de reclassificação da sobreoferta equivalente à geração da MMGD e da geração térmica fora da ordem de mérito em confiabilidade elétrica. Sinalizada também a não continuidade da prorrogação relacionada ao Despacho nº 1.669/2026. O grupo acompanhará a recontabilização da CCEE prevista para 29/07. Borda SOA MÉDIA: toca constrained-off/confiabilidade e a classificação da sobreoferta (adjacente à tese V4/sHEC). F3 NÃO fecha VERDE: ato não publicado; teor não lido em F1 nem no DOU.",
+   "status": "PONTEIRO F3 — ATO NÃO PUBLICADO",
+   "norma": "MME — 'Termo de Compromisso' (não publicado) · Despacho nº 1.669/2026 (referência F3) · recontabilização CCEE 29/07",
+   "url": "https://www.gov.br/mme/pt-br",
+   "verificado_em": "2026-07-18",
+   "tipo_fato": "REGULATORIO_NORMATIVO",
+   "score_soa": 11,
+   "vetores_afetados": [
+    "V4",
+    "V3"
+   ],
+   "qsv_cor": "LARANJA",
+   "qsv_origem_classificacao": "ponteiro_F3_sem_F1",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F3_associacao_email",
+     "ref": "E-mail GTGC ABSOLAR 17/07/2026 20h07 — item 4",
+     "trecho_literal": "o MME comunicou que o documento já está concluído e pronto para publicação. Apesar da expectativa de divulgação ainda nesta semana, isso não ocorreu até a data da reunião. A principal preocupação é que o texto deverá ser publicado sem incorporar o pleito da reclassificação da sobreoferta equivalente à geração da a micro e minigeração distribuída e da geração térmica fora da ordem de mérito em confiabilidade elétrica...",
+     "associacao_origem": "ABSOLAR",
+     "gt_origem": "Geração Centralizada"
+    }
+   ],
+   "numero_status": "SEM_NUMEROS",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-07-18"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null,
+   "motivo_pendencia": "Ponteiro F3 (ABSOLAR). Vigiar publicação do Termo de Compromisso no DOU e a recontabilização da CCEE de 29/07. Confirmar se a versão publicada exclui a reclassificação da sobreoferta MMGD/térmica.",
+   "pendencia_verificacao": "F3 puro em 18/07. Ato não publicado; Despacho 1.669/2026 não lido em F1. Não citar teor em material externo antes de F1/DOU."
   }
  ],
  "_historico_caidos": []
