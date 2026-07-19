@@ -3,7 +3,7 @@
   "orgao": "ONS",
   "schema_version": "1.3",
   "descricao": "Monitor exclusivo ONS — schema v1.3. Aplicada Precedência v1.2.",
-  "verificado_em": "2026-07-18",
+  "verificado_em": "2026-07-19",
   "proxima_revisao_sugerida": "2026-07-31",
   "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ONS conforme QSV-R v3.0",
   "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Dados Abertos vão direto pro banco SOA.",
@@ -18,7 +18,8 @@
   "fonte_canonica": "https://www.ons.org.br/",
   "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por endereço de e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@ + arabsolar@ + gdabsolar@ + fabricabsolar@ + logtribaabsolar@ + gcpabsolar@ + ftgeradorabsolar@ (googlegroups.com) -> ABSOLAR. Novos grupos descobertos em 09/07/2026: gcpabsolar@ e ftgeradorabsolar@. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1.",
   "nota_run_2026_07_17": "Varredura de 17/07: INCONCLUSIVA por esta via. O portal do ONS é uma SPA (SharePoint): tanto ons.org.br quanto /paginas/noticias retornam apenas o menu de navegação serializado, sem lista de notícias — nem via web_fetch nem via render JS. A ausência de achados NÃO é prova de ausência de publicação. Nenhum fato tocado. Pendências mantidas: NT-02 de quantitativos de armazenamento (30/09) e RT-ONS DPL 0532/2023 revisado, não publicado.",
-  "nota_run_2026_07_18": "Varredura de 18/07 (sabado): SEM ALTERACAO. Nenhum ato oficial novo na janela. Nenhum verificado_em de fato avancado; _meta.verificado_em reflete apenas a data da varredura. Unico material novo do dia foi ponteiro F3 (GTGC ABSOLAR 17/07), registrado em Fatos_ANEEL e Fatos_MME."
+  "nota_run_2026_07_18": "Varredura de 18/07 (sabado): SEM ALTERACAO. Nenhum ato oficial novo na janela. Nenhum verificado_em de fato avancado; _meta.verificado_em reflete apenas a data da varredura. Unico material novo do dia foi ponteiro F3 (GTGC ABSOLAR 17/07), registrado em Fatos_ANEEL e Fatos_MME.",
+  "nota_run_2026_07_19": "Varredura de 19/07 (domingo): SEM ATO OFICIAL NOVO detectado por F2. PNAST 2026 (NT-ONS DPL 0040/2026; 20,31 GW admitidos) e Portaria 129/MME sao de inicio de julho, nao novos. Portal ONS (SPA SharePoint) sem via automatizada — ausencia de achado NAO e prova de ausencia de publicacao. Pendencias mantidas (NT-02 armazenamento 30/09; RT-ONS DPL 0532/2023). Nenhum verificado_em de fato avancado."
  },
  "fatos": [
   {

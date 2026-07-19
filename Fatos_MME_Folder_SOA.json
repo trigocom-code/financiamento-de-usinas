@@ -3,7 +3,7 @@
   "orgao": "MME",
   "schema_version": "1.3",
   "descricao": "Monitor exclusivo MME — schema v1.3. Aplicada Precedência v1.2. Portaria 136/2026 enriquecida em 04/07/2026 (leitura integral: art. 5º/7º/9º + Anexo II).",
-  "verificado_em": "2026-07-18",
+  "verificado_em": "2026-07-19",
   "proxima_revisao_sugerida": "2026-07-31",
   "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina MME conforme QSV-R v3.0",
   "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
@@ -19,7 +19,8 @@
   "fonte_canonica": "https://www.gov.br/mme/pt-br",
   "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1.",
   "nota_run_2026_07_17": "Varredura de 17/07 com render JS (Chrome). A página de notícias do MME carimba 'Atualizado em 16/07/2026 14h26'. DOIS itens que a run de 16/07 NÃO capturou (MME havia sido marcado 'sem alteração'): (1) CP do POTEE 2026, aberta em 14/07 — fato NOVO, criado em fatos[] como AZUL, com F1 ancorada; (2) Resolução do CMSE sobre despacho térmico por GE, de 09/07 — criada em _pendentes_verificacao como LARANJA, ato não lido. Portaria Normativa MME 136/2026 permanece estável (cadastro EPE até 31/07; leilões 02/12 e 04/12), sem reconferência hoje. Itens do MME de 15–16/07 são conteúdo institucional (terras raras, biocombustíveis) sem ato normativo.",
-  "nota_run_2026_07_18": "Varredura de 18/07 (sábado). Nenhum ato oficial novo do MME na janela. NOVO ponteiro F3 (GTGC ABSOLAR 17/07): criado pendente MME-TERMO-COMPROMISSO-SOBREOFERTA (LARANJA) — Termo anunciado como pronto para publicação, sem reclassificação da sobreoferta MMGD/térmica; Despacho 1.669/2026 sem prorrogação; recontabilização CCEE 29/07. Ato não publicado. _meta.verificado_em reflete a data da varredura."
+  "nota_run_2026_07_18": "Varredura de 18/07 (sábado). Nenhum ato oficial novo do MME na janela. NOVO ponteiro F3 (GTGC ABSOLAR 17/07): criado pendente MME-TERMO-COMPROMISSO-SOBREOFERTA (LARANJA) — Termo anunciado como pronto para publicação, sem reclassificação da sobreoferta MMGD/térmica; Despacho 1.669/2026 sem prorrogação; recontabilização CCEE 29/07. Ato não publicado. _meta.verificado_em reflete a data da varredura.",
+  "nota_run_2026_07_19": "Varredura de 19/07 (domingo): SEM ATO OFICIAL NOVO. Termo de Compromisso (reclassificacao da sobreoferta MMGD/termica, Lei 15.269/2025) SEGUE NAO PUBLICADO no DOU — pendente MME-TERMO-COMPROMISSO-SOBREOFERTA permanece LARANJA (ponteiro F3 GTGC 17/07). Recontabilizacao CCEE prevista 29/07 (a verificar). LRCAP/Portaria 136 e POTEE 2026 sem novo ato. Nenhum verificado_em de fato avancado."
  },
  "fatos": [
   {
