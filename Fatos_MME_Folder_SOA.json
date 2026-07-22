@@ -3,8 +3,8 @@
     "orgao": "MME",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo MME — schema v1.3. Aplicada Precedência v1.2. Portaria 136/2026 enriquecida em 04/07/2026 (leitura integral: art. 5º/7º/9º + Anexo II).",
-    "verificado_em": "2026-07-20",
-    "proxima_revisao_sugerida": "2026-07-21",
+    "verificado_em": "2026-07-21",
+    "proxima_revisao_sugerida": "2026-07-22",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina MME conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
     "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO.",
@@ -21,7 +21,8 @@
     "nota_run_2026_07_17": "Varredura de 17/07 com render JS (Chrome). A página de notícias do MME carimba 'Atualizado em 16/07/2026 14h26'. DOIS itens que a run de 16/07 NÃO capturou (MME havia sido marcado 'sem alteração'): (1) CP do POTEE 2026, aberta em 14/07 — fato NOVO, criado em fatos[] como AZUL, com F1 ancorada; (2) Resolução do CMSE sobre despacho térmico por GE, de 09/07 — criada em _pendentes_verificacao como LARANJA, ato não lido. Portaria Normativa MME 136/2026 permanece estável (cadastro EPE até 31/07; leilões 02/12 e 04/12), sem reconferência hoje. Itens do MME de 15–16/07 são conteúdo institucional (terras raras, biocombustíveis) sem ato normativo.",
     "nota_run_2026_07_18": "Varredura de 18/07 (sábado). Nenhum ato oficial novo do MME na janela. NOVO ponteiro F3 (GTGC ABSOLAR 17/07): criado pendente MME-TERMO-COMPROMISSO-SOBREOFERTA (LARANJA) — Termo anunciado como pronto para publicação, sem reclassificação da sobreoferta MMGD/térmica; Despacho 1.669/2026 sem prorrogação; recontabilização CCEE 29/07. Ato não publicado. _meta.verificado_em reflete a data da varredura.",
     "nota_run_2026_07_19": "Varredura de 19/07 (domingo): SEM ATO OFICIAL NOVO. Termo de Compromisso (reclassificacao da sobreoferta MMGD/termica, Lei 15.269/2025) SEGUE NAO PUBLICADO no DOU — pendente MME-TERMO-COMPROMISSO-SOBREOFERTA permanece LARANJA (ponteiro F3 GTGC 17/07). Recontabilizacao CCEE prevista 29/07 (a verificar). LRCAP/Portaria 136 e POTEE 2026 sem novo ato. Nenhum verificado_em de fato avancado.",
-    "nota_run_2026_07_20": "Pagina oficial de noticias do MME reaberta em F1 (render JS): carimbo 'Atualizado em 17/07/2026 14h01'; itens mais recentes de 17/07 (SAF; ambientacao de servidores) - sem ato regulatorio. NEGATIVO VERIFICADO para 18-20/07. DOU desbloqueado por navegador nesta run: 'Termo de Compromisso' segue NAO publicado. Achado incidental sem cravamento: a PORTARIA DE PESSOAL CGGP/SPOA/SE/MME n 43, de 15/07/2026 (DOU 17/07, Sec. 2, p. 83) cita a Portaria Normativa MME n 139, de 09/07/2026, publicada no DOU de 10/07/2026 - delegacao de competencia administrativa, borda BAIXA; registra a sequencia de numeracao 136 -> 139. Nenhum verificado_em de fato foi avancado."
+    "nota_run_2026_07_20": "Pagina oficial de noticias do MME reaberta em F1 (render JS): carimbo 'Atualizado em 17/07/2026 14h01'; itens mais recentes de 17/07 (SAF; ambientacao de servidores) - sem ato regulatorio. NEGATIVO VERIFICADO para 18-20/07. DOU desbloqueado por navegador nesta run: 'Termo de Compromisso' segue NAO publicado. Achado incidental sem cravamento: a PORTARIA DE PESSOAL CGGP/SPOA/SE/MME n 43, de 15/07/2026 (DOU 17/07, Sec. 2, p. 83) cita a Portaria Normativa MME n 139, de 09/07/2026, publicada no DOU de 10/07/2026 - delegacao de competencia administrativa, borda BAIXA; registra a sequencia de numeracao 136 -> 139. Nenhum verificado_em de fato foi avancado.",
+    "nota_run_2026_07_21": "Run de 21/07: DUAS PROMOÇÕES A VERDE no MME, ambas por leitura integral do ato no DOU. (1) MME-CMSE-RESOLUCAO-DESPACHO-TERMICO saiu de _pendentes_verificacao para fatos[]: Resolução CMSE nº 1, de 06/07/2026, DOU 08/07/2026 Ed. 126 S1 p.134 — fecha a lacuna de monitor aberta em 17/07. (2) MME-POTEE-2026-CP passou de AZUL a VERDE: Portaria SNTEP/MME nº 3.159, de 10/07/2026, DOU 14/07/2026 Ed. 130 S1 p.99, com o prazo de 30 dias contado da PUBLICAÇÃO DA PORTARIA (encerra 13/08/2026). Termo de Compromisso segue LARANJA com 2º negativo verificado no DOU. MP 1.318/REDATA segue LARANJA: estado do PL 278/2026 verificado no Senado (Emenda 22 em 17/07; requerimento de urgência ainda não incluído em Ordem do Dia) — detectado, não cravado."
   },
   "fatos": [
     {
@@ -31,7 +32,7 @@
       "status": "AGENDADO",
       "norma": "Portaria MME 136/2026 · DOU 03/06/2026 · arts. 5º, 7º, 9º, 11 + Anexo II",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 18,
       "vetores_afetados": [
@@ -86,7 +87,7 @@
       "status": "VIGENTE",
       "norma": "Decreto 12.772/2025 (institui a PNAST) + Portaria MME 129/2026 (Temporadas de Acesso)",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -128,7 +129,7 @@
       "status": "VIGENTE",
       "norma": "Lei 14.948/2024 (PNH2) + Lei 15.042/2024 (SBCE) · Planalto",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -170,7 +171,7 @@
       "status": "VIGENTE",
       "norma": "Portaria MME 111/2025 (18/06/2025) + Portaria MME 126/2026 (28/01/2026, altera a 111)",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -212,7 +213,7 @@
       "status": "VIGENTE",
       "norma": "MME · SNTEP",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -254,7 +255,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "MME · REDATA · PL 278/2026 (Senado, travado)",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -292,11 +293,11 @@
     {
       "fato_id": "MME-POTEE-2026-CP",
       "tema": "POTEE 2026 — Consulta Pública do Plano de Outorgas de Transmissão (Ampliações e Reforços, 1ª emissão)",
-      "valor": "DETECTADO E ANCORADO EM F1 (17/07, fato de 14/07/2026): o Plano de Outorgas de Transmissão de Energia Elétrica — POTEE 2026 — Ampliações e Reforços — Rede Básica e Demais Instalações de Transmissão (1ª emissão) entrou em consulta pública em 14/07/2026, com prazo de 30 dias para contribuições em https://consultas-publicas.mme.gov.br/home. O documento reúne recomendações técnicas de reforço e expansão do SIN a partir dos estudos do ONS e da EPE, abrangendo Norte, Nordeste, Sudeste, Centro-Oeste e Sul. Prevê também a regularização do cadastramento, no SGPMR, dos reforços de pequeno porte associados a empreendimentos de grande porte. DESTAQUE: inclui o BIPOLO NORDESTE 2 — nova interligação em corrente contínua NE↔SE em tecnologia HVDC-VSC. RELEVÂNCIA SOA: a matéria F1 declara literalmente que o Bipolo Nordeste II 'prepara o SIN para o crescimento da demanda associado à expansão de cargas eletrointensivas, como data centers e empreendimentos voltados à produção de hidrogênio de baixo carbono' — convergência direta com REDATA/data centers e PNH2. Encerrada a CP, as obras servirão de base para licitação e autorização pela ANEEL.",
-      "status": "EM CONSULTA PÚBLICA",
-      "norma": "POTEE 2026 — Ampliações e Reforços (1ª emissão) · CP MME aberta em 14/07/2026",
-      "url": "https://www.gov.br/mme/pt-br/assuntos/noticias/consulta-publica-do-potee-2026-esta-aberta-para-contribuicoes-da-sociedade",
-      "verificado_em": "2026-07-20",
+      "valor": "ANCORADO NO DOU (21/07/2026): a consulta pública do POTEE 2026 — Ampliações e Reforços — Rede Básica e Demais Instalações de Transmissão (1ª emissão) foi instituída pela PORTARIA SNTEP/MME Nº 3.159, DE 10 DE JULHO DE 2026, publicada no DOU de 14/07/2026 (Edição 130, Seção 1, Página 99), Processo nº 48360.000126/2026-69, assinada por MARIANA DE ASSIS ESPÉCIE. O Art. 1º divulga a proposta para consulta pública; o parágrafo único fixa o prazo de 30 (trinta) dias CONTADOS DA DATA DE PUBLICAÇÃO DESTA PORTARIA (14/07/2026), nos portais https://consultas-publicas.mme.gov.br/home e Brasil Participativo — encerramento em 13/08/2026. O Art. 3º determina que as concessionárias listadas verifiquem se a descrição de cada ampliação ou reforço é (I) compatível com as instalações sob sua responsabilidade e (II) adequada para compreensão, detalhamento e orçamentação dos projetos. CONTEÚDO (F1, matéria MME 14/07): recomendações técnicas de reforço e expansão do SIN a partir dos estudos do ONS e da EPE, abrangendo Norte, Nordeste, Sudeste, Centro-Oeste e Sul; prevê a regularização do cadastramento no SGPMR dos reforços de pequeno porte associados a empreendimentos de grande porte. DESTAQUE: inclui o BIPOLO NORDESTE 2 — nova interligação em corrente contínua NE↔SE em tecnologia HVDC-VSC. RELEVÂNCIA SOA/SOS: a matéria oficial declara que o Bipolo Nordeste II 'prepara o SIN para o crescimento da demanda associado à expansão de cargas eletrointensivas, como data centers e empreendimentos voltados à produção de hidrogênio de baixo carbono' — é o próprio MME, em ato de planejamento, ligando expansão de transmissão a data centers e H2 de baixo carbono. Encerrada a CP, as obras servirão de base para licitação e autorização pela ANEEL.",
+      "status": "EM CONSULTA PÚBLICA (encerramento 13/08/2026)",
+      "norma": "Portaria SNTEP/MME nº 3.159, de 10 de julho de 2026 — DOU de 14/07/2026, Edição 130, Seção 1, Página 99 · POTEE 2026 — Ampliações e Reforços (1ª emissão)",
+      "url": "https://www.in.gov.br/web/dou/-/portaria-sntep/mme-n-3.159-de-10-de-julho-de-2026-718727025",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -304,7 +305,7 @@
         "V3",
         "V6"
       ],
-      "qsv_cor": "AZUL",
+      "qsv_cor": "VERDE",
       "qsv_origem_classificacao": "F1_reaberta_17jul2026_fora_da_Tabela_v1.2_teto_AZUL_R7",
       "qsv_fontes_independentes": [
         {
@@ -314,9 +315,56 @@
           "nota_qsv": "Página oficial do MME reaberta em 17/07/2026 via render JS (Chrome).",
           "associacao_origem": null,
           "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "PORTARIA SNTEP/MME Nº 3.159, DE 10 DE JULHO DE 2026 — DOU 14/07/2026, Edição 130, Seção 1, Página 99 — Ministério de Minas e Energia/Secretaria Nacional de Transição Energética e Planejamento — https://www.in.gov.br/web/dou/-/portaria-sntep/mme-n-3.159-de-10-de-julho-de-2026-718727025",
+          "trecho_literal": "Art. 1º Fica divulgada, para Consulta Pública, proposta do Plano de Outorgas de Transmissão de Energia Elétrica - POTEE 2026 - Ampliações e Reforços - Rede Básica e Demais Instalações de Transmissão (1ª emissão). Parágrafo único. Os documentos e informações pertinentes estarão disponíveis no Portal de Consultas Públicas do Ministério de Minas e Energia na internet, no endereço eletrônico https://consultas-publicas.mme.gov.br/home e no Portal Eletrônico Brasil Participativo, pelo prazo de 30 (trinta) dias, contados da data de publicação desta Portaria.",
+          "nota_qsv": "Ato lido na íntegra no DOU via render JS (Chrome) em 21/07/2026.",
+          "associacao_origem": null,
+          "gt_origem": null
         }
       ],
-      "pendencia_verificacao": "A data de ENCERRAMENTO da CP não é declarada em F1: a matéria diz apenas '30 dias' a partir de 14/07/2026. A contagem simples levaria a ~13/08/2026, mas NÃO está ancorada (não se sabe se são dias corridos ou úteis, nem o termo inicial exato) — não usar essa data como se fosse oficial. Para promoção a VERDE: abrir o edital/aviso da CP em consultas-publicas.mme.gov.br e ancorar o prazo e a numeração da consulta."
+      "pendencia_verificacao": "RESOLVIDA em 21/07/2026: a Portaria SNTEP/MME nº 3.159/2026 foi lida na íntegra no DOU. O prazo é de 30 dias CONTADOS DA PUBLICAÇÃO DA PORTARIA (14/07/2026) — não da abertura noticiada — logo, encerramento em 13/08/2026. Ressalva remanescente: a Portaria não atribui número de CP (não existe 'CP nº X/2026' para o POTEE); em material externo citar 'Consulta Pública do POTEE 2026, instituída pela Portaria SNTEP/MME nº 3.159/2026', nunca um número de consulta inventado.",
+      "numero_status": "ANCORADO"
+    },
+    {
+      "fato_id": "MME-CMSE-RESOLUCAO-DESPACHO-TERMICO",
+      "tema": "Resolução CMSE nº 1/2026 — transparência das deliberações do CMSE sobre despacho de geração por garantia de suprimento energético (GE)",
+      "valor": "ANCORADO NO DOU (21/07/2026): RESOLUÇÃO CMSE Nº 1, DE 6 DE JULHO DE 2026, publicada no DOU de 08/07/2026 (Edição 126, Seção 1, Página 134), Ministério de Minas e Energia/Comitê de Monitoramento do Setor Elétrico, Processo nº 48370.000106/2025-98, assinada por ALEXANDRE SILVEIRA, Presidente do Comitê. Fundamento: art. 14 da Lei nº 10.848/2004 e art. 3º, IV e V, do Decreto nº 5.175/2004. O ato estabelece diretrizes de TRANSPARÊNCIA para a autorização de despacho de geração por garantia de suprimento energético (GE). Dispositivos centrais: Art. 2º — antes de autorizar (ou revisar) o despacho, exige (I) uso da Curva Referencial de Armazenamento (CRef) como instrumento de apoio à decisão; (II) apresentação do ONS com estudos prospectivos conjunturais e premissas, análise de causa/consequência em ganho percentual de armazenamento nos reservatórios de regularização, análise de soluções alternativas, resultados parciais e justificativa da alternativa recomendada; (III) apresentação da CCEE com IMPACTOS FINANCEIROS ESTIMADOS SEGREGADOS POR MERCADO CATIVO E LIVRE; (IV) avaliação pelos membros do CMSE. Art. 3º — o ONS elabora estudo com propostas de CRef para o ano seguinte até NOVEMBRO de cada ano; o CMSE aprova a CRef até DEZEMBRO de cada ano. Art. 4º — o ONS deve disponibilizar, em até 180 DIAS DA PUBLICAÇÃO, a METODOLOGIA de elaboração ordinária dos estudos prospectivos conjunturais, 'observando o princípio da transparência', e atualizá-la quando houver alterações relevantes. Art. 5º — a autorização é formalizada em deliberação do CMSE com motivação técnica, subsistemas, prazo de vigência e montante máximo, constando em ata; §1º a publicidade se dá por nota pública no sítio do MME em até DOIS DIAS da reunião; §2º a autorização entra em vigor na data dessa publicidade. Art. 6º — AVALIAÇÃO EX-POST ANUAL, até a terceira reunião ordinária do CMSE do ano seguinte: o ONS apresenta relatório com causas, MONTANTES DE GERAÇÃO VERIFICADOS e análise comparativa entre resultados energéticos PREVISTOS E VERIFICADOS; a CCEE apresenta relatório com custos PREVISTOS E VERIFICADOS segregados por ACR e ACL; o CMSE encaminha ambos às instituições que o compõem. Art. 7º — o MME deve manter PÁGINA ESPECÍFICA em seu sítio com os documentos que embasaram as deliberações e os relatórios de avaliação. RELEVÂNCIA SOA/SOS: é um ato oficial que institucionaliza, para o despacho por GE, exatamente a estrutura de evidência ex-post que a SOA/SOS constrói — metodologia publicada, previsto contra verificado, custo segregado por ambiente e documentos em página pública. Não cria certificado nem cita a SOA/SOS; é convergência de arcabouço, e deve ser citado como tal.",
+      "status": "VIGENTE",
+      "norma": "Resolução CMSE nº 1, de 6 de julho de 2026 — DOU de 08/07/2026, Edição 126, Seção 1, Página 134",
+      "url": "https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
+      "verificado_em": "2026-07-21",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "score_soa": 12,
+      "vetores_afetados": [
+        "V3",
+        "V4",
+        "V5"
+      ],
+      "qsv_cor": "VERDE",
+      "qsv_origem_classificacao": "F1_MME_09jul2026 + F2_DOU_ato_lido_integralmente_21jul2026 (R2 atendida)",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.gov.br/mme/pt-br/assuntos/noticias — item de 09/07/2026 (lista reaberta via Chrome em 17/07/2026)",
+          "trecho_literal": "Resolução do CMSE estabelece novas diretrizes para despacho de geração térmica — 09/07/2026 - Ato normativo, publicado no Diário Oficial da União, discorre sobre deliberações relacionadas à geração por garantia de suprimento energético (GE)",
+          "nota_qsv": "Apenas manchete + linha fina. A matéria em si NÃO foi aberta e o ato NÃO foi lido.",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
+        {
+          "tipo": "F2_DOU",
+          "ref": "RESOLUÇÃO CMSE Nº 1, DE 6 DE JULHO DE 2026 — DOU 08/07/2026, Edição 126, Seção 1, Página 134 — Ministério de Minas e Energia/Comitê de Monitoramento do Setor Elétrico — https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
+          "trecho_literal": "Estabelece diretrizes relativas à transparência das deliberações do Comitê de Monitoramento do Setor Elétrico - CMSE referentes ao despacho de geração por garantia de suprimento energético - GE. [...] Art. 4º [...] I - o ONS deverá disponibilizar, em até 180 (cento e oitenta) dias da publicação desta Resolução, metodologia para elaboração ordinária dos estudos prospectivos conjunturais ao CMSE, observando o princípio da transparência [...] Art. 6º [...] c) análise comparativa dos resultados energéticos, previstos e verificados, considerando os dados mensais apresentados ao CMSE",
+          "nota_qsv": "Ato lido na íntegra no DOU via render JS (Chrome) em 21/07/2026.",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ],
+      "pendencia_verificacao": "RESOLVIDA em 21/07/2026 (ato lido na íntegra no DOU). RESSALVA DE TRANSCRIÇÃO: o preâmbulo publicado está truncado na origem — grafa 'tendo em vista as deliberações das 306ª e ª Reuniões do CMSE, realizadas em 11 de junho de 2025, e de dezembro de 2025', sem o número da segunda reunião e sem o dia de dezembro. NÃO inventar o número: em material externo citar apenas 'a 306ª Reunião do CMSE, de 11/06/2025, e reunião de dezembro de 2025 (número não grafado no ato publicado)'. DERIVADA A VIGIAR: o prazo do Art. 4º, I (180 dias da publicação de 08/07/2026) cai em ~04/01/2027 — data-limite para o ONS publicar a metodologia dos estudos prospectivos. Contagem própria, não declarada no ato: não citar a data como se fosse oficial.",
+      "numero_status": "ANCORADO"
     }
   ],
   "_pendentes_verificacao": [
@@ -354,35 +402,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "motivo_pendencia": "CADUCADA em 25/02/2026. Mantida em LARANJA conforme Precedência v1.2: só deixa de ser pendência quando texto for completamente reescrito como caducada em todos materiais. Conteúdo no PL 278/2026 (Senado)."
-    },
-    {
-      "fato_id": "MME-CMSE-RESOLUCAO-DESPACHO-TERMICO",
-      "tema": "Resolução do CMSE — novas diretrizes para despacho de geração térmica por garantia de suprimento energético (GE)",
-      "valor": "DETECTADO 17/07 (fato de 09/07/2026) — NÃO CRAVADO. O MME noticiou que 'Resolução do CMSE estabelece novas diretrizes para despacho de geração térmica', ato normativo publicado no Diário Oficial da União, tratando de deliberações relacionadas à geração por garantia de suprimento energético (GE). LACUNA DE MONITOR: este item é de 09/07 e não foi capturado por nenhuma run anterior; a run de 16/07 registrou o MME como 'sem alteração'. Nenhum número de resolução, data exata de publicação no DOU ou conteúdo dispositivo foi lido — apenas a manchete e a linha fina da página de notícias do MME.",
-      "status": "NÃO VERIFICADO",
-      "norma": "Resolução CMSE — numeração NÃO confirmada",
-      "url": "https://www.gov.br/mme/pt-br/assuntos/noticias",
-      "verificado_em": "2026-07-17",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 7,
-      "vetores_afetados": [
-        "V3",
-        "V5"
-      ],
-      "qsv_cor": "LARANJA",
-      "qsv_origem_classificacao": "detectado_17jul2026_sem_leitura_do_ato_LARANJA",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.gov.br/mme/pt-br/assuntos/noticias — item de 09/07/2026 (lista reaberta via Chrome em 17/07/2026)",
-          "trecho_literal": "Resolução do CMSE estabelece novas diretrizes para despacho de geração térmica — 09/07/2026 - Ato normativo, publicado no Diário Oficial da União, discorre sobre deliberações relacionadas à geração por garantia de suprimento energético (GE)",
-          "nota_qsv": "Apenas manchete + linha fina. A matéria em si NÃO foi aberta e o ato NÃO foi lido.",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "pendencia_verificacao": "Abrir a matéria do MME de 09/07/2026 e o ato no DOU para ancorar: número da Resolução CMSE, data de publicação e o teor das diretrizes de despacho térmico por GE. Só então classificar. Relevante porque toca despacho térmico (família geracao_termica_despacho do banco) — mas o Banco SOA NUNCA valida fato regulatório: a âncora tem de ser o ato. | 20/07/2026 - DOU agora acessivel via navegador; este ato (09/07/2026) NAO foi reaberto nesta run por estar fora da janela varrida (15-20/07). PROXIMA RUN: ler o ato do CMSE no DOU de ~09-10/07 e ancorar."
+      "motivo_pendencia": "CADUCADA em 25/02/2026. Mantida em LARANJA conforme Precedência v1.2: só deixa de ser pendência quando texto for completamente reescrito como caducada em todos materiais. Conteúdo no PL 278/2026 (Senado).",
+      "pendencia_verificacao": "21/07/2026 - ESTADO PROCESSUAL VERIFICADO NA FONTE PRIMÁRIA (portal de matérias do Senado, PL 278/2026, matéria 172786, resolvido nesta run após falhar em 20/07): situação 'Em tramitação'; último local/estado 26/02/2026 - Plenário do Senado Federal - AGUARDANDO INCLUSÃO ORDEM DO DIA DE REQUERIMENTO (Requerimento nº 112/2026, de Líderes, de urgência, arts. 336, III e 338, III do RISF). MOVIMENTO NOVO: Emenda nº 22 PLEN, do Senador Laércio Oliveira (PP/SE), recebida em 17/07/2026 — total de 22 emendas (a nº 1 foi retirada pelo autor). Última atualização de dados legislativos: 17/07/2026 12:42, compatível com o recesso parlamentar iniciado em 18/07. CONCLUSÃO: nada muda no fato — a MP 1.318/2025 segue CADUCADA e o regime REDATA segue NÃO VIGENTE; o PL 278/2026 sequer teve o requerimento de urgência incluído em Ordem do Dia. MANTIDO LARANJA (item 3 da lista do CEO — o único genuinamente pendente). Reforço do negativo: busca no DOU por \"data center\", Seção 1, 14-21/07/2026 -> 2 resultados, ambos Portarias PC-MD do Ministério da Defesa sobre salas de informação classificada; nenhum ato de REDATA."
     },
     {
       "fato_id": "MME-TERMO-COMPROMISSO-SOBREOFERTA",
@@ -419,7 +440,7 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Ponteiro F3 (ABSOLAR). Vigiar publicação do Termo de Compromisso no DOU e a recontabilização da CCEE de 29/07. Confirmar se a versão publicada exclui a reclassificação da sobreoferta MMGD/térmica.",
-      "pendencia_verificacao": "F3 puro em 18/07. Ato não publicado; Despacho 1.669/2026 não lido em F1. Não citar teor em material externo antes de F1/DOU. | 20/07/2026 - NEGATIVO VERIFICADO NO DOU (primeira vez com o DOU efetivamente acessivel): busca no in.gov.br via render JS na janela 15-20/07/2026 nao retornou nenhum 'Termo de Compromisso' do MME em materia de energia, e a busca por 'Portaria Normativa' com Orgao Principal = Ministerio de Minas e Energia retornou apenas ato de pessoal. A pagina oficial de noticias do MME foi reaberta em F1 (carimbo 'Atualizado em 17/07/2026 14h01'), item mais recente 17/07 sem ato regulatorio. CONCLUSAO: o Termo anunciado por F3 (GTGC 17/07) como 'pronto para publicacao' NAO foi publicado ate 20/07/2026. MANTIDO LARANJA. Vigiar DOU e a recontabilizacao CCEE de 29/07."
+      "pendencia_verificacao": "F3 puro em 18/07. Ato não publicado; Despacho 1.669/2026 não lido em F1. Não citar teor em material externo antes de F1/DOU. | 20/07/2026 - NEGATIVO VERIFICADO NO DOU (primeira vez com o DOU efetivamente acessivel): busca no in.gov.br via render JS na janela 15-20/07/2026 nao retornou nenhum 'Termo de Compromisso' do MME em materia de energia, e a busca por 'Portaria Normativa' com Orgao Principal = Ministerio de Minas e Energia retornou apenas ato de pessoal. A pagina oficial de noticias do MME foi reaberta em F1 (carimbo 'Atualizado em 17/07/2026 14h01'), item mais recente 17/07 sem ato regulatorio. CONCLUSAO: o Termo anunciado por F3 (GTGC 17/07) como 'pronto para publicacao' NAO foi publicado ate 20/07/2026. MANTIDO LARANJA. Vigiar DOU e a recontabilizacao CCEE de 29/07. | 21/07/2026 - NEGATIVO VERIFICADO NO DOU PELA 2ª VEZ: busca no in.gov.br (render JS) por \"Termo de Compromisso\", Seção 1, Órgão Principal = Ministério de Minas e Energia, janela 18-21/07/2026 -> 0 resultados. Página de notícias do MME reaberta em F1 (carimbo 'Atualizado em 20/07/2026 14h35'): item mais recente 20/07 é matéria didática de planejamento energético, sem ato. O Termo anunciado por F3 (GTGC 17/07) segue NÃO PUBLICADO. MANTIDO LARANJA. Vigiar DOU e a recontabilização CCEE de 29/07."
     }
   ],
   "_historico_caidos": []
