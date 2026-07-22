@@ -2,9 +2,9 @@
   "_meta": {
     "schema_version": "1.3",
     "descricao": "Fonte ÚNICA de fatos regulatórios do Folder 'Onde Entramos'. Schema 1.3 (alinhado aos monitores per-órgão e à Tabela de Precedência QSV v1.2). O folder Folder_Vivo_Regulatorio_GitHub.html consome DESTE arquivo (data.fatos[]). O monitor regulatório SOA mantém este arquivo. Schema legado aposentado em Fatos_Regulatorios_Folder_SOA.legacy.deprecated.json.",
-    "verificado_em": "2026-07-20",
+    "verificado_em": "2026-07-21",
     "schema_migrado_em": "2026-06-29",
-    "proxima_revisao_sugerida": "2026-07-21",
+    "proxima_revisao_sugerida": "2026-07-22",
     "nota_run_2026_07_16": "Varredura de 16/07: nenhuma reabertura F1 efetiva → NENHUM fato teve verificado_em bumpado (R2, postura conservadora). _meta.verificado_em = data da varredura, não de reconferência de fato. Movimento novo registrado apenas no campo 'valor' de lrcap_edital (sorteio de relator, 13/07, fonte F3). Detalhe granular dos 6 itens novos detectados em Fatos_ANEEL_Folder_SOA.json/_pendentes_verificacao. Lacuna: a run de 15/07 escreveu JSON sem escrever digest.",
     "responsavel_atualizacao": "Monitor Regulatório SOA (digest diário) — escreve schema 1.3, aplica Tabela_Precedencia_QSV_v1_2",
     "fonte_canonica_per_orgao": "Fatos_MME/ANEEL/ONS/CCEE/EPE_Folder_SOA.json (detalhe granular por órgão; este arquivo é a visão consolidada publicada)",
@@ -16,7 +16,8 @@
     "nota_run_2026_07_17": "Varredura de 17/07. Criado CONGRESSO-PL-5017-2019 em _pendentes_verificacao (AZUL): a matéria em que a SOA/SOS atuou em 15/07 existia apenas nos digests e não era visível a quem lê os JSONs — lacuna apontada na run de 16/07, agora fechada. PL 278/2026 (REDATA) sem alteração: urgência 112/2026 aguardando inclusão em Ordem do Dia, 13 emendas, sem agendamento; com o recesso a partir de 17/07 não há votação antes de agosto. PENDENTE DO CEO (repetido da run de 16/07, sem ação minha): (a) CCEE-LEI-15269-2025 segue DUPLICADO — VERDE em fatos[] e AZUL em _pendentes_verificacao, mesmo fato_id, dois vereditos; (b) EPE-MAPA-BARRAMENTOS-LRCAP tem drift de âncora no campo renderizado ('ANEXO II' onde o canônico é ANEXO I, Art. 2º §12); (c) o rótulo herdado 'os 4 fatos LARANJA do CEO' segue falso para 3 dos 4. Nada disso foi alterado: reverter decisão já tomada pelo CEO seria tão indisciplinado quanto cravar.",
     "nota_run_2026_07_18": "Varredura de 18/07 (sabado): SEM ALTERACAO. Nenhum ato oficial novo na janela. Nenhum verificado_em de fato avancado; _meta.verificado_em reflete apenas a data da varredura. Unico material novo do dia foi ponteiro F3 (GTGC ABSOLAR 17/07), registrado em Fatos_ANEEL e Fatos_MME.",
     "nota_run_2026_07_19": "Varredura de 19/07 (domingo): SEM ATO OFICIAL NOVO em qualquer fonte (ANEEL, MME, ONS, CCEE, EPE, DOU, Congresso). Congresso em recesso desde 17/07 — PL 278/2026 (REDATA) sem agendamento (urgencia 112/2026 nao deliberada, 13 emendas); PL 5.017/2019 aguarda Plenario em agosto. ABSOLAR (Gmail, 5 grupos): NENHUMA mensagem nova desde a run anterior (mais recente = GTGC 17/07 20h07, ja processada); nenhum grupo *absolar novo. PENDENTE DO CEO (repetido): CCEE-LEI-15269-2025 duplicado; drift ANEXO II/I em EPE-MAPA-BARRAMENTOS-LRCAP; rotulo 'os 4 fatos LARANJA' falso para 3 dos 4. Nada alterado sem gate do CEO. Nenhum verificado_em de fato avancado.",
-    "nota_run_2026_07_20": "Run de 20/07/2026 (segunda-feira, 1o dia util apos o fim de semana). DESBLOQUEIO DE METODO: o DOU foi lido por render JS (Chrome) - o bloqueio anti-bot atingia apenas o web_fetch. Resultado principal: CP n 20/2026 (Fator X) promovida a VERDE em Fatos_ANEEL, com o Aviso lido na integra (DOU 15/07/2026, Ed. 131, Sec. 3, p. 104; Processo 48500.027624/2025-26). Negativos verificados no DOU na janela 15-20/07: nenhum Termo de Compromisso do MME; nenhum Aviso de CP da ANEEL; nenhum ato de sustentabilidade da CVM; nenhum ato de SBCE. Congresso em recesso desde 17/07 - PL 278/2026 (REDATA) e PL 5.017/2019 sem movimento (portal de materias do Senado nao resolveu a consulta direta nesta run; recesso e o fato operante). Os 4 fatos LARANJA do CEO NAO foram tocados. Nenhum verificado_em de fato foi avancado neste arquivo."
+    "nota_run_2026_07_20": "Run de 20/07/2026 (segunda-feira, 1o dia util apos o fim de semana). DESBLOQUEIO DE METODO: o DOU foi lido por render JS (Chrome) - o bloqueio anti-bot atingia apenas o web_fetch. Resultado principal: CP n 20/2026 (Fator X) promovida a VERDE em Fatos_ANEEL, com o Aviso lido na integra (DOU 15/07/2026, Ed. 131, Sec. 3, p. 104; Processo 48500.027624/2025-26). Negativos verificados no DOU na janela 15-20/07: nenhum Termo de Compromisso do MME; nenhum Aviso de CP da ANEEL; nenhum ato de sustentabilidade da CVM; nenhum ato de SBCE. Congresso em recesso desde 17/07 - PL 278/2026 (REDATA) e PL 5.017/2019 sem movimento (portal de materias do Senado nao resolveu a consulta direta nesta run; recesso e o fato operante). Os 4 fatos LARANJA do CEO NAO foram tocados. Nenhum verificado_em de fato foi avancado neste arquivo.",
+    "nota_run_2026_07_21": "Run de 21/07: 2 fatos NOVOS em VERDE entram na visão consolidada — MME-CMSE-RESOLUCAO-1-2026 (Resolução CMSE nº 1/2026, DOU 08/07) e MME-POTEE-2026-CP (Portaria SNTEP/MME nº 3.159/2026, DOU 14/07). Ambos ancorados por leitura integral do ato no DOU. Nenhum fato preexistente teve verificado_em bumpado (R2, postura conservadora). Os 4 itens da lista do CEO: nenhum cravado; apenas o item 3 (MP 1.318/REDATA) segue genuinamente pendente e recebeu registro de estado processual verificado no Senado."
   },
   "fatos": [
     {
@@ -30,7 +31,7 @@
       "qsv_cor": "AZUL",
       "norma": "REN ANEEL 1.059/2023 (regulamenta a Lei 14.300/2022)",
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "gatilho_revisao": "alteração da REN 1.059 ou novo marco legal da GD"
     },
     {
@@ -44,7 +45,7 @@
       "qsv_cor": "VERDE",
       "norma": "Portaria MME 136/2026 (DOU 03/06/2026)",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "gatilho_revisao": "publicação/alteração do edital ANEEL; mudança de datas"
     },
     {
@@ -58,7 +59,7 @@
       "qsv_cor": "LARANJA",
       "norma": "ANEEL (edital do leilão)",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "gatilho_revisao": "publicação do edital (item nº 1 de prioridade do monitor)"
     },
     {
@@ -72,7 +73,7 @@
       "qsv_cor": "AZUL",
       "norma": "ANEEL/CCEE — homologação LRCAP 2026",
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "gatilho_revisao": "novo LRCAP ou divulgação do preço-teto de armazenamento"
     },
     {
@@ -86,7 +87,7 @@
       "qsv_cor": "VERDE",
       "norma": "Portaria MME 136/2026 Art. 7º (III/IV/VI) + Art. 4º §13 (grid-forming) · NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "gatilho_revisao": "revisão da NT de requisitos; NT-ONS 0111 = EPE-095 (mesmo doc conjunto)"
     },
     {
@@ -100,7 +101,7 @@
       "qsv_cor": "VERDE",
       "norma": "REN ANEEL 1.161/2026 (assinada 02/06; publicada no DOU 24/06/2026)",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "gatilho_revisao": "revisão da REN 1.161 ou regra de TUST do edital LRCAP"
     },
     {
@@ -114,7 +115,7 @@
       "qsv_cor": "AZUL",
       "norma": "CP ANEEL 45/2019 (3ª fase · voto-vista Dir. Fernando Mosna em curso)",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "gatilho_revisao": "publicação de REN/voto cobrindo eólicas e/ou MMGD"
     },
     {
@@ -128,7 +129,7 @@
       "qsv_cor": "AZUL",
       "norma": "bases públicas oficiais",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "gatilho_revisao": "n/a (estrutural)"
     },
     {
@@ -143,7 +144,7 @@
       "norma": "CP ANEEL nº 001/2026 (medição inteligente) · mandato: Portarias MME 111/2025 + 126/2026",
       "numero_status": "ANCORADO",
       "fonte": "F1 ANEEL (notícia 30/06/2026, lida na íntegra em 03/07; 2ª fase reconfirmada aberta 01/07–14/08 em 07/07 e 08/07) + F3 ABSOLAR (GT Geração Distribuída, 30/06/2026)",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "gatilho_revisao": "voto final da CP 001/2026 (decisão prevista 2S2026); fim da janela de contribuições 14/08/2026",
       "vetores_afetados": [
         "V2",
@@ -166,7 +167,7 @@
         "V3",
         "V7"
       ],
-      "verificado_em": "2026-07-20"
+      "verificado_em": "2026-07-21"
     },
     {
       "id": "lrcap_faq_manual_armazenamento",
@@ -184,7 +185,7 @@
         "V3",
         "V7"
       ],
-      "verificado_em": "2026-07-20"
+      "verificado_em": "2026-07-21"
     },
     {
       "id": "lei_15269_curtailment",
@@ -201,7 +202,7 @@
       "vetores_afetados": [
         "V4"
       ],
-      "verificado_em": "2026-07-20"
+      "verificado_em": "2026-07-21"
     },
     {
       "id": "autoproducao_despacho_2414",
@@ -215,8 +216,36 @@
       "norma": "Despacho ANEEL nº 2.414/2026 · art. 16-B da Lei 9.074/1995 (redação da Lei 15.269/2025) · NT Conjunta 7/2026-SGM-SCE-SFF/ANEEL",
       "numero_status": "ALEGADO_NAO_ANCORADO",
       "fonte": "F3 ABSOLAR (GT Geração Centralizada, e-mail 06/07/2026: 'Foi publicado o Despacho nº 2.414/2026 sobre procedimento à autoprodução') + cobertura editorial (XP/Canal Solar/atlaspublico, 08/07: publicação 30/06/2026) — PONTEIROS, não âncora F1. Link direto DOU/SEI ANEEL ainda não localizado. Mantém AZUL até F1 (R2).",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "gatilho_revisao": "publicação no DOU/SEI ANEEL confirmando o Despacho 2.414/2026; regulamentação da CCEE (Regras/Procedimentos de Comercialização)"
+    },
+    {
+      "id": "cmse_transparencia_ge",
+      "fato_id": "MME-CMSE-RESOLUCAO-1-2026",
+      "orgao": "MME/CMSE",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Transparência das deliberações do CMSE sobre despacho de geração por garantia de suprimento (GE)",
+      "valor": "Resolução CMSE nº 1/2026 exige, antes de cada autorização de despacho por GE: uso da Curva Referencial de Armazenamento (CRef), estudos prospectivos do ONS com premissas e alternativas, e análise da CCEE dos impactos financeiros segregados por mercado cativo e livre. Impõe ao ONS publicar a metodologia dos estudos em até 180 dias e, anualmente, comparar resultados energéticos previstos contra verificados; à CCEE, comparar custos previstos contra verificados por ACR e ACL. O MME deve manter página pública com os documentos das deliberações.",
+      "status": "VIGENTE",
+      "qsv_cor": "VERDE",
+      "norma": "Resolução CMSE nº 1, de 6 de julho de 2026 — DOU de 08/07/2026, Edição 126, Seção 1, Página 134",
+      "numero_status": "ANCORADO",
+      "verificado_em": "2026-07-21",
+      "gatilho_revisao": "Publicação da metodologia dos estudos prospectivos pelo ONS ou nova deliberação de despacho por GE"
+    },
+    {
+      "id": "potee_2026_cp",
+      "fato_id": "MME-POTEE-2026-CP",
+      "orgao": "MME",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "POTEE 2026 — consulta pública do Plano de Outorgas de Transmissão (Ampliações e Reforços, 1ª emissão)",
+      "valor": "Consulta pública aberta em 14/07/2026, com prazo de 30 dias contados da publicação da Portaria (encerramento em 13/08/2026), em consultas-publicas.mme.gov.br e no Brasil Participativo. Inclui o Bipolo Nordeste 2 (interligação NE↔SE em HVDC-VSC). O ato e a matéria oficial ligam a expansão da transmissão ao crescimento de cargas eletrointensivas — data centers e produção de hidrogênio de baixo carbono. Encerrada a CP, as obras embasam licitação e autorização pela ANEEL.",
+      "status": "EM CONSULTA PÚBLICA",
+      "qsv_cor": "VERDE",
+      "norma": "Portaria SNTEP/MME nº 3.159, de 10 de julho de 2026 — DOU de 14/07/2026, Edição 130, Seção 1, Página 99",
+      "numero_status": "ANCORADO",
+      "verificado_em": "2026-07-21",
+      "gatilho_revisao": "Encerramento da CP em 13/08/2026 e publicação da versão final do POTEE 2026"
     }
   ],
   "_pendentes_verificacao": [
@@ -230,7 +259,8 @@
       "norma": "MP 1.318/2025 (sem efeito jurídico atual) · PL 278/2026 (Senado)",
       "numero_status": "ANCORADO",
       "fonte": "PL 278/2026 (tramitação Câmara/Senado), reconfirmado 06/07/2026",
-      "verificado_em": "2026-07-06"
+      "verificado_em": "2026-07-06",
+      "pendencia_verificacao": "21/07/2026 - Estado processual do PL 278/2026 verificado na fonte primária (Senado, matéria 172786): AGUARDANDO INCLUSÃO ORDEM DO DIA DE REQUERIMENTO (Req. 112/2026, urgência) desde 26/02/2026; Emenda nº 22 do Senador Laércio Oliveira recebida em 17/07/2026 (22 emendas no total); última atualização legislativa 17/07/2026 12:42, coerente com o recesso iniciado em 18/07. MP segue CADUCADA e REDATA segue NÃO VIGENTE. MANTIDO LARANJA — detectado, não cravado."
     },
     {
       "fato_id": "ANEEL-CP-009-GATO-SOLAR",

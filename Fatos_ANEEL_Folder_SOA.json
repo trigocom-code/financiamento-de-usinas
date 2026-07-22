@@ -3,8 +3,8 @@
     "orgao": "ANEEL",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ANEEL — schema v1.3 com tipo_fato, qsv_cor, fontes independentes, associacao_origem, ancoragem numérica. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-07-20",
-    "proxima_revisao_sugerida": "2026-07-21",
+    "verificado_em": "2026-07-21",
+    "proxima_revisao_sugerida": "2026-07-22",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ANEEL conforme QSV-R v3.0",
     "nota_run_2026_07_16": "Varredura de 16/07: nenhuma reabertura F1 efetiva → NENHUM fato teve verificado_em bumpado (postura conservadora, R2). _meta.verificado_em reflete a data da varredura, não a de reconferência de fato. Página-mãe de notícias da ANEEL veio JS-truncada (inconclusiva para 08–16/07); a subpasta /noticias/2026-defeso-eleitoral carimba 'Atualizado em 07/07/2026 17h39' e vale como negativo APENAS para essa subpasta. Detectados 6 itens novos via F3 (ABSOLAR GTGD 15/07 + Agência iNFRA 13/07), todos em _pendentes_verificacao. A run de 15/07 escreveu JSON mas não escreveu digest — lacuna reportada ao CEO.",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Threshold.",
@@ -24,7 +24,8 @@
     "nota_run_2026_07_17": "Varredura de 17/07. ACHADO DE MÉTODO: a página de notícias da ANEEL foi reaberta com render JS (Chrome navigate+get_page_text) e revelou 5 itens de 14/07/2026 que o web_fetch NUNCA entregou (o fetch trunca em 4 itens, mais recente 07/07). CONSEQUÊNCIA: o 'negativo verificado para 08–16/07' registrado na run de 16/07 para a subpasta /noticias/2026-defeso-eleitoral era FALSO-NEGATIVO — as 5 notícias de 14/07 estão nessa exata subpasta, cujo carimbo de pasta (07/07 17h39) não acompanha os itens. Chrome passa a ser a via recomendada para gov.br. CP 020/2026 (Fator X) ANCORADA EM F1, mantida AZUL por falta de leitura do Aviso no DOU. CP 016/2026 e CP 018/2026 tiveram o enquadramento CORRIGIDO: não são novas (08/06 e junho/2026 respectivamente) — 'DETECTADO 16/07' era a data do ponteiro F3, não do ato. Nenhum fato promovido a VERDE. Notícias ANEEL antigas (/noticias/2026/) exigem autenticação.",
     "nota_run_2026_07_18": "Varredura de 18/07 (sábado). Nenhum ato oficial novo da ANEEL na janela (item mais recente segue 14/07). Sem promoção a VERDE. NOVO ponteiro F3 (GTGC ABSOLAR 17/07): criado pendente ANEEL-NT-078-2026-FIM-DESCONTO-TUSD-TUST (LARANJA). Corroboração F3 anexada ao fato ANEEL-CP-045-2019 (segue AZUL; falta F1+DOU). verificado_em de fato NÃO avançado; _meta.verificado_em reflete a data da varredura.",
     "nota_run_2026_07_19": "Varredura de 19/07 (domingo): SEM ATO OFICIAL NOVO na janela. Item mais recente da ANEEL segue 14/07 (CP 020/2026 Fator X). CP 020/2026 reconfirmada por F2 (contribuicoes 16/07 a 31/08, e-mail cp020_2026@aneel.gov.br) — SEGUE AZUL; promocao a VERDE ainda depende do Aviso no DOU (in.gov.br com bloqueio anti-bot, nao vencido). CP 45/19 sem movimento oficial. Pendentes F3 de 18/07 (ANEEL-NT-078-2026 fim desconto TUSD/TUST; ANEEL-CP-009-GATO-SOLAR) inalterados. Chrome/JS nao acionado (domingo, sem ato detectado por F2). Nenhum verificado_em de fato avancado; _meta.verificado_em reflete a data da varredura.",
-    "nota_run_2026_07_20": "DESBLOQUEIO DE METODO: o DOU (in.gov.br) foi acessado com sucesso via render JS (Chrome) nesta run — o bloqueio anti-bot atingia apenas o web_fetch. Consequencia imediata: CP n 20/2026 (Fator X) PROMOVIDA A VERDE, com o Aviso lido na integra (DOU 15/07/2026, Ed. 131, Sec. 3, p. 104). Passa a ser procedimento padrao consultar o DOU pelo navegador antes de declarar pendencia de ancoragem. Listagem de noticias da ANEEL (subpasta 2026-defeso-eleitoral) reaberta em F1: carimbo 'Atualizado em 16/07/2026 17h22', item mais recente 14/07 — NEGATIVO VERIFICADO para 15-20/07. Somente CP 20/2026 teve verificado_em avancado; os demais fatos NAO foram reabertos nesta run."
+    "nota_run_2026_07_20": "DESBLOQUEIO DE METODO: o DOU (in.gov.br) foi acessado com sucesso via render JS (Chrome) nesta run — o bloqueio anti-bot atingia apenas o web_fetch. Consequencia imediata: CP n 20/2026 (Fator X) PROMOVIDA A VERDE, com o Aviso lido na integra (DOU 15/07/2026, Ed. 131, Sec. 3, p. 104). Passa a ser procedimento padrao consultar o DOU pelo navegador antes de declarar pendencia de ancoragem. Listagem de noticias da ANEEL (subpasta 2026-defeso-eleitoral) reaberta em F1: carimbo 'Atualizado em 16/07/2026 17h22', item mais recente 14/07 — NEGATIVO VERIFICADO para 15-20/07. Somente CP 20/2026 teve verificado_em avancado; os demais fatos NAO foram reabertos nesta run.",
+    "nota_run_2026_07_21": "Run de 21/07: NEGATIVO VERIFICADO, nenhum fato tocado. (a) DOU Seção 1, Edição 135 de 21/07/2026, termo 'ANEEL' -> 6 resultados, todos rotineiros: Despachos 2.547/14-07 (outorga DRI-PCH), 2.609 e 2.635 e 2.636/16-17-07 (Fiscalização Econômica, Financeira e de Mercado) e 2.613/17-07 (Mediação Administrativa), além de um ato da Receita Federal que apenas cita a ANEEL. (b) DOU Seção 3, janela 20-21/07 -> 0 resultados: NENHUM Aviso de Consulta Pública da ANEEL. Consequência: ANEEL-NT-078-2026-FIM-DESCONTO-TUSD-TUST segue LARANJA com 2º negativo verificado, e a CP de revisão da REN 1.030/2022 (classificação de cortes — marcada como processo regulatório nº 1 da SOA no calendário do CEO em 20/07) NÃO foi aberta. (c) Página de notícias reaberta em F1 (/2026-defeso-eleitoral, carimbo 'Atualizado em 20/07/2026 15h18'): único item novo é institucional de 20/07 (interdição temporária da recepção da sede) — borda nula. Nenhum verificado_em de fato bumpado (R2)."
   },
   "fatos": [
     {
@@ -34,7 +35,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.161/2026 · assinada 02/06/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.161-de-2-de-junho-de-2026-714430510",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -84,7 +85,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.162/2026 (altera RENs 846/2019, 875/2020, 905/2020, 921/2021, 1.000/2021, 1.009/2022, 1.029/2022, 1.030/2022, 1.031/2022 e 1.071/2023) · assinada 02/06/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.162-de-2-de-junho-de-2026-714416734",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -134,7 +135,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 045/2019 (3ª fase · voto-vista Dir. Fernando Mosna · memorando de período sombra ampliado · deliberação esperada RPO 28/07/2026)",
       "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
       "vetores_afetados": [
@@ -204,7 +205,7 @@
       "status": "VIGENTE",
       "norma": "CP ANEEL 039/2023 · NT 03/2026",
       "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -253,7 +254,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.150/2026 + Ofício 553/2025-GDG",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -295,7 +296,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.059/2023 (Lei 14.300/2022)",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -338,7 +339,7 @@
       "status": "VIGENTE",
       "norma": "MME · Portarias 126/2026 e 111/2025 (regulamentação ANEEL pendente)",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -380,7 +381,7 @@
       "status": "VIGENTE",
       "norma": "ANEEL · Sandbox de Inovação",
       "url": "https://www.aneel.gov.br/sandbox-regulatorio",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -422,7 +423,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 046/2025",
       "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -464,7 +465,7 @@
       "status": "VIGENTE",
       "norma": "TS ANEEL 23/2025",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -515,7 +516,7 @@
         "V2",
         "sHEC"
       ],
-      "verificado_em": "2026-07-20"
+      "verificado_em": "2026-07-21"
     },
     {
       "fato_id": "ANEEL-CP-020-2026-FATOR-X",
@@ -524,7 +525,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "Aviso de Consulta Pública ANEEL nº 20/2026 · DOU 15/07/2026, Ed. 131, Seção 3, p. 104 · aprovada na RPO de 14/07/2026",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-20/2026-719154741",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
