@@ -62,6 +62,7 @@
     .fresh.a{background:var(--amber-lt);color:var(--amber-d);border:1px solid #FCD34D}
     .fresh.r{background:var(--red-lt);color:var(--red);border:1px solid #FCA5A5}
     .fresh.loading{background:#E5E7EB;color:#6B7280;border:1px solid #D1D5DB}
+    .fresh.s{background:#EEF2FF;color:#4338CA;border:1px solid #C7D2FE}
     .card h3{font-family:var(--f-sans);font-size:16px;font-weight:700;color:var(--navy);line-height:1.25;margin-bottom:5px}
     .card .desc{font-size:13px;color:var(--grey);line-height:1.5;margin:0 0 12px;flex:1}
     .card .meta{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px dashed var(--line);padding-top:10px;margin-top:auto}
@@ -123,7 +124,7 @@
 <h2 class="sec">Folder-mestre &amp; Agenda de eventos</h2>
 <p class="sec-sub">Página inicial do site (URL nua) e a agenda viva do setor — cada uma em sua caixa. Acompanhe de qualquer lugar.</p>
 <div class="grid">
-  <div class="card hub" data-file="index.html">
+  <div class="card hub" data-file="Fatos_Regulatorios_Folder_SOA.json">
     <div class="top">
       <span class="vetor">Folder-mestre · página inicial</span>
       <span class="fresh loading" data-fresh></span>
@@ -135,7 +136,7 @@
       <a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/index.html">Abrir</a>
     </div>
   </div>
-  <div class="card hub" data-file="eventos-soa.html">
+  <div class="card hub" data-file="Agenda_Eventos_Publico_SOA.json">
     <div class="top">
       <span class="vetor">Monitor de Eventos · agenda viva</span>
       <span class="fresh loading" data-fresh></span>
@@ -147,7 +148,7 @@
       <a class="open" target="_blank" rel="noopener" href="https://trigocom-code.github.io/financiamento-de-usinas/eventos-soa.html">Abrir</a>
     </div>
   </div>
-  <div class="card hub" data-file="inscricoes-eventos-soa.html">
+  <div class="card hub" data-file="inscricoes-eventos-soa.html" data-static>
     <div class="top">
       <span class="vetor">Inscrição para Eventos · SP</span>
       <span class="fresh loading" data-fresh></span>
@@ -503,6 +504,14 @@
   function render(card, d, origem) {
     const tsEl = card.querySelector('[data-ts]');
     const fEl = card.querySelector('[data-fresh]');
+    // Materiais ESTATICOS (sem JSON em runtime) nao decaem: mostram a data da ultima
+    // edicao real, sem alarme de defasagem. Regra canonica secao 4.4: nao falsear o selo.
+    if (card.hasAttribute('data-static')) {
+      tsEl.innerHTML = '<b>Última edição:</b><br>' + fmt(d);
+      fEl.className = 'fresh s';
+      fEl.textContent = 'referência · estático';
+      return;
+    }
     const diffH = (Date.now() - d.getTime()) / 36e5;
     const cls = classify(diffH);
     tsEl.innerHTML = '<b>Última regeneração' + (origem ? ' (' + origem + ')' : '') + ':</b><br>' + fmt(d);
