@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-07-23T08:25:02-03:00",
+                  "gerado_em":  "2026-07-23T12:25:03-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
@@ -20,13 +20,14 @@
                      "_QSV_Matriz_Catalogo_por_link.html":  "2026-07-04T15:58:27-03:00",
                      "acesso-transmissao-pnast.html":  "2026-07-05T12:46:10-03:00",
                      "acu-iii-lrcap-soa.html":  "2026-07-09T22:44:35-03:00",
+                     "Agenda_Eventos_Publico_SOA.json":  "2026-07-21T07:30:26-03:00",
                      "ancilares-auditaveis-soa.html":  "2026-07-09T23:06:28-03:00",
                      "arq-com-cto-otavio-a1b7.html":  "2026-07-04T21:48:43-03:00",
                      "baterias-curtailment.html":  "2026-07-16T08:50:13-03:00",
                      "bitcoin-verde-soa.html":  "2026-07-13T17:31:55-03:00",
                      "capital-verde-usinas.html":  "2026-07-05T12:17:07-03:00",
                      "carta-ane-acu-iii-soa.html":  "2026-07-09T11:19:32-03:00",
-                     "Catalogo_Vivos_SOA.html":  "2026-07-13T18:04:57-03:00",
+                     "Catalogo_Vivos_SOA.html":  "2026-07-23T11:22:02-03:00",
                      "catalogo-vetores-soa.html":  "2026-07-04T23:42:40-03:00",
                      "certificacao-esg-auditavel.html":  "2026-07-05T12:17:05-03:00",
                      "contencioso-curtailment.html":  "2026-07-10T12:45:39-03:00",
