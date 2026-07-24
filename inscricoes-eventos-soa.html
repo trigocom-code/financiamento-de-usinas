@@ -13,7 +13,8 @@ header{background:var(--navy);color:#fff;border-radius:16px;padding:26px 30px;ma
 header .eyebrow{color:var(--laranja);font:700 12px Arial;letter-spacing:.08em;text-transform:uppercase}
 header h1{font-size:26px;margin:8px 0 8px;line-height:1.2}
 header .sub{color:#c7cfe0;font-size:14px}
-.tip{background:#fff6e8;border:1px solid #f6d79a;border-radius:12px;padding:12px 16px;margin:0 0 18px;font-size:13.5px;color:#6b4e12}
+header .note{margin-top:12px;font-size:12px;color:#aeb8cf;border-top:1px solid #23315c;padding-top:10px}
+.tip{background:#fff6e8;border:1px solid #f6d79a;border-radius:12px;padding:12px 16px;margin:14px 0 18px;font-size:13.5px;color:#6b4e12}
 .tip b{color:#8a6100}
 .sec{margin:24px 0 8px}
 .sec h2{color:var(--navy);font-size:19px;border-left:4px solid var(--laranja);padding-left:10px}
@@ -22,6 +23,7 @@ header .sub{color:#c7cfe0;font-size:14px}
 .item .date{flex:none;min-width:74px;text-align:center}
 .item .date .d{font:800 18px Arial;color:var(--navy);line-height:1}
 .item .date .m{font:700 11px Arial;color:var(--royal);text-transform:uppercase;letter-spacing:.04em}
+.item .date .cd{display:inline-block;margin-top:6px;font:700 10px Arial;color:var(--sub);background:#eef0f3;border-radius:999px;padding:2px 7px;white-space:nowrap}
 .item .body{flex:1;min-width:0}
 .item .t{font-weight:700;color:var(--navy);font-size:14.5px}
 .item .dt{color:var(--sub);font-size:13px;margin-top:3px}
@@ -34,52 +36,84 @@ header .sub{color:#c7cfe0;font-size:14px}
 .act a{display:inline-block;background:var(--royal);color:#fff;font:700 12.5px Arial;text-decoration:none;padding:9px 16px;border-radius:8px;white-space:nowrap}
 .act a:hover{background:#16498d}
 .act a.wait{background:#eef0f3;color:var(--sub)}
+.loading{color:#9aa0a6;font:italic 14px Arial;padding:20px 0}
 .foot{background:var(--navy);color:#c7cfe0;border-radius:16px;padding:22px 24px 26px;margin:30px 0 0;text-align:center;font:400 12px/1.7 Arial}
 .foot b{color:#fff}.foot .y{color:#FEC73D}
 @media(max-width:620px){.item{flex-wrap:wrap}.act{align-self:flex-start}}
 </style></head><body>
-<div class="soa-stamp"><span>● Atualizado em 11/07/2026</span></div>
+<div class="soa-stamp"><span id="stampDate">●</span></div>
 <div class="wrap">
 <img class="cc" src="https://trigocom-code.github.io/financiamento-de-usinas/Solar_One-Logo_capa.png" alt="SOA/SOS — Inscrições de Eventos"/>
 <header>
   <div class="eyebrow">Trilho de Inscrições · Eventos SP</div>
   <h1>Inscrição para Eventos — São Paulo</h1>
   <div class="sub">Links diretos de inscrição dos eventos do setor em SP. Um clique cada — inscreva-se você mesmo.</div>
+  <div class="note" id="metaNote">Carregando as inscrições…</div>
 </header>
-<div class="tip">💡 <b>Inscreva-se sempre com o e-mail <u>trigo.com@gmail.com</u></b> — assim a confirmação e o convite/ingresso caem direto na sua caixa. Eventos fora de SP não entram aqui: são para <b>conversar antes</b> de decidir a presença.</div>
+<div class="tip" id="tipBox">💡 Carregando…</div>
 
-<div class="sec"><h2>✅ Credenciamento aberto — inscrever agora</h2><div class="scount">Inscrição disponível · 9 eventos</div></div>
-
-<div class="item"><div class="date"><div class="d">27</div><div class="m">JUL</div></div><div class="body"><div class="t">ExpoElétrica 2026 — Feira e Fórum de Instalações Elétricas</div><div class="dt">27–28/07 · Frei Caneca, São Paulo/SP</div><div class="meta"><span class="badge free">Gratuito</span></div></div><div class="act"><a href="https://euvou.events/ExpoEletrica2026" target="_blank" rel="noopener">Inscrever-se</a></div></div>
-
-<div class="item"><div class="date"><div class="d">28</div><div class="m">JUL</div></div><div class="body"><div class="t">II BioComForest 2026 — Biomassa, Compostagem e Floresta</div><div class="dt">28–30/07 · UNESP Botucatu/SP · COGEN</div><div class="meta"><span class="badge pago">Pago</span></div></div><div class="act"><a href="https://eventos.fepaf.org.br/evento/ev270--ii-biocomforest" target="_blank" rel="noopener">Inscrever-se</a></div></div>
-
-<div class="item"><div class="date"><div class="d">11</div><div class="m">AGO</div></div><div class="body"><div class="t">13º Fórum do Biogás — COGEN / ABiogás</div><div class="dt">11–12/08 · São Paulo Expo, SP</div><div class="meta"><span class="badge pago">Pago</span></div></div><div class="act"><a href="https://www.sympla.com.br/evento/13-forum-do-biogas/3297101" target="_blank" rel="noopener">Inscrever-se</a></div></div>
-
-<div class="item"><div class="date"><div class="d">19</div><div class="m">AGO</div></div><div class="body"><div class="t">4ª JTCI — Jornada Técnica do Conhecimento em Inspeção</div><div class="dt">19–20/08 · Milenium Centro de Convenções, SP · ABENDI</div><div class="meta"><span class="badge pago">Pago</span></div></div><div class="act"><a href="https://forms.gle/AxxAbbw74yawU2D88" target="_blank" rel="noopener">Inscrever-se</a></div></div>
-
-<div class="item"><div class="date"><div class="d">25</div><div class="m">AGO</div></div><div class="body"><div class="t">Intersolar South America 2026 (The smarter E)</div><div class="dt">25–27/08 · Expo Center Norte, SP</div><div class="meta"><span class="badge free">Feira gratuita</span><span class="badge pago">Congresso pago</span></div></div><div class="act"><a href="https://euvou.events/thesmarteresouthamerica2026" target="_blank" rel="noopener">Inscrever-se</a></div></div>
-
-<div class="item"><div class="date"><div class="d">06</div><div class="m">OUT</div></div><div class="body"><div class="t">Smart Grid Fórum 2026 (18º Latino-Americano) — COGEN</div><div class="dt">06–07/10 · Frei Caneca, São Paulo/SP</div><div class="meta"><span class="badge pago">Pago</span></div></div><div class="act"><a href="https://www.smartgrid.com.br/2,936,inscricao" target="_blank" rel="noopener">Inscrever-se</a></div></div>
-
-<div class="item"><div class="date"><div class="d">06</div><div class="m">OUT</div></div><div class="body"><div class="t">Data Center World Brasil 2026 (com Futurecom)</div><div class="dt">06–08/10 · São Paulo Expo, SP</div><div class="meta"><span class="badge pago">Pago</span></div></div><div class="act"><a href="https://credenciamento.informamarkets.com.br/BRZ26DCB/credenciamento2026/tickets" target="_blank" rel="noopener">Inscrever-se</a></div></div>
-
-<div class="item"><div class="date"><div class="d">27</div><div class="m">OUT</div></div><div class="body"><div class="t">Brazil Windpower 2026 — ABEEólica + GWEC</div><div class="dt">27–29/10 · São Paulo Expo, SP</div><div class="meta"><span class="badge pago">Pago</span></div></div><div class="act"><a href="https://credenciamento.informamarkets.com.br/BRZ26BWP/credenciamento26/tickets" target="_blank" rel="noopener">Inscrever-se</a></div></div>
-
-<div class="item"><div class="date"><div class="d">18</div><div class="m">NOV</div></div><div class="body"><div class="t">Energy Storage Brasil 2026 — edição São Paulo — ABGD</div><div class="dt">18–19/11 · São Paulo/SP</div><div class="meta"><span class="badge pago">Credenciamento aberto</span></div></div><div class="act"><a href="https://saopaulo.energystoragebrasil.com/register" target="_blank" rel="noopener">Inscrever-se</a></div></div>
-
-<div class="sec"><h2>⏳ Inscrição a abrir — vigiar</h2><div class="scount">Ainda não abriu; o link leva à página oficial · 3 eventos</div></div>
-
-<div class="item"><div class="date"><div class="d">30</div><div class="m">SET</div></div><div class="body"><div class="t">ABSOLAR Storage Leaders (2ª ed. · Pré-LRCAP Baterias)</div><div class="dt">30/09 · São Paulo/SP · confirmar local</div><div class="meta"><span class="badge abrir">A abrir</span></div></div><div class="act"><a href="https://storageleaders.absolar.org.br/" target="_blank" rel="noopener" class="wait">Ver página</a></div></div>
-
-<div class="item"><div class="date"><div class="d">—</div><div class="m">SET</div></div><div class="body"><div class="t">Seminário Anual da ANE — Academia Nacional de Engenharia</div><div class="dt">setembro (data a confirmar) · São Paulo/SP</div><div class="meta"><span class="badge abrir">A abrir</span></div></div><div class="act"><a href="https://anebrasil.org.br/eventos-ane/" target="_blank" rel="noopener" class="wait">Ver página</a></div></div>
-
-<div class="item"><div class="date"><div class="d">02</div><div class="m">DEZ</div></div><div class="body"><div class="t">6º Encontro Nacional ABSOLAR</div><div class="dt">02–03/12 · São Paulo/SP</div><div class="meta"><span class="badge abrir">A abrir</span></div></div><div class="act"><a href="https://eventos.absolar.org.br/" target="_blank" rel="noopener" class="wait">Ver página</a></div></div>
+<div id="conteudo"><p class="loading">Carregando o trilho de inscrições da base pública…</p></div>
 
 <div class="foot">
   <b>SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40<br>
   <span class="y">Trilho de inscrições — eventos do setor elétrico em SP · inscreva-se com trigo.com@gmail.com</span><br>
-  <span style="color:#8a94a6;font-size:11px">Links de inscrição verificados em 11/07/2026 · confirmar valores/datas na página oficial. Três pedidos de patente depositados no INPI.</span>
+  <span id="footNote" style="color:#8a94a6;font-size:11px">Confirmar valores/datas na página oficial. Três pedidos de patente depositados no INPI.</span>
 </div>
 </div>
+<script>
+(function(){
+  var RAW="https://raw.githubusercontent.com/trigocom-code/financiamento-de-usinas/main/Agenda_Inscricoes_Publico_SOA.json";
+  var MES=["JAN","FEV","MAR","ABR","MAI","JUN","JUL","AGO","SET","OUT","NOV","DEZ"];
+  function esc(t){var d=document.createElement("div");d.textContent=t==null?"":String(t);return d.innerHTML;}
+  function parseD(s){if(!s)return null;var p=String(s).split("-");return new Date(+p[0],+p[1]-1,+p[2]);}
+  function hoje(){var n=new Date();return new Date(n.getFullYear(),n.getMonth(),n.getDate());}
+  // Um evento sai do trilho quando sua data_fim ja passou. Sem data (a confirmar) permanece.
+  function ativo(ev){var f=parseD(ev.data_fim);return !f || f>=hoje();}
+  function badges(arr){return (arr||[]).map(function(b){return '<span class="badge '+esc(b.cls||'pago')+'">'+esc(b.label)+'</span>';}).join("");}
+  function dateBlock(ev){
+    var di=parseD(ev.data_ini);
+    var d = di ? ("0"+di.getDate()).slice(-2) : esc(ev.dia||"—");
+    var m = di ? MES[di.getMonth()] : esc(ev.mes||"");
+    var cd="";
+    if(di){var dias=Math.round((di-hoje())/86400000); if(dias>0)cd='<div class="cd">faltam '+dias+'d</div>'; else if(dias===0)cd='<div class="cd">hoje</div>';}
+    return '<div class="date"><div class="d">'+d+'</div><div class="m">'+m+'</div>'+cd+'</div>';
+  }
+  function itemAberto(ev){
+    return '<div class="item">'+dateBlock(ev)+
+      '<div class="body"><div class="t">'+esc(ev.titulo)+'</div>'+
+      (ev.quando?'<div class="dt">'+esc(ev.quando)+'</div>':'')+
+      '<div class="meta">'+badges(ev.badges)+'</div></div>'+
+      '<div class="act"><a href="'+esc(ev.url)+'" target="_blank" rel="noopener">'+esc(ev.cta||"Inscrever-se")+'</a></div></div>';
+  }
+  function itemAbrir(ev){
+    return '<div class="item">'+dateBlock(ev)+
+      '<div class="body"><div class="t">'+esc(ev.titulo)+'</div>'+
+      (ev.quando?'<div class="dt">'+esc(ev.quando)+'</div>':'')+
+      '<div class="meta"><span class="badge abrir">A abrir</span></div></div>'+
+      '<div class="act"><a href="'+esc(ev.url)+'" target="_blank" rel="noopener" class="wait">Ver página</a></div></div>';
+  }
+  function secao(titulo,sub,lista,fn){
+    if(!lista||!lista.length) return "";
+    return '<div class="sec"><h2>'+esc(titulo)+'</h2><div class="scount">'+esc(sub)+' · '+lista.length+' evento(s)</div></div>'+lista.map(fn).join("");
+  }
+  fetch(RAW+"?v="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){
+    var m=j._meta||{};
+    var _dt=(m.atualizado_em? m.atualizado_em.split("-").reverse().join("/") : "—");
+    document.getElementById("metaNote").textContent="Atualizado em "+_dt+" · links diretos de credenciamento";
+    var _sd=document.getElementById("stampDate"); if(_sd)_sd.textContent="● Atualizado em "+_dt;
+    document.getElementById("tipBox").innerHTML="💡 <b>Inscreva-se sempre com o e-mail <u>trigo.com@gmail.com</u></b> — "+esc((m.dica||"").replace(/^[^—]*—\s*/,""));
+    var _vf=(m.links_verificados_em? m.links_verificados_em.split("-").reverse().join("/") : _dt);
+    document.getElementById("footNote").textContent="Links de inscrição verificados em "+_vf+" · confirmar valores/datas na página oficial. Três pedidos de patente depositados no INPI.";
+    var abertos=(j.abertos||[]).filter(ativo);
+    var aAbrir=(j.a_abrir||[]).filter(ativo);
+    var html=
+      secao("✅ Credenciamento aberto — inscrever agora","Inscrição disponível",abertos,itemAberto)+
+      secao("⏳ Inscrição a abrir — vigiar","Ainda não abriu; o link leva à página oficial",aAbrir,itemAbrir);
+    document.getElementById("conteudo").innerHTML = html || '<p class="loading">Sem inscrições abertas no momento.</p>';
+  }).catch(function(){
+    document.getElementById("conteudo").innerHTML =
+      '<p class="loading">Não foi possível carregar o trilho de inscrições agora (sem conexão ou base indisponível). Tente recarregar.</p>';
+  });
+})();
+</script>
 </body></html>
