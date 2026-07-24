@@ -671,6 +671,74 @@
       "sem_soa": "produto de mercado sem lastro de origem verificável",
       "status": "verificado",
       "fonte": "ANEEL CP 17/2026"
+    },
+    {
+      "id": "conc_apoio_auditar",
+      "ator": [
+        "concessionaria"
+      ],
+      "vetores": [
+        "Gato Solar auditável"
+      ],
+      "canal": "auditoria",
+      "titulo": "Apoio ao dever de auditar a base MMGD",
+      "base_legal": "CP ANEEL 009/2026 · Decisão 8ª RPO 22/04/2026",
+      "mecanismo": "A reconciliação remota instrui a auditoria obrigatória dos aumentos de potência à revelia.",
+      "vigencia": "em deliberação",
+      "sem_soa": "detecção só por estimativa, mais contestável.",
+      "status": "verificado",
+      "fonte": "F1 ANEEL (NT 107/2026)"
+    },
+    {
+      "id": "conc_prova_defensavel",
+      "ator": [
+        "concessionaria"
+      ],
+      "vetores": [
+        "Gato Solar auditável"
+      ],
+      "canal": "auditoria",
+      "titulo": "Prova mais defensável que a estimativa",
+      "base_legal": "NT 107/2026-SFT/ANEEL §III.7",
+      "mecanismo": "Teto físico horário fecha a lacuna do ILR que as próprias distribuidoras apontam.",
+      "vigencia": "vigente",
+      "sem_soa": "'limitações de medição/modelagem ampliam o questionamento' (Light).",
+      "status": "verificado",
+      "fonte": "F1 ANEEL"
+    },
+    {
+      "id": "conc_priorizacao",
+      "ator": [
+        "concessionaria"
+      ],
+      "vetores": [
+        "Gato Solar auditável"
+      ],
+      "canal": "auditoria",
+      "titulo": "Priorização de inspeções e eficiência de campo",
+      "base_legal": "—",
+      "mecanismo": "Ranking dos maiores desvios; a inspeção amostral (32% do universo suspeito) não escala para ~43 mi de UCs.",
+      "vigencia": "operacional",
+      "sem_soa": "vistoria cega, custo alto.",
+      "status": "verificado",
+      "fonte": "F1 ANEEL (NT 107/2026, Tab.1)"
+    },
+    {
+      "id": "conc_reducao_contestacao",
+      "ator": [
+        "concessionaria"
+      ],
+      "vetores": [
+        "Gato Solar auditável"
+      ],
+      "canal": "auditoria",
+      "titulo": "Redução de contestação do critério",
+      "base_legal": "Manifestação ABSOLAR/ABGD 12/06/2026",
+      "mecanismo": "Método auditável e reproduzível — o que o setor pediu ('critérios passíveis de auditoria independente').",
+      "vigencia": "vigente",
+      "sem_soa": "critério questionável.",
+      "status": "verificado",
+      "fonte": "F3 ABSOLAR"
     }
   ],
   "pacotes": [
@@ -874,6 +942,30 @@
       "titulo": "HEC + Evidence Pack de origem para comercialização/PSM",
       "formato": "JSON assinado · PDF",
       "descricao": "Certificado horário de origem renovável reconciliado com fonte oficial, para produtos de comercialização no novo desenho de mercado (PSM)."
+    },
+    {
+      "vetor": "Gato Solar auditável",
+      "titulo": "Reconciliação potência declarada × teto físico plausível",
+      "formato": "planilha por unidade · hora a hora · hash de integridade",
+      "descricao": "Injeção declarada × teto de geração fisicamente plausível (irradiância NASA POWER × pvlib × envelope declarado). É um teto físico plausível, não medição da usina."
+    },
+    {
+      "vetor": "Gato Solar auditável",
+      "titulo": "Evidence Pack por unidade",
+      "formato": "PDF · insumos, critérios, limitações, classificação, rastreio",
+      "descricao": "Cadeia de custódia da inconsistência de potência/enquadramento, para instruir a auditoria da concessionária. A SOA prova; a concessionária decide."
+    },
+    {
+      "vetor": "Gato Solar auditável",
+      "titulo": "Lista priorizada de auditoria",
+      "formato": "ranking · maiores desvios declarado × possível",
+      "descricao": "Prioriza a vistoria da concessionária nos maiores desvios — apoia, não substitui a vistoria quando exigida."
+    },
+    {
+      "vetor": "Gato Solar auditável",
+      "titulo": "Relatório de utilidade do método",
+      "formato": "PDF · cobertura, acerto na amostra, limitações",
+      "descricao": "Transparência sobre o que o método cobre e onde não separa (overpaneling/overdelivery/ILR)."
     }
   ],
   "_schema_cruzamento": "cruzamento_regulatorio[]: liga cada fato do monitor regulatório vivo (Fatos_Regulatorios_Folder_SOA.json, por fato_id) a um ou mais vetores canônicos, com a frase 'porque_certificar'. A JS junta pelo fato_id e puxa tema/valor/status/qsv_cor AO VIVO do monitor — o monitor diário atualiza o fato e a tese acompanha sozinha. Só fatos presentes em fatos[] (renderizados) entram; _pendentes_verificacao não.",
