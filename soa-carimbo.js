@@ -75,12 +75,14 @@
     var dd = docDate();
     if (dd) setStamp('● Atualizado em ' + dateOnly(dd));
 
-    // 2) Cache local (evita bater na API a cada refresh / em muitas abas —
-    //    era isso que estourava o rate-limit e ressuscitava a data velha).
+    // 2) Cache local: mostra na hora (sem flash da data velha), MAS sempre revalida
+    //    abaixo com o commit real. Assim uma pagina recem-publicada NAO fica presa
+    //    numa data velha por 6h. So evita re-fetch em refresh muito rapido (<60s).
     try {
       var raw = localStorage.getItem(CK);
       if (raw) { var o = JSON.parse(raw);
-        if (o && o.t && (Date.now() - o.t) < TTL && o.d) { setStamp('● Atualizado em ' + o.d); return; } }
+        if (o && o.d) { setStamp('● Atualizado em ' + o.d);
+          if (o.t && (Date.now() - o.t) < 60000) return; } }
     } catch (e) {}
 
     // 3) Fonte da verdade: data/hora do ULTIMO COMMIT do proprio arquivo.
