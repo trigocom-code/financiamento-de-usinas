@@ -3,8 +3,8 @@
     "orgao": "ONS",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ONS — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-07-20",
-    "proxima_revisao_sugerida": "2026-07-21",
+    "verificado_em": "2026-07-21",
+    "proxima_revisao_sugerida": "2026-07-22",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ONS conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Dados Abertos vão direto pro banco SOA.",
     "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO. Submódulos e NTs são regulatórios — banco cego.",
@@ -20,7 +20,8 @@
     "nota_run_2026_07_17": "Varredura de 17/07: INCONCLUSIVA por esta via. O portal do ONS é uma SPA (SharePoint): tanto ons.org.br quanto /paginas/noticias retornam apenas o menu de navegação serializado, sem lista de notícias — nem via web_fetch nem via render JS. A ausência de achados NÃO é prova de ausência de publicação. Nenhum fato tocado. Pendências mantidas: NT-02 de quantitativos de armazenamento (30/09) e RT-ONS DPL 0532/2023 revisado, não publicado.",
     "nota_run_2026_07_18": "Varredura de 18/07 (sabado): SEM ALTERACAO. Nenhum ato oficial novo na janela. Nenhum verificado_em de fato avancado; _meta.verificado_em reflete apenas a data da varredura. Unico material novo do dia foi ponteiro F3 (GTGC ABSOLAR 17/07), registrado em Fatos_ANEEL e Fatos_MME.",
     "nota_run_2026_07_19": "Varredura de 19/07 (domingo): SEM ATO OFICIAL NOVO detectado por F2. PNAST 2026 (NT-ONS DPL 0040/2026; 20,31 GW admitidos) e Portaria 129/MME sao de inicio de julho, nao novos. Portal ONS (SPA SharePoint) sem via automatizada — ausencia de achado NAO e prova de ausencia de publicacao. Pendencias mantidas (NT-02 armazenamento 30/09; RT-ONS DPL 0532/2023). Nenhum verificado_em de fato avancado.",
-    "nota_run_2026_07_20": "ONS INCONCLUSIVO nesta run. Tanto a home quanto /paginas/imprensa/noticias sao renderizadas por SharePoint/Angular e retornaram apenas o template do menu, sem popular a lista de noticias - nem por web_fetch nem por render JS. Portanto o 'sem alteracao' do ONS e NAO-VERIFICADO, nao negativo verificado. Seguem pendentes: NT-02, RT-ONS DPL 0532/2023 e a apresentacao ONS->ANEEL da NT 107/2026-SFT (prevista 'preferencialmente' para 29/07). PROPOSTA AO CEO: definir para o ONS uma via canonica alternativa (Acervo Digital / Documentos e Publicacoes, ou o feed do Linkedin/WhatsApp oficial) para que o negativo passe a ser verificavel. Nenhum verificado_em de fato foi avancado."
+    "nota_run_2026_07_20": "ONS INCONCLUSIVO nesta run. Tanto a home quanto /paginas/imprensa/noticias sao renderizadas por SharePoint/Angular e retornaram apenas o template do menu, sem popular a lista de noticias - nem por web_fetch nem por render JS. Portanto o 'sem alteracao' do ONS e NAO-VERIFICADO, nao negativo verificado. Seguem pendentes: NT-02, RT-ONS DPL 0532/2023 e a apresentacao ONS->ANEEL da NT 107/2026-SFT (prevista 'preferencialmente' para 29/07). PROPOSTA AO CEO: definir para o ONS uma via canonica alternativa (Acervo Digital / Documentos e Publicacoes, ou o feed do Linkedin/WhatsApp oficial) para que o negativo passe a ser verificavel. Nenhum verificado_em de fato foi avancado.",
+    "nota_run_2026_07_21": "Run de 21/07: 1 fato NOVO em VERDE — ONS-RESOLUCAO-CMSE-1-2026-DEVERES. Precedente de método: os deveres do ONS foram ancorados pelo ATO no DOU (Resolução CMSE nº 1/2026), contornando a cegueira estrutural do portal do ONS. O portal foi reaberto nesta run (home + /paginas/noticias, render JS com espera de 3s) e novamente retornou apenas o template de menu SharePoint/Angular — o 'sem alteração' do ONS por portal permanece NÃO VERIFICÁVEL. Nenhum outro fato ONS teve verificado_em bumpado (R2)."
   },
   "fatos": [
     {
@@ -30,7 +31,7 @@
       "status": "VIGENTE",
       "norma": "NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (conexão/grid-forming) · limiares na Portaria MME 136/2026 Art. 7º + Art. 4º §13",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -72,7 +73,7 @@
       "status": "VIGENTE",
       "norma": "ONS · Submódulo 9 (Procedimentos de Rede)",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -114,7 +115,7 @@
       "status": "VIGENTE",
       "norma": "ONS · REN ANEEL 903/2020",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -156,7 +157,7 @@
       "status": "AGENDADO",
       "norma": "NT ONS PNAST 2026 (publicação 31/08/2026) · 1ª Temporada de Acesso: 367 cadastramentos (07/07) · 20,31 GW habilitados = 14,56 GW geração + 5,74 GW consumo (08/07)",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -213,7 +214,7 @@
       "status": "AGENDADO",
       "norma": "NT metodologia: NT-ONS DPL 0057/2026 = EPE-DEE-RE-067/2026-R0 (publicada 07/07/2026) · NT quantitativos: Art. 11 §4º da Portaria MME 136/2026 (prazo 30/09/2026)",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -262,7 +263,7 @@
       "status": "VIGENTE",
       "norma": "ONS · Sandbox Controle de Tensão",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-07-20",
+      "verificado_em": "2026-07-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -295,6 +296,45 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
+    },
+    {
+      "fato_id": "ONS-RESOLUCAO-CMSE-1-2026-DEVERES",
+      "tema": "Deveres do ONS na Resolução CMSE nº 1/2026 — CRef, metodologia dos estudos prospectivos e avaliação ex-post do despacho por GE",
+      "valor": "ANCORADO NO DOU (21/07/2026), sem depender do portal do ONS: a RESOLUÇÃO CMSE Nº 1, DE 6 DE JULHO DE 2026 (DOU de 08/07/2026, Edição 126, Seção 1, Página 134) atribui três deveres expressos ao Operador Nacional do Sistema Elétrico no rito de autorização de despacho de geração por garantia de suprimento energético (GE): (1) Art. 2º, II — apresentar ao CMSE, previamente a cada autorização ou revisão, estudos prospectivos conjunturais e respectivas premissas, análise de causa/consequência em termos de ganho percentual de armazenamento nos reservatórios de regularização, análise de soluções alternativas, resultados parciais (quando houver autorização vigente) e justificativa da alternativa recomendada; (2) Art. 3º, I — elaborar estudo técnico com propostas de Curva Referencial de Armazenamento (CRef) para o ano subsequente até NOVEMBRO de cada ano (o CMSE aprova até dezembro); (3) Art. 4º, I — disponibilizar, em até 180 (cento e oitenta) dias da publicação da Resolução, a METODOLOGIA de elaboração ordinária dos estudos prospectivos conjunturais, 'observando o princípio da transparência', com atualizações quando houver alterações relevantes; e (4) Art. 6º, I — apresentar, anualmente até a terceira reunião ordinária do CMSE do ano subsequente, relatório de avaliação com as causas das deliberações, os MONTANTES DE GERAÇÃO VERIFICADOS e a análise comparativa entre resultados energéticos PREVISTOS E VERIFICADOS. RELEVÂNCIA SOA/SOS: é obrigação regulatória de publicar metodologia e de comparar previsto contra verificado — o mesmo eixo ex-post da camada de evidência. Convergência de arcabouço; não menciona a SOA/SOS.",
+      "status": "VIGENTE",
+      "norma": "Resolução CMSE nº 1, de 6 de julho de 2026, arts. 2º, II; 3º, I; 4º, I; e 6º, I — DOU 08/07/2026, Ed. 126, Seção 1, p. 134",
+      "url": "https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
+      "verificado_em": "2026-07-21",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "score_soa": 11,
+      "vetores_afetados": [
+        "V3",
+        "V4"
+      ],
+      "qsv_cor": "VERDE",
+      "qsv_origem_classificacao": "F2_DOU_ato_lido_integralmente_21jul2026 + F1_MME_noticia_09jul2026 (R2 atendida)",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F2_DOU",
+          "ref": "RESOLUÇÃO CMSE Nº 1, DE 6 DE JULHO DE 2026 — DOU 08/07/2026, Edição 126, Seção 1, Página 134 — https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
+          "trecho_literal": "Art. 3º [...] I - o ONS deverá elaborar estudo técnico com propostas de CRef para o ano subsequente, até novembro de cada ano [...] Art. 4º [...] I - o ONS deverá disponibilizar, em até 180 (cento e oitenta) dias da publicação desta Resolução, metodologia para elaboração ordinária dos estudos prospectivos conjunturais ao CMSE, observando o princípio da transparência",
+          "nota_qsv": "Ancorado no ato, não no portal do ONS — que permanece inacessível a varredura automatizada (SPA/SharePoint retorna apenas o template de menu, inclusive com render JS e espera de 3s, reteste em 21/07/2026).",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ],
+      "numero_status": "ANCORADO",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-07-21"
+      },
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "orgao": "ONS",
+      "gatilho_revisao": "Publicação da metodologia dos estudos prospectivos pelo ONS (prazo do Art. 4º, I: 180 dias de 08/07/2026, ~04/01/2027 por contagem própria) e primeira CRef aprovada pelo CMSE (até dezembro/2026).",
+      "pendencia_verificacao": "Os deveres estão ancorados no ato. O CUMPRIMENTO por parte do ONS não foi verificado — o portal do ONS segue cego para o monitor. Não afirmar que o ONS publicou metodologia ou CRef sem reabrir a fonte."
     }
   ],
   "_pendentes_verificacao": [],

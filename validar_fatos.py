@@ -39,6 +39,17 @@ def _negado(low, i):
     ctx = low[max(0,i-30):i]
     return any(ng in ctx for ng in NEGACOES)
 
+# Casamento por FRONTEIRA de palavra (evita falso-positivo de substring):
+# 'lider' NAO deve casar dentro de 'Lideres' (Requerimento "de Lideres" no Senado).
+_WB_CACHE = {}
+def _acha_termo(low, termo, start=0):
+    rx = _WB_CACHE.get(termo)
+    if rx is None:
+        rx = re.compile(r"(?<!\w)" + re.escape(termo) + r"(?!\w)", re.IGNORECASE)
+        _WB_CACHE[termo] = rx
+    m = rx.search(low, start)
+    return m.start() if m else -1
+
 def _scan_texto(blob, rotulo, e):
     low = blob.lower()
     for fr in FRASES_ERRO:
@@ -47,10 +58,10 @@ def _scan_texto(blob, rotulo, e):
             if not _negado(low, j): e.append("%s: frase de erro '%s'" % (rotulo, fr)); break
             j = low.find(fr, j+1)
     for t in TERMOS_PROIBIDOS_MARCA:
-        j = low.find(t)
+        j = _acha_termo(low, t)
         while j >= 0:
             if not _negado(low, j): e.append("%s: termo de marca '%s'" % (rotulo, t)); break
-            j = low.find(t, j+1)
+            j = _acha_termo(low, t, j+1)
     for em in EMAILS_PROIBIDOS:
         if em in low: e.append("%s: e-mail proibido '%s' (canonico: @solaroneaccount.com)" % (rotulo, em))
     for m in VETOS_RE.finditer(low):
@@ -121,16 +132,20 @@ def erros_html(base):
     e=[]
     for p in sorted(glob.glob(os.path.join(base,"*.html"))):
         n=os.path.basename(p)
+        # Relatorios internos de QSV (_QSV_*.html) DOCUMENTAM a lista-negra e NAO sao
+        # publicados (nao entram no $nomes de push_fatos_github.ps1). Enumerar os termos
+        # banidos nesses relatorios e uso legitimo, nao overclaim -> nao escanear.
+        if n.startswith("_QSV_"): continue
         try:
             with open(p,encoding="utf-8",errors="replace") as f: txt=html.unescape(f.read())
         except Exception as ex: e.append("%s: leitura falhou — %s" % (n, ex)); continue
         low=re.sub(r"<script[^>]*src=[^>]*>","",txt.lower())
         for t in ["ninguém mais tem","ninguem mais tem","mais profundo do brasil","maior banco d",
                   "incontestável","incontestavel","padrão mundial","padrao mundial","anti-fraude","antifraude"]:
-            j=low.find(t)
+            j=_acha_termo(low,t)
             while j>=0:
                 if not _negado(low,j): e.append("%s: termo proibido em material '%s'" % (n, t)); break
-                j=low.find(t,j+1)
+                j=_acha_termo(low,t,j+1)
         for em in EMAILS_PROIBIDOS:
             if em in low: e.append("%s: e-mail proibido '%s'" % (n, em))
         for m in VETOS_RE.finditer(low):
