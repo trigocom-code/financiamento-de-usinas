@@ -1,12 +1,19 @@
 {
  "_meta": {
   "titulo": "Agenda do Setor Elétrico — Monitor SOA/SOS",
-  "atualizado_em": "2026-07-23",
+  "atualizado_em": "2026-07-24",
   "fonte": "Monitor de Eventos SOA/SOS · fontes oficiais (gov.br/ANEEL · EPE · MME · CCEE · Senado · TCU) + associações do setor (CIGRE-Brasil, ANE, COGEN, APINE, ABGD, ABSOLAR, ABEEólica) e imprensa setorial",
   "nota": "Agenda pública de datas do setor elétrico. Eventos de associação e sinais de fontes secundárias marcados 'A VERIFICAR'; confirmar no ato/página oficial antes de citar.",
   "nota_run_2026_07_23": "Varredura de 23/07. DOIS DESTRAVAMENTOS. (1) Saiu a pauta da Reunião Pública Ordinária da Diretoria da ANEEL de 28/07 (dois veículos independentes datados de 23/07): fechamento da Consulta Pública nº 45/2019 sobre o rateio contábil do curtailment (dir. Fernando Mosna concluindo após pedido de vista), abertura de duas consultas públicas para o edital do leilão de baterias de dezembro, abertura de consulta sobre a regulamentação da PNAST e homologação parcial do leilão de reserva de capacidade de 2026 (produtos do consórcio EBrasil/Celne, dir. Willamy Frota — leilão térmico, distinto do de armazenamento). A pauta é fonte secundária convergente; as páginas oficiais de pauta não abrem por renderização. (2) A Portaria Normativa MME nº 140, de 18/07/2026 (publicada no Diário Oficial em 21/07), instituiu o Termo de Compromisso de ressarcimento de cortes de geração renovável (Lei nº 15.269/2025): período de 01/09/2023 a 25/11/2025, valor estimado de cerca de R$ 3,3 bilhões, adesão dos agentes em até 20 dias da publicação (prazo em 10/08/2026), com compensação por abatimento contábil na CCEE. O acórdão do TCU sobre o acompanhamento do leilão de armazenamento (aprovado em 15/07) segue não lido em fonte oficial."
  },
  "recentes": [
+  {
+   "data": "2026-07-24",
+   "titulo": "ANEEL publica duas notas técnicas propondo consultas públicas para os editais dos Leilões de Reserva de Capacidade (LRCAP)",
+   "detalhe": "Sinalizado pela ABSOLAR (GT Geração Centralizada/Armazenamento) em 24/07. Confirmar o número das CPs na ANEEL.",
+   "status": "VIGENTE",
+   "fonte": "ABSOLAR (GT GC/AR, 24/07) · a confirmar em F1 ANEEL"
+  },
   {
    "data": "2026-07-21",
    "titulo": "MME institui o ressarcimento de cortes de geração renovável (Portaria Normativa nº 140/2026)",
@@ -215,6 +222,13 @@
    "fonte": "gov.br/ANEEL"
   },
   {
+   "data": "2026-08-15",
+   "titulo": "CP nº 21/2026 — Prêmio ANEEL de Inovação 2026 encerra participação",
+   "detalhe": "Período de participação de 17/07 a 15/08/2026.",
+   "status": "AGENDADO",
+   "fonte": "ANEEL — CP 21/2026"
+  },
+  {
    "data": "2026-08-18",
    "titulo": "Circuito Deliberativo Público Ordinário (CPDO) da Diretoria da ANEEL",
    "detalhe": "Calendário oficial de 2026.",
@@ -362,6 +376,13 @@
    "detalhe": "Modalidade híbrida, leilões sequenciais, contratos por quantidade, qualquer fonte, suprimento de 2 anos. A data consta da proposta em consulta e pode mudar com o edital final.",
    "status": "CONFIRMADO",
    "fonte": "gov.br/ANEEL"
+  },
+  {
+   "data": "2026-11-13",
+   "titulo": "Sessão pública dos Leilões de Energia Existente A-1/A-2/A-3 (nº 7/8/9-2026)",
+   "detalhe": "Editais em aprimoramento pela CP 019/2026 (contribuições até 24/08). Sessão prevista para 13/11/2026, modalidade híbrida.",
+   "status": "AGENDADO",
+   "fonte": "ANEEL/CCEE — CP 019/2026"
   },
   {
    "data": "2026-11-16",
