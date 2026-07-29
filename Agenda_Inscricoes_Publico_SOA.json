@@ -1,7 +1,7 @@
 {
  "_meta": {
   "titulo": "Inscrições — Eventos do Setor Elétrico em SP — Monitor SOA/SOS",
-  "atualizado_em": "2026-07-23",
+  "atualizado_em": "2026-07-28",
   "links_verificados_em": "2026-07-11",
   "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ABENDI, ANE)",
   "nota": "Trilho de inscrições dos eventos do setor em São Paulo. Cada item leva ao link oficial de credenciamento. Inscrever-se com trigo.com@gmail.com. Datas/valores confirmar na página oficial. Eventos com credenciamento a abrir levam à página oficial do evento. O monitor regenera este JSON: eventos já encerrados saem sozinhos e a data de verificação dos links é atualizada a cada varredura.",
