@@ -3,10 +3,11 @@
     "orgao": "ANEEL (MMGD / gato solar)",
     "schema_version": "1.1",
     "descricao": "Monitor Gato Solar / GD irregular. Disciplina dura: irregularidade NÃO é energia falsa (a energia injetada é real); a SOA PROVA a inconsistência de potência declarada, NÃO acusa fraude; números de auditoria (ONS/ANEEL) são de TERCEIROS — atribuir à fonte, não apresentar como dado SOA. NUNCA '5,7 GW'. Não confundir ~R$ 5 bi (impacto estimado das irregularidades, fonte secundária) com ~R$ 16 bi (subsídio da MMGD via CDE). Ancoragem F1 nesta v1.1: NT 107/2026-SFT/ANEEL (22/06/2026).",
-    "verificado_em": "2026-07-08",
+    "verificado_em": "2026-07-28",
     "fonte_canonica": "F1 — NT 107/2026-SFT/ANEEL (SEI 0388524, processo 48500.015900/2026-94, assinada 23/06/2026) + gov.br/aneel. Secundárias (Agência iNFRA/Canal Solar) só para itens não cobertos pela NT.",
     "fonte_primaria_novo": "Nota Técnica nº 107/2026-SFT/ANEEL — 'Avaliação da manifestação das distribuidoras ao Ofício Circular nº 12/2026-SFT/ANEEL' (combate à alteração à revelia das características originais de MMGD). Avalia 50 distribuidoras. Fundamento legal: Lei 14.300/2022 + REN ANEEL 1.000/2021.",
-    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
+    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1.",
+    "nota_run_2026_07_28": "Run CONSOLIDADORA de 28/07/2026 (monitor-gato-solar-soa parado desde 21/07). Unico item reconferido em fonte oficial: a CP ANEEL 009/2026. A listagem oficial de CPs vigentes da ANEEL confirma o objeto literal registrado neste arquivo — 'tratamento de excedentes de energia e maior flexibilidade operativa na Rede de Distribuicao' — e corrige o prazo final para 08/06/2026 (prorrogacao automatica, porque 06/06/2026 nao era dia util). ⚠ Isto NAO fecha o pendente do CEO sobre a numeracao da CP 009 no tema 'gato solar': segue LARANJA. Registrada divergencia de enquadramento com Fatos_ANEEL._pendentes_verificacao (que descreve a CP 009/2026 como 'combate a MMGD irregular / geracao invisivel') — este arquivo carrega o objeto oficial correto. Nenhum outro fato deste arquivo foi reconferido: a NT 107/2026-SFT nao foi reaberta e a reuniao ABSOLAR x equipe do dir. Gentil Nogueira sobre a NT 107 esta marcada para 30/07 (F3/GT)."
   },
   "fatos": [
     {
@@ -17,7 +18,10 @@
       "fonte": "F1 ANEEL (SEI 0388524, CRC 78D83A6B, assinada 23/06/2026)",
       "url": "https://sei.aneel.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0",
       "verificado_em": "2026-07-08",
-      "vetores_afetados": ["V2", "sHEC"]
+      "vetores_afetados": [
+        "V2",
+        "sHEC"
+      ]
     },
     {
       "tema": "A detecção hoje é por ESTIMATIVA (observado × esperado) — a cunha da prova física SOA",
@@ -26,7 +30,10 @@
       "norma": "NT 107/2026-SFT/ANEEL §III.1 (detecção) e §III.7 (desafios)",
       "fonte": "F1 ANEEL",
       "verificado_em": "2026-07-08",
-      "vetores_afetados": ["V2", "sHEC"]
+      "vetores_afetados": [
+        "V2",
+        "sHEC"
+      ]
     },
     {
       "tema": "Zona cinzenta técnica — overpaneling / overdelivery / ILR",
@@ -35,17 +42,24 @@
       "norma": "NT 107/2026-SFT/ANEEL §III.7.2 (ambiguidades técnicas) · insumo à CP 009/2026",
       "fonte": "F1 ANEEL",
       "verificado_em": "2026-07-08",
-      "vetores_afetados": ["V2", "sHEC"]
+      "vetores_afetados": [
+        "V2",
+        "sHEC"
+      ]
     },
     {
       "tema": "CP ANEEL 009/2026 + determinação de auditoria (decisão de 22/04/2026)",
-      "valor": "Na 8ª Reunião Pública Ordinária (22/04/2026) a Diretoria da ANEEL tomou DUAS medidas conexas: (a) abriu a CP nº 009/2026, para subsídios sobre o tratamento de excedentes de energia e a ampliação da flexibilidade operativa na Rede de Distribuição (relator dir. Gentil Nogueira; base na NT 148/2025-STD); e (b) determinou, de forma imediata, a sinalização sistêmica de restrições estruturais na transmissão para novas conexões E a realização de auditoria pelas distribuidoras, em até 60 dias, para identificar aumentos de potência à revelia — priorizando a minigeração e os maiores desvios entre potência autorizada e injetada. Contribuições da CP encerradas em 06/06/2026; em consolidação.",
+      "valor": "Na 8ª Reunião Pública Ordinária (22/04/2026) a Diretoria da ANEEL tomou DUAS medidas conexas: (a) abriu a CP nº 009/2026, para subsídios sobre o tratamento de excedentes de energia e a ampliação da flexibilidade operativa na Rede de Distribuição (relator dir. Gentil Nogueira; base na NT 148/2025-STD); e (b) determinou, de forma imediata, a sinalização sistêmica de restrições estruturais na transmissão para novas conexões E a realização de auditoria pelas distribuidoras, em até 60 dias, para identificar aumentos de potência à revelia — priorizando a minigeração e os maiores desvios entre potência autorizada e injetada. Contribuições da CP encerradas em 06/06/2026; em consolidação. ⟨ATUALIZAÇÃO 28/07/2026 · varredura consolidadora `monitores-regulatorios-soa`⟩ RECONFIRMADO EM F1 (listagem oficial de Consultas Publicas vigentes da ANEEL, lida em 28/07/2026): 'Consulta 009/2026 — Objeto: obter subsidios para aprimoramentos regulatorios para tratamento de excedentes de energia e maior flexibilidade operativa na Rede de Distribuicao'. CORRECAO DE PRAZO: a listagem declara 'Considerando que a data final para envio das contribuicoes indicada no aviso de abertura publicado no DOU nao e um dia util, o prazo fica automaticamente prorrogado ate as 23h59 do dia 8/6/2026' — logo o encerramento e 08/06/2026, e nao 06/06/2026. A CP segue listada como VIGENTE (contribuicoes encerradas, processo em curso). ⚠ NAO FECHA O PENDENTE DO CEO quanto a atribuicao desta CP ao tema 'gato solar' — mantem LARANJA.",
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 009/2026 · Decisão 8ª RPO 22/04/2026 · NT 148/2025-STD",
       "fonte": "F1 ANEEL (confirmado pela NT 107/2026, §6 e recomendação 'e')",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/consulta-publica-propoe-aprimorar-o-tratamento-de-excedentes-de-energia",
-      "verificado_em": "2026-07-08",
-      "vetores_afetados": ["V2", "V4", "sHEC"]
+      "verificado_em": "2026-07-28",
+      "vetores_afetados": [
+        "V2",
+        "V4",
+        "sHEC"
+      ]
     },
     {
       "tema": "Lastro de escala — GD não declarada (ONS DPL 0149/2026)",
@@ -55,7 +69,10 @@
       "fonte": "F1-referenciado (ONS, citado por ANEEL na NT 107/2026)",
       "url": "https://agenciainfra.com/blog/aneel-inspecao-de-distribuidoras-encontra-88-mw-de-gato-solar/",
       "verificado_em": "2026-07-08",
-      "vetores_afetados": ["V2", "sHEC"]
+      "vetores_afetados": [
+        "V2",
+        "sHEC"
+      ]
     },
     {
       "tema": "Parecer ANEEL — corte de GD solar e corresponsabilização pelo curtailment",
@@ -65,7 +82,10 @@
       "fonte": "F2 (Canal Solar) — a confirmar em F1",
       "url": "https://canalsolar.com.br/aneel-corresponsabilizar-gd-solar-pelo-curtailment/",
       "verificado_em": "2026-07-08",
-      "vetores_afetados": ["V4", "sHEC"],
+      "vetores_afetados": [
+        "V4",
+        "sHEC"
+      ],
       "pendencia_verificacao": "A verificar: status formal — segue como parecer/discussão, sem ato vinculante."
     },
     {
@@ -76,7 +96,9 @@
       "fonte": "F1 ANEEL (portal)",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/consulta-publica-vai-tratar-dos-creditos-excedentes-de-mmgd-para-modicidade-tarifaria",
       "verificado_em": "2026-07-08",
-      "vetores_afetados": ["V2"]
+      "vetores_afetados": [
+        "V2"
+      ]
     },
     {
       "tema": "Posição setorial (ABSOLAR/ABGD)",
@@ -85,7 +107,10 @@
       "norma": "ABSOLAR/ABGD — manifestação setorial",
       "fonte": "F3 ABSOLAR (associação; não fecha VERDE sozinha)",
       "verificado_em": "2026-07-08",
-      "vetores_afetados": ["V2", "sHEC"]
+      "vetores_afetados": [
+        "V2",
+        "sHEC"
+      ]
     }
   ]
 }
