@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-07-29T11:20:25-03:00",
+                  "gerado_em":  "2026-07-29T11:38:27-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
@@ -40,7 +40,7 @@
                      "Fatos_EPE_Folder_SOA.json":  "2026-07-21T08:20:18-03:00",
                      "Fatos_ESG_Folder_SOA.json":  "2026-07-28T14:32:28-03:00",
                      "Fatos_GatoSolar_Folder_SOA.json":  "2026-07-28T14:32:28-03:00",
-                     "Fatos_IPTUVerde_Folder_SOA.json":  "2026-07-28T15:09:45-03:00",
+                     "Fatos_IPTUVerde_Folder_SOA.json":  "2026-07-29T11:30:20-03:00",
                      "Fatos_MME_Folder_SOA.json":  "2026-07-28T15:21:29-03:00",
                      "Fatos_ONS_Folder_SOA.json":  "2026-07-28T15:21:29-03:00",
                      "Fatos_Regulatorios_Folder_SOA.json":  "2026-07-28T14:32:28-03:00",
