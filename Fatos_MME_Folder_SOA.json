@@ -3,8 +3,8 @@
     "orgao": "MME",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo MME — schema v1.3. Aplicada Precedência v1.2. Portaria 136/2026 enriquecida em 04/07/2026 (leitura integral: art. 5º/7º/9º + Anexo II).",
-    "verificado_em": "2026-07-21",
-    "proxima_revisao_sugerida": "2026-07-22",
+    "verificado_em": "2026-07-28",
+    "proxima_revisao_sugerida": "2026-07-29",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina MME conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
     "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO.",
@@ -22,7 +22,8 @@
     "nota_run_2026_07_18": "Varredura de 18/07 (sábado). Nenhum ato oficial novo do MME na janela. NOVO ponteiro F3 (GTGC ABSOLAR 17/07): criado pendente MME-TERMO-COMPROMISSO-SOBREOFERTA (LARANJA) — Termo anunciado como pronto para publicação, sem reclassificação da sobreoferta MMGD/térmica; Despacho 1.669/2026 sem prorrogação; recontabilização CCEE 29/07. Ato não publicado. _meta.verificado_em reflete a data da varredura.",
     "nota_run_2026_07_19": "Varredura de 19/07 (domingo): SEM ATO OFICIAL NOVO. Termo de Compromisso (reclassificacao da sobreoferta MMGD/termica, Lei 15.269/2025) SEGUE NAO PUBLICADO no DOU — pendente MME-TERMO-COMPROMISSO-SOBREOFERTA permanece LARANJA (ponteiro F3 GTGC 17/07). Recontabilizacao CCEE prevista 29/07 (a verificar). LRCAP/Portaria 136 e POTEE 2026 sem novo ato. Nenhum verificado_em de fato avancado.",
     "nota_run_2026_07_20": "Pagina oficial de noticias do MME reaberta em F1 (render JS): carimbo 'Atualizado em 17/07/2026 14h01'; itens mais recentes de 17/07 (SAF; ambientacao de servidores) - sem ato regulatorio. NEGATIVO VERIFICADO para 18-20/07. DOU desbloqueado por navegador nesta run: 'Termo de Compromisso' segue NAO publicado. Achado incidental sem cravamento: a PORTARIA DE PESSOAL CGGP/SPOA/SE/MME n 43, de 15/07/2026 (DOU 17/07, Sec. 2, p. 83) cita a Portaria Normativa MME n 139, de 09/07/2026, publicada no DOU de 10/07/2026 - delegacao de competencia administrativa, borda BAIXA; registra a sequencia de numeracao 136 -> 139. Nenhum verificado_em de fato foi avancado.",
-    "nota_run_2026_07_21": "Run de 21/07: DUAS PROMOÇÕES A VERDE no MME, ambas por leitura integral do ato no DOU. (1) MME-CMSE-RESOLUCAO-DESPACHO-TERMICO saiu de _pendentes_verificacao para fatos[]: Resolução CMSE nº 1, de 06/07/2026, DOU 08/07/2026 Ed. 126 S1 p.134 — fecha a lacuna de monitor aberta em 17/07. (2) MME-POTEE-2026-CP passou de AZUL a VERDE: Portaria SNTEP/MME nº 3.159, de 10/07/2026, DOU 14/07/2026 Ed. 130 S1 p.99, com o prazo de 30 dias contado da PUBLICAÇÃO DA PORTARIA (encerra 13/08/2026). Termo de Compromisso segue LARANJA com 2º negativo verificado no DOU. MP 1.318/REDATA segue LARANJA: estado do PL 278/2026 verificado no Senado (Emenda 22 em 17/07; requerimento de urgência ainda não incluído em Ordem do Dia) — detectado, não cravado."
+    "nota_run_2026_07_21": "Run de 21/07: DUAS PROMOÇÕES A VERDE no MME, ambas por leitura integral do ato no DOU. (1) MME-CMSE-RESOLUCAO-DESPACHO-TERMICO saiu de _pendentes_verificacao para fatos[]: Resolução CMSE nº 1, de 06/07/2026, DOU 08/07/2026 Ed. 126 S1 p.134 — fecha a lacuna de monitor aberta em 17/07. (2) MME-POTEE-2026-CP passou de AZUL a VERDE: Portaria SNTEP/MME nº 3.159, de 10/07/2026, DOU 14/07/2026 Ed. 130 S1 p.99, com o prazo de 30 dias contado da PUBLICAÇÃO DA PORTARIA (encerra 13/08/2026). Termo de Compromisso segue LARANJA com 2º negativo verificado no DOU. MP 1.318/REDATA segue LARANJA: estado do PL 278/2026 verificado no Senado (Emenda 22 em 17/07; requerimento de urgência ainda não incluído em Ordem do Dia) — detectado, não cravado.",
+    "nota_run_2026_07_28": "Run CONSOLIDADORA de 28/07/2026. F1 REABERTA: indice de noticias gov.br/mme (janela 20-28/07). O ATO QUE ESTAVA PENDENTE SAIU: 'MME regulamenta procedimentos para celebracao de Termo de Compromisso sobre compensacao por cortes de geracao' (noticia oficial de 22/07/2026) ancora a PORTARIA no 140, DE 18 DE JULHO DE 2026, publicada no DOU de 21/07/2026. O pendente MME-TERMO-COMPROMISSO-SOBREOFERTA sai de 'ATO NAO PUBLICADO' e o fato novo MME-PORTARIA-140-2026-TERMO-COMPROMISSO entra em fatos[] com o conteudo LIMITADO ao que a fonte oficial afirma. ⚠ DIVERGENCIA DE DENOMINACAO REGISTRADA: os digests dos monitores carregam 'Portaria Normativa MME no 140/2026'; a noticia oficial do MME grafa 'Portaria no 140, de 18 de julho de 2026'. Nao cravar a forma 'Normativa' antes de ler o ato no DOU. ⚠ DIVERGENCIA DE JANELA: a fonte oficial delimita os cortes compensaveis a 01/09/2023-25/11/2025, enquanto a camada GT/e-mail fala em janela de apuracao 01/09/2023-31/03/2024 e janela de ajuste 01/08/2022-31/03/2024 para as funcoes de produtividade — sao objetos distintos (periodo compensavel x janela de dados), NAO reconciliar sem ler a portaria. Outros itens da janela: CMSE de 22/07 aprovou a antecipacao de 1,8 GW para setembro/2026 (noticia oficial). REDATA/PL 278/2026 sem movimento — Congresso em recesso ate 01/08."
   },
   "fatos": [
     {
@@ -365,6 +366,42 @@
       ],
       "pendencia_verificacao": "RESOLVIDA em 21/07/2026 (ato lido na íntegra no DOU). RESSALVA DE TRANSCRIÇÃO: o preâmbulo publicado está truncado na origem — grafa 'tendo em vista as deliberações das 306ª e ª Reuniões do CMSE, realizadas em 11 de junho de 2025, e de dezembro de 2025', sem o número da segunda reunião e sem o dia de dezembro. NÃO inventar o número: em material externo citar apenas 'a 306ª Reunião do CMSE, de 11/06/2025, e reunião de dezembro de 2025 (número não grafado no ato publicado)'. DERIVADA A VIGIAR: o prazo do Art. 4º, I (180 dias da publicação de 08/07/2026) cai em ~04/01/2027 — data-limite para o ONS publicar a metodologia dos estudos prospectivos. Contagem própria, não declarada no ato: não citar a data como se fosse oficial.",
       "numero_status": "ANCORADO"
+    },
+    {
+      "fato_id": "MME-PORTARIA-140-2026-TERMO-COMPROMISSO",
+      "tema": "Portaria MME no 140/2026 — Termo de Compromisso de compensacao por cortes de geracao (curtailment) de eolicas e solares FV",
+      "valor": "PORTARIA no 140, DE 18 DE JULHO DE 2026, publicada no DOU de 21/07/2026. Fonte: noticia oficial do MME de 22/07/2026 ('MME regulamenta procedimentos para celebracao de Termo de Compromisso sobre compensacao por cortes de geracao'), reaberta em 28/07/2026. O QUE A FONTE OFICIAL AFIRMA: (a) regulamenta o art. 1o-B da Lei no 10.848, de 15 de marco de 2004, incluido pela Lei no 15.269, de 25 de novembro de 2025; (b) alcanca os cortes de geracao de usinas EOLICAS e SOLARES FOTOVOLTAICAS ocorridos entre 1o de setembro de 2023 e 25 de novembro de 2025; (c) estabelece etapas, criterios, requisitos, prazos e demais condicoes para a celebracao do Termo de Compromisso entre os agentes interessados e a Uniao; (d) aprova, em ANEXO, a MINUTA DO TERMO DE COMPROMISSO; (e) define procedimentos para a atualizacao das informacoes necessarias a instrucao dos processos, para a APURACAO E CLASSIFICACAO DOS CORTES DE GERACAO, para o CALCULO DA COMPENSACAO e para sua operacionalizacao; (f) a etapa inicial e o registro de manifestacao de interesse no CELEBRA - Sistema de Manifestacao de Interesse para Compensacao por Cortes de Geracao. RELEVANCIA SOA/SOS (V4/sHEC - borda direta): a portaria transforma a apuracao do contrafactual de corte em PROCEDIMENTO ADMINISTRATIVO COM DINHEIRO ATRELADO — 'apuracao e classificacao dos cortes' e 'calculo da compensacao' sao exatamente o objeto da camada de evidencia. ⚠ LIMITES DESTE REGISTRO — NAO ANCORADOS AQUI, exigem o texto integral no DOU: o prazo de 10/08/2026 para manifestacao de interesse; o prazo de 5 dias para o ONS publicar cronograma, especificacoes tecnicas e criterios de validacao; o prazo de 120 dias para a ferramenta de atualizacao em lote; o envio de dados solarimetricos e funcoes de produtividade FV; e a valoracao por preco de contrato do ACR / PLD. Todos seguem PENDENTE DE VERIFICACAO F1 (ver o campo pendencia_verificacao). ⚠ DENOMINACAO: a noticia oficial grafa 'Portaria no 140'; os digests dos monitores grafam 'Portaria Normativa MME no 140/2026' — conferir no DOU antes de citar externamente.",
+      "status": "VIGENTE",
+      "norma": "Portaria MME no 140, de 18/07/2026 · DOU de 21/07/2026 · regulamenta o art. 1o-B da Lei no 10.848/2004 (incluido pela Lei no 15.269/2025)",
+      "url": "https://www.gov.br/mme/pt-br/assuntos/noticias/mme-regulamenta-procedimentos-para-celebracao-de-termo-de-compromisso-sobre-compensacao-por-cortes-de-geracao",
+      "verificado_em": "2026-07-28",
+      "tipo_fato": "REGULATORIO_NORMATIVO",
+      "score_soa": 20,
+      "vetores_afetados": [
+        "V4",
+        "V3",
+        "sHEC"
+      ],
+      "qsv_cor": "LARANJA",
+      "qsv_origem_classificacao": "F1_institucional_reaberta_28jul2026_SEM_leitura_do_DOU — existencia, numero e data ancorados na fonte oficial do orgao; teor integral nao lido",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "gov.br/mme — noticia de 22/07/2026, reaberta em 28/07/2026",
+          "trecho_literal": "Portaria no 140, de 18 de julho de 2026 ... publicada no Diario Oficial da Uniao de 21 de julho de 2026 ... regulamenta a operacionalizacao do disposto no art. 1o-B da Lei no 10.848, de 15 de marco de 2004, incluido pela Lei no 15.269, de 25 de novembro de 2025 ... cortes de geracao ... ocorridos entre 1o de setembro de 2023 e 25 de novembro de 2025 ... CELEBRA - Sistema de Manifestacao de Interesse para Compensacao por Cortes de Geracao",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ],
+      "numero_status": "ANCORADO_EM_FONTE_OFICIAL_DO_ORGAO_SEM_DOU_LIDO",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-07-28"
+      },
+      "gatilho_revisao": "leitura do texto integral no DOU de 21/07/2026; publicacao do ONS com cronograma e criterios de validacao; prazo de 10/08/2026",
+      "pendencia_verificacao": "ANDAIME MOVIDO DO CAMPO RENDERIZADO EM 28/07/2026 (exigencia do gate validar_fatos.py, regra E1). Marcacoes originais: [A VERIFICAR F1 no texto da portaria]. Sentido inalterado: os elementos assim marcados NAO estao ancorados em fonte primaria reaberta e nao podem ser citados externamente ate a leitura do ato no DOU."
     }
   ],
   "_pendentes_verificacao": [
@@ -408,11 +445,11 @@
     {
       "fato_id": "MME-TERMO-COMPROMISSO-SOBREOFERTA",
       "tema": "Termo de Compromisso do MME (sobreoferta / recontabilização) — anunciado pronto para publicação",
-      "valor": "DETECTADO 18/07 (ponteiro F3 ABSOLAR, GTGC 17/07): o MME comunicou que o 'Termo de Compromisso' está concluído e pronto para publicação, com expectativa de divulgação na semana de 14–18/07, o que NÃO ocorreu até 17/07. Preocupação das associações: o texto deverá ser publicado SEM incorporar o pleito de reclassificação da sobreoferta equivalente à geração da MMGD e da geração térmica fora da ordem de mérito em confiabilidade elétrica. Sinalizada também a não continuidade da prorrogação relacionada ao Despacho nº 1.669/2026. O grupo acompanhará a recontabilização da CCEE prevista para 29/07. Borda SOA MÉDIA: toca constrained-off/confiabilidade e a classificação da sobreoferta (adjacente à tese V4/sHEC). F3 NÃO fecha VERDE: ato não publicado; teor não lido em F1 nem no DOU.",
-      "status": "PONTEIRO F3 — ATO NÃO PUBLICADO",
+      "valor": "DETECTADO 18/07 (ponteiro F3 ABSOLAR, GTGC 17/07): o MME comunicou que o 'Termo de Compromisso' está concluído e pronto para publicação, com expectativa de divulgação na semana de 14–18/07, o que NÃO ocorreu até 17/07. Preocupação das associações: o texto deverá ser publicado SEM incorporar o pleito de reclassificação da sobreoferta equivalente à geração da MMGD e da geração térmica fora da ordem de mérito em confiabilidade elétrica. Sinalizada também a não continuidade da prorrogação relacionada ao Despacho nº 1.669/2026. O grupo acompanhará a recontabilização da CCEE prevista para 29/07. Borda SOA MÉDIA: toca constrained-off/confiabilidade e a classificação da sobreoferta (adjacente à tese V4/sHEC). F3 NÃO fecha VERDE: ato não publicado; teor não lido em F1 nem no DOU. ⟨ATUALIZAÇÃO 28/07/2026 · varredura consolidadora `monitores-regulatorios-soa`⟩ RESOLVIDO NO PLANO DA EXISTENCIA DO ATO: a noticia oficial do MME de 22/07/2026 ancora a PORTARIA no 140, DE 18 DE JULHO DE 2026 (DOU de 21/07/2026), que regulamenta o art. 1o-B da Lei no 10.848/2004 (incluido pela Lei no 15.269/2025) e aprova, em anexo, a minuta do Termo de Compromisso. Ver o fato novo MME-PORTARIA-140-2026-TERMO-COMPROMISSO. ⚠ A PREOCUPACAO DE MERITO QUE ORIGINOU ESTE PENDENTE CONTINUA ABERTA: nao foi possivel verificar, nesta run, se o texto publicado incorpora ou nao o pleito de reclassificacao da sobreoferta equivalente a geracao de MMGD e a geracao termica fora da ordem de merito — isso exige o texto integral no DOU. Idem para o Despacho no 1.669/2026 e para a recontabilizacao da CCEE.",
+      "status": "RESOLVIDO — ATO PUBLICADO (Portaria MME no 140, de 18/07/2026, DOU 21/07/2026)",
       "norma": "MME — 'Termo de Compromisso' (não publicado) · Despacho nº 1.669/2026 (referência F3) · recontabilização CCEE 29/07",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-18",
+      "verificado_em": "2026-07-28",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 11,
       "vetores_afetados": [
