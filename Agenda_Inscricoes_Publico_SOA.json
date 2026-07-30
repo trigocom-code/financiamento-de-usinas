@@ -1,24 +1,18 @@
 {
  "_meta": {
   "titulo": "Inscrições — Eventos do Setor Elétrico em SP — Monitor SOA/SOS",
-  "atualizado_em": "2026-07-28",
+  "atualizado_em": "2026-07-30",
   "links_verificados_em": "2026-07-11",
-  "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ABENDI, ANE)",
+  "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ABENDI, ANE, ABCE)",
   "nota": "Trilho de inscrições dos eventos do setor em São Paulo. Cada item leva ao link oficial de credenciamento. Inscrever-se com trigo.com@gmail.com. Datas/valores confirmar na página oficial. Eventos com credenciamento a abrir levam à página oficial do evento. O monitor regenera este JSON: eventos já encerrados saem sozinhos e a data de verificação dos links é atualizada a cada varredura.",
+  "nota_run_2026_07_30": "Na varredura de 30/07 as datas do 13º Fórum do Biogás e do Smart Grid Fórum foram reconfirmadas na página oficial de eventos da COGEN, e a do Brazil Windpower na página oficial da ABEEólica. Os links de credenciamento em si não foram reabertos nesta rodada, por isso a data de verificação de links permanece a anterior. Saiu do trilho a ExpoElétrica, encerrada em 28/07.",
   "dica": "Inscreva-se sempre com o e-mail trigo.com@gmail.com — assim a confirmação e o convite/ingresso caem direto na caixa. Eventos fora de SP não entram aqui: são para conversar antes de decidir a presença."
  },
  "abertos": [
   {
-   "data_ini": "2026-07-27", "data_fim": "2026-07-28",
-   "titulo": "ExpoElétrica 2026 — Feira e Fórum de Instalações Elétricas",
-   "quando": "27–28/07 · Frei Caneca, São Paulo/SP",
-   "badges": [{"label": "Gratuito", "cls": "free"}],
-   "url": "https://euvou.events/ExpoEletrica2026", "cta": "Inscrever-se"
-  },
-  {
    "data_ini": "2026-07-28", "data_fim": "2026-07-30",
    "titulo": "II BioComForest 2026 — Biomassa, Compostagem e Floresta",
-   "quando": "28–30/07 · UNESP Botucatu/SP · COGEN",
+   "quando": "28–30/07 · UNESP Botucatu/SP · COGEN · último dia",
    "badges": [{"label": "Pago", "cls": "pago"}],
    "url": "https://eventos.fepaf.org.br/evento/ev270--ii-biocomforest", "cta": "Inscrever-se"
   },
@@ -39,14 +33,14 @@
   {
    "data_ini": "2026-08-25", "data_fim": "2026-08-27",
    "titulo": "Intersolar South America 2026 (The smarter E)",
-   "quando": "25–27/08 · Expo Center Norte, SP",
+   "quando": "25–27/08 · Expo Center Norte, SP · registro gratuito de visitação até 24/08",
    "badges": [{"label": "Feira gratuita", "cls": "free"}, {"label": "Congresso pago", "cls": "pago"}],
    "url": "https://euvou.events/thesmarteresouthamerica2026", "cta": "Inscrever-se"
   },
   {
    "data_ini": "2026-10-06", "data_fim": "2026-10-07",
    "titulo": "Smart Grid Fórum 2026 (18º Latino-Americano) — COGEN",
-   "quando": "06–07/10 · Frei Caneca, São Paulo/SP",
+   "quando": "06–07/10 · Centro de Convenções Frei Caneca, São Paulo/SP",
    "badges": [{"label": "Pago", "cls": "pago"}],
    "url": "https://www.smartgrid.com.br/2,936,inscricao", "cta": "Inscrever-se"
   },
@@ -76,7 +70,7 @@
   {
    "data_ini": "2026-09-30", "data_fim": "2026-09-30",
    "titulo": "ABSOLAR Storage Leaders (2ª ed. · Pré-LRCAP Baterias)",
-   "quando": "30/09 · São Paulo/SP · confirmar local",
+   "quando": "30/09 · São Paulo/SP · data e local a confirmar na página oficial",
    "url": "https://storageleaders.absolar.org.br/"
   },
   {
@@ -86,9 +80,15 @@
    "url": "https://anebrasil.org.br/eventos-ane/"
   },
   {
+   "data_ini": "2026-10-21", "data_fim": "2026-10-22",
+   "titulo": "XXXII Simpósio Jurídico ABCE",
+   "quando": "21–22/10 · São Paulo/SP · data em divulgação de associação, a confirmar",
+   "url": "https://abce.org.br/"
+  },
+  {
    "data_ini": "2026-12-02", "data_fim": "2026-12-03",
    "titulo": "6º Encontro Nacional ABSOLAR",
-   "quando": "02–03/12 · São Paulo/SP",
+   "quando": "02–03/12 · São Paulo/SP · data a confirmar na página oficial",
    "url": "https://eventos.absolar.org.br/"
   }
  ]
