@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-07-31 08:20",
+                  "gerado_em":  "2026-08-01 08:20",
                   "modo":  "v2 canario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
@@ -72,34 +72,34 @@
                      "Fatos_MME::MME-PORTARIA-129-DEC-12772":  "2DF74EC4606B45FA",
                      "Fatos_CCEE::CCEE-LEI-15269-2025":  "105969235E66E0E3",
                      "Fatos_ANEEL::ANEEL-REN-1161-2026-BESS":  "DF548AF73AEFE468",
-                     "Fatos_ESG::Mercado regulado de carbono (SBCE)":  "25538073E22C3EDA",
-                     "Fatos_CapitalVerde::Sustainability-Linked (SLL/SLB)":  "1CC29F41373A76E3",
+                     "Fatos_ESG::Mercado regulado de carbono (SBCE)":  "90CF4B358C541BA6",
+                     "Fatos_CapitalVerde::Sustainability-Linked (SLL/SLB)":  "AF80E292B7C4192E",
                      "Fatos_EPE::EPE-ATENDIMENTO-PARA":  "655C5E3B0868AB0F",
                      "Fatos_MME::MME-PORTARIA-136-2026-LRCAP":  "6EC3AED2742F0C35",
                      "Fatos_ANEEL::ANEEL-REN-1059-2023":  "726CFEA76D95120E",
-                     "Fatos_ESG::Relato de sustentabilidade (IFRS S1/S2) — CVM":  "3461173E5E47A9FC",
+                     "Fatos_ESG::Relato de sustentabilidade (IFRS S1/S2) — CVM":  "407578B9C6E26F31",
                      "Fatos_ANEEL::ANEEL-CP-045-2019":  "64FAF91F89BA6D63",
                      "Fatos_ANEEL::ANEEL-REN-1071-LRCAP":  "8FA5AF8C7A8B1E70",
                      "Fatos_ANEEL::ANEEL-CP-009-GATO-SOLAR":  "DD7AB80FB6154858",
-                     "Fatos_CapitalVerde::Finep Mais Inovação Brasil — Rodada 2 · Transição Energética":  "6964757300A47873",
-                     "Fatos_CapitalVerde::Fundo Clima — BNDES":  "08BDFC9F81BF5F2A",
+                     "Fatos_CapitalVerde::Finep Mais Inovação Brasil — Rodada 2 · Transição Energética":  "E13C39E4242C2F17",
+                     "Fatos_CapitalVerde::Fundo Clima — BNDES":  "0C2091090F6944BA",
                      "Fatos_MME::MME-REDATA":  "3F7D7D8152238120",
                      "Fatos_MME::MME-PNH2":  "B12FAB77868490A1",
                      "Fatos_EPE::EPE-PET-PELP":  "9C158A882C9BCA4F",
                      "Fatos_ONS::ONS-NT-PNAST":  "DB9C6020E521B3F6",
-                     "Fatos_CapitalVerde::Eco Invest Brasil — Min. Fazenda":  "3CB534FCA0763C8A",
+                     "Fatos_CapitalVerde::Eco Invest Brasil — Min. Fazenda":  "7DAAF437B14A97A2",
                      "Fatos_EPE::EPE-MAPA-BARRAMENTOS-LRCAP":  "04CFCE6CE3D85E3A",
                      "Fatos_MME::MME-MP-1318-2025":  "32D0920A05F518C7",
                      "Fatos_ONS::ONS-NT-DPL-0111-2025":  "B51C630BC6AFB276",
                      "Fatos_EPE::EPE-CARGAS-CE-PI":  "97441266655E62FD",
-                     "Fatos_CapitalVerde::Debêntures de Infraestrutura / incentivadas verdes":  "922E2261F5BF9C39"
+                     "Fatos_CapitalVerde::Debêntures de Infraestrutura / incentivadas verdes":  "73AEAB1A9565E1E9"
                  },
     "folders":  {
                     "baterias-curtailment.html":  {
-                                                      "ciclo":  "2026-07-31",
+                                                      "ciclo":  "2026-08-01",
                                                       "categoria":  "vivo_sob_gatilho",
                                                       "estado":  "avaliacao_represada",
-                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-07-31: monitor-regulatorio-soa",
+                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-08-01: monitor-regulatorio-soa",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-regulatorio-soa"
@@ -107,7 +107,7 @@
                                                       "monitores_parados":  [
                                                                                 "monitor-regulatorio-soa"
                                                                             ],
-                                                      "idade_max_dias":  10,
+                                                      "idade_max_dias":  11,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_ANEEL",
@@ -160,10 +160,10 @@
                                                       "proposta_ref":  null
                                                   },
                     "prova-horaria-datacenters.html":  {
-                                                           "ciclo":  "2026-07-31",
+                                                           "ciclo":  "2026-08-01",
                                                            "categoria":  "vivo_sob_gatilho",
                                                            "estado":  "avaliacao_represada",
-                                                           "motivo":  "monitor(es) nao rodou no ciclo 2026-07-31: monitor-regulatorio-soa",
+                                                           "motivo":  "monitor(es) nao rodou no ciclo 2026-08-01: monitor-regulatorio-soa",
                                                            "aguarda_fonte":  false,
                                                            "monitores_dependentes":  [
                                                                                          "monitor-regulatorio-soa"
@@ -171,7 +171,7 @@
                                                            "monitores_parados":  [
                                                                                      "monitor-regulatorio-soa"
                                                                                  ],
-                                                           "idade_max_dias":  3,
+                                                           "idade_max_dias":  4,
                                                            "deps":  [
                                                                         {
                                                                             "json":  "Fatos_MME",
@@ -197,10 +197,10 @@
                                                            "proposta_ref":  null
                                                        },
                     "gato-solar-soa.html":  {
-                                                "ciclo":  "2026-07-31",
+                                                "ciclo":  "2026-08-01",
                                                 "categoria":  "vivo_sob_gatilho",
                                                 "estado":  "avaliacao_represada",
-                                                "motivo":  "monitor(es) nao rodou no ciclo 2026-07-31: monitor-regulatorio-soa",
+                                                "motivo":  "monitor(es) nao rodou no ciclo 2026-08-01: monitor-regulatorio-soa",
                                                 "aguarda_fonte":  false,
                                                 "monitores_dependentes":  [
                                                                               "monitor-regulatorio-soa"
@@ -208,7 +208,7 @@
                                                 "monitores_parados":  [
                                                                           "monitor-regulatorio-soa"
                                                                       ],
-                                                "idade_max_dias":  2,
+                                                "idade_max_dias":  3,
                                                 "deps":  [
                                                              {
                                                                  "json":  "Fatos_ANEEL",
@@ -234,10 +234,10 @@
                                                 "proposta_ref":  null
                                             },
                     "contencioso-curtailment.html":  {
-                                                         "ciclo":  "2026-07-31",
+                                                         "ciclo":  "2026-08-01",
                                                          "categoria":  "vivo_sob_gatilho",
                                                          "estado":  "avaliacao_represada",
-                                                         "motivo":  "monitor(es) nao rodou no ciclo 2026-07-31: monitor-regulatorio-soa",
+                                                         "motivo":  "monitor(es) nao rodou no ciclo 2026-08-01: monitor-regulatorio-soa",
                                                          "aguarda_fonte":  false,
                                                          "monitores_dependentes":  [
                                                                                        "monitor-regulatorio-soa"
@@ -245,7 +245,7 @@
                                                          "monitores_parados":  [
                                                                                    "monitor-regulatorio-soa"
                                                                                ],
-                                                         "idade_max_dias":  3,
+                                                         "idade_max_dias":  4,
                                                          "deps":  [
                                                                       {
                                                                           "json":  "Fatos_CCEE",
@@ -271,10 +271,10 @@
                                                          "proposta_ref":  null
                                                      },
                     "bitcoin-verde-soa.html":  {
-                                                   "ciclo":  "2026-07-31",
+                                                   "ciclo":  "2026-08-01",
                                                    "categoria":  "vivo_sob_gatilho",
                                                    "estado":  "avaliacao_represada",
-                                                   "motivo":  "monitor(es) nao rodou no ciclo 2026-07-31: monitor-regulatorio-soa",
+                                                   "motivo":  "monitor(es) nao rodou no ciclo 2026-08-01: monitor-regulatorio-soa",
                                                    "aguarda_fonte":  false,
                                                    "monitores_dependentes":  [
                                                                                  "monitor-regulatorio-soa"
@@ -282,7 +282,7 @@
                                                    "monitores_parados":  [
                                                                              "monitor-regulatorio-soa"
                                                                          ],
-                                                   "idade_max_dias":  3,
+                                                   "idade_max_dias":  4,
                                                    "deps":  [
                                                                 {
                                                                     "json":  "Fatos_MME",
@@ -299,10 +299,10 @@
                                                    "proposta_ref":  null
                                                },
                     "certificacao-esg-auditavel.html":  {
-                                                            "ciclo":  "2026-07-31",
+                                                            "ciclo":  "2026-08-01",
                                                             "categoria":  "vivo_sob_gatilho",
                                                             "estado":  "avaliacao_represada",
-                                                            "motivo":  "monitor(es) nao rodou no ciclo 2026-07-31: monitor-esg-soa",
+                                                            "motivo":  "monitor(es) nao rodou no ciclo 2026-08-01: monitor-esg-soa",
                                                             "aguarda_fonte":  false,
                                                             "monitores_dependentes":  [
                                                                                           "monitor-esg-soa"
@@ -315,20 +315,20 @@
                                                                          {
                                                                              "json":  "Fatos_ESG",
                                                                              "ref":  "Relato de sustentabilidade (IFRS S1/S2) — CVM",
-                                                                             "verificado_em":  "2026-07-29",
+                                                                             "verificado_em":  "2026-07-30",
                                                                              "qsv_cor":  "",
                                                                              "monitor":  "monitor-esg-soa",
                                                                              "achou":  true,
-                                                                             "mudou":  false
+                                                                             "mudou":  true
                                                                          },
                                                                          {
                                                                              "json":  "Fatos_ESG",
                                                                              "ref":  "Mercado regulado de carbono (SBCE)",
-                                                                             "verificado_em":  "2026-07-29",
+                                                                             "verificado_em":  "2026-07-30",
                                                                              "qsv_cor":  "",
                                                                              "monitor":  "monitor-esg-soa",
                                                                              "achou":  true,
-                                                                             "mudou":  false
+                                                                             "mudou":  true
                                                                          }
                                                                      ],
                                                             "fato_gatilho":  null,
@@ -336,10 +336,10 @@
                                                             "proposta_ref":  null
                                                         },
                     "acesso-transmissao-pnast.html":  {
-                                                          "ciclo":  "2026-07-31",
+                                                          "ciclo":  "2026-08-01",
                                                           "categoria":  "vivo_sob_gatilho",
                                                           "estado":  "avaliacao_represada",
-                                                          "motivo":  "monitor(es) nao rodou no ciclo 2026-07-31: monitor-regulatorio-soa",
+                                                          "motivo":  "monitor(es) nao rodou no ciclo 2026-08-01: monitor-regulatorio-soa",
                                                           "aguarda_fonte":  false,
                                                           "monitores_dependentes":  [
                                                                                         "monitor-regulatorio-soa"
@@ -347,7 +347,7 @@
                                                           "monitores_parados":  [
                                                                                     "monitor-regulatorio-soa"
                                                                                 ],
-                                                          "idade_max_dias":  10,
+                                                          "idade_max_dias":  11,
                                                           "deps":  [
                                                                        {
                                                                            "json":  "Fatos_MME",
@@ -391,10 +391,10 @@
                                                           "proposta_ref":  null
                                                       },
                     "capital-verde-usinas.html":  {
-                                                      "ciclo":  "2026-07-31",
+                                                      "ciclo":  "2026-08-01",
                                                       "categoria":  "vivo_sob_gatilho",
                                                       "estado":  "avaliacao_represada",
-                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-07-31: monitor-capital-verde-soa",
+                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-08-01: monitor-capital-verde-soa",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-capital-verde-soa"
@@ -407,47 +407,47 @@
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Fundo Clima — BNDES",
-                                                                       "verificado_em":  "2026-07-29",
+                                                                       "verificado_em":  "2026-07-30",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  false
+                                                                       "mudou":  true
                                                                    },
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Eco Invest Brasil — Min. Fazenda",
-                                                                       "verificado_em":  "2026-07-29",
+                                                                       "verificado_em":  "2026-07-30",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  false
+                                                                       "mudou":  true
                                                                    },
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Debêntures de Infraestrutura / incentivadas verdes",
-                                                                       "verificado_em":  "2026-07-29",
+                                                                       "verificado_em":  "2026-07-30",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  false
+                                                                       "mudou":  true
                                                                    },
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Sustainability-Linked (SLL/SLB)",
-                                                                       "verificado_em":  "2026-07-29",
+                                                                       "verificado_em":  "2026-07-30",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  false
+                                                                       "mudou":  true
                                                                    },
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Finep Mais Inovação Brasil — Rodada 2 · Transição Energética",
-                                                                       "verificado_em":  "2026-07-29",
+                                                                       "verificado_em":  "2026-07-30",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  false
+                                                                       "mudou":  true
                                                                    }
                                                                ],
                                                       "fato_gatilho":  null,
@@ -455,10 +455,10 @@
                                                       "proposta_ref":  null
                                                   },
                     "hidrogenio-prova-horaria.html":  {
-                                                          "ciclo":  "2026-07-31",
+                                                          "ciclo":  "2026-08-01",
                                                           "categoria":  "vivo_sob_gatilho",
                                                           "estado":  "avaliacao_represada",
-                                                          "motivo":  "monitor(es) nao rodou no ciclo 2026-07-31: monitor-regulatorio-soa, monitor-esg-soa",
+                                                          "motivo":  "monitor(es) nao rodou no ciclo 2026-08-01: monitor-regulatorio-soa, monitor-esg-soa",
                                                           "aguarda_fonte":  false,
                                                           "monitores_dependentes":  [
                                                                                         "monitor-regulatorio-soa",
@@ -468,7 +468,7 @@
                                                                                     "monitor-regulatorio-soa",
                                                                                     "monitor-esg-soa"
                                                                                 ],
-                                                          "idade_max_dias":  10,
+                                                          "idade_max_dias":  11,
                                                           "deps":  [
                                                                        {
                                                                            "json":  "Fatos_MME",
@@ -491,11 +491,11 @@
                                                                        {
                                                                            "json":  "Fatos_ESG",
                                                                            "ref":  "Mercado regulado de carbono (SBCE)",
-                                                                           "verificado_em":  "2026-07-29",
+                                                                           "verificado_em":  "2026-07-30",
                                                                            "qsv_cor":  "",
                                                                            "monitor":  "monitor-esg-soa",
                                                                            "achou":  true,
-                                                                           "mudou":  false
+                                                                           "mudou":  true
                                                                        }
                                                                    ],
                                                           "fato_gatilho":  null,
