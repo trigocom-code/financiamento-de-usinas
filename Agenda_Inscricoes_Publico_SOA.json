@@ -1,21 +1,13 @@
 {
  "_meta": {
   "titulo": "Inscrições — Eventos do Setor Elétrico em SP — Monitor SOA/SOS",
-  "atualizado_em": "2026-07-30",
+  "atualizado_em": "2026-08-03",
   "links_verificados_em": "2026-07-11",
-  "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ABENDI, ANE, ABCE)",
+  "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ABENDI, ANE, ABCE, APINE)",
   "nota": "Trilho de inscrições dos eventos do setor em São Paulo. Cada item leva ao link oficial de credenciamento. Inscrever-se com trigo.com@gmail.com. Datas/valores confirmar na página oficial. Eventos com credenciamento a abrir levam à página oficial do evento. O monitor regenera este JSON: eventos já encerrados saem sozinhos e a data de verificação dos links é atualizada a cada varredura.",
-  "nota_run_2026_07_30": "Na varredura de 30/07 as datas do 13º Fórum do Biogás e do Smart Grid Fórum foram reconfirmadas na página oficial de eventos da COGEN, e a do Brazil Windpower na página oficial da ABEEólica. Os links de credenciamento em si não foram reabertos nesta rodada, por isso a data de verificação de links permanece a anterior. Saiu do trilho a ExpoElétrica, encerrada em 28/07.",
-  "dica": "Inscreva-se sempre com o e-mail trigo.com@gmail.com — assim a confirmação e o convite/ingresso caem direto na caixa. Eventos fora de SP não entram aqui: são para conversar antes de decidir a presença."
+  "nota_run_2026_08_03": "Nesta varredura foram reabertas as páginas oficiais de eventos da APINE, COGEN, ABGD, ABEEólica, CIGRE-Brasil e ABSOLAR, sem alteração de datas em relação à varredura anterior. Duas mudanças no trilho: (1) o II BioComForest saiu, por ter se encerrado em 30 de julho; (2) o XXXII Simpósio Jurídico ABCE passou de 'a abrir' para 'abertos' — a página oficial de eventos da APINE expôs o local, Blue Tree Premium Faria Lima, em São Paulo, e o formulário de inscrição; o site da associação organizadora segue indisponível, então a data permanece a confirmar. Os links de credenciamento dos demais eventos não foram reabertos nesta rodada, por isso a data de verificação de links permanece a anterior."
  },
  "abertos": [
-  {
-   "data_ini": "2026-07-28", "data_fim": "2026-07-30",
-   "titulo": "II BioComForest 2026 — Biomassa, Compostagem e Floresta",
-   "quando": "28–30/07 · UNESP Botucatu/SP · COGEN · último dia",
-   "badges": [{"label": "Pago", "cls": "pago"}],
-   "url": "https://eventos.fepaf.org.br/evento/ev270--ii-biocomforest", "cta": "Inscrever-se"
-  },
   {
    "data_ini": "2026-08-11", "data_fim": "2026-08-12",
    "titulo": "13º Fórum do Biogás — COGEN / ABiogás",
@@ -52,6 +44,13 @@
    "url": "https://credenciamento.informamarkets.com.br/BRZ26DCB/credenciamento2026/tickets", "cta": "Inscrever-se"
   },
   {
+   "data_ini": "2026-10-21", "data_fim": "2026-10-22",
+   "titulo": "XXXII Simpósio Jurídico ABCE",
+   "quando": "21–22/10 · Blue Tree Premium Faria Lima, São Paulo/SP · data a confirmar na entidade organizadora",
+   "badges": [{"label": "Inscrição por formulário", "cls": "pago"}],
+   "url": "https://forms.gle/kJpRYLrb4EVtbhRn6", "cta": "Inscrever-se"
+  },
+  {
    "data_ini": "2026-10-27", "data_fim": "2026-10-29",
    "titulo": "Brazil Windpower 2026 — ABEEólica + GWEC",
    "quando": "27–29/10 · São Paulo Expo, SP",
@@ -78,12 +77,6 @@
    "titulo": "Seminário Anual da ANE — Academia Nacional de Engenharia",
    "quando": "setembro (data a confirmar) · São Paulo/SP",
    "url": "https://anebrasil.org.br/eventos-ane/"
-  },
-  {
-   "data_ini": "2026-10-21", "data_fim": "2026-10-22",
-   "titulo": "XXXII Simpósio Jurídico ABCE",
-   "quando": "21–22/10 · São Paulo/SP · data em divulgação de associação, a confirmar",
-   "url": "https://abce.org.br/"
   },
   {
    "data_ini": "2026-12-02", "data_fim": "2026-12-03",
