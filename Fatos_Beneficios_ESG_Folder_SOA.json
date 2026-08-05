@@ -8,8 +8,9 @@
   },
   "_carimbo": {
     "atualizado_em": "2026-07-13T00:00:00-03:00",
-    "hash": "sha256:a-selar-no-gate",
-    "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias"
+    "hash": "sha256:6f36b9f1625fa3d84081ccf3ec2d2085c9ef7eca26219a1bc8ce0a2629fe0781",
+    "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias",
+    "selado_em": "2026-08-05"
   },
   "_schema": {
     "versao": "1.0",
