@@ -31,7 +31,10 @@
   function firstCarimbo(ns){ var f=null; Object.keys(ns).forEach(function(k){ if(!f && ns[k] && ns[k]._carimbo) f=ns[k]._carimbo; }); return f; }
   function el(tag, cls, txt){ var n=document.createElement(tag); if(cls)n.className=cls; if(txt!=null)n.textContent=String(txt); return n; }
   function cell(tr, tag, cls, s){ var n=el(tag,cls, s==null?"":s); tr.appendChild(n); return n; }
-  function fallback(){ return el("p","soa-fb","(carregando da base canônica…)"); }
+  /* Estado VAZIO (nao "carregando"): quando o render ja rodou e nao ha conteudo
+     verificado para o vetor, dizer a verdade. Antes exibia "(carregando da base
+     canonica...)" para sempre, o que fazia a pagina parecer travada. Fix 05/08/2026. */
+  function fallback(){ return el("p","soa-fb","— sem conteúdo verificado para este vetor —"); }
 
   function ensureStyle(){
     if(document.getElementById("soa-sync-style")) return;
@@ -134,6 +137,15 @@
     var gan=filtrar(all.beneficios,{vetor:vetor});
     var regs=regsDoVetor(vetor, all.regulatorios, all.cruzamento);
     var adj=adjacentes(vetor, all.beneficios, all.pacotes);
+
+    /* Vetor AUSENTE da taxonomia canonica: nao montar 4 secoes vazias nem declarar
+       "sincronizado". Dizer que o vetor ainda nao foi incorporado. Fix 05/08/2026. */
+    if(!ent.length && !gan.length && !regs.length && !adj.pkgs.length && !adj.beneficios.length){
+      var av=el("p","soa-fb","O protocolo SOA para o vetor “"+vetor+"” ainda não foi incorporado à base canônica verificada. Fale com a gente para a leitura deste vetor.");
+      host.appendChild(av);
+      host.setAttribute("data-fato-status","vetor-nao-incorporado");
+      return;
+    }
 
     host.appendChild(topic("1 · O que entregamos","O selo probatório SOA para este vetor — Evidence Pack / HEC / sHEC"));
     host.appendChild(ent.length ? cardsEntregaveis(ent) : fallback());

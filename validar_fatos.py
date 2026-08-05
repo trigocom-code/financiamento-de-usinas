@@ -1,7 +1,7 @@
 ﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Gatekeeper SOA/SOS v2.0 (01/07/2026) — 3 estagios + anti-regressao."""
-import json, sys, os, glob, re, html, subprocess
+import json, sys, os, glob, re, html, subprocess, datetime
 
 TERMOS_PROIBIDOS_MARCA = ["líder","lider","patentead","anti-fraude","antifraude",
                           "padrão mundial","padrao mundial","ninguém mais tem","ninguem mais tem",
@@ -33,6 +33,17 @@ STATUS_CANON = {"verificado","pendente"}
 CAMPOS_BENEF = ("id","ator","vetores","canal","titulo","base_legal","mecanismo","vigencia","sem_soa","status","fonte")
 DATA_RE = re.compile(r"^\d{4}-\d{2}-\d{2}([T ]\d{2}:\d{2})?$")
 VETOS_RE = re.compile(r"\b(\d{1,2})\s+vetos\b")
+
+# --- E5/E6 adicionados 04/08/2026 -------------------------------------------
+# Motivo: o Fatos_Beneficios_ESG ficou 24 dias no ar declarando
+# "hash": "sha256:a-selar-no-gate" — um selo que anuncia nao ter sido selado.
+# O gate passava verde porque (a) nunca olhava _carimbo e (b) validava o
+# FORMATO de verificado_em, nunca a IDADE. Prometer selo e nao ter e pior do
+# que nao ter selo: os outros 11 arquivos nao tem _carimbo e nao mentem.
+HASH_OK_RE  = re.compile(r"^sha256:[0-9a-f]{64}$", re.I)
+HASH_FALSO  = re.compile(r"(?i)a-selar|preencher|placeholder|todo|xxx|pendente|^\s*$")
+FRESCOR_AVISO_DIAS  = 10   # acima disso: AVISO ruidoso, nao barra
+FRESCOR_BARRA_DIAS  = 30   # acima disso: BARRA o push (apodreceu)
 
 NEGACOES = ("nunca","não é","nao e","não confundir","nao confundir","não '","nao '")
 def _negado(low, i):
@@ -219,6 +230,50 @@ def erros_beneficios(path):
             if v not in VETORES_CANON: e.append("%s cruzamento_regulatorio[%d] (%s): vetor fora do canônico '%s'" % (n,i,c.get("fato_id"),v))
     return e
 
+def erros_carimbo(path):
+    """E5 — se o arquivo DECLARA um _carimbo, o selo tem de ser real.
+
+    Nao exige carimbo (11 dos 12 arquivos nao tem, e tudo bem: quem nao promete
+    nao mente). Mas se existir _carimbo, o hash precisa ser sha256:<64 hex>.
+    Placeholder tipo 'a-selar-no-gate' e afirmacao falsa em arquivo publico.
+    """
+    e=[]; n=os.path.basename(path)
+    try:
+        with open(path,encoding="utf-8-sig") as f: d=json.load(f)
+    except Exception: return []            # JSON invalido ja foi reportado em E1
+    c=d.get("_carimbo")
+    if not isinstance(c,dict): return []   # sem carimbo declarado -> nada a cobrar
+    if "hash" not in c:
+        e.append("%s: _carimbo sem campo 'hash' — remova o bloco ou sele de verdade" % n)
+        return e
+    h=str(c.get("hash") or "")
+    if HASH_OK_RE.match(h): return []
+    if HASH_FALSO.search(h) or not h.strip():
+        e.append("%s: _carimbo.hash e PLACEHOLDER ('%s') — selo declarado mas nunca aplicado" % (n,h))
+    else:
+        e.append("%s: _carimbo.hash fora do formato sha256:<64 hex> ('%s')" % (n,h))
+    return e
+
+def _idade_dias(path):
+    try:
+        with open(path,encoding="utf-8-sig") as f: d=json.load(f)
+        v=str(d.get("_meta",{}).get("verificado_em",""))[:10]
+        return (datetime.date.today()-datetime.date(*(int(x) for x in v.split("-")))).days
+    except Exception: return None
+
+def frescor(arqs):
+    """E6 — idade de verificado_em. Avisa cedo, barra so quando apodreceu."""
+    avisos=[]; erros=[]
+    for p in arqs:
+        dias=_idade_dias(p)
+        if dias is None: continue
+        n=os.path.basename(p)
+        if dias>FRESCOR_BARRA_DIAS:
+            erros.append("%s: verificado_em ha %d dias (limite %d) — conteudo apodreceu, nao publicar como vivo" % (n,dias,FRESCOR_BARRA_DIAS))
+        elif dias>FRESCOR_AVISO_DIAS:
+            avisos.append("%s: %d dias sem verificacao" % (n,dias))
+    return avisos, erros
+
 def main():
     base=sys.argv[1] if len(sys.argv)>1 else "."
     arqs=[p for p in sorted(glob.glob(os.path.join(base,"Fatos_*_Folder_SOA.json")))
@@ -229,10 +284,17 @@ def main():
     n1=len(todos)
     for a in arqs: todos+=erros_beneficios(a)
     n4=len(todos)-n1
-    todos+=erros_regressao(base);            n0=len(todos)-n1-n4
-    todos+=erros_cruzados(base);             n2=len(todos)-n1-n4-n0
-    todos+=erros_html(base);                 n3=len(todos)-n1-n4-n0-n2
-    print("[gate v2] E1 fatos(%d arqs): %d | E4 beneficios: %d | E0 regressao: %d | E2 cruzado: %d | E3 html: %d" % (len(arqs),n1,n4,n0,n2,n3))
+    for a in arqs: todos+=erros_carimbo(a)
+    n5=len(todos)-n1-n4
+    avisos_fr, erros_fr = frescor(arqs)
+    todos+=erros_fr;                         n6=len(erros_fr)
+    todos+=erros_regressao(base);            n0=len(todos)-n1-n4-n5-n6
+    todos+=erros_cruzados(base);             n2=len(todos)-n1-n4-n5-n6-n0
+    todos+=erros_html(base);                 n3=len(todos)-n1-n4-n5-n6-n0-n2
+    print("[gate v2.1] E1 fatos(%d arqs): %d | E4 beneficios: %d | E5 carimbo: %d | E6 frescor: %d | E0 regressao: %d | E2 cruzado: %d | E3 html: %d" % (len(arqs),n1,n4,n5,n6,n0,n2,n3))
+    if avisos_fr:
+        print("[gate v2.1] AVISO de frescor (%d arq >%dd, nao barra o push):" % (len(avisos_fr),FRESCOR_AVISO_DIAS))
+        for x in avisos_fr: print("   ~",x)
     if todos:
         print("[gate v2] ❌ %d problema(s) — push BARRADO:" % len(todos))
         for x in todos: print("   -",x)
