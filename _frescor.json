@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-08-05T12:25:03-03:00",
+                  "gerado_em":  "2026-08-06T08:25:02-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
@@ -19,7 +19,7 @@
                      "_QSV_Gate_protocolo_3topicos_RELATORIO_semaforo.html":  "2026-07-04T13:59:03-03:00",
                      "_QSV_Matriz_Catalogo_por_link.html":  "2026-07-04T15:58:27-03:00",
                      "acesso-transmissao-pnast.html":  "2026-07-05T12:46:10-03:00",
-                     "acu-iii-lrcap-soa.html":  "2026-07-09T22:44:35-03:00",
+                     "acu-iii-lrcap-soa.html":  "2026-08-05T16:43:23-03:00",
                      "Agenda_Eventos_Publico_SOA.json":  "2026-08-03T07:16:42-03:00",
                      "Agenda_Inscricoes_Publico_SOA.json":  "2026-08-03T07:17:09-03:00",
                      "ancilares-auditaveis-soa.html":  "2026-07-09T23:06:28-03:00",
@@ -27,14 +27,14 @@
                      "baterias-curtailment.html":  "2026-07-16T08:50:13-03:00",
                      "bitcoin-verde-soa.html":  "2026-07-13T17:31:55-03:00",
                      "capital-verde-usinas.html":  "2026-07-05T12:17:07-03:00",
-                     "carta-ane-acu-iii-soa.html":  "2026-07-09T11:19:32-03:00",
+                     "carta-ane-acu-iii-soa.html":  "2026-08-05T16:43:33-03:00",
                      "Catalogo_Vivos_SOA.html":  "2026-07-23T16:22:44-03:00",
                      "catalogo-vetores-soa.html":  "2026-07-04T23:42:40-03:00",
                      "certificacao-esg-auditavel.html":  "2026-07-05T12:17:05-03:00",
                      "contencioso-curtailment.html":  "2026-07-10T12:45:39-03:00",
                      "eventos-soa.html":  "2026-07-11T14:15:45-03:00",
                      "Fatos_ANEEL_Folder_SOA.json":  "2026-07-29T12:12:11-03:00",
-                     "Fatos_Beneficios_ESG_Folder_SOA.json":  "2026-07-13T20:49:02-03:00",
+                     "Fatos_Beneficios_ESG_Folder_SOA.json":  "2026-08-05T18:12:24-03:00",
                      "Fatos_CapitalVerde_Folder_SOA.json":  "2026-07-31T13:08:54-03:00",
                      "Fatos_CCEE_Folder_SOA.json":  "2026-07-29T12:12:11-03:00",
                      "Fatos_EPE_Folder_SOA.json":  "2026-08-03T08:20:04-03:00",
@@ -67,12 +67,12 @@
                      "iptu-verde-auditavel.html":  "2026-07-24T11:34:31-03:00",
                      "m2m-iot-soa.html":  "2026-07-05T12:46:10-03:00",
                      "Mapa_BESS_por_Estado.html":  "2026-07-17T22:40:19-03:00",
-                     "mercado-psm-soa.html":  "2026-07-05T12:46:10-03:00",
-                     "OnePager_SOA_O_Que_Fazemos_v1.html":  "2026-07-01T19:44:09-03:00",
+                     "mercado-psm-soa.html":  "2026-08-05T16:44:39-03:00",
+                     "OnePager_SOA_O_Que_Fazemos_v1.html":  "2026-08-05T16:42:10-03:00",
                      "prova-horaria-datacenters.html":  "2026-07-13T21:08:06-03:00",
                      "seguros-renovaveis-soa.html":  "2026-07-05T12:46:10-03:00",
                      "SOA_Atlas_Curtailment_SIN.html":  "2026-07-01T19:44:09-03:00",
-                     "SOA_Institucional_v1.html":  "2026-07-01T19:44:09-03:00",
+                     "SOA_Institucional_v1.html":  "2026-08-05T16:42:19-03:00",
                      "SOA_SOS_Arquitetura_Camada3_MotorQSV_v2.pdf":  "2026-07-01T21:32:37-03:00"
                  }
 }
