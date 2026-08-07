@@ -3,7 +3,7 @@
     "orgao": "CCEE",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo CCEE — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-07-28",
+    "verificado_em": "2026-08-07",
     "proxima_revisao_sugerida": "2026-07-29",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina CCEE conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. PLD horário vai pro banco SOA via pipeline.",
@@ -282,6 +282,42 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
+    },
+    {
+      "fato_id": "CCEE-PORTARIA-140-2026-DEVERES",
+      "tema": "Deveres da CCEE na Portaria Normativa MME 140/2026 - emolumento, regras adaptadas, recontabilizacao e auditoria independente",
+      "valor": "Ancorado no texto integral da Portaria Normativa MME no 140, de 18/07/2026 (DOU de 21/07/2026, Edicao Extra, Secao 1), lido em 07/08/2026. A CCEE recebe cinco encargos com prazo. (1) ADESAO E EMOLUMENTO (art. 2o, par. 2o, 4o e 5o): cabe a CCEE operacionalizar o recebimento e analisar a documentacao de representacao legal dos interessados e prover apoio administrativo a celebracao dos Termos; para custear essas atividades a CCEE deve recolher emolumento dos interessados que atenderem a convocacao. O emolumento previsto no ato incide sobre essa etapa documental - nao ha no texto emolumento incidente sobre as recontabilizacoes, o que converge com o entendimento preliminar registrado pelo GT Geracao Centralizada da ABSOLAR em 06/08/2026. (2) MONTANTES DE CORTE (art. 5o, par. 8o): em ate 30 dias do recebimento da base final do ONS, a CCEE divulga os montantes de corte em base horaria e por usina, segregados entre indisponibilidade externa, confiabilidade eletrica e sobreoferta. (3) RECONTABILIZACAO (art. 6o): a compensacao e operacionalizada por recontabilizacao financeira de eventos passados do periodo de 1o/09/2023 a 25/11/2025, com valores atualizados pelo IPCA desde a data do corte ate o pagamento efetivo, concluida em ate 180 dias contados do primeiro dia util apos o prazo final de celebracao do Termo. Ficam suspensas, para quem protocolou manifestacao previa e firmou o Termo, as liquidacoes dos ressarcimentos devidos por geradores eolicos e solares referentes a CER e a CCEAR na modalidade disponibilidade de que trata o Despacho ANEEL no 148, de 20/01/2026. Os efeitos das recontabilizacoes de energia de reserva e da reapuracao de receita de CCEAR precedem os efeitos da recontabilizacao do Mercado de Curto Prazo. Os creditos dos geradores nao participam do rateio de inadimplencia na liquidacao do Mercado de Curto Prazo. (4) REGRAS E PROCEDIMENTOS ADAPTADOS (art. 7o): a CCEE deve aprovar e divulgar as regras e procedimentos de comercializacao adaptados em ate 60 dias da publicacao, termo em 19/09/2026, e realizar capacitacao ao mercado em ate 90 dias, termo em 19/10/2026. As regras adaptadas sao eficazes desde a publicacao e produzem efeitos para as recontabilizacoes de 1o/09/2023 a 25/11/2025. Regulamentacao superveniente da ANEEL nao ensejara nova recontabilizacao dos periodos ja processados. (5) AUDITORIA INDEPENDENTE (art. 8o): a operacionalizacao pela CCEE e objeto de avaliacao de auditoria independente para validacao dos dados e dos resultados, conforme procedimento assegurado nas regras e procedimentos de comercializacao. VALORACAO que a CCEE aplicara (Clausula Quinta do Termo): sem limitacao por garantia fisica, montante contratado, frequencia ou tempo acumulado; o montante cortado conta como energia entregue para CCEAR-D e CER, reduzindo os ressarcimentos contratuais; a parcela nao comprometida e valorada ao PLD do submercado da usina; a parcela Proinfa ao preco contratual vigente na data do corte, paga por intermedio da ENBPar; abate-se o que ja tenha sido pago. RELEVANCIA SOA/SOS: a auditoria independente sobre dados e resultados de uma recontabilizacao de 27 meses, somada a segregacao horaria por usina e por classificacao, e o desenho institucional mais proximo da camada de evidencia ja produzido no setor.",
+      "status": "VIGENTE",
+      "norma": "Portaria Normativa MME no 140, de 18/07/2026, arts. 2o, 5o, 6o, 7o e 8o · DOU de 21/07/2026, Edicao Extra, Secao 1",
+      "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
+      "verificado_em": "2026-08-07",
+      "tipo_fato": "REGULATORIO_NORMATIVO",
+      "score_soa": 18,
+      "vetores_afetados": [
+        "V4",
+        "V3",
+        "sHEC"
+      ],
+      "qsv_cor": "VERDE",
+      "qsv_origem_classificacao": "F1_texto_integral_reaberto_07ago2026 - deveres extraidos do texto do ato no repositorio oficial do orgao emissor. Copia arquivada em _Fontes_F1_Portaria_140/",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_texto_integral_oficial",
+          "ref": "gov.br/mme - repositorio oficial de legislacao, arquivo portaria-normativa-mme-n-140-2026.pdf (10 paginas), lido integralmente em 07/08/2026",
+          "trecho_literal": "PORTARIA NORMATIVA MME No 140, DE 18 DE JULHO DE 2026 ... Art. 1o Paragrafo unico. Para uma dada usina, sera objeto de compensacao o evento de corte de geracao ocorrido de 1o de setembro de 2023 ate 25 de novembro de 2025, inclusive, desde que decorrente de eventos de confiabilidade eletrica ou de indisponibilidade externa ... Este texto nao substitui o publicado no DOU de 21.7.2026 (Edicao Extra) - Secao 1.",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ],
+      "numero_status": "ANCORADO_EM_TEXTO_INTEGRAL_OFICIAL_DO_ORGAO_COM_CARIMBO_DOU",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-08-07"
+      },
+      "gatilho_revisao": "publicacao pela CCEE das regras e procedimentos de comercializacao adaptados, termo em 19/09/2026",
+      "pendencia_verificacao": "O portal da CCEE (ccee.org.br/web/guest/consultas-publicas) devolveu HTTP 403 nesta execucao; nao foi possivel verificar de forma independente se a CCEE ja abriu consulta ou publicou minuta das regras adaptadas. Fonte secundaria indica aprovacao, pela diretoria da CCEE, da abertura de consulta publica especifica para inclusao do LRCAP 2026 nas Regras de Comercializacao - assunto distinto, nao confundir com o art. 7o da Portaria 140."
     }
   ],
   "_pendentes_verificacao": [],
