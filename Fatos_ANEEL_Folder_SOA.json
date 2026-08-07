@@ -3,7 +3,7 @@
     "orgao": "ANEEL",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ANEEL — schema v1.3 com tipo_fato, qsv_cor, fontes independentes, associacao_origem, ancoragem numérica. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-07-29",
+    "verificado_em": "2026-08-07",
     "proxima_revisao_sugerida": "2026-07-30",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ANEEL conforme QSV-R v3.0",
     "nota_run_2026_07_16": "Varredura de 16/07: nenhuma reabertura F1 efetiva → NENHUM fato teve verificado_em bumpado (postura conservadora, R2). _meta.verificado_em reflete a data da varredura, não a de reconferência de fato. Página-mãe de notícias da ANEEL veio JS-truncada (inconclusiva para 08–16/07); a subpasta /noticias/2026-defeso-eleitoral carimba 'Atualizado em 07/07/2026 17h39' e vale como negativo APENAS para essa subpasta. Detectados 6 itens novos via F3 (ABSOLAR GTGD 15/07 + Agência iNFRA 13/07), todos em _pendentes_verificacao. A run de 15/07 escreveu JSON mas não escreveu digest — lacuna reportada ao CEO.",
@@ -580,6 +580,41 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null
+    },
+    {
+      "fato_id": "ANEEL-CP-018-2026-PEE",
+      "tema": "CP ANEEL no 18/2026 - Programa de Eficiencia Energetica para a Transicao Energetica: prazo PRORROGADO para 09/09/2026",
+      "valor": "Reconferido na fonte oficial em 07/08/2026: a lista de noticias da ANEEL traz, em 06/08/2026, a materia 'Prazo prorrogado: Consulta Publica para aprimorar o Programa de Eficiencia Energetica recebe contribuicoes ate 9 de setembro'. A CP no 18/2026 colhe subsidios para a Analise de Impacto Regulatorio do Programa de Eficiencia Energetica, criado pela Lei no 9.991/2000, que obriga distribuidoras a aplicar parcela da receita em projetos de reducao de desperdicio de energia. NOVA DATA-LIMITE DE CONTRIBUICOES: 09/09/2026. IMPORTANCIA PARA A SOA/SOS: e a consulta cujo eixo e a medicao e verificacao da economia apurada - ou seja, a prova do resultado, e nao a intencao do projeto. A contribuicao SOA foi enviada a ABSOLAR em 04/08/2026. EFEITO SOBRE O CALENDARIO INTERNO: a prorrogacao para 09/09 resolve a divergencia que vinha sendo carregada entre as datas de prazo ANEEL 10/08 e as varias datas internas da associacao, e abre janela real para uma segunda peca ou para o reenvio da peca ja produzida.",
+      "status": "ABERTA",
+      "norma": "Consulta Publica ANEEL no 18/2026 · Lei no 9.991/2000 · contribuicoes ate 09/09/2026",
+      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias",
+      "verificado_em": "2026-08-07",
+      "tipo_fato": "REGULATORIO_PROCESSUAL",
+      "score_soa": 14,
+      "vetores_afetados": [
+        "V3",
+        "sHEC"
+      ],
+      "qsv_cor": "VERDE",
+      "qsv_origem_classificacao": "F1_pagina_oficial_reaberta_07ago2026 - listagem de noticias da ANEEL renderizada e lida nesta execucao; titulo e data da prorrogacao transcritos da propria pagina do orgao",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "gov.br/aneel - lista de noticias, item de 06/08/2026, reaberta em 07/08/2026",
+          "trecho_literal": "Prazo prorrogado: Consulta Publica para aprimorar o Programa de Eficiencia Energetica recebe contribuicoes ate 9 de setembro",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ],
+      "numero_status": "ANCORADO_EM_FONTE_OFICIAL_DO_ORGAO",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-08-07"
+      },
+      "gatilho_revisao": "encerramento das contribuicoes em 09/09/2026; publicacao do relatorio da AIR",
+      "pendencia_verificacao": "A pagina interna da noticia devolveu HTTP 404 no slug testado e o numero da CP nao aparece no titulo da listagem: a associacao entre a materia de 06/08 e a CP no 18/2026, bem como o numero do processo, vem de fonte secundaria que reproduz o comunicado. Abrir a pagina da noticia e a ficha da CP no sistema de participacao publica da ANEEL para carimbar numero de CP e de processo antes de citar externamente."
     }
   ],
   "_pendentes_verificacao": [

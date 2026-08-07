@@ -3,7 +3,7 @@
     "orgao": "ONS",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ONS — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-07-28",
+    "verificado_em": "2026-08-07",
     "proxima_revisao_sugerida": "2026-07-29",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ONS conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Dados Abertos vão direto pro banco SOA.",
@@ -337,6 +337,44 @@
       "orgao": "ONS",
       "gatilho_revisao": "Publicação da metodologia dos estudos prospectivos pelo ONS (prazo do Art. 4º, I: 180 dias de 08/07/2026, ~04/01/2027 por contagem própria) e primeira CRef aprovada pelo CMSE (até dezembro/2026).",
       "pendencia_verificacao": "Os deveres estão ancorados no ato. O CUMPRIMENTO por parte do ONS não foi verificado — o portal do ONS segue cego para o monitor. Não afirmar que o ONS publicou metodologia ou CRef sem reabrir a fonte."
+    },
+    {
+      "fato_id": "ONS-PORTARIA-140-2026-DEVERES",
+      "tema": "Deveres do ONS na Portaria Normativa MME 140/2026 - funcoes de produtividade, atualizacao de dados e apuracao dos cortes",
+      "valor": "Ancorado no texto integral da Portaria Normativa MME no 140, de 18/07/2026 (DOU de 21/07/2026, Edicao Extra, Secao 1), lido em 07/08/2026. A portaria atribui ao ONS DOIS RITOS DISTINTOS, com prazos proprios contados da publicacao. RITO 1 - FUNCOES DE PRODUTIVIDADE FOTOVOLTAICAS (art. 4o), para o periodo de 1o/09/2023 a 31/03/2024: em ate 5 dias divulgar em seu sitio o cronograma, as especificacoes tecnicas, os criterios de validacao e as demais informacoes do procedimento (termo em 27/07/2026); em ate 20 dias os agentes apresentam os registros de medicao solarimetrica (10/08/2026); em ate 40 dias o ONS divulga as funcoes elaboradas - o 40o dia cai em domingo, 30/08/2026, e o art. 4o par. 4o prorroga o termo para 31/08/2026; contestacao justificada em 10 dias; em ate 20 dias do fim das contestacoes o ONS divulga as funcoes atualizadas e as analises das contestacoes. RITO 2 - ATUALIZACAO DE INFORMACOES PARA APURACAO E CLASSIFICACAO (art. 5o), periodo de 1o/09/2023 a 10/02/2025, abrangendo medicao anemometrica ou solarimetrica, geracao verificada e disponibilidade: em ate 120 dias da publicacao (18/11/2026) o ONS deve desenvolver ferramenta computacional para o recebimento e divulgar cronograma, especificacoes tecnicas e criterios de validacao; os interessados tem 30 dias para apresentar; o ONS tem 90 dias para analisar a consistencia e divulgar as analises e a base de dados resultante; contestacao em 10 dias; em ate 30 dias o ONS divulga a analise das contestacoes e envia a CCEE a base final, que deve conter no minimo a estimativa de geracao em base horaria usada no calculo dos montantes de corte e a variacao dessa estimativa por usina ou conjunto de usinas em decorrencia da atualizacao. CRITERIO DE ACEITACAO DO DADO (art. 5o, par. 2o e 3o): a informacao atualizada deve corresponder de forma fidedigna ao valor efetivamente disponivel no instante do evento e estar registrada no sistema de medicao da usina; so e aceita a atualizacao se tiver sido constatada falha no recebimento em tempo real via supervisao da operacao, ou se houver informacao mais fidedigna registrada nos sistemas de medicao da usina. CLASSIFICACAO (art. 5o, par. 4o e 5o): o ONS apura os cortes em janelas horarias e os enquadra exclusivamente em indisponibilidade externa, confiabilidade eletrica ou sobreoferta; havendo classificacoes distintas na mesma janela, independentemente da duracao, prevalece a indisponibilidade externa e, subsidiariamente, a confiabilidade eletrica. RELEVANCIA SOA/SOS: e a primeira vez que um ato normativo fixa, para o Operador, prazo de divulgacao de criterios de validacao de serie temporal e um criterio expresso de admissibilidade de dado retroativo. O art. 11 da portaria condiciona a incorporacao dessas informacoes as bases do ONS e da CCEE a celebracao do Termo de Compromisso pelo agente.",
+      "status": "VIGENTE",
+      "norma": "Portaria Normativa MME no 140, de 18/07/2026, arts. 4o, 5o e 11 · DOU de 21/07/2026, Edicao Extra, Secao 1",
+      "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
+      "verificado_em": "2026-08-07",
+      "tipo_fato": "REGULATORIO_NORMATIVO",
+      "score_soa": 20,
+      "vetores_afetados": [
+        "V4",
+        "V3",
+        "sHEC"
+      ],
+      "qsv_cor": "VERDE",
+      "qsv_origem_classificacao": "F1_texto_integral_reaberto_07ago2026 - deveres extraidos do texto do ato no repositorio oficial do orgao emissor. Copia arquivada em _Fontes_F1_Portaria_140/",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_texto_integral_oficial",
+          "ref": "gov.br/mme - repositorio oficial de legislacao, arquivo portaria-normativa-mme-n-140-2026.pdf (10 paginas), lido integralmente em 07/08/2026",
+          "trecho_literal": "PORTARIA NORMATIVA MME No 140, DE 18 DE JULHO DE 2026 ... Art. 1o Paragrafo unico. Para uma dada usina, sera objeto de compensacao o evento de corte de geracao ocorrido de 1o de setembro de 2023 ate 25 de novembro de 2025, inclusive, desde que decorrente de eventos de confiabilidade eletrica ou de indisponibilidade externa ... Este texto nao substitui o publicado no DOU de 21.7.2026 (Edicao Extra) - Secao 1.",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ],
+      "numero_status": "ANCORADO_EM_TEXTO_INTEGRAL_OFICIAL_DO_ORGAO_COM_CARIMBO_DOU",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-08-07"
+      },
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "gatilho_revisao": "publicacao das funcoes de produtividade pelo ONS, termo em 31/08/2026; abertura da ferramenta computacional do art. 5o, termo em 18/11/2026",
+      "pendencia_verificacao": "O cumprimento pelo ONS do prazo de 5 dias do art. 4o par. 1o I, com termo em 27/07/2026, NAO foi verificado de forma independente: ons.org.br devolveu HTTP 502 na home de noticias e template nao renderizado na raiz, quarta execucao consecutiva. A ABSOLAR relatou em F3 que o cronograma nao havia sido publicado ate 03/08; a reuniao ABSOLAR com o ONS de 04/08 indica que o procedimento estava em curso. Reabrir ons.org.br assim que responder."
     }
   ],
   "_pendentes_verificacao": [
