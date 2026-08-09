@@ -1,11 +1,11 @@
 {
  "_meta": {
   "titulo": "Inscrições — Eventos do Setor Elétrico em SP — Monitor SOA/SOS",
-  "atualizado_em": "2026-08-03",
+  "atualizado_em": "2026-08-08",
   "links_verificados_em": "2026-07-11",
   "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ABENDI, ANE, ABCE, APINE)",
   "nota": "Trilho de inscrições dos eventos do setor em São Paulo. Cada item leva ao link oficial de credenciamento. Inscrever-se com trigo.com@gmail.com. Datas/valores confirmar na página oficial. Eventos com credenciamento a abrir levam à página oficial do evento. O monitor regenera este JSON: eventos já encerrados saem sozinhos e a data de verificação dos links é atualizada a cada varredura.",
-  "nota_run_2026_08_03": "Nesta varredura foram reabertas as páginas oficiais de eventos da APINE, COGEN, ABGD, ABEEólica, CIGRE-Brasil e ABSOLAR, sem alteração de datas em relação à varredura anterior. Duas mudanças no trilho: (1) o II BioComForest saiu, por ter se encerrado em 30 de julho; (2) o XXXII Simpósio Jurídico ABCE passou de 'a abrir' para 'abertos' — a página oficial de eventos da APINE expôs o local, Blue Tree Premium Faria Lima, em São Paulo, e o formulário de inscrição; o site da associação organizadora segue indisponível, então a data permanece a confirmar. Os links de credenciamento dos demais eventos não foram reabertos nesta rodada, por isso a data de verificação de links permanece a anterior."
+  "nota_run_2026_08_08": "Nesta varredura foram reabertas as páginas oficiais de eventos da APINE, ABGD, ABEEólica, CIGRE-Brasil, ABSOLAR e da Academia Nacional de Engenharia. Nenhuma data mudou e nenhum evento novo em São Paulo com credenciamento entrou no trilho, então a composição segue igual à da varredura anterior. O 13º Fórum do Biogás é o próximo, em 11 e 12 de agosto. Duas observações de fonte: a página da ABSOLAR seguiu no ar sem expor datas, pela quinta leitura consecutiva, e o calendário da Academia Nacional de Engenharia seguiu sem renderizar conteúdo, pela quarta — os dois itens em 'a abrir' permanecem com data a confirmar. A página da COGEN não pôde ser aberta nesta rodada, e as datas dos eventos dela foram mantidas da varredura de 3 de agosto. Os links de credenciamento não foram reabertos nesta rodada, por isso a data de verificação de links permanece a anterior."
  },
  "abertos": [
   {

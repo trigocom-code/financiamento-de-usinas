@@ -1,9 +1,9 @@
-{
+﻿{
   "_meta": {
     "orgao": "ONS",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ONS — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-08-07",
+    "verificado_em": "2026-08-08",
     "proxima_revisao_sugerida": "2026-07-29",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ONS conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Dados Abertos vão direto pro banco SOA.",
@@ -375,6 +375,42 @@
       "agente_comercial_envolvido": null,
       "gatilho_revisao": "publicacao das funcoes de produtividade pelo ONS, termo em 31/08/2026; abertura da ferramenta computacional do art. 5o, termo em 18/11/2026",
       "pendencia_verificacao": "O cumprimento pelo ONS do prazo de 5 dias do art. 4o par. 1o I, com termo em 27/07/2026, NAO foi verificado de forma independente: ons.org.br devolveu HTTP 502 na home de noticias e template nao renderizado na raiz, quarta execucao consecutiva. A ABSOLAR relatou em F3 que o cronograma nao havia sido publicado ate 03/08; a reuniao ABSOLAR com o ONS de 04/08 indica que o procedimento estava em curso. Reabrir ons.org.br assim que responder."
+    },
+    {
+      "fato_id": "ONS-NT-DPL-0031-2024-REVISAO-FV",
+      "tema": "NT-ONS DPL 0031/2024 — revisao das funcoes de produtividade de usinas fotovoltaicas",
+      "valor": "O ONS revisou a NT-ONS DPL 0031/2024, que descreve a metodologia de estimativa das funcoes de produtividade de usinas fotovoltaicas, depois de identificar inconsistencia no calculo de geracao em determinadas horas do dia. Conforme noticiado, o criterio de filtragem de dados de irradiancia era excessivamente conservador e descartava medicoes validas nos periodos de nascer e por do sol, comprometendo a estimativa de geracao nesses horarios. As correcoes foram recalculadas para dezembro de 2025, janeiro e fevereiro de 2026, com incorporacao permanente na revisao de marco de 2026; as funcoes corrigidas foram disponibilizadas para consulta no portal SINtegre, no arquivo 'Funcoes Prod-2026 Revisadas.zip'. PONTO DE MAIOR RELEVANCIA: as usinas cujos agentes reenviaram informacoes para a revisao anual NAO foram afetadas pela correcao — a distorcao atingiu as que dependiam dos dados de supervisao do ONS. As funcoes de produtividade alimentam analises de constrained-off fotovoltaico. BORDA DIRETA com o art. 4o da Portaria Normativa MME 140/2026, que manda o ONS divulgar as funcoes de produtividade ate 31/08/2026 e assegura contestacao fundamentada: ha precedente documentado de que a metodologia do proprio Operador ja errou, de forma conservadora, exatamente nas horas de borda do dia, e de que enviar dado proprio insulou o agente do erro. Pendente de confirmacao em F1: o texto da NT nao foi aberto nesta run.",
+      "status": "VIGENTE",
+      "norma": "NT-ONS DPL 0031/2024 (metodologia das funcoes de produtividade FV) · art. 4o da Portaria Normativa MME 140/2026 (divulgacao ate 31/08/2026 e contestacao)",
+      "url": "https://www.ons.org.br/",
+      "verificado_em": "2026-08-08",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "score_soa": 13,
+      "vetores_afetados": [
+        "V1",
+        "V3",
+        "V7"
+      ],
+      "qsv_cor": "LARANJA",
+      "qsv_origem_classificacao": "F2_imprensa_especializada_sem_texto_integral",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F2_imprensa_especializada",
+          "ref": "Canal Solar, 'ONS atualiza nota tecnica apos rever calculo de usinas solares', 13/05/2026 — https://canalsolar.com.br/ons-atualiza-nota-tecnica-calculo-usinas-solares/",
+          "trecho_literal": "criterios excessivamente conservadores na filtragem de dados de irradiancia solar",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ],
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-08-08"
+      },
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null
     }
   ],
   "_pendentes_verificacao": [
