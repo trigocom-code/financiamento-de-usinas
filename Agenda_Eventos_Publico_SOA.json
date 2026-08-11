@@ -1,18 +1,39 @@
 {
  "_meta": {
   "titulo": "Agenda do Setor Elétrico — Monitor SOA/SOS",
-  "atualizado_em": "2026-08-08",
+  "atualizado_em": "2026-08-10",
   "fonte": "Monitor de Eventos SOA/SOS · fontes oficiais (gov.br/ANEEL · EPE · MME · CCEE · Senado · TCU · CIGRE-Brasil) + associações do setor (ANE, COGEN, APINE, ABGD, ABSOLAR, ABEEólica, ABCE) e imprensa setorial",
   "nota": "Agenda pública de datas do setor elétrico. Eventos de associação e sinais de fontes secundárias marcados 'A VERIFICAR'; confirmar no ato/página oficial antes de citar.",
-  "nota_run_2026_08_08": "Varredura de 8 de agosto, cobrindo os quatro dias úteis anteriores (4 a 7 de agosto). (1) O item de maior urgência é a véspera: o Operador Nacional do Sistema Elétrico emitiu alerta em 6 de agosto e avisou formalmente as distribuidoras em 7 de agosto sobre a possibilidade de acionar, no domingo 9 de agosto, Dia dos Pais, o plano emergencial que reduz a geração de usinas conectadas diretamente à rede de distribuição. A decisão definitiva sai no sábado 8 de agosto, ao fechar a programação do dia seguinte, e não havia sido publicada até esta varredura. O aviso confirma a leitura de padrão que esta agenda registrou em 3 de agosto, quando nenhum alerta havia sido emitido. (2) Correção: o encontro do operador com os agentes de transmissão, que esta agenda listava para 5 de agosto, foi retirado. A publicação institucional do próprio operador que anuncia um quarto encontro no dia 5 de agosto, das 13h às 18h, por videoconferência, é de 29 de julho de 2024, e a matéria de imprensa de 29 de julho de 2026 reproduz o mesmo conteúdo; a edição seguinte da série ocorreu em 13 de agosto de 2025. Não há evidência de uma edição em 2026. (3) A Empresa de Pesquisa Energética publicou em 3 de agosto o resultado do cadastramento dos leilões de armazenamento: 6.091 projetos e 296.807 megawatts, recorde de participação em certames do setor elétrico brasileiro. A própria empresa adverte que potência cadastrada não é potência elegível, porque a fase de habilitação técnica ainda vai definir quantos projetos avançam. (4) O operador nacional contratou 344 megawatts de resposta da demanda no terceiro mecanismo competitivo, com deságio médio de 49,23% e contratos vigentes até dezembro de 2026. (5) Dois prazos de consulta pública foram corrigidos: o do Programa de Eficiência Energética passou para 9 de setembro, por prorrogação anunciada pela ANEEL em 6 de agosto, e o do Prêmio de Inovação passou de 15 para 17 de agosto."
+  "nota_run_2026_08_10": "Varredura de 10 de agosto, cobrindo a janela desde a tarde de 8 de agosto. (1) O item de maior urgência da varredura anterior fechou, e fechou em não-evento: o Operador Nacional do Sistema Elétrico descartou, no sábado 8 de agosto, o acionamento do plano emergencial que reduziria a geração de usinas conectadas à rede de distribuição no domingo 9 de agosto. Os dois motivos declarados foram as medidas de balanço adotadas pelo próprio operador e uma previsão de carga mínima mais alta que a esperada. É o segundo domingo seguido com alerta emitido e acionamento descartado na véspera. Segue aberta, e por isso não é afirmada aqui, a divergência entre as fontes sobre o nível do alerta emitido em 6 de agosto. (2) No dia do prazo final de manifestação de interesse, o secretário de Energia Elétrica do Ministério de Minas e Energia declarou que a adesão ao acordo de ressarcimento por cortes de geração chegou a cerca de 90%, o equivalente a cerca de 50 mil megawatts dos 56 mil habilitados. A etapa seguinte é a consolidação dos eventos e a classificação das horas de corte pelo operador nacional e pela câmara de comercialização; cada gerador receberá um demonstrativo de volume elegível em megawatt-hora, sem valor financeiro definido de imediato. A mesma cobertura fixa a janela de cortes coberta pela portaria entre 1º de setembro de 2023 e 25 de novembro de 2025, o que resolve uma divergência de datas que esta agenda registrava havia três varreduras. (3) Achado datado novo: a reunião pública ordinária de 11 de agosto é a última do diretor Fernando Mosna, cujo mandato termina em 13 de agosto, e ele é o relator de três blocos em pauta — o recurso da Enel São Paulo contra o processo de caducidade, o recurso da TermoG contra a inabilitação no leilão de reserva de capacidade de 2026 e os recursos de usinas renováveis contra multas do apagão de 15 de agosto de 2023. Não há sucessor anunciado. (4) Prazo novo: a Agência encerrou em 7 de agosto a instrução do processo da Enel São Paulo e abriu dez dias corridos para alegações finais, o que situa o limite em 17 de agosto; depois disso o processo segue para recomendação final ao Ministério de Minas e Energia. (5) Evento novo no horizonte: o XVIII Seminário Técnico de Proteção e Controle, do CIGRE-Brasil, de 6 a 9 de outubro em Belo Horizonte, que coincide com o Smart Grid Fórum e com o Data Center World na mesma semana. (6) A consulta pública sobre a prestação de contas do plano de aplicação de recursos do PROCEL teve o prazo capturado, de 6 de agosto a 4 de setembro; o número da consulta segue não capturado porque a página da notícia oficial devolveu erro pela segunda varredura consecutiva."
  },
  "recentes": [
   {
-   "data": "2026-08-07",
-   "titulo": "Operador Nacional do Sistema Elétrico avisa as distribuidoras sobre possível corte de geração no domingo 9 de agosto",
-   "detalhe": "O aviso foi enviado preventivamente para que as distribuidoras estejam preparadas caso seja necessário executar os cortes. A decisão definitiva sai no sábado, 8 de agosto, quando o operador conclui a programação do dia seguinte. O plano reduz a geração de usinas de até 50 megawatts conectadas diretamente à rede de distribuição, e o operador informa às distribuidoras apenas o montante de energia a ser reduzido. A microgeração e a minigeração distribuída não participam do mecanismo, mas entram na conta como estimativa. Há divergência sobre o nível do alerta emitido em 6 de agosto entre as fontes consultadas.",
+   "data": "2026-08-10",
+   "titulo": "Ministério de Minas e Energia declara adesão de cerca de 90% ao acordo de ressarcimento por cortes de geração, equivalente a cerca de 50 mil megawatts",
+   "detalhe": "Declaração do secretário de Energia Elétrica no dia do encerramento do prazo de manifestação de interesse. O percentual corresponde a cerca de 50 mil megawatts dos 56 mil habilitados; o número de agentes e de usinas não foi informado. A etapa seguinte é a consolidação dos eventos e a classificação das horas de corte pelo operador nacional e pela câmara de comercialização, ao fim da qual cada gerador recebe um demonstrativo com o volume elegível em megawatt-hora, sem valor financeiro definido de imediato. Como contrapartida, os geradores renunciam de forma irrevogável a ações judiciais sobre cortes no período coberto. Potência aderida não é energia ressarcida nem valor.",
+   "status": "A VERIFICAR",
+   "fonte": "Imprensa setorial (10/08); declaração não lida em nota oficial do Ministério"
+  },
+  {
+   "data": "2026-08-10",
+   "titulo": "ANEEL encerra a instrução do processo de caducidade da concessão da Enel São Paulo e abre dez dias para alegações finais",
+   "detalhe": "A instrução foi encerrada em 7 de agosto pelo Ofício nº 15/2026-GAB II, da diretora Agnes Costa, que notificou a distribuidora e abriu dez dias corridos para as alegações finais, o que situa o limite em 17 de agosto. Depois da análise das alegações, o processo segue para recomendação final ao Ministério de Minas e Energia, que detém a competência de decretar a caducidade. Não há data para a decisão final.",
    "status": "CONFIRMADO",
-   "fonte": "Imprensa setorial e geral convergente (07/08), três veículos independentes"
+   "fonte": "Imprensa setorial (10/08), com o número do ofício"
+  },
+  {
+   "data": "2026-08-09",
+   "titulo": "Operador Nacional do Sistema Elétrico descarta o plano emergencial de corte de geração no domingo do Dia dos Pais",
+   "detalhe": "A decisão foi tomada no sábado 8 de agosto, ao fechar a programação do dia seguinte, revertendo o aviso preventivo enviado às distribuidoras em 7 de agosto. O operador declarou dois motivos: a combinação de medidas adotadas por ele próprio para equilibrar geração e carga, e uma previsão de carga mínima mais alta do que a projetada. É o segundo domingo seguido com alerta emitido e acionamento descartado na véspera, depois de 2 de agosto. A divergência entre as fontes sobre o nível do alerta emitido em 6 de agosto segue aberta e não é afirmada aqui.",
+   "status": "CONFIRMADO",
+   "fonte": "Imprensa setorial e geral convergente (08 e 09/08), quatro veículos independentes"
+  },
+  {
+   "data": "2026-08-07",
+   "titulo": "EPE, ONS e CCEE divulgam a segunda revisão quadrimestral das previsões de carga para o planejamento de 2026 a 2030",
+   "detalhe": "Resultados da 2ª Revisão Quadrimestral das Previsões de Carga para o Planejamento Anual da Operação Energética. O documento não foi lido nesta varredura.",
+   "status": "CONFIRMADO",
+   "fonte": "EPE — nota oficial de 07/08"
   },
   {
    "data": "2026-08-07",
@@ -51,22 +72,15 @@
   },
   {
    "data": "2026-08-05",
-   "titulo": "Leilão de Transmissão nº 4/2026: informações sobre o Data Room da Afluente Transmissão de Energia ficam disponíveis",
-   "detalhe": "Etapa preparatória do certame marcado para 30 de outubro.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-08-05",
    "titulo": "ANEEL abre consulta pública sobre a prestação de contas do Plano de Aplicação de Recursos do PROCEL",
-   "detalhe": "O número da consulta e o prazo de contribuições não foram capturados nesta varredura: a página da notícia oficial devolveu erro.",
+   "detalhe": "O prazo de contribuições foi capturado nesta varredura: de 6 de agosto a 4 de setembro de 2026. O número da consulta segue não capturado, porque a página da notícia oficial devolveu erro pela segunda varredura consecutiva.",
    "status": "A VERIFICAR",
    "fonte": "gov.br/ANEEL — índice de notícias; página da notícia inacessível"
   },
   {
    "data": "2026-08-05",
-   "titulo": "ANEEL recebe representantes da Enel São Paulo para tratar de recurso no processo de recomendação de caducidade",
-   "detalhe": "No dia seguinte, 6 de agosto, a Agência analisou o recurso da distribuidora contra o processo.",
+   "titulo": "Leilão de Transmissão nº 4/2026: informações sobre o Data Room da Afluente Transmissão de Energia ficam disponíveis",
+   "detalhe": "Etapa preparatória do certame marcado para 30 de outubro, que reúne nove lotes em nove estados.",
    "status": "CONFIRMADO",
    "fonte": "gov.br/ANEEL"
   },
@@ -90,48 +104,6 @@
    "detalhe": "Nota oficial da Empresa de Pesquisa Energética publicada em 3 de agosto, encerrando o cadastramento dos dois certames marcados para 2 e 4 de dezembro. A empresa adverte expressamente que os projetos cadastrados não representam automaticamente empreendimentos aptos: eles passam agora pelas etapas de análise e habilitação técnica, e só depois se saberá quantos projetos, e consequentemente quanta potência, estarão aptos a participar das fases seguintes. Associação do setor solar registra o número como recorde de participação em certames do setor elétrico brasileiro.",
    "status": "CONFIRMADO",
    "fonte": "EPE — nota oficial de 03/08"
-  },
-  {
-   "data": "2026-08-03",
-   "titulo": "ANEEL define em 17 de agosto o novo prazo da Consulta Pública nº 21/2026, sobre o Prêmio de Inovação",
-   "detalhe": "A data substitui a de 15 de agosto anteriormente registrada.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL — notícia oficial de 03/08"
-  },
-  {
-   "data": "2026-07-31",
-   "titulo": "EPE estende para as 18h o prazo de envio de documentos do leilão de armazenamento e encerra o cadastramento",
-   "detalhe": "Nota oficial de 31 de julho: o prazo de carregamento dos documentos dos projetos inscritos foi postergado das 12h para as 18h do mesmo dia, porque o upload ficou indisponível por alguns momentos durante a manhã, em razão do elevado volume de acessos ao sistema. A nota resolve a divergência anterior entre as datas de 30 e 31 de julho, em favor de 31 de julho.",
-   "status": "CONFIRMADO",
-   "fonte": "EPE — nota oficial de 31/07"
-  },
-  {
-   "data": "2026-07-31",
-   "titulo": "MME veda o gás natural da União para termelétricas do Sistema Interligado Nacional em futuros leilões",
-   "detalhe": "Nota técnica do ministério corrige declaração anterior e destina a molécula comercializada pela Pré-Sal Petróleo S.A. ao consumidor industrial livre, alterando a leitura da resolução aprovada no dia anterior pelo Conselho Nacional de Política Energética.",
-   "status": "A VERIFICAR",
-   "fonte": "Imprensa setorial (31/07); nota técnica não lida em fonte oficial"
-  },
-  {
-   "data": "2026-07-31",
-   "titulo": "Bandeira tarifária permanece amarela em agosto",
-   "detalhe": "Condições menos favoráveis de geração mantêm o acréscimo de R$ 1,885 na conta de luz a cada 100 quilowatts-hora.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-07-30",
-   "titulo": "ONS emite alerta amarelo para eventual corte de geração de usinas conectadas à distribuição no domingo 2 de agosto",
-   "detalhe": "Na reunião de programação da operação de 30 de julho, o operador emitiu alerta amarelo sobre a possibilidade de acionar o plano emergencial no domingo 2 de agosto. Não foi localizada, nesta varredura, nenhuma cobertura de acionamento efetivo naquele dia. Como a primeira ativação do mecanismo, em 7 de junho de 2026, gerou cobertura ampla e imediata, o silêncio sugere que o plano provavelmente não foi acionado em 2 de agosto — mas isso não é confirmação.",
-   "status": "A VERIFICAR",
-   "fonte": "Imprensa setorial (30/07); desfecho não publicado"
-  },
-  {
-   "data": "2026-07-30",
-   "titulo": "CNPE aprova a resolução que reestrutura a comercialização do gás natural da União",
-   "detalhe": "Em reunião extraordinária, o conselho autorizou a Pré-Sal Petróleo S.A. a realizar leilões da commodity no curto prazo entre 2026 e 2030 e fixou diretrizes para contratos de longo prazo a partir da próxima década.",
-   "status": "CONFIRMADO",
-   "fonte": "Imprensa setorial convergente (30/07); resolução a conferir no Diário Oficial"
   },
   {
    "data": "2026-07-30",
@@ -164,7 +136,7 @@
   {
    "data": "2026-07-21",
    "titulo": "MME institui o ressarcimento de cortes de geração renovável (Portaria Normativa nº 140/2026)",
-   "detalhe": "Publicada no Diário Oficial em 21/07, a Portaria Normativa MME nº 140, de 18/07/2026, cria o Termo de Compromisso que operacionaliza o ressarcimento previsto na Lei nº 15.269/2025, com valor estimado de cerca de R$ 3,3 bilhões. A adesão dos agentes ocorre em até 20 dias da publicação, com prazo em 10 de agosto de 2026, e a compensação se dá por abatimento contábil na Câmara de Comercialização de Energia Elétrica, sem depósito direto. Há divergência entre fontes sobre a data final da janela de cortes coberta, a conferir no texto da portaria.",
+   "detalhe": "Publicada no Diário Oficial em 21/07, a Portaria Normativa MME nº 140, de 18/07/2026, cria o Termo de Compromisso que operacionaliza o ressarcimento previsto na Lei nº 15.269/2025, com valor estimado de cerca de R$ 3,3 bilhões. A adesão dos agentes ocorre em até 20 dias da publicação, com prazo em 10 de agosto de 2026, e a compensação se dá por abatimento contábil na Câmara de Comercialização de Energia Elétrica, sem depósito direto. A janela de cortes coberta vai de 1º de setembro de 2023 a 25 de novembro de 2025, segundo duas fontes convergentes desta varredura; a leitura direta do texto da portaria segue pendente.",
    "status": "CONFIRMADO",
    "fonte": "Portaria Normativa MME nº 140/2026 (DOU 21/07); imprensa setorial convergente"
   },
@@ -178,44 +150,44 @@
  ],
  "acao_7dias": [
   {
-   "data": "2026-08-09",
-   "titulo": "Domingo do Dia dos Pais — possível acionamento do plano emergencial de gestão de excedentes na rede de distribuição",
-   "detalhe": "O operador nacional emitiu alerta em 6 de agosto e avisou as distribuidoras em 7 de agosto. A decisão definitiva sai no sábado 8 de agosto, ao fechar a programação do dia seguinte, e não havia sido publicada até esta varredura. O plano reduz a geração de usinas de até 50 megawatts conectadas diretamente à rede de distribuição; a microgeração e a minigeração distribuída não participam do mecanismo, mas entram na conta como estimativa. Precedentes: 10 de agosto de 2025, também Dia dos Pais, quando a geração distribuída atingiu 37,6% da demanda nacional; e 7 de junho de 2026, primeira ativação, com cerca de 1.000 megawatts reduzidos entre 10h e 14h por doze distribuidoras. Levantamento de consultoria a pedido de agência setorial contabiliza seis dias de estresse do sistema entre janeiro e julho de 2026, contra três no mesmo período de 2025.",
-   "status": "CONFIRMADO",
-   "fonte": "Imprensa setorial e geral convergente (06 e 07/08); desfecho a confirmar"
-  },
-  {
    "data": "2026-08-10",
-   "titulo": "Termo de Compromisso de ressarcimento de cortes de geração (MME) — prazo duplo e irreversível",
-   "detalhe": "Prazo final para os agentes manifestarem interesse pelo sistema CELEBRA (celebra.mme.gov.br), conforme a Portaria Normativa MME nº 140/2026. A mesma data é indicada para o envio ao operador nacional dos dados de medição solarimétrica que embasam as funções de produtividade das usinas fotovoltaicas. Registro de associação setorial indica que o operador declarou que a etapa de validação não reabrirá o prazo para reenvio, e que o preenchimento parcial substitui a base do operador sem que as lacunas remanescentes sejam complementadas.",
+   "titulo": "Termo de Compromisso de ressarcimento de cortes de geração (MME) — prazo final, hoje, e irreversível",
+   "detalhe": "Prazo final para os agentes manifestarem interesse pelo sistema CELEBRA (celebra.mme.gov.br), conforme a Portaria Normativa MME nº 140/2026. A mesma data é indicada para o envio ao operador nacional dos dados de medição solarimétrica que embasam as funções de produtividade das usinas fotovoltaicas. Registro de associação setorial indica que o operador declarou que a etapa de validação não reabrirá o prazo para reenvio, e que o preenchimento parcial substitui a base do operador sem que as lacunas remanescentes sejam complementadas. No próprio dia do prazo, o Ministério declarou adesão de cerca de 90%.",
    "status": "CONFIRMADO",
    "fonte": "Portaria Normativa MME nº 140/2026 (DOU 21/07); gov.br/MME"
   },
   {
    "data": "2026-08-11",
-   "titulo": "Senado Federal — Sessão de Debates Temáticos sobre transição energética, transmissão e marco do armazenamento",
-   "detalhe": "Sessão requerida pelo senador Laércio Oliveira, com apoio da Global Renewables Alliance. Temas declarados: expansão das redes de transmissão, regulamentação de sistemas de armazenamento em baterias, hidrogênio de baixo carbono e eletrificação da economia. Participantes divulgados incluem representantes da Global Renewables Alliance na América Latina, das associações dos setores eólico, solar, de hidrogênio e das grandes geradoras, do conselho global de energia eólica e do Ministério de Minas e Energia. Horário e local ainda não confirmados na agenda oficial do Senado.",
-   "status": "A VERIFICAR",
-   "fonte": "Imprensa setorial (06/08); agenda oficial do Senado não conferida"
+   "titulo": "Reunião Pública Ordinária da Diretoria da ANEEL — última reunião do diretor Fernando Mosna",
+   "detalhe": "O mandato do diretor termina em 13 de agosto de 2026, iniciado em 14 de agosto de 2022. Ele é o relator de três blocos em pauta: o recurso da Enel São Paulo contra a abertura do processo de caducidade da concessão; o recurso da TermoG contra a inabilitação no leilão de reserva de capacidade de 2026; e os recursos de usinas renováveis contra multas aplicadas em razão do apagão de 15 de agosto de 2023. Não há sucessor anunciado. A pauta formal não foi conferida no calendário oficial da Agência.",
+   "status": "CONFIRMADO",
+   "fonte": "gov.br/ANEEL — Calendário de Reuniões Públicas 2026; imprensa setorial convergente quanto à composição da pauta"
   },
   {
    "data": "2026-08-11",
-   "titulo": "Reunião Pública Ordinária (RPO) da Diretoria da ANEEL",
-   "detalhe": "Calendário oficial de 2026: reuniões de agosto em 11 e 25. A Agência recebeu representantes da Enel São Paulo em 5 de agosto e analisou o recurso da distribuidora contra o processo de recomendação de caducidade em 6 de agosto.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL — Calendário de Reuniões Públicas 2026"
+   "titulo": "Senado Federal — Sessão de Debates Temáticos sobre transição energética, transmissão e marco do armazenamento",
+   "detalhe": "Sessão requerida pelo senador Laércio Oliveira, com apoio da Global Renewables Alliance. Temas declarados: expansão das redes de transmissão, regulamentação de sistemas de armazenamento em baterias, hidrogênio de baixo carbono e eletrificação da economia. Participantes divulgados incluem representantes da Global Renewables Alliance na América Latina, das associações dos setores eólico, solar, de hidrogênio e das grandes geradoras, do conselho global de energia eólica e do Ministério de Minas e Energia. A sessão ocorre dentro do esforço concentrado do Congresso, de 10 a 14 de agosto, e serve de lançamento brasileiro do movimento Electrify Now. Horário e local seguem não confirmados na agenda oficial do Senado, na segunda varredura.",
+   "status": "A VERIFICAR",
+   "fonte": "Imprensa setorial (06/08); agenda oficial do Senado não conferida"
   },
   {
    "data": "2026-08-11",
    "titulo": "13º Fórum do Biogás (11 e 12/08)",
    "detalhe": "Evento da COGEN e da ABiogás no São Paulo Expo, São Paulo/SP.",
    "status": "CONFIRMADO",
-   "fonte": "COGEN e APINE — páginas oficiais; reconfirmado na APINE em 08/08"
+   "fonte": "COGEN e APINE — páginas oficiais; reconfirmado na APINE em 10/08"
+  },
+  {
+   "data": "2026-08-13",
+   "titulo": "Fim do mandato do diretor Fernando Mosna na ANEEL",
+   "detalhe": "Mandato iniciado em 14 de agosto de 2022, na vaga de Efrain Pereira da Cruz. A vaga no colegiado abre sem sucessor anunciado nesta varredura.",
+   "status": "CONFIRMADO",
+   "fonte": "Imprensa setorial convergente; página institucional da Agência"
   },
   {
    "data": "2026-08-13",
    "titulo": "POTEE 2026 (1ª emissão) — previsão de encerramento da consulta pública do MME",
-   "detalhe": "Consulta aberta em 14/07. A data exata de encerramento ainda não foi confirmada no documento oficial, na quarta varredura consecutiva.",
+   "detalhe": "Consulta aberta em 14/07. A data exata de encerramento ainda não foi confirmada no documento oficial, na quinta varredura consecutiva.",
    "status": "A VERIFICAR",
    "fonte": "gov.br/MME — documento do POTEE não aberto"
   },
@@ -229,16 +201,21 @@
   {
    "data": "2026-08-14",
    "titulo": "Operador Nacional do Sistema Elétrico — conclusão prevista das discussões com fabricantes sobre validação de modelos",
-   "detalhe": "Marco indicado em registro de associação setorial, no âmbito da validação de modelos de equipamentos e do desempenho dinâmico das usinas.",
+   "detalhe": "Marco indicado em registro de associação setorial, no âmbito da validação de modelos de equipamentos e do desempenho dinâmico das usinas. É a mesma matéria dos recursos de usinas renováveis contra as multas do apagão de 2023, em pauta na reunião de 11 de agosto.",
    "status": "A VERIFICAR",
    "fonte": "Registro de associação setorial; sem confirmação oficial"
-  }
- ],
- "proximos_30d": [
+  },
+  {
+   "data": "2026-08-17",
+   "titulo": "Enel São Paulo — prazo final de alegações finais no processo de caducidade da concessão",
+   "detalhe": "Dez dias corridos contados do Ofício nº 15/2026-GAB II, de 7 de agosto, da diretora Agnes Costa, que encerrou a instrução do processo. Depois da análise das alegações, o processo segue para recomendação final ao Ministério de Minas e Energia, que detém a competência de decretar a caducidade.",
+   "status": "CONFIRMADO",
+   "fonte": "Imprensa setorial (10/08), com o número do ofício"
+  },
   {
    "data": "2026-08-17",
    "titulo": "Consulta Pública nº 21/2026 — Prêmio ANEEL de Inovação 2026 encerra participação",
-   "detalhe": "Prazo corrigido: a notícia oficial de 3 de agosto fixa o encerramento em 17 de agosto, e não em 15 de agosto como registrado anteriormente.",
+   "detalhe": "Prazo fixado pela notícia oficial de 3 de agosto, que substituiu a data de 15 de agosto registrada anteriormente.",
    "status": "CONFIRMADO",
    "fonte": "gov.br/ANEEL — notícia oficial de 03/08"
   },
@@ -248,7 +225,9 @@
    "detalhe": "Consulta conduzida diretamente pela Associação Brasileira de Normas Técnicas.",
    "status": "A VERIFICAR",
    "fonte": "Registro de associação setorial; confirmar no portal da ABNT"
-  },
+  }
+ ],
+ "proximos_30d": [
   {
    "data": "2026-08-18",
    "titulo": "Circuito Deliberativo Público Ordinário (CPDO) da Diretoria da ANEEL",
@@ -259,28 +238,28 @@
   {
    "data": "2026-08-18",
    "titulo": "Curso de Autoprodução de Energia — último dia (4, 6, 11, 13 e 18/08, online)",
-   "detalhe": "Curso promovido pela APINE sobre regulação e aspectos econômico-financeiros da autoprodução de energia.",
-   "status": "CONFIRMADO",
-   "fonte": "APINE — página oficial de eventos, reaberta em 08/08"
+   "detalhe": "Curso promovido pela APINE sobre regulação e aspectos econômico-financeiros da autoprodução de energia. O curso não apareceu na leitura da página oficial de eventos da associação em 10 de agosto, tendo constado na leitura de 8 de agosto; ausência numa leitura não é cancelamento, mas o item volta a exigir confirmação.",
+   "status": "A VERIFICAR",
+   "fonte": "APINE — página oficial de eventos; item ausente na leitura de 10/08"
   },
   {
    "data": "2026-08-19",
    "titulo": "4ª Jornada Técnica do Conhecimento em Inspeção (19 e 20/08)",
-   "detalhe": "Encontro técnico promovido pela ABENDI, com participação do setor eólico, no Milenium Centro de Convenções, em São Paulo. O evento não consta da página oficial de eventos da associação do setor eólico, na terceira leitura consecutiva — o que se explica por ser evento de outra entidade.",
+   "detalhe": "Encontro técnico promovido pela ABENDI, com participação do setor eólico, no Milenium Centro de Convenções, em São Paulo. O evento não consta da página oficial de eventos da associação do setor eólico, na quarta leitura consecutiva — o que se explica por ser evento de outra entidade.",
    "status": "A VERIFICAR",
    "fonte": "Watchlist de associações — confirmar na página oficial da ABENDI"
   },
   {
    "data": "2026-08-20",
    "titulo": "ANEEL — Super El Niño e a Resiliência do Setor Elétrico Brasileiro",
-   "detalhe": "Evento presencial na sede da ANEEL, em Brasília/DF, das 8h30 às 18h, com inscrição por formulário na página oficial. Cinco painéis: projeções climáticas e impactos na operação; preparação das transmissoras; planos de contingência das distribuidoras; geração de energia em cenários extremos; e ações integradas de operação da rede. O tema ganhou dois lastros nesta janela: o Comitê de Monitoramento do Setor Elétrico declarou em 5 de agosto probabilidade de 70% de intensificação do fenômeno no segundo semestre, e estudo de consultoria independente projeta que um El Niño forte elevaria os cortes de geração renovável de 17% para 25% em 2026, com custo acima de R$ 8 bilhões.",
+   "detalhe": "Evento presencial na sede da ANEEL, em Brasília/DF, das 8h30 às 18h, com inscrição por formulário na página oficial. Cinco painéis: projeções climáticas e impactos na operação; preparação das transmissoras; planos de contingência das distribuidoras; geração de energia em cenários extremos; e ações integradas de operação da rede. O tema tem dois lastros nesta janela: o Comitê de Monitoramento do Setor Elétrico declarou em 5 de agosto probabilidade de 70% de intensificação do fenômeno no segundo semestre, e estudo de consultoria independente projeta que um El Niño forte elevaria os cortes de geração renovável de 17% para 25% em 2026, com custo acima de R$ 8 bilhões.",
    "status": "CONFIRMADO",
    "fonte": "gov.br/ANEEL — página oficial do evento"
   },
   {
    "data": "2026-08-20",
    "titulo": "7ª DATAGRO Abertura de Safra",
-   "detalhe": "Evento da COGEN em Goiânia/GO, sobre biomassa e agroenergia.",
+   "detalhe": "Evento da COGEN em Goiânia/GO, sobre biomassa e agroenergia. A página da associação não pôde ser aberta nas duas últimas varreduras; a data é a do ciclo de 3 de agosto.",
    "status": "CONFIRMADO",
    "fonte": "COGEN — página oficial de eventos, lida em 03/08"
   },
@@ -301,7 +280,7 @@
   {
    "data": "2026-08-25",
    "titulo": "Reunião Pública Ordinária (RPO) da Diretoria da ANEEL",
-   "detalhe": "Calendário oficial de 2026.",
+   "detalhe": "Calendário oficial de 2026. É a primeira reunião ordinária depois do fim do mandato do diretor Fernando Mosna, em 13 de agosto.",
    "status": "CONFIRMADO",
    "fonte": "gov.br/ANEEL — Calendário de Reuniões Públicas 2026"
   },
@@ -310,26 +289,26 @@
    "titulo": "Intersolar South America / The Smarter E South America (25 a 27/08)",
    "detalhe": "Expo Center Norte, São Paulo, com feira das 12h às 20h. A plataforma reúne quatro feiras simultâneas, incluindo a ees South America, dedicada a armazenamento e baterias, com cerca de 600 expositores.",
    "status": "CONFIRMADO",
-   "fonte": "Organização do evento; reconfirmado na página da ABGD em 08/08"
+   "fonte": "Organização do evento; reconfirmado na página da ABGD em 10/08"
   },
   {
    "data": "2026-08-25",
    "titulo": "Encontro sobre Gás Natural (10h às 17h)",
    "detalhe": "Evento promovido pela Abrace Energia, no Tivoli Mofarrej, em São Paulo/SP, divulgado pela APINE.",
    "status": "CONFIRMADO",
-   "fonte": "APINE — página oficial de eventos, reaberta em 08/08"
+   "fonte": "APINE — página oficial de eventos, reaberta em 10/08"
   },
   {
    "data": "2026-08-28",
    "titulo": "Consulta Pública nº 1/2026 do Ministério da Fazenda (monitoramento, relato e verificação no Sistema Brasileiro de Comércio de Emissões) — encerra contribuições",
-   "detalhe": "Consulta sobre a camada de monitoramento, relato e verificação do mercado regulado de carbono brasileiro. Registro de associação setorial indica que o sistema tem duas consultas abertas simultaneamente; a segunda ainda não foi identificada.",
+   "detalhe": "Consulta sobre a camada de monitoramento, relato e verificação do mercado regulado de carbono brasileiro. Registro de associação setorial indica que o sistema tem duas consultas abertas simultaneamente; a segunda ainda não foi identificada e pode ser a mesma consulta registrada em duplicidade.",
    "status": "A VERIFICAR",
    "fonte": "Registro de associação setorial; aviso não lido em fonte oficial"
   },
   {
    "data": "2026-08-30",
    "titulo": "Operador Nacional do Sistema Elétrico publica as funções de produtividade das usinas fotovoltaicas",
-   "detalhe": "É o ato que abre o período de contestação no processo de ressarcimento por cortes de geração, cuja análise final está prevista para 29 de setembro.",
+   "detalhe": "É o ato que abre o período de contestação no processo de ressarcimento por cortes de geração, cuja análise final está prevista para 29 de setembro. Esta janela não depende da decisão de envio tomada no prazo de 10 de agosto.",
    "status": "A VERIFICAR",
    "fonte": "Registro de associação setorial; sem confirmação oficial"
   },
@@ -343,9 +322,16 @@
   {
    "data": "2026-08-31",
    "titulo": "Operador Nacional do Sistema Elétrico — regularização de registros e validação de modelos por família de equipamentos",
-   "detalhe": "Marco indicado em registro de associação setorial para a consolidação do critério de validação de modelos. O mesmo registro aponta que 83% dos casos seguem pendentes.",
+   "detalhe": "Marco indicado em registro de associação setorial para a consolidação do critério de validação de modelos. O mesmo registro aponta que 83% dos casos seguem pendentes e que 56% estão em nível N2. O documento-base indicado é a Nota Técnica ONS DPL 0057/2024, localizada e não lida.",
    "status": "A VERIFICAR",
    "fonte": "Registro de associação setorial; sem confirmação oficial"
+  },
+  {
+   "data": "2026-08-31",
+   "titulo": "Consulta Pública nº 12/2026 do INMETRO (selos) — encerra contribuições",
+   "detalhe": "Registro de cronograma de associação setorial; aviso não lido em fonte oficial.",
+   "status": "A VERIFICAR",
+   "fonte": "Registro de associação setorial"
   },
   {
    "data": "2026-09-01",
@@ -364,7 +350,7 @@
   {
    "data": "2026-09-01",
    "titulo": "Gas & Energy Week (1º a 3/09)",
-   "detalhe": "Evento da COGEN no Hotel Prodigy Santos Dumont, no Rio de Janeiro/RJ.",
+   "detalhe": "Evento da COGEN no Hotel Prodigy Santos Dumont, no Rio de Janeiro/RJ. A página da associação não pôde ser aberta nas duas últimas varreduras; a data é a do ciclo de 3 de agosto.",
    "status": "CONFIRMADO",
    "fonte": "COGEN — página oficial de eventos, lida em 03/08"
   },
@@ -374,9 +360,14 @@
    "detalhe": "Decisão do Comitê de Monitoramento do Setor Elétrico de 22/07, reafirmada na reunião de 5 de agosto: antecipação do início de suprimento de cinco contratos — Três Lagoas, Termomacaé e Termoceará (Petrobras) e Araucária (Âmbar), a gás natural, do leilão de reserva de capacidade de 2026; e Manaus I (Companhia Energética Amazonense), a diesel, do leilão de 2022. O dia exato do mês não foi divulgado.",
    "status": "A VERIFICAR",
    "fonte": "gov.br/MME (decisão confirmada); data exata de cada contrato não divulgada"
-  }
- ],
- "horizonte": [
+  },
+  {
+   "data": "2026-09-04",
+   "titulo": "Consulta pública da ANEEL sobre a prestação de contas do Plano de Aplicação de Recursos do PROCEL — encerra contribuições",
+   "detalhe": "Janela de 6 de agosto a 4 de setembro, capturada no índice de notícias da Agência. O número da consulta segue não capturado, porque a página da notícia oficial devolveu erro pela segunda varredura consecutiva.",
+   "status": "A VERIFICAR",
+   "fonte": "gov.br/ANEEL — índice de notícias; página da notícia inacessível"
+  },
   {
    "data": "2026-09-08",
    "titulo": "Reunião Pública Ordinária (RPO) da Diretoria da ANEEL",
@@ -397,7 +388,9 @@
    "detalhe": "Prazo prorrogado pela Agência em 6 de agosto, de 8 para 9 de setembro. Objeto: aprimoramento da Análise de Impacto Regulatório do Programa de Eficiência Energética para a Transição Energética.",
    "status": "CONFIRMADO",
    "fonte": "gov.br/ANEEL — notícia oficial de 06/08"
-  },
+  }
+ ],
+ "horizonte": [
   {
    "data": "2026-09-12",
    "titulo": "Consulta Pública nº 25/2026 da ANEEL (Regras de Comercialização para o LRCAP 2026) — encerra contribuições",
@@ -424,7 +417,14 @@
    "titulo": "XII ENAM — Encontro Nacional de Máquinas Rotativas (22 a 24/09)",
    "detalhe": "Evento do CIGRE-Brasil em Belém/PA, dedicado a máquinas rotativas e ao comportamento dinâmico dos equipamentos. Inscrições abertas desde janeiro de 2026.",
    "status": "CONFIRMADO",
-   "fonte": "CIGRE-Brasil — página de próximos eventos, reaberta em 08/08"
+   "fonte": "CIGRE-Brasil — página de próximos eventos, reaberta em 10/08"
+  },
+  {
+   "data": "2026-09-22",
+   "titulo": "Reunião Pública Ordinária (RPO) da Diretoria da ANEEL",
+   "detalhe": "Calendário oficial de 2026: reuniões de setembro em 8 e 22; circuitos deliberativos em 1º, 15 e 29.",
+   "status": "CONFIRMADO",
+   "fonte": "gov.br/ANEEL — Calendário de Reuniões Públicas 2026"
   },
   {
    "data": "2026-09-23",
@@ -436,7 +436,7 @@
   {
    "data": "2026-09-26",
    "titulo": "Prazo limite de retorno da Consulta Pública nº 45/2019 à Diretoria da ANEEL",
-   "detalhe": "O processo do rateio contábil dos impactos financeiros das restrições de escoamento entrou em vistas coletivas em 28/07, após pedido de vista de diretor, com prazo de retorno de 60 dias. A data indicada é o cálculo a partir da sessão; o termo inicial exato não foi conferido em fonte oficial. A matéria não está decidida.",
+   "detalhe": "O processo do rateio contábil dos impactos financeiros das restrições de escoamento entrou em vistas coletivas em 28/07, após pedido de vista de diretor, com prazo de retorno de 60 dias. A data indicada é o cálculo a partir da sessão; o termo inicial exato não foi conferido em fonte oficial. A matéria não está decidida, e a composição do colegiado muda com o fim do mandato de um diretor em 13 de agosto.",
    "status": "A VERIFICAR",
    "fonte": "Relato de sessão por associação setorial, com imprensa setorial convergente"
   },
@@ -450,16 +450,23 @@
   {
    "data": "2026-09-30",
    "titulo": "Nota Técnica dos Quantitativos da Capacidade Remanescente do SIN (LRCAP)",
-   "detalhe": "Prazo previsto para a publicação dos quantitativos que balizam o leilão de reserva de capacidade. A nota sai depois do encerramento do cadastramento de projetos, que se deu em 31 de julho às 18h e registrou 6.091 projetos e 296.807 megawatts.",
+   "detalhe": "Prazo previsto para a publicação dos quantitativos que balizam o leilão de reserva de capacidade. A nota sai depois do encerramento do cadastramento de projetos, que se deu em 31 de julho às 18h e registrou 6.091 projetos e 296.807 megawatts cadastrados, que não são potência habilitada.",
    "status": "CONFIRMADO",
    "fonte": "EPE e ONS"
   },
   {
    "data": "2026-09-30",
    "titulo": "ABSOLAR Storage Leaders (2ª edição)",
-   "detalhe": "Evento da ABSOLAR sobre armazenamento, em São Paulo, com recorte anterior aos leilões de baterias. A página do evento está no ar sem data exposta na quinta leitura consecutiva, e nesta varredura o evento aparece apenas entre as edições anteriores. A 1ª edição ocorreu em 14 de abril de 2026, em São Paulo.",
+   "detalhe": "Evento da ABSOLAR sobre armazenamento, em São Paulo, com recorte anterior aos leilões de baterias. A página do evento está no ar sem data exposta na sexta leitura consecutiva. A 1ª edição ocorreu em 14 de abril de 2026, em São Paulo.",
    "status": "A VERIFICAR",
    "fonte": "ABSOLAR Eventos — confirmar na página oficial"
+  },
+  {
+   "data": "2026-10-06",
+   "titulo": "XVIII STPC — Seminário Técnico de Proteção e Controle (6 a 9/10)",
+   "detalhe": "Evento do CIGRE-Brasil em Belo Horizonte/MG, promovido pelo Comitê de Estudos de Proteção e Automação desde 1986, reunindo concessionárias, fabricantes, consultores, prestadores de serviço, universidades e centros de pesquisa. Coincide com o Smart Grid Fórum e com o Data Center World na mesma semana.",
+   "status": "CONFIRMADO",
+   "fonte": "CIGRE-Brasil — página de próximos eventos, lida em 10/08; página oficial do seminário"
   },
   {
    "data": "2026-10-06",
@@ -471,7 +478,7 @@
   {
    "data": "2026-10-06",
    "titulo": "Smart Grid Fórum — 18ª edição latino-americana (6 e 7/10)",
-   "detalhe": "Evento da COGEN no Centro de Convenções Frei Caneca, em São Paulo/SP.",
+   "detalhe": "Evento da COGEN no Centro de Convenções Frei Caneca, em São Paulo/SP. A página da associação não pôde ser aberta nas duas últimas varreduras; a data é a do ciclo de 3 de agosto.",
    "status": "CONFIRMADO",
    "fonte": "COGEN — página oficial de eventos, lida em 03/08"
   },
@@ -494,21 +501,21 @@
    "titulo": "Energy Storage Brasil 2026 — edição Natal (21 e 22/10)",
    "detalhe": "Na Federação das Indústrias do Estado do Rio Grande do Norte, em Natal/RN, com inscrições abertas e desconto até 8 de outubro.",
    "status": "CONFIRMADO",
-   "fonte": "Página oficial do evento e ABGD, reaberta em 08/08"
+   "fonte": "Página oficial do evento e ABGD, reaberta em 10/08"
   },
   {
    "data": "2026-10-21",
    "titulo": "XXXII Simpósio Jurídico ABCE (21 e 22/10)",
-   "detalhe": "No Blue Tree Premium Faria Lima, em São Paulo/SP, com debate sobre desafios regulatórios, jurídicos e institucionais do setor elétrico. O local e o formulário de inscrição constam da página oficial de eventos da APINE, reconfirmada em 08/08; o site da associação organizadora segue indisponível na leitura.",
+   "detalhe": "No Blue Tree Premium Faria Lima, em São Paulo/SP, com debate sobre desafios regulatórios, jurídicos e institucionais do setor elétrico. O local e o formulário de inscrição constam da página oficial de eventos da APINE, reconfirmada em 10/08; o site da associação organizadora segue indisponível na leitura.",
    "status": "A VERIFICAR",
    "fonte": "APINE — página oficial de eventos; site da ABCE indisponível"
   },
   {
    "data": "2026-10-27",
    "titulo": "Brazil Windpower (27 a 29/10)",
-   "detalhe": "Congresso e feira da associação do setor eólico com o conselho global de energia eólica, em São Paulo, com pauta de cortes de geração eólica, armazenamento e rede no Nordeste. É o único evento futuro listado na página oficial da associação nesta leitura.",
+   "detalhe": "Congresso e feira da associação do setor eólico com o conselho global de energia eólica, em São Paulo, com pauta de cortes de geração eólica, armazenamento e rede no Nordeste. É o único evento futuro de 2026 listado na página oficial da associação, na segunda leitura consecutiva.",
    "status": "CONFIRMADO",
-   "fonte": "ABEEólica — página oficial de eventos, reaberta em 08/08"
+   "fonte": "ABEEólica — página oficial de eventos, reaberta em 10/08"
   },
   {
    "data": "2026-10-29",
@@ -520,7 +527,7 @@
   {
    "data": "2026-10-30",
    "titulo": "Leilão de Transmissão nº 4/2026 — sessão pública",
-   "detalhe": "Certame de aproximadamente R$ 8,9 bilhões, com 1.866 km de linhas e 13.564 MVA de capacidade de transformação. As informações sobre o Data Room da Afluente Transmissão de Energia foram disponibilizadas em 5 de agosto. Data-alvo sujeita a acompanhamento do Tribunal de Contas da União.",
+   "detalhe": "Certame de aproximadamente R$ 8,9 bilhões, com 1.866 km de linhas e 13.564 MVA de capacidade de transformação, em nove lotes distribuídos por nove estados. As informações sobre o Data Room da Afluente Transmissão de Energia foram disponibilizadas em 5 de agosto. Data-alvo sujeita a acompanhamento do Tribunal de Contas da União.",
    "status": "CONFIRMADO",
    "fonte": "gov.br/ANEEL"
   },
@@ -529,14 +536,14 @@
    "titulo": "Congresso Brasileiro Mulheres da Energia 2026",
    "detalhe": "Em São Paulo/SP, listado entre os eventos apoiados pela ABGD.",
    "status": "CONFIRMADO",
-   "fonte": "ABGD — página oficial de eventos, reaberta em 08/08"
+   "fonte": "ABGD — página oficial de eventos, reaberta em 10/08"
   },
   {
    "data": "2026-11-10",
    "titulo": "All About Energy (10 a 13/11)",
-   "detalhe": "Evento da APINE em Aquiraz/CE.",
+   "detalhe": "Evento da APINE no Aquiraz Riviera, em Aquiraz/CE.",
    "status": "CONFIRMADO",
-   "fonte": "APINE — página oficial de eventos, reaberta em 08/08"
+   "fonte": "APINE — página oficial de eventos, reaberta em 10/08"
   },
   {
    "data": "2026-11-13",
@@ -548,7 +555,7 @@
   {
    "data": "2026-11-16",
    "titulo": "8º Congresso Brasileiro de Geração Distribuída (16 e 17/11)",
-   "detalhe": "Evento da ABGD em Belo Horizonte/MG. O congresso não consta da página oficial de eventos da associação, na terceira leitura consecutiva.",
+   "detalhe": "Evento da ABGD em Belo Horizonte/MG. O congresso não consta da página oficial de eventos da associação, na quarta leitura consecutiva.",
    "status": "A VERIFICAR",
    "fonte": "Watchlist de associações — confirmar na página oficial"
   },
@@ -557,7 +564,7 @@
    "titulo": "Energy Storage Brasil 2026 — edição São Paulo (18 e 19/11)",
    "detalhe": "Evento da ABGD em São Paulo/SP, com credenciamento aberto.",
    "status": "CONFIRMADO",
-   "fonte": "ABGD — página oficial de eventos, reaberta em 08/08"
+   "fonte": "ABGD — página oficial de eventos, reaberta em 10/08"
   },
   {
    "data": "2026-11-18",
@@ -569,14 +576,14 @@
   {
    "data": "2026-11-24",
    "titulo": "XIX EDAO — Encontro para Debates de Assuntos de Operação (24 a 26/11)",
-   "detalhe": "Evento do CIGRE-Brasil no Rio de Janeiro, dedicado à operação do Sistema Interligado Nacional. A submissão de resumos está aberta desde fevereiro de 2026; a data-limite não consta da página de próximos eventos, na quarta leitura consecutiva.",
+   "detalhe": "Evento do CIGRE-Brasil no Rio de Janeiro, dedicado à operação do Sistema Interligado Nacional. A submissão de resumos está aberta desde fevereiro de 2026; a data-limite não consta da página de próximos eventos, na quinta leitura consecutiva.",
    "status": "CONFIRMADO",
-   "fonte": "CIGRE-Brasil — página de próximos eventos, reaberta em 08/08"
+   "fonte": "CIGRE-Brasil — página de próximos eventos, reaberta em 10/08"
   },
   {
    "data": "2026-11-30",
    "titulo": "XII WORKSPOT (30/11 a 2/12)",
-   "detalhe": "Evento do CIGRE-Brasil em Belo Horizonte, sobre transformadores e subestações. Não consta da página de próximos eventos, na quarta leitura consecutiva.",
+   "detalhe": "Evento do CIGRE-Brasil em Belo Horizonte, sobre transformadores e subestações. Não consta da página de próximos eventos, na quinta leitura consecutiva.",
    "status": "A VERIFICAR",
    "fonte": "CIGRE-Brasil — confirmar na página oficial"
   },
@@ -597,7 +604,7 @@
   {
    "data": "2026-12-02",
    "titulo": "Encontro Nacional ABSOLAR (2 e 3/12)",
-   "detalhe": "Encontro anual da associação, em São Paulo. A página de eventos não expõe a data nesta leitura, na terceira consecutiva.",
+   "detalhe": "Encontro anual da associação, em São Paulo. A página de eventos não expõe a data nesta leitura, na quarta consecutiva.",
    "status": "A VERIFICAR",
    "fonte": "ABSOLAR Eventos — confirmar na página oficial"
   },
