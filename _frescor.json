@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-08-12T12:25:03-03:00",
+                  "gerado_em":  "2026-08-14T08:25:02-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
@@ -35,7 +35,7 @@
                      "eventos-soa.html":  "2026-07-11T14:15:45-03:00",
                      "Fatos_ANEEL_Folder_SOA.json":  "2026-08-07T11:23:19-03:00",
                      "Fatos_Beneficios_ESG_Folder_SOA.json":  "2026-08-05T18:12:24-03:00",
-                     "Fatos_CapitalVerde_Folder_SOA.json":  "2026-08-09T08:20:07-03:00",
+                     "Fatos_CapitalVerde_Folder_SOA.json":  "2026-08-14T08:20:05-03:00",
                      "Fatos_CCEE_Folder_SOA.json":  "2026-08-07T11:23:19-03:00",
                      "Fatos_EPE_Folder_SOA.json":  "2026-08-03T08:20:04-03:00",
                      "Fatos_ESG_Folder_SOA.json":  "2026-08-10T12:47:44-03:00",
@@ -44,7 +44,7 @@
                      "Fatos_MME_Folder_SOA.json":  "2026-08-07T11:23:19-03:00",
                      "Fatos_ONS_Folder_SOA.json":  "2026-08-08T16:49:24-03:00",
                      "Fatos_Regulatorios_Folder_SOA.json":  "2026-08-10T12:55:55-03:00",
-                     "Fatos_Seguros_Folder_SOA.json":  "2026-08-08T17:56:23-03:00",
+                     "Fatos_Seguros_Folder_SOA.json":  "2026-08-13T15:02:57-03:00",
                      "Folder_Vivo_ANEEL_GitHub.html":  "2026-07-05T06:47:11-03:00",
                      "Folder_Vivo_CapitalVerde_GitHub.html":  "2026-07-04T04:43:05-03:00",
                      "Folder_Vivo_CCEE_GitHub.html":  "2026-07-05T06:47:10-03:00",
