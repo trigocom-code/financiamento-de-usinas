@@ -1,20 +1,13 @@
 {
  "_meta": {
   "titulo": "Inscrições — Eventos do Setor Elétrico em SP — Monitor SOA/SOS",
-  "atualizado_em": "2026-08-10",
+  "atualizado_em": "2026-08-14",
   "links_verificados_em": "2026-07-11",
   "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ABENDI, ANE, ABCE, APINE, CIGRE-Brasil)",
-  "nota": "Trilho de inscrições dos eventos do setor em São Paulo. Cada item leva ao link oficial de credenciamento. Inscrever-se com trigo.com@gmail.com. Datas/valores confirmar na página oficial. Eventos com credenciamento a abrir levam à página oficial do evento. O monitor regenera este JSON: eventos já encerrados saem sozinhos e a data de verificação dos links é atualizada a cada varredura.",
-  "nota_run_2026_08_10": "Nesta varredura foram reabertas as páginas oficiais de eventos da APINE, da ABGD, da ABEEólica, do CIGRE-Brasil, da ABSOLAR e da Academia Nacional de Engenharia. Nenhuma data mudou e a composição do trilho segue igual à da varredura anterior. O 13º Fórum do Biogás é o próximo, em 11 e 12 de agosto, e foi reconfirmado na página da APINE. Quatro observações de fonte, todas relevantes para quem for se inscrever. Primeira: a página do CIGRE-Brasil expôs nesta leitura um seminário que ainda não estava mapeado, o XVIII Seminário Técnico de Proteção e Controle, de 6 a 9 de outubro — ele não entra neste trilho porque acontece em Belo Horizonte, e não em São Paulo, mas fica o registro de que coincide com o Smart Grid Fórum e com o Data Center World, os dois já listados aqui para a mesma semana. Segunda: a página da COGEN não pôde ser aberta nesta rodada nem na anterior, e as datas dos eventos dela seguem carregadas da varredura de 3 de agosto. Terceira: a página da ABSOLAR seguiu no ar sem expor datas, pela sexta leitura consecutiva. Quarta: o calendário da Academia Nacional de Engenharia renderizou nesta leitura, mas veio sem nenhum evento — não é falha de leitura, é ausência de dados publicados, o que muda o encaminhamento desse item de nova tentativa automatizada para contato direto. Os dois itens em 'a abrir' com data a confirmar permanecem como estão. Os links de credenciamento não foram reabertos nesta rodada, por isso a data de verificação de links permanece a anterior."
+  "nota": "Trilho de inscrições dos eventos do setor em São Paulo. Cada item leva ao link oficial de credenciamento. Inscrever-se com trigo.com@gmail.com. Datas e valores confirmar na página oficial. Eventos com credenciamento a abrir levam à página oficial do evento. O monitor regenera este JSON: eventos já encerrados saem sozinhos e a data de verificação dos links é atualizada quando os links são reabertos.",
+  "nota_run_2026_08_14": "Varredura de 14 de agosto. Registra-se de saída que não houve varredura em 11, 12 e 13 de agosto. Uma saída e cinco observações de fonte. Saída: o 13º Fórum do Biogás ocorreu em 11 e 12 de agosto e deixa o trilho. Primeira observação: a página da COGEN voltou a abrir depois de três varreduras inacessível, e as datas do Smart Grid Fórum, do Gas & Energy Week e da DATAGRO foram reconfirmadas na fonte — deixam de depender da leitura de 3 de agosto. Segunda: o Energy Storage Brasil edição São Paulo, de 18 e 19 de novembro, não apareceu na leitura de hoje da página oficial da ABGD, tendo constado na leitura de 10 de agosto; ausência numa leitura não é cancelamento, mas o item passa a exigir confirmação e está sinalizado no trilho. Terceira: a mesma página trouxe dois eventos novos, o Meeting Sun em São Luís, que está fora deste trilho por não ser em São Paulo, e o 17º ENCOAD, em 9 de setembro em São Paulo — este não entra ainda porque o link oficial de credenciamento não foi confirmado nesta rodada, e a regra é não publicar item de inscrição sem o link conferido. Quarta: a página da ABSOLAR seguiu no ar sem expor datas, pela sétima leitura consecutiva, e nesta leitura o Storage Leaders não aparece nomeado. Quinta: o calendário da Academia Nacional de Engenharia renderizou de novo vazio, pela sexta leitura — é ausência de dados publicados, e o encaminhamento desse item continua sendo contato direto, não nova tentativa automatizada. Os links de credenciamento não foram reabertos nesta rodada, por isso a data de verificação de links permanece a anterior."
  },
  "abertos": [
-  {
-   "data_ini": "2026-08-11", "data_fim": "2026-08-12",
-   "titulo": "13º Fórum do Biogás — COGEN / ABiogás",
-   "quando": "11–12/08 · São Paulo Expo, SP",
-   "badges": [{"label": "Pago", "cls": "pago"}],
-   "url": "https://www.sympla.com.br/evento/13-forum-do-biogas/3297101", "cta": "Inscrever-se"
-  },
   {
    "data_ini": "2026-08-19", "data_fim": "2026-08-20",
    "titulo": "4ª JTCI — Jornada Técnica do Conhecimento em Inspeção",
@@ -32,7 +25,7 @@
   {
    "data_ini": "2026-10-06", "data_fim": "2026-10-07",
    "titulo": "Smart Grid Fórum 2026 (18º Latino-Americano) — COGEN",
-   "quando": "06–07/10 · Centro de Convenções Frei Caneca, São Paulo/SP",
+   "quando": "06–07/10 · Centro de Convenções Frei Caneca, São Paulo/SP · data reconfirmada na COGEN em 14/08",
    "badges": [{"label": "Pago", "cls": "pago"}],
    "url": "https://www.smartgrid.com.br/2,936,inscricao", "cta": "Inscrever-se"
   },
@@ -60,8 +53,8 @@
   {
    "data_ini": "2026-11-18", "data_fim": "2026-11-19",
    "titulo": "Energy Storage Brasil 2026 — edição São Paulo — ABGD",
-   "quando": "18–19/11 · São Paulo/SP",
-   "badges": [{"label": "Credenciamento aberto", "cls": "pago"}],
+   "quando": "18–19/11 · São Paulo/SP · ⚠ o evento não apareceu na leitura da página da ABGD em 14/08, tendo constado em 10/08 — confirmar antes de se inscrever",
+   "badges": [{"label": "A confirmar na fonte", "cls": "pago"}],
    "url": "https://saopaulo.energystoragebrasil.com/register", "cta": "Inscrever-se"
   }
  ],
@@ -69,13 +62,13 @@
   {
    "data_ini": "2026-09-30", "data_fim": "2026-09-30",
    "titulo": "ABSOLAR Storage Leaders (2ª ed. · Pré-LRCAP Baterias)",
-   "quando": "30/09 · São Paulo/SP · data e local a confirmar na página oficial",
+   "quando": "30/09 · São Paulo/SP · data e local a confirmar; o evento não aparece nomeado na página oficial na leitura de 14/08",
    "url": "https://storageleaders.absolar.org.br/"
   },
   {
    "data_ini": null, "data_fim": null, "dia": "—", "mes": "SET",
    "titulo": "Seminário Anual da ANE — Academia Nacional de Engenharia",
-   "quando": "setembro (data a confirmar) · São Paulo/SP · calendário oficial sem eventos publicados",
+   "quando": "setembro (data a confirmar) · São Paulo/SP · calendário oficial sem eventos publicados na 6ª leitura",
    "url": "https://anebrasil.org.br/eventos-ane/"
   },
   {
