@@ -2,15 +2,15 @@
   "_meta": {
     "orgao": "Benefícios da Certificação ESG (por ator)",
     "schema_version": "1.0",
-    "verificado_em": "2026-07-13",
+    "verificado_em": "2026-08-18",
     "regra_fonte_associacao": "F1 — fontes primárias (Planalto, CONFAZ, ANEEL, CVM, BNDES, BNB, BASA, Caixa, Tesouro, Comissão Europeia, leis municipais/estaduais). Só status=='verificado' renderiza; 'pendente' fica na base para acompanhamento e NÃO aparece em folder. SOA/SOS = camada de verificação, não emissora do benefício.",
     "fonte_canonica": "dossie_beneficios_v1 + verificacao_fontes_primarias"
   },
   "_carimbo": {
     "atualizado_em": "2026-07-13T00:00:00-03:00",
-    "hash": "sha256:6f36b9f1625fa3d84081ccf3ec2d2085c9ef7eca26219a1bc8ce0a2629fe0781",
+    "hash": "sha256:5c596086c570d76f1d425ee2beadc5f3bff76a717a73e905c126cb6677756f4a",
     "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias",
-    "selado_em": "2026-08-05"
+    "selado_em": "2026-08-18"
   },
   "_schema": {
     "versao": "1.0",
@@ -115,7 +115,7 @@
       "canal": "imposto",
       "titulo": "IPTU Verde / Amarelo municipal",
       "base_legal": "lei municipal (art. 156, I, CF)",
-      "mecanismo": "Desconto direto no IPTU de 5% a 40% para imóvel com solar. Ex.: São Paulo (Lei 17.575/2021, 4/8/12%), Salvador (5/7/10%), Curitiba (10/15/20%). Só onde há lei.",
+      "mecanismo": "Desconto direto no IPTU de 5% a 40% para imóvel com solar. Ex.: Salvador (5/7/10%), Curitiba (10/15/20%). Só onde há lei.",
       "vigencia": "vigente onde há lei",
       "sem_soa": "benefício contestável sem prova contínua",
       "status": "verificado",
@@ -197,8 +197,8 @@
       "canal": "credito",
       "titulo": "BNDES Fundo Clima — Transição Energética",
       "base_legal": "Lei 12.114/2009; Dec. 11.549/2023",
-      "mecanismo": "Custo fixo subsidiado, desvinculado da TLP: solar 9,5% a.a.; eficiência/BESS/smart grid 6,5% a.a. + taxa BNDES a partir de 1,3%. Até 80%, 24 anos, carência 6. Piso R$ 20 mi.",
-      "vigencia": "vigente (~R$ 10,4 bi)",
+      "mecanismo": "Custo fixo subsidiado, desvinculado da TLP: solar 9,5% a.a.; eficiência/BESS/smart grid 6,5% a.a. + taxa BNDES a partir de 1,3%. Até 80%, 192-288 meses, carência 72. Piso R$ 20 mi.",
+      "vigencia": "vigente (~R$ 27 bi)",
       "sem_soa": "KPI ambiental verificável",
       "status": "verificado",
       "fonte": "BNDES Fundo Clima"
@@ -406,7 +406,7 @@
       "mecanismo": "Até 100% do investimento; bônus de adimplência de 15% (BNB); prazos 12–24 anos; FNO com isenção de IOF. Taxa efetiva = TFC mensal do Bacen.",
       "vigencia": "vigente (checar TFC no mês)",
       "sem_soa": "—",
-      "status": "verificado",
+      "status": "pendente",
       "fonte": "BNB/BASA"
     },
     {
@@ -420,7 +420,7 @@
       "canal": "imposto",
       "titulo": "Instituir IPTU Verde (política urbana)",
       "base_legal": "lei municipal (art. 156, I, CF; art. 32 CTN)",
-      "mecanismo": "Instrumento de política urbana: induz solar/eficiência, reduz ilha de calor, pontua em metas ESG. Ex.: São Paulo (17.575/2021), Salvador (8.474/2013), Curitiba (14.771/2015).",
+      "mecanismo": "Instrumento de política urbana: induz solar/eficiência, reduz ilha de calor, pontua em metas ESG. Ex.: Salvador (8.474/2013), Curitiba (14.771/2015).",
       "vigencia": "vigente onde há lei",
       "sem_soa": "verificação em escala sem vistoria",
       "status": "verificado",
@@ -507,7 +507,7 @@
       "canal": "credito",
       "titulo": "Fundo Clima (FNMC)",
       "base_legal": "Lei 12.114/2009; Dec. 11.549/2023",
-      "mecanismo": "Instrumento federal de financiamento verde: reembolsável (BNDES) + não-reembolsável (MMA). Até R$ 10,4 bi em 6 eixos.",
+      "mecanismo": "Instrumento federal de financiamento verde: reembolsável (BNDES) + não-reembolsável (MMA). Até R$ 27 bi em 2026.",
       "vigencia": "vigente (ampliado)",
       "sem_soa": "—",
       "status": "verificado",
@@ -524,7 +524,7 @@
       "canal": "captacao",
       "titulo": "Títulos Soberanos Sustentáveis do Tesouro",
       "base_legal": "Framework 2023",
-      "mecanismo": "Capta mais barato (greenium) e amplia base de investidores ESG. Emissões: US$ 2 bi (2023), US$ 2 bi (jun/2025), US$ 2,25 bi (nov/2025).",
+      "mecanismo": "Capta mais barato (greenium) e amplia base de investidores ESG. Emissões: US$ 2 bi (2023), US$ 2 bi (2024), US$ 1,5 bi (nov/2025).",
       "vigencia": "vigente",
       "sem_soa": "rastreabilidade do uso de recursos",
       "status": "verificado",
@@ -612,12 +612,12 @@
       ],
       "canal": "mercado",
       "titulo": "Receita de capacidade no LRCAP de Armazenamento",
-      "base_legal": "Portaria MME 136/2026 · REN ANEEL 1.161/2026 e 1.162/2026",
+      "base_legal": "Portaria MME 136/2026 · REN ANEEL 1.161/2026 e 1.162/2026 · CP ANEEL 022/023/2026",
       "mecanismo": "Leilão de Reserva de Capacidade na forma de POTÊNCIA para baterias (02 e 04/12/2026; contratos CRCAP de 15 anos, suprimento desde 01/08/2028, Receita Fixa ao IPCA). O compromisso é disponibilidade de potência em MW, não energia. RECEITA FIXA REDUZÍVEL: apuração de desempenho em base MENSAL, com abatimento/ressarcimento da Receita Fixa por indisponibilidade e penalidades por não entrega (Portaria 136, art. 5º §1º + art. 9º §4º-IV e §10). Habilitação exige ≥30 MW, ≥4 h, ≥85% de RTE e Grid Forming (art. 7º). Bônus locacional para os 129 barramentos elegíveis do ANEXO II (86% no Nordeste; inclui Pecém II 230 kV) — a LISTA é da portaria; o coeficiente numérico (β=0,9 ≈ +11,1%) vem da Nota Técnica da EPE, não do corpo da portaria. Preço-teto e regra de TUST ainda no edital ANEEL (pendente).",
-      "vigencia": "leilões 12/2026 · suprimento desde 08/2028 (edital pendente)",
+      "vigencia": "CP 022/023 · leilões 12/2026 · suprimento desde 08/2028",
       "sem_soa": "sem prova horária de disponibilidade ancorada no PMI, a Receita Fixa é cortada por indisponibilidade e o contrato de 15 anos / o DSCR não se sustentam",
       "status": "verificado",
-      "fonte": "Portaria MME 136/2026 (art. 5º/7º/9º + Anexo II) · β=0,9 → NT EPE · REN ANEEL 1.161/1.162/2026"
+      "fonte": "Portaria MME 136/2026 (art. 5º/7º/9º + Anexo II) · β=0,9 → NT EPE · REN ANEEL 1.161/1.162/2026 · CP ANEEL 022/023/2026"
     },
     {
       "id": "pnast_acesso_transmissao",
@@ -630,12 +630,12 @@
       ],
       "canal": "mercado",
       "titulo": "Acesso ao sistema de transmissão (PNAST)",
-      "base_legal": "Política Nacional de Acesso ao Sistema de Transmissão (PNAST)",
+      "base_legal": "Decreto 12.772/2025 (PNAST)",
       "mecanismo": "O ativo se cadastra e habilita na temporada de acesso; a prova horária de RTE/disponibilidade instrui o processo perante o ONS.",
       "vigencia": "vigente",
       "sem_soa": "habilitação pleiteada sem evidência de desempenho verificável",
       "status": "verificado",
-      "fonte": "ONS PNAST"
+      "fonte": "planalto D12772"
     },
     {
       "id": "seguros_prova_risco",
@@ -652,7 +652,7 @@
       "mecanismo": "O dado hora a hora de curtailment/desempenho reduz o basis risk na subscrição de seguros de lucro cessante e paramétrico de usinas.",
       "vigencia": "vigente",
       "sem_soa": "subscrição sem dado horário do risco de curtailment",
-      "status": "verificado",
+      "status": "pendente",
       "fonte": "ONS (constrained-off)"
     },
     {
@@ -670,7 +670,7 @@
       "mecanismo": "A origem renovável certificada hora a hora sustenta produtos de comercialização no desenho de Preço de Settlement de Mercado.",
       "vigencia": "em deliberação",
       "sem_soa": "produto de mercado sem lastro de origem verificável",
-      "status": "verificado",
+      "status": "pendente",
       "fonte": "ANEEL CP 17/2026"
     }
   ],
@@ -795,7 +795,7 @@
         "seguros_prova_risco"
       ],
       "sem_soa": "basis risk sem dado horário do risco",
-      "status": "verificado"
+      "status": "pendente"
     },
     {
       "id": "pkg_mercado_psm",
@@ -812,7 +812,7 @@
         "mercado_psm_origem"
       ],
       "sem_soa": "produto de mercado sem lastro de origem verificável",
-      "status": "verificado"
+      "status": "pendente"
     }
   ],
   "entregaveis": [
