@@ -11,7 +11,8 @@
     "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO.",
     "regra_staleness": "Fato com verificado_em > 90 dias deve ser exibido com alerta e reconferido.",
     "nota_render": "O folder lê f.tema/f.valor/f.status/f.norma. Campos QSV (fato_id/orgao/qsv_cor/numero_status) são metadados de governança, não renderizados. _pendentes_verificacao NÃO é renderizado (fica fora de fatos[]).",
-    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1."
+    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1.",
+    "nota_run_2026_08_21_consolidadora": "Varredura consolidadora de 21/08/2026, executada por navegador porque o in.gov.br devolve socket hang up a WebFetch. Sete registros tocados com fonte primária reaberta. Dois atos lidos na íntegra e promovidos a VERDE (Despachos ANEEL 2.414/2026 e 2.819/2026). Uma pendência encerrada e promovida a fato (Portaria ANEEL 249/2026). Quatro Avisos de Consulta Pública ancorados no DOU (16, 22, 23 e 25 de 2026). Um ato novo, não registrado por nenhum monitor: a homologação parcial do Leilão nº 2/2026-ANEEL."
   },
   "fatos": [
     {
@@ -48,13 +49,23 @@
       "orgao": "ANEEL",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Edital ANEEL do LRCAP Armazenamento (preço-teto + regra de TUST)",
-      "valor": "Edital nao publicado. As minutas de edital e anexos seguem em Consulta Publica ANEEL 022 e 023/2026, reforcadas como abertas pela ABSOLAR em 18/08/2026; prazo ANEEL em 14/09/2026 e prazo interno da associacao em 09/09/2026. A pagina do LRCAP Armazenamento 2026 na EPE nao tem documento posterior a 03/07/2026 e nao traz resultado locacional nem lista de barramentos elegiveis. [REVERIFICADO 21/08/2026 - F1] Pagina do LRCAP Armazenamento 2026 no portal da EPE reaberta e lida nesta data com a lista integral de documentos: 9 arquivos, sendo os tres primeiros as versoes em portugues, ingles e espanhol do Informe de Cadastramento (de 15/06/2026, ja registrado no digest de 14/08/2026). Documento mais recente da pagina segue sendo o de 03/07/2026 (NT-ONS DPL 0057/2026 e EPE-DEE-RE-067/2026-R0, Metodologia, Premissas e Criterios). Nenhum resultado locacional, nenhuma lista ou mapa de barramentos elegiveis a bonificacao, nenhum caso eletrico novo e nenhuma revisao da Base de Dados. Indice de publicacoes da EPE tambem reaberto e lido: sem item de agosto de 2026. Indice de noticias da ANEEL reaberto por duas rotas: edital nao publicado. Gatilho vinculado no 3 do monitor NAO dispara; o proxy interno da SOA segue em uso.",
+      "valor": "Edital nao publicado. As minutas de edital e anexos seguem em Consulta Publica ANEEL 022 e 023/2026, reforcadas como abertas pela ABSOLAR em 18/08/2026; prazo ANEEL em 14/09/2026 e prazo interno da associacao em 09/09/2026. A pagina do LRCAP Armazenamento 2026 na EPE nao tem documento posterior a 03/07/2026 e nao traz resultado locacional nem lista de barramentos elegiveis. [REVERIFICADO 21/08/2026 - F1] Pagina do LRCAP Armazenamento 2026 no portal da EPE reaberta e lida nesta data com a lista integral de documentos: 9 arquivos, sendo os tres primeiros as versoes em portugues, ingles e espanhol do Informe de Cadastramento (de 15/06/2026, ja registrado no digest de 14/08/2026). Documento mais recente da pagina segue sendo o de 03/07/2026 (NT-ONS DPL 0057/2026 e EPE-DEE-RE-067/2026-R0, Metodologia, Premissas e Criterios). Nenhum resultado locacional, nenhuma lista ou mapa de barramentos elegiveis a bonificacao, nenhum caso eletrico novo e nenhuma revisao da Base de Dados. Indice de publicacoes da EPE tambem reaberto e lido: sem item de agosto de 2026. Indice de noticias da ANEEL reaberto por duas rotas: edital nao publicado. Gatilho vinculado no 3 do monitor NAO dispara; o proxy interno da SOA segue em uso. ⟨ANCORAGEM F1/DOU 21/08/2026 · consolidadora⟩ Os Avisos de Consulta Pública nº 22/2026 e nº 23/2026 foram lidos no DOU de 30/07/2026, Ed. 142, Seção 3, p. 116. Ficam ancorados os números dos dois certames de armazenamento — Leilão nº 05/2026-ANEEL, de Armazenamento Nacional, Processo 48500.015992/2026-11; e Leilão nº 06/2026-ANEEL, de Armazenamento, Processo 48500.019603/2026-18 — e o prazo regulatório de 14/9/2026 para as duas consultas. O EDITAL em si segue NÃO PUBLICADO: os Avisos versam sobre MINUTA de Edital, Anexos e CRCAP, e nada dizem sobre preço-teto, garantias ou regra de TUST. O status de não publicado, portanto, é confirmado por fonte primária, e não apenas por ausência de notícia.",
       "status": "PENDENTE",
       "qsv_cor": "LARANJA",
-      "norma": "ANEEL (edital do leilão)",
+      "norma": "Avisos de Consulta Pública ANEEL nº 22/2026 e nº 23/2026 · DOU de 30/07/2026, Ed. 142, Seção 3, p. 116 · Leilões nº 05/2026-ANEEL e nº 06/2026-ANEEL · Portaria MME 136/2026",
       "numero_status": "ANCORADO_PARCIAL",
       "verificado_em": "2026-08-21",
-      "gatilho_revisao": "publicacao do EDITAL ASSINADO (item no 1 de prioridade do monitor) - reconfirmado NAO publicado em 03/08/2026. MARCOS DATADOS VIGENTES: CP 22/2026 e CP 23/2026 publicadas no DOU em 30/07/2026; Audiencia Publica em 1o/09/2026 as 14h30; prazo interno ABSOLAR 09/09/2026; encerramento das CPs em 14/09/2026; sessoes em 02/12 (Leilao 05) e 04/12/2026 (Leilao 06); homologacao prevista 01/04/2027; outorga estimada 21/05/2027. MARCO ENCERRADO: cadastramento EPE (AEGE) fechou em 31/07/2026 as 18h. Revisar quando sair a NT-02 de quantitativos (MW por barramento), prazo 30/09/2026, e quando os QUATRO PDFs (SEI 0414715, SEI 0414729 e as duas minutas de edital) forem salvos e lidos como ATO."
+      "gatilho_revisao": "publicacao do EDITAL ASSINADO (item no 1 de prioridade do monitor) - reconfirmado NAO publicado em 03/08/2026. MARCOS DATADOS VIGENTES: CP 22/2026 e CP 23/2026 publicadas no DOU em 30/07/2026; Audiencia Publica em 1o/09/2026 as 14h30; prazo interno ABSOLAR 09/09/2026; encerramento das CPs em 14/09/2026; sessoes em 02/12 (Leilao 05) e 04/12/2026 (Leilao 06); homologacao prevista 01/04/2027; outorga estimada 21/05/2027. MARCO ENCERRADO: cadastramento EPE (AEGE) fechou em 31/07/2026 as 18h. Revisar quando sair a NT-02 de quantitativos (MW por barramento), prazo 30/09/2026, e quando os QUATRO PDFs (SEI 0414715, SEI 0414729 e as duas minutas de edital) forem salvos e lidos como ATO.",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_DOU",
+          "ref": "DOU de 30/07/2026, Edição 142, Seção 3, p. 116 — AVISOS DE CONSULTA PÚBLICA Nº 22/2026 e Nº 23/2026",
+          "trecho_literal": "aprimoramento da minuta de Edital, de seus Anexos e do respectivo CRCAP do Leilão nº 06/2026-ANEEL (Leilão de Reserva de Capacidade na forma de Potência de 2026 - Armazenamento) ... Período para envio: 30/7/2026 a 14/9/2026.",
+          "nota_qsv": "Ato aberto e lido na íntegra no DOU em 21/08/2026 pela varredura consolidadora `monitores-regulatorios-soa` de 21/08/2026 (Chrome, in.gov.br)",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ]
     },
     {
       "id": "lrcap_ancora",
@@ -62,13 +73,25 @@
       "orgao": "ANEEL/CCEE",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Referência de valor de capacidade (LRCAP térmica)",
-      "valor": "Preço-teto térmica a gás R$ 1,12–2,25 mi/MW-ano (2º LRCAP, 18/03/2026; ~R$ 39 bi de receita fixa contratada)",
+      "valor": "Preço-teto térmica a gás R$ 1,12–2,25 mi/MW-ano (2º LRCAP, 18/03/2026; ~R$ 39 bi de receita fixa contratada) ⟨F1/DOU NOVO, LIDO EM 21/08/2026 · consolidadora⟩ AVISO DE HOMOLOGAÇÃO E ADJUDICAÇÃO do LEILÃO Nº 2/2026-ANEEL, denominado LRCAP 2026 - UTEs a Gás Natural, Carvão Mineral e Hidrelétricas, DOU de 07/08/2026, Edição 148, Seção 3, página 103, datado de Brasília, 28 de julho de 2026, assinado pelo Diretor-Geral. Processo 48500.032821/2025-67; objeto amparado na Portaria MME nº 118/2025. Homologa-se o RESULTADO PARCIAL e adjudica-se o objeto à única proponente vencedora da Tabela 1: CONSÓRCIO EBRASIL/CELNE — Eletricidade do Brasil SA EBRASIL com 99% e Centrais Elétricas do Nordeste CELNE Ltda. com 1% —, central geradora UTE MONTE FUJI M1, CEG UTE.GN.PE.046765-0.01, rodada 2028, disponibilidade de potência ofertada de 290,613 MW, preço de lance de R$ 2.323.009,12 por MW.ano. ⚠ ANTI-FALSO-POSITIVO: este é o certame TÉRMICO e HIDRELÉTRICO realizado em março de 2026, e NÃO o LRCAP de Armazenamento; o preço de lance é referência de potência térmica e não pode ser transportado para BESS. A homologação é PARCIAL — não é o resultado completo do certame.",
       "status": "VIGENTE (referência)",
       "qsv_cor": "AZUL",
-      "norma": "ANEEL/CCEE — homologação LRCAP 2026",
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-07-01",
-      "gatilho_revisao": "novo LRCAP ou divulgação do preço-teto de armazenamento"
+      "norma": "Aviso de Homologação e Adjudicação do Leilão nº 2/2026-ANEEL (LRCAP 2026 - UTEs a Gás Natural, Carvão Mineral e Hidrelétricas) · DOU de 07/08/2026, Ed. 148, Seção 3, p. 103 · Processo 48500.032821/2025-67 · Portaria MME nº 118/2025",
+      "numero_status": "ANCORADO_NO_DOU",
+      "verificado_em": "2026-08-21",
+      "gatilho_revisao": "novo LRCAP ou divulgação do preço-teto de armazenamento",
+      "url": "https://www.in.gov.br/web/dou/-/aviso-de-homologacao-e-adjudicacao-723868419",
+      "pendencia_verificacao": "Homologação declarada PARCIAL: falta identificar se há resultado complementar publicado depois de 07/08/2026. Despacho nº 3.012, de 07/08/2026, da Secretaria de Leilões, sobre o Edital do Leilão nº 02/2026-ANEEL, localizado no DOU de 10/08/2026, Ed. 149, p. 43, ainda não foi aberto.",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_DOU",
+          "ref": "DOU de 07/08/2026, Edição 148, Seção 3, p. 103 — AVISO DE HOMOLOGAÇÃO E ADJUDICAÇÃO, LEILÃO Nº 2/2026-ANEEL — https://www.in.gov.br/web/dou/-/aviso-de-homologacao-e-adjudicacao-723868419",
+          "trecho_literal": "homologa-se o resultado parcial e adjudica-se o correspondente objeto do Leilão nº 2/2026-ANEEL (LRCAP 2026 - UTEs a Gás Natural, Carvão Mineral e Hidrelétricas) às Proponentes Vencedoras indicadas na Tabela 1 ... CONSÓRCIO EBRASIL/CELNE ... MONTE FUJI M1 ... 290,613 ... 2.323.009,12",
+          "nota_qsv": "Ato aberto e lido na íntegra no DOU em 21/08/2026 pela varredura consolidadora `monitores-regulatorios-soa` de 21/08/2026 (Chrome, in.gov.br)",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ]
     },
     {
       "id": "bess_nt",
@@ -205,14 +228,27 @@
       "orgao": "ANEEL",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Autoprodução — Despacho ANEEL nº 2.414/2026 (art. 16-B da Lei 9.074/1995)",
-      "valor": "Estabelece o procedimento de autoprodução de energia elétrica, inclusive por equiparação, decorrente da alteração do art. 16-B da Lei 9.074/1995 pela Lei 15.269/2025. A CCEE: a partir de 25/11/2025 cadastra para autoprodução (estrita e equiparada) apenas ativos de geração OUTORGADOS; concede até 3 anos (da publicação da Lei 15.269/2025) para manter modelagens lastreadas em usinas sem outorga; para equiparação com demanda contratada agregada ≥ 30.000 kW, exige que cada UC agregada tenha demanda individual ≥ 3.000 kW; afere participação mínima de 30% no capital e qualificações de grupo econômico (REN 948/2021; Lei 6.404/1976), conforme NT Conjunta 7/2026-SGM-SCE-SFF/ANEEL (29/05/2026). Aperta a porta da autoprodução por equiparação — vetor do mercado livre/autoconsumo em que a prova de geração/lastro é a camada SOA. [Confirmar publicação no DOU/SEI ANEEL.]",
+      "valor": "Estabelece o procedimento de autoprodução de energia elétrica, inclusive por equiparação, decorrente da alteração do art. 16-B da Lei 9.074/1995 pela Lei 15.269/2025. A CCEE: a partir de 25/11/2025 cadastra para autoprodução (estrita e equiparada) apenas ativos de geração OUTORGADOS; concede até 3 anos (da publicação da Lei 15.269/2025) para manter modelagens lastreadas em usinas sem outorga; para equiparação com demanda contratada agregada ≥ 30.000 kW, exige que cada UC agregada tenha demanda individual ≥ 3.000 kW; afere participação mínima de 30% no capital e qualificações de grupo econômico (REN 948/2021; Lei 6.404/1976), conforme NT Conjunta 7/2026-SGM-SCE-SFF/ANEEL (29/05/2026). Aperta a porta da autoprodução por equiparação — vetor do mercado livre/autoconsumo em que a prova de geração/lastro é a camada SOA. [Confirmar publicação no DOU/SEI ANEEL.] ⟨LEITURA INTEGRAL F1/DOU 21/08/2026 · consolidadora⟩ O ato foi aberto e LIDO NA ÍNTEGRA no DOU de 06/07/2026, Edição 124, Seção 1, página 99 (MME/ANEEL/Diretoria Colegiada, Sandoval de Araújo Feitosa Neto), Processo 48500.022233/2025-15. O Despacho determina à CCEE, ao aplicar os dispositivos relacionados ao art. 16-B da Lei nº 9.074/1995, dez providências. As de maior borda: (ii) a partir de 25 de novembro de 2025, cadastrar para fins de autoprodução, tanto estrito senso quanto equiparada, apenas ativos de geração outorgados; (iii) considerar período máximo de três anos, a partir da publicação da Lei nº 15.269/2025, para manter ativas as modelagens de autoprodutor lastreadas em usinas sem outorga concretizadas antes da publicação dessa Lei; (iv) exigir, na equiparação de consumidor com demanda contratada agregada igual ou superior a 30.000 kW, que todas as unidades de consumo agregadas tenham demanda individual igual ou superior a 3.000 kW; (vii) aferir participação mínima de 30% no capital social e identificar ações sem direito a voto com direitos econômicos superiores; (viii) tomar como referência temporal o início da operação comercial determinado por ato administrativo da ANEEL; e (ix) manter base de dados estruturada e atualizada com o histórico completo dos procedimentos adotados. Os itens (vi) e (vii) declaram que o despacho é subsidiado pela Nota Técnica Conjunta nº 7/2026-SGM-SCE-SFF/ANEEL, de 29/05/2026 — documento que a casa não possui.",
       "status": "VIGENTE",
-      "qsv_cor": "AZUL",
-      "norma": "Despacho ANEEL nº 2.414/2026 · art. 16-B da Lei 9.074/1995 (redação da Lei 15.269/2025) · NT Conjunta 7/2026-SGM-SCE-SFF/ANEEL",
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-07-07",
+      "qsv_cor": "VERDE",
+      "norma": "Despacho ANEEL nº 2.414, de 30/06/2026 · DOU de 06/07/2026, Ed. 124, Seção 1, p. 99 · Processo 48500.022233/2025-15 · art. 16-B da Lei 9.074/1995 · Lei 15.269/2025",
+      "numero_status": "ANCORADO_NO_DOU",
+      "verificado_em": "2026-08-21",
       "fonte_corroboracao": "Aprovado pela diretoria em 30/06/2026; corroborado por Poder360, Cenário Energia, CanalEnergia e XP Radar (julho). DOU/SEI ANEEL ainda não reaberto — mantém ALEGADO_NAO_ANCORADO.",
-      "gatilho_revisao": "publicação no DOU/SEI ANEEL confirmando o Despacho 2.414/2026; regulamentação da CCEE (Regras/Procedimentos de Comercialização); ver ANEEL-DESPACHO-2819-2026-AUTOPRODUCAO, que suspende cautelarmente duas das regras deste regime"
+      "gatilho_revisao": "publicação no DOU/SEI ANEEL confirmando o Despacho 2.414/2026; regulamentação da CCEE (Regras/Procedimentos de Comercialização); ver ANEEL-DESPACHO-2819-2026-AUTOPRODUCAO, que suspende cautelarmente duas das regras deste regime",
+      "url": "https://www.in.gov.br/web/dou/-/despacho-n-2.414-de-30-de-junho-de-2026-716885312",
+      "qsv_origem_classificacao": "F1_DOU_lido_na_integra_21ago2026 — fonte oficial reaberta e número ancorado no DOU (Precedência v1.2, R2 atendida)",
+      "pendencia_verificacao": "Nota Técnica Conjunta nº 7/2026-SGM-SCE-SFF/ANEEL, de 29/05/2026, que subsidia os itens (vi) e (vii), não foi obtida. Item ix do despacho impõe à CCEE base de dados com histórico completo dos procedimentos: verificar se a CCEE publicou algo a respeito.",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_DOU",
+          "ref": "DOU de 06/07/2026, Edição 124, Seção 1, p. 99 — DESPACHO Nº 2.414, DE 30 DE JUNHO DE 2026 — https://www.in.gov.br/web/dou/-/despacho-n-2.414-de-30-de-junho-de-2026-716885312",
+          "trecho_literal": "(ii) a partir de 25 de novembro de 2025, cadastre para fins de autoprodução, tanto estrito sendo quanto equiparada, apenas ativos de geração de energia elétrica outorgados, observando o disposto no item \"iii\"; (iii) considere um período máximo de três anos, a partir da publicação da Lei nº 15.269/2025, para manter ativa as modelagens de autoprodutor lastreadas em usinas sem outorga concretizadas antes da publicação dessa Lei",
+          "nota_qsv": "Ato aberto e lido na íntegra no DOU em 21/08/2026 pela varredura consolidadora `monitores-regulatorios-soa` de 21/08/2026 (Chrome, in.gov.br)",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ]
     },
     {
       "id": "autoproducao_despacho_2819_suspensao",
@@ -220,18 +256,30 @@
       "orgao": "ANEEL",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Suspensao cautelar de duas regras de autoproducao - Despacho ANEEL no 2.819/2026",
-      "valor": "SUSPENSAO CAUTELAR EM VIGOR, SEM DATA DE TERMINO. [F3 ABSOLAR GT Geracao Centralizada, Gustavo Pinheiro, lista gcabsolar, 07/08/2026 12h13 BRT, captado pelo monitor GT ABSOLAR na run 2 do mesmo dia]. O Despacho ANEEL no 2.819/2026, datado de 29/07/2026 e publicado no DOU de 07/08/2026, tem o diretor-geral Sandoval Feitosa suspendendo cautelarmente DUAS regras de autoproducao aprovadas pelo colegiado no fim de junho de 2026, ambas com voto favoravel dele proprio: (a) a exigencia de OUTORGA para o cadastro de ativos de geracao como autoprodutores; (b) o PRAZO MAXIMO DE 3 ANOS para permanencia nesse regime de usinas SEM OUTORGA JA MODELADAS NA CCEE. A cautelar atende PARCIALMENTE pedido de reconsideracao da ABRAPCH. Ambos os pontos ficam suspensos ate julgamento definitivo do recurso pela diretoria colegiada, SEM DATA marcada. O anexo DESPACHO N 2.819.pdf nao foi lido e o texto no DOU nao foi reaberto - in.gov.br em socket hang up. RELEVANCIA SOA: o item (b) descreve literalmente a fronteira entre CADASTRO e CONTABILIZACAO - um ativo que existe na contabilizacao da CCEE e nao no cadastro outorgado e a mesma classe de inconsistencia de base que o trabalho de depara SIGA x CCEE da SOA documenta, com lastro no banco proprio. Se o prazo de 3 anos cair em definitivo, o descasamento perde o prazo de saneamento e passa a ser estrutural. NAO HA JANELA ABERTA AGORA: nao e consulta publica nem tomada de subsidio, e o merito volta ao colegiado sem data. Marcar para reavaliacao quando o recurso retornar a pauta.",
+      "valor": "SUSPENSAO CAUTELAR EM VIGOR, SEM DATA DE TERMINO. [F3 ABSOLAR GT Geracao Centralizada, Gustavo Pinheiro, lista gcabsolar, 07/08/2026 12h13 BRT, captado pelo monitor GT ABSOLAR na run 2 do mesmo dia]. O Despacho ANEEL no 2.819/2026, datado de 29/07/2026 e publicado no DOU de 07/08/2026, tem o diretor-geral Sandoval Feitosa suspendendo cautelarmente DUAS regras de autoproducao aprovadas pelo colegiado no fim de junho de 2026, ambas com voto favoravel dele proprio: (a) a exigencia de OUTORGA para o cadastro de ativos de geracao como autoprodutores; (b) o PRAZO MAXIMO DE 3 ANOS para permanencia nesse regime de usinas SEM OUTORGA JA MODELADAS NA CCEE. A cautelar atende PARCIALMENTE pedido de reconsideracao da ABRAPCH. Ambos os pontos ficam suspensos ate julgamento definitivo do recurso pela diretoria colegiada, SEM DATA marcada. O anexo DESPACHO N 2.819.pdf nao foi lido e o texto no DOU nao foi reaberto - in.gov.br em socket hang up. RELEVANCIA SOA: o item (b) descreve literalmente a fronteira entre CADASTRO e CONTABILIZACAO - um ativo que existe na contabilizacao da CCEE e nao no cadastro outorgado e a mesma classe de inconsistencia de base que o trabalho de depara SIGA x CCEE da SOA documenta, com lastro no banco proprio. Se o prazo de 3 anos cair em definitivo, o descasamento perde o prazo de saneamento e passa a ser estrutural. NAO HA JANELA ABERTA AGORA: nao e consulta publica nem tomada de subsidio, e o merito volta ao colegiado sem data. Marcar para reavaliacao quando o recurso retornar a pauta. ⟨LEITURA INTEGRAL F1/DOU 21/08/2026 · consolidadora⟩ O ato foi aberto e LIDO NA ÍNTEGRA no DOU de 07/08/2026, Edição 148, Seção 1, página 106 (MME/ANEEL/Diretoria Colegiada, Sandoval de Araújo Feitosa Neto), Processo 48500.022233/2025-15 — o mesmo do Despacho nº 2.414/2026. Texto integral, em síntese fiel: o Diretor-Geral conhece do pedido de efeito suspensivo apresentado pela Associação Brasileira de Pequenas Centrais Hidrelétricas e de Centrais Geradoras Hidrelétricas - ABRAPCH, CNPJ 18.241.195/0001-27, no Pedido de Reconsideração interposto contra o Despacho ANEEL nº 2.414, de 30 de junho de 2026, e dá-lhe parcial provimento, para suspender os itens ii e iii do Despacho nº 2.414/2026 até decisão definitiva da Diretoria Colegiada, por presentes os requisitos da aparência do bom direito, do perigo na demora e da reversibilidade da medida. DUAS CORREÇÕES DE PROVENIÊNCIA: primeira, o Despacho é DE 29 DE JULHO DE 2026 e foi publicado em 07/08/2026 — não é ato da janela de agosto em que o resumo de associação o noticiou, e sim ato com doze dias de idade quando chegou por aquele canal. Segunda, o texto publicado NÃO descreve o conteúdo dos itens ii e iii; a descrição do que foi suspenso vem do Despacho nº 2.414/2026, também lido hoje, e é exatamente a exigência de outorga para cadastro em autoprodução a partir de 25/11/2025 e o período máximo de três anos para as modelagens lastreadas em usinas sem outorga.",
       "status": "VIGENTE",
-      "qsv_cor": "AZUL",
-      "norma": "Despacho ANEEL no 2.819, de 29/07/2026 (DOU de 07/08/2026) - suspensao cautelar parcial em pedido de reconsideracao da ABRAPCH sobre o regime de autoproducao do art. 16-B da Lei 9.074/1995",
-      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "qsv_cor": "VERDE",
+      "norma": "Despacho ANEEL nº 2.819, de 29/07/2026 · DOU de 07/08/2026, Ed. 148, Seção 1, p. 106 · Processo 48500.022233/2025-15 · suspende os itens ii e iii do Despacho ANEEL nº 2.414/2026",
+      "numero_status": "ANCORADO_NO_DOU",
       "fonte": "F3 ABSOLAR GT Geracao Centralizada (voz oficial, 07/08/2026). F1 DOU nao aberta - in.gov.br em socket hang up na 6a e 7a tentativas consecutivas.",
-      "verificado_em": "2026-08-07",
+      "verificado_em": "2026-08-21",
       "gatilho_revisao": "leitura do texto do Despacho 2.819/2026 no DOU ou no SEI da ANEEL; retorno do recurso a pauta da diretoria colegiada para julgamento definitivo; eventual queda definitiva do prazo de 3 anos para usinas sem outorga modeladas na CCEE, que abriria janela de contribuicao.",
-      "pendencia_verificacao": "[A VERIFICAR F1] texto integral do Despacho 2.819/2026 no DOU de 07/08/2026; anexo DESPACHO N 2.819.pdf na caixa do CEO nao lido. Numero, datas, conteudo e atribuicao a ABRAPCH sao F3 - nao citar externamente.",
+      "pendencia_verificacao": "A decisão definitiva da Diretoria Colegiada sobre o Pedido de Reconsideração da ABRAPCH não tem data. Vigiar a pauta das Reuniões Públicas Ordinárias.",
       "vetores_afetados": [
         "Mercado & PSM",
         "MMGD nao observavel"
+      ],
+      "url": "https://www.in.gov.br/web/dou/-/despacho-n-2.819-de-29-de-julho-de-2026-724093451",
+      "qsv_origem_classificacao": "F1_DOU_lido_na_integra_21ago2026 — fonte oficial reaberta e número ancorado no DOU (Precedência v1.2, R2 atendida)",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_DOU",
+          "ref": "DOU de 07/08/2026, Edição 148, Seção 1, p. 106 — DESPACHO Nº 2.819, DE 29 DE JULHO DE 2026 — https://www.in.gov.br/web/dou/-/despacho-n-2.819-de-29-de-julho-de-2026-724093451",
+          "trecho_literal": "dar-lhe parcial provimento, para suspender os itens \"ii\" e \"iii\" do Despacho nº 2.414/2026, até decisão definitiva da Diretoria Colegiada, haja vista que presentes os requisitos da aparência do bom direito, do perigo na demora e da reversibilidade da medida.",
+          "nota_qsv": "Ato aberto e lido na íntegra no DOU em 21/08/2026 pela varredura consolidadora `monitores-regulatorios-soa` de 21/08/2026 (Chrome, in.gov.br)",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
       ]
     },
     {
@@ -354,13 +402,23 @@
       "orgao": "ANEEL",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Alteracao das Regras de Comercializacao para o LRCAP 2026 (Modulos 9, 10, 11, 16 e 27)",
-      "valor": "[F1 ANEEL, noticia 'Alteracoes nas Regras de Comercializacao para LRCAP 2026 vao a Consulta Publica', 28/07/2026, aberta e lida na integra em 29/07/2026]: a Diretoria da ANEEL aprovou a abertura da CONSULTA PUBLICA no 25/2026 sobre proposta encaminhada pela CCEE que altera CINCO modulos das Regras de Comercializacao - Modulo 9 (Encargos), Modulo 10 (Consolidacao de Resultados), Modulo 11 (Liquidacao), Modulo 16 (Reajuste dos Parametros da Receita de CCEAR) e Modulo 27 (Contratacao de Reserva de Capacidade). Contribuicoes de 30/07 a 12/09/2026, para cp025_2026@aneel.gov.br. As inovacoes entraram em vigencia PROVISORIAMENTE na data de abertura da consulta publica, alinhadas ao inicio do suprimento. *** ANTI-FALSO-POSITIVO (regra dura): esta CP trata dos LRCAPs JA REALIZADOS EM MARCO DE 2026 - LRCAP 2/2026 (UTEs a gas natural, carvao mineral e UHEs) e LRCAP 3/2026 (UTEs a oleo diesel, oleo combustivel e biodiesel). NAO e o leilao de baterias (esses sao os Leiloes 05 e 06/2026, em 02 e 04/12, cujas minutas de edital estao nas CP 22 e 23/2026). *** Relevancia SOA: e a camada CONTABIL que o armazenamento vai herdar. O Modulo 27 e onde a reserva de capacidade e contratada e o Modulo 11 e onde ela e liquidada - e a camada de liquidacao e frequentemente onde o GRAO TEMPORAL do dado de apuracao e efetivamente decidido. Segunda janela de contribuicao, menos disputada que a do edital e mais proxima da borda tecnica. A minuta NAO foi baixada - verificar qual grao temporal os Modulos 10 e 11 adotam para apuracao de disponibilidade de reserva de capacidade.",
+      "valor": "[F1 ANEEL, noticia 'Alteracoes nas Regras de Comercializacao para LRCAP 2026 vao a Consulta Publica', 28/07/2026, aberta e lida na integra em 29/07/2026]: a Diretoria da ANEEL aprovou a abertura da CONSULTA PUBLICA no 25/2026 sobre proposta encaminhada pela CCEE que altera CINCO modulos das Regras de Comercializacao - Modulo 9 (Encargos), Modulo 10 (Consolidacao de Resultados), Modulo 11 (Liquidacao), Modulo 16 (Reajuste dos Parametros da Receita de CCEAR) e Modulo 27 (Contratacao de Reserva de Capacidade). Contribuicoes de 30/07 a 12/09/2026, para cp025_2026@aneel.gov.br. As inovacoes entraram em vigencia PROVISORIAMENTE na data de abertura da consulta publica, alinhadas ao inicio do suprimento. *** ANTI-FALSO-POSITIVO (regra dura): esta CP trata dos LRCAPs JA REALIZADOS EM MARCO DE 2026 - LRCAP 2/2026 (UTEs a gas natural, carvao mineral e UHEs) e LRCAP 3/2026 (UTEs a oleo diesel, oleo combustivel e biodiesel). NAO e o leilao de baterias (esses sao os Leiloes 05 e 06/2026, em 02 e 04/12, cujas minutas de edital estao nas CP 22 e 23/2026). *** Relevancia SOA: e a camada CONTABIL que o armazenamento vai herdar. O Modulo 27 e onde a reserva de capacidade e contratada e o Modulo 11 e onde ela e liquidada - e a camada de liquidacao e frequentemente onde o GRAO TEMPORAL do dado de apuracao e efetivamente decidido. Segunda janela de contribuicao, menos disputada que a do edital e mais proxima da borda tecnica. A minuta NAO foi baixada - verificar qual grao temporal os Modulos 10 e 11 adotam para apuracao de disponibilidade de reserva de capacidade. ⟨ANCORAGEM F1/DOU 21/08/2026 · consolidadora⟩ Aviso de Consulta Pública nº 25/2026 lido no DOU de 30/07/2026, Ed. 142, Seção 3, p. 116, Processo 48500.015356/2026-81, período de 30/7/2026 a 12/9/2026. Encerramento confirmado em fonte primária. A aplicação provisória das Regras e a lista dos cinco módulos afetados não constam do Aviso publicado e seguem apoiadas na prévia da 15ª RPO.",
       "status": "EM DELIBERAÇÃO",
       "qsv_cor": "AZUL",
-      "norma": "Consulta Publica ANEEL no 25/2026 - Regras de Comercializacao (Modulos 9, 10, 11, 16 e 27) - proposta da CCEE",
-      "numero_status": "ANCORADO",
-      "verificado_em": "2026-07-29",
-      "gatilho_revisao": "encerramento da CP em 12/09/2026; publicacao da versao final das Regras de Comercializacao; leitura da minuta para identificar o grao temporal de apuracao nos Modulos 10 e 11; extensao das mesmas regras aos Leiloes 05 e 06/2026 (armazenamento)"
+      "norma": "Aviso de Consulta Pública ANEEL nº 25/2026 · DOU de 30/07/2026, Ed. 142, Seção 3, p. 116 · Processo 48500.015356/2026-81",
+      "numero_status": "ANCORADO_NO_DOU",
+      "verificado_em": "2026-08-21",
+      "gatilho_revisao": "encerramento da CP em 12/09/2026; publicacao da versao final das Regras de Comercializacao; leitura da minuta para identificar o grao temporal de apuracao nos Modulos 10 e 11; extensao das mesmas regras aos Leiloes 05 e 06/2026 (armazenamento)",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_DOU",
+          "ref": "DOU de 30/07/2026, Edição 142, Seção 3, p. 116 — AVISO DE CONSULTA PÚBLICA Nº 25/2026",
+          "trecho_literal": "Período para envio: 30/7/2026 a 12/9/2026.",
+          "nota_qsv": "Ato aberto e lido na íntegra no DOU em 21/08/2026 pela varredura consolidadora `monitores-regulatorios-soa` de 21/08/2026 (Chrome, in.gov.br)",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ]
     },
     {
       "id": "sbce_mrv_cp_2026",
@@ -458,14 +516,62 @@
       "orgao": "ANEEL",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Encargo fixo para custos comerciais na tarifa de baixa tensão",
-      "valor": "Consulta publica sobre substituir o custo de disponibilidade, hoje expresso em quantidade de energia, por um encargo fixo mensal em reais destinado a cobrir custos comerciais das distribuidoras, para consumidores de baixa tensao. Janela de contribuicoes de 08/06/2026 a 08/09/2026; prazo de contribuicao interna da ABSOLAR em 25/08/2026. A franquia minima hoje substituida corresponde a 30 kWh para unidades monofasicas, 50 kWh para bifasicas e 100 kWh para trifasicas, cobrada desde 1975. Vigencia prevista para 2028 se aprovada.",
+      "valor": "Consulta publica sobre substituir o custo de disponibilidade, hoje expresso em quantidade de energia, por um encargo fixo mensal em reais destinado a cobrir custos comerciais das distribuidoras, para consumidores de baixa tensao. Janela de contribuicoes de 08/06/2026 a 08/09/2026; prazo de contribuicao interna da ABSOLAR em 25/08/2026. A franquia minima hoje substituida corresponde a 30 kWh para unidades monofasicas, 50 kWh para bifasicas e 100 kWh para trifasicas, cobrada desde 1975. Vigencia prevista para 2028 se aprovada. ⟨ANCORAGEM F1/DOU 21/08/2026 · consolidadora⟩ Aviso de Consulta Pública nº 16/2026 lido no DOU de 08/06/2026, Ed. 104, Seção 3, p. 120. Ancorados: Processo 48500.011409/2026-94, objeto verbatim e janela de 8/6/2026 a 8/9/2026. O documento que a consulta submete é o Relatório de Análise de Impacto Regulatório Conjunto nº 1/2026-STR/STD/ANEEL. O Aviso não menciona SCEE nem geração distribuída, de modo que a divergência aberta em 21/08 continua aberta nos dois sentidos e só a leitura do Relatório de AIR a resolve.",
       "status": "EM DELIBERAÇÃO",
       "qsv_cor": "AZUL",
-      "norma": "Consulta Pública ANEEL nº 016/2026",
-      "numero_status": "ANCORADO_PARCIAL",
+      "norma": "Aviso de Consulta Pública ANEEL nº 16/2026 · DOU de 08/06/2026, Ed. 104, Seção 3, p. 120 · Processo 48500.011409/2026-94 · Relatório de AIR Conjunto nº 1/2026-STR/STD/ANEEL",
+      "numero_status": "ANCORADO_NO_DOU",
       "verificado_em": "2026-08-21",
       "gatilho_revisao": "encerramento do prazo em 08/09/2026, publicação do voto ou da REN resultante",
-      "pendencia_verificacao": "DIVERGENCIA ABERTA sobre o alcance da proposta, nao resolvida em nenhuma das duas direcoes, e a nota tecnica da consulta NAO foi lida. Versao A [F3, resumo da 31a reuniao do GTGD de 18/08/2026]: consumidores do Sistema de Compensacao de Energia Eletrica e da Tarifa Social ficariam de fora do novo encargo, seguindo no modelo atual de cobranca minima. Versao B [F2, cobertura da abertura da consulta em 08/06/2026 citando a Agencia]: consumidores com geracao propria, incluindo sistemas fotovoltaicos, continuam utilizando a infraestrutura comercial das distribuidoras e por isso tambem devem contribuir para a cobertura desses custos fixos, com a ressalva de que a proposta nao modifica o marco regulatorio da micro e minigeracao distribuida. As duas versoes sao secundarias e se contradizem. NAO usar nenhuma das duas como argumento em peca, e-mail ou material antes da leitura da minuta. A tentativa de abrir a noticia oficial da ANEEL em 21/08/2026 retornou Conteudo Restrito. Numero da consulta, janela de contribuicoes, objeto e vigencia prevista sao corroborados por fonte secundaria que cita a Agencia."
+      "pendencia_verificacao": "DIVERGENCIA ABERTA sobre o alcance da proposta, nao resolvida em nenhuma das duas direcoes, e a nota tecnica da consulta NAO foi lida. Versao A [F3, resumo da 31a reuniao do GTGD de 18/08/2026]: consumidores do Sistema de Compensacao de Energia Eletrica e da Tarifa Social ficariam de fora do novo encargo, seguindo no modelo atual de cobranca minima. Versao B [F2, cobertura da abertura da consulta em 08/06/2026 citando a Agencia]: consumidores com geracao propria, incluindo sistemas fotovoltaicos, continuam utilizando a infraestrutura comercial das distribuidoras e por isso tambem devem contribuir para a cobertura desses custos fixos, com a ressalva de que a proposta nao modifica o marco regulatorio da micro e minigeracao distribuida. As duas versoes sao secundarias e se contradizem. NAO usar nenhuma das duas como argumento em peca, e-mail ou material antes da leitura da minuta. A tentativa de abrir a noticia oficial da ANEEL em 21/08/2026 retornou Conteudo Restrito. Numero da consulta, janela de contribuicoes, objeto e vigencia prevista sao corroborados por fonte secundaria que cita a Agencia.",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_DOU",
+          "ref": "DOU de 08/06/2026, Edição 104, Seção 3, p. 120 — AVISO DE CONSULTA PÚBLICA Nº 16/2026",
+          "trecho_literal": "Período para envio: 8/6/2026 a 8/9/2026.",
+          "nota_qsv": "Ato aberto e lido na íntegra no DOU em 21/08/2026 pela varredura consolidadora `monitores-regulatorios-soa` de 21/08/2026 (Chrome, in.gov.br)",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ]
+    },
+    {
+      "fato_id": "ANEEL-PORTARIA-249-2026-DIRETORA-SUBSTITUTA",
+      "tema": "Portaria ANEEL nº 249/2026 — Ludimila Lima da Silva convocada como Diretora Substituta na vaga aberta pelo término do mandato do diretor Mosna",
+      "valor": "Ato LIDO NA ÍNTEGRA no DOU de 14/08/2026, Edição 153, Seção 2, página 58 (MME/ANEEL/Diretoria Colegiada), assinado por Sandoval de Araújo Feitosa Neto. PORTARIA Nº 249, DE 13 DE AGOSTO DE 2026, fundada no inciso XI do art. 6 do Regimento Interno da ANEEL e no art. 10 da Lei nº 9.986/2000, Processo 48500.001309/2025-79. Art. 1º: convocar a Superintendente de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica, Ludimila Lima da Silva, para exercer o encargo de Diretora Substituta, de 14/8/2026 até 8/1/2027, ou até a data de nomeação de novo titular da Diretoria da ANEEL, decorrente do término do mandato do diretor Fernando Luiz Mosna Ferreira da Silva. Art. 2º: vigência na data da publicação. ISTO ENCERRA duas pendências da casa: o ato de nomeação, que os monitores procuravam desde 14/08 sem achar porque estava na Seção 2 e não na Seção 1; e a confirmação, em fonte primária, de que a vaga de Mosna decorre de TÉRMINO DE MANDATO. ATENÇÃO AO LIMITE: a Portaria atribui o ENCARGO DE DIRETORA SUBSTITUTA e NADA DIZ sobre redistribuição de processos ou herança de voto-vista. A pergunta aberta desde 10/08 — quem assumiu o voto-vista de Mosna que propunha encerrar a 3ª fase da CP 45/19 — NÃO está respondida por este ato e não pode ser tratada como respondida.",
+      "status": "VIGENTE — encargo de 14/08/2026 a 08/01/2027, ou até nomeação de novo titular",
+      "norma": "Portaria ANEEL nº 249, de 13/08/2026 · DOU de 14/08/2026, Ed. 153, Seção 2, p. 58 · Processo 48500.001309/2025-79 · art. 10 da Lei 9.986/2000",
+      "url": "https://www.in.gov.br/web/dou/-/portaria-n-249-de-13-de-agosto-de-2026-725519096",
+      "verificado_em": "2026-08-21",
+      "tipo_fato": "REGULATORIO_INSTITUCIONAL",
+      "score_soa": 8,
+      "vetores_afetados": [
+        "V3",
+        "V4"
+      ],
+      "qsv_cor": "VERDE",
+      "qsv_origem_classificacao": "F1_DOU_lido_na_integra_21ago2026 — fonte oficial reaberta e número ancorado no DOU",
+      "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_DOU",
+          "ref": "DOU de 14/08/2026, Edição 153, Seção 2, p. 58 — PORTARIA Nº 249, DE 13 DE AGOSTO DE 2026 — https://www.in.gov.br/web/dou/-/portaria-n-249-de-13-de-agosto-de-2026-725519096",
+          "trecho_literal": "Convocar a Superintendente de Concessões, Permissões e Autorizações dos Serviços de Energia Elétrica, Ludimila Lima da Silva, para exercer o encargo de Diretora Substituta, de 14/8/2026 até 8/1/2027, ou até a data de nomeação de novo titular da Diretoria da ANEEL, decorrente do término do mandato do diretor Fernando Luiz Mosna Ferreira da Silva.",
+          "nota_qsv": "Ato aberto e lido na íntegra no DOU em 21/08/2026 pela varredura consolidadora `monitores-regulatorios-soa` de 21/08/2026 (Chrome, in.gov.br)",
+          "associacao_origem": null,
+          "gt_origem": null
+        }
+      ],
+      "numero_status": "ANCORADO_NO_DOU",
+      "validacao_banco_SOA": {
+        "aplicavel": false,
+        "query_versionada": null,
+        "resultado": "N/A_REGULATORIO",
+        "verificado_em": "2026-08-21"
+      },
+      "especialista_citado_interno": null,
+      "agente_comercial_envolvido": null,
+      "pendencia_verificacao": "Não confundir encargo de Diretora Substituta com relatoria de processos. A destinação do voto-vista do ex-diretor Mosna na CP 45/19 segue sem resposta em fonte primária.",
+      "historico_pendencia_origem": ""
     }
   ],
   "_pendentes_verificacao": [
@@ -616,12 +722,13 @@
       "fato_id": "TCU-ACOMPANHAMENTO-LRCAP-2026",
       "orgao": "TCU",
       "tema": "Acompanhamento concomitante do 1º LRCAP de Armazenamento pelo TCU (AudElétrica) — foco em disponibilidade, operação e degradação",
-      "valor": "AUTORIZADO (fonte secundária), NÚMERO NÃO ANCORADO. [F2 Canal Solar, 17/07/2026 15h58, autor Wagner Freire]: o plenário do TCU autorizou, por unanimidade, o acompanhamento do primeiro LRCAP de baterias, a cargo da AudElétrica, com relatoria do ministro Jorge Oliveira. A fiscalização é CONCOMITANTE à modelagem do certame. Escopo declarado: metodologia do preço-teto, remuneração dos empreendimentos, critérios de habilitação, sistemática competitiva, distribuição dos custos do ERCAP, REGRAS DE OPERAÇÃO E DISPONIBILIDADE DOS SISTEMAS, DEGRADAÇÃO DAS BATERIAS ao longo do contrato, critérios de acesso à rede e distribuição de riscos contratuais. Envolve MME, EPE, ANEEL, ONS, CCEE e BNDES. Ordem de grandeza citada no processo (estimativas da ABSAE, NÃO do TCU e NÃO da SOA): 2 a 6 GW; receita fixa anual de R$ 1,2 mi a R$ 1,7 mi por MW; para 6 GW, R$ 7,2 bi a R$ 10,2 bi/ano e R$ 108 bi a R$ 153 bi em 15 anos, custeados via ERCAP pelos consumidores; cita o PDE 2035 (~6,6 GW de armazenamento). ⚠ O número 'Acórdão nº 1.891/2026' é de fonte secundária e NÃO foi confirmado em fonte primária do TCU nesta execução (busca dirigida a tcu.gov.br e pesquisa.apps.tcu.gov.br não localizou). NÃO citar o número nem os valores externamente. Relevância SOA: o controle externo entrou ANTES do edital e elegeu, entre todos os riscos, COMO A ENTREGA SERÁ APURADA — o mesmo campo do precedente ONS-CCEE do Sandbox de RD (Linha Base defasada em 2 meses).",
+      "valor": "AUTORIZADO (fonte secundária), NÚMERO NÃO ANCORADO. [F2 Canal Solar, 17/07/2026 15h58, autor Wagner Freire]: o plenário do TCU autorizou, por unanimidade, o acompanhamento do primeiro LRCAP de baterias, a cargo da AudElétrica, com relatoria do ministro Jorge Oliveira. A fiscalização é CONCOMITANTE à modelagem do certame. Escopo declarado: metodologia do preço-teto, remuneração dos empreendimentos, critérios de habilitação, sistemática competitiva, distribuição dos custos do ERCAP, REGRAS DE OPERAÇÃO E DISPONIBILIDADE DOS SISTEMAS, DEGRADAÇÃO DAS BATERIAS ao longo do contrato, critérios de acesso à rede e distribuição de riscos contratuais. Envolve MME, EPE, ANEEL, ONS, CCEE e BNDES. Ordem de grandeza citada no processo (estimativas da ABSAE, NÃO do TCU e NÃO da SOA): 2 a 6 GW; receita fixa anual de R$ 1,2 mi a R$ 1,7 mi por MW; para 6 GW, R$ 7,2 bi a R$ 10,2 bi/ano e R$ 108 bi a R$ 153 bi em 15 anos, custeados via ERCAP pelos consumidores; cita o PDE 2035 (~6,6 GW de armazenamento). ⚠ O número 'Acórdão nº 1.891/2026' é de fonte secundária e NÃO foi confirmado em fonte primária do TCU nesta execução (busca dirigida a tcu.gov.br e pesquisa.apps.tcu.gov.br não localizou). NÃO citar o número nem os valores externamente. Relevância SOA: o controle externo entrou ANTES do edital e elegeu, entre todos os riscos, COMO A ENTREGA SERÁ APURADA — o mesmo campo do precedente ONS-CCEE do Sandbox de RD (Linha Base defasada em 2 meses). ⟨PONTEIRO F1/DOU 21/08/2026 · consolidadora⟩ Busca no DOU pelo termo LRCAP na janela de 01/07 a 21/08/2026 retornou, entre sete resultados, a ATA Nº 27, DE 15 DE JULHO DE 2026, do Plenário do Tribunal de Contas da União, publicada no DOU de 23/07/2026, Edição 137, Seção 1, página 354. O extrato do índice traz, duas vezes, a expressão Leilão de Reserva de Capacidade na forma de Potência por meio de Sistemas de Armazenamento de Energia em Baterias. É a primeira evidência em fonte primária de que o certame de baterias está diante do Plenário do TCU. ⚠ O TRECHO NÃO FOI LOCALIZADO NA ÍNTEGRA: a extração de texto da página da ata foi bloqueada nesta execução, de modo que o número do acórdão, o relator e o teor da deliberação seguem desconhecidos. Nada além da existência da menção pode ser afirmado.",
       "status": "EM DELIBERAÇÃO",
       "qsv_cor": "LARANJA",
       "fonte": "F2 — Canal Solar, 17/07/2026 15h58. Sem confirmação F1 (portal do TCU não localizou o acórdão).",
-      "verificado_em": "2026-07-21",
-      "gatilho_revisao": "localização do acórdão no portal do TCU (pesquisa.apps.tcu.gov.br); publicação do edital do LRCAP Armazenamento; qualquer determinação/recomendação do TCU sobre apuração de disponibilidade ou degradação"
+      "verificado_em": "2026-08-21",
+      "gatilho_revisao": "localização do acórdão no portal do TCU (pesquisa.apps.tcu.gov.br); publicação do edital do LRCAP Armazenamento; qualquer determinação/recomendação do TCU sobre apuração de disponibilidade ou degradação",
+      "pendencia_verificacao": "Abrir a ATA Nº 27 de 15/07/2026 do Plenário do TCU, DOU de 23/07/2026, Ed. 137, Seção 1, p. 354, e localizar o acórdão que trata do LRCAP de baterias."
     },
     {
       "fato_id": "CAMARA-PL-3716-2026-ERCAP",
@@ -857,21 +964,6 @@
       "verificado_em": "2026-08-20",
       "gatilho_revisao": "vencimento da regularização junto ao ONS em 31/08/2026 ou manifestação da ANEEL sobre a carta",
       "pendencia_verificacao": "ATO NAO LIDO: a carta veio como anexo de e-mail e nao foi aberta. O conteudo acima e o resumo da associacao. O portal do ONS esta em HTTP 502 pela 9a execucao consecutiva, sem rota primaria disponivel. A NT-ONS DPL 0057/2024 segue nao lida."
-    },
-    {
-      "fato_id": "ANEEL-DIRETORIA-LUDIMILA-LIMA-SUBSTITUTA-2026",
-      "orgao": "ANEEL",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "tema": "Composição da Diretoria da ANEEL após o fim do mandato do Diretor Mosna",
-      "valor": "Ludimila Lima, superintendente de Concessoes, Permissoes e Autorizacoes, foi nomeada em 14/08/2026 diretora substituta na vaga de Fernando Mosna, cujo mandato terminou em 13/08/2026, ficando no cargo ate 08/01/2027 ou ate a nomeacao de um titular. Como efeito processual ja verificado, o processo 48500.033895/2025-11, de integracao TSO/DSO, foi redistribuido ao diretor-relator Willamy Moreira.",
-      "status": "PENDENTE",
-      "qsv_cor": "LARANJA",
-      "norma": "Decisão do Diretor-Geral da ANEEL publicada no DOU de 14/08/2026",
-      "numero_status": "PENDENTE_REABERTURA",
-      "fonte": "F2 — três veículos convergentes (Poder360, Congresso em Foco, eixos), 14/08/2026; efeito processual em F3 pelo resumo do GTGD de 18/08/2026",
-      "verificado_em": "2026-08-20",
-      "gatilho_revisao": "confirmação do ato em fonte oficial ou nomeação de diretor titular",
-      "pendencia_verificacao": "Nao confirmado em fonte oficial: ausente do indice de noticias da ANEEL e nao verificavel no DOU (in.gov.br retornou socket hang up nesta execucao). O numero do ato de nomeacao nao foi localizado. PERGUNTA CRITICA EM ABERTO: nao ha fonte sobre qual diretor herdou o voto-vista da CP 45/19, que era relatada por Mosna. Nao inferir direcao ou efeito sobre aquele processo."
     },
     {
       "fato_id": "ANEEL-RPO-24-08-2026-PAUTA-NAO-LIDA",
