@@ -27,7 +27,8 @@
     "nota_run_2026_07_20": "DESBLOQUEIO DE METODO: o DOU (in.gov.br) foi acessado com sucesso via render JS (Chrome) nesta run — o bloqueio anti-bot atingia apenas o web_fetch. Consequencia imediata: CP n 20/2026 (Fator X) PROMOVIDA A VERDE, com o Aviso lido na integra (DOU 15/07/2026, Ed. 131, Sec. 3, p. 104). Passa a ser procedimento padrao consultar o DOU pelo navegador antes de declarar pendencia de ancoragem. Listagem de noticias da ANEEL (subpasta 2026-defeso-eleitoral) reaberta em F1: carimbo 'Atualizado em 16/07/2026 17h22', item mais recente 14/07 — NEGATIVO VERIFICADO para 15-20/07. Somente CP 20/2026 teve verificado_em avancado; os demais fatos NAO foram reabertos nesta run.",
     "nota_run_2026_07_21": "Run de 21/07: NEGATIVO VERIFICADO, nenhum fato tocado. (a) DOU Seção 1, Edição 135 de 21/07/2026, termo 'ANEEL' -> 6 resultados, todos rotineiros: Despachos 2.547/14-07 (outorga DRI-PCH), 2.609 e 2.635 e 2.636/16-17-07 (Fiscalização Econômica, Financeira e de Mercado) e 2.613/17-07 (Mediação Administrativa), além de um ato da Receita Federal que apenas cita a ANEEL. (b) DOU Seção 3, janela 20-21/07 -> 0 resultados: NENHUM Aviso de Consulta Pública da ANEEL. Consequência: ANEEL-NT-078-2026-FIM-DESCONTO-TUSD-TUST segue LARANJA com 2º negativo verificado, e a CP de revisão da REN 1.030/2022 (classificação de cortes — marcada como processo regulatório nº 1 da SOA no calendário do CEO em 20/07) NÃO foi aberta. (c) Página de notícias reaberta em F1 (/2026-defeso-eleitoral, carimbo 'Atualizado em 20/07/2026 15h18'): único item novo é institucional de 20/07 (interdição temporária da recepção da sede) — borda nula. Nenhum verificado_em de fato bumpado (R2).",
     "nota_run_2026_07_28": "Run CONSOLIDADORA de 28/07/2026 (14h05–15h, fuso local). Contexto: o monitor-regulatorio-soa esta PARADO desde 21/07 (7 dias, canario de 28/07 12h00) — esta run cobriu a lacuna com fonte oficial. F1 REABERTA E LIDA HOJE: (a) indice oficial de noticias gov.br/aneel; (b) LISTAGEM OFICIAL DE CONSULTAS PUBLICAS VIGENTES em antigo.aneel.gov.br (render JS via navegador — o fetch simples devolve 404/corpo vazio); (c) MEMORIA DE REUNIOES PUBLICAS em www2.aneel.gov.br/aplicacoes_liferay/noticias_area/?idAreaNoticia=425 e a PAUTA/ATA (PREVIA) DA 15a REUNIAO PUBLICA ORDINARIA DA DIRETORIA DE 2026, de 28/07/2026 (idNoticia=14784) — 43 itens lidos na integra. ACHADOS: [1] ITENS 1 e 2 DA PAUTA DECIDIDOS POR UNANIMIDADE — instauracao de CONSULTA PUBLICA de 46 dias, de 30/07 a 14/09/2026, com AUDIENCIA PUBLICA em 01/09/2026 as 14h30 na sede da ANEEL, sobre as minutas de Edital, Anexos e CRCAP do Leilao no 05/2026-ANEEL (LRCAP 2026 Armazenamento Nacional, Processo 48500.015992/2026-11) e do Leilao no 06/2026-ANEEL (LRCAP 2026 Armazenamento, Processo 48500.019603/2026-18); relator de ambos: Gentil Nogueira de Sa Junior. [2] ITEM 4 = CP 45/2019 (Processo 48500.000375/2019-83, relatora Agnes da Costa, voto-vista Fernando Mosna): consta da pauta com as minutas de voto e de voto-vista linkadas, mas SEM DECISAO REGISTRADA na previa; a Diretora Agnes da Costa NAO PARTICIPOU da reuniao (ferias). A previa registra decisao em 34 dos 43 itens (ordens de julgamento 1-3 e 14-43; faltam as ordens 4-13). NAO SE AFIRMA desfecho — nem deliberado, nem adiado. REVERIFICAR na ata definitiva/DOU: item no 1 da varredura de 29/07. [3] A palavra PNAST NAO APARECE na pauta; o item 6 e 'proposta de abertura de Consulta Publica para aprimoramentos regulatorios relacionados ao Decreto no 12.772/2025' (relator Mosna, area STD) — e o Decreto 12.772/2025 (05/12/2025) e o que institui a PNAST. Tambem sem decisao registrada. [4] Item 10 (ordem 14) DECIDIDO: homologacao parcial e adjudicacao do Leilao no 2/2026-ANEEL (LRCAP 2026 UTEs a Gas Natural, Carvao Mineral e UHEs) ao Consorcio EBRASIL/CELNE (Despacho no 2.230/2026), com oficio ao TCU — produtos Potencia Termeletrica 2027/2028/2029/2031 e Potencia Hidreletrica 2030/2031. NAO e o leilao de baterias. [5] DIVERGENCIA DE NUMERACAO RESOLVIDA EM F1: a reuniao de 21/07/2026 foi o 12o CIRCUITO DELIBERATIVO PUBLICO ORDINARIO (a duvida '11o x 12o' registrada no digest de 21/07 fica encerrada). [6] SNAPSHOT DA LISTAGEM DE CPs VIGENTES: numeracao maxima = 021/2026 — nenhuma CP nova (022+) publicada ate 15h de 28/07, ou seja, as CPs dos editais de baterias e a do Decreto 12.772/2025 AINDA NAO ESTAVAM NA LISTAGEM nem no DOU. Prorrogacoes lidas na listagem: CP 015/2026 -> 28/07/2026 (HOJE), CP 017/2026 -> 24/08/2026, CP 021/2026 -> 17/08/2026. NENHUM fato promovido a VERDE nesta run: a previa da pauta e fonte oficial reaberta, mas o Aviso de Consulta Publica no DOU ainda nao foi lido — R2 nao atendida. Os 4 pendentes do CEO seguem LARANJA.",
-    "nota_run_2026_07_29": "Varredura CONSOLIDADORA de 29/07. F1 reaberta com sucesso via navegador (web_fetch devolveu 403 em www2.aneel.gov.br e 404 no indice de CPs do gov.br). ACHADO PRINCIPAL: a previa da 15a RPO, que ontem nao trazia decisao para o item 4, HOJE TRAZ — a vista coletiva do Dir. Gentil Nogueira na CP 45/19 e a 4a fase de CP proposta no voto-vista do Dir. Mosna passam de F3 (relato ABSOLAR) a F1 institucional. Fecha a 'prioridade no 1 da varredura de 29/07' registrada ontem. 2 pendentes novos (CP 25/2026 e CP do Decreto 12.772/2025). Correcao de rotulo: o item 6 NAO e nominalmente 'CP da PNAST'. Indice de noticias da ANEEL reconferido as 12h: NENHUM item datado de 29/07 — confirma o achado independente dos monitores de gato-solar e regulatorio. Nenhum fato promovido a VERDE (todos os documentos sao previa, sem DOU)."
+    "nota_run_2026_07_29": "Varredura CONSOLIDADORA de 29/07. F1 reaberta com sucesso via navegador (web_fetch devolveu 403 em www2.aneel.gov.br e 404 no indice de CPs do gov.br). ACHADO PRINCIPAL: a previa da 15a RPO, que ontem nao trazia decisao para o item 4, HOJE TRAZ — a vista coletiva do Dir. Gentil Nogueira na CP 45/19 e a 4a fase de CP proposta no voto-vista do Dir. Mosna passam de F3 (relato ABSOLAR) a F1 institucional. Fecha a 'prioridade no 1 da varredura de 29/07' registrada ontem. 2 pendentes novos (CP 25/2026 e CP do Decreto 12.772/2025). Correcao de rotulo: o item 6 NAO e nominalmente 'CP da PNAST'. Indice de noticias da ANEEL reconferido as 12h: NENHUM item datado de 29/07 — confirma o achado independente dos monitores de gato-solar e regulatorio. Nenhum fato promovido a VERDE (todos os documentos sao previa, sem DOU).",
+    "nota_run_2026_08_21_consolidadora": "Varredura consolidadora de 21/08/2026: quatro registros de _pendentes_verificacao estavam travados na MESMA condição — a publicação do respectivo Aviso de Consulta Pública no DOU. Os quatro Avisos (16, 18, 22, 23 e 25 de 2026) foram abertos no in.gov.br pelo navegador e lidos. Nenhum fato foi promovido a VERDE: a régua exige fonte oficial reaberta E número ancorado, e o conteúdo remanescente destes registros (AIR da CP 016, minutas e CRCAP dos Leilões 05 e 06/2026) segue sem leitura."
   },
   "fatos": [
     {
@@ -532,9 +533,9 @@
     {
       "fato_id": "ANEEL-CP-020-2026-FATOR-X",
       "tema": "CP ANEEL 20/2026 — Fator X (compartilhamento de ganhos de produtividade no reajuste tarifário)",
-      "valor": "ANCORADO EM F1 + DOU (20/07/2026). A Diretoria da ANEEL aprovou, na Reunião Publica Ordinaria de 14/07/2026, a abertura de Consulta Publica para revisar a Metodologia do Fator X - Componente de Produtividade (Pd). O ato foi publicado como AVISO DE CONSULTA PUBLICA N 20/2026 no DOU de 15/07/2026, Edicao 131, Secao 3, Pagina 104, pela Superintendencia de Mediacao Administrativa e das Relacoes de Consumo (MME/ANEEL). Processo 48500.027624/2025-26. Modalidade: intercambio de documentos. Periodo para envio de contribuicoes: 16/07/2026 a 31/08/2026, pelo e-mail cp020_2026@aneel.gov.br. Assinatura: Alex Cavalcante Alves, Superintendente Substituto. Fundamento legal invocado na materia oficial: art. 14 da Lei 9.427/1996 (apropriacao de ganhos de eficiencia empresarial e da competitividade). NOTA DE NUMERACAO: o ato publicado no DOU grafa 'n 20/2026'; a forma '020/2026' aparece no endereco de e-mail oficial da ANEEL (cp020_2026@). Usar a forma do DOU em material externo. RELEVANCIA SOA - a propria materia oficial declara que o modelo vigente, baseado em produtividade historica e variacoes de mercado, NAO captura os efeitos estruturais e dinamicos de modernizacao tecnologica, digitalizacao, resiliencia climatica e EXPANSAO DA MMGD. ⟨ATUALIZAÇÃO 28/07/2026 · varredura consolidadora `monitores-regulatorios-soa`⟩ RECONFIRMADO em F1 na listagem oficial de CPs VIGENTES da ANEEL (28/07/2026), objeto literal: 'Consulta 020/2026 — Objeto: obter subsidios para revisar a Metodologia do Fator X - Componente de Produtividade (Pd).' Sem aviso de prorrogacao na listagem — a janela 16/07 a 31/08/2026 segue a do DOU de 15/07.",
+      "valor": "ANCORADO EM F1 + DOU (20/07/2026). A Diretoria da ANEEL aprovou, na Reunião Publica Ordinaria de 14/07/2026, a abertura de Consulta Publica para revisar a Metodologia do Fator X - Componente de Produtividade (Pd). O ato foi publicado como AVISO DE CONSULTA PUBLICA N 20/2026 no DOU de 15/07/2026, Edicao 131, Secao 3, Pagina 104, pela Superintendencia de Mediacao Administrativa e das Relacoes de Consumo (MME/ANEEL). Processo 48500.027624/2025-26. Modalidade: intercambio de documentos. Periodo para envio de contribuicoes: 16/07/2026 a 31/08/2026, pelo e-mail cp020_2026@aneel.gov.br. Assinatura: Alex Cavalcante Alves, Superintendente Substituto. Fundamento legal invocado na materia oficial: art. 14 da Lei 9.427/1996 (apropriacao de ganhos de eficiencia empresarial e da competitividade). NOTA DE NUMERACAO: o ato publicado no DOU grafa 'n 20/2026'; a forma '020/2026' aparece no endereco de e-mail oficial da ANEEL (cp020_2026@). Usar a forma do DOU em material externo. RELEVANCIA SOA - a propria materia oficial declara que o modelo vigente, baseado em produtividade historica e variacoes de mercado, NAO captura os efeitos estruturais e dinamicos de modernizacao tecnologica, digitalizacao, resiliencia climatica e EXPANSAO DA MMGD. ⟨ATUALIZAÇÃO 28/07/2026 · varredura consolidadora `monitores-regulatorios-soa`⟩ RECONFIRMADO em F1 na listagem oficial de CPs VIGENTES da ANEEL (28/07/2026), objeto literal: 'Consulta 020/2026 — Objeto: obter subsidios para revisar a Metodologia do Fator X - Componente de Produtividade (Pd).' Sem aviso de prorrogacao na listagem — a janela 16/07 a 31/08/2026 segue a do DOU de 15/07. ⟨ANCORAGEM F1/DOU 21/08/2026 · consolidadora⟩ O Aviso de Consulta Pública nº 20/2026 foi localizado no DOU de 15/07/2026, Edição 131, Seção 3, página 104, assinado por André Ruelli. Ficam ancorados o Processo 48500.027624/2025-26, o objeto — obter subsídios e informações adicionais para revisar a Metodologia do Fator X, Componente de Produtividade (Pd) —, a modalidade intercâmbio de documentos e o período para envio de 16/7/2026 a 31/8/2026. O prazo regulatório de 31/08/2026, que a casa carregava por ponteiro, está agora em fonte primária. Leitura feita sobre o extrato do índice do DOU; a página do ato não foi aberta item a item.",
       "status": "EM DELIBERAÇÃO",
-      "norma": "Aviso de Consulta Pública ANEEL nº 20/2026 · DOU 15/07/2026, Ed. 131, Seção 3, p. 104 · aprovada na RPO de 14/07/2026",
+      "norma": "Aviso de Consulta Pública ANEEL nº 20/2026 · DOU de 15/07/2026, Ed. 131, Seção 3, p. 104 · Processo 48500.027624/2025-26",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-20/2026-719154741",
       "verificado_em": "2026-08-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
@@ -569,9 +570,17 @@
           "nota_qsv": "F3 conferiu com F1 e com o DOU quanto ao prazo ANEEL (31/08). F3 não fecha VERDE — aqui é apenas corroboração.",
           "associacao_origem": "ABSOLAR",
           "gt_origem": "GT Geração Distribuída"
+        },
+        {
+          "tipo": "F1_DOU",
+          "ref": "DOU de 15/07/2026, Edição 131, Seção 3, p. 104 — AVISO DE CONSULTA PÚBLICA Nº 20/2026",
+          "trecho_literal": "Processo: 48500.027624/2025-26. Objeto: obter subsídios e informações adicionais para revisar a Metodologia do Fator X - Componente de Produtividade (Pd). Modalidade: Intercâmbio de documentos. Período para envio: 16/7/2026 a 31/8/2026.",
+          "nota_qsv": "Extrato do índice do DOU lido em 21/08/2026 pela varredura consolidadora (navegador).",
+          "associacao_origem": null,
+          "gt_origem": null
         }
       ],
-      "numero_status": "ANCORADO",
+      "numero_status": "ANCORADO_NO_DOU",
       "validacao_banco_SOA": {
         "aplicavel": false,
         "query_versionada": null,
@@ -621,11 +630,11 @@
     {
       "fato_id": "ANEEL-CP-EDITAIS-LRCAP-ARMAZ-2026",
       "tema": "CPs dos EDITAIS do LRCAP 2026 de Armazenamento (Leiloes no 05/2026-ANEEL e no 06/2026-ANEEL) — instauradas na 15a RPO de 28/07/2026",
-      "valor": "DECIDIDO EM 28/07/2026, POR UNANIMIDADE, conforme a PAUTA/ATA (PREVIA) DA 15a REUNIAO PUBLICA ORDINARIA DA DIRETORIA DE 2026 (F1 institucional, www2.aneel.gov.br, idNoticia=14784), itens 1 e 2, relator Gentil Nogueira de Sa Junior, area Secretaria de Leiloes - SEL. ITEM 1 · Processo 48500.015992/2026-11: 'A Diretoria, por unanimidade, decidiu instaurar Consulta Publica, no periodo de 46 (quarenta e seis) dias, entre os dias 30 de julho e 14 de setembro de 2026, com Audiencia Publica em 1o de setembro de 2026, as 14h30min, na sede da ANEEL, com vistas a colher subsidios e informacoes adicionais para o aprimoramento da minuta de Edital, de seus Anexos e do respectivo CRCAP do Leilao no 05/2026-ANEEL (Leilao de Reserva de Capacidade na forma de Potencia de 2026 - Armazenamento Nacional)'. ITEM 2 · Processo 48500.019603/2026-18: mesma decisao, mesmos prazos, para o Leilao no 06/2026-ANEEL (LRCAP 2026 - Armazenamento). Houve apresentacao tecnica conjunta do servidor Igor Barra Caminha (SEL); sustentacao oral de Fabio Monteiro Lima (ABSAE) no item 1 e de Marcello Cabral (ABEEolica) no item 2. LEITURA SOA: o gatilho no 3 do monitor (edital/preco-teto do LRCAP Armazenamento) avanca para o PASSO ANTERIOR — ha MINUTA DE EDITAL EM CONSULTA, com janela formal de contribuicao de 46 dias e audiencia publica marcada. CP nao e edital e nao e preco-teto: o edital final e o preco-teto seguem NAO PUBLICADOS. A janela de 30/07 a 14/09 e a oportunidade formal de sustentar COMO se prova disponibilidade e degradacao hora a hora — convergente com o escopo declarado do acompanhamento do TCU. ⟨RECONFERIDO 29/07/2026 · consolidadora⟩ Decisao e 'Ordem de julgamento' (1 e 2) seguem registradas na previa reaberta hoje, com o mesmo teor. CORROBORACAO F1 ADICIONAL lida hoje na noticia oficial da ANEEL ('Primeiros leiloes de armazenamento de energia do Brasil entram em consulta publica', 28/07/2026): potencia minima de '30 megawatts (MW) ou mais'; suprimento por 15 anos 'a partir de 1/8/2028'; despacho com 'duracao de quatro horas' e 'por dia, os sistemas poderao ser demandados duas vezes'; verificacao de conteudo nacional 'realizada pelo Banco Nacional de Desenvolvimento Economico e Social (BNDES)' no Leilao Nacional. CONFIRMA a correcao da AUDIENCIA PUBLICA para 01/09/2026 as 14h30 (o numero 26/08 que circulou em analise F3 esta ERRADO). Edital assinado e preco-teto seguem NAO publicados — status inalterado.",
+      "valor": "DECIDIDO EM 28/07/2026, POR UNANIMIDADE, conforme a PAUTA/ATA (PREVIA) DA 15a REUNIAO PUBLICA ORDINARIA DA DIRETORIA DE 2026 (F1 institucional, www2.aneel.gov.br, idNoticia=14784), itens 1 e 2, relator Gentil Nogueira de Sa Junior, area Secretaria de Leiloes - SEL. ITEM 1 · Processo 48500.015992/2026-11: 'A Diretoria, por unanimidade, decidiu instaurar Consulta Publica, no periodo de 46 (quarenta e seis) dias, entre os dias 30 de julho e 14 de setembro de 2026, com Audiencia Publica em 1o de setembro de 2026, as 14h30min, na sede da ANEEL, com vistas a colher subsidios e informacoes adicionais para o aprimoramento da minuta de Edital, de seus Anexos e do respectivo CRCAP do Leilao no 05/2026-ANEEL (Leilao de Reserva de Capacidade na forma de Potencia de 2026 - Armazenamento Nacional)'. ITEM 2 · Processo 48500.019603/2026-18: mesma decisao, mesmos prazos, para o Leilao no 06/2026-ANEEL (LRCAP 2026 - Armazenamento). Houve apresentacao tecnica conjunta do servidor Igor Barra Caminha (SEL); sustentacao oral de Fabio Monteiro Lima (ABSAE) no item 1 e de Marcello Cabral (ABEEolica) no item 2. LEITURA SOA: o gatilho no 3 do monitor (edital/preco-teto do LRCAP Armazenamento) avanca para o PASSO ANTERIOR — ha MINUTA DE EDITAL EM CONSULTA, com janela formal de contribuicao de 46 dias e audiencia publica marcada. CP nao e edital e nao e preco-teto: o edital final e o preco-teto seguem NAO PUBLICADOS. A janela de 30/07 a 14/09 e a oportunidade formal de sustentar COMO se prova disponibilidade e degradacao hora a hora — convergente com o escopo declarado do acompanhamento do TCU. ⟨RECONFERIDO 29/07/2026 · consolidadora⟩ Decisao e 'Ordem de julgamento' (1 e 2) seguem registradas na previa reaberta hoje, com o mesmo teor. CORROBORACAO F1 ADICIONAL lida hoje na noticia oficial da ANEEL ('Primeiros leiloes de armazenamento de energia do Brasil entram em consulta publica', 28/07/2026): potencia minima de '30 megawatts (MW) ou mais'; suprimento por 15 anos 'a partir de 1/8/2028'; despacho com 'duracao de quatro horas' e 'por dia, os sistemas poderao ser demandados duas vezes'; verificacao de conteudo nacional 'realizada pelo Banco Nacional de Desenvolvimento Economico e Social (BNDES)' no Leilao Nacional. CONFIRMA a correcao da AUDIENCIA PUBLICA para 01/09/2026 as 14h30 (o numero 26/08 que circulou em analise F3 esta ERRADO). Edital assinado e preco-teto seguem NAO publicados — status inalterado. ⟨ANCORAGEM F1/DOU 21/08/2026 · consolidadora⟩ Os dois Avisos de Consulta Pública foram abertos e lidos na íntegra no DOU de 30/07/2026, Edição 142, Seção 3, página 116, assinados por André Ruelli. AVISO Nº 22/2026, Processo 48500.015992/2026-11, Leilão nº 05/2026-ANEEL, Leilão de Reserva de Capacidade na forma de Potência de 2026 - Armazenamento Nacional. AVISO Nº 23/2026, Processo 48500.019603/2026-18, Leilão nº 06/2026-ANEEL, Leilão de Reserva de Capacidade na forma de Potência de 2026 - Armazenamento. Os dois com modalidade intercâmbio de documentos e período para envio de 30/7/2026 a 14/9/2026. Isto ENCERRA a alínea (a) da pendência: a numeração definitiva das duas consultas é 22/2026 e 23/2026 e o prazo regulatório de 14/09/2026, que a casa carregava por resumo de associação, está agora ancorado em fonte primária. Os dois Avisos NÃO mencionam a audiência pública de 01/09/2026, que segue vindo da prévia da 15ª RPO, e nada dizem sobre preço-teto, garantias ou regra de TUST.",
       "status": "CONSULTA PUBLICA INSTAURADA — abertura em 30/07/2026, encerramento em 14/09/2026, AP em 01/09/2026 14h30",
-      "norma": "Decisao da 15a Reuniao Publica Ordinaria da Diretoria da ANEEL de 28/07/2026 (previa) · Processos 48500.015992/2026-11 e 48500.019603/2026-18 · Leiloes no 05/2026-ANEEL e no 06/2026-ANEEL · Portaria MME 136/2026",
-      "url": "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/dsp_detalheNoticia.cfm?idNoticia=14784&idAreaNoticia=425",
-      "verificado_em": "2026-07-29",
+      "norma": "Avisos de Consulta Pública ANEEL nº 22/2026 e nº 23/2026 · DOU de 30/07/2026, Ed. 142, Seção 3, p. 116 · Processos 48500.015992/2026-11 e 48500.019603/2026-18 · Leilões nº 05/2026-ANEEL e nº 06/2026-ANEEL · Portaria MME 136/2026",
+      "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-23/2026-722333896",
+      "verificado_em": "2026-08-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 19,
       "vetores_afetados": [
@@ -633,8 +642,8 @@
         "V4",
         "V7"
       ],
-      "qsv_cor": "LARANJA",
-      "qsv_origem_classificacao": "F1_institucional_reaberta_28jul2026_SEM_DOU — R2 nao atendida (Aviso de CP nao publicado/lido ate 15h de 28/07)",
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "F1_DOU_reaberto_21ago2026 — Avisos de CP nº 22 e 23/2026 lidos na íntegra; teto AZUL mantido porque o conteúdo do fato inclui elementos ainda não publicados (edital assinado, preço-teto, CRCAP) e a ata definitiva da 15ª RPO segue como prévia.",
       "qsv_fontes_independentes": [
         {
           "tipo": "F1_pagina_oficial",
@@ -643,9 +652,17 @@
           "nota_qsv": "Documento oficial da ANEEL, marcado como PREVIA: 'Este documento e uma previa e pode ser ajustado ate a sua divulgacao definitiva, apos aprovacao da ata.'",
           "associacao_origem": null,
           "gt_origem": null
+        },
+        {
+          "tipo": "F1_DOU",
+          "ref": "DOU de 30/07/2026, Edição 142, Seção 3, p. 116 — AVISO DE CONSULTA PÚBLICA Nº 22/2026 e AVISO DE CONSULTA PÚBLICA Nº 23/2026",
+          "trecho_literal": "Processo: 48500.015992/2026-11 Objeto: obter subsídios para o aprimoramento da minuta de Edital, de seus Anexos e do respectivo CRCAP do Leilão nº 05/2026-ANEEL (Leilão de Reserva de Capacidade na forma de Potência de 2026 - Armazenamento Nacional). Modalidade: Intercâmbio de documentos. Período para envio: 30/7/2026 a 14/9/2026.",
+          "nota_qsv": "Ato aberto e lido na íntegra no DOU em 21/08/2026 pela varredura consolidadora `monitores-regulatorios-soa` de 21/08/2026 (Chrome, in.gov.br)",
+          "associacao_origem": null,
+          "gt_origem": null
         }
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO_NO_DOU",
+      "numero_status": "ANCORADO_NO_DOU",
       "validacao_banco_SOA": {
         "aplicavel": false,
         "query_versionada": null,
@@ -654,8 +671,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "motivo_pendencia": "PRIORIDADE 1. Falta (a) o Aviso de Consulta Publica no DOU com a numeracao definitiva das CPs (a listagem oficial de CPs vigentes da ANEEL, lida em 28/07 as 14h40, ia so ate a 021/2026 — as duas novas ainda nao constavam); (b) a ata DEFINITIVA da 15a RPO; (c) o download das minutas de Edital, Anexos e CRCAP. So entao promover a VERDE e a fatos[].",
-      "pendencia_verificacao": "Reverificar em 29/07 e 30/07: DOU (Aviso de CP), listagem de CPs vigentes (numero atribuido) e pagina do leilao."
+      "motivo_pendencia": "Alínea (a) ENCERRADA em 21/08/2026 pela leitura dos Avisos nº 22 e 23/2026 no DOU. Seguem abertas: (b) a ata DEFINITIVA da 15ª RPO, hoje disponível apenas como prévia; e (c) o download das minutas de Edital, Anexos e CRCAP dos Leilões nº 05 e 06/2026-ANEEL, sem o qual nenhuma peça sai. Só então promover a VERDE e a fatos[].",
+      "pendencia_verificacao": "Minutas de Edital, Anexos e CRCAP não baixadas. Audiência pública de 01/09/2026 às 14h30 não consta dos Avisos do DOU. Preço-teto e regra de TUST não publicados."
     },
     {
       "fato_id": "ANEEL-CP-009-GATO-SOLAR",
@@ -733,11 +750,11 @@
     {
       "fato_id": "ANEEL-CP-016-2026",
       "tema": "CP ANEEL 16/2026 — encargo fixo para custos comerciais na estrutura tarifária da baixa tensão",
-      "valor": "CORREÇÃO DE ENQUADRAMENTO (17/07): esta CP NÃO é nova. Foi aberta em 08/06/2026 — o registro anterior ('DETECTADO 16/07') refletia apenas a data em que o ponteiro F3 (ABSOLAR/GTGD 15/07) chegou, não a data do ato. Objeto: obter subsídios para aprimoramento do Relatório de Análise de Impacto Regulatório Conjunto nº 1/2026-STR/STD/ANEEL e da proposta de regulamentação relativa ao método de definição de ENCARGO FIXO destinado à cobertura dos custos comerciais na estrutura tarifária aplicável aos consumidores de BAIXA TENSÃO, no âmbito da Agenda de Modernização das Tarifas de Distribuição — Ciclo 1. Substituiria o atual custo de disponibilidade (consumo mínimo, cobrado desde 1975). Base: Nota Técnica Conjunta nº 8/2026. Contribuições de 08/06/2026 a 08/09/2026 pelo e-mail cp016_2026@aneel.gov.br. Vigência prevista, se aprovada: 2028. Prazo interno ABSOLAR: 25/08/2026. ⟨ATUALIZAÇÃO 28/07/2026 · varredura consolidadora `monitores-regulatorios-soa`⟩ OBJETO ANCORADO EM F1 na listagem oficial de CPs VIGENTES da ANEEL (28/07/2026), verbatim: 'Consulta 016/2026 — Objeto: obter subsidios para aprimoramento do Relatorio de Analise de Impacto Regulatorio Conjunto no 1/2026-STR/STD/ANEEL e da proposta de regulamentacao relativa ao metodo de definicao de encargo fixo destinado a cobertura dos custos comerciais na estrutura tarifaria aplicavel aos consumidores de baixa tensao, no ambito da agenda de modernizacao das tarifas de distribuicao - Ciclo 1.' Sem aviso de prorrogacao na listagem. A janela 08/06 a 08/09/2026 segue PENDENTE DE VERIFICACAO F1 (ver o campo pendencia_verificacao).",
+      "valor": "CORREÇÃO DE ENQUADRAMENTO (17/07): esta CP NÃO é nova. Foi aberta em 08/06/2026 — o registro anterior ('DETECTADO 16/07') refletia apenas a data em que o ponteiro F3 (ABSOLAR/GTGD 15/07) chegou, não a data do ato. Objeto: obter subsídios para aprimoramento do Relatório de Análise de Impacto Regulatório Conjunto nº 1/2026-STR/STD/ANEEL e da proposta de regulamentação relativa ao método de definição de ENCARGO FIXO destinado à cobertura dos custos comerciais na estrutura tarifária aplicável aos consumidores de BAIXA TENSÃO, no âmbito da Agenda de Modernização das Tarifas de Distribuição — Ciclo 1. Substituiria o atual custo de disponibilidade (consumo mínimo, cobrado desde 1975). Base: Nota Técnica Conjunta nº 8/2026. Contribuições de 08/06/2026 a 08/09/2026 pelo e-mail cp016_2026@aneel.gov.br. Vigência prevista, se aprovada: 2028. Prazo interno ABSOLAR: 25/08/2026. ⟨ATUALIZAÇÃO 28/07/2026 · varredura consolidadora `monitores-regulatorios-soa`⟩ OBJETO ANCORADO EM F1 na listagem oficial de CPs VIGENTES da ANEEL (28/07/2026), verbatim: 'Consulta 016/2026 — Objeto: obter subsidios para aprimoramento do Relatorio de Analise de Impacto Regulatorio Conjunto no 1/2026-STR/STD/ANEEL e da proposta de regulamentacao relativa ao metodo de definicao de encargo fixo destinado a cobertura dos custos comerciais na estrutura tarifaria aplicavel aos consumidores de baixa tensao, no ambito da agenda de modernizacao das tarifas de distribuicao - Ciclo 1.' Sem aviso de prorrogacao na listagem. A janela 08/06 a 08/09/2026 segue PENDENTE DE VERIFICACAO F1 (ver o campo pendencia_verificacao). ⟨ANCORAGEM F1/DOU 21/08/2026 · consolidadora⟩ O Aviso de Consulta Pública nº 16/2026 foi aberto e lido na íntegra no DOU de 08/06/2026, Edição 104, Seção 3, página 120 (órgão: MME/ANEEL/Superintendência de Mediação Administrativa e das Relações de Consumo, André Ruelli). Ficam ANCORADOS: Processo 48500.011409/2026-94; objeto verbatim, que confirma o Relatório de Análise de Impacto Regulatório Conjunto nº 1/2026-STR/STD/ANEEL e a proposta de regulamentação do método de definição de encargo fixo destinado à cobertura dos custos comerciais na estrutura tarifária aplicável aos consumidores de baixa tensão, no âmbito da agenda de modernização das tarifas de distribuição - Ciclo 1; modalidade intercâmbio de documentos; e a janela de contribuições de 8/6/2026 a 8/9/2026. O Aviso NÃO menciona o SCEE, a microgeração ou a minigeração distribuída: a divergência sobre haver ou não exceção para a MMGD permanece ABERTA e só o Relatório de AIR Conjunto nº 1/2026-STR/STD/ANEEL a resolve. O e-mail cp016_2026@aneel.gov.br e a Nota Técnica Conjunta nº 8/2026 seguem como F2, ausentes do Aviso.",
       "status": "EM DELIBERAÇÃO",
-      "norma": "Aviso de Consulta Pública ANEEL nº 16/2026 · aberta em 08/06/2026",
-      "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-07-28",
+      "norma": "Aviso de Consulta Pública ANEEL nº 16/2026 · DOU de 08/06/2026, Ed. 104, Seção 3, p. 120 · Processo 48500.011409/2026-94",
+      "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-16/2026-710729067",
+      "verificado_em": "2026-08-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 5,
       "vetores_afetados": [
@@ -752,9 +769,17 @@
           "trecho_literal": "foram apresentados os encaminhamentos relativos à CP ANEEL nº 16/2026, que trata da definição do encargo fixo destinado à cobertura dos custos comerciais na estrutura tarifária da baixa tensão ... Permanecem os prazos de 25/08 para contribuições à ABSOLAR e 08/09 para envio à ANEEL.",
           "associacao_origem": "ABSOLAR",
           "gt_origem": "Geração Distribuída"
+        },
+        {
+          "tipo": "F1_DOU",
+          "ref": "DOU de 08/06/2026, Edição 104, Seção 3, p. 120 — AVISO DE CONSULTA PÚBLICA Nº 16/2026 — https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-16/2026-710729067",
+          "trecho_literal": "Processo: 48500.011409/2026-94 Objeto: obter subsídios para aprimoramento do Relatório de Análise de Impacto Regulatório Conjunto nº 1/2026- STR/STD/ANEEL e da proposta de regulamentação relativa ao método de definição de encargo fixo destinado à cobertura dos custos comerciais na estrutura tarifária aplicável aos consumidores de baixa tensão, no âmbito da agenda de modernização das tarifas de distribuição - Ciclo 1. Modalidade: Intercâmbio de documentos. Período para envio: 8/6/2026 a 8/9/2026.",
+          "nota_qsv": "Ato aberto e lido na íntegra no DOU em 21/08/2026 pela varredura consolidadora `monitores-regulatorios-soa` de 21/08/2026 (Chrome, in.gov.br)",
+          "associacao_origem": null,
+          "gt_origem": null
         }
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "numero_status": "ANCORADO_NO_DOU",
       "validacao_banco_SOA": {
         "aplicavel": false,
         "query_versionada": null,
@@ -763,17 +788,17 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "motivo_pendencia": "F3 ponteiro. Abrir a CP 16/2026 em F1 (ANEEL) para ancorar número, objeto e janela de contribuições.",
-      "pendencia_verificacao": "F1 indisponível nesta run: a matéria oficial da ANEEL sobre o tema está em /assuntos/noticias/2026/ , pasta que retornou 'Conteúdo Restrito — é necessário autenticar'. Janela (08/06→08/09), e-mail cp016_2026@aneel.gov.br, RAIR Conjunto 1/2026-STR/STD e NT Conjunta 8/2026 vêm de F2 (Canal Solar; repositório de atos oficiais). Reabrir em F1/DOU antes de qualquer uso externo. || ANDAIME MOVIDO DO CAMPO RENDERIZADO EM 28/07/2026 (exigencia do gate validar_fatos.py, regra E1). Marcacoes originais: [A VERIFICAR no Aviso do DOU]. Sentido inalterado: os elementos assim marcados NAO estao ancorados em fonte primaria reaberta e nao podem ser citados externamente ate a leitura do ato no DOU."
+      "motivo_pendencia": "Número, processo, objeto e janela ANCORADOS no DOU em 21/08/2026. Permanece pendente o download e a leitura integral do Relatório de AIR Conjunto nº 1/2026-STR/STD/ANEEL — é ele que decide a questão da MMGD e nenhuma peça sai sem essa leitura.",
+      "pendencia_verificacao": "Relatório de AIR Conjunto nº 1/2026-STR/STD/ANEEL não lido. Divergência sobre exceção ao SCEE segue aberta nos dois sentidos; não usar nem isenta nem não isenta. E-mail de contribuição e Nota Técnica Conjunta 8/2026 seguem em F2."
     },
     {
       "fato_id": "ANEEL-CP-018-2026",
       "tema": "CP ANEEL 18/2026 — aprimoramento do Programa de Eficiência Energética para a Transição Energética",
-      "valor": "CORREÇÃO DE ENQUADRAMENTO (17/07): esta CP NÃO é nova. Foi aberta em junho/2026 — o registro anterior ('DETECTADO 16/07') refletia a chegada do ponteiro F3 (ABSOLAR/GTGD 15/07), não a data do ato. Objeto: aprimoramento do Programa de Eficiência Energética (PEE), criado pela Lei nº 9.991/2000. Em discussão: fundo garantidor para contratos de desempenho, reconhecimento de custos de gestão desses contratos, metas graduais para projetos reembolsáveis e indicadores que valorizem chamadas públicas mais competitivas. Prazo interno ABSOLAR: 25/08/2026; prazo ANEEL informado por F3: 08/09/2026.",
+      "valor": "CORREÇÃO DE ENQUADRAMENTO (17/07): esta CP NÃO é nova. Foi aberta em junho/2026 — o registro anterior ('DETECTADO 16/07') refletia a chegada do ponteiro F3 (ABSOLAR/GTGD 15/07), não a data do ato. Objeto: aprimoramento do Programa de Eficiência Energética (PEE), criado pela Lei nº 9.991/2000. Em discussão: fundo garantidor para contratos de desempenho, reconhecimento de custos de gestão desses contratos, metas graduais para projetos reembolsáveis e indicadores que valorizem chamadas públicas mais competitivas. Prazo interno ABSOLAR: 25/08/2026; prazo ANEEL informado por F3: 08/09/2026. ⟨ANCORAGEM F1/DOU 21/08/2026 · consolidadora⟩ O Aviso de Consulta Pública nº 18/2026 foi localizado no DOU de 25/06/2026, Edição 117, Seção 3, página 111 (MME/ANEEL/Superintendência de Mediação Administrativa e das Relações de Consumo). Ficam ANCORADOS o Processo 48500.019238/2025-61 e o objeto — obter subsídios para aprimoramento da Análise de Impacto Regulatório da ANEEL no âmbito da atividade P&E 22-02, de aperfeiçoamento do Programa de Eficiência Energética para a Transição Energética. A ÍNTEGRA do Aviso não abriu nesta execução e a janela de contribuições segue sem ancoragem em fonte primária: o prazo ANEEL de 09/09/2026 continua vindo de resumo de associação.",
       "status": "EM DELIBERAÇÃO",
-      "norma": "Consulta Pública ANEEL nº 018/2026 · aberta em junho/2026 · Lei 9.991/2000",
+      "norma": "Aviso de Consulta Pública ANEEL nº 18/2026 · DOU de 25/06/2026, Ed. 117, Seção 3, p. 111 · Processo 48500.019238/2025-61 · Lei 9.991/2000",
       "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-07-17",
+      "verificado_em": "2026-08-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -788,9 +813,17 @@
           "trecho_literal": "a CP ANEEL nº 18/2026, sobre o aperfeiçoamento do Programa de Eficiência Energética para a Transição Energética, com prazo para contribuições à ABSOLAR em 25/08 e envio à ANEEL em 08/09",
           "associacao_origem": "ABSOLAR",
           "gt_origem": "Geração Distribuída"
+        },
+        {
+          "tipo": "F1_DOU",
+          "ref": "DOU de 25/06/2026, Edição 117, Seção 3, p. 111 — AVISO DE CONSULTA PÚBLICA Nº 18/2026",
+          "trecho_literal": "Processo: 48500.019238/2025-61. Objeto: obter subsídios para aprimoramento da Análise de Impacto Regulatório da ANEEL no âmbito da atividade P&E 22-02",
+          "nota_qsv": "Extrato do índice do DOU lido em 21/08/2026; a página do ato não abriu nesta execução.",
+          "associacao_origem": null,
+          "gt_origem": null
         }
       ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "numero_status": "NUMERO_E_OBJETO_ANCORADOS_NO_DOU_JANELA_PENDENTE",
       "validacao_banco_SOA": {
         "aplicavel": false,
         "query_versionada": null,
@@ -800,7 +833,7 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "F3 ponteiro. Abrir a CP 18/2026 em F1 (ANEEL) para ancorar.",
-      "pendencia_verificacao": "Datas de abertura e encerramento NÃO ancoradas em F1 nesta run. A abertura em junho/2026 vem de F2 (Eletron Energia 26/06; Cenário Energia 29/06). O prazo ANEEL 08/09 é ponteiro F3 (ABSOLAR), não confirmado em F1. Reabrir o Aviso de CP no DOU."
+      "pendencia_verificacao": "Janela de contribuições não lida: a íntegra do Aviso nº 18/2026 não abriu em 21/08/2026. As datas de encerramento (09/09 ANEEL, 04/09 interna) seguem sendo ponteiro de associação. Higiene: existe registro homônimo ANEEL-CP-018-2026-PEE em fatos[]; deduplicar na próxima run."
     },
     {
       "fato_id": "ANEEL-PROC-48500-015900-2026-94-MMGD-REVELIA",
@@ -952,18 +985,18 @@
     {
       "fato_id": "ANEEL-CP-025-2026-REGRAS-COMERCIALIZACAO",
       "tema": "CP no 25/2026 — alteracoes nas Regras de Comercializacao para inclusao dos LRCAP de 2026 (realizados em marco/2026)",
-      "valor": "F1 INSTITUCIONAL (item 5 da 15a RPO de 28/07/2026, Processo 48500.015356/2026-81, area SGM, Relator Willamy Moreira Frota). VERBATIM: 'A Diretoria, por unanimidade, decidiu: (i) instaurar Consulta Publica, na modalidade intercambio documental, com duracao de 45 dias, no periodo de 30 de julho de 2026 a 12 de setembro de 2026 (...); e (ii) aprovar a aplicacao das Regras de Comercializacao em carater provisorio, quando da abertura desta Consulta Publica, com a possibilidade dos devidos ajustes pela Camara de Comercializacao de Energia Eletrica - CCEE, caso sejam aprovadas alteracoes no fechamento da Consulta Publica.' A noticia oficial da ANEEL de 28/07 detalha os cinco modulos afetados (9-Encargos, 10-Consolidacao de Resultados, 11-Liquidacao, 16-Reajuste de Parametros de CCEAR, 27-Contratacao de Reserva de Capacidade) e o e-mail cp025_2026@aneel.gov.br. ⚠ ANTI-FALSO-POSITIVO (5a execucao com este risco): NAO e o leilao de baterias. Cobre os LRCAP 2/2026 e 3/2026 (termicas e hidreletricas, realizados em marco). Relevancia SOA: e o precedente contabil que o armazenamento herda — o Modulo 27 contrata a reserva de capacidade e o Modulo 11 a liquida; o grao temporal de apuracao de disponibilidade adotado ali tende a ser o grao herdado pelo BESS.",
+      "valor": "F1 INSTITUCIONAL (item 5 da 15a RPO de 28/07/2026, Processo 48500.015356/2026-81, area SGM, Relator Willamy Moreira Frota). VERBATIM: 'A Diretoria, por unanimidade, decidiu: (i) instaurar Consulta Publica, na modalidade intercambio documental, com duracao de 45 dias, no periodo de 30 de julho de 2026 a 12 de setembro de 2026 (...); e (ii) aprovar a aplicacao das Regras de Comercializacao em carater provisorio, quando da abertura desta Consulta Publica, com a possibilidade dos devidos ajustes pela Camara de Comercializacao de Energia Eletrica - CCEE, caso sejam aprovadas alteracoes no fechamento da Consulta Publica.' A noticia oficial da ANEEL de 28/07 detalha os cinco modulos afetados (9-Encargos, 10-Consolidacao de Resultados, 11-Liquidacao, 16-Reajuste de Parametros de CCEAR, 27-Contratacao de Reserva de Capacidade) e o e-mail cp025_2026@aneel.gov.br. ⚠ ANTI-FALSO-POSITIVO (5a execucao com este risco): NAO e o leilao de baterias. Cobre os LRCAP 2/2026 e 3/2026 (termicas e hidreletricas, realizados em marco). Relevancia SOA: e o precedente contabil que o armazenamento herda — o Modulo 27 contrata a reserva de capacidade e o Modulo 11 a liquida; o grao temporal de apuracao de disponibilidade adotado ali tende a ser o grao herdado pelo BESS. ⟨ANCORAGEM F1/DOU 21/08/2026 · consolidadora⟩ O gatilho de revisão deste registro era a publicação do Aviso de CP no DOU, e ele DISPAROU: AVISO DE CONSULTA PÚBLICA Nº 25/2026, DOU de 30/07/2026, Edição 142, Seção 3, página 116, Processo 48500.015356/2026-81, com período para envio de 30/7/2026 a 12/9/2026 e modalidade intercâmbio de documentos. O Aviso confirma verbatim a data de encerramento que a prévia da 15ª RPO trazia. O Aviso publicado NÃO repete a aplicação provisória das Regras de Comercialização nem a lista dos cinco módulos afetados: esses dois elementos seguem apoiados na prévia da RPO e na notícia institucional.",
       "status": "CONSULTA PUBLICA INSTAURADA — 30/07 a 12/09/2026, modalidade intercambio documental; Regras aplicadas em carater provisorio desde a abertura",
-      "norma": "Decisao da 15a RPO da ANEEL de 28/07/2026 (previa), item 5 · Processo 48500.015356/2026-81 · CP no 25/2026",
-      "url": "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/dsp_detalheNoticia.cfm?idNoticia=14784&idAreaNoticia=425",
-      "verificado_em": "2026-07-29",
+      "norma": "Aviso de Consulta Pública ANEEL nº 25/2026 · DOU de 30/07/2026, Ed. 142, Seção 3, p. 116 · Processo 48500.015356/2026-81",
+      "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-25/2026-722320286",
+      "verificado_em": "2026-08-21",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "vetores_afetados": [
         "V3",
         "V4"
       ],
-      "qsv_cor": "LARANJA",
-      "qsv_origem_classificacao": "F1_institucional_reaberta_29jul2026_SEM_DOU — R2 nao atendida (documento marcado como PREVIA; Aviso de CP no DOU nao lido)",
+      "qsv_cor": "AZUL",
+      "qsv_origem_classificacao": "F1_DOU_reaberto_21ago2026 — Aviso de CP nº 25/2026 lido na íntegra",
       "qsv_fontes_independentes": [
         {
           "tipo": "F1_pagina_oficial",
@@ -972,9 +1005,18 @@
           "nota_qsv": "Lida em F1 em 29/07/2026 pela varredura consolidadora (via navegador).",
           "associacao_origem": null,
           "gt_origem": null
+        },
+        {
+          "tipo": "F1_DOU",
+          "ref": "DOU de 30/07/2026, Edição 142, Seção 3, p. 116 — AVISO DE CONSULTA PÚBLICA Nº 25/2026 — https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-25/2026-722320286",
+          "trecho_literal": "Processo: 48500.015356/2026-81. Objeto: obter subsídios para subsídios e informações com vistas às alterações nas Regras de Comercialização para Inclusão dos Leilões de Reserva da Capacidade na Forma de Potência de 2026 - LRCAP, realizados em março de 2026. Modalidade: Intercâmbio de documentos. Período para envio: 30/7/2026 a 12/9/2026.",
+          "nota_qsv": "Ato aberto e lido na íntegra no DOU em 21/08/2026 pela varredura consolidadora `monitores-regulatorios-soa` de 21/08/2026 (Chrome, in.gov.br)",
+          "associacao_origem": null,
+          "gt_origem": null
         }
       ],
-      "gatilho_revisao": "publicacao do Aviso de CP no DOU; leitura da minuta para identificar o grao temporal de apuracao nos Modulos 10 e 11; encerramento em 12/09/2026"
+      "gatilho_revisao": "Aviso de CP publicado e lido em 21/08/2026. Gatilho remanescente: leitura da minuta para identificar o grão temporal de apuração nos Módulos 10 e 11; encerramento em 12/09/2026.",
+      "numero_status": "ANCORADO_NO_DOU"
     },
     {
       "fato_id": "ANEEL-CP-DECRETO-12772-2025-TRANSMISSAO",
