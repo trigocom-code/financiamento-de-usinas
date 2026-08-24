@@ -1,452 +1,452 @@
 {
-  "_meta": {
-    "orgao": "ONS",
-    "schema_version": "1.3",
-    "descricao": "Monitor exclusivo ONS — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-08-24",
-    "proxima_revisao_sugerida": "2026-07-29",
-    "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ONS conforme QSV-R v3.0",
-    "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Dados Abertos vão direto pro banco SOA.",
-    "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO. Submódulos e NTs são regulatórios — banco cego.",
-    "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json LIBERADA.",
-    "vetores_soa_atendidos": [
-      "V1",
-      "V3",
-      "V4",
-      "V7"
-    ],
-    "fonte_canonica": "https://www.ons.org.br/",
-    "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por endereço de e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@ + arabsolar@ + gdabsolar@ + fabricabsolar@ + logtribaabsolar@ + gcpabsolar@ + ftgeradorabsolar@ (googlegroups.com) -> ABSOLAR. Novos grupos descobertos em 09/07/2026: gcpabsolar@ e ftgeradorabsolar@. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1.",
-    "nota_run_2026_07_17": "Varredura de 17/07: INCONCLUSIVA por esta via. O portal do ONS é uma SPA (SharePoint): tanto ons.org.br quanto /paginas/noticias retornam apenas o menu de navegação serializado, sem lista de notícias — nem via web_fetch nem via render JS. A ausência de achados NÃO é prova de ausência de publicação. Nenhum fato tocado. Pendências mantidas: NT-02 de quantitativos de armazenamento (30/09) e RT-ONS DPL 0532/2023 revisado, não publicado.",
-    "nota_run_2026_07_18": "Varredura de 18/07 (sabado): SEM ALTERACAO. Nenhum ato oficial novo na janela. Nenhum verificado_em de fato avancado; _meta.verificado_em reflete apenas a data da varredura. Unico material novo do dia foi ponteiro F3 (GTGC ABSOLAR 17/07), registrado em Fatos_ANEEL e Fatos_MME.",
-    "nota_run_2026_07_19": "Varredura de 19/07 (domingo): SEM ATO OFICIAL NOVO detectado por F2. PNAST 2026 (NT-ONS DPL 0040/2026; 20,31 GW admitidos) e Portaria 129/MME sao de inicio de julho, nao novos. Portal ONS (SPA SharePoint) sem via automatizada — ausencia de achado NAO e prova de ausencia de publicacao. Pendencias mantidas (NT-02 armazenamento 30/09; RT-ONS DPL 0532/2023). Nenhum verificado_em de fato avancado.",
-    "nota_run_2026_07_20": "ONS INCONCLUSIVO nesta run. Tanto a home quanto /paginas/imprensa/noticias sao renderizadas por SharePoint/Angular e retornaram apenas o template do menu, sem popular a lista de noticias - nem por web_fetch nem por render JS. Portanto o 'sem alteracao' do ONS e NAO-VERIFICADO, nao negativo verificado. Seguem pendentes: NT-02, RT-ONS DPL 0532/2023 e a apresentacao ONS->ANEEL da NT 107/2026-SFT (prevista 'preferencialmente' para 29/07). PROPOSTA AO CEO: definir para o ONS uma via canonica alternativa (Acervo Digital / Documentos e Publicacoes, ou o feed do Linkedin/WhatsApp oficial) para que o negativo passe a ser verificavel. Nenhum verificado_em de fato foi avancado.",
-    "nota_run_2026_07_21": "Run de 21/07: 1 fato NOVO em VERDE — ONS-RESOLUCAO-CMSE-1-2026-DEVERES. Precedente de método: os deveres do ONS foram ancorados pelo ATO no DOU (Resolução CMSE nº 1/2026), contornando a cegueira estrutural do portal do ONS. O portal foi reaberto nesta run (home + /paginas/noticias, render JS com espera de 3s) e novamente retornou apenas o template de menu SharePoint/Angular — o 'sem alteração' do ONS por portal permanece NÃO VERIFICÁVEL. Nenhum outro fato ONS teve verificado_em bumpado (R2).",
-    "nota_run_2026_07_28": "Run CONSOLIDADORA de 28/07/2026. MUDANCA OPERACIONAL RELEVANTE: o PORTAL DO ONS VOLTOU. Nos digests de 27 e 28/07 o portal estava em 502/timeout por dois dias; em 28/07 as ~14h20 ele respondeu normalmente — mas e CLIENT-RENDERED, e so foi lido com navegador (get_page_text), nao com fetch simples. VERIFICACAO NEGATIVA COM O PORTAL NO AR: a area publica de noticias do ONS (www.ons.org.br/paginas/imprensa/noticias) NAO traz, ate 28/07, nenhuma publicacao com o cronograma, as especificacoes tecnicas e os CRITERIOS DE VALIDACAO dos dados do ressarcimento (prazo que venceu em 27/07 pela Portaria MME 140/2026). As 10 noticias mais recentes sao de 10 a 27/07 e nenhuma trata do tema. ⚠ NAO AFIRMAR DESCUMPRIMENTO: a publicacao pode ter saido em canal restrito a agentes (SINTEGRE), que esta rotina nao alcanca. O que mudou e a QUALIDADE da verificacao negativa — antes ela estava contaminada pelo portal fora do ar. DOIS EVENTOS NOVOS DATADOS, ambos F1 no portal do ONS e ausentes das agendas dos monitores: (1) 11/08/2026, 8h30-13h30, 'Reflexos do fenomeno El Nino no Sistema Interligado Nacional', Auditorio do ONS no Rio de Janeiro (Rua Julio do Carmo, 251, Cidade Nova), HIBRIDO com transmissao online, pre-inscricao obrigatoria para o presencial (noticia de 27/07); (2) 12/08/2026, 14h-18h, '3a Semana Regulatoria do ONS — evento de abertura Dialogo com o Setor', Auditorio do ONS em Brasilia (SIA Sul, Area de Servicos Publicos, Lote A), com MME, ANEEL, EPE, CCEE e ABRADEE; painel 1 'Conexoes regulatorias' cobre ARMAZENAMENTO, RESPOSTA DA DEMANDA e PNAST, painel 2 'Resiliencia Climatica no Setor Eletrico' (noticia de 23/07). Tema da semana: 'O Setor Eletrico Brasileiro: Desafios regulatorios para a transformacao energetica'. Ambos exigem inscricao por formulario. Tambem na janela: noticia de 23/07 'ONS apresenta ao CMSE resultados das avaliacoes da antecipacao de usinas termeletricas' — ancora em F1 do ONS o 1,8 GW a partir de setembro/2026.",
-    "nota_run_2026_07_29": "Varredura consolidadora de 29/07: ons.org.br/paginas/noticias devolveu HTTP 502 tambem nesta execucao (2a confirmacao do dia, em horario distinto da varredura das 09h11 — falha persistente do servidor, NAO ausencia de publicacao). Nenhum fato do ONS foi reverificado; verificado_em dos fatos NAO avancado. Incluido 1 pendente novo cuja fonte e a ANEEL (nao o ONS): prazo condicional de 45 dias para Procedimentos de Rede do Decreto 12.772/2025."
+ "_meta": {
+  "orgao": "ONS",
+  "schema_version": "1.3",
+  "descricao": "Monitor exclusivo ONS — schema v1.3. Aplicada Precedência v1.2.",
+  "verificado_em": "2026-08-24",
+  "proxima_revisao_sugerida": "2026-07-29",
+  "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ONS conforme QSV-R v3.0",
+  "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Dados Abertos vão direto pro banco SOA.",
+  "regra_banco_SOA": "Banco SOA NUNCA valida REGULATORIO_DECISORIO. Submódulos e NTs são regulatórios — banco cego.",
+  "regra_precedencia": "Tabela_Precedencia_QSV_v1_2.json LIBERADA.",
+  "vetores_soa_atendidos": [
+   "V1",
+   "V3",
+   "V4",
+   "V7"
+  ],
+  "fonte_canonica": "https://www.ons.org.br/",
+  "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por endereço de e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@ + arabsolar@ + gdabsolar@ + fabricabsolar@ + logtribaabsolar@ + gcpabsolar@ + ftgeradorabsolar@ (googlegroups.com) -> ABSOLAR. Novos grupos descobertos em 09/07/2026: gcpabsolar@ e ftgeradorabsolar@. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1.",
+  "nota_run_2026_07_17": "Varredura de 17/07: INCONCLUSIVA por esta via. O portal do ONS é uma SPA (SharePoint): tanto ons.org.br quanto /paginas/noticias retornam apenas o menu de navegação serializado, sem lista de notícias — nem via web_fetch nem via render JS. A ausência de achados NÃO é prova de ausência de publicação. Nenhum fato tocado. Pendências mantidas: NT-02 de quantitativos de armazenamento (30/09) e RT-ONS DPL 0532/2023 revisado, não publicado.",
+  "nota_run_2026_07_18": "Varredura de 18/07 (sabado): SEM ALTERACAO. Nenhum ato oficial novo na janela. Nenhum verificado_em de fato avancado; _meta.verificado_em reflete apenas a data da varredura. Unico material novo do dia foi ponteiro F3 (GTGC ABSOLAR 17/07), registrado em Fatos_ANEEL e Fatos_MME.",
+  "nota_run_2026_07_19": "Varredura de 19/07 (domingo): SEM ATO OFICIAL NOVO detectado por F2. PNAST 2026 (NT-ONS DPL 0040/2026; 20,31 GW admitidos) e Portaria 129/MME sao de inicio de julho, nao novos. Portal ONS (SPA SharePoint) sem via automatizada — ausencia de achado NAO e prova de ausencia de publicacao. Pendencias mantidas (NT-02 armazenamento 30/09; RT-ONS DPL 0532/2023). Nenhum verificado_em de fato avancado.",
+  "nota_run_2026_07_20": "ONS INCONCLUSIVO nesta run. Tanto a home quanto /paginas/imprensa/noticias sao renderizadas por SharePoint/Angular e retornaram apenas o template do menu, sem popular a lista de noticias - nem por web_fetch nem por render JS. Portanto o 'sem alteracao' do ONS e NAO-VERIFICADO, nao negativo verificado. Seguem pendentes: NT-02, RT-ONS DPL 0532/2023 e a apresentacao ONS->ANEEL da NT 107/2026-SFT (prevista 'preferencialmente' para 29/07). PROPOSTA AO CEO: definir para o ONS uma via canonica alternativa (Acervo Digital / Documentos e Publicacoes, ou o feed do Linkedin/WhatsApp oficial) para que o negativo passe a ser verificavel. Nenhum verificado_em de fato foi avancado.",
+  "nota_run_2026_07_21": "Run de 21/07: 1 fato NOVO em VERDE — ONS-RESOLUCAO-CMSE-1-2026-DEVERES. Precedente de método: os deveres do ONS foram ancorados pelo ATO no DOU (Resolução CMSE nº 1/2026), contornando a cegueira estrutural do portal do ONS. O portal foi reaberto nesta run (home + /paginas/noticias, render JS com espera de 3s) e novamente retornou apenas o template de menu SharePoint/Angular — o 'sem alteração' do ONS por portal permanece NÃO VERIFICÁVEL. Nenhum outro fato ONS teve verificado_em bumpado (R2).",
+  "nota_run_2026_07_28": "Run CONSOLIDADORA de 28/07/2026. MUDANCA OPERACIONAL RELEVANTE: o PORTAL DO ONS VOLTOU. Nos digests de 27 e 28/07 o portal estava em 502/timeout por dois dias; em 28/07 as ~14h20 ele respondeu normalmente — mas e CLIENT-RENDERED, e so foi lido com navegador (get_page_text), nao com fetch simples. VERIFICACAO NEGATIVA COM O PORTAL NO AR: a area publica de noticias do ONS (www.ons.org.br/paginas/imprensa/noticias) NAO traz, ate 28/07, nenhuma publicacao com o cronograma, as especificacoes tecnicas e os CRITERIOS DE VALIDACAO dos dados do ressarcimento (prazo que venceu em 27/07 pela Portaria MME 140/2026). As 10 noticias mais recentes sao de 10 a 27/07 e nenhuma trata do tema. ⚠ NAO AFIRMAR DESCUMPRIMENTO: a publicacao pode ter saido em canal restrito a agentes (SINTEGRE), que esta rotina nao alcanca. O que mudou e a QUALIDADE da verificacao negativa — antes ela estava contaminada pelo portal fora do ar. DOIS EVENTOS NOVOS DATADOS, ambos F1 no portal do ONS e ausentes das agendas dos monitores: (1) 11/08/2026, 8h30-13h30, 'Reflexos do fenomeno El Nino no Sistema Interligado Nacional', Auditorio do ONS no Rio de Janeiro (Rua Julio do Carmo, 251, Cidade Nova), HIBRIDO com transmissao online, pre-inscricao obrigatoria para o presencial (noticia de 27/07); (2) 12/08/2026, 14h-18h, '3a Semana Regulatoria do ONS — evento de abertura Dialogo com o Setor', Auditorio do ONS em Brasilia (SIA Sul, Area de Servicos Publicos, Lote A), com MME, ANEEL, EPE, CCEE e ABRADEE; painel 1 'Conexoes regulatorias' cobre ARMAZENAMENTO, RESPOSTA DA DEMANDA e PNAST, painel 2 'Resiliencia Climatica no Setor Eletrico' (noticia de 23/07). Tema da semana: 'O Setor Eletrico Brasileiro: Desafios regulatorios para a transformacao energetica'. Ambos exigem inscricao por formulario. Tambem na janela: noticia de 23/07 'ONS apresenta ao CMSE resultados das avaliacoes da antecipacao de usinas termeletricas' — ancora em F1 do ONS o 1,8 GW a partir de setembro/2026.",
+  "nota_run_2026_07_29": "Varredura consolidadora de 29/07: ons.org.br/paginas/noticias devolveu HTTP 502 tambem nesta execucao (2a confirmacao do dia, em horario distinto da varredura das 09h11 — falha persistente do servidor, NAO ausencia de publicacao). Nenhum fato do ONS foi reverificado; verificado_em dos fatos NAO avancado. Incluido 1 pendente novo cuja fonte e a ANEEL (nao o ONS): prazo condicional de 45 dias para Procedimentos de Rede do Decreto 12.772/2025."
+ },
+ "fatos": [
+  {
+   "fato_id": "ONS-NT-DPL-0111-2025",
+   "tema": "NT-ONS DPL 0111/2025 — Requisitos técnicos de baterias (LRCAP)",
+   "valor": "Requisitos técnicos de conexão de baterias (grid-forming) — NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (mesmo doc conjunto ONS/EPE, rev.4). Os limiares de ELEGIBILIDADE do LRCAP (≥30 MW, ≥4h, ≥85% RTE) NÃO estão nesta NT: estão na Portaria MME 136/2026, Art. 7º (III/IV/VI); o grid-forming obrigatório está na Portaria 136/2026 Art. 4º §13 e detalhado aqui. Pré-condição técnica da Frente A SOA.",
+   "status": "VIGENTE",
+   "norma": "NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (conexão/grid-forming) · limiares na Portaria MME 136/2026 Art. 7º + Art. 4º §13",
+   "url": "https://www.ons.org.br/",
+   "verificado_em": "2026-08-24",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 15,
+   "vetores_afetados": [
+    "V3",
+    "V7"
+   ],
+   "qsv_cor": "AZUL",
+   "qsv_origem_classificacao": "rebaixado_por_R7",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.ons.org.br/ — NT DPL 0111/2025 (documento integral em mãos, lido 01/07/2026)",
+     "trecho_literal": "Nota Técnica Conjunta ONS e EPE · NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 · 'Requisitos técnicos mínimos para a conexão de sistemas de armazenamento de energia via baterias' (Revisão 4). Grid forming: 'Esta estratégia corresponde à operação como formador de rede (Grid Forming) e fonte de tensão.'",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F4_cruzamento",
+     "ref": "Cruza REN ANEEL 1.161/2026 + Portaria MME 136/2026",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "numero_status": "ANCORADO",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
   },
-  "fatos": [
+  {
+   "fato_id": "ONS-SUBMODULO-9",
+   "tema": "Submódulo 9 ONS — Liquidação CCEE (terminal institucional)",
+   "valor": "Procedimento de Rede que define ponto terminal de classificação de cortes (ENE/CNF/REL). Princípio canônico SOA: 'protocolo opera ANTES e DEPOIS da liquidação, NUNCA durante'. Pré-condição estrutural de V4.",
+   "status": "VIGENTE",
+   "norma": "ONS · Submódulo 9 (Procedimentos de Rede)",
+   "url": "https://www.ons.org.br/",
+   "verificado_em": "2026-08-24",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 10,
+   "vetores_afetados": [
+    "V4",
+    "V3"
+   ],
+   "qsv_cor": "AZUL",
+   "qsv_origem_classificacao": "rebaixado_por_R7",
+   "qsv_fontes_independentes": [
     {
-      "fato_id": "ONS-NT-DPL-0111-2025",
-      "tema": "NT-ONS DPL 0111/2025 — Requisitos técnicos de baterias (LRCAP)",
-      "valor": "Requisitos técnicos de conexão de baterias (grid-forming) — NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (mesmo doc conjunto ONS/EPE, rev.4). Os limiares de ELEGIBILIDADE do LRCAP (≥30 MW, ≥4h, ≥85% RTE) NÃO estão nesta NT: estão na Portaria MME 136/2026, Art. 7º (III/IV/VI); o grid-forming obrigatório está na Portaria 136/2026 Art. 4º §13 e detalhado aqui. Pré-condição técnica da Frente A SOA.",
-      "status": "VIGENTE",
-      "norma": "NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (conexão/grid-forming) · limiares na Portaria MME 136/2026 Art. 7º + Art. 4º §13",
-      "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-08-24",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 15,
-      "vetores_afetados": [
-        "V3",
-        "V7"
-      ],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "rebaixado_por_R7",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.ons.org.br/ — NT DPL 0111/2025 (documento integral em mãos, lido 01/07/2026)",
-          "trecho_literal": "Nota Técnica Conjunta ONS e EPE · NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 · 'Requisitos técnicos mínimos para a conexão de sistemas de armazenamento de energia via baterias' (Revisão 4). Grid forming: 'Esta estratégia corresponde à operação como formador de rede (Grid Forming) e fonte de tensão.'",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F4_cruzamento",
-          "ref": "Cruza REN ANEEL 1.161/2026 + Portaria MME 136/2026",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.ons.org.br/ — Submódulo 9",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
     },
     {
-      "fato_id": "ONS-SUBMODULO-9",
-      "tema": "Submódulo 9 ONS — Liquidação CCEE (terminal institucional)",
-      "valor": "Procedimento de Rede que define ponto terminal de classificação de cortes (ENE/CNF/REL). Princípio canônico SOA: 'protocolo opera ANTES e DEPOIS da liquidação, NUNCA durante'. Pré-condição estrutural de V4.",
-      "status": "VIGENTE",
-      "norma": "ONS · Submódulo 9 (Procedimentos de Rede)",
-      "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-08-24",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 10,
-      "vetores_afetados": [
-        "V4",
-        "V3"
-      ],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "rebaixado_por_R7",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.ons.org.br/ — Submódulo 9",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F2_DOU",
-          "ref": "Procedimentos de Rede aprovados por REN ANEEL 903/2020 (DOU)",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
-    },
-    {
-      "fato_id": "ONS-PROCEDIMENTOS-903",
-      "tema": "Procedimentos de Rede — REN ANEEL 903/2020 (Submódulos 2.4, 3.3, 8.1, 10.6, 10.7, 26.2)",
-      "valor": "Conjunto de Submódulos que regulam operação SIN. Submódulo 26.2 (modelo Newave/Dessem) é referência para Validação SOA.",
-      "status": "VIGENTE",
-      "norma": "ONS · REN ANEEL 903/2020",
-      "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-08-24",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 8,
-      "vetores_afetados": [
-        "V4",
-        "V3"
-      ],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "rebaixado_por_R7",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.ons.org.br/",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F2_DOU",
-          "ref": "REN ANEEL 903/2020 publicada no DOU",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
-    },
-    {
-      "fato_id": "ONS-NT-PNAST",
-      "tema": "NT 02 PNAST — Capacidade por barramento + MUST",
-      "valor": "Nota Técnica que define capacidade dinâmica por barramento (PNAST 2026). Habilita TVM v2. Saída esperada: 31/08/2026. ATUALIZAÇÃO 07/07/2026: o ONS admitiu 367 cadastramentos na 1ª Temporada de Acesso de 2026 (PNAST) — ponteiro F3 ABSOLAR (GT Armazenamento, 07/07). Marca o volume da 1ª janela de acesso; a NT de capacidade por barramento (31/08) segue AGENDADA. Mantém AZUL. ATUALIZAÇÃO 09/07/2026 (ponteiro F3 ABSOLAR, GTGC 08/07): a lista de agentes HABILITADOS na 1ª Temporada de Acesso do PNAST totaliza 20,31 GW — 14,56 GW de geração + 5,74 GW de consumo. Divulgação AGREGADA (sem detalhe por projeto; não é possível separar FV). Próxima etapa: transmissoras informam barramentos candidatos ao ONS, que avalia a margem de escoamento. Nota de disciplina: '367 cadastramentos' (07/07) e '20,31 GW habilitados' (08/07) são grandezas distintas — cadastramento ≠ habilitação. Ambos ALEGADO_NAO_ANCORADO; mantém AZUL até reabertura F1 no ONS.",
-      "status": "AGENDADO",
-      "norma": "NT ONS PNAST 2026 (publicação 31/08/2026) · 1ª Temporada de Acesso: 367 cadastramentos (07/07) · 20,31 GW habilitados = 14,56 GW geração + 5,74 GW consumo (08/07)",
-      "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-08-24",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 14,
-      "vetores_afetados": [
-        "V1",
-        "V2",
-        "V3"
-      ],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "mecanismo_v3.0",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.ons.org.br/ — calendário PNAST",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F4_cruzamento",
-          "ref": "Cruza Portaria MME 129/2026 + Decreto 12.772/2025",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F3_associacao_email",
-          "ref": "E-mail GT Armazenamento ABSOLAR 07/07/2026 — 'PNAST: ONS divulga lista de agentes admitidos na 1ª Temporada'",
-          "trecho_literal": "o ONS informou que admitiu 367 cadastramentos na 1ª Temporada de Acesso de 2026",
-          "associacao_origem": "ABSOLAR",
-          "gt_origem": "Armazenamento"
-        },
-        {
-          "tipo": "F3_associacao_email",
-          "ref": "E-mail GTGC ABSOLAR 08/07/2026",
-          "trecho_literal": "a lista de agentes habilitados na primeira temporada de acesso do PNAST, totalizando 20,31 GW, distribuído entre 14,56 GW de geração e 5,74 GW de consumo",
-          "associacao_origem": "ABSOLAR",
-          "gt_origem": "Geração Centralizada"
-        }
-      ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
-    },
-    {
-      "fato_id": "ONS-NT-CAPACIDADE-REMANESCENTE",
-      "tema": "NT Quantitativos da Capacidade Remanescente do SIN (Art. 11 §4º Portaria 136)",
-      "valor": "Nota Técnica de Quantitativos da Capacidade Remanescente do SIN para Escoamento — define a capacidade por barramento/subárea usada na classificação dos lances do LRCAP. ANCORADO: a Portaria MME 136/2026, Art. 11 §4º, determina que a NT de QUANTITATIVOS 'deverá ser publicada até 30 de setembro de 2026'. AVANÇO 07/07/2026: ONS e EPE publicaram a Nota Técnica Conjunta de METODOLOGIA, premissas e critérios (NT-ONS DPL 0057/2026 = EPE-DEE-RE-067/2026-R0) que precede os quantitativos — ponteiro F3 ABSOLAR (GT Armazenamento, 07/07) + cobertura setorial. Distinguir: a NT de metodologia (07/07, publicada) ≠ NT de quantitativos por barramento (prazo 30/09, ainda pendente). Mantém AZUL até reabertura F1 no site do ONS e ancoragem do documento. (A citação anterior 'Art. 15 §4º' estava errada — o Art. 15 trata da não aplicação do art. 9º da Portaria 514.) FALSO-POSITIVO AFASTADO EM 09/07/2026: a notícia oficial ANEEL 'ANEEL, ONS e EPE divulgam revisão da nota técnica sobre quantitativos da capacidade remanescente do SIN' refere-se à NT-ONS DPL 0005/2026-R1, PUBLICADA EM 15/03/2026, relativa aos LRCAPs de UTE/UHE (Portarias 444/2016, 118/2025 e 119/2025) — NÃO é a NT de armazenamento. A NT de metodologia de BESS (DPL 0057/2026) segue sem reabertura F1; a NT de quantitativos de armazenamento segue pendente (prazo 30/09/2026). Mantém AZUL.",
-      "status": "AGENDADO",
-      "norma": "NT metodologia: NT-ONS DPL 0057/2026 = EPE-DEE-RE-067/2026-R0 (publicada 07/07/2026) · NT quantitativos: Art. 11 §4º da Portaria MME 136/2026 (prazo 30/09/2026)",
-      "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-08-24",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 13,
-      "vetores_afetados": [
-        "V3",
-        "V7"
-      ],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "mecanismo_v3.0",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.ons.org.br/ — calendário NT",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F2_DOU",
-          "ref": "Portaria MME 136/2026 Art. 11 §4º (DOU 03/06/2026)",
-          "trecho_literal": "A Nota Técnica de Quantitativos da Capacidade Remanescente do SIN para Escoamento ... deverá ser publicada até 30 de setembro de 2026",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F3_associacao_email",
-          "ref": "E-mail GT Armazenamento ABSOLAR 07/07/2026 — 'NT Conjunta de Metodologia, premissas e critérios para definição da capacidade remanescente'",
-          "trecho_literal": "o ONS e a EPE publicaram a Nota Técnica Conjunta NT-ONS DPL 0057/2026 / EPE-DEE-RE-067/2026-R0 (metodologia, premissas e critérios)",
-          "associacao_origem": "ABSOLAR",
-          "gt_origem": "Armazenamento"
-        }
-      ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
-    },
-    {
-      "fato_id": "ONS-SANDBOX-TENSAO",
-      "tema": "Ato ONS · Sandbox Controle de Tensão — vencedores e cronograma",
-      "valor": "ONS publica comunicados sobre vencedores do Sandbox e próximos ciclos. SOA fornece camada QSV + telemetria como evidência de prestação.",
-      "status": "VIGENTE",
-      "norma": "ONS · Sandbox Controle de Tensão",
-      "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-08-24",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 7,
-      "vetores_afetados": [
-        "V7"
-      ],
-      "qsv_cor": "AZUL",
-      "qsv_origem_classificacao": "mecanismo_v3.0",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_pagina_oficial",
-          "ref": "https://www.ons.org.br/ — comunicados Sandbox",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        },
-        {
-          "tipo": "F4_cruzamento",
-          "ref": "Cruza Sandbox ANEEL e participantes do programa",
-          "trecho_literal": "",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "SEM_NUMEROS",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-06-28"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
-    },
-    {
-      "fato_id": "ONS-RESOLUCAO-CMSE-1-2026-DEVERES",
-      "tema": "Deveres do ONS na Resolução CMSE nº 1/2026 — CRef, metodologia dos estudos prospectivos e avaliação ex-post do despacho por GE",
-      "valor": "ANCORADO NO DOU (21/07/2026), sem depender do portal do ONS: a RESOLUÇÃO CMSE Nº 1, DE 6 DE JULHO DE 2026 (DOU de 08/07/2026, Edição 126, Seção 1, Página 134) atribui três deveres expressos ao Operador Nacional do Sistema Elétrico no rito de autorização de despacho de geração por garantia de suprimento energético (GE): (1) Art. 2º, II — apresentar ao CMSE, previamente a cada autorização ou revisão, estudos prospectivos conjunturais e respectivas premissas, análise de causa/consequência em termos de ganho percentual de armazenamento nos reservatórios de regularização, análise de soluções alternativas, resultados parciais (quando houver autorização vigente) e justificativa da alternativa recomendada; (2) Art. 3º, I — elaborar estudo técnico com propostas de Curva Referencial de Armazenamento (CRef) para o ano subsequente até NOVEMBRO de cada ano (o CMSE aprova até dezembro); (3) Art. 4º, I — disponibilizar, em até 180 (cento e oitenta) dias da publicação da Resolução, a METODOLOGIA de elaboração ordinária dos estudos prospectivos conjunturais, 'observando o princípio da transparência', com atualizações quando houver alterações relevantes; e (4) Art. 6º, I — apresentar, anualmente até a terceira reunião ordinária do CMSE do ano subsequente, relatório de avaliação com as causas das deliberações, os MONTANTES DE GERAÇÃO VERIFICADOS e a análise comparativa entre resultados energéticos PREVISTOS E VERIFICADOS. RELEVÂNCIA SOA/SOS: é obrigação regulatória de publicar metodologia e de comparar previsto contra verificado — o mesmo eixo ex-post da camada de evidência. Convergência de arcabouço; não menciona a SOA/SOS.",
-      "status": "VIGENTE",
-      "norma": "Resolução CMSE nº 1, de 6 de julho de 2026, arts. 2º, II; 3º, I; 4º, I; e 6º, I — DOU 08/07/2026, Ed. 126, Seção 1, p. 134",
-      "url": "https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
-      "verificado_em": "2026-08-24",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 11,
-      "vetores_afetados": [
-        "V3",
-        "V4"
-      ],
-      "qsv_cor": "VERDE",
-      "qsv_origem_classificacao": "F2_DOU_ato_lido_integralmente_21jul2026 + F1_MME_noticia_09jul2026 (R2 atendida)",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F2_DOU",
-          "ref": "RESOLUÇÃO CMSE Nº 1, DE 6 DE JULHO DE 2026 — DOU 08/07/2026, Edição 126, Seção 1, Página 134 — https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
-          "trecho_literal": "Art. 3º [...] I - o ONS deverá elaborar estudo técnico com propostas de CRef para o ano subsequente, até novembro de cada ano [...] Art. 4º [...] I - o ONS deverá disponibilizar, em até 180 (cento e oitenta) dias da publicação desta Resolução, metodologia para elaboração ordinária dos estudos prospectivos conjunturais ao CMSE, observando o princípio da transparência",
-          "nota_qsv": "Ancorado no ato, não no portal do ONS — que permanece inacessível a varredura automatizada (SPA/SharePoint retorna apenas o template de menu, inclusive com render JS e espera de 3s, reteste em 21/07/2026).",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "ANCORADO",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-07-21"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null,
-      "orgao": "ONS",
-      "gatilho_revisao": "Publicação da metodologia dos estudos prospectivos pelo ONS (prazo do Art. 4º, I: 180 dias de 08/07/2026, ~04/01/2027 por contagem própria) e primeira CRef aprovada pelo CMSE (até dezembro/2026).",
-      "pendencia_verificacao": "Os deveres estão ancorados no ato. O CUMPRIMENTO por parte do ONS não foi verificado — o portal do ONS segue cego para o monitor. Não afirmar que o ONS publicou metodologia ou CRef sem reabrir a fonte."
-    },
-    {
-      "fato_id": "ONS-PORTARIA-140-2026-DEVERES",
-      "tema": "Deveres do ONS na Portaria Normativa MME 140/2026 - funcoes de produtividade, atualizacao de dados e apuracao dos cortes",
-      "valor": "Ancorado no texto integral da Portaria Normativa MME no 140, de 18/07/2026 (DOU de 21/07/2026, Edicao Extra, Secao 1), lido em 07/08/2026. A portaria atribui ao ONS DOIS RITOS DISTINTOS, com prazos proprios contados da publicacao. RITO 1 - FUNCOES DE PRODUTIVIDADE FOTOVOLTAICAS (art. 4o), para o periodo de 1o/09/2023 a 31/03/2024: em ate 5 dias divulgar em seu sitio o cronograma, as especificacoes tecnicas, os criterios de validacao e as demais informacoes do procedimento (termo em 27/07/2026); em ate 20 dias os agentes apresentam os registros de medicao solarimetrica (10/08/2026); em ate 40 dias o ONS divulga as funcoes elaboradas - o 40o dia cai em domingo, 30/08/2026, e o art. 4o par. 4o prorroga o termo para 31/08/2026; contestacao justificada em 10 dias; em ate 20 dias do fim das contestacoes o ONS divulga as funcoes atualizadas e as analises das contestacoes. RITO 2 - ATUALIZACAO DE INFORMACOES PARA APURACAO E CLASSIFICACAO (art. 5o), periodo de 1o/09/2023 a 10/02/2025, abrangendo medicao anemometrica ou solarimetrica, geracao verificada e disponibilidade: em ate 120 dias da publicacao (18/11/2026) o ONS deve desenvolver ferramenta computacional para o recebimento e divulgar cronograma, especificacoes tecnicas e criterios de validacao; os interessados tem 30 dias para apresentar; o ONS tem 90 dias para analisar a consistencia e divulgar as analises e a base de dados resultante; contestacao em 10 dias; em ate 30 dias o ONS divulga a analise das contestacoes e envia a CCEE a base final, que deve conter no minimo a estimativa de geracao em base horaria usada no calculo dos montantes de corte e a variacao dessa estimativa por usina ou conjunto de usinas em decorrencia da atualizacao. CRITERIO DE ACEITACAO DO DADO (art. 5o, par. 2o e 3o): a informacao atualizada deve corresponder de forma fidedigna ao valor efetivamente disponivel no instante do evento e estar registrada no sistema de medicao da usina; so e aceita a atualizacao se tiver sido constatada falha no recebimento em tempo real via supervisao da operacao, ou se houver informacao mais fidedigna registrada nos sistemas de medicao da usina. CLASSIFICACAO (art. 5o, par. 4o e 5o): o ONS apura os cortes em janelas horarias e os enquadra exclusivamente em indisponibilidade externa, confiabilidade eletrica ou sobreoferta; havendo classificacoes distintas na mesma janela, independentemente da duracao, prevalece a indisponibilidade externa e, subsidiariamente, a confiabilidade eletrica. RELEVANCIA SOA/SOS: e a primeira vez que um ato normativo fixa, para o Operador, prazo de divulgacao de criterios de validacao de serie temporal e um criterio expresso de admissibilidade de dado retroativo. O art. 11 da portaria condiciona a incorporacao dessas informacoes as bases do ONS e da CCEE a celebracao do Termo de Compromisso pelo agente.",
-      "status": "VIGENTE",
-      "norma": "Portaria Normativa MME no 140, de 18/07/2026, arts. 4o, 5o e 11 · DOU de 21/07/2026, Edicao Extra, Secao 1",
-      "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
-      "verificado_em": "2026-08-24",
-      "tipo_fato": "REGULATORIO_NORMATIVO",
-      "score_soa": 20,
-      "vetores_afetados": [
-        "V4",
-        "V3",
-        "sHEC"
-      ],
-      "qsv_cor": "VERDE",
-      "qsv_origem_classificacao": "F1_texto_integral_reaberto_07ago2026 - deveres extraidos do texto do ato no repositorio oficial do orgao emissor. Copia arquivada em _Fontes_F1_Portaria_140/",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F1_texto_integral_oficial",
-          "ref": "gov.br/mme - repositorio oficial de legislacao, arquivo portaria-normativa-mme-n-140-2026.pdf (10 paginas), lido integralmente em 07/08/2026",
-          "trecho_literal": "PORTARIA NORMATIVA MME No 140, DE 18 DE JULHO DE 2026 ... Art. 1o Paragrafo unico. Para uma dada usina, sera objeto de compensacao o evento de corte de geracao ocorrido de 1o de setembro de 2023 ate 25 de novembro de 2025, inclusive, desde que decorrente de eventos de confiabilidade eletrica ou de indisponibilidade externa ... Este texto nao substitui o publicado no DOU de 21.7.2026 (Edicao Extra) - Secao 1.",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "ANCORADO_EM_TEXTO_INTEGRAL_OFICIAL_DO_ORGAO_COM_CARIMBO_DOU",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-08-07"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null,
-      "gatilho_revisao": "publicacao das funcoes de produtividade pelo ONS, termo em 31/08/2026; abertura da ferramenta computacional do art. 5o, termo em 18/11/2026",
-      "pendencia_verificacao": "O cumprimento pelo ONS do prazo de 5 dias do art. 4o par. 1o I, com termo em 27/07/2026, NAO foi verificado de forma independente: ons.org.br devolveu HTTP 502 na home de noticias e template nao renderizado na raiz, quarta execucao consecutiva. A ABSOLAR relatou em F3 que o cronograma nao havia sido publicado ate 03/08; a reuniao ABSOLAR com o ONS de 04/08 indica que o procedimento estava em curso. Reabrir ons.org.br assim que responder."
-    },
-    {
-      "fato_id": "ONS-NT-DPL-0031-2024-REVISAO-FV",
-      "tema": "NT-ONS DPL 0031/2024 — revisao das funcoes de produtividade de usinas fotovoltaicas",
-      "valor": "O ONS revisou a NT-ONS DPL 0031/2024, que descreve a metodologia de estimativa das funcoes de produtividade de usinas fotovoltaicas, depois de identificar inconsistencia no calculo de geracao em determinadas horas do dia. Conforme noticiado, o criterio de filtragem de dados de irradiancia era excessivamente conservador e descartava medicoes validas nos periodos de nascer e por do sol, comprometendo a estimativa de geracao nesses horarios. As correcoes foram recalculadas para dezembro de 2025, janeiro e fevereiro de 2026, com incorporacao permanente na revisao de marco de 2026; as funcoes corrigidas foram disponibilizadas para consulta no portal SINtegre, no arquivo 'Funcoes Prod-2026 Revisadas.zip'. PONTO DE MAIOR RELEVANCIA: as usinas cujos agentes reenviaram informacoes para a revisao anual NAO foram afetadas pela correcao — a distorcao atingiu as que dependiam dos dados de supervisao do ONS. As funcoes de produtividade alimentam analises de constrained-off fotovoltaico. BORDA DIRETA com o art. 4o da Portaria Normativa MME 140/2026, que manda o ONS divulgar as funcoes de produtividade ate 31/08/2026 e assegura contestacao fundamentada: ha precedente documentado de que a metodologia do proprio Operador ja errou, de forma conservadora, exatamente nas horas de borda do dia, e de que enviar dado proprio insulou o agente do erro. Pendente de confirmacao em F1: o texto da NT nao foi aberto nesta run.",
-      "status": "VIGENTE",
-      "norma": "NT-ONS DPL 0031/2024 (metodologia das funcoes de produtividade FV) · art. 4o da Portaria Normativa MME 140/2026 (divulgacao ate 31/08/2026 e contestacao)",
-      "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-08-24",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "score_soa": 13,
-      "vetores_afetados": [
-        "V1",
-        "V3",
-        "V7"
-      ],
-      "qsv_cor": "LARANJA",
-      "qsv_origem_classificacao": "F2_imprensa_especializada_sem_texto_integral",
-      "qsv_fontes_independentes": [
-        {
-          "tipo": "F2_imprensa_especializada",
-          "ref": "Canal Solar, 'ONS atualiza nota tecnica apos rever calculo de usinas solares', 13/05/2026 — https://canalsolar.com.br/ons-atualiza-nota-tecnica-calculo-usinas-solares/",
-          "trecho_literal": "criterios excessivamente conservadores na filtragem de dados de irradiancia solar",
-          "associacao_origem": null,
-          "gt_origem": null
-        }
-      ],
-      "numero_status": "ALEGADO_NAO_ANCORADO",
-      "validacao_banco_SOA": {
-        "aplicavel": false,
-        "query_versionada": null,
-        "resultado": "N/A_REGULATORIO",
-        "verificado_em": "2026-08-08"
-      },
-      "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+     "tipo": "F2_DOU",
+     "ref": "Procedimentos de Rede aprovados por REN ANEEL 903/2020 (DOU)",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
     }
-  ],
-  "_pendentes_verificacao": [
+   ],
+   "numero_status": "SEM_NUMEROS",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
+  },
+  {
+   "fato_id": "ONS-PROCEDIMENTOS-903",
+   "tema": "Procedimentos de Rede — REN ANEEL 903/2020 (Submódulos 2.4, 3.3, 8.1, 10.6, 10.7, 26.2)",
+   "valor": "Conjunto de Submódulos que regulam operação SIN. Submódulo 26.2 (modelo Newave/Dessem) é referência para Validação SOA.",
+   "status": "VIGENTE",
+   "norma": "ONS · REN ANEEL 903/2020",
+   "url": "https://www.ons.org.br/",
+   "verificado_em": "2026-08-24",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 8,
+   "vetores_afetados": [
+    "V4",
+    "V3"
+   ],
+   "qsv_cor": "AZUL",
+   "qsv_origem_classificacao": "rebaixado_por_R7",
+   "qsv_fontes_independentes": [
     {
-      "fato_id": "ONS-CRONOGRAMA-CRITERIOS-VALIDACAO-PORT140",
-      "tema": "ONS — cronograma, especificacoes tecnicas e criterios de validacao dos dados do ressarcimento (Portaria MME 140/2026): publicacao NAO LOCALIZADA na area publica",
-      "valor": "Verificacao NEGATIVA de 28/07/2026, agora com o portal do ONS NO AR (nos dois dias anteriores ele retornava 502/timeout, o que invalidava a verificacao). A area publica de noticias do ONS, lida com navegador em 28/07 as ~14h20, exibe as 10 publicacoes mais recentes (10/07 a 27/07) e NENHUMA trata do cronograma, das especificacoes tecnicas ou dos criterios de validacao dos dados do ressarcimento por cortes de geracao. O prazo correspondente venceu em 27/07/2026. ⚠ NAO SE AFIRMA DESCUMPRIMENTO: a divulgacao pode ter ocorrido em canal restrito a agentes (SINTEGRE), fora do alcance desta rotina — e a camada portal do monitor GT ABSOLAR esta parada desde 16/07. ⚠ O proprio prazo de 5 dias e o de 120 dias para a ferramenta de atualizacao em lote (~18/11/2026) sao PENDENTE DE VERIFICACAO F1 (ver o campo pendencia_verificacao) no texto da Portaria 140 no DOU, que nao foi lido nesta run. LEITURA SOA: e este documento que define COMO o contrafactual de corte sera reconstruido — e, portanto, onde a tese de verificacao ex-post tem lastro procedimental.",
-      "status": "PUBLICACAO NAO LOCALIZADA — verificacao negativa com portal no ar",
-      "norma": "Portaria MME no 140, de 18/07/2026 (DOU 21/07/2026) — prazo vencido em 27/07/2026",
-      "url": "https://www.ons.org.br/paginas/imprensa/noticias",
-      "verificado_em": "2026-07-28",
-      "tipo_fato": "REGULATORIO_NORMATIVO",
-      "score_soa": 18,
-      "vetores_afetados": [
-        "V4",
-        "sHEC"
-      ],
-      "qsv_cor": "LARANJA",
-      "qsv_origem_classificacao": "verificacao_negativa_F1_28jul2026_portal_no_ar",
-      "numero_status": "SEM_NUMEROS",
-      "motivo_pendencia": "Exige camada portal / SINTEGRE (Chrome logado, sessao interativa). Reverificar diariamente ate 10/08.",
-      "pendencia_verificacao": "Checar tambem a area de Procedimentos de Rede e a de comunicados a agentes, nao so a de imprensa. || ANDAIME MOVIDO DO CAMPO RENDERIZADO EM 28/07/2026 (exigencia do gate validar_fatos.py, regra E1). Marcacoes originais: [A VERIFICAR F1]. Sentido inalterado: os elementos assim marcados NAO estao ancorados em fonte primaria reaberta e nao podem ser citados externamente ate a leitura do ato no DOU."
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.ons.org.br/",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
     },
     {
-      "fato_id": "ONS-PROCEDIMENTOS-REDE-DECRETO-12772-2025",
-      "tema": "ONS — prazo de ate 45 dias para propor alteracoes nos Procedimentos de Rede decorrentes do Decreto no 12.772/2025 (determinacao ainda NAO proclamada)",
-      "valor": "Origem F1 ANEEL (nao ONS): item 6 da 15a RPO de 28/07/2026, Processo 48500.000846/2026-82. O voto do Diretor-Relator Fernando Mosna, acompanhado por Gentil Nogueira de Sa Junior e Willamy Moreira Frota, determina ao ONS 'o envio, no prazo de ate 45 dias, de propostas de alteracao, bem como de outras que se mostrem necessarias, dos Procedimentos de Rede relacionados a operacionalizacao das atribuicoes que lhe foram delegadas pelo Decreto no 12.772/2025'. ⚠ CONDICIONAL — NAO E PRAZO EM VIGOR: o Diretor-Geral Sandoval de Araujo Feitosa Neto pediu vista do processo, de modo que o resultado NAO foi proclamado. A ata registra que os votos anteriores a vista continuam validos, facultada reforma ate a proclamacao (art. 53 §2o da NO no 1 / REN 1.133/2025). O termo inicial dos 45 dias so existe apos a proclamacao. NAO tratar como obrigacao vigente do ONS nem cravar data-limite.",
-      "status": "CONDICIONAL — voto proferido, resultado NAO proclamado (processo sob vista)",
-      "norma": "Item 6 da 15a RPO da ANEEL de 28/07/2026 (previa) · Decreto no 12.772/2025 · REN 905/2020, Modulos 1 e 5",
-      "url": "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/dsp_detalheNoticia.cfm?idNoticia=14784&idAreaNoticia=425",
-      "verificado_em": "2026-07-29",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "qsv_cor": "LARANJA",
-      "qsv_origem_classificacao": "F1_institucional_ANEEL_reaberta_29jul2026 — obrigacao condicionada a proclamacao do resultado",
-      "gatilho_revisao": "proclamacao do resultado do item 6 apos a vista; publicacao da REN; envio efetivo das propostas pelo ONS"
+     "tipo": "F2_DOU",
+     "ref": "REN ANEEL 903/2020 publicada no DOU",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
     }
-  ],
-  "_historico_caidos": []
+   ],
+   "numero_status": "SEM_NUMEROS",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
+  },
+  {
+   "fato_id": "ONS-NT-PNAST",
+   "tema": "NT 02 PNAST — Capacidade por barramento + MUST",
+   "valor": "Nota Técnica que define capacidade dinâmica por barramento (PNAST 2026). Habilita TVM v2. Saída esperada: 31/08/2026. ATUALIZAÇÃO 07/07/2026: o ONS admitiu 367 cadastramentos na 1ª Temporada de Acesso de 2026 (PNAST) — ponteiro F3 ABSOLAR (GT Armazenamento, 07/07). Marca o volume da 1ª janela de acesso; a NT de capacidade por barramento (31/08) segue AGENDADA. Mantém AZUL. ATUALIZAÇÃO 09/07/2026 (ponteiro F3 ABSOLAR, GTGC 08/07): a lista de agentes HABILITADOS na 1ª Temporada de Acesso do PNAST totaliza 20,31 GW — 14,56 GW de geração + 5,74 GW de consumo. Divulgação AGREGADA (sem detalhe por projeto; não é possível separar FV). Próxima etapa: transmissoras informam barramentos candidatos ao ONS, que avalia a margem de escoamento. Nota de disciplina: '367 cadastramentos' (07/07) e '20,31 GW habilitados' (08/07) são grandezas distintas — cadastramento ≠ habilitação. Ambos ALEGADO_NAO_ANCORADO; mantém AZUL até reabertura F1 no ONS.",
+   "status": "AGENDADO",
+   "norma": "NT ONS PNAST 2026 (publicação 31/08/2026) · 1ª Temporada de Acesso: 367 cadastramentos (07/07) · 20,31 GW habilitados = 14,56 GW geração + 5,74 GW consumo (08/07)",
+   "url": "https://www.ons.org.br/",
+   "verificado_em": "2026-08-24",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 14,
+   "vetores_afetados": [
+    "V1",
+    "V2",
+    "V3"
+   ],
+   "qsv_cor": "AZUL",
+   "qsv_origem_classificacao": "mecanismo_v3.0",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.ons.org.br/ — calendário PNAST",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F4_cruzamento",
+     "ref": "Cruza Portaria MME 129/2026 + Decreto 12.772/2025",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F3_associacao_email",
+     "ref": "E-mail GT Armazenamento ABSOLAR 07/07/2026 — 'PNAST: ONS divulga lista de agentes admitidos na 1ª Temporada'",
+     "trecho_literal": "o ONS informou que admitiu 367 cadastramentos na 1ª Temporada de Acesso de 2026",
+     "associacao_origem": "ABSOLAR",
+     "gt_origem": "Armazenamento"
+    },
+    {
+     "tipo": "F3_associacao_email",
+     "ref": "E-mail GTGC ABSOLAR 08/07/2026",
+     "trecho_literal": "a lista de agentes habilitados na primeira temporada de acesso do PNAST, totalizando 20,31 GW, distribuído entre 14,56 GW de geração e 5,74 GW de consumo",
+     "associacao_origem": "ABSOLAR",
+     "gt_origem": "Geração Centralizada"
+    }
+   ],
+   "numero_status": "ALEGADO_NAO_ANCORADO",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
+  },
+  {
+   "fato_id": "ONS-NT-CAPACIDADE-REMANESCENTE",
+   "tema": "NT Quantitativos da Capacidade Remanescente do SIN (Art. 11 §4º Portaria 136)",
+   "valor": "Nota Técnica de Quantitativos da Capacidade Remanescente do SIN para Escoamento — define a capacidade por barramento/subárea usada na classificação dos lances do LRCAP. ANCORADO: a Portaria MME 136/2026, Art. 11 §4º, determina que a NT de QUANTITATIVOS 'deverá ser publicada até 30 de setembro de 2026'. AVANÇO 07/07/2026: ONS e EPE publicaram a Nota Técnica Conjunta de METODOLOGIA, premissas e critérios (NT-ONS DPL 0057/2026 = EPE-DEE-RE-067/2026-R0) que precede os quantitativos — ponteiro F3 ABSOLAR (GT Armazenamento, 07/07) + cobertura setorial. Distinguir: a NT de metodologia (07/07, publicada) ≠ NT de quantitativos por barramento (prazo 30/09, ainda pendente). Mantém AZUL até reabertura F1 no site do ONS e ancoragem do documento. (A citação anterior 'Art. 15 §4º' estava errada — o Art. 15 trata da não aplicação do art. 9º da Portaria 514.) FALSO-POSITIVO AFASTADO EM 09/07/2026: a notícia oficial ANEEL 'ANEEL, ONS e EPE divulgam revisão da nota técnica sobre quantitativos da capacidade remanescente do SIN' refere-se à NT-ONS DPL 0005/2026-R1, PUBLICADA EM 15/03/2026, relativa aos LRCAPs de UTE/UHE (Portarias 444/2016, 118/2025 e 119/2025) — NÃO é a NT de armazenamento. A NT de metodologia de BESS (DPL 0057/2026) segue sem reabertura F1; a NT de quantitativos de armazenamento segue pendente (prazo 30/09/2026). Mantém AZUL.",
+   "status": "AGENDADO",
+   "norma": "NT metodologia: NT-ONS DPL 0057/2026 = EPE-DEE-RE-067/2026-R0 (publicada 07/07/2026) · NT quantitativos: Art. 11 §4º da Portaria MME 136/2026 (prazo 30/09/2026)",
+   "url": "https://www.ons.org.br/",
+   "verificado_em": "2026-08-24",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 13,
+   "vetores_afetados": [
+    "V3",
+    "V7"
+   ],
+   "qsv_cor": "AZUL",
+   "qsv_origem_classificacao": "mecanismo_v3.0",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.ons.org.br/ — calendário NT",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F2_DOU",
+     "ref": "Portaria MME 136/2026 Art. 11 §4º (DOU 03/06/2026)",
+     "trecho_literal": "A Nota Técnica de Quantitativos da Capacidade Remanescente do SIN para Escoamento ... deverá ser publicada até 30 de setembro de 2026",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F3_associacao_email",
+     "ref": "E-mail GT Armazenamento ABSOLAR 07/07/2026 — 'NT Conjunta de Metodologia, premissas e critérios para definição da capacidade remanescente'",
+     "trecho_literal": "o ONS e a EPE publicaram a Nota Técnica Conjunta NT-ONS DPL 0057/2026 / EPE-DEE-RE-067/2026-R0 (metodologia, premissas e critérios)",
+     "associacao_origem": "ABSOLAR",
+     "gt_origem": "Armazenamento"
+    }
+   ],
+   "numero_status": "ALEGADO_NAO_ANCORADO",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
+  },
+  {
+   "fato_id": "ONS-SANDBOX-TENSAO",
+   "tema": "Ato ONS · Sandbox Controle de Tensão — vencedores e cronograma",
+   "valor": "ONS publica comunicados sobre vencedores do Sandbox e próximos ciclos. SOA fornece camada QSV + telemetria como evidência de prestação.",
+   "status": "VIGENTE",
+   "norma": "ONS · Sandbox Controle de Tensão",
+   "url": "https://www.ons.org.br/",
+   "verificado_em": "2026-08-24",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 7,
+   "vetores_afetados": [
+    "V7"
+   ],
+   "qsv_cor": "AZUL",
+   "qsv_origem_classificacao": "mecanismo_v3.0",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.ons.org.br/ — comunicados Sandbox",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F4_cruzamento",
+     "ref": "Cruza Sandbox ANEEL e participantes do programa",
+     "trecho_literal": "",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "numero_status": "SEM_NUMEROS",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-06-28"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
+  },
+  {
+   "fato_id": "ONS-RESOLUCAO-CMSE-1-2026-DEVERES",
+   "tema": "Deveres do ONS na Resolução CMSE nº 1/2026 — CRef, metodologia dos estudos prospectivos e avaliação ex-post do despacho por GE",
+   "valor": "ANCORADO NO DOU (21/07/2026), sem depender do portal do ONS: a RESOLUÇÃO CMSE Nº 1, DE 6 DE JULHO DE 2026 (DOU de 08/07/2026, Edição 126, Seção 1, Página 134) atribui três deveres expressos ao Operador Nacional do Sistema Elétrico no rito de autorização de despacho de geração por garantia de suprimento energético (GE): (1) Art. 2º, II — apresentar ao CMSE, previamente a cada autorização ou revisão, estudos prospectivos conjunturais e respectivas premissas, análise de causa/consequência em termos de ganho percentual de armazenamento nos reservatórios de regularização, análise de soluções alternativas, resultados parciais (quando houver autorização vigente) e justificativa da alternativa recomendada; (2) Art. 3º, I — elaborar estudo técnico com propostas de Curva Referencial de Armazenamento (CRef) para o ano subsequente até NOVEMBRO de cada ano (o CMSE aprova até dezembro); (3) Art. 4º, I — disponibilizar, em até 180 (cento e oitenta) dias da publicação da Resolução, a METODOLOGIA de elaboração ordinária dos estudos prospectivos conjunturais, 'observando o princípio da transparência', com atualizações quando houver alterações relevantes; e (4) Art. 6º, I — apresentar, anualmente até a terceira reunião ordinária do CMSE do ano subsequente, relatório de avaliação com as causas das deliberações, os MONTANTES DE GERAÇÃO VERIFICADOS e a análise comparativa entre resultados energéticos PREVISTOS E VERIFICADOS. RELEVÂNCIA SOA/SOS: é obrigação regulatória de publicar metodologia e de comparar previsto contra verificado — o mesmo eixo ex-post da camada de evidência. Convergência de arcabouço; não menciona a SOA/SOS.",
+   "status": "VIGENTE",
+   "norma": "Resolução CMSE nº 1, de 6 de julho de 2026, arts. 2º, II; 3º, I; 4º, I; e 6º, I — DOU 08/07/2026, Ed. 126, Seção 1, p. 134",
+   "url": "https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
+   "verificado_em": "2026-08-24",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 11,
+   "vetores_afetados": [
+    "V3",
+    "V4"
+   ],
+   "qsv_cor": "VERDE",
+   "qsv_origem_classificacao": "F2_DOU_ato_lido_integralmente_21jul2026 + F1_MME_noticia_09jul2026 (R2 atendida)",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F2_DOU",
+     "ref": "RESOLUÇÃO CMSE Nº 1, DE 6 DE JULHO DE 2026 — DOU 08/07/2026, Edição 126, Seção 1, Página 134 — https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
+     "trecho_literal": "Art. 3º [...] I - o ONS deverá elaborar estudo técnico com propostas de CRef para o ano subsequente, até novembro de cada ano [...] Art. 4º [...] I - o ONS deverá disponibilizar, em até 180 (cento e oitenta) dias da publicação desta Resolução, metodologia para elaboração ordinária dos estudos prospectivos conjunturais ao CMSE, observando o princípio da transparência",
+     "nota_qsv": "Ancorado no ato, não no portal do ONS — que permanece inacessível a varredura automatizada (SPA/SharePoint retorna apenas o template de menu, inclusive com render JS e espera de 3s, reteste em 21/07/2026).",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "numero_status": "ANCORADO",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-07-21"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null,
+   "orgao": "ONS",
+   "gatilho_revisao": "Publicação da metodologia dos estudos prospectivos pelo ONS (prazo do Art. 4º, I: 180 dias de 08/07/2026, ~04/01/2027 por contagem própria) e primeira CRef aprovada pelo CMSE (até dezembro/2026).",
+   "pendencia_verificacao": "Os deveres estão ancorados no ato. O CUMPRIMENTO por parte do ONS não foi verificado — o portal do ONS segue cego para o monitor. Não afirmar que o ONS publicou metodologia ou CRef sem reabrir a fonte."
+  },
+  {
+   "fato_id": "ONS-PORTARIA-140-2026-DEVERES",
+   "tema": "Deveres do ONS na Portaria Normativa MME 140/2026 - funcoes de produtividade, atualizacao de dados e apuracao dos cortes",
+   "valor": "Ancorado no texto integral da Portaria Normativa MME no 140, de 18/07/2026 (DOU de 21/07/2026, Edicao Extra, Secao 1), lido em 07/08/2026. A portaria atribui ao ONS DOIS RITOS DISTINTOS, com prazos proprios contados da publicacao. RITO 1 - FUNCOES DE PRODUTIVIDADE FOTOVOLTAICAS (art. 4o), para o periodo de 1o/09/2023 a 31/03/2024: em ate 5 dias divulgar em seu sitio o cronograma, as especificacoes tecnicas, os criterios de validacao e as demais informacoes do procedimento (termo em 27/07/2026); em ate 20 dias os agentes apresentam os registros de medicao solarimetrica (10/08/2026); em ate 40 dias o ONS divulga as funcoes elaboradas - o 40o dia cai em domingo, 30/08/2026, e o art. 4o par. 4o prorroga o termo para 31/08/2026; contestacao justificada em 10 dias; em ate 20 dias do fim das contestacoes o ONS divulga as funcoes atualizadas e as analises das contestacoes. RITO 2 - ATUALIZACAO DE INFORMACOES PARA APURACAO E CLASSIFICACAO (art. 5o), periodo de 1o/09/2023 a 10/02/2025, abrangendo medicao anemometrica ou solarimetrica, geracao verificada e disponibilidade: em ate 120 dias da publicacao (18/11/2026) o ONS deve desenvolver ferramenta computacional para o recebimento e divulgar cronograma, especificacoes tecnicas e criterios de validacao; os interessados tem 30 dias para apresentar; o ONS tem 90 dias para analisar a consistencia e divulgar as analises e a base de dados resultante; contestacao em 10 dias; em ate 30 dias o ONS divulga a analise das contestacoes e envia a CCEE a base final, que deve conter no minimo a estimativa de geracao em base horaria usada no calculo dos montantes de corte e a variacao dessa estimativa por usina ou conjunto de usinas em decorrencia da atualizacao. CRITERIO DE ACEITACAO DO DADO (art. 5o, par. 2o e 3o): a informacao atualizada deve corresponder de forma fidedigna ao valor efetivamente disponivel no instante do evento e estar registrada no sistema de medicao da usina; so e aceita a atualizacao se tiver sido constatada falha no recebimento em tempo real via supervisao da operacao, ou se houver informacao mais fidedigna registrada nos sistemas de medicao da usina. CLASSIFICACAO (art. 5o, par. 4o e 5o): o ONS apura os cortes em janelas horarias e os enquadra exclusivamente em indisponibilidade externa, confiabilidade eletrica ou sobreoferta; havendo classificacoes distintas na mesma janela, independentemente da duracao, prevalece a indisponibilidade externa e, subsidiariamente, a confiabilidade eletrica. RELEVANCIA SOA/SOS: e a primeira vez que um ato normativo fixa, para o Operador, prazo de divulgacao de criterios de validacao de serie temporal e um criterio expresso de admissibilidade de dado retroativo. O art. 11 da portaria condiciona a incorporacao dessas informacoes as bases do ONS e da CCEE a celebracao do Termo de Compromisso pelo agente.",
+   "status": "VIGENTE",
+   "norma": "Portaria Normativa MME no 140, de 18/07/2026, arts. 4o, 5o e 11 · DOU de 21/07/2026, Edicao Extra, Secao 1",
+   "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
+   "verificado_em": "2026-08-24",
+   "tipo_fato": "REGULATORIO_NORMATIVO",
+   "score_soa": 20,
+   "vetores_afetados": [
+    "V4",
+    "V3",
+    "sHEC"
+   ],
+   "qsv_cor": "VERDE",
+   "qsv_origem_classificacao": "F1_texto_integral_reaberto_07ago2026 - deveres extraidos do texto do ato no repositorio oficial do orgao emissor. Copia arquivada em _Fontes_F1_Portaria_140/",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_texto_integral_oficial",
+     "ref": "gov.br/mme - repositorio oficial de legislacao, arquivo portaria-normativa-mme-n-140-2026.pdf (10 paginas), lido integralmente em 07/08/2026",
+     "trecho_literal": "PORTARIA NORMATIVA MME No 140, DE 18 DE JULHO DE 2026 ... Art. 1o Paragrafo unico. Para uma dada usina, sera objeto de compensacao o evento de corte de geracao ocorrido de 1o de setembro de 2023 ate 25 de novembro de 2025, inclusive, desde que decorrente de eventos de confiabilidade eletrica ou de indisponibilidade externa ... Este texto nao substitui o publicado no DOU de 21.7.2026 (Edicao Extra) - Secao 1.",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "numero_status": "ANCORADO_EM_TEXTO_INTEGRAL_OFICIAL_DO_ORGAO_COM_CARIMBO_DOU",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-08-07"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null,
+   "gatilho_revisao": "publicacao das funcoes de produtividade pelo ONS, termo em 31/08/2026; abertura da ferramenta computacional do art. 5o, termo em 18/11/2026",
+   "pendencia_verificacao": "O cumprimento pelo ONS do prazo de 5 dias do art. 4o par. 1o I, com termo em 27/07/2026, NAO foi verificado de forma independente: ons.org.br devolveu HTTP 502 na home de noticias e template nao renderizado na raiz, quarta execucao consecutiva. A ABSOLAR relatou em F3 que o cronograma nao havia sido publicado ate 03/08; a reuniao ABSOLAR com o ONS de 04/08 indica que o procedimento estava em curso. Reabrir ons.org.br assim que responder. || [CARIMBO NAO E LEITURA - consolidadora 24/08/2026] O campo verificado_em deste fato foi levado a 24/08/2026 pelo motor de fatos, que promove a hoje todo fato BYTE-IDENTICO ao baseline quando o monitor dono do arquivo rodou no dia. O motor NAO checa se a fonte abriu. Nesta execucao a varredura consolidadora reabriu as duas fontes e registra: portal do ONS servindo template vazio com placeholders nao preenchidos pela 12a execucao consecutiva, e portal de consultas publicas da CCEE em HTTP 403 pela 5a execucao consecutiva. Portanto: inalterado NAO equivale a reconfirmado. Nao afirmar frescor de hoje para este fato em peca, e-mail ou material. Pendencia de decisao do CEO registrada em _ACAO_CEO_CONSOLIDADO.md."
+  },
+  {
+   "fato_id": "ONS-NT-DPL-0031-2024-REVISAO-FV",
+   "tema": "NT-ONS DPL 0031/2024 — revisao das funcoes de produtividade de usinas fotovoltaicas",
+   "valor": "O ONS revisou a NT-ONS DPL 0031/2024, que descreve a metodologia de estimativa das funcoes de produtividade de usinas fotovoltaicas, depois de identificar inconsistencia no calculo de geracao em determinadas horas do dia. Conforme noticiado, o criterio de filtragem de dados de irradiancia era excessivamente conservador e descartava medicoes validas nos periodos de nascer e por do sol, comprometendo a estimativa de geracao nesses horarios. As correcoes foram recalculadas para dezembro de 2025, janeiro e fevereiro de 2026, com incorporacao permanente na revisao de marco de 2026; as funcoes corrigidas foram disponibilizadas para consulta no portal SINtegre, no arquivo 'Funcoes Prod-2026 Revisadas.zip'. PONTO DE MAIOR RELEVANCIA: as usinas cujos agentes reenviaram informacoes para a revisao anual NAO foram afetadas pela correcao — a distorcao atingiu as que dependiam dos dados de supervisao do ONS. As funcoes de produtividade alimentam analises de constrained-off fotovoltaico. BORDA DIRETA com o art. 4o da Portaria Normativa MME 140/2026, que manda o ONS divulgar as funcoes de produtividade ate 31/08/2026 e assegura contestacao fundamentada: ha precedente documentado de que a metodologia do proprio Operador ja errou, de forma conservadora, exatamente nas horas de borda do dia, e de que enviar dado proprio insulou o agente do erro. Pendente de confirmacao em F1: o texto da NT nao foi aberto nesta run.",
+   "status": "VIGENTE",
+   "norma": "NT-ONS DPL 0031/2024 (metodologia das funcoes de produtividade FV) · art. 4o da Portaria Normativa MME 140/2026 (divulgacao ate 31/08/2026 e contestacao)",
+   "url": "https://www.ons.org.br/",
+   "verificado_em": "2026-08-24",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 13,
+   "vetores_afetados": [
+    "V1",
+    "V3",
+    "V7"
+   ],
+   "qsv_cor": "LARANJA",
+   "qsv_origem_classificacao": "F2_imprensa_especializada_sem_texto_integral",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F2_imprensa_especializada",
+     "ref": "Canal Solar, 'ONS atualiza nota tecnica apos rever calculo de usinas solares', 13/05/2026 — https://canalsolar.com.br/ons-atualiza-nota-tecnica-calculo-usinas-solares/",
+     "trecho_literal": "criterios excessivamente conservadores na filtragem de dados de irradiancia solar",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "numero_status": "ALEGADO_NAO_ANCORADO",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-08-08"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null
+  }
+ ],
+ "_pendentes_verificacao": [
+  {
+   "fato_id": "ONS-CRONOGRAMA-CRITERIOS-VALIDACAO-PORT140",
+   "tema": "ONS — cronograma, especificacoes tecnicas e criterios de validacao dos dados do ressarcimento (Portaria MME 140/2026): publicacao NAO LOCALIZADA na area publica",
+   "valor": "Verificacao NEGATIVA de 28/07/2026, agora com o portal do ONS NO AR (nos dois dias anteriores ele retornava 502/timeout, o que invalidava a verificacao). A area publica de noticias do ONS, lida com navegador em 28/07 as ~14h20, exibe as 10 publicacoes mais recentes (10/07 a 27/07) e NENHUMA trata do cronograma, das especificacoes tecnicas ou dos criterios de validacao dos dados do ressarcimento por cortes de geracao. O prazo correspondente venceu em 27/07/2026. ⚠ NAO SE AFIRMA DESCUMPRIMENTO: a divulgacao pode ter ocorrido em canal restrito a agentes (SINTEGRE), fora do alcance desta rotina — e a camada portal do monitor GT ABSOLAR esta parada desde 16/07. ⚠ O proprio prazo de 5 dias e o de 120 dias para a ferramenta de atualizacao em lote (~18/11/2026) sao PENDENTE DE VERIFICACAO F1 (ver o campo pendencia_verificacao) no texto da Portaria 140 no DOU, que nao foi lido nesta run. LEITURA SOA: e este documento que define COMO o contrafactual de corte sera reconstruido — e, portanto, onde a tese de verificacao ex-post tem lastro procedimental.",
+   "status": "PUBLICACAO NAO LOCALIZADA — verificacao negativa com portal no ar",
+   "norma": "Portaria MME no 140, de 18/07/2026 (DOU 21/07/2026) — prazo vencido em 27/07/2026",
+   "url": "https://www.ons.org.br/paginas/imprensa/noticias",
+   "verificado_em": "2026-07-28",
+   "tipo_fato": "REGULATORIO_NORMATIVO",
+   "score_soa": 18,
+   "vetores_afetados": [
+    "V4",
+    "sHEC"
+   ],
+   "qsv_cor": "LARANJA",
+   "qsv_origem_classificacao": "verificacao_negativa_F1_28jul2026_portal_no_ar",
+   "numero_status": "SEM_NUMEROS",
+   "motivo_pendencia": "Exige camada portal / SINTEGRE (Chrome logado, sessao interativa). Reverificar diariamente ate 10/08.",
+   "pendencia_verificacao": "Checar tambem a area de Procedimentos de Rede e a de comunicados a agentes, nao so a de imprensa. || ANDAIME MOVIDO DO CAMPO RENDERIZADO EM 28/07/2026 (exigencia do gate validar_fatos.py, regra E1). Marcacoes originais: [A VERIFICAR F1]. Sentido inalterado: os elementos assim marcados NAO estao ancorados em fonte primaria reaberta e nao podem ser citados externamente ate a leitura do ato no DOU."
+  },
+  {
+   "fato_id": "ONS-PROCEDIMENTOS-REDE-DECRETO-12772-2025",
+   "tema": "ONS — prazo de ate 45 dias para propor alteracoes nos Procedimentos de Rede decorrentes do Decreto no 12.772/2025 (determinacao ainda NAO proclamada)",
+   "valor": "Origem F1 ANEEL (nao ONS): item 6 da 15a RPO de 28/07/2026, Processo 48500.000846/2026-82. O voto do Diretor-Relator Fernando Mosna, acompanhado por Gentil Nogueira de Sa Junior e Willamy Moreira Frota, determina ao ONS 'o envio, no prazo de ate 45 dias, de propostas de alteracao, bem como de outras que se mostrem necessarias, dos Procedimentos de Rede relacionados a operacionalizacao das atribuicoes que lhe foram delegadas pelo Decreto no 12.772/2025'. ⚠ CONDICIONAL — NAO E PRAZO EM VIGOR: o Diretor-Geral Sandoval de Araujo Feitosa Neto pediu vista do processo, de modo que o resultado NAO foi proclamado. A ata registra que os votos anteriores a vista continuam validos, facultada reforma ate a proclamacao (art. 53 §2o da NO no 1 / REN 1.133/2025). O termo inicial dos 45 dias so existe apos a proclamacao. NAO tratar como obrigacao vigente do ONS nem cravar data-limite.",
+   "status": "CONDICIONAL — voto proferido, resultado NAO proclamado (processo sob vista)",
+   "norma": "Item 6 da 15a RPO da ANEEL de 28/07/2026 (previa) · Decreto no 12.772/2025 · REN 905/2020, Modulos 1 e 5",
+   "url": "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/dsp_detalheNoticia.cfm?idNoticia=14784&idAreaNoticia=425",
+   "verificado_em": "2026-07-29",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "qsv_cor": "LARANJA",
+   "qsv_origem_classificacao": "F1_institucional_ANEEL_reaberta_29jul2026 — obrigacao condicionada a proclamacao do resultado",
+   "gatilho_revisao": "proclamacao do resultado do item 6 apos a vista; publicacao da REN; envio efetivo das propostas pelo ONS"
+  }
+ ],
+ "_historico_caidos": []
 }
