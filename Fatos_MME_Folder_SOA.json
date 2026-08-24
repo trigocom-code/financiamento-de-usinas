@@ -3,7 +3,7 @@
     "orgao": "MME",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo MME — schema v1.3. Aplicada Precedência v1.2. Portaria 136/2026 enriquecida em 04/07/2026 (leitura integral: art. 5º/7º/9º + Anexo II). Portaria Normativa 140/2026 lida na integra em 07/08/2026 no texto oficial do MME (10 paginas) - fato promovido de LARANJA para VERDE.",
-    "verificado_em": "2026-08-21",
+    "verificado_em": "2026-08-24",
     "proxima_revisao_sugerida": "2026-07-29",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina MME conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
@@ -33,7 +33,7 @@
       "status": "AGENDADO",
       "norma": "Portaria MME 136/2026 · DOU 03/06/2026 · arts. 5º, 7º, 9º, 11 + Anexo II",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-08-21",
+      "verificado_em": "2026-08-24",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 18,
       "vetores_afetados": [
@@ -88,7 +88,7 @@
       "status": "VIGENTE",
       "norma": "Decreto 12.772/2025 (institui a PNAST) + Portaria MME 129/2026 (Temporadas de Acesso)",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-08-21",
+      "verificado_em": "2026-08-24",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -130,7 +130,7 @@
       "status": "VIGENTE",
       "norma": "Lei 14.948/2024 (PNH2) + Lei 15.042/2024 (SBCE) · Planalto",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-08-21",
+      "verificado_em": "2026-08-24",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -172,7 +172,7 @@
       "status": "VIGENTE",
       "norma": "Portaria MME 111/2025 (18/06/2025) + Portaria MME 126/2026 (28/01/2026, altera a 111)",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-08-21",
+      "verificado_em": "2026-08-24",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -214,7 +214,7 @@
       "status": "VIGENTE",
       "norma": "MME · SNTEP",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-08-21",
+      "verificado_em": "2026-08-24",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -256,7 +256,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "MME · REDATA · PL 278/2026 (Senado, travado)",
       "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-08-21",
+      "verificado_em": "2026-08-24",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -298,7 +298,7 @@
       "status": "EM CONSULTA PÚBLICA (encerramento 13/08/2026)",
       "norma": "Portaria SNTEP/MME nº 3.159, de 10 de julho de 2026 — DOU de 14/07/2026, Edição 130, Seção 1, Página 99 · POTEE 2026 — Ampliações e Reforços (1ª emissão)",
       "url": "https://www.in.gov.br/web/dou/-/portaria-sntep/mme-n-3.159-de-10-de-julho-de-2026-718727025",
-      "verificado_em": "2026-08-21",
+      "verificado_em": "2026-08-24",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -336,7 +336,7 @@
       "status": "VIGENTE",
       "norma": "Resolução CMSE nº 1, de 6 de julho de 2026 — DOU de 08/07/2026, Edição 126, Seção 1, Página 134",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
-      "verificado_em": "2026-08-21",
+      "verificado_em": "2026-08-24",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -374,7 +374,7 @@
       "status": "VIGENTE",
       "norma": "Portaria Normativa MME no 140, de 18/07/2026 · DOU de 21/07/2026, Edicao Extra, Secao 1 · regulamenta o art. 1o-B da Lei no 10.848/2004, incluido pela Lei no 15.269, de 24/11/2025 · Processo 48370.000267/2025-81",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
-      "verificado_em": "2026-08-21",
+      "verificado_em": "2026-08-24",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 20,
       "vetores_afetados": [
