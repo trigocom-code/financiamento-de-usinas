@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-08-25T08:25:02-03:00",
+                  "gerado_em":  "2026-08-25T12:25:02-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
@@ -26,7 +26,7 @@
                      "arq-com-cto-otavio-a1b7.html":  "2026-07-04T21:48:43-03:00",
                      "baterias-curtailment.html":  "2026-08-21T13:04:48-03:00",
                      "bitcoin-verde-soa.html":  "2026-08-21T13:04:48-03:00",
-                     "capital-verde-usinas.html":  "2026-08-21T15:28:21-03:00",
+                     "capital-verde-usinas.html":  "2026-08-25T08:39:16-03:00",
                      "carta-ane-acu-iii-soa.html":  "2026-08-05T16:43:33-03:00",
                      "Catalogo_Vivos_SOA.html":  "2026-07-23T16:22:44-03:00",
                      "catalogo-vetores-soa.html":  "2026-07-04T23:42:40-03:00",
@@ -43,7 +43,7 @@
                      "Fatos_IPTUVerde_Folder_SOA.json":  "2026-08-22T08:20:09-03:00",
                      "Fatos_MME_Folder_SOA.json":  "2026-08-25T08:20:05-03:00",
                      "Fatos_ONS_Folder_SOA.json":  "2026-08-24T08:49:46-03:00",
-                     "Fatos_Regulatorios_Folder_SOA.json":  "2026-08-24T08:48:39-03:00",
+                     "Fatos_Regulatorios_Folder_SOA.json":  "2026-08-25T08:54:22-03:00",
                      "Fatos_Seguros_Folder_SOA.json":  "2026-08-21T15:41:03-03:00",
                      "Folder_Vivo_ANEEL_GitHub.html":  "2026-07-05T06:47:11-03:00",
                      "Folder_Vivo_CapitalVerde_GitHub.html":  "2026-07-04T04:43:05-03:00",
