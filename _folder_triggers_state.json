@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-08-25 08:20",
+                  "gerado_em":  "2026-08-26 08:20",
                   "modo":  "v2 canario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
@@ -44,7 +44,7 @@
                                                            },
                                        "monitor-regulatorio-soa":  {
                                                                        "hoje":  "SIM",
-                                                                       "ultimo":  "2026-08-25"
+                                                                       "ultimo":  "2026-08-26"
                                                                    },
                                        "monitor-capital-verde-soa":  {
                                                                          "hoje":  "NAO",
@@ -96,7 +96,7 @@
                  },
     "folders":  {
                     "baterias-curtailment.html":  {
-                                                      "ciclo":  "2026-08-25",
+                                                      "ciclo":  "2026-08-26",
                                                       "categoria":  "vivo_sob_gatilho",
                                                       "estado":  "estavel",
                                                       "motivo":  "quadro parado; monitores rodaram no ciclo e dado fresco",
@@ -107,12 +107,12 @@
                                                       "monitores_parados":  [
 
                                                                             ],
-                                                      "idade_max_dias":  1,
+                                                      "idade_max_dias":  2,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_ANEEL",
                                                                        "ref":  "ANEEL-REN-1161-2026-BESS",
-                                                                       "verificado_em":  "2026-08-25",
+                                                                       "verificado_em":  "2026-08-26",
                                                                        "qsv_cor":  "VERDE",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
@@ -121,7 +121,7 @@
                                                                    {
                                                                        "json":  "Fatos_MME",
                                                                        "ref":  "MME-PORTARIA-136-2026-LRCAP",
-                                                                       "verificado_em":  "2026-08-25",
+                                                                       "verificado_em":  "2026-08-26",
                                                                        "qsv_cor":  "VERDE",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
@@ -130,7 +130,7 @@
                                                                    {
                                                                        "json":  "Fatos_ANEEL",
                                                                        "ref":  "ANEEL-REN-1071-LRCAP",
-                                                                       "verificado_em":  "2026-08-25",
+                                                                       "verificado_em":  "2026-08-26",
                                                                        "qsv_cor":  "VERDE",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
@@ -148,7 +148,7 @@
                                                                    {
                                                                        "json":  "Fatos_EPE",
                                                                        "ref":  "EPE-MAPA-BARRAMENTOS-LRCAP",
-                                                                       "verificado_em":  "2026-08-25",
+                                                                       "verificado_em":  "2026-08-26",
                                                                        "qsv_cor":  "VERDE",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
@@ -160,7 +160,7 @@
                                                       "proposta_ref":  null
                                                   },
                     "prova-horaria-datacenters.html":  {
-                                                           "ciclo":  "2026-08-25",
+                                                           "ciclo":  "2026-08-26",
                                                            "categoria":  "vivo_sob_gatilho",
                                                            "estado":  "herda_pendente",
                                                            "motivo":  "depende de fato pendente: MME-REDATA (EM DELIBERAÇÃO); MME-MP-1318-2025 (CADUCADA)",
@@ -176,7 +176,7 @@
                                                                         {
                                                                             "json":  "Fatos_MME",
                                                                             "ref":  "MME-REDATA",
-                                                                            "verificado_em":  "2026-08-25",
+                                                                            "verificado_em":  "2026-08-26",
                                                                             "qsv_cor":  "AZUL",
                                                                             "monitor":  "monitor-regulatorio-soa",
                                                                             "achou":  true,
@@ -185,7 +185,7 @@
                                                                         {
                                                                             "json":  "Fatos_MME",
                                                                             "ref":  "MME-MP-1318-2025",
-                                                                            "verificado_em":  "2026-08-25",
+                                                                            "verificado_em":  "2026-08-26",
                                                                             "qsv_cor":  "LARANJA",
                                                                             "monitor":  "monitor-regulatorio-soa",
                                                                             "achou":  true,
@@ -197,7 +197,7 @@
                                                            "proposta_ref":  null
                                                        },
                     "gato-solar-soa.html":  {
-                                                "ciclo":  "2026-08-25",
+                                                "ciclo":  "2026-08-26",
                                                 "categoria":  "vivo_sob_gatilho",
                                                 "estado":  "herda_pendente",
                                                 "motivo":  "depende de fato pendente: ANEEL-CP-009-GATO-SOLAR (EM DELIBERAÇÃO)",
@@ -213,7 +213,7 @@
                                                              {
                                                                  "json":  "Fatos_ANEEL",
                                                                  "ref":  "ANEEL-CP-009-GATO-SOLAR",
-                                                                 "verificado_em":  "2026-08-25",
+                                                                 "verificado_em":  "2026-08-26",
                                                                  "qsv_cor":  "AZUL",
                                                                  "monitor":  "monitor-regulatorio-soa",
                                                                  "achou":  true,
@@ -222,7 +222,7 @@
                                                              {
                                                                  "json":  "Fatos_ANEEL",
                                                                  "ref":  "ANEEL-REN-1059-2023",
-                                                                 "verificado_em":  "2026-08-25",
+                                                                 "verificado_em":  "2026-08-26",
                                                                  "qsv_cor":  "AZUL",
                                                                  "monitor":  "monitor-regulatorio-soa",
                                                                  "achou":  true,
@@ -234,7 +234,7 @@
                                                 "proposta_ref":  null
                                             },
                     "contencioso-curtailment.html":  {
-                                                         "ciclo":  "2026-08-25",
+                                                         "ciclo":  "2026-08-26",
                                                          "categoria":  "vivo_sob_gatilho",
                                                          "estado":  "herda_pendente",
                                                          "motivo":  "depende de fato pendente: ANEEL-CP-045-2019 (EM DELIBERAÇÃO)",
@@ -245,7 +245,7 @@
                                                          "monitores_parados":  [
 
                                                                                ],
-                                                         "idade_max_dias":  1,
+                                                         "idade_max_dias":  2,
                                                          "deps":  [
                                                                       {
                                                                           "json":  "Fatos_CCEE",
@@ -259,7 +259,7 @@
                                                                       {
                                                                           "json":  "Fatos_ANEEL",
                                                                           "ref":  "ANEEL-CP-045-2019",
-                                                                          "verificado_em":  "2026-08-25",
+                                                                          "verificado_em":  "2026-08-26",
                                                                           "qsv_cor":  "AZUL",
                                                                           "monitor":  "monitor-regulatorio-soa",
                                                                           "achou":  true,
@@ -271,7 +271,7 @@
                                                          "proposta_ref":  null
                                                      },
                     "bitcoin-verde-soa.html":  {
-                                                   "ciclo":  "2026-08-25",
+                                                   "ciclo":  "2026-08-26",
                                                    "categoria":  "vivo_sob_gatilho",
                                                    "estado":  "herda_pendente",
                                                    "motivo":  "depende de fato pendente: MME-REDATA (EM DELIBERAÇÃO)",
@@ -287,7 +287,7 @@
                                                                 {
                                                                     "json":  "Fatos_MME",
                                                                     "ref":  "MME-REDATA",
-                                                                    "verificado_em":  "2026-08-25",
+                                                                    "verificado_em":  "2026-08-26",
                                                                     "qsv_cor":  "AZUL",
                                                                     "monitor":  "monitor-regulatorio-soa",
                                                                     "achou":  true,
@@ -299,10 +299,10 @@
                                                    "proposta_ref":  null
                                                },
                     "certificacao-esg-auditavel.html":  {
-                                                            "ciclo":  "2026-08-25",
+                                                            "ciclo":  "2026-08-26",
                                                             "categoria":  "vivo_sob_gatilho",
                                                             "estado":  "avaliacao_represada",
-                                                            "motivo":  "monitor(es) nao rodou no ciclo 2026-08-25: monitor-esg-soa",
+                                                            "motivo":  "monitor(es) nao rodou no ciclo 2026-08-26: monitor-esg-soa",
                                                             "aguarda_fonte":  false,
                                                             "monitores_dependentes":  [
                                                                                           "monitor-esg-soa"
@@ -310,7 +310,7 @@
                                                             "monitores_parados":  [
                                                                                       "monitor-esg-soa"
                                                                                   ],
-                                                            "idade_max_dias":  4,
+                                                            "idade_max_dias":  5,
                                                             "deps":  [
                                                                          {
                                                                              "json":  "Fatos_ESG",
@@ -336,7 +336,7 @@
                                                             "proposta_ref":  null
                                                         },
                     "acesso-transmissao-pnast.html":  {
-                                                          "ciclo":  "2026-08-25",
+                                                          "ciclo":  "2026-08-26",
                                                           "categoria":  "vivo_sob_gatilho",
                                                           "estado":  "estavel",
                                                           "motivo":  "quadro parado; monitores rodaram no ciclo e dado fresco",
@@ -347,12 +347,12 @@
                                                           "monitores_parados":  [
 
                                                                                 ],
-                                                          "idade_max_dias":  1,
+                                                          "idade_max_dias":  2,
                                                           "deps":  [
                                                                        {
                                                                            "json":  "Fatos_MME",
                                                                            "ref":  "MME-PORTARIA-129-DEC-12772",
-                                                                           "verificado_em":  "2026-08-25",
+                                                                           "verificado_em":  "2026-08-26",
                                                                            "qsv_cor":  "AZUL",
                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                            "achou":  true,
@@ -370,7 +370,7 @@
                                                                        {
                                                                            "json":  "Fatos_EPE",
                                                                            "ref":  "EPE-PET-PELP",
-                                                                           "verificado_em":  "2026-08-25",
+                                                                           "verificado_em":  "2026-08-26",
                                                                            "qsv_cor":  "AZUL",
                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                            "achou":  true,
@@ -379,7 +379,7 @@
                                                                        {
                                                                            "json":  "Fatos_EPE",
                                                                            "ref":  "EPE-ATENDIMENTO-PARA",
-                                                                           "verificado_em":  "2026-08-25",
+                                                                           "verificado_em":  "2026-08-26",
                                                                            "qsv_cor":  "VERDE",
                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                            "achou":  true,
@@ -391,10 +391,10 @@
                                                           "proposta_ref":  null
                                                       },
                     "capital-verde-usinas.html":  {
-                                                      "ciclo":  "2026-08-25",
+                                                      "ciclo":  "2026-08-26",
                                                       "categoria":  "vivo_sob_gatilho",
                                                       "estado":  "avaliacao_represada",
-                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-08-25: monitor-capital-verde-soa",
+                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-08-26: monitor-capital-verde-soa",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-capital-verde-soa"
@@ -402,7 +402,7 @@
                                                       "monitores_parados":  [
                                                                                 "monitor-capital-verde-soa"
                                                                             ],
-                                                      "idade_max_dias":  4,
+                                                      "idade_max_dias":  5,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
@@ -455,10 +455,10 @@
                                                       "proposta_ref":  null
                                                   },
                     "hidrogenio-prova-horaria.html":  {
-                                                          "ciclo":  "2026-08-25",
+                                                          "ciclo":  "2026-08-26",
                                                           "categoria":  "vivo_sob_gatilho",
                                                           "estado":  "avaliacao_represada",
-                                                          "motivo":  "monitor(es) nao rodou no ciclo 2026-08-25: monitor-esg-soa",
+                                                          "motivo":  "monitor(es) nao rodou no ciclo 2026-08-26: monitor-esg-soa",
                                                           "aguarda_fonte":  false,
                                                           "monitores_dependentes":  [
                                                                                         "monitor-regulatorio-soa",
@@ -467,12 +467,12 @@
                                                           "monitores_parados":  [
                                                                                     "monitor-esg-soa"
                                                                                 ],
-                                                          "idade_max_dias":  4,
+                                                          "idade_max_dias":  5,
                                                           "deps":  [
                                                                        {
                                                                            "json":  "Fatos_MME",
                                                                            "ref":  "MME-PNH2",
-                                                                           "verificado_em":  "2026-08-25",
+                                                                           "verificado_em":  "2026-08-26",
                                                                            "qsv_cor":  "AZUL",
                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                            "achou":  true,
@@ -481,7 +481,7 @@
                                                                        {
                                                                            "json":  "Fatos_EPE",
                                                                            "ref":  "EPE-CARGAS-CE-PI",
-                                                                           "verificado_em":  "2026-08-25",
+                                                                           "verificado_em":  "2026-08-26",
                                                                            "qsv_cor":  "AZUL",
                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                            "achou":  true,
