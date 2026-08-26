@@ -506,6 +506,26 @@
    "agente_comercial_envolvido": null,
    "pendencia_verificacao": "Não confundir encargo de Diretora Substituta com relatoria de processos. A destinação do voto-vista do ex-diretor Mosna na CP 45/19 segue sem resposta em fonte primária.",
    "historico_pendencia_origem": ""
+  },
+  {
+   "fato_id": "ANEEL-CP-ECR-TETO-CDE-ART7-LEI-15269",
+   "orgao": "ANEEL",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "tema": "CP ANEEL no 28/2026 — Encargo de Complemento de Recursos (ECR) e teto da CDE, art. 7o da Lei no 15.269/2025: ABERTA, contribuicoes de 26/08 a 09/10/2026",
+   "valor": "CONSULTA PUBLICA ABERTA E ANCORADA EM F1. Aviso de Consulta Publica no 28/2026 da ANEEL, publicado no DOU de 26/08/2026, Secao 3, pagina 124. Processo no 48500.022172/2026-77. OBJETO VERBATIM: 'obter subsidios para aprimorar a proposta de revisao normativa para implementacao do Encargo de Complemento de Recursos - ECR e do Teto da Conta de Desenvolvimento Energetico - CDE, nos termos do artigo 7o da Lei no 15.269 de 24 de novembro de 2025, com aplicacao provisoria dos elementos e nova estrutura orcamentaria para fins de instrucao do processo da CDE/2027.' Modalidade: Intercambio de documentos. PERIODO PARA ENVIO VERBATIM: '26/8/2026 a 9/10/2026'. O aviso remete a integra ao endereco gov.br/aneel, menu 'Acesso a informacao', item 'Participacao Social', subitem 'Consultas Publicas'. HISTORICO DO REGISTRO: o item constava da pauta da 17a Reuniao Publica Ordinaria de 24/08/2026, relatora Agnes Maria de Aragao da Costa, mesmo numero de processo, com campo de decisao vazio no CSV de dados abertos gerado em 21/08/2026. A deliberacao ocorreu e o aviso saiu: o numero da consulta e a janela deixam de ser desconhecidos. IMPORTANCIA PARA A SOA/SOS: e a consulta que regulamenta o mecanismo pelo qual o excedente da CDE passa a ser cobrado diretamente dos beneficiarios dos subsidios correspondentes, e a NT 145/2026-STR simulou que Fontes Incentivadas e MMGD ultrapassariam o teto. A janela de contribuicao corre ate 09/10/2026.",
+   "status": "CONSULTA PUBLICA ABERTA — contribuicoes ate 09/10/2026",
+   "qsv_cor": "VERDE",
+   "norma": "Aviso de Consulta Publica ANEEL no 28/2026 — DOU de 26/08/2026, Secao 3, p. 124 · Processo no 48500.022172/2026-77 · art. 7o da Lei no 15.269/2025",
+   "numero_status": "ANCORADO",
+   "fonte": "F1 — DOU, in.gov.br, edicao de 26/08/2026, Secao 3, pagina 124: Aviso de Consulta Publica no 28/2026 aberto e lido na integra em 26/08/2026 pela rotina consolidadora.",
+   "verificado_em": "2026-08-26",
+   "gatilho_revisao": "publicacao da nota tecnica de fundamentacao da CP 28/2026; encerramento do prazo em 09/10/2026; publicacao da resolucao normativa resultante; eventual prorrogacao",
+   "pendencia_verificacao": "A NOTA TECNICA E A MINUTA DA CP 28/2026 NAO FORAM LIDAS. O aviso do DOU nao traz o mérito: traz objeto, modalidade e janela. Nao usar em peca, e-mail ou material qualquer parametro de calculo do ECR, Fator ECR, valor de teto ou estimativa de encargo a partir deste registro. A NT 145/2026-STR, que recomenda consulta por 45 dias e simulou encargo total de R$ 5,15 bilhoes sobre o orcamento de 2026, segue NAO lida e segue em registro proprio, LARANJA. A VERIFICAR: a janela publicada e de 26/08 a 09/10/2026, ou seja 44 dias corridos, e nao os 45 dias recomendados pela NT 145 - a diferenca nao foi explicada por nenhuma fonte lida e nao deve ser apresentada como intencional. CORRECAO DE FALSO NEGATIVO, registrada em 26/08/2026 pela rotina consolidadora: a versao anterior deste registro afirmava que o DOU de 26/08 havia sido varrido item a item nas Secoes 1, 2 e 3 e NAO trazia Aviso de Consulta Publica sobre o ECR nem sobre o teto da CDE. A afirmacao estava ERRADA. O aviso estava na Secao 3, pagina 124 - a MESMA pagina em que o monitor regulatorio capturou o Aviso de Consulta Publica no 27/2026 (revisao tarifaria da CEEE-D). Tres avisos da ANEEL saíram nessa pagina: 27, 28 e 29 de 2026. A varredura leu um dos tres. Licao de metodo: pagina do DOU com um aviso capturado NAO e prova de que a pagina foi esgotada.",
+   "vetores_afetados": [
+    "Contencioso regulatório",
+    "Mercado & PSM"
+   ],
+   "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-28%2F2026-727787972"
   }
  ],
  "_pendentes_verificacao": [
@@ -1053,25 +1073,6 @@
    ]
   },
   {
-   "fato_id": "ANEEL-CP-ECR-TETO-CDE-ART7-LEI-15269",
-   "orgao": "ANEEL",
-   "tipo_fato": "REGULATORIO_DECISORIO",
-   "tema": "Abertura de Consulta Publica sobre o Encargo de Complemento de Recursos e o teto da CDE",
-   "valor": "A pauta da 17a Reuniao Publica Ordinaria da ANEEL, de 24/08/2026, traz proposta de abertura de Consulta Publica com vistas a colher subsidios e informacoes adicionais para a proposta de revisao normativa para implementacao do Encargo de Complemento de Recursos e do teto da Conta de Desenvolvimento Energetico, nos termos do art. 7o da Lei no 15.269/2025. Relatora Agnes Maria de Aragao da Costa, processo 48500022172202677. O item esta pautado e o campo de decisao esta vazio, ou seja, a abertura ainda nao foi deliberada.",
-   "status": "PENDENTE",
-   "qsv_cor": "LARANJA",
-   "norma": "Pauta da 17a RPO da ANEEL de 24/08/2026 - processo 48500022172202677 - art. 7o da Lei no 15.269/2025",
-   "numero_status": "ANCORADO_PARCIAL",
-   "fonte": "F1 ANEEL Portal de Dados Abertos, dataset Pautas e Atas das Reunioes Publicas da Diretoria, CSV gerado em 21/08/2026, baixado e processado em 24/08/2026",
-   "verificado_em": "2026-08-26",
-   "gatilho_revisao": "deliberacao da 17a RPO em 24/08/2026; publicacao do aviso de consulta publica com numero e prazo; publicacao da nota tecnica de fundamentacao",
-   "pendencia_verificacao": "Nao ha numero de consulta publica atribuido, nao ha prazo e nao ha minuta lida. A abertura NAO foi deliberada ate o fechamento deste registro. A NT 145/2026-STR, que recomenda consulta por 45 dias, segue NAO lida. Nao afirmar que a consulta esta aberta nem que existe prazo de 45 dias correndo. | 26/08/2026: o DOU de 26/08 foi varrido item a item nas Secoes 1, 2 e 3 e NAO traz Aviso de Consulta Publica sobre o Encargo de Complemento de Recursos nem sobre o teto da CDE; a consulta segue sem numero e sem janela, segundo dia. ELEMENTO NOVO E ANTI-FALSO-POSITIVO: a Portaria ANEEL no 7.148, de 24/08/2026, publicada hoje, passou a permitir Tomada de Subsidios em substituicao a Consulta Publica no processo de orcamento e quotas anuais da CDE. Consequencia de metodo: materia de CDE pode agora ser aberta por instrumento que NAO gera Aviso de Consulta Publica no DOU, e a vigilancia precisa cobrir tambem a pagina de Tomada de Subsidios da ANEEL. ATENCAO: os processos sao distintos, 48500.022182/2026-77 na portaria e 48500.022172/2026-77 na proposta de consulta; nao ha fonte lida ligando um ao outro.",
-   "vetores_afetados": [
-    "Contencioso regulatório",
-    "Mercado & PSM"
-   ]
-  },
-  {
    "fato_id": "ANEEL-REN-1122-2025-ACESSO-REDE-BASICA",
    "orgao": "ANEEL",
    "tipo_fato": "REGULATORIO_DECISORIO",
@@ -1191,7 +1192,7 @@
    "fonte": "F1 — DOU, in.gov.br, edicao de 26/08/2026, Secao 1, ato aberto e lido na integra em 26/08/2026.",
    "verificado_em": "2026-08-26",
    "gatilho_revisao": "abertura da primeira Tomada de Subsidios sobre orcamento ou quotas da CDE; nova alteracao da Portaria 6.828/2023",
-   "pendencia_verificacao": "A Portaria ANEEL no 6.828/2023 NAO foi lida: nao se sabe, por fonte lida, a quem o art. 1o delega essas competencias nem o que dizem os incisos I a XXV. ANTI-FALSO-POSITIVO CRITICO: o processo deste ato e o no 48500.022182/2026-77, e o processo da proposta de consulta sobre o Encargo de Complemento de Recursos e o teto da CDE, pautada na mesma reuniao de 24/08/2026, e o no 48500.022172/2026-77. Os numeros diferem em um digito e os objetos sao distintos. NAO fundir os dois. Nao esta demonstrado, em fonte lida, que esta portaria tenha sido editada para viabilizar aquela consulta: a conexao e hipotese deste monitor, nao fato."
+   "pendencia_verificacao": "A Portaria ANEEL no 6.828/2023 NAO foi lida: nao se sabe, por fonte lida, a quem o art. 1o delega essas competencias nem o que dizem os incisos I a XXV. ANTI-FALSO-POSITIVO CRITICO: o processo deste ato e o no 48500.022182/2026-77, e o processo da proposta de consulta sobre o Encargo de Complemento de Recursos e o teto da CDE, pautada na mesma reuniao de 24/08/2026, e o no 48500.022172/2026-77. Os numeros diferem em um digito e os objetos sao distintos. NAO fundir os dois. Nao esta demonstrado, em fonte lida, que esta portaria tenha sido editada para viabilizar aquela consulta: a conexao e hipotese deste monitor, nao fato. | ATUALIZACAO 26/08/2026, rotina consolidadora: a hipotese de que esta portaria teria sido editada para viabilizar a consulta do ECR e do teto da CDE ficou MAIS FRACA, nao mais forte. A consulta daquele processo (48500.022172/2026-77) foi efetivamente aberta no MESMO DOU de 26/08/2026 e saiu como CONSULTA PUBLICA comum, a CP no 28/2026, com Aviso de Consulta Publica na Secao 3, pagina 124 - e NAO como Tomada de Subsidios. Os dois processos seguem distintos e nao devem ser fundidos. O buraco de vigilancia apontado permanece real para materia de orcamento e quotas da CDE, mas ainda NAO se materializou: a busca no DOU de 26/08 por 'tomada de subsidios' devolveu apenas esta portaria e um aviso do Ministerio das Comunicacoes de 2025."
   },
   {
    "fato_id": "ONS-PGE-ACIONAMENTO-23-08-2026",
