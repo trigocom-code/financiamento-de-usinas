@@ -1,125 +1,135 @@
 {
- "_meta": {
-  "titulo": "Inscrições — Eventos do Setor Elétrico em SP — Monitor SOA/SOS",
-  "atualizado_em": "2026-08-24",
-  "links_verificados_em": "2026-07-11",
-  "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ABENDI, ANE, ABCE, APINE, CIGRE-Brasil)",
-  "nota": "Trilho de inscrições dos eventos do setor em São Paulo. Cada item leva ao link oficial de credenciamento. Inscrever-se com trigo.com@gmail.com. Datas e valores confirmar na página oficial. Eventos com credenciamento a abrir levam à página oficial do evento. O monitor regenera este JSON: eventos já encerrados saem sozinhos e a data de verificação dos links é atualizada quando os links são reabertos.",
-  "nota_run_2026_08_24": "Varredura de 24 de agosto. Nenhuma entrada e nenhuma saída por realização nesta rodada; o trilho muda por precisão, não por movimento. Primeira mudança: o prazo de 24 de agosto para registro gratuito de visitação da feira de energia solar de 25 a 27 de agosto sai do trilho. Duas leituras consecutivas das páginas oficiais, em 21 e em 24 de agosto, não expõem prazo gratuito algum, apenas pacotes pagos; a data nunca foi confirmada em fonte oficial e não deve seguir publicada. A existência desse prazo passa a constar como pendência de verificação. Segunda: as datas dos quatro eventos da associação de cogeração foram reconfirmadas na página oficial nesta rodada — o fórum de energia de 27 de agosto, a semana de gás e energia de 1º a 3 de setembro, o fórum de redes inteligentes de 6 a 7 de outubro e o encontro de líderes ambientais de 9 a 11 de novembro —, e nenhum dos quatro expõe endereço de credenciamento, pela segunda leitura consecutiva. Terceira: as datas do congresso de energia eólica de 27 a 29 de outubro e dos eventos da associação de geração distribuída foram reconfirmadas nas páginas oficiais. Quarta: a edição paulista do evento de armazenamento previsto para 18 e 19 de novembro segue ausente da página da associação organizadora, pela terceira leitura consecutiva, e permanece fora do trilho; ausência reiterada não é cancelamento. Quinta: o encontro do conhecimento em administração de 9 de setembro foi reconfirmado na página da associação organizadora, mas o endereço de credenciamento indicado ali não respondeu na verificação de 21 de agosto e não foi rechecado hoje, e por isso o evento segue fora do trilho. Sexta: a página da associação do setor solar seguiu no ar sem expor datas, pela nona leitura consecutiva, e o calendário da academia nacional de engenharia não apresenta evento de setembro, pela oitava; o encaminhamento desses dois itens continua sendo contato direto, não nova tentativa automatizada. Registra-se, por fim, que nenhum endereço de credenciamento foi reaberto e confirmado nesta rodada, e por isso a data geral de verificação de links permanece a anterior."
- },
- "abertos": [
-  {
-   "data_ini": "2026-08-25",
-   "data_fim": "2026-08-27",
-   "titulo": "Intersolar South America 2026 (The smarter E)",
-   "quando": "25–27/08 · Expo Center Norte, SP · datas e local reconfirmados na fonte em 24/08 · as páginas oficiais não expõem prazo de registro gratuito de visitação, apenas pacotes pagos",
-   "badges": [
+  "_meta": {
+    "titulo": "Inscrições — Eventos do Setor Elétrico em SP — Monitor SOA/SOS",
+    "atualizado_em": "2026-09-14",
+    "links_verificados_em": "2026-07-11",
+    "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ANE, ABCE, APINE, CIGRE-Brasil, CCEE)",
+    "nota": "Trilho de inscrições dos eventos do setor em São Paulo. Cada item leva ao link oficial de credenciamento. Datas e valores confirmar na página oficial. Eventos com credenciamento a abrir levam à página oficial do evento ou da entidade organizadora. O monitor regenera este JSON: eventos já encerrados saem sozinhos e a data de verificação dos links é atualizada quando os links são reabertos.",
+    "nota_run_2026_09_14": "Varredura de 14 de setembro. O trilho muda em três pontos. Primeiro, o encontro de lideranças de armazenamento, de 30 de setembro, sobe para a seção de inscrições abertas: a data, o local — Milenium Centro de Convenções, na Vila Mariana — e as inscrições foram confirmados na página oficial de inscrição do evento, depois de onze leituras sem data na página da associação organizadora, cujo subdomínio do evento passou a devolver erro. Segundo, o encontro de líderes ambientais, de 9 a 11 de novembro, também sobe para inscrições abertas: a página da associação de cogeração passou a expor o endereço de inscrição, reaberto e confirmado hoje. Terceiro, o link do encontro de armazenamento de São Paulo foi trocado da página de ofertas, que hoje exibe a mensagem de nenhuma inscrição encontrada, para a página inicial do evento, que segue anunciando inscrições abertas com local a definir. Links reabertos e confirmados nesta rodada: página de inscrição do fórum de redes inteligentes, formulário do simpósio jurídico, página inicial do encontro de armazenamento de São Paulo, páginas de inscrição dos encontros de lideranças de armazenamento e de líderes ambientais, notícia do fórum da câmara de comercialização e página de eventos da academia nacional de engenharia. Os dois links de credenciamento da organizadora das feiras de data centers e de energia eólica exibiram apenas tela de login e não foram reverificados; as datas dos dois eventos foram reconfirmadas nos sites oficiais. Como nem todos os links foram reabertos, a data geral de verificação de links permanece a anterior. O seminário anual da academia nacional de engenharia segue sem data, com calendário vazio pela décima primeira leitura, e o encontro nacional da associação do setor solar segue sem data exposta pela décima segunda."
+  },
+  "abertos": [
     {
-     "label": "Feira",
-     "cls": "free"
+      "data_ini": "2026-09-30",
+      "data_fim": "2026-09-30",
+      "titulo": "ABSOLAR Storage Leaders (2ª ed. · Pré-LRCAP Baterias)",
+      "quando": "30/09 · 08h–18h · Milenium Centro de Convenções, Rua Dr. Bacelar 1043, Vila Mariana, São Paulo/SP · data, local e inscrições abertas confirmados na página oficial de inscrição em 14/09 · link reaberto em 14/09",
+      "badges": [
+        {
+          "label": "Pago",
+          "cls": "pago"
+        }
+      ],
+      "url": "https://www.sympla.com.br/evento/absolar-storage-leaders-2-edicao/3425992",
+      "cta": "Inscrever-se"
     },
     {
-     "label": "Congresso pago",
-     "cls": "pago"
-    }
-   ],
-   "url": "https://euvou.events/thesmarteresouthamerica2026",
-   "cta": "Inscrever-se"
-  },
-  {
-   "data_ini": "2026-10-06",
-   "data_fim": "2026-10-07",
-   "titulo": "Smart Grid Fórum 2026 (18º Latino-Americano) — COGEN",
-   "quando": "06–07/10 · Centro de Convenções Frei Caneca, São Paulo/SP · data reconfirmada na COGEN em 24/08",
-   "badges": [
+      "data_ini": "2026-10-06",
+      "data_fim": "2026-10-07",
+      "titulo": "Smart Grid Fórum 2026 (18º Latino-Americano) — COGEN",
+      "quando": "06–07/10 · 08h30–18h · Centro de Convenções Frei Caneca, São Paulo/SP · data reconfirmada na COGEN e página de inscrição reaberta e ativa em 14/09",
+      "badges": [
+        {
+          "label": "Pago",
+          "cls": "pago"
+        }
+      ],
+      "url": "https://www.smartgrid.com.br/2,936,inscricao",
+      "cta": "Inscrever-se"
+    },
     {
-     "label": "Pago",
-     "cls": "pago"
-    }
-   ],
-   "url": "https://www.smartgrid.com.br/2,936,inscricao",
-   "cta": "Inscrever-se"
-  },
-  {
-   "data_ini": "2026-10-06",
-   "data_fim": "2026-10-08",
-   "titulo": "Data Center World Brasil 2026 (com Futurecom)",
-   "quando": "06–08/10 · São Paulo Expo, SP",
-   "badges": [
+      "data_ini": "2026-10-06",
+      "data_fim": "2026-10-08",
+      "titulo": "Data Center World Brasil 2026 (com Futurecom)",
+      "quando": "06–08/10 · São Paulo Expo, SP · datas confirmadas no site oficial em 14/09 · endereço de credenciamento exibiu só tela de login e não foi rechecado nesta rodada",
+      "badges": [
+        {
+          "label": "Pago",
+          "cls": "pago"
+        }
+      ],
+      "url": "https://credenciamento.informamarkets.com.br/BRZ26DCB/credenciamento2026/tickets",
+      "cta": "Inscrever-se"
+    },
     {
-     "label": "Pago",
-     "cls": "pago"
-    }
-   ],
-   "url": "https://credenciamento.informamarkets.com.br/BRZ26DCB/credenciamento2026/tickets",
-   "cta": "Inscrever-se"
-  },
-  {
-   "data_ini": "2026-10-21",
-   "data_fim": "2026-10-22",
-   "titulo": "XXXII Simpósio Jurídico ABCE",
-   "quando": "21–22/10 · Blue Tree Premium Faria Lima, São Paulo/SP · local e link reconfirmados em 24/08 · data a confirmar na entidade organizadora",
-   "badges": [
+      "data_ini": "2026-10-21",
+      "data_fim": "2026-10-22",
+      "titulo": "XXXII Simpósio Jurídico ABCE",
+      "quando": "21–22/10 · 09h–18h · Blue Tree Premium Faria Lima, São Paulo/SP · presencial · formulário de inscrição reaberto em 14/09, com evento, data e local conferidos",
+      "badges": [
+        {
+          "label": "Inscrição por formulário",
+          "cls": "pago"
+        }
+      ],
+      "url": "https://forms.gle/kJpRYLrb4EVtbhRn6",
+      "cta": "Inscrever-se"
+    },
     {
-     "label": "Inscrição por formulário",
-     "cls": "pago"
-    }
-   ],
-   "url": "https://forms.gle/kJpRYLrb4EVtbhRn6",
-   "cta": "Inscrever-se"
-  },
-  {
-   "data_ini": "2026-10-27",
-   "data_fim": "2026-10-29",
-   "titulo": "Brazil Windpower 2026 — ABEEólica + GWEC",
-   "quando": "27–29/10 · São Paulo Expo, SP · data reconfirmada na ABEEólica em 24/08",
-   "badges": [
+      "data_ini": "2026-10-27",
+      "data_fim": "2026-10-29",
+      "titulo": "Brazil Windpower 2026 — ABEEólica + GWEC",
+      "quando": "27–29/10 · São Paulo Expo, SP · datas reconfirmadas na ABEEólica e no site oficial em 14/09 · endereço de credenciamento exibiu só tela de login e não foi rechecado nesta rodada",
+      "badges": [
+        {
+          "label": "Pago",
+          "cls": "pago"
+        }
+      ],
+      "url": "https://credenciamento.informamarkets.com.br/BRZ26BWP/credenciamento26/tickets",
+      "cta": "Inscrever-se"
+    },
     {
-     "label": "Pago",
-     "cls": "pago"
+      "data_ini": "2026-11-09",
+      "data_fim": "2026-11-11",
+      "titulo": "17º LASE — Líderes Ambientais no Setor de Energia — COGEN",
+      "quando": "09–11/11 · Hotel Pullman São Paulo Vila Olímpia, Rua Olimpíadas 205, São Paulo/SP · endereço de inscrição exposto pela COGEN e reaberto em 14/09, com inscrições abertas",
+      "badges": [
+        {
+          "label": "Pago",
+          "cls": "pago"
+        }
+      ],
+      "url": "https://www.sympla.com.br/evento/17-lase---lideres-ambientais-no-setor-de-energia/3277178",
+      "cta": "Inscrever-se"
+    },
+    {
+      "data_ini": "2026-11-18",
+      "data_fim": "2026-11-19",
+      "titulo": "Energy Storage Brasil 2026 — edição São Paulo",
+      "quando": "18–19/11 · São Paulo/SP, local a definir · site oficial reaberto em 14/09, anunciando inscrições abertas · a página de ofertas não exibia lotes nesta rodada",
+      "badges": [
+        {
+          "label": "Inscrições abertas",
+          "cls": "pago"
+        }
+      ],
+      "url": "https://saopaulo.energystoragebrasil.com/",
+      "cta": "Inscrever-se"
     }
-   ],
-   "url": "https://credenciamento.informamarkets.com.br/BRZ26BWP/credenciamento26/tickets",
-   "cta": "Inscrever-se"
-  }
- ],
- "a_abrir": [
-  {
-   "data_ini": "2026-08-27",
-   "data_fim": "2026-08-27",
-   "titulo": "Fórum de Energia — COGEN + ADVB",
-   "quando": "27/08 · Auditório do Instituto de Engenharia, Vila Mariana, São Paulo/SP · preços da energia, alternativas de contratação e futuro da regulação · data reconfirmada em 24/08 · endereço de credenciamento não exposto na página oficial, pela 2ª leitura",
-   "url": "https://www.cogen.com.br/eventos/forum-de-energia-panorama-atual-e-tendencias-oportunidades-para-consumidores-e-futuro-da-regulacao"
-  },
-  {
-   "data_ini": "2026-09-30",
-   "data_fim": "2026-09-30",
-   "titulo": "ABSOLAR Storage Leaders (2ª ed. · Pré-LRCAP Baterias)",
-   "quando": "30/09 · São Paulo/SP · data e local a confirmar; o evento não aparece nomeado na página oficial na leitura de 24/08, pela nona leitura consecutiva sem datas expostas",
-   "url": "https://storageleaders.absolar.org.br/"
-  },
-  {
-   "data_ini": null,
-   "data_fim": null,
-   "dia": "—",
-   "mes": "SET",
-   "titulo": "Seminário Anual da ANE — Academia Nacional de Engenharia",
-   "quando": "setembro (data a confirmar) · São Paulo/SP · a página de eventos não apresenta evento de setembro na 8ª leitura",
-   "url": "https://anebrasil.org.br/eventos-ane/"
-  },
-  {
-   "data_ini": "2026-11-09",
-   "data_fim": "2026-11-11",
-   "titulo": "17º LASE — Líderes Ambientais no Setor de Energia — COGEN",
-   "quando": "09–11/11 · Hotel Pullman São Paulo Vila Olímpia, São Paulo/SP · data reconfirmada em 24/08 · endereço de credenciamento não exposto na página oficial, pela 2ª leitura",
-   "url": "https://www.cogen.com.br/eventos/17o-lase-lideres-ambientais-no-setor-de-energia"
-  },
-  {
-   "data_ini": "2026-12-02",
-   "data_fim": "2026-12-03",
-   "titulo": "6º Encontro Nacional ABSOLAR",
-   "quando": "02–03/12 · São Paulo/SP · data a confirmar na página oficial, sem exposição pela 7ª leitura",
-   "url": "https://eventos.absolar.org.br/"
-  }
- ]
+  ],
+  "a_abrir": [
+    {
+      "data_ini": null,
+      "data_fim": null,
+      "dia": "—",
+      "mes": "SET",
+      "titulo": "Seminário Anual da ANE — Academia Nacional de Engenharia",
+      "quando": "setembro (data a confirmar) · São Paulo/SP · a página de eventos segue renderizando calendário vazio na 11ª leitura, em 14/09; encaminhamento por contato direto",
+      "url": "https://anebrasil.org.br/eventos-ane/"
+    },
+    {
+      "data_ini": "2026-11-17",
+      "data_fim": "2026-11-17",
+      "titulo": "2º Fórum Análise Setorial CCEE",
+      "quando": "17/11 · Grand Hyatt São Paulo, Av. das Nações Unidas 13.301, São Paulo/SP · formato híbrido com transmissão · a CCEE abriu patrocínio em 11/09; ingressos ainda não divulgados",
+      "url": "https://www.ccee.org.br/web/guest/-/2-forum-analise-setorial-ccee-abre-oportunidades-de-patrocinio"
+    },
+    {
+      "data_ini": "2026-12-02",
+      "data_fim": "2026-12-03",
+      "titulo": "6º Encontro Nacional ABSOLAR",
+      "quando": "02–03/12 · São Paulo/SP · data a confirmar; a página oficial de eventos lista apenas a edição anterior, pela 12ª leitura",
+      "url": "https://eventos.absolar.org.br/"
+    }
+  ]
 }

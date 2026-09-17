@@ -698,6 +698,52 @@
    "agente_comercial_envolvido": null,
    "pendencia_verificacao": "Prestacao de contas de programa de eficiencia energetica. Avaliada como provavelmente FORA do escopo dos vetores da SOA/SOS; registrada para fechar a data, nao para gerar peca. Documentos da prestacao de contas nao lidos.",
    "gatilho_revisao": "encerramento do prazo em 04/09/2026"
+  },
+  {
+   "fato_id": "ANEEL-CP-034-2026-TIPO-III",
+   "tema": "CP ANEEL no 34/2026 — revisao da classificacao das modalidades de operacao de usinas (Procedimentos de Rede): contribuicoes de 17/09 a 02/11/2026",
+   "valor": "CONSULTA PUBLICA ABERTA E ANCORADA EM F1. Aviso de Consulta Publica no 34/2026 da ANEEL, DOU de 17/09/2026, Edicao 176, Secao 3, pagina 108. Processo no 48500.033896/2025-65. Objeto: aprimorar a proposta de alteracao dos Procedimentos de Rede associada a revisao da classificacao das modalidades de operacao de usinas conectadas ao sistema, em 22 submodulos (1.2, 2.1, 2.4, 2.12, 2.14, 2.15, 3.1, 3.4, 3.5, 3.9, 3.10, 4.1, 4.2, 4.4, 4.5, 6.1, 6.9, 7.1, 7.2, 7.4, 7.11 e 7.13), nos termos das minutas do ONS. Modalidade: intercambio de documentos. Periodo para envio: 17/09/2026 a 02/11/2026. E consulta, nao regra: as modalidades vigentes seguem as dos Procedimentos de Rede em vigor. NUMERACAO: o aviso no DOU fixa o numero 34/2026; a noticia da ANEEL de 15/09 tambem diz 034, mas indicava o e-mail cp043_2026, divergencia tratada como erro material da noticia.",
+   "status": "CONSULTA PUBLICA ABERTA — contribuicoes de 17/09/2026 a 02/11/2026",
+   "norma": "Aviso de Consulta Publica ANEEL no 34/2026 — DOU de 17/09/2026, Secao 3, p. 108 · Processo no 48500.033896/2025-65",
+   "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-34/2026-732288687",
+   "verificado_em": "2026-09-17",
+   "tipo_fato": "REGULATORIO_DECISORIO",
+   "score_soa": 12,
+   "vetores_afetados": [
+    "V4",
+    "V3"
+   ],
+   "qsv_cor": "VERDE",
+   "qsv_origem_classificacao": "precedencia_v1.2_CEO_28jun2026",
+   "qsv_fontes_independentes": [
+    {
+     "tipo": "F1_DOU",
+     "ref": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-34/2026-732288687 (DOU 17/09/2026, Ed. 176, Secao 3, p. 108)",
+     "trecho_literal": "AVISO DE CONSULTA PUBLICA No 34/2026 Processo: 48500.033896/2025-65 Objeto: obter subsidios para o aprimoramento da proposta de alteracao dos Procedimentos de Rede associada a revisao da classificacao das modalidades de operacao de usinas conectadas ao sistema, contemplando os Submodulos 1.2, 2.1, 2.4, 2.12, 2.14, 2.15, 3.1, 3.4, 3.5, 3.9, 3.10, 4.1, 4.2, 4.4, 4.5, 6.1, 6.9, 7.1, 7.2, 7.4, 7.11 e 7.13, nos termos das minutas encaminhadas pelo ONS. Modalidade: Intercambio de documentos. Periodo para envio: 17/9/2026 a 2/11/2026.",
+     "nota_qsv": "Ato aberto e lido na integra em 17/09/2026 pela rotina consolidadora, via Chrome (o cliente HTTP recebeu 403). O monitor-regulatorio-soa ja o lera as 07h do mesmo dia.",
+     "associacao_origem": null,
+     "gt_origem": null
+    },
+    {
+     "tipo": "F1_pagina_oficial",
+     "ref": "https://www.gov.br/aneel/pt-br/assuntos/noticias — noticia de 15/09/2026 sobre a abertura da consulta publica da classificacao operacional de usinas",
+     "trecho_literal": "",
+     "nota_qsv": "Noticia oficial lida na integra em 16/09/2026; traz o numero 034 no texto e o e-mail cp043_2026, divergencia resolvida pelo aviso no DOU.",
+     "associacao_origem": null,
+     "gt_origem": null
+    }
+   ],
+   "numero_status": "ANCORADO",
+   "validacao_banco_SOA": {
+    "aplicavel": false,
+    "query_versionada": null,
+    "resultado": "N/A_REGULATORIO",
+    "verificado_em": "2026-09-17"
+   },
+   "especialista_citado_interno": null,
+   "agente_comercial_envolvido": null,
+   "pendencia_verificacao": "Minutas do ONS, NT Conjunta 18/2026 (SEI 0445583) e voto do relator NAO lidos: nenhum conteudo de merito (conjuntos operativos, criterios por modalidade) pode ser afirmado a partir deste fato. Canal de envio (e-mail da CP) a confirmar na pagina de consultas publicas, fora do ar por DNS. Mapeamento de vetores V4/V3 proposto pela consolidadora por analogia ao ANEEL-CP-045-2019; confirmar. Prazo interno ABSOLAR ainda nao definido.",
+   "gatilho_revisao": "publicacao das minutas e da NT no portal da ANEEL; definicao do prazo interno ABSOLAR; encerramento em 02/11/2026"
   }
  ],
  "_pendentes_verificacao": [
