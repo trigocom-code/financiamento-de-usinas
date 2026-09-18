@@ -1,626 +1,488 @@
 {
- "_meta": {
-  "titulo": "Agenda do Setor Elétrico — Monitor SOA/SOS",
-  "atualizado_em": "2026-08-24",
-  "fonte": "Monitor de Eventos SOA/SOS · fontes oficiais (Portal de Dados Abertos da ANEEL · gov.br/ANEEL · EPE · MME · CCEE · ONS · Senado · CIGRE-Brasil) + associações do setor (ANE, COGEN, APINE, ABGD, ABSOLAR, ABEEólica, ABCE) e imprensa setorial",
-  "nota": "Agenda pública de datas do setor elétrico. Eventos de associação e sinais de fontes secundárias marcados 'A VERIFICAR'; confirmar no ato ou na página oficial antes de citar.",
-  "nota_run_2026_08_24": "Varredura de 24 de agosto, cobrindo a janela desde a tarde de 21 de agosto. É a segunda rodada sob a cadência semanal e a primeira janela sem lacuna de execução desde 14 de agosto; o bloco de ação alcança prazos de até dez dias. (1) A pendência principal da agenda anterior está resolvida, e o modo de resolvê-la vale mais que o item: a pauta da reunião pública da diretoria de hoje, com vinte e nove itens, foi localizada no Portal de Dados Abertos da agência reguladora, num conjunto de dados atualizado em 21 de agosto, depois de três varreduras consecutivas em que as páginas em formato de sítio devolveram erro. A agenda anterior registrava a pauta como não localizada; o registro é corrigido, e o conjunto de dados aberto passa a ser a rota principal desta agenda para pautas e atas. O conjunto de dados não traz ordem de julgamento, sorteios de relatoria nem itens fora de pauta. (2) O achado de maior alcance da janela vem dessa mesma rota: dois recursos administrativos receberam pedido de vista em 11 de agosto e disputam a classificação da razão das restrições de geração. No primeiro, seis geradoras renováveis pedem que restrições decorrentes de atrasos de transmissão sejam classificadas como razão de indisponibilidade externa. No segundo, duas geradoras pedem a reclassificação dos eventos de restrição nos conjuntos de Serra do Mel, desde 1º de setembro de 2023, de confiabilidade elétrica para razão de indisponibilidade externa. É a classificação que decide se a redução de geração é ressarcível. São pedidos de vista, não decisões, e não devem ser lidos como posição da agência. (3) O item da distribuidora de São Paulo pautado para hoje é um requerimento de produção de prova pericial no procedimento de avaliação de recomendação de caducidade, e não a decisão de caducidade nem o pedido de trinta dias adicionais apresentado com as alegações finais em 19 de agosto. (4) Está pautada a primeira revisão da agenda regulatória do biênio, relatada pelo diretor-geral; é onde se decide a permanência, em 2026, da atividade de requisitos de controlabilidade e observabilidade de recursos energéticos distribuídos, cuja consulta foi anunciada para agosto e não abriu. (5) Três propostas de abertura de consulta pública estão na mesma pauta: encargo de complemento de recursos e teto da conta de desenvolvimento energético; redes subterrâneas e resiliência da distribuição frente a eventos climáticos extremos; e revisão tarifária periódica de uma distribuidora do Rio Grande do Sul. Se deliberadas, os prazos ainda serão definidos. (6) Uma correção factual: o conjunto de recursos contra autos de infração de parques eólicos e solares com pedido de vista em 11 de agosto é de seis recursos, e não de cerca de vinte processos, como esta agenda vinha registrando; cada recurso agrupa várias sociedades de propósito específico. (7) O histórico procedimental da consulta pública de 2019 sobre critérios operativos de redução de geração passa a constar de fonte oficial: retirada de pauta em 16 de junho, pedido de vista em 22 de junho, em reunião extraordinária, e novo pedido de vista em 28 de julho. O prazo-teto de retorno segue sendo derivação e permanece a confirmar. (8) O calendário oficial de reuniões públicas da agência não foi atualizado: ainda lista as reuniões de agosto nos dias 11 e 25, e a antecipação para hoje consta apenas do comunicado de 18 de agosto. (9) O prazo de 24 de agosto para registro gratuito de visitação da feira de energia solar sai desta agenda: duas leituras consecutivas das páginas oficiais, em 21 e em 24 de agosto, não expõem prazo gratuito algum, apenas pacotes pagos, e a data nunca foi confirmada em fonte oficial. (10) Seguem sem responder o portal do operador nacional do sistema, que devolve o modelo de página sem conteúdo preenchido pela segunda varredura, e o índice de notícias da câmara de comercialização, pela segunda; nenhum marco dessas duas instituições nesta janela vem de fonte primária."
- },
- "recentes": [
-  {
-   "data": "2026-08-24",
-   "titulo": "Pauta da 17ª Reunião Pública Ordinária da Diretoria da ANEEL, de 24 de agosto, localizada no Portal de Dados Abertos",
-   "detalhe": "A pauta traz vinte e nove itens e estava publicada no conjunto de dados aberto de pautas e atas das reuniões públicas da diretoria, com atualização registrada em 21 de agosto. As páginas em formato de sítio que listam pautas e atas seguiram sem responder, pela terceira varredura consecutiva. A agenda anterior registrava a pauta como não localizada; o registro é corrigido.",
-   "status": "CONFIRMADO",
-   "fonte": "Portal de Dados Abertos da ANEEL"
-  },
-  {
-   "data": "2026-08-24",
-   "titulo": "Está pautada a Primeira Revisão da Agenda Regulatória da ANEEL do biênio 2026-2027",
-   "detalhe": "O item é relatado pelo diretor-geral da agência. A agenda de referência foi aprovada em 2 de dezembro de 2025 e reúne noventa e uma atividades, das quais trinta e duas previstas para 2026, segundo registro de imprensa especializada ainda não confirmado no ato. É nesta revisão que se decide a permanência, em 2026, da atividade de requisitos de controlabilidade e observabilidade de recursos energéticos distribuídos.",
-   "status": "CONFIRMADO",
-   "fonte": "Portal de Dados Abertos da ANEEL; composição da agenda de referência a verificar no ato"
-  },
-  {
-   "data": "2026-08-24",
-   "titulo": "O item da Enel São Paulo pautado para 24 de agosto é um requerimento de produção de prova pericial, e não a decisão de caducidade",
-   "detalhe": "O requerimento é apresentado pela distribuidora no âmbito do procedimento administrativo de avaliação de recomendação de caducidade do contrato de concessão nº 162/2008. É peça distinta do pedido de trinta dias adicionais apresentado com as alegações finais em 19 de agosto. Registro de imprensa aponta que a área técnica da agência havia rejeitado a necessidade de perícia em 3 de agosto; essa informação não foi confirmada no ato.",
-   "status": "CONFIRMADO",
-   "fonte": "Portal de Dados Abertos da ANEEL; posição da área técnica a verificar"
-  },
-  {
-   "data": "2026-08-11",
-   "titulo": "Dois recursos administrativos que disputam a classificação da razão das restrições de geração receberam pedido de vista em 11 de agosto",
-   "detalhe": "No primeiro, seis geradoras renováveis pedem que restrições decorrentes de atrasos de transmissão sejam classificadas como razão de indisponibilidade externa. No segundo, duas geradoras pedem a reclassificação dos eventos de restrição nos conjuntos de Serra do Mel, desde 1º de setembro de 2023, de confiabilidade elétrica para razão de indisponibilidade externa. Os dois recursos foram relatados pelo diretor cujo mandato se encerrou em 13 de agosto e não constam da pauta de 24 de agosto. São pedidos de vista, não decisões.",
-   "status": "CONFIRMADO",
-   "fonte": "Portal de Dados Abertos da ANEEL"
-  },
-  {
-   "data": "2026-08-24",
-   "titulo": "Três propostas de abertura de consulta pública estão na pauta de 24 de agosto",
-   "detalhe": "A primeira trata da revisão normativa para implementação do Encargo de Complemento de Recursos e do teto da Conta de Desenvolvimento Energético, nos termos do artigo 7º da Lei nº 15.269/2025. A segunda trata de redes subterrâneas e demais padrões de rede para aumento da resiliência da distribuição frente a eventos climáticos extremos. A terceira trata da revisão tarifária periódica de 2026 de uma distribuidora do Rio Grande do Sul. São propostas de abertura: se deliberadas, os prazos de contribuição ainda serão definidos.",
-   "status": "CONFIRMADO",
-   "fonte": "Portal de Dados Abertos da ANEEL"
-  },
-  {
-   "data": "2026-08-24",
-   "titulo": "Três medidas cautelares idênticas de usinas fotovoltaicas contra uma distribuidora mineira, sobre reenquadramento de faixa de geração distribuída, estão na mesma pauta",
-   "detalhe": "As três requerentes pedem a suspensão do enquadramento em uma faixa de geração distribuída e o reenquadramento em outra, até a análise de mérito. O enquadramento define qual regra de compensação se aplica no regime de transição da lei de 2022. Três pedidos idênticos na mesma sessão indicam padrão, e não caso isolado.",
-   "status": "CONFIRMADO",
-   "fonte": "Portal de Dados Abertos da ANEEL"
-  },
-  {
-   "data": "2026-08-24",
-   "titulo": "Recurso de operadora de data centers contra despacho da superintendência de transmissão e distribuição está pautado para 24 de agosto",
-   "detalhe": "O recurso questiona o indeferimento do pedido de suspensão da aplicabilidade de dispositivo de resolução normativa de 2025 a unidades consumidoras de um campus em Jundiaí. É a terceira passagem da mesma empresa pela diretoria em 2026 sobre o mesmo dispositivo: houve pedidos de medida cautelar em 12 de maio e em 19 de maio.",
-   "status": "CONFIRMADO",
-   "fonte": "Portal de Dados Abertos da ANEEL"
-  },
-  {
-   "data": "2026-08-24",
-   "titulo": "Correção: o conjunto de recursos contra autos de infração de parques eólicos e solares com pedido de vista em 11 de agosto é de seis recursos, e não de cerca de vinte processos",
-   "detalhe": "A reunião de 11 de agosto teve cinquenta e oito itens, dos quais doze com pedido de vista e seis correspondentes a recursos contra autos de infração. Cada recurso agrupa várias sociedades de propósito específico, o que explica a contagem anterior mais alta. A agenda passa a registrar seis recursos.",
-   "status": "CONFIRMADO",
-   "fonte": "Portal de Dados Abertos da ANEEL"
-  },
-  {
-   "data": "2026-08-24",
-   "titulo": "O histórico procedimental da Consulta Pública nº 45/2019, sobre critérios operativos para redução ou limitação de geração, foi confirmado em fonte oficial",
-   "detalhe": "O resultado da terceira fase da consulta foi retirado de pauta em 16 de junho, recebeu pedido de vista em 22 de junho, em reunião pública extraordinária, e novo pedido de vista em 28 de julho. Não consta da pauta de 24 de agosto. O prazo-teto de retorno, derivado do prazo de sessenta dias, permanece a confirmar. O processo não está decidido.",
-   "status": "CONFIRMADO",
-   "fonte": "Portal de Dados Abertos da ANEEL"
-  },
-  {
-   "data": "2026-08-24",
-   "titulo": "O calendário oficial de reuniões públicas da ANEEL não foi atualizado para refletir a antecipação da reunião de agosto",
-   "detalhe": "A página do calendário, baseada em portaria de 3 de novembro de 2025, segue listando as reuniões públicas ordinárias de agosto nos dias 11 e 25. A antecipação para 24 de agosto, às nove horas, consta apenas do comunicado de 18 de agosto. Quem consultar o calendário lê a data anterior.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL, calendário e comunicado"
-  },
-  {
-   "data": "2026-08-21",
-   "titulo": "O Operador Nacional do Sistema revisou a carga de agosto em mais 6,3% e elevou o custo marginal de operação em três subsistemas",
-   "detalhe": "Informação de imprensa setorial. O portal do operador seguiu devolvendo o modelo de página sem conteúdo preenchido, pela segunda varredura consecutiva, o que impediu a confirmação na fonte primária.",
-   "status": "A VERIFICAR",
-   "fonte": "Imprensa setorial especializada, 21 de agosto"
-  },
-  {
-   "data": "2026-08-21",
-   "titulo": "Estudo aponta pressão da inteligência artificial sobre a infraestrutura elétrica e os data centers no Brasil",
-   "detalhe": "Informação de imprensa setorial, sem acesso ao estudo na fonte primária nesta varredura.",
-   "status": "A VERIFICAR",
-   "fonte": "Imprensa setorial especializada, 21 de agosto"
-  },
-  {
-   "data": "2026-08-21",
-   "titulo": "EPE publicou as Perspectivas para o Mercado Brasileiro de Combustíveis no Curto Prazo",
-   "detalhe": "A publicação projeta aumento da demanda nacional por combustíveis líquidos e gás liquefeito de petróleo, com estimativa de 3,6 bilhões de litros adicionais em 2026 e outros 3,7 bilhões em 2027.",
-   "status": "CONFIRMADO",
-   "fonte": "EPE"
-  },
-  {
-   "data": "2026-08-18",
-   "titulo": "EPE publicou Nota Técnica de Avaliação do Recurso Eólico Offshore",
-   "detalhe": "A nota identifica regiões com características homogêneas de vento a partir da análise de bases de dados públicas.",
-   "status": "CONFIRMADO",
-   "fonte": "EPE"
-  },
-  {
-   "data": "2026-08-21",
-   "titulo": "Distribuidora defende usinas reversíveis como alternativa de menor custo para a flexibilidade do sistema elétrico",
-   "detalhe": "Informação de imprensa setorial, sem confirmação em documento da empresa nesta varredura.",
-   "status": "A VERIFICAR",
-   "fonte": "Imprensa setorial especializada, 21 de agosto"
-  },
-  {
-   "data": "2026-08-24",
-   "titulo": "O projeto de lei do marco de data centers segue parado no Senado, pela sexta varredura consecutiva",
-   "detalhe": "A página oficial da matéria registra situação de aguardo de inclusão em ordem do dia de requerimento desde 26 de fevereiro de 2026, com requerimento de urgência e vinte e duas emendas. A última tramitação é de 17 de julho de 2026, com o recebimento da emenda nº 22. Nada entre 21 e 24 de agosto.",
-   "status": "CONFIRMADO",
-   "fonte": "Senado Federal, página oficial da matéria"
-  }
- ],
- "acao_7dias": [
-  {
-   "data": "2026-08-24",
-   "titulo": "Reunião Pública Ordinária da Diretoria da ANEEL, às nove horas — pauta de vinte e nove itens",
-   "detalhe": "Reunião antecipada excepcionalmente para a segunda-feira, com transmissão pelo canal oficial da agência. Entre os itens de maior interesse: a primeira revisão da agenda regulatória do biênio, o requerimento de prova pericial da distribuidora de São Paulo, a proposta de abertura de consulta sobre o Encargo de Complemento de Recursos e o teto da Conta de Desenvolvimento Energético, o recurso da operadora de data centers e três medidas cautelares sobre enquadramento de geração distribuída.",
-   "status": "CONFIRMADO",
-   "fonte": "Portal de Dados Abertos da ANEEL e comunicado de 18 de agosto"
-  },
-  {
-   "data": "2026-08-24",
-   "titulo": "Sorteio do relator do rateio dos custos do leilão de armazenamento",
-   "detalhe": "Informação de imprensa setorial. O sorteio decorre de sugestão feita na reunião de 28 de julho para antecipar a definição do relator do processo que discutirá o rateio do encargo, separando-o da análise dos editais. O relator dos editais foi sorteado em 13 de julho. Sorteios não constam do conjunto de dados de pautas: confirmar na sessão.",
-   "status": "A VERIFICAR",
-   "fonte": "Imprensa setorial especializada"
-  },
-  {
-   "data": "2026-08-24",
-   "titulo": "Consulta Pública nº 019/2026 da ANEEL, sobre os editais dos Leilões de Energia Existente — encerra o prazo de contribuições",
-   "detalhe": "A consulta fecha três dias depois do encerramento das declarações de necessidade dos mesmos leilões, ocorrido em 21 de agosto. A sessão pública dos leilões está marcada para 13 de novembro de 2026.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-08-25",
-   "titulo": "Encontro sobre Gás Natural, das dez às dezessete horas, em São Paulo",
-   "detalhe": "Promovido por associação de grandes consumidores de energia, no Tivoli Mofarrej. Endereço de inscrição não exposto na página da associação que divulga o evento, pela segunda leitura.",
-   "status": "CONFIRMADO",
-   "fonte": "Página de eventos de associação de produtores independentes"
-  },
-  {
-   "data": "2026-08-25",
-   "titulo": "Fórum sobre infraestrutura e eleições, em São Paulo",
-   "detalhe": "Promovido por associação de infraestrutura, no Villa Blue Tree Transatlântico, com participação gratuita. Endereço de inscrição não exposto, pela segunda leitura. Coincide com o encontro sobre gás natural e com a abertura da feira de energia solar.",
-   "status": "CONFIRMADO",
-   "fonte": "Página de eventos de associação de produtores independentes"
-  },
-  {
-   "data": "2026-08-25",
-   "titulo": "Feira e congresso de energia solar e armazenamento, de 25 a 27 de agosto, no Expo Center Norte, em São Paulo",
-   "detalhe": "Datas e local reconfirmados na fonte oficial em 24 de agosto. A agenda deixa de registrar o prazo de 24 de agosto para registro gratuito de visitação: duas leituras consecutivas das páginas oficiais, em 21 e em 24 de agosto, não expõem prazo gratuito algum, apenas pacotes pagos. A existência desse prazo passa a constar como a confirmar.",
-   "status": "CONFIRMADO",
-   "fonte": "Páginas oficiais do evento"
-  },
-  {
-   "data": "2026-08-27",
-   "titulo": "Fórum de Energia, no Auditório do Instituto de Engenharia, em São Paulo",
-   "detalhe": "Promovido por associação de cogeração em parceria com associação de dirigentes de vendas. Temas: evolução dos preços da energia, alternativas de contratação, transição energética e aspectos legais e regulatórios. Endereço de credenciamento não exposto na página oficial, pela segunda leitura.",
-   "status": "CONFIRMADO",
-   "fonte": "Página oficial de eventos da associação de cogeração"
-  },
-  {
-   "data": "2026-08-27",
-   "titulo": "Audiência pública sobre a revisão tarifária de distribuidora do Distrito Federal, na sede da ANEEL",
-   "detalhe": "Sessão presencial em Brasília.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-08-28",
-   "titulo": "Consulta Pública nº 1/2026 do Ministério da Fazenda — encerra o prazo no órgão",
-   "detalhe": "Trata de mensuração, relato e verificação no âmbito do sistema brasileiro de comércio de emissões. Uma segunda consulta do mesmo sistema, referida em registro de associação, segue não identificada.",
-   "status": "A VERIFICAR",
-   "fonte": "Registro de associação setorial"
-  },
-  {
-   "data": "2026-08-30",
-   "titulo": "O Operador Nacional do Sistema publica as funções de produtividade reprocessadas, abrindo a janela de contestação de dez dias",
-   "detalhe": "A janela de contestação vai até 9 de setembro, e a análise final das contestações está prevista para 29 de setembro. A data de publicação cai num domingo, o que encurta a janela útil sem descumprimento de prazo. A função de produtividade é o parâmetro de referência sobre o qual a redução de geração é apurada.",
-   "status": "CONFIRMADO",
-   "fonte": "Registro de associação setorial"
-  },
-  {
-   "data": "2026-08-31",
-   "titulo": "Consulta Pública nº 020/2026 da ANEEL, sobre o Fator X — encerra o prazo",
-   "detalhe": "O número do aviso de consulta publicado no Diário Oficial da União segue não capturado.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL; número do aviso a verificar"
-  },
-  {
-   "data": "2026-08-31",
-   "titulo": "Prazo do Operador Nacional do Sistema para regularização de registros e validação de modelos de usinas por família",
-   "detalhe": "Base em nota técnica do operador de 2024, localizada e ainda não lida na íntegra. Há divergência de registro sobre o alcance do prazo; nenhum percentual deve ser citado sem a fonte primária.",
-   "status": "A VERIFICAR",
-   "fonte": "Registro de associação setorial"
-  },
-  {
-   "data": "2026-08-31",
-   "titulo": "Consulta Pública nº 12/2026 do INMETRO, sobre selos — encerra o prazo",
-   "detalhe": "",
-   "status": "A VERIFICAR",
-   "fonte": "Registro de associação setorial"
-  },
-  {
-   "data": "2026-09-01",
-   "titulo": "Circuito Deliberativo Público Ordinário da Diretoria da ANEEL",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-09-01",
-   "titulo": "Audiência Pública das Consultas Públicas nº 22 e 23/2026 da ANEEL, sobre os editais dos leilões de armazenamento",
-   "detalhe": "Sessão presencial com transmissão, às quatorze horas e trinta minutos, na sede da agência, em Brasília. As duas consultas foram abertas na reunião de diretoria de 28 de julho. Um registro de associação setorial aponta 26 de agosto para esta audiência; prevalece a data de 1º de setembro, que é a da fonte oficial.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-09-01",
-   "titulo": "Semana de gás e energia, de 1º a 3 de setembro, no Rio de Janeiro",
-   "detalhe": "Promovida por associação de cogeração, no Hotel Prodigy Santos Dumont. Datas reconfirmadas na fonte oficial em 24 de agosto.",
-   "status": "CONFIRMADO",
-   "fonte": "Página oficial de eventos da associação de cogeração"
-  },
-  {
-   "data": "2026-09-01",
-   "titulo": "Entrada em suprimento antecipada de 1,8 gigawatt de geração térmica",
-   "detalhe": "Decisão de comitê de monitoramento do setor elétrico de 22 de julho. O dia exato não foi divulgado.",
-   "status": "A VERIFICAR",
-   "fonte": "Registro de comitê setorial"
-  }
- ],
- "proximos_30d": [
-  {
-   "data": "2026-09-04",
-   "titulo": "Consulta pública sobre a prestação de contas do quinto plano de aplicação de recursos de programa de eficiência energética — encerra o prazo",
-   "detalhe": "O número da consulta segue não capturado: o índice de consultas públicas da agência não respondeu pela terceira varredura consecutiva. O prazo capturado vai de 6 de agosto a 4 de setembro.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL; número da consulta a verificar"
-  },
-  {
-   "data": "2026-09-08",
-   "titulo": "Reunião Pública Ordinária da Diretoria da ANEEL",
-   "detalhe": "Data do calendário oficial aprovado por portaria de novembro de 2025. A antecipação ocorrida em agosto mostra que o calendário admite exceção sem aviso longo e sem correção da página.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-09-08",
-   "titulo": "Consulta Pública nº 016/2026 da ANEEL, sobre encargo fixo de baixa tensão — encerra o prazo na agência",
-   "detalhe": "",
-   "status": "A VERIFICAR",
-   "fonte": "Registro de associação setorial"
-  },
-  {
-   "data": "2026-09-09",
-   "titulo": "Três prazos no mesmo dia: contestação das funções de produtividade, contribuições aos editais dos leilões de armazenamento e encerramento da Consulta Pública nº 018/2026",
-   "detalhe": "A contestação das funções de produtividade encerra a janela de dez dias aberta em 30 de agosto. A Consulta Pública nº 018/2026 trata de eficiência energética.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL e registro de associação setorial"
-  },
-  {
-   "data": "2026-09-09",
-   "titulo": "Encontro do conhecimento em administração de geração distribuída, em São Paulo",
-   "detalhe": "Reconfirmado na página da associação organizadora em 24 de agosto. O endereço de credenciamento indicado nessa página não respondeu na verificação de 21 de agosto e não foi rechecado nesta varredura; por isso o evento segue fora do trilho de inscrições.",
-   "status": "CONFIRMADO",
-   "fonte": "Página de eventos de associação de geração distribuída"
-  },
-  {
-   "data": "2026-09-12",
-   "titulo": "Consulta Pública nº 25/2026 da ANEEL, sobre regras de comercialização para os leilões de armazenamento de 2026 — encerra o prazo",
-   "detalhe": "Alcança os módulos 9, 10, 11, 16 e 27 das regras. É onde se decide o passo temporal de apuração e liquidação da reserva de capacidade. A consulta foi aberta na reunião de diretoria de 28 de julho.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-09-14",
-   "titulo": "Consultas Públicas nº 22 e 23/2026 da ANEEL — encerram o prazo na agência",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-09-15",
-   "titulo": "Circuito Deliberativo Público Ordinário da Diretoria da ANEEL",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-09-15",
-   "titulo": "Encontro de bioenergia, de 15 a 16 de setembro, em Campo Grande",
-   "detalhe": "",
-   "status": "A VERIFICAR",
-   "fonte": "Imprensa setorial especializada"
-  },
-  {
-   "data": "2026-09-17",
-   "titulo": "Fórum regional de geração distribuída do Centro-Oeste, de 17 a 18 de setembro, em Campo Grande",
-   "detalhe": "",
-   "status": "A VERIFICAR",
-   "fonte": "Imprensa setorial especializada"
-  },
-  {
-   "data": "2026-09-18",
-   "titulo": "Reunião de conselho fazendário sobre classificação fiscal de geradores fotovoltaicos",
-   "detalhe": "A matéria constava de pauta de 3 de julho e foi retirada por pedido de vista.",
-   "status": "A VERIFICAR",
-   "fonte": "Registro de associação setorial"
-  },
-  {
-   "data": "2026-09-18",
-   "titulo": "Prazo eventual das alegações finais da distribuidora de São Paulo, caso deferido o pedido de trinta dias adicionais apresentado em 19 de agosto",
-   "detalhe": "Projeção, não data marcada. O requerimento de prova pericial pautado em 24 de agosto é peça distinta desse pedido.",
-   "status": "A VERIFICAR",
-   "fonte": "Derivação de prazo; deferimento não confirmado"
-  },
-  {
-   "data": "2026-09-22",
-   "titulo": "Reunião Pública Ordinária da Diretoria da ANEEL",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-09-22",
-   "titulo": "Encontro nacional de máquinas rotativas, de 22 a 24 de setembro, em Belém",
-   "detalhe": "Encontro técnico de entidade brasileira de grandes sistemas elétricos. Datas reconfirmadas na página oficial em 24 de agosto.",
-   "status": "CONFIRMADO",
-   "fonte": "Página oficial de próximos eventos da entidade técnica"
-  },
-  {
-   "data": "2026-09-23",
-   "titulo": "Encontro de energia, de 23 a 24 de setembro, em Fortaleza",
-   "detalhe": "",
-   "status": "A VERIFICAR",
-   "fonte": "Imprensa setorial especializada"
-  }
- ],
- "horizonte": [
-  {
-   "data": "2026-09-26",
-   "titulo": "Prazo-teto de retorno da Consulta Pública nº 45/2019 à diretoria da ANEEL",
-   "detalhe": "O resultado da terceira fase da consulta, que trata dos critérios operativos para redução ou limitação de geração no sistema interligado, está em vista desde 28 de julho, com prazo de sessenta dias. Houve pedido de vista anterior em 22 de junho, em reunião extraordinária, e retirada de pauta em 16 de junho. O prazo-teto é derivação do prazo de sessenta dias e permanece a confirmar. O processo não está decidido e não deve ser tratado como tal.",
-   "status": "A VERIFICAR",
-   "fonte": "Derivação de prazo sobre histórico confirmado no Portal de Dados Abertos da ANEEL"
-  },
-  {
-   "data": "2026-09-29",
-   "titulo": "O Operador Nacional do Sistema conclui a análise final das contestações das funções de produtividade",
-   "detalhe": "",
-   "status": "A VERIFICAR",
-   "fonte": "Registro de associação setorial"
-  },
-  {
-   "data": "2026-09-29",
-   "titulo": "Circuito Deliberativo Público Ordinário da Diretoria da ANEEL",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-09-30",
-   "titulo": "Nota técnica com os quantitativos da capacidade remanescente do sistema interligado, para o leilão de reserva de capacidade",
-   "detalhe": "Sai depois do cadastramento, encerrado em 31 de julho com 6.091 projetos e 296.807 megawatts cadastrados. Projeto cadastrado não é projeto habilitado.",
-   "status": "CONFIRMADO",
-   "fonte": "EPE e Operador Nacional do Sistema"
-  },
-  {
-   "data": "2026-09-30",
-   "titulo": "Encontro de lideranças de armazenamento, em São Paulo",
-   "detalhe": "A página oficial segue no ar sem expor datas, pela nona leitura consecutiva. Data e local a confirmar.",
-   "status": "A VERIFICAR",
-   "fonte": "Página oficial da associação organizadora"
-  },
-  {
-   "data": "2026-10-06",
-   "titulo": "Reunião Pública Ordinária da Diretoria da ANEEL",
-   "detalhe": "Data do calendário oficial aprovado por portaria de novembro de 2025.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-10-06",
-   "titulo": "Fórum latino-americano de redes inteligentes, de 6 a 7 de outubro, em São Paulo",
-   "detalhe": "No Centro de Convenções Frei Caneca. Data reconfirmada na fonte oficial em 24 de agosto.",
-   "status": "CONFIRMADO",
-   "fonte": "Página oficial de eventos da associação de cogeração"
-  },
-  {
-   "data": "2026-10-06",
-   "titulo": "Seminário técnico de proteção e controle, de 6 a 9 de outubro, em Belo Horizonte",
-   "detalhe": "O evento consta da página oficial da entidade técnica, mas as datas não são expostas ali pela terceira leitura consecutiva; as datas vêm de leitura de 10 de agosto.",
-   "status": "A VERIFICAR",
-   "fonte": "Página oficial de próximos eventos da entidade técnica"
-  },
-  {
-   "data": "2026-10-06",
-   "titulo": "Feira de data centers, de 6 a 8 de outubro, em São Paulo",
-   "detalhe": "",
-   "status": "A VERIFICAR",
-   "fonte": "Página de credenciamento do organizador"
-  },
-  {
-   "data": "2026-10-08",
-   "titulo": "Fim da fase de análise da primeira temporada de acesso do plano nacional de acesso ao sistema de transmissão",
-   "detalhe": "",
-   "status": "A VERIFICAR",
-   "fonte": "Registro de associação setorial"
-  },
-  {
-   "data": "2026-10-13",
-   "titulo": "Circuito Deliberativo Público Ordinário da Diretoria da ANEEL",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-10-14",
-   "titulo": "Workshop do leilão de reserva de capacidade de armazenamento",
-   "detalhe": "",
-   "status": "A VERIFICAR",
-   "fonte": "Registro de associação setorial"
-  },
-  {
-   "data": "2026-10-20",
-   "titulo": "Reunião Pública Ordinária da Diretoria da ANEEL",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-10-21",
-   "titulo": "Encontro de armazenamento de energia, edição de Natal, de 21 a 22 de outubro",
-   "detalhe": "Na federação das indústrias do Rio Grande do Norte. Data reconfirmada na fonte oficial em 24 de agosto.",
-   "status": "CONFIRMADO",
-   "fonte": "Página de eventos de associação de geração distribuída"
-  },
-  {
-   "data": "2026-10-21",
-   "titulo": "Simpósio jurídico do setor elétrico, de 21 a 22 de outubro, em São Paulo",
-   "detalhe": "No Blue Tree Premium Faria Lima. Local e endereço de inscrição reconfirmados em 24 de agosto na página da associação que divulga o evento; a data segue a confirmar na entidade organizadora. Coincide com o encontro de armazenamento em Natal.",
-   "status": "CONFIRMADO",
-   "fonte": "Página de eventos de associação de produtores independentes"
-  },
-  {
-   "data": "2026-10-27",
-   "titulo": "Circuito Deliberativo Público Ordinário da Diretoria da ANEEL",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-10-27",
-   "titulo": "Feira e congresso de energia eólica, de 27 a 29 de outubro, em São Paulo",
-   "detalhe": "No São Paulo Expo. Data reconfirmada na fonte oficial em 24 de agosto. É o único evento futuro listado na página da associação organizadora, pela quinta leitura consecutiva.",
-   "status": "CONFIRMADO",
-   "fonte": "Página oficial da associação de energia eólica"
-  },
-  {
-   "data": "2026-10-29",
-   "titulo": "Publicação dos editais do leilão de reserva de capacidade de armazenamento",
-   "detalhe": "É a data em que o preço-teto e o edital assinado deixam de ser pendência.",
-   "status": "A VERIFICAR",
-   "fonte": "Registro de associação setorial"
-  },
-  {
-   "data": "2026-10-30",
-   "titulo": "Leilão de Transmissão nº 4/2026",
-   "detalhe": "Investimento estimado de 8,9 bilhões de reais, com 1.866 quilômetros de linhas e 13.564 megavolt-ampère, em nove lotes distribuídos por nove estados.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-11-03",
-   "titulo": "Reunião Pública Ordinária da Diretoria da ANEEL",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-11-03",
-   "titulo": "Congresso de mulheres do setor de energia, em São Paulo",
-   "detalhe": "Data reconfirmada na fonte oficial em 24 de agosto.",
-   "status": "CONFIRMADO",
-   "fonte": "Página de eventos de associação de geração distribuída"
-  },
-  {
-   "data": "2026-11-05",
-   "titulo": "Encontro de energia solar, de 5 a 7 de novembro, em São Luís",
-   "detalhe": "Data reconfirmada na fonte oficial em 24 de agosto.",
-   "status": "CONFIRMADO",
-   "fonte": "Página de eventos de associação de geração distribuída"
-  },
-  {
-   "data": "2026-11-09",
-   "titulo": "Encontro de líderes ambientais do setor de energia, de 9 a 11 de novembro, em São Paulo",
-   "detalhe": "No Hotel Pullman Vila Olímpia. Data reconfirmada na fonte oficial em 24 de agosto. Endereço de credenciamento não exposto na página oficial, pela segunda leitura.",
-   "status": "CONFIRMADO",
-   "fonte": "Página oficial de eventos da associação de cogeração"
-  },
-  {
-   "data": "2026-11-10",
-   "titulo": "Encontro de energia, de 10 a 13 de novembro, no Ceará",
-   "detalhe": "Em Aquiraz Riviera. Data reconfirmada em 24 de agosto na página da associação organizadora. Endereço de inscrição não exposto.",
-   "status": "CONFIRMADO",
-   "fonte": "Página de eventos de associação de produtores independentes"
-  },
-  {
-   "data": "2026-11-10",
-   "titulo": "Circuito Deliberativo Público Ordinário da Diretoria da ANEEL",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-11-13",
-   "titulo": "Sessão pública dos Leilões de Energia Existente A-1, A-2 e A-3",
-   "detalhe": "Sessão híbrida, com os certames realizados de forma sequencial, abertos a qualquer fonte, com contratos de dois anos e início de suprimento em janeiro de 2027, 2028 e 2029. As declarações de necessidade que subsidiam estes leilões encerraram em 21 de agosto.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/MME e gov.br/ANEEL"
-  },
-  {
-   "data": "2026-11-17",
-   "titulo": "Reunião Pública Ordinária da Diretoria da ANEEL",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-11-18",
-   "titulo": "Aporte de garantias do leilão de reserva de capacidade de armazenamento, de 18 a 20 de novembro",
-   "detalhe": "",
-   "status": "A VERIFICAR",
-   "fonte": "Registro de associação setorial"
-  },
-  {
-   "data": "2026-11-18",
-   "titulo": "Prazo de cento e vinte dias do Operador Nacional do Sistema para a ferramenta de atualização de dados em lote",
-   "detalhe": "O prazo consta do ato; o termo inicial da contagem não foi confirmado, e por isso a data é aproximada.",
-   "status": "A VERIFICAR",
-   "fonte": "Termo inicial a verificar"
-  },
-  {
-   "data": "2026-11-24",
-   "titulo": "Encontro para debates de assuntos de operação, de 24 a 26 de novembro, no Rio de Janeiro",
-   "detalhe": "Promovido por entidade brasileira de grandes sistemas elétricos, com o tema da operação inteligente e integrada. A submissão de resumos foi declarada aberta em 27 de fevereiro de 2026 e a data-limite continua não exposta na página oficial, pela oitava leitura consecutiva.",
-   "status": "CONFIRMADO",
-   "fonte": "Página oficial de próximos eventos da entidade técnica"
-  },
-  {
-   "data": "2026-11-24",
-   "titulo": "Circuito Deliberativo Público Ordinário da Diretoria da ANEEL",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-11-30",
-   "titulo": "Seminário técnico de operação e proteção, de 30 de novembro a 2 de dezembro, em Belo Horizonte",
-   "detalhe": "Ausente da página de próximos eventos da entidade técnica pela oitava leitura consecutiva. Ausência reiterada na fonte oficial não é cancelamento.",
-   "status": "A VERIFICAR",
-   "fonte": "Página oficial de próximos eventos da entidade técnica"
-  },
-  {
-   "data": "2026-12-01",
-   "titulo": "Reunião Pública Ordinária da Diretoria da ANEEL",
-   "detalhe": "Dezembro não tem circuito deliberativo ordinário no calendário aprovado.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2026-12-02",
-   "titulo": "Leilão de reserva de capacidade de armazenamento com exigência de conteúdo nacional",
-   "detalhe": "Base na portaria normativa nº 136/2026. Contratos de quinze anos, com início de suprimento em 1º de agosto de 2028, potência mínima de trinta megawatts e regime de quatro horas até duas vezes por dia, com seis horas de recuperação.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/MME"
-  },
-  {
-   "data": "2026-12-02",
-   "titulo": "Encontro nacional do setor solar, de 2 a 3 de dezembro, em São Paulo",
-   "detalhe": "A página oficial segue sem expor a data, pela sétima leitura consecutiva.",
-   "status": "A VERIFICAR",
-   "fonte": "Página oficial da associação organizadora"
-  },
-  {
-   "data": "2026-12-04",
-   "titulo": "Leilão de reserva de capacidade de armazenamento sem exigência de conteúdo nacional",
-   "detalhe": "Mesmas condições de contrato e suprimento do certame de 2 de dezembro, admitindo equipamento importado.",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/MME"
-  },
-  {
-   "data": "2026-12-08",
-   "titulo": "Reunião Pública Ordinária da Diretoria da ANEEL",
-   "detalhe": "",
-   "status": "CONFIRMADO",
-   "fonte": "gov.br/ANEEL"
-  },
-  {
-   "data": "2027-11-25",
-   "titulo": "Abertura do mercado livre de energia para consumidores comerciais e industriais de baixa tensão",
-   "detalhe": "Marco do decreto nº 13.097/2026. A regulamentação da agência priorizará o supridor de última instância e a metodologia de sobrecontratação, com horizonte declarado de novembro de 2027; nenhuma janela de consulta pública sobre esses dois temas foi marcada.",
-   "status": "CONFIRMADO",
-   "fonte": "Decreto publicado no Diário Oficial da União em 13 de agosto de 2026"
-  },
-  {
-   "data": "2028-11-25",
-   "titulo": "Abertura do mercado livre de energia para consumidores residenciais e demais",
-   "detalhe": "Marco do decreto nº 13.097/2026.",
-   "status": "CONFIRMADO",
-   "fonte": "Decreto publicado no Diário Oficial da União em 13 de agosto de 2026"
-  }
- ]
+  "_meta": {
+    "titulo": "Agenda do Setor Elétrico — Monitor SOA/SOS",
+    "atualizado_em": "2026-09-17",
+    "fonte": "Monitor de Eventos SOA/SOS · fontes oficiais (gov.br/ANEEL · Senado Federal · EPE · MME · CCEE · ONS · CIGRE-Brasil) + associações do setor (ANE, COGEN, APINE, ABGD, ABSOLAR, ABEEólica, ABCE, ABRAGE), páginas oficiais de eventos e imprensa setorial",
+    "nota": "Agenda pública de datas do setor elétrico. Eventos de associação e sinais de fontes secundárias marcados 'A VERIFICAR'; confirmar no ato ou na página oficial antes de citar.",
+    "nota_run_2026_09_14": "Varredura de 14 de setembro, cobrindo a janela desde 8 de setembro. É a quinta rodada sob a cadência semanal, e o bloco de ação alcança prazos de até dez dias, até 24 de setembro. Quatro movimentos organizam esta agenda. (1) A agência reguladora abriu em 10 de setembro a consulta pública nº 33/2026, que atualiza o módulo três dos procedimentos de distribuição para os recursos energéticos distribuídos, com contribuições até 9 de novembro; a consulta vinha anunciada desde agosto. No mesmo dia abriu a consulta nº 32/2026, sobre o edital do primeiro leilão de transmissão de 2027, marcado para 30 de abril de 2027 e com o primeiro lote de baterias no segmento de transmissão, com contribuições até 26 de outubro. (2) Correção: a agenda de 8 de setembro registrou, com base em comunicação de associação de 3 de setembro, que a divulgação das funções de produtividade não havia ocorrido. Comunicação da mesma associação de 11 de setembro informa que o prazo de contestação existiu e encerrou em 10 de setembro, e que o operador nacional analisa as contestações até 30 de setembro; o marco condicional de 29 de setembro sai da agenda. (3) O retorno à diretoria da consulta pública de 2019 sobre cortes de geração tem data: o voto-vista será apresentado até 6 de outubro, o que substitui o prazo-teto derivado de 26 de setembro. A câmara de comercialização divulga as regras de comercialização da compensação de cortes em 21 de setembro. (4) Na frente de eventos, o encontro de lideranças de armazenamento teve data, local e inscrições confirmados, 30 de setembro em São Paulo; o fórum de geração distribuída do Centro-Oeste e o encontro de energia de Fortaleza foram confirmados nos sites oficiais; o congresso de mulheres da energia passou a A VERIFICAR, porque o site oficial do evento indica data diferente da divulgada pela associação. A página da associação de geração distribuída voltou ao ar. As três consultas do ministério que encerram em 8 de outubro foram identificadas por imprensa setorial como as de números 227, 228 e 229 de 2026, e deixam de ser contadas como quatro frentes.",
+    "verificado_em": "2026-09-17",
+    "nota_run_2026_09_17": "Bump meta na renovacao CEO; conteudo de eventos nao re-varrido item a item nesta passada."
+  },
+  "recentes": [
+    {
+      "data": "2026-09-10",
+      "titulo": "Aberta a consulta pública nº 33/2026, que atualiza o módulo três dos procedimentos de distribuição para os recursos energéticos distribuídos",
+      "detalhe": "A consulta trata da conexão de geração solar distribuída, armazenamento, veículos elétricos e cargas flexíveis, com requisitos de observabilidade, controlabilidade e interoperabilidade. A proposta deriva de trabalho do operador nacional com a agência reguladora e três universidades. As contribuições vão de 10 de setembro a 9 de novembro, por sessenta dias.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-09-10",
+      "titulo": "Aberta a consulta pública nº 32/2026, sobre o edital do leilão de transmissão nº 1/2027, o primeiro com baterias na transmissão",
+      "detalhe": "O leilão está marcado para 30 de abril de 2027, na B3, em São Paulo, com doze bilhões e novecentos milhões de reais em investimento previsto, três mil duzentos e quarenta e cinco quilômetros de linhas e mil trezentos e oitenta e seis megavolt-ampères, em doze lotes distribuídos por treze estados. Um dos lotes contrata o primeiro sistema de armazenamento por baterias no segmento de transmissão do sistema interligado, no Acre, com contrato de dezoito anos. As contribuições vão de 10 de setembro a 26 de outubro.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora e imprensa setorial"
+    },
+    {
+      "data": "2026-09-08",
+      "titulo": "A diretoria da agência reguladora aprovou a primeira revisão da agenda regulatória 2026-2027",
+      "detalhe": "A agenda passou de cinquenta e nove para cinquenta e quatro atividades, com duas exclusões, nove adiamentos para 2028 e cinco inclusões. O aprimoramento dos procedimentos de rede e das regras de comercialização decorrente da regulamentação de limitação de geração foi deslocado de 2026 para 2027. Entraram sinais econômicos para armazenamento junto a parques geradores, a regulamentação da política nacional de acesso ao sistema de transmissão e o supridor de última instância.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora e imprensa setorial"
+    },
+    {
+      "data": "2026-09-11",
+      "titulo": "Correção: o prazo de contestação das funções de produtividade existiu e encerrou em 10 de setembro",
+      "detalhe": "A agenda de 8 de setembro havia registrado que a divulgação não ocorrera. Comunicação de associação setorial de 11 de setembro informa que o cronograma foi atualizado, que o prazo de contestações encerrou em 10 de setembro e que o operador nacional tem até 30 de setembro para analisá-las. A associação pede aos agentes que reportem inconsistências nos resultados divulgados.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-09-10",
+      "titulo": "O voto-vista na consulta pública de 2019 sobre critérios de redução de geração será apresentado até 6 de outubro",
+      "detalhe": "A data foi informada em reunião de associações setoriais com diretor da agência reguladora e substitui o prazo-teto derivado de 26 de setembro. A demora foi associada à espera da nota técnica de revisão da resolução normativa nº 1.030/2022.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-09-11",
+      "titulo": "A revisão da resolução normativa nº 1.030/2022 tem nota técnica prevista para a semana de 14 de setembro e consulta pública em meados de outubro",
+      "detalhe": "A conclusão da revisão fica para 2027. A associação fixou 14 de setembro como prazo para que os associados enviem os pontos considerados imprescindíveis, com escopo que inclui a lei nº 15.269, a consulta pública de 2019 sobre cortes de geração e o preço de liquidação mínimo.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-09-04",
+      "titulo": "O projeto de lei do regime especial para data centers foi encaminhado à sanção presidencial",
+      "detalhe": "A página oficial da matéria registra o encaminhamento à sanção em 4 de setembro, a comunicação à Câmara dos Deputados em 8 de setembro e a situação de aguardando sanção, com prazo até 25 de setembro. Ainda não há número de lei.",
+      "status": "CONFIRMADO",
+      "fonte": "Página oficial da matéria no Senado Federal"
+    },
+    {
+      "data": "2026-09-11",
+      "titulo": "A câmara de comercialização anunciou transmissão sobre os efeitos do fenômeno climático no mercado de energia em 15 de setembro",
+      "detalhe": "A transmissão ocorre às dez horas, online, pelo portal do aluno da escola de formação da câmara, sem inscrição prévia. Na mesma data, a câmara abriu patrocínio para o segundo fórum de análise setorial, de 17 de novembro; ingressos ainda não foram divulgados.",
+      "status": "CONFIRMADO",
+      "fonte": "Câmara de comercialização de energia elétrica"
+    },
+    {
+      "data": "2026-09-11",
+      "titulo": "A agência reguladora aprovou a transferência de controle indireto de vinte e seis concessionárias de transmissão",
+      "detalhe": "O grupo envolvido não foi verificado nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-09-14",
+      "titulo": "O encontro de lideranças de armazenamento teve data, local e inscrições confirmados: 30 de setembro, em São Paulo",
+      "detalhe": "Segunda edição, das oito às dezoito horas, no Milenium Centro de Convenções, na Vila Mariana, com inscrições abertas. A data não aparecia na página da associação organizadora havia onze leituras consecutivas.",
+      "status": "CONFIRMADO",
+      "fonte": "Página oficial de inscrição do evento"
+    },
+    {
+      "data": "2026-09-14",
+      "titulo": "Divergência de data do congresso brasileiro de mulheres da energia",
+      "detalhe": "A associação de geração distribuída mantém 3 de novembro de 2026; o site oficial do evento indica 8 de março de 2027, no Teatro Santander, em São Paulo. O item passa a A VERIFICAR até confirmação.",
+      "status": "A VERIFICAR",
+      "fonte": "Site oficial do evento e comunicação de associação setorial"
+    }
+  ],
+  "acao_7dias": [
+    {
+      "data": "2026-09-14",
+      "titulo": "Encerram na agência reguladora as consultas públicas nº 22 e nº 23/2026, dos editais dos leilões de armazenamento, e a consulta nº 25/2026, das regras de comercialização do leilão de reserva de capacidade",
+      "detalhe": "As consultas dos editais correram de 30 de julho a 14 de setembro. O prazo formal da consulta nº 25/2026 era 12 de setembro, um sábado.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-09-14",
+      "titulo": "Encerra o prazo interno de associação para os pontos imprescindíveis da revisão da resolução normativa nº 1.030/2022",
+      "detalhe": "A nota técnica de abertura da consulta pública está prevista para esta semana.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-09-15",
+      "titulo": "Transmissão da câmara de comercialização sobre o fenômeno climático de 2026/2027 e o mercado de energia",
+      "detalhe": "Às dez horas, online, pelo portal do aluno da escola de formação da câmara.",
+      "status": "CONFIRMADO",
+      "fonte": "Câmara de comercialização de energia elétrica"
+    },
+    {
+      "data": "2026-09-15",
+      "titulo": "Circuito deliberativo da diretoria da agência reguladora",
+      "detalhe": "",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-09-15",
+      "titulo": "Encontro de bioenergia em Campo Grande, até 16 de setembro",
+      "detalhe": "Datas divulgadas por imprensa setorial e ainda não confirmadas em página oficial.",
+      "status": "A VERIFICAR",
+      "fonte": "Imprensa setorial"
+    },
+    {
+      "data": "2026-09-17",
+      "titulo": "Fórum regional de geração distribuída do Centro-Oeste, em Campo Grande, até 18 de setembro",
+      "detalhe": "Trigésima segunda edição, no auditório do conselho regional de engenharia de Mato Grosso do Sul, com inscrições abertas. Datas confirmadas no site oficial nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "Página oficial do evento"
+    },
+    {
+      "data": "2026-09-18",
+      "titulo": "Conselho de política fazendária retoma a classificação fiscal de geradores fotovoltaicos",
+      "detalhe": "O item foi retirado da pauta de 3 de julho por pedido de vista. A reunião ordinária de setembro ocorreu em 4 de setembro, e a data de retorno segue a confirmar. É acompanhamento, não submissão.",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-09-21",
+      "titulo": "A câmara de comercialização divulga as regras de comercialização da compensação por cortes de geração",
+      "detalhe": "É o próximo marco do cronograma da portaria normativa nº 140/2026 do ministério, seguido de capacitação prevista para 19 de outubro.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-09-22",
+      "titulo": "Reunião pública ordinária da diretoria da agência reguladora",
+      "detalhe": "",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-09-22",
+      "titulo": "Encontro nacional de máquinas rotativas, em Belém, até 24 de setembro",
+      "detalhe": "Décima segunda edição, promovida pelo comitê brasileiro de grandes sistemas elétricos. Data reconfirmada na página oficial nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-09-23",
+      "titulo": "Encontro de energia em Fortaleza, até 24 de setembro",
+      "detalhe": "Oitava edição, no Centro de Eventos do Ceará, das oito e meia às dezoito horas, com inscrições abertas. Datas confirmadas no site oficial nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "Página oficial do evento"
+    },
+    {
+      "data": "2026-09-23",
+      "titulo": "Transmissão de associação setorial sobre reforma tributária na geração distribuída",
+      "detalhe": "Horário a definir.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    }
+  ],
+  "proximos_30d": [
+    {
+      "data": "2026-09-25",
+      "titulo": "Prazo final de sanção presidencial do projeto de lei do regime especial para data centers",
+      "detalhe": "A janela de sanção de 4 a 25 de setembro consta da página oficial da matéria.",
+      "status": "CONFIRMADO",
+      "fonte": "Página oficial da matéria no Senado Federal"
+    },
+    {
+      "data": "2026-09-29",
+      "titulo": "Circuito deliberativo da diretoria da agência reguladora",
+      "detalhe": "",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-09-30",
+      "titulo": "Encontro de lideranças de armazenamento, em São Paulo, com inscrições abertas",
+      "detalhe": "Segunda edição, das oito às dezoito horas, no Milenium Centro de Convenções, com foco no leilão de reserva de capacidade.",
+      "status": "CONFIRMADO",
+      "fonte": "Página oficial de inscrição do evento"
+    },
+    {
+      "data": "2026-09-30",
+      "titulo": "Limite para o operador nacional analisar as contestações das funções de produtividade",
+      "detalhe": "O prazo de contestação encerrou em 10 de setembro.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-09-30",
+      "titulo": "Nota técnica com os quantitativos da capacidade remanescente do sistema interligado para o leilão de reserva de capacidade",
+      "detalhe": "O documento tem nome quase idêntico ao da nota técnica publicada em 31 de agosto para a temporada de acesso, e a eventual sobreposição entre os dois segue a verificar.",
+      "status": "A VERIFICAR",
+      "fonte": "Empresa de pesquisa energética"
+    },
+    {
+      "data": "2026-10-02",
+      "titulo": "Encerra a consulta pública sobre as regras de comercialização de 2027",
+      "detalhe": "Alcança a sazonalização da garantia física no mecanismo de realocação de energia, as usinas híbridas de solar com baterias contratadas no terceiro leilão de sistemas isolados e a metodologia de débitos acumulados no mercado de curto prazo. O número da consulta segue não capturado.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-10-04",
+      "titulo": "Encerra o prazo interno de associação para a consulta pública nº 28/2026, sobre o encargo de complemento de recursos e o teto da conta de desenvolvimento energético",
+      "detalhe": "A associação reabriu a coleta de pontos adicionais. O prazo na agência vai até 9 de outubro.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-05",
+      "titulo": "Encerra o prazo interno de associação para a consulta pública nº 229/2026 do ministério, sobre a alocação do encargo de reserva de capacidade",
+      "detalhe": "O prazo no próprio ministério vai até 8 de outubro.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-06",
+      "titulo": "Prazo para apresentação do voto-vista na consulta pública de 2019 sobre critérios de redução de geração",
+      "detalhe": "",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-06",
+      "titulo": "Reunião pública ordinária da diretoria da agência reguladora",
+      "detalhe": "Datas do calendário oficial aprovado por portaria de novembro de 2025, que se sabe admitir exceção sem aviso longo.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-10-06",
+      "titulo": "Fórum latino-americano de redes inteligentes, em São Paulo, até 7 de outubro",
+      "detalhe": "Décima oitava edição, no Centro de Convenções Frei Caneca. Data e página de inscrição reconfirmadas nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-06",
+      "titulo": "Encontro de data centers em São Paulo, até 8 de outubro",
+      "detalhe": "São Paulo Expo, em conjunto com feira de telecomunicações. Datas confirmadas no site oficial nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "Página oficial do evento"
+    },
+    {
+      "data": "2026-10-06",
+      "titulo": "Seminário técnico de proteção e controle, em Belo Horizonte, até 9 de outubro",
+      "detalhe": "Décima oitava edição, promovida pelo comitê brasileiro de grandes sistemas elétricos. A página do comitê segue sem data exposta, pela sexta leitura, e o site do evento não respondeu nesta rodada.",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-08",
+      "titulo": "Encerram as consultas públicas nº 227, nº 228 e nº 229/2026 do ministério, e encerra a fase de análise da primeira temporada de acesso",
+      "detalhe": "As consultas tratam da taxa de fiscalização devida por comercializadores, dos limites do preço de liquidação e das regras de comercialização para a abertura do mercado, e da alocação do encargo de reserva de capacidade pelo consumo nas horas de maior demanda do sistema. A correspondência entre as portarias de abertura e os números das consultas vem de imprensa setorial.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br do ministério e imprensa setorial"
+    },
+    {
+      "data": "2026-10-09",
+      "titulo": "Encerra na agência reguladora a consulta pública nº 28/2026",
+      "detalhe": "",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-12",
+      "titulo": "Encerra o prazo interno de associação para a consulta pública nº 31/2026, sobre o indicador de cumprimento de prazos de obras da distribuição",
+      "detalhe": "O prazo na agência vai até 19 de outubro.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-12",
+      "titulo": "Encerra na agência reguladora a consulta pública nº 29/2026, sobre redes subterrâneas",
+      "detalhe": "O número e o prazo vêm de imprensa e seguem a verificar; a abertura, em 27 de agosto, está confirmada.",
+      "status": "A VERIFICAR",
+      "fonte": "Imprensa setorial"
+    },
+    {
+      "data": "2026-10-14",
+      "titulo": "Encontro técnico do leilão de reserva de capacidade de armazenamento",
+      "detalhe": "",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
+    }
+  ],
+  "horizonte": [
+    {
+      "data": "2026-10-15",
+      "titulo": "Abertura prevista da consulta pública de revisão da resolução normativa nº 1.030/2022, em meados de outubro",
+      "detalhe": "Sem dia fixado; a data registrada é referência do mês.",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-16",
+      "titulo": "Encerra o prazo interno de associação para o levantamento sobre logística reversa de equipamentos fotovoltaicos",
+      "detalhe": "O levantamento alcança módulos, inversores, baterias e sistemas de armazenamento.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-19",
+      "titulo": "Encerra a consulta pública nº 31/2026, sobre o indicador de cumprimento de prazos de obras da distribuição, e ocorre a capacitação da câmara de comercialização sobre as regras da compensação de cortes",
+      "detalhe": "Vigência do indicador prevista para janeiro de 2027. Horário da capacitação a definir.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora e comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-21",
+      "titulo": "Encontro de armazenamento de energia em Natal, até 22 de outubro",
+      "detalhe": "Centro de convenções da federação das indústrias do Rio Grande do Norte, com inscrições abertas. Reconfirmado no site oficial do evento nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "Página oficial do evento"
+    },
+    {
+      "data": "2026-10-21",
+      "titulo": "Simpósio jurídico de concessionárias de energia elétrica, em São Paulo, até 22 de outubro",
+      "detalhe": "Trigésima segunda edição, no Blue Tree Premium Faria Lima, presencial. Formulário de inscrição reaberto e reconfirmado nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-26",
+      "titulo": "Encerra a consulta pública nº 32/2026, sobre o edital do leilão de transmissão nº 1/2027",
+      "detalhe": "O leilão está marcado para 30 de abril de 2027 e inclui o primeiro lote de baterias no segmento de transmissão.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora e imprensa setorial"
+    },
+    {
+      "data": "2026-10-27",
+      "titulo": "Congresso e feira de energia eólica em São Paulo, até 29 de outubro",
+      "detalhe": "São Paulo Expo. Datas reconfirmadas na página da associação de energia eólica e no site oficial do evento nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-29",
+      "titulo": "Publicação dos editais do leilão de reserva de capacidade de armazenamento",
+      "detalhe": "É a data em que o preço-teto e o edital assinado deixam de ser pendência.",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-30",
+      "titulo": "Leilão de transmissão nº 4/2026",
+      "detalhe": "Oito bilhões e novecentos milhões de reais em investimento previsto, mil oitocentos e sessenta e seis quilômetros de linhas e treze mil quinhentos e sessenta e quatro megavolt-ampères, em nove lotes distribuídos por nove estados.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-11-02",
+      "titulo": "Encerra o prazo interno de associação para a consulta pública nº 33/2026, do módulo três dos procedimentos de distribuição",
+      "detalhe": "O prazo na agência vai até 9 de novembro.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-11-03",
+      "titulo": "Congresso brasileiro de mulheres da energia, em São Paulo",
+      "detalhe": "Data divulgada pela associação de geração distribuída. O site oficial do evento indica 8 de março de 2027, no Teatro Santander; a data segue a confirmar.",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-11-05",
+      "titulo": "Encontro de geração distribuída solar em São Luís, até 7 de novembro",
+      "detalhe": "Reconfirmado na página da associação de geração distribuída nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-11-09",
+      "titulo": "Encerra na agência reguladora a consulta pública nº 33/2026, do módulo três dos procedimentos de distribuição",
+      "detalhe": "Contribuições por sessenta dias, desde 10 de setembro.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-11-09",
+      "titulo": "Encontro de líderes ambientais no setor de energia, em São Paulo, até 11 de novembro, com inscrições abertas",
+      "detalhe": "Décima sétima edição, no Hotel Pullman Vila Olímpia. A página da associação de cogeração passou a expor o endereço de inscrição nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-11-10",
+      "titulo": "Congresso de energia no Ceará, até 13 de novembro",
+      "detalhe": "Aquiraz Riviera. Data reconfirmada na página da associação de produtores independentes nesta rodada; sem endereço de inscrição exposto.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-11-13",
+      "titulo": "Sessão pública dos leilões de energia existente",
+      "detalhe": "Sessão híbrida, com os certames de um, dois e três anos de antecedência realizados em sequência, admitindo qualquer fonte, com contratos de dois anos e suprimento a partir de janeiro de 2027, de 2028 e de 2029.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-11-17",
+      "titulo": "Segunda edição do fórum de análise setorial da câmara de comercialização, em São Paulo",
+      "detalhe": "Grand Hyatt São Paulo, em formato híbrido com transmissão. A câmara abriu patrocínio em 11 de setembro; ingressos ainda não divulgados.",
+      "status": "CONFIRMADO",
+      "fonte": "Câmara de comercialização de energia elétrica"
+    },
+    {
+      "data": "2026-11-18",
+      "titulo": "Encontro de armazenamento de energia em São Paulo, até 19 de novembro",
+      "detalhe": "Local a definir. O site oficial segue anunciando inscrições abertas, mas a página de ofertas não exibia lotes nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "Página oficial do evento"
+    },
+    {
+      "data": "2026-11-18",
+      "titulo": "Aporte de garantias do leilão de reserva de capacidade de armazenamento, até 20 de novembro",
+      "detalhe": "",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-11-24",
+      "titulo": "Encontro para debates de assuntos de operação, no Rio de Janeiro, até 26 de novembro",
+      "detalhe": "Décima nona edição, promovida pelo comitê brasileiro de grandes sistemas elétricos. O comitê informa prazo de submissão prorrogado, sem data-limite exposta.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-11-30",
+      "titulo": "Encontro técnico sobre transformadores e subestações, em Belo Horizonte, até 2 de dezembro",
+      "detalhe": "Décima segunda edição. O evento segue ausente da página de próximos eventos do comitê organizador, pela décima primeira leitura.",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-12-02",
+      "titulo": "Leilões de reserva de capacidade de armazenamento, em 2 e em 4 de dezembro",
+      "detalhe": "O leilão número cinco de 2026, de âmbito nacional, exige baterias fabricadas no país; o leilão número seis de 2026, geral, não impõe essa exigência. Os contratos de reserva de capacidade por potência são de quinze anos, com suprimento a partir de 1º de agosto de 2028.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-12-02",
+      "titulo": "Encontro nacional da associação do setor solar, em São Paulo, até 3 de dezembro",
+      "detalhe": "Sexta edição. A data segue a confirmar: a página oficial de eventos lista apenas a edição anterior, pela décima segunda leitura.",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-12-31",
+      "titulo": "Entra em vigor, em caráter excepcional, parte das regras de comercialização de 2027",
+      "detalhe": "O restante das mudanças passa a valer a partir de janeiro de 2027.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2027-04-30",
+      "titulo": "Leilão de transmissão nº 1/2027, o primeiro com baterias na transmissão",
+      "detalhe": "Na B3, em São Paulo. O edital passa por consulta pública até 26 de outubro, deliberação prévia da diretoria e análise do tribunal de contas a partir de dezembro.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora e imprensa setorial"
+    },
+    {
+      "data": "2027-11-25",
+      "titulo": "Primeiro marco de abertura do mercado livre para consumidores de baixa tensão",
+      "detalhe": "O decreto de 2026 fixa a abertura para consumidores comerciais e industriais de baixa tensão nesta data, e para residenciais e demais em 25 de novembro de 2028.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
+    }
+  ]
 }

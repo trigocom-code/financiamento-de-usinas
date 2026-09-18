@@ -121,6 +121,21 @@
   <span><span class="dot r"></span>Mais de 7 dias — atenção</span>
 </div>
 
+<!-- AUDIT SOA 2026-09-17: faixa honesta de frescor/publicacao -->
+<div id="soaAuditBanner" style="margin:12px 0 18px;padding:14px 16px;border-radius:12px;background:#3b0d0d;border:1px solid #b91c1c;color:#fecaca;font:500 13px/1.45 Arial,Helvetica,sans-serif;">
+  <div style="font:700 14px Arial;color:#fecaca;margin-bottom:6px;">⚠ Catálogo público DESATUALIZADO · auditoria 17/09/2026 21h57 BRT</div>
+  <ul style="margin:0;padding-left:18px;">
+    <li><b>Site GitHub Pages</b> ainda serve fatos com <code>verificado_em</code> de 24–27/08 (e Gato Solar 28/07). O manifesto <code>_frescor.json</code> publicado está em 27/08 — 70/70 cartões &gt;7 dias.</li>
+    <li><b>PC local (canônica)</b> atualiza: ANEEL/MME/Regulatorios tocados em 17/09; <code>_frescor.json</code> regenerado hoje 12:25. O site não recebe porque o push falhou.</li>
+    <li><b>Causa 1 (semanas):</b> <code>push_fatos_github.ps1</code> / <code>publish_estaticos.ps1</code> → HTTP <b>401 Não Autorizado</b> (token GitHub) — mesmo padrão documentado em 27–29/07.</li>
+    <li><b>Causa 2 (hoje 15:23):</b> PR <a href="https://github.com/trigocom-code/financiamento-de-usinas/pull/314" style="color:#fca5a5;">#314</a> abriu, mas o gate <code>validar_fatos.py</code> <b>reprovou</b>: <code>Fatos_GatoSolar_Folder_SOA.json</code> com <code>verificado_em</code> há <b>51 dias</b> (limite 30). Nada publicado.</li>
+    <li><b>Monitores Claude hoje:</b> só <code>monitor-regulatorio-soa</code> varreu. ESG / Capital Verde / Gato Solar / IPTU / Seguros = não rodaram. Engine: formato “não reproduzível” adia bump de Regulatorios/ANEEL/ONS/CCEE/EPE.</li>
+    <li><b>CEO:</b> 121 propostas no backlog; 773 PDFs na fila; REDATA virou Lei 15.504/2026 (DOU 15/09) na canônica — ainda fora do Pages.</li>
+  </ul>
+  <div style="margin-top:8px;color:#fca5a5;">Régua do selo no catálogo (24h/7d) ≠ gate CI (aviso 10d / barra 30d) ≠ <code>regra_staleness</code> nos JSON (90d). Três relógios diferentes.</div>
+</div>
+
+
 <h2 class="sec">Folder-mestre &amp; Agenda de eventos</h2>
 <p class="sec-sub">Página inicial do site (URL nua) e a agenda viva do setor — cada uma em sua caixa. Acompanhe de qualquer lugar.</p>
 <div class="grid">
@@ -479,7 +494,7 @@
   <a href="mailto:pedro@solaroneaccount.com" style="color:#1C5AAD;">pedro@solaroneaccount.com</a> ·
   <a href="https://wa.me/5544999720477" target="_blank" rel="noopener" style="color:#25D366;">WhatsApp</a><br/>
   Três pedidos de patente depositados no INPI: BR 10 2026 003913-6 · BR 10 2026 010655-0 · BR 10 2026 011466-9<br/>
-  <span style="color:#9ca3af;">Selos de frescor: manifesto publicado junto com o site (_frescor.json, gerado pela rotina diária) · fallback: API pública do GitHub com cache de 30 min · sem credenciais · sem rastreamento.</span>
+  <span style="color:#9ca3af;">Selos de frescor: manifesto publicado junto com o site (_frescor.json, gerado pela rotina diária no PC — se o push falhar (401) ou o gate barrar (ex.: Gato Solar &gt;30d), o Pages fica congelado) · fallback: API pública do GitHub com cache de 30 min · sem credenciais · sem rastreamento.</span>
 </div>
 
 </div>
