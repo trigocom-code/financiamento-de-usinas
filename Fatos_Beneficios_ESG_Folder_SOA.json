@@ -2,9 +2,10 @@
   "_meta": {
     "orgao": "Benefícios da Certificação ESG (por ator)",
     "schema_version": "1.0",
-    "verificado_em": "2026-08-18",
+    "verificado_em": "2026-09-17",
     "regra_fonte_associacao": "F1 — fontes primárias (Planalto, CONFAZ, ANEEL, CVM, BNDES, BNB, BASA, Caixa, Tesouro, Comissão Europeia, leis municipais/estaduais). Só status=='verificado' renderiza; 'pendente' fica na base para acompanhamento e NÃO aparece em folder. SOA/SOS = camada de verificação, não emissora do benefício.",
-    "fonte_canonica": "dossie_beneficios_v1 + verificacao_fontes_primarias"
+    "fonte_canonica": "dossie_beneficios_v1 + verificacao_fontes_primarias",
+    "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. CVM noticias -> 200 197378"
   },
   "_carimbo": {
     "atualizado_em": "2026-08-18T00:00:00-03:00",
