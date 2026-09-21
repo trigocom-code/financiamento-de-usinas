@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-09-21T08:25:01-03:00",
+                  "gerado_em":  "2026-09-21T12:25:04-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
@@ -11,6 +11,7 @@
                      "_bak_capital-verde-usinas_2026-09-08.html":  "2026-09-08T09:46:05-03:00",
                      "_bak_capital-verde-usinas_2026-09-14.html":  "2026-09-08T09:46:27-03:00",
                      "_bak_capital-verde-usinas_2026-09-16.html":  "2026-09-14T08:52:27-03:00",
+                     "_bak_capital-verde-usinas_2026-09-21.html":  "2026-09-16T08:42:38-03:00",
                      "_bak_prova-horaria-datacenters_2026-09-16.html":  "2026-08-21T13:04:48-03:00",
                      "_bak_prova-horaria-datacenters_2026-09-17.html":  "2026-09-16T08:42:38-03:00",
                      "_Catalogo_SOA.html":  "2026-07-01T19:44:08-03:00",
@@ -35,7 +36,7 @@
                      "arq-com-cto-otavio-a1b7.html":  "2026-07-04T21:48:43-03:00",
                      "baterias-curtailment.html":  "2026-08-21T13:04:48-03:00",
                      "bitcoin-verde-soa.html":  "2026-09-16T08:42:38-03:00",
-                     "capital-verde-usinas.html":  "2026-09-16T08:42:38-03:00",
+                     "capital-verde-usinas.html":  "2026-09-21T08:38:20-03:00",
                      "carta-ane-acu-iii-soa.html":  "2026-08-05T16:43:33-03:00",
                      "Catalogo_Vivos_SOA.html":  "2026-09-17T21:57:26-03:00",
                      "catalogo-vetores-soa.html":  "2026-07-04T23:42:40-03:00",
@@ -60,7 +61,7 @@
                      "Fatos_GatoSolar_Folder_SOA.bak_pre_revalidacao_20260917.json":  "2026-07-28T14:32:28-03:00",
                      "Fatos_GatoSolar_Folder_SOA.json":  "2026-09-17T22:31:00-03:00",
                      "Fatos_IPTUVerde_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-14T09:02:15-03:00",
-                     "Fatos_IPTUVerde_Folder_SOA.json":  "2026-09-17T22:27:38-03:00",
+                     "Fatos_IPTUVerde_Folder_SOA.json":  "2026-09-21T08:38:15-03:00",
                      "Fatos_MME_Folder_SOA.bak_consolidadora_20260915.json":  "2026-09-15T08:20:05-03:00",
                      "Fatos_MME_Folder_SOA.bak_consolidadora_20260916.json":  "2026-09-16T08:20:05-03:00",
                      "Fatos_MME_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-17T08:20:03-03:00",
