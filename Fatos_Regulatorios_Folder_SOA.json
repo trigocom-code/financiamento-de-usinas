@@ -314,7 +314,8 @@
       "numero_status": "ANCORADO",
       "fonte": "F1 ONS — noticia 'ONS realiza 3o Mecanismo Competitivo de Resposta da Demanda por Disponibilidade e alcanca resultados recordes', publicada em 15/07/2026, aberta e lida em 17/07/2026 (ons.org.br/paginas/noticias/details.aspx?i=12987). Trechos literais: 'negociacao de 344 MW, 12 ofertas vencedoras e desagio medio de 49,23% em relacao ao preco-teto estabelecido'; 'O desagio maximo alcancado foi de 57,5%'.",
       "verificado_em": "2026-09-17",
-      "gatilho_revisao": "publicacao do relatorio de avaliacao ONS+CCEE do Sandbox de RD (semestral — traz a metodologia de medicao e verificacao da disponibilidade); decisao da ANEEL sobre a continuidade/regulamentacao do produto apos 31/12/2026; 4o Mecanismo"
+      "gatilho_revisao": "publicacao do relatorio de avaliacao ONS+CCEE do Sandbox de RD (semestral — traz a metodologia de medicao e verificacao da disponibilidade); decisao da ANEEL sobre a continuidade/regulamentacao do produto apos 31/12/2026; 4o Mecanismo",
+      "pendencia_verificacao": "[23/09/2026 consolidadora] F1 noticia oficial ANEEL de 22/09/2026 16h17 ('Agencia adia aprovacao da representacao do programa de Resposta da Demanda'), aberta e lida em 23/09: no encerramento da CP 36/2023 (REN 1.030/2022 e Submodulo 4.5), a Diretoria ADIOU a aprovacao da representacao do programa na cadeia de modelos de otimizacao e formacao de precos e deu 90 dias ao ONS e a CCEE para aperfeicoar divulgacao e transparencia do programa. Toca o gatilho_revisao (decisao ANEEL sobre continuidade/regulamentacao), mas o ato (despacho/REN) ainda nao esta no DOU de 23/09. Valor NAO alterado; verificado_em NAO carimbado. Conferir o ato no DOU antes de mover status."
     },
     {
       "id": "emenda21_pl278_certificados",
