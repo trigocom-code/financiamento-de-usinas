@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-09-24T08:25:02-03:00",
+                  "gerado_em":  "2026-09-24T12:26:43-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
@@ -74,8 +74,9 @@
                      "Fatos_Regulatorios_Folder_SOA.bak_consolidadora_20260909.json":  "2026-09-09T07:26:59-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_consolidadora_20260922.json":  "2026-09-22T07:21:41-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_consolidadora_20260923.json":  "2026-09-23T07:17:28-03:00",
+                     "Fatos_Regulatorios_Folder_SOA.bak_consolidadora_20260924.json":  "2026-09-24T07:22:48-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-17T07:14:13-03:00",
-                     "Fatos_Regulatorios_Folder_SOA.json":  "2026-09-24T07:22:48-03:00",
+                     "Fatos_Regulatorios_Folder_SOA.json":  "2026-09-24T10:25:54-03:00",
                      "Fatos_Seguros_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-14T09:10:37-03:00",
                      "Fatos_Seguros_Folder_SOA.json":  "2026-09-21T08:11:00-03:00",
                      "Folder_Vivo_ANEEL_GitHub.html":  "2026-07-05T06:47:11-03:00",
