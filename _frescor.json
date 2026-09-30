@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-09-29T12:25:03-03:00",
+                  "gerado_em":  "2026-09-30T08:25:01-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
@@ -61,7 +61,7 @@
                      "Fatos_GatoSolar_Folder_SOA.bak_pre_revalidacao_20260917.json":  "2026-07-28T14:32:28-03:00",
                      "Fatos_GatoSolar_Folder_SOA.json":  "2026-09-17T22:31:00-03:00",
                      "Fatos_IPTUVerde_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-14T09:02:15-03:00",
-                     "Fatos_IPTUVerde_Folder_SOA.json":  "2026-09-21T08:38:15-03:00",
+                     "Fatos_IPTUVerde_Folder_SOA.json":  "2026-09-30T06:23:40-03:00",
                      "Fatos_MME_Folder_SOA.bak_consolidadora_20260915.json":  "2026-09-15T08:20:05-03:00",
                      "Fatos_MME_Folder_SOA.bak_consolidadora_20260916.json":  "2026-09-16T08:20:05-03:00",
                      "Fatos_MME_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-17T08:20:03-03:00",
@@ -79,9 +79,9 @@
                      "Fatos_Regulatorios_Folder_SOA.bak_monitorreg_20260928.json":  "2026-09-25T11:54:34-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_monitorreg_20260929.json":  "2026-09-28T07:22:19-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-17T07:14:13-03:00",
-                     "Fatos_Regulatorios_Folder_SOA.json":  "2026-09-29T09:40:45-03:00",
+                     "Fatos_Regulatorios_Folder_SOA.json":  "2026-09-30T07:20:19-03:00",
                      "Fatos_Seguros_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-14T09:10:37-03:00",
-                     "Fatos_Seguros_Folder_SOA.json":  "2026-09-21T08:11:00-03:00",
+                     "Fatos_Seguros_Folder_SOA.json":  "2026-09-30T06:30:00-03:00",
                      "Folder_Vivo_ANEEL_GitHub.html":  "2026-07-05T06:47:11-03:00",
                      "Folder_Vivo_CapitalVerde_GitHub.html":  "2026-07-04T04:43:05-03:00",
                      "Folder_Vivo_CCEE_GitHub.html":  "2026-07-05T06:47:10-03:00",
