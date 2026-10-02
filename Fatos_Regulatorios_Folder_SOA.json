@@ -318,7 +318,8 @@
       "verificado_em": "2026-09-17",
       "gatilho_revisao": "Encerramento da CP em 13/08/2026 e publicação da versão final do POTEE 2026",
       "fonte_anterior_raiz": "F1 MME — release oficial 'Consulta publica do POTEE 2026 esta aberta para contribuicoes da sociedade', publicado em 14/07/2026 14h32, aberto e lido na integra em 17/07/2026 (gov.br/mme/pt-br/assuntos/noticias). Documento do POTEE em si NAO baixado.",
-      "nota_reconciliacao": "fato_id reconciliado pelo consolidador em 2026-07-29: a raiz trazia \"MME-CP-POTEE-2026\" (verificado 2026-07-17, AZUL/ALEGADO_NAO_ANCORADO); adotada a versao canonica da flat \"MME-POTEE-2026-CP\" (verificado 2026-07-21, VERDE/ANCORADO), que e a verificacao mais recente e ancorada no DOU. Nenhum fato promovido; nenhuma verificacao nova carimbada."
+      "nota_reconciliacao": "fato_id reconciliado pelo consolidador em 2026-07-29: a raiz trazia \"MME-CP-POTEE-2026\" (verificado 2026-07-17, AZUL/ALEGADO_NAO_ANCORADO); adotada a versao canonica da flat \"MME-POTEE-2026-CP\" (verificado 2026-07-21, VERDE/ANCORADO), que e a verificacao mais recente e ancorada no DOU. Nenhum fato promovido; nenhuma verificacao nova carimbada.",
+      "pendencia_verificacao": "Gatilho disparado em 02/10/2026: POTEE 2026 aprovado pela Portaria SNTEP/MME 3.240 (ver potee_2026_aprovado_1a_emissao). Status deste fato ficou superado; nao reescrito pela consolidadora, decisao do CEO no gate."
     },
     {
       "id": "resposta_demanda_3o_mecanismo",
@@ -900,6 +901,54 @@
       "verificado_em": "2026-09-30",
       "gatilho_revisao": "estudos EPE/ONS de necessidade de potencia submetidos ao MME ate 30/04/2027; portaria de diretrizes do LRCAP 2027; qualquer ajuste do cronograma (art. 3o)",
       "pendencia_verificacao": "Cronograma ESTIMADO, nao data de certame: nao citar como leilao marcado. O ato nao fixa montantes, precos-teto nem regras de TUST. Nao ha registro na Tabela QSV v1.2: teto AZUL (R7)."
+    },
+    {
+      "id": "potee_2026_aprovado_1a_emissao",
+      "fato_id": "MME-POTEE-2026-APROVADO-1A-EMISSAO",
+      "orgao": "MME",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "POTEE 2026 aprovado: Plano de Outorgas de Transmissão (Ampliações e Reforços, 1ª emissão)",
+      "valor": "A Portaria SNTEP/MME nº 3.240, de 29/09/2026, aprova o Plano de Outorgas de Transmissão de Energia Elétrica, POTEE 2026, Ampliações e Reforços, Rede Básica e Demais Instalações de Transmissão, 1ª emissão (art. 1º). O departamento de planejamento e outorgas de transmissão do MME deve divulgar planilha eletrônica com a relação das instalações, a descrição das ampliações e reforços, as datas de necessidade e as classificações, na página do POTEE no site do MME (art. 2º). Vigência na data da publicação (art. 3º). O ato lido no DOU tem três artigos e não traz a lista de obras: ela está na planilha, ainda não baixada.",
+      "status": "VIGENTE",
+      "qsv_cor": "AZUL",
+      "norma": "Portaria SNTEP/MME nº 3.240, de 29/09/2026, DOU de 01/10/2026, Edição 186-C, Seção 1, Extra C, página 15. Processo nº 48360.000126/2026-69.",
+      "numero_status": "ANCORADO",
+      "fonte": "F1 DOU - https://www.in.gov.br/web/dou/-/portaria-sntep/mme-n-3.240-de-29-de-setembro-de-2026-735924821 (lido na íntegra em 02/10/2026)",
+      "verificado_em": "2026-10-02",
+      "gatilho_revisao": "divulgação da planilha do POTEE 2026 (1ª emissão) no site do MME; emissões seguintes; edital de leilão de transmissão que use o plano",
+      "pendencia_verificacao": "Planilha de obras nao baixada: nao citar obra, data de necessidade nem o Bipolo Nordeste 2 como aprovados antes de ler a planilha. Fato potee_2026_cp (consulta publica) segue no arquivo com status antigo; decisao de substitui-lo e do CEO no gate. Sem registro na Tabela QSV v1.2: teto AZUL."
+    },
+    {
+      "id": "despacho_3753_2026_constrained_off_cer_mangue_seco",
+      "fato_id": "ANEEL-DESPACHO-3753-2026-CONSTRAINED-OFF-CER-MANGUE-SECO",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Pedidos de reconhecimento de constrained-off em Contratos de Energia de Reserva: indeferidos pela SGM (Eólicas Mangue Seco 1, 3 e 4)",
+      "valor": "O Despacho ANEEL nº 3.753, de 28/09/2026, do Superintendente de Regulação dos Serviços de Geração e do Mercado de Energia Elétrica, conhece e, no mérito, indefere os requerimentos administrativos de reconhecimento de eventos de restrição de geração (constrained-off) para fins de apuração da Energia Contratada no âmbito dos Contratos de Energia de Reserva, apresentados por Eólica Mangue Seco 1, 3 e 4, e determina o arquivamento dos processos instaurados para a análise desses pedidos. Fundamento citado no ato: Nota Técnica nº 128/2026-SGM/ANEEL. Decisão de superintendência, sobre fonte eólica e sobre contratos de reserva; não é decisão da Diretoria nem trata de usinas fotovoltaicas.",
+      "status": "VIGENTE",
+      "qsv_cor": "AZUL",
+      "norma": "Despacho ANEEL nº 3.753, de 28/09/2026, DOU de 02/10/2026, Edição 187, Seção 1, página 83. Processo nº 48500.906218/2017-10 e processos relacionados.",
+      "numero_status": "ANCORADO",
+      "fonte": "F1 DOU - https://www.in.gov.br/web/dou/-/despacho-n-3.753-de-28-de-setembro-de-2026-736047986 (lido na íntegra em 02/10/2026)",
+      "verificado_em": "2026-10-02",
+      "gatilho_revisao": "recurso das interessadas à Diretoria; leitura da NT 128/2026-SGM; decisão de mérito da SGM nos autos remetidos pelo Despacho 3.708/2026",
+      "pendencia_verificacao": "NT 128/2026-SGM nao lida: os motivos do indeferimento nao sao conhecidos. Nao generalizar para outros agentes nem para a fonte solar. Nao citar as empresas em peca externa como exemplo de conduta. Sem registro na Tabela QSV v1.2: teto AZUL."
+    },
+    {
+      "id": "despacho_3843_2026_unidade_armazenadora_sol_de_brotas_7",
+      "fato_id": "ANEEL-DESPACHO-3843-2026-UNIDADE-ARMAZENADORA-UFV-SOL-DE-BROTAS-7",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Liberação de unidade armazenadora em usina fotovoltaica para operação em teste (UFV Sol de Brotas 7, Uibaí/BA)",
+      "valor": "O Despacho ANEEL nº 3.843, de 01/10/2026, da Gerência de Fiscalização da Geração, libera a unidade armazenadora UG1, de 1.250,00 kW de potência instalada, da UFV Sol de Brotas 7 (CEG UFV.RS.BA.047047-3.01), em Uibaí, Bahia, de titularidade da Sol de Brotas 7 S.A., para início da operação em teste a partir de 02/10/2026. O ato usa a expressão unidade armazenadora e a identifica dentro do cadastro de uma usina fotovoltaica. Na mesma edição, os Despachos 3.847 e 3.848 liberam unidades geradoras das UFVs Sol de Brotas 5 (32.500 kW) e Sol de Brotas 16 (25.800 kW).",
+      "status": "VIGENTE",
+      "qsv_cor": "AZUL",
+      "norma": "Despacho ANEEL nº 3.843, de 01/10/2026, DOU de 02/10/2026, Edição 187, Seção 1, página 79. Processo nº 48500.028349/2026-49.",
+      "numero_status": "ANCORADO",
+      "fonte": "F1 DOU - https://www.in.gov.br/web/dou/-/despacho-n-3.843-de-1-de-outubro-de-2026-736027296 (lido na íntegra em 02/10/2026)",
+      "verificado_em": "2026-10-02",
+      "gatilho_revisao": "despacho de liberação para operação comercial da mesma unidade; outros despachos de liberação de unidade armazenadora",
+      "pendencia_verificacao": "O ato nao informa capacidade em kWh, tecnologia nem regime de outorga da unidade. Nao afirmar que e o primeiro caso: nao foi feita busca historica. Sem registro na Tabela QSV v1.2: teto AZUL."
     }
   ],
   "_pendentes_verificacao": [
@@ -2040,6 +2089,21 @@
       "gatilho_revisao": "Leitura da sentenca no sistema processual da Justica Federal; interposicao e julgamento do recurso (colegiado previsto para a semana de 05/10/2026)",
       "pendencia_verificacao": "Confirmar numero do processo, data da sentenca e dispositivo. Nao cravar em material externo antes da leitura F1.",
       "verificado_em": "2026-09-18"
+    },
+    {
+      "fato_id": "ANEEL-TS-030-2026-ESTRUTURA-BDGD",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Tomada de Subsídios ANEEL nº 030/2026: estrutura de dados da BDGD",
+      "valor": "PENDENTE DE LEITURA DA NOTA TÉCNICA. Notícia oficial da ANEEL de 01/10/2026 informa a abertura da Tomada de Subsídios nº 030/2026, de 01/10 a 30/10/2026, para aprimorar a estrutura da Base de Dados Geográfica da Distribuidora (BDGD), com alinhamento ao Manual de Controle Patrimonial do Setor Elétrico e ao Manual de Dados da Superintendência de Fiscalização Econômica, Financeira e de Mercado, versão 1.3. Contribuições por e-mail (ts030_2026@aneel.gov.br). Nota técnica e número do processo não lidos nesta execução.",
+      "status": "PENDENTE",
+      "qsv_cor": "LARANJA",
+      "norma": "Tomada de Subsídios ANEEL nº 030/2026 (aviso no DOU ainda não localizado)",
+      "numero_status": "PENDENTE_REABERTURA",
+      "fonte": "F1 site ANEEL (notícia de 01/10/2026) - https://www.gov.br/aneel/pt-br/assuntos/noticias/2026-defeso-eleitoral/tomada-de-subsidios-aberta-para-aprimoramento-da-estrutura-de-dados-da-bdgd",
+      "gatilho_revisao": "leitura da nota técnica na página de Tomadas de Subsídios da ANEEL; encerramento em 30/10/2026",
+      "pendencia_verificacao": "Conferir numero do processo, nota tecnica e quais entidades e campos da BDGD mudam. Lida so a noticia, por resumo automatico da pagina: datas e numero a reconferir na pagina da TS antes de qualquer uso.",
+      "verificado_em": "2026-10-02"
     }
   ],
   "_historico_caidos": []
