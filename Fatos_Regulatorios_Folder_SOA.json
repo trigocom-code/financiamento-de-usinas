@@ -916,7 +916,7 @@
       "fonte": "F1 DOU - https://www.in.gov.br/web/dou/-/portaria-sntep/mme-n-3.240-de-29-de-setembro-de-2026-735924821 (lido na íntegra em 02/10/2026)",
       "verificado_em": "2026-10-02",
       "gatilho_revisao": "divulgação da planilha do POTEE 2026 (1ª emissão) no site do MME; emissões seguintes; edital de leilão de transmissão que use o plano",
-      "pendencia_verificacao": "Planilha de obras nao baixada: nao citar obra, data de necessidade nem o Bipolo Nordeste 2 como aprovados antes de ler a planilha. Fato potee_2026_cp (consulta publica) segue no arquivo com status antigo; decisao de substitui-lo e do CEO no gate. Sem registro na Tabela QSV v1.2: teto AZUL."
+      "pendencia_verificacao": "Planilha de obras nao baixada: nao citar obra, data de necessidade nem o Bipolo Nordeste 2 como aprovados antes de ler a planilha. Fato potee_2026_cp (consulta publica) segue no arquivo com status antigo; decisao de substitui-lo e do CEO no gate. Sem registro na Tabela QSV v1.2: teto AZUL. Em 05/10/2026: noticia oficial da EPE de 02/10 cita duas obras da lista (ver pendente EPE-POTEE-2026-OBRAS-BESS-CRUZEIRO-DO-SUL-BIPOLO-NE2); planilha do MME segue sem leitura; DOU nao relido nesta data."
     },
     {
       "id": "despacho_3753_2026_constrained_off_cer_mangue_seco",
@@ -2095,15 +2095,30 @@
       "orgao": "ANEEL",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Tomada de Subsídios ANEEL nº 030/2026: estrutura de dados da BDGD",
-      "valor": "PENDENTE DE LEITURA DA NOTA TÉCNICA. Notícia oficial da ANEEL de 01/10/2026 informa a abertura da Tomada de Subsídios nº 030/2026, de 01/10 a 30/10/2026, para aprimorar a estrutura da Base de Dados Geográfica da Distribuidora (BDGD), com alinhamento ao Manual de Controle Patrimonial do Setor Elétrico e ao Manual de Dados da Superintendência de Fiscalização Econômica, Financeira e de Mercado, versão 1.3. Contribuições por e-mail (ts030_2026@aneel.gov.br). Nota técnica e número do processo não lidos nesta execução.",
+      "valor": "PENDENTE DE LEITURA DA NOTA TÉCNICA. A página de Tomadas de Subsídios da ANEEL lista a Tomada nº 030/2026, com o objeto de obter subsídios para aprimoramento da estrutura de dados da Base de Dados Geográfica da Distribuidora (BDGD), com aderência ao Manual de Controle Patrimonial do Setor Elétrico e ao Manual de Dados da SFF, versão 1.3 (número e objeto conferidos na página em 05/10/2026). A notícia oficial da ANEEL de 01/10/2026 informa o período de 01/10 a 30/10/2026 e o envio por e-mail (ts030_2026@aneel.gov.br). Nota técnica e número do processo não lidos.",
       "status": "PENDENTE",
       "qsv_cor": "LARANJA",
-      "norma": "Tomada de Subsídios ANEEL nº 030/2026 (aviso no DOU ainda não localizado)",
+      "norma": "Tomada de Subsídios ANEEL nº 030/2026 (página de Tomadas de Subsídios da ANEEL; aviso no DOU ainda não localizado)",
       "numero_status": "PENDENTE_REABERTURA",
-      "fonte": "F1 site ANEEL (notícia de 01/10/2026) - https://www.gov.br/aneel/pt-br/assuntos/noticias/2026-defeso-eleitoral/tomada-de-subsidios-aberta-para-aprimoramento-da-estrutura-de-dados-da-bdgd",
+      "fonte": "F1 site ANEEL - página de Tomadas de Subsídios (https://antigo.aneel.gov.br/tomadas-de-subsidios, lida em 05/10/2026) e notícia de 01/10/2026 (https://www.gov.br/aneel/pt-br/assuntos/noticias/2026-defeso-eleitoral/tomada-de-subsidios-aberta-para-aprimoramento-da-estrutura-de-dados-da-bdgd)",
       "gatilho_revisao": "leitura da nota técnica na página de Tomadas de Subsídios da ANEEL; encerramento em 30/10/2026",
-      "pendencia_verificacao": "Conferir numero do processo, nota tecnica e quais entidades e campos da BDGD mudam. Lida so a noticia, por resumo automatico da pagina: datas e numero a reconferir na pagina da TS antes de qualquer uso.",
-      "verificado_em": "2026-10-02"
+      "pendencia_verificacao": "Numero e objeto conferidos na pagina da ANEEL em 05/10/2026. Seguem sem leitura: periodo na pagina da propria tomada, numero do processo, nota tecnica e quais entidades e campos da BDGD mudam.",
+      "verificado_em": "2026-10-05"
+    },
+    {
+      "fato_id": "EPE-POTEE-2026-OBRAS-BESS-CRUZEIRO-DO-SUL-BIPOLO-NE2",
+      "orgao": "EPE",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "POTEE 2026: obras com tecnologias novas citadas pela EPE (baterias em Cruzeiro do Sul e Bipolo Nordeste II)",
+      "valor": "PENDENTE DE LEITURA DA PLANILHA DO MME. Notícia oficial da EPE de 02/10/2026 informa que a edição de 2026 do Plano de Outorgas de Transmissão de Energia Elétrica (POTEE) incorpora à lista de obras o Bipolo Nordeste II, com tecnologia HVDC-VSC, e o sistema de armazenamento por baterias da subestação Cruzeiro do Sul, no Acre, recomendado pela EPE com 100 MW / 200 MWh e capacidade grid-forming, com licitação prevista por meio do 1º leilão de transmissão de 2027. A relação oficial de obras está na planilha do MME prevista no art. 2º da Portaria SNTEP/MME nº 3.240/2026, ainda não lida.",
+      "status": "PENDENTE",
+      "qsv_cor": "LARANJA",
+      "norma": "Portaria SNTEP/MME nº 3.240, de 29/09/2026 (aprova o POTEE 2026, 1ª emissão); planilha de obras do MME não lida",
+      "numero_status": "PENDENTE_REABERTURA",
+      "fonte": "F1 site EPE (notícia de 02/10/2026, lida na página em 05/10/2026) - https://www.epe.gov.br/pt/imprensa/noticias/plano-de-outorgas-do-mme-inclui-empreendimentos-com-tecnologias-inovadoras-resultado-de-estudos-da-epe",
+      "gatilho_revisao": "leitura da planilha do POTEE 2026 no site do MME; edital do 1º leilão de transmissão de 2027",
+      "pendencia_verificacao": "Os numeros 100 MW / 200 MWh sao a recomendacao da EPE descrita na noticia; conferir na planilha do MME se a obra consta com esses valores, a data de necessidade e a classificacao. Nao citar como obra aprovada antes disso.",
+      "verificado_em": "2026-10-05"
     }
   ],
   "_historico_caidos": []
