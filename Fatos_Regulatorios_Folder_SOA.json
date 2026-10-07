@@ -2191,6 +2191,23 @@
       "verificado_em": "2026-10-07",
       "registrado_em": "2026-10-07",
       "registrado_por": "monitores-regulatorios-soa"
+    },
+    {
+      "fato_id": "CCEE-CO-778-26-LISTA-ELEGIBILIDADE-PTR140",
+      "orgao": "CCEE",
+      "tipo_fato": "REGULATORIO_PROCESSUAL",
+      "tema": "Portaria Normativa MME no 140/2026: lista de elegibilidade das usinas com manifestacao previa de interesse no Termo de Compromisso (Comunicado CCEE 778/26)",
+      "valor": "PENDENTE DE LEITURA INTEGRAL DA LISTA E DO OFICIO QUE A PEDIU. Comunicado CCEE 778/26, de 05/10/2026, lido na pagina oficial pelo vigia da Portaria 140 em 07/10/2026: a CCEE publicou a lista de elegibilidade das usinas que fizeram manifestacao previa de interesse em aderir ao Termo de Compromisso, em atendimento ao Oficio no 253/2026/SE-MME, com avaliacao feita pelo ONS pelos criterios do art. 1o da Portaria. Efeitos declarados no comunicado: para usina com CER ou CCEAR-D sem manifestacao previa ou classificada como nao elegivel, a CCEE retoma, quando aplicavel, a apuracao dos ressarcimentos e a cobranca dos valores suspensos; constar como elegivel nao e adesao, os efeitos dependem da assinatura do Termo. Planilha baixada da fonte oficial e contada por script, sem leitura integral: 1.902 linhas de usina, 1.827 elegiveis e 75 nao elegiveis. A noticia do MME de 05/10/2026 confirma a divulgacao. Nao altera a janela de 01/09/2023 a 25/11/2025 nem as tres classificacoes de corte.",
+      "status": "PENDENTE",
+      "qsv_cor": "LARANJA",
+      "norma": "Comunicado CCEE 778/26 (05/10/2026); Portaria Normativa MME no 140/2026, art. 1o; Oficio no 253/2026/SE-MME (nao localizado)",
+      "numero_status": "PENDENTE_REABERTURA",
+      "fonte": "F1 Comunicado CCEE 778/26 - https://www.ccee.org.br/-/co-lista-da-elegilibilidade-das-usinas-que-declararam-manifestacao-previa-de-interesse-de-adesao-ao-termo-de-compromisso-da-portaria-normativa-mme-n-140 ; F1 noticia MME de 05/10/2026 - https://www.gov.br/mme/pt-br/assuntos/noticias/mme-avanca-na-compensacao-por-cortes-de-geracao-com-divulgacao-de-lista-de-elegibilidade",
+      "gatilho_revisao": "leitura integral da lista; localizacao do Oficio no 253/2026/SE-MME; errata ou segunda versao da lista; data da capacitacao da CCEE (ate 19/10/2026)",
+      "pendencia_verificacao": "Registrado pela consolidadora a partir do Digest_Vigia_PTR140_2026-10-07.md; esta run nao reabriu a pagina da CCEE. Contagens sao do script do vigia (arquivo em _Fontes_F1_Portaria_140, SHA-256 cba15f76...). Nenhum cruzamento da lista com o banco vai a peca externa antes da leitura integral. Toca o folder de contencioso e o vetor curtailment; nao renderizado.",
+      "verificado_em": "2026-10-07",
+      "registrado_em": "2026-10-07",
+      "registrado_por": "monitores-regulatorios-soa"
     }
   ],
   "_historico_caidos": []
