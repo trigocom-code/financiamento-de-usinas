@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-10-07 08:20",
+                  "gerado_em":  "2026-10-08 08:20",
                   "modo":  "v2 canario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
@@ -36,31 +36,31 @@
                                                                   },
                                        "monitor-seguros-soa":  {
                                                                    "hoje":  "NAO",
-                                                                   "ultimo":  "2026-09-30"
+                                                                   "ultimo":  "2026-10-07"
                                                                },
                                        "monitor-esg-soa":  {
                                                                "hoje":  "NAO",
-                                                               "ultimo":  "2026-09-30"
+                                                               "ultimo":  "2026-10-07"
                                                            },
                                        "monitor-regulatorio-soa":  {
                                                                        "hoje":  "SIM",
-                                                                       "ultimo":  "2026-10-07"
+                                                                       "ultimo":  "2026-10-08"
                                                                    },
                                        "monitor-capital-verde-soa":  {
                                                                          "hoje":  "NAO",
-                                                                         "ultimo":  "2026-09-21"
+                                                                         "ultimo":  "2026-10-07"
                                                                      },
                                        "monitor-eventos-soa":  {
                                                                    "hoje":  "NAO",
-                                                                   "ultimo":  "2026-09-29"
+                                                                   "ultimo":  "2026-10-07"
                                                                },
                                        "monitor-leis-soa":  {
                                                                 "hoje":  "NAO",
-                                                                "ultimo":  "2026-09-21"
+                                                                "ultimo":  "2026-10-07"
                                                             },
                                        "monitor-gato-solar-soa":  {
                                                                       "hoje":  "NAO",
-                                                                      "ultimo":  "2026-09-21"
+                                                                      "ultimo":  "2026-10-07"
                                                                   },
                                        "monitor-iptu-verde-soa":  {
                                                                       "hoje":  "NAO",
@@ -72,34 +72,34 @@
                      "Fatos_MME::MME-PORTARIA-129-DEC-12772":  "2DF74EC4606B45FA",
                      "Fatos_CCEE::CCEE-LEI-15269-2025":  "105969235E66E0E3",
                      "Fatos_ANEEL::ANEEL-REN-1161-2026-BESS":  "DF548AF73AEFE468",
-                     "Fatos_ESG::Mercado regulado de carbono (SBCE)":  "0F059CA371ECD671",
-                     "Fatos_CapitalVerde::Sustainability-Linked (SLL/SLB)":  "056742CFFFB1EEF3",
+                     "Fatos_ESG::Mercado regulado de carbono (SBCE)":  "206F6248581CB314",
+                     "Fatos_CapitalVerde::Sustainability-Linked (SLL/SLB)":  "DABB56F530111D11",
                      "Fatos_EPE::EPE-ATENDIMENTO-PARA":  "655C5E3B0868AB0F",
                      "Fatos_MME::MME-PORTARIA-136-2026-LRCAP":  "6EC3AED2742F0C35",
                      "Fatos_ANEEL::ANEEL-REN-1059-2023":  "726CFEA76D95120E",
-                     "Fatos_ESG::Relato de sustentabilidade (IFRS S1/S2) — CVM":  "1B87A4E1F3AD7368",
+                     "Fatos_ESG::Relato de sustentabilidade (IFRS S1/S2) — CVM":  "134A57DCB92BC16A",
                      "Fatos_ANEEL::ANEEL-CP-045-2019":  "64FAF91F89BA6D63",
                      "Fatos_ANEEL::ANEEL-REN-1071-LRCAP":  "8FA5AF8C7A8B1E70",
                      "Fatos_ANEEL::ANEEL-CP-009-GATO-SOLAR":  "DD7AB80FB6154858",
                      "Fatos_CapitalVerde::Finep Mais Inovação Brasil — Rodada 2 · Transição Energética":  "6BD744A84AB9E616",
-                     "Fatos_CapitalVerde::Fundo Clima — BNDES":  "16A30ED3DAB22AAA",
+                     "Fatos_CapitalVerde::Fundo Clima — BNDES":  "D3F0BA0E53D37597",
                      "Fatos_MME::MME-REDATA":  "52F86785FB59580B",
                      "Fatos_MME::MME-PNH2":  "B12FAB77868490A1",
                      "Fatos_EPE::EPE-PET-PELP":  "9C158A882C9BCA4F",
                      "Fatos_ONS::ONS-NT-PNAST":  "DB9C6020E521B3F6",
-                     "Fatos_CapitalVerde::Eco Invest Brasil — Min. Fazenda":  "F29C16947497D218",
+                     "Fatos_CapitalVerde::Eco Invest Brasil — Min. Fazenda":  "AF5FCD9662D8FDF5",
                      "Fatos_EPE::EPE-MAPA-BARRAMENTOS-LRCAP":  "04CFCE6CE3D85E3A",
                      "Fatos_MME::MME-MP-1318-2025":  "32D0920A05F518C7",
                      "Fatos_ONS::ONS-NT-DPL-0111-2025":  "B51C630BC6AFB276",
                      "Fatos_EPE::EPE-CARGAS-CE-PI":  "97441266655E62FD",
-                     "Fatos_CapitalVerde::Debêntures de Infraestrutura / incentivadas verdes":  "32358872A556D628"
+                     "Fatos_CapitalVerde::Debêntures de Infraestrutura / incentivadas verdes":  "A8FBE08706BCE7D8"
                  },
     "folders":  {
                     "baterias-curtailment.html":  {
-                                                      "ciclo":  "2026-10-07",
+                                                      "ciclo":  "2026-10-08",
                                                       "categoria":  "vivo_sob_gatilho",
                                                       "estado":  "stale",
-                                                      "motivo":  "dado defasado: fato mais velho com 20 dias (\u003e 2); revalidar",
+                                                      "motivo":  "dado defasado: fato mais velho com 21 dias (\u003e 2); revalidar",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-regulatorio-soa"
@@ -107,7 +107,7 @@
                                                       "monitores_parados":  [
 
                                                                             ],
-                                                      "idade_max_dias":  20,
+                                                      "idade_max_dias":  21,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_ANEEL",
@@ -160,10 +160,10 @@
                                                       "proposta_ref":  null
                                                   },
                     "prova-horaria-datacenters.html":  {
-                                                           "ciclo":  "2026-10-07",
+                                                           "ciclo":  "2026-10-08",
                                                            "categoria":  "vivo_sob_gatilho",
                                                            "estado":  "stale",
-                                                           "motivo":  "dado defasado: fato mais velho com 20 dias (\u003e 2); revalidar",
+                                                           "motivo":  "dado defasado: fato mais velho com 21 dias (\u003e 2); revalidar",
                                                            "aguarda_fonte":  false,
                                                            "monitores_dependentes":  [
                                                                                          "monitor-regulatorio-soa"
@@ -171,7 +171,7 @@
                                                            "monitores_parados":  [
 
                                                                                  ],
-                                                           "idade_max_dias":  20,
+                                                           "idade_max_dias":  21,
                                                            "deps":  [
                                                                         {
                                                                             "json":  "Fatos_MME",
@@ -197,10 +197,10 @@
                                                            "proposta_ref":  null
                                                        },
                     "gato-solar-soa.html":  {
-                                                "ciclo":  "2026-10-07",
+                                                "ciclo":  "2026-10-08",
                                                 "categoria":  "vivo_sob_gatilho",
                                                 "estado":  "stale",
-                                                "motivo":  "dado defasado: fato mais velho com 20 dias (\u003e 2); revalidar",
+                                                "motivo":  "dado defasado: fato mais velho com 21 dias (\u003e 2); revalidar",
                                                 "aguarda_fonte":  false,
                                                 "monitores_dependentes":  [
                                                                               "monitor-regulatorio-soa"
@@ -208,7 +208,7 @@
                                                 "monitores_parados":  [
 
                                                                       ],
-                                                "idade_max_dias":  20,
+                                                "idade_max_dias":  21,
                                                 "deps":  [
                                                              {
                                                                  "json":  "Fatos_ANEEL",
@@ -234,10 +234,10 @@
                                                 "proposta_ref":  null
                                             },
                     "contencioso-curtailment.html":  {
-                                                         "ciclo":  "2026-10-07",
+                                                         "ciclo":  "2026-10-08",
                                                          "categoria":  "vivo_sob_gatilho",
                                                          "estado":  "stale",
-                                                         "motivo":  "dado defasado: fato mais velho com 20 dias (\u003e 2); revalidar",
+                                                         "motivo":  "dado defasado: fato mais velho com 21 dias (\u003e 2); revalidar",
                                                          "aguarda_fonte":  false,
                                                          "monitores_dependentes":  [
                                                                                        "monitor-regulatorio-soa"
@@ -245,7 +245,7 @@
                                                          "monitores_parados":  [
 
                                                                                ],
-                                                         "idade_max_dias":  20,
+                                                         "idade_max_dias":  21,
                                                          "deps":  [
                                                                       {
                                                                           "json":  "Fatos_CCEE",
@@ -271,10 +271,10 @@
                                                          "proposta_ref":  null
                                                      },
                     "bitcoin-verde-soa.html":  {
-                                                   "ciclo":  "2026-10-07",
+                                                   "ciclo":  "2026-10-08",
                                                    "categoria":  "vivo_sob_gatilho",
                                                    "estado":  "stale",
-                                                   "motivo":  "dado defasado: fato mais velho com 20 dias (\u003e 2); revalidar",
+                                                   "motivo":  "dado defasado: fato mais velho com 21 dias (\u003e 2); revalidar",
                                                    "aguarda_fonte":  false,
                                                    "monitores_dependentes":  [
                                                                                  "monitor-regulatorio-soa"
@@ -282,7 +282,7 @@
                                                    "monitores_parados":  [
 
                                                                          ],
-                                                   "idade_max_dias":  20,
+                                                   "idade_max_dias":  21,
                                                    "deps":  [
                                                                 {
                                                                     "json":  "Fatos_MME",
@@ -299,10 +299,10 @@
                                                    "proposta_ref":  null
                                                },
                     "certificacao-esg-auditavel.html":  {
-                                                            "ciclo":  "2026-10-07",
+                                                            "ciclo":  "2026-10-08",
                                                             "categoria":  "vivo_sob_gatilho",
                                                             "estado":  "avaliacao_represada",
-                                                            "motivo":  "monitor(es) nao rodou no ciclo 2026-10-07: monitor-esg-soa",
+                                                            "motivo":  "monitor(es) nao rodou no ciclo 2026-10-08: monitor-esg-soa",
                                                             "aguarda_fonte":  false,
                                                             "monitores_dependentes":  [
                                                                                           "monitor-esg-soa"
@@ -310,25 +310,25 @@
                                                             "monitores_parados":  [
                                                                                       "monitor-esg-soa"
                                                                                   ],
-                                                            "idade_max_dias":  7,
+                                                            "idade_max_dias":  1,
                                                             "deps":  [
                                                                          {
                                                                              "json":  "Fatos_ESG",
                                                                              "ref":  "Relato de sustentabilidade (IFRS S1/S2) — CVM",
-                                                                             "verificado_em":  "2026-09-30",
+                                                                             "verificado_em":  "2026-10-07",
                                                                              "qsv_cor":  "",
                                                                              "monitor":  "monitor-esg-soa",
                                                                              "achou":  true,
-                                                                             "mudou":  false
+                                                                             "mudou":  true
                                                                          },
                                                                          {
                                                                              "json":  "Fatos_ESG",
                                                                              "ref":  "Mercado regulado de carbono (SBCE)",
-                                                                             "verificado_em":  "2026-09-30",
+                                                                             "verificado_em":  "2026-10-07",
                                                                              "qsv_cor":  "",
                                                                              "monitor":  "monitor-esg-soa",
                                                                              "achou":  true,
-                                                                             "mudou":  false
+                                                                             "mudou":  true
                                                                          }
                                                                      ],
                                                             "fato_gatilho":  null,
@@ -336,10 +336,10 @@
                                                             "proposta_ref":  null
                                                         },
                     "acesso-transmissao-pnast.html":  {
-                                                          "ciclo":  "2026-10-07",
+                                                          "ciclo":  "2026-10-08",
                                                           "categoria":  "vivo_sob_gatilho",
                                                           "estado":  "stale",
-                                                          "motivo":  "dado defasado: fato mais velho com 20 dias (\u003e 2); revalidar",
+                                                          "motivo":  "dado defasado: fato mais velho com 21 dias (\u003e 2); revalidar",
                                                           "aguarda_fonte":  false,
                                                           "monitores_dependentes":  [
                                                                                         "monitor-regulatorio-soa"
@@ -347,7 +347,7 @@
                                                           "monitores_parados":  [
 
                                                                                 ],
-                                                          "idade_max_dias":  20,
+                                                          "idade_max_dias":  21,
                                                           "deps":  [
                                                                        {
                                                                            "json":  "Fatos_MME",
@@ -391,10 +391,10 @@
                                                           "proposta_ref":  null
                                                       },
                     "capital-verde-usinas.html":  {
-                                                      "ciclo":  "2026-10-07",
+                                                      "ciclo":  "2026-10-08",
                                                       "categoria":  "vivo_sob_gatilho",
                                                       "estado":  "avaliacao_represada",
-                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-10-07: monitor-capital-verde-soa",
+                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-10-08: monitor-capital-verde-soa",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-capital-verde-soa"
@@ -402,48 +402,48 @@
                                                       "monitores_parados":  [
                                                                                 "monitor-capital-verde-soa"
                                                                             ],
-                                                      "idade_max_dias":  16,
+                                                      "idade_max_dias":  1,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Fundo Clima — BNDES",
-                                                                       "verificado_em":  "2026-09-21",
+                                                                       "verificado_em":  "2026-10-07",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  false
+                                                                       "mudou":  true
                                                                    },
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Eco Invest Brasil — Min. Fazenda",
-                                                                       "verificado_em":  "2026-09-21",
+                                                                       "verificado_em":  "2026-10-07",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  false
+                                                                       "mudou":  true
                                                                    },
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Debêntures de Infraestrutura / incentivadas verdes",
-                                                                       "verificado_em":  "2026-09-21",
+                                                                       "verificado_em":  "2026-10-07",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  false
+                                                                       "mudou":  true
                                                                    },
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Sustainability-Linked (SLL/SLB)",
-                                                                       "verificado_em":  "2026-09-21",
+                                                                       "verificado_em":  "2026-10-07",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  false
+                                                                       "mudou":  true
                                                                    },
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Finep Mais Inovação Brasil — Rodada 2 · Transição Energética",
-                                                                       "verificado_em":  "2026-09-21",
+                                                                       "verificado_em":  "2026-10-07",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
@@ -455,10 +455,10 @@
                                                       "proposta_ref":  null
                                                   },
                     "hidrogenio-prova-horaria.html":  {
-                                                          "ciclo":  "2026-10-07",
+                                                          "ciclo":  "2026-10-08",
                                                           "categoria":  "vivo_sob_gatilho",
                                                           "estado":  "avaliacao_represada",
-                                                          "motivo":  "monitor(es) nao rodou no ciclo 2026-10-07: monitor-esg-soa",
+                                                          "motivo":  "monitor(es) nao rodou no ciclo 2026-10-08: monitor-esg-soa",
                                                           "aguarda_fonte":  false,
                                                           "monitores_dependentes":  [
                                                                                         "monitor-regulatorio-soa",
@@ -467,7 +467,7 @@
                                                           "monitores_parados":  [
                                                                                     "monitor-esg-soa"
                                                                                 ],
-                                                          "idade_max_dias":  20,
+                                                          "idade_max_dias":  21,
                                                           "deps":  [
                                                                        {
                                                                            "json":  "Fatos_MME",
@@ -490,11 +490,11 @@
                                                                        {
                                                                            "json":  "Fatos_ESG",
                                                                            "ref":  "Mercado regulado de carbono (SBCE)",
-                                                                           "verificado_em":  "2026-09-30",
+                                                                           "verificado_em":  "2026-10-07",
                                                                            "qsv_cor":  "",
                                                                            "monitor":  "monitor-esg-soa",
                                                                            "achou":  true,
-                                                                           "mudou":  false
+                                                                           "mudou":  true
                                                                        }
                                                                    ],
                                                           "fato_gatilho":  null,

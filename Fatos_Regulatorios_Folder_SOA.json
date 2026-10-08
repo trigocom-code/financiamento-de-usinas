@@ -26,7 +26,7 @@
       "qsv_cor": "AZUL",
       "norma": "REN ANEEL 1.059/2023 (regulamenta a Lei 14.300/2022)",
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "alteração da REN 1.059 ou novo marco legal da GD"
     },
     {
@@ -40,7 +40,7 @@
       "qsv_cor": "VERDE",
       "norma": "Portaria Normativa MME 136/2026, de 1o/06/2026 (DOU 03/06/2026, Secao 1) -- texto integral, ANEXO I e ANEXO II",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-10-07",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "publicacao/alteracao do edital ANEEL; mudanca de datas; publicacao da NT de Quantitativos da Capacidade Remanescente do SIN PARA ESCOAMENTO ate 30/09/2026 (art. 11 par. 4o)",
       "pendencia_verificacao": "CORRECAO DE DISPOSITIVO ancorada no ato e lida em 01/09/2026: o prazo de 30/09/2026 para a NT de Quantitativos esta no ART. 11 PARAGRAFO 4o, NAO no art. 15 par. 4o. O art. 15 trata de outra coisa (afasta o art. 9o da Portaria GM/MME 514/2011, mantido o art. 7o). Corrigir em todo material interno, inclusive no prompt do monitor-regulatorio-soa. ARMADILHA DE NOME: a NT publicada pelo ONS em 31/08/2026 (NT-ONS DPL 0083/2026) e a Nota Tecnica 02 do art. 11 da Portaria 129/2026, ambito PNAST/Temporada de Acesso -- NAO e a NT do art. 11 par. 4o da 136/2026, que trata da capacidade PARA ESCOAMENTO e vence em 30/09. As duas se distinguem pela expressao 'para Escoamento'. | 07/10/2026: Despacho Decisorio SNTEP/MME 31/2026 (DOU 06/10) nega inclusao de Janauba 3 500 kV no Anexo II; lista de bonificados mantida. Fato canonico Fatos_Canonicos_LRCAP_Portaria136_v1.md precisa registrar o despacho."
     },
@@ -70,7 +70,7 @@
       "qsv_cor": "AZUL",
       "norma": "ANEEL/CCEE — homologação LRCAP 2026",
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "novo LRCAP ou divulgação do preço-teto de armazenamento"
     },
     {
@@ -84,7 +84,7 @@
       "qsv_cor": "VERDE",
       "norma": "Portaria MME 136/2026 Art. 7º (III/IV/VI) + Art. 4º §13 (grid-forming) · NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "revisão da NT de requisitos; NT-ONS 0111 = EPE-095 (mesmo doc conjunto)"
     },
     {
@@ -98,7 +98,7 @@
       "qsv_cor": "VERDE",
       "norma": "REN ANEEL 1.161/2026 (assinada 02/06; publicada no DOU 24/06/2026)",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "revisão da REN 1.161 ou regra de TUST do edital LRCAP"
     },
     {
@@ -112,7 +112,7 @@
       "qsv_cor": "AZUL",
       "norma": "CP ANEEL 45/2019 (3ª fase)",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "voto-vista do Diretor Gentil Nogueira na 3a fase da CP 45/2019 - prazo informado pela ABSOLAR em 06/10/2026 (F3); publicacao da NT da SGM de abertura da CP de revisao da REN 1.030/2022 (prevista pela mesma fonte para a semana de 14/09/2026); abertura da CP de revisao da REN 1.030/2022 (prevista para meados de outubro de 2026).",
       "pendencia_verificacao": "ATENCAO (21/08/2026): o pedido de vista do diretor Gentil de 28/07/2026 NAO se confunde com o voto-vista do ex-diretor Fernando Mosna, que propunha encerrar a 3a fase e abrir uma 4a etapa. Com a saida de Mosna em 13/08/2026, permanece SEM RESPOSTA quem herdou aquele voto-vista. O resumo do GTGC de 20/08/2026 nao responde a essa pergunta. | 11/09/2026: (i) DIVERGENCIA DE PRAZO nao resolvida: o limite calculado de 60 dias da vista de 28/07 dava cerca de 26/09/2026; o resumo ABSOLAR de 10/09 atribui ao proprio Dir. Gentil o prazo de 06/10/2026. Nenhum dos dois esta ancorado em ato ou pauta oficial. (ii) As datas da NT da SGM e da CP da REN 1.030 sao declaracao oral relatada por terceiro (F3), nao ato. (iii) Compatibilidade com a Portaria ANEEL 7.157/2026: a atividade AR26-11 tem ano 2027 para EDICAO DA NORMA; uma CP aberta em outubro de 2026 nao contradiz o Anexo I. E falso afirmar que a CP da REN 1.030 nao abrira em 2026. | 14/09/2026: resumo da reuniao semanal do GTGC de 11/09/2026 (ABSOLAR, Lucas Kuehl, F3, lido na integra) repete o calendario: processo deve retornar a pauta ate 06/10/2026, tida como data mais provavel para deliberacao; NT de revisao da REN 1.030/2022 esperada para a semana seguinte e CP para meados de outubro; revisao deve abranger adequacoes da Lei 15.269, temas da CP 45/2019 e PLD minimo. Mencoes de merito: abertura para GFM e autoproducao; mecanismo de rateio envolvendo solares, eolicas e hidreletricas. F1 de 14/09: indice de noticias da ANEEL (ultima de 11/09) e DOU de 14/09 Secao 1 (436 itens) sem NT da SGM, sem aviso de CP, sem voto. Status EM DELIBERACAO mantido. | NOTA 07/10/2026: a Diretoria da ANEEL APROVOU a regra em 06/10/2026 (noticia oficial; ver pendente ANEEL-CP-045-2019-REN-CORTES-APROVADA-RPO-2026-10-06). O fato renderizado continua dizendo 'em deliberacao' ate decisao do CEO (D35) e numero da REN no DOU. | 07/10/2026: DOU de 07/10, Secao 1 (368 itens), sem a Resolucao Normativa aprovada em 06/10; status e cor mantidos por decisao do CEO (D35) ate a leitura do ato."
     },
@@ -127,7 +127,7 @@
       "qsv_cor": "AZUL",
       "norma": "bases públicas oficiais",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "n/a (estrutural)",
       "pendencia_verificacao": "ACHADO DE ROTA DA CAMADA CONSOLIDADORA EM 27/08/2026, e ele reclassifica bloqueios que os monitores vinham tratando como falhas separadas. (1) ANEEL: www2.aneel.gov.br/cedoc, biblioteca.aneel.gov.br, legislacao.aneel.gov.br, antigo.aneel.gov.br e www.aneel.gov.br devolvem HTTP 403 com o cabecalho Cf-Mitigated: challenge e Server: cloudflare, e o corpo e a pagina Just a moment. Isto e desafio de JavaScript do Cloudflare, nao negacao de acesso e nao endereco quebrado. Consequencia dura: nenhuma troca de User-Agent, nenhum conjunto de cabecalhos e nenhuma repeticao de curl passa por ele, por construcao. A unica rota e um navegador que execute JavaScript. (2) A rota gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas responde HTTP 200 com 217 KB, e nao 404 como registrado em 26/08; porem e apenas pagina de apresentacao, e todo o acervo de consultas fica atras do link para antigo.aneel.gov.br, que esta sob o mesmo desafio do Cloudflare. Registrar a rota como viva e o acervo como bloqueado. (3) CCEE: o 403 NAO e Cloudflare e NAO e generico. O corpo e uma pagina propria da CCEE, Bloqueio Manutencao, que diz que o acesso foi bloqueado por nao atender as politicas de seguranca da CCEE, exibe o IP de origem 201.95.196.99, exibe um codigo de erro e instrui a abrir chamado na CCEE informando esse codigo e esse IP. Ou seja, o bloqueio e por IP e tem rota administrativa de solucao, o que nenhuma execucao anterior havia apurado. (4) DOU: a rota estavel e in.gov.br/leiturajornal com os parametros data e secao, que devolve o indice do dia dentro de um bloco JSON no proprio HTML e funciona por curl com User-Agent de navegador; em 27/08 devolveu 3.248 itens, o mesmo total que o monitor das 07h48 apurou, e confirmou que nao houve edicao extra. (5) EPE: confirmada a regra de 26 e 27/08, falha por curl nas listagens e funciona por WebFetch, e adicionalmente responde a HEAD com Last-Modified nos arquivos. (6) ONS: a rota _api do SharePoint responde anonimamente e foi reconferida as 08h50; o acervo de documentos e publicacoes tem item mais recente em 26/08/2026 12h58, o IPDO de 25/08, e nada do rito da Portaria 140. || REGISTRO ANTERIOR: | 27/08/2026 ROTA: a EPE falha por curl, as listagens devolvem apenas o menu, mas FUNCIONA por WebFetch nas tres rotas testadas, pagina do LRCAP, indice de noticias e calendario de publicacoes. Paginas de ARTIGO da EPE sao renderizadas no servidor e abrem ate por curl, mas exigem conhecer o slug. ONS e CCEE permanecem inacessiveis sem navegador: ONS devolve 502 por WebFetch e template com placeholders por curl; CCEE devolve 403 pelas duas vias. REGRA: testar curl, WebFetch e navegador antes de declarar gap de fonte."
     },
@@ -143,7 +143,7 @@
       "norma": "CP ANEEL nº 001/2026 (medição inteligente) · mandato: Portarias MME 111/2025 + 126/2026",
       "numero_status": "ANCORADO",
       "fonte": "F1 ANEEL (notícia 30/06/2026, lida na íntegra em 03/07) + F3 ABSOLAR (GT Geração Distribuída, 30/06/2026)",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "voto final da CP 001/2026 (decisão prevista 2S2026); fim da janela de contribuições 14/08/2026",
       "vetores_afetados": [
         "V2",
@@ -165,7 +165,8 @@
       "vetores_afetados": [
         "V3",
         "V7"
-      ]
+      ],
+      "verificado_em": "2026-10-08"
     },
     {
       "id": "lrcap_faq_manual_armazenamento",
@@ -183,7 +184,7 @@
         "V3",
         "V7"
       ],
-      "verificado_em": "2026-09-30",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "publicacao de nova versao do FAQ (R6+) ou do Manual; publicacao da NT de Quantitativos da Capacidade Remanescente do SIN para Escoamento (prazo 30/09/2026, art. 11 §4o); editais ANEEL previstos para 29/10/2026",
       "pendencia_verificacao": "conferir no texto integral da Portaria Normativa MME 136/2026 se a NT de Quantitativos da Capacidade Remanescente do SIN para Escoamento esta no art. 11 §4o (como diz o FAQ) ou no art. 15 §4o (como rastreia o canonico do monitor), ou se sao dois documentos distintos com o mesmo prazo de 30/09/2026 | 30/09/2026: o FAQ R5 transcreve o art. 11 §4o da Portaria 136 (NT de Quantitativos ate 30/09/2026, sem aplicacao do art. 3o §5o da Portaria 444/2016), em linha com a leitura do ato registrada em 01/09/2026 no pendente EPE-MAPA-BARRAMENTOS-LRCAP. A referencia a art. 15 §4o no prompt do monitor parece desatualizada; confirmar com o auditor antes de encerrar esta pendencia."
     },
@@ -201,7 +202,8 @@
       "fonte": "F1 Planalto (Mensagem 1.755/2025, DOU 25/11/2025) + Agência Senado",
       "vetores_afetados": [
         "V4"
-      ]
+      ],
+      "verificado_em": "2026-10-08"
     },
     {
       "id": "autoproducao_despacho_2414",
@@ -214,7 +216,7 @@
       "qsv_cor": "AZUL",
       "norma": "Despacho ANEEL nº 2.414/2026 · art. 16-B da Lei 9.074/1995 (redação da Lei 15.269/2025) · NT Conjunta 7/2026-SGM-SCE-SFF/ANEEL",
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "fonte_corroboracao": "Aprovado pela diretoria em 30/06/2026; corroborado por Poder360, Cenário Energia, CanalEnergia e XP Radar (julho). DOU/SEI ANEEL ainda não reaberto — mantém ALEGADO_NAO_ANCORADO.",
       "gatilho_revisao": "publicação no DOU/SEI ANEEL confirmando o Despacho 2.414/2026; regulamentação da CCEE (Regras/Procedimentos de Comercialização); ver ANEEL-DESPACHO-2819-2026-AUTOPRODUCAO, que suspende cautelarmente duas das regras deste regime"
     },
@@ -230,7 +232,7 @@
       "norma": "Despacho ANEEL no 2.819, de 29/07/2026 (DOU de 07/08/2026) - suspensao cautelar parcial em pedido de reconsideracao da ABRAPCH sobre o regime de autoproducao do art. 16-B da Lei 9.074/1995",
       "numero_status": "ALEGADO_NAO_ANCORADO",
       "fonte": "F3 ABSOLAR GT Geracao Centralizada (voz oficial, 07/08/2026). F1 DOU nao aberta - in.gov.br em socket hang up na 6a e 7a tentativas consecutivas.",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "leitura do texto do Despacho 2.819/2026 no DOU ou no SEI da ANEEL; retorno do recurso a pauta da diretoria colegiada para julgamento definitivo; eventual queda definitiva do prazo de 3 anos para usinas sem outorga modeladas na CCEE, que abriria janela de contribuicao.",
       "pendencia_verificacao": "[A VERIFICAR F1] texto integral do Despacho 2.819/2026 no DOU de 07/08/2026; anexo DESPACHO N 2.819.pdf na caixa do CEO nao lido. Numero, datas, conteudo e atribuicao a ABRAPCH sao F3 - nao citar externamente.",
       "vetores_afetados": [
@@ -248,7 +250,7 @@
       "norma": "NT-ONS DPL 0057/2026 / EPE-DEE-RE-067/2026-r0 · Portarias MME 444/2016 e 136/2026",
       "numero_status": "SEM_NUMEROS",
       "fonte": "PDF F1 oficial EPE (epe.gov.br, publicacao-976), lido na íntegra em 09/07/2026",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "id": "nt_escoamento_lrcap",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "gatilho_revisao": "NT-02 publicada em 30/09/2026 (NT-ONS DPL 0095/2026, ver fato nt_quantitativos_lrcap_armazenamento); revisar se sair nova revisao da metodologia"
@@ -268,7 +270,7 @@
       "vetores_afetados": [
         "V3"
       ],
-      "verificado_em": "2026-10-01",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "revisão da NT (R1); publicação dos editais dos Leilões 05 e 06/2026-ANEEL (previstos para 29/10/2026); resultado do leilão de 02/12/2026, que desconta margem do produto B sem republicação",
       "pendencia_verificacao": "Sem registro na Tabela de Precedencia QSV v1.2: teto AZUL (R7). ANCORADO_PARCIAL porque o item 7.1 (fatores limitantes por estado) e as tabelas de curto-circuito nao foram lidos por inteiro e porque os valores citados vieram de extracao de texto do PDF, sem conferencia visual da tabela. A Tabela 4-1 identifica barramentos por nome de subestacao e sigla, NAO por numero de barra do caso eletrico: a confirmacao dos matches da shortlist pelo numero de barra depende dos casos de referencia do ONS, nao baixados (sitio do ONS com HTTP 502). Cruzamento Tabela 4-1 x 129 barramentos bonificados do Anexo II x shortlist de siting ainda NAO feito. Contagem automatica da Tabela 5-1: 288 linhas, 266 Tipo A e 22 Tipo B, a conferir."
     },
@@ -283,7 +285,7 @@
       "qsv_cor": "VERDE",
       "norma": "Resolução CMSE nº 1, de 6 de julho de 2026 — DOU de 08/07/2026, Edição 126, Seção 1, Página 134",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "Publicação da metodologia dos estudos prospectivos pelo ONS ou nova deliberação de despacho por GE",
       "fonte_anterior_raiz": "F1 MME (notícia oficial de 09/07/2026, lida) — texto do ato NÃO reaberto (PDF login-restrito). Parâmetros por fonte secundária.",
       "nota_reconciliacao": "fato_id reconciliado pelo consolidador em 2026-07-29: a raiz trazia \"MME-RESOLUCAO-CMSE-01-2026\" (verificado 2026-07-10, AZUL/ALEGADO_NAO_ANCORADO); adotada a versao canonica da flat \"MME-CMSE-RESOLUCAO-1-2026\" (verificado 2026-07-21, VERDE/ANCORADO), que e a verificacao mais recente e ancorada no DOU. Nenhum fato promovido; nenhuma verificacao nova carimbada."
@@ -300,7 +302,7 @@
       "norma": "PET/PELP Ciclo 2026 – 1o Semestre (EPE, 09/07/2026) · Decreto 5.184/2004 (competencia da EPE)",
       "numero_status": "ALEGADO_NAO_ANCORADO",
       "fonte": "F1 EPE — release oficial 'EPE preve expansoes do Sistema Interligado Nacional no PET/PELP do 1o semestre de 2026', publicado em 9 de julho de 2026, aberto e lido na integra em 17/07/2026 (epe.gov.br/pt/imprensa/noticias). Documento PET/PELP em si NAO baixado.",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "leitura do documento PET/PELP 1S2026 (ancoragem de cifras e obras); publicacao do PET/PELP Ciclo 2026 – 2o Semestre (~dez/2026)",
       "nota_reverificacao_2026_08_10": "Indice oficial de publicacoes da EPE reaberto e lido em 10/08/2026: o 'Programa de Expansao da Transmissao (PET) / Plano de Expansao de Longo Prazo (PELP) Ciclo 2026 - 1o Semestre' SEGUE LISTADO, com a descricao de obras definidas ate maio/2026, e SEGUE SEM DATA DE PUBLICACAO EXPOSTA - 4a reconferencia com o mesmo resultado. Registro adicional do mesmo indice: o PDE 2036 consta como em elaboracao em 2026 (horizonte 2027-2036); ha uma Nota Tecnica de metodologia para selecao de areas para oferta de geracao eolica offshore; e o Balanco Energetico Nacional 2026 esta listado. NENHUM item novo nas categorias vigiadas (Revisoes Quadrimestrais aparecem em pagina propria, ver o fato EPE-ONS-CCEE-REV-QUADRIMESTRAL-2-2026; sem Resenha/Boletim do Mercado, Anuario, Caderno de Estudos ou instrucao AEGE/LRCAP novos)."
     },
@@ -315,7 +317,7 @@
       "qsv_cor": "VERDE",
       "norma": "Portaria SNTEP/MME nº 3.159, de 10 de julho de 2026 — DOU de 14/07/2026, Edição 130, Seção 1, Página 99",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "Encerramento da CP em 13/08/2026 e publicação da versão final do POTEE 2026",
       "fonte_anterior_raiz": "F1 MME — release oficial 'Consulta publica do POTEE 2026 esta aberta para contribuicoes da sociedade', publicado em 14/07/2026 14h32, aberto e lido na integra em 17/07/2026 (gov.br/mme/pt-br/assuntos/noticias). Documento do POTEE em si NAO baixado.",
       "nota_reconciliacao": "fato_id reconciliado pelo consolidador em 2026-07-29: a raiz trazia \"MME-CP-POTEE-2026\" (verificado 2026-07-17, AZUL/ALEGADO_NAO_ANCORADO); adotada a versao canonica da flat \"MME-POTEE-2026-CP\" (verificado 2026-07-21, VERDE/ANCORADO), que e a verificacao mais recente e ancorada no DOU. Nenhum fato promovido; nenhuma verificacao nova carimbada.",
@@ -333,7 +335,7 @@
       "norma": "3o Mecanismo Competitivo de Resposta da Demanda — produto Disponibilidade (ONS, 15/07/2026) · Sandbox Regulatorio de RD ONS/CCEE (NT-ONS DGL 0049/2024), vigente ate 31/12/2026",
       "numero_status": "ANCORADO",
       "fonte": "F1 ONS — noticia 'ONS realiza 3o Mecanismo Competitivo de Resposta da Demanda por Disponibilidade e alcanca resultados recordes', publicada em 15/07/2026, aberta e lida em 17/07/2026 (ons.org.br/paginas/noticias/details.aspx?i=12987). Trechos literais: 'negociacao de 344 MW, 12 ofertas vencedoras e desagio medio de 49,23% em relacao ao preco-teto estabelecido'; 'O desagio maximo alcancado foi de 57,5%'.",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "publicacao do relatorio de avaliacao ONS+CCEE do Sandbox de RD (semestral — traz a metodologia de medicao e verificacao da disponibilidade); decisao da ANEEL sobre a continuidade/regulamentacao do produto apos 31/12/2026; 4o Mecanismo",
       "pendencia_verificacao": "[23/09/2026 consolidadora] F1 noticia oficial ANEEL de 22/09/2026 16h17 ('Agencia adia aprovacao da representacao do programa de Resposta da Demanda'), aberta e lida em 23/09: no encerramento da CP 36/2023 (REN 1.030/2022 e Submodulo 4.5), a Diretoria ADIOU a aprovacao da representacao do programa na cadeia de modelos de otimizacao e formacao de precos e deu 90 dias ao ONS e a CCEE para aperfeicoar divulgacao e transparencia do programa. Toca o gatilho_revisao (decisao ANEEL sobre continuidade/regulamentacao), mas o ato (despacho/REN) ainda nao esta no DOU de 23/09. Valor NAO alterado; verificado_em NAO carimbado. Conferir o ato no DOU antes de mover status. [24/09/2026 consolidadora] Ato localizado: Despacho ANEEL no 3.695, de 22/09/2026, publicado no DOU de 24/09/2026, Secao 1 (indice leiturajornal do1 reaberto as 10h pela consolidadora; ementa confere com o release de 22/09). O ato tem fato proprio: despacho_3695_2026_rd_modelos (proposta P-4f479549 no gate CEO). Valor deste fato NAO alterado; decidir no gate se o status deste fato deve remeter ao despacho. Voto e nota tecnica seguem nao lidos."
     },
@@ -348,7 +350,7 @@
       "qsv_cor": "AZUL",
       "norma": "Lei no 15.504, de 15/09/2026 (DOU de 15/09/2026, edicao extra), que altera a Lei no 11.196/2005 (arts. 11-A a 11-J) e a Lei no 15.211/2025; Lei Complementar no 237, de 15/09/2026. Origem: PL 278/2026 (Senado Federal, materia 172786).",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "Publicacao do regulamento do Poder Executivo federal do REDATA (decreto ou ato da Receita Federal/MDIC): forma de comprovacao do atendimento da totalidade da demanda por fontes renovaveis ou de baixa emissao; indicadores de sustentabilidade; lista de produtos (art. 11-C par. 4o).",
       "nota_reverificacao_2026_08_07": "Reverificado em 07/08/2026: SEM MOVIMENTO. O PL 278/2026 segue parado desde 26/02/2026 em 'aguardando inclusao em Ordem do Dia de requerimento' (RQS 112/2026). O Congresso saiu do recesso, mas a expectativa publica e de calendario legislativo reduzido no 2o semestre por causa das eleicoes gerais de 2026, com deliberacao possivel apenas ate o fim do ano se houver acordo entre os chefes de bancada do Senado. As emendas apresentadas concentram disputas que extrapolam o objetivo inicial de atrair investimento em data center, alcancando politica industrial de hardware, modelo de expansao da infraestrutura eletrica e gestao de gargalos de transmissao. O GATILHO VINCULADO no 1 do monitor NAO DISPARA - nao acionar os contatos vinculados. Fonte desta reverificacao: busca em fontes secundarias e portal do Senado; ficha de tramitacao nao reaberta linha a linha nesta execucao.",
       "nota_reverificacao_2026_08_10": "FICHA DE TRAMITACAO F1 REABERTA E LIDA LINHA A LINHA em 10/08/2026 (Senado Federal, materia 172786). SITUACAO INALTERADA: 'AGUARDANDO INCLUSAO ORDEM DO DIA DE REQUERIMENTO', local Plenario do Senado Federal, ultima acao em 26/02/2026; o RQS 112/2026 (urgencia requerida por chefes de bancada, arts. 336-III e 338-III do RISF) segue pendente e o PL NAO foi incluido na Ordem do Dia. ULTIMA MOVIMENTACAO REGISTRADA: 17/07/2026, recebimento da Emenda no 22, do Senador Laercio Oliveira (PP/SE). TOTAL DE 22 EMENDAS: a de no 1 retirada pelo autor, a de no 4 nao deliberada, as demais pendentes - o registro anterior deste fato ia ate a Emenda no 21. CONTRASSINAL NOVO, MATERIAL PARA O VETOR: duas emendas puxam o critério de sustentabilidade energetica do REDATA para fontes fosseis - a Emenda no 22-PLEN (Laercio Oliveira) quer incluir gas natural entre as fontes aptas, e a Emenda no 16-PLEN (Esperidiao Amin) reconhece como compativel o suprimento por grupos geradores a gas natural e/ou biometano; as frentes parlamentares defendem fontes 'firmes como gas natural, energia nuclear e biometano, complementares as renovaveis'. O TEOR dessas duas emendas e de fonte secundaria - em F1 estao confirmados apenas existencia, numeracao, autoria e data de recebimento. LEITURA SOA: uma redacao que admita gas e nuclear nao elimina a necessidade de comprovacao horaria da origem - ela a agrava, porque criterio de baixa emissao sobre matriz mista so e verificavel com atribuicao temporal; a tese de exclusividade auditavel nao perde com a Emenda 22, muda de porta de entrada. CONTEXTO DATADO: em 07/08/2026 uma coalizao de 11 frentes parlamentares e 34 entidades publicou manifesto pedindo ao Presidente do Senado que pautasse o PL 278/2026 entre 11 e 13/08/2026, na semana de esforco concentrado de 10 a 14/08, pedindo tambem a aprovacao do PLP 74/2026 para tratar a restricao orcamentaria criada pela caducidade da MP 1.318/2025; a pauta do Plenario nao havia sido divulgada pela Presidencia do Senado. PRESSAO POR PAUTA NAO E MOVIMENTACAO LEGISLATIVA: o GATILHO VINCULADO no 1 do monitor NAO DISPARA - nao acionar os contatos vinculados. Reverificar a Ordem do Dia em 11, 12 e 13/08.",
@@ -374,7 +376,7 @@
       "norma": "Portaria Normativa MME no 140, de 18/07/2026 (DOU edicao extraordinaria de 21/07/2026) - art. 1o-B da Lei no 10.848/2004, incluido pela Lei no 15.269/2025",
       "numero_status": "ANCORADO",
       "fonte": "F1 MME - TEXTO INTEGRAL DO ATO LIDO EM 07/08/2026 (PDF oficial de 10 paginas do repositorio de legislacao do MME, carimbo 'Este texto nao substitui o publicado no DOU de 21.7.2026 (Edicao Extra) - Secao 1', arquivado em _Fontes_F1_Portaria_140/Portaria_Normativa_MME_140_2026_MME_F1.pdf). Antes disso: F1 MME release oficial de 22/07/2026 (atualizado 23/07), lido em 28/07/2026, e parametros internos por F3 ABSOLAR (voz oficial, GTGC 22/07 e 23/07/2026) lendo o PDF anexo. A operacionalizacao (reuniao ONS de 04/08 e resumos GTGC de 30/07 e 06/08) segue F3 ABSOLAR.",
-      "verificado_em": "2026-09-22",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "CALENDARIO ANCORADO NO ATO (contagem a partir da publicacao em 21/07/2026, com prorrogacao para dia util nos arts. 4o par. 4o e 5o par. 9o): 27/07/2026 - ONS divulga cronograma, especificacoes tecnicas e criterios de validacao (art. 4o par. 1o I, 5 dias; cumprimento NAO verificado). 10/08/2026 - manifestacao previa de interesse ao MME (art. 2o I, 20 dias) E envio dos registros de medicao solarimetrica ao ONS (art. 4o par. 1o II, 20 dias). 31/08/2026 - ONS divulga as funcoes de produtividade (art. 4o par. 1o III, 40 dias; 40o dia cai em domingo). ~10/09/2026 - fim do prazo de contestacao (art. 4o par. 2o, 10 dias). ~30/09/2026 - ONS divulga funcoes atualizadas e analises (art. 4o par. 3o, 20 dias). 19/09/2026 (CUMPRIDO em 21/09/2026, Comunicado CCEE 744/26) - CCEE aprova e divulga as regras e procedimentos de comercializacao adaptados, onde vive o procedimento da AUDITORIA INDEPENDENTE do art. 8o (art. 7o par. 1o, 60 dias) - ITEM DE ACOMPANHAMENTO DE MAIOR VALOR. 19/10/2026 - capacitacao ao mercado pela CCEE (art. 7o par. 2o, 90 dias). ~18/11/2026 - ONS desenvolve a ferramenta computacional e divulga cronograma do rito do art. 5o (120 dias), seguido de 30 dias para os agentes e 90 para analise. Convocacao para assinatura do Termo so apos a divulgacao do art. 5o par. 7o, na pratica em 2027. SEM PRAZO PUBLICADO: metodologia do MME para o art. 10 (montantes de corte como geracao verificada na revisao anual de garantia fisica).",
       "vetores_afetados": [
         "V4"
@@ -392,7 +394,7 @@
       "qsv_cor": "AZUL",
       "norma": "Consulta Publica ANEEL no 25/2026 - Regras de Comercializacao (Modulos 9, 10, 11, 16 e 27) - proposta da CCEE",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "encerramento da CP em 12/09/2026; publicacao da versao final das Regras de Comercializacao; leitura da minuta para identificar o grao temporal de apuracao nos Modulos 10 e 11; extensao das mesmas regras aos Leiloes 05 e 06/2026 (armazenamento)",
       "pendencia_verificacao": "Divergencia de data de encerramento aberta em 24/08/2026 e nao resolvida: este registro anota prazo do orgao em 12/09/2026, ancorado em noticia F1 de 28/07/2026, enquanto a camada portal da ABSOLAR de 23/08/2026 anota prazo interno em 09/09/2026 e prazo do orgao em 14/09/2026. Nenhuma das duas datas foi reconferida em F1 nesta execucao; nao citar data de encerramento sem reabrir a fonte oficial."
     },
@@ -408,7 +410,7 @@
       "norma": "Consulta publica MF/SEMC - proposta de Portaria sobre obrigacoes de MRV no ambito do SBCE · Relatorio de AIR no 001-SEMC",
       "numero_status": "ANCORADO_PARCIAL",
       "fonte": "F1 Ministerio da Fazenda (noticia oficial 28/07/2026, lida em 30/07/2026) + F3 ABSOLAR GT Geracao Centralizada (29/07/2026, voz oficial, com PDFs anexos)",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "encerramento da consulta em 28/08/2026; prazo interno ABSOLAR 21/08/2026; publicacao da Portaria final de obrigacoes de MRV; leitura do Relatorio de AIR 001-SEMC e da minuta de Portaria; definicao dos limiares de emissao, hoje nao fixados em F1; confirmacao da entrada do setor eletrico na Fase 2",
       "pendencia_verificacao": "numero/identificador oficial da consulta publica nao lido; minuta de Portaria e AIR 001-SEMC nao abertos (anexos ao e-mail ABSOLAR de 29/07/2026); limiar de 10.000 tCO2e/ano e F2 nao confirmado",
       "vetores_afetados": [
@@ -428,7 +430,7 @@
       "norma": "Portaria Normativa MME no 136/2026, art. 6o, paragrafo 1o - operacionalizacao pelo Sistema AEGE (EPE)",
       "numero_status": "ANCORADO",
       "fonte": "F1 EPE (noticia oficial de 31/07/2026 sobre a prorrogacao, reaberta e lida em 03/08/2026; noticia oficial de 03/08/2026 com o resultado do cadastramento, aberta e conferida duas vezes em 07/08/2026) + F3 ABSOLAR (GT Armazenamento, 31/07/2026 15h14 BRT, mesma informacao de prazo)",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "divulgacao pela EPE da lista de projetos HABILITADOS TECNICAMENTE e da potencia elegivel apos a analise (o quantitativo de cadastramento ja esta ancorado em F1 desde 03/08/2026: 6.091 projetos e 296.807 MW). Revisar tambem se houver qualquer reabertura ou repescagem de cadastramento, ou se a EPE divulgar a divisao por certame.",
       "vetores_afetados": [
         "BESS auditavel",
@@ -447,7 +449,7 @@
       "qsv_cor": "AZUL",
       "norma": "2a Revisao Quadrimestral das Previsoes de Carga para o Planejamento Anual da Operacao Energetica 2026-2030 (EPE / ONS / CCEE, 07/08/2026)",
       "numero_status": "ANCORADO_PARCIAL",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "leitura da Nota Tecnica da 2a Revisao (EPE e ONS) para ancorar a abertura por componente; publicacao da 3a Revisao Quadrimestral do PLAN 2026-2030 (~dez/2026); carga do ciclo novo em epe_previsao_carga_ciclo e execucao do previsto x verificado contra carga_energia_verificada; qualquer revisao da componente de data center",
       "pendencia_verificacao": "[A VERIFICAR F1] Nota Tecnica da 2a Revisao nao lida (PDF binario em 10/08). Baixar os dois PDFs da pagina revisoes-quadrimestrais-da-carga e localizar a NT do ONS no acervo digital (nome exato de arquivo obrigatorio). Verificar se houve gravacao ou material do workshop de 10/08/2026."
     },
@@ -463,7 +465,7 @@
       "norma": "Leilao de Transmissao no 1/2026 - 2a etapa, lotes 7 a 10 (homologacao aprovada na RPO ANEEL de 11/08/2026)",
       "numero_status": "ANCORADO_PARCIAL",
       "fonte": "F1 ANEEL (noticia de 11/08/2026, indice reaberto e lido em 14/08/2026)",
-      "verificado_em": "2026-09-24",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "publicacao do ato homologatorio com RAP por lote; resultado do Leilao de Transmissao no 4/2026 em 30/10/2026",
       "vetores_afetados": [
         "V1",
@@ -482,7 +484,7 @@
       "qsv_cor": "AZUL",
       "norma": "Nota Técnica EPE-DEE-NT-086/2025-Rev0, de novembro de 2025",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "publicação do resultado locacional oficial, revisão da NT-086 ou leitura do ANEXO II da Portaria MME 136/2026",
       "pendencia_verificacao": "PDF baixado e lido na integra em 20/08/2026 (782.209 bytes, SHA-256 7b177a112fa1ed44e0596372312bde331a629c357e32e5f5903efde488969bd8). ATENCAO: o resultado descrito e um CASO TESTE ilustrativo da propria NT, NAO o mapa oficial de barramentos bonificados. Ha divergencia aberta: o caso teste lista 7 UFs e a cobertura secundaria sobre o ANEXO II da Portaria MME 136/2026 lista 8, incluindo Alagoas. O texto do ANEXO II nao foi lido. O fator beta de 0,9 permanece em fonte secundaria."
     },
@@ -497,7 +499,7 @@
       "qsv_cor": "AZUL",
       "norma": "Consulta Pública ANEEL nº 016/2026",
       "numero_status": "ANCORADO_PARCIAL",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "encerramento do prazo em 08/09/2026, publicação do voto ou da REN resultante",
       "pendencia_verificacao": "DIVERGENCIA ABERTA sobre o alcance da proposta, nao resolvida em nenhuma das duas direcoes, e a nota tecnica da consulta NAO foi lida. Versao A [F3, resumo da 31a reuniao do GTGD de 18/08/2026]: consumidores do Sistema de Compensacao de Energia Eletrica e da Tarifa Social ficariam de fora do novo encargo, seguindo no modelo atual de cobranca minima. Versao B [F2, cobertura da abertura da consulta em 08/06/2026 citando a Agencia]: consumidores com geracao propria, incluindo sistemas fotovoltaicos, continuam utilizando a infraestrutura comercial das distribuidoras e por isso tambem devem contribuir para a cobertura desses custos fixos, com a ressalva de que a proposta nao modifica o marco regulatorio da micro e minigeracao distribuida. As duas versoes sao secundarias e se contradizem. NAO usar nenhuma das duas como argumento em peca, e-mail ou material antes da leitura da minuta. A tentativa de abrir a noticia oficial da ANEEL em 21/08/2026 retornou Conteudo Restrito. Numero da consulta, janela de contribuicoes, objeto e vigencia prevista sao corroborados por fonte secundaria que cita a Agencia. O prazo interno de 31/08/2026 e derivado da camada portal da ABSOLAR e NAO foi relido em F1 por este monitor; reconfirmar no portal antes de usar em decisao. A divergencia sobre o alcance da proposta em relacao a MMGD permanece ABERTA e a nota tecnica da consulta segue NAO lida. O Parecer no 00166/2026/PFANEEL/PGF/AGU NAO resolve esta divergencia: trata da Consulta Publica 46/2025, sobre estrutura tarifaria horaria, que e processo distinto desta consulta. Nao fundir os dois."
     },
@@ -508,7 +510,7 @@
       "status": "VIGENTE — encargo de 14/08/2026 a 08/01/2027, ou até nomeação de novo titular",
       "norma": "Portaria ANEEL nº 249, de 13/08/2026 · DOU de 14/08/2026, Ed. 153, Seção 2, p. 58 · Processo 48500.001309/2025-79 · art. 10 da Lei 9.986/2000",
       "url": "https://www.in.gov.br/web/dou/-/portaria-n-249-de-13-de-agosto-de-2026-725519096",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "tipo_fato": "REGULATORIO_INSTITUCIONAL",
       "score_soa": 8,
       "vetores_afetados": [
@@ -550,7 +552,7 @@
       "norma": "Aviso de Consulta Publica ANEEL no 28/2026 — DOU de 26/08/2026, Secao 3, p. 124 · Processo no 48500.022172/2026-77 · art. 7o da Lei no 15.269/2025",
       "numero_status": "ANCORADO",
       "fonte": "F1 — DOU, in.gov.br, edicao de 26/08/2026, Secao 3, pagina 124: Aviso de Consulta Publica no 28/2026 aberto e lido na integra em 26/08/2026 pela rotina consolidadora.",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "publicacao da nota tecnica de fundamentacao da CP 28/2026; encerramento do prazo em 09/10/2026; ABERTURA DA TOMADA DE SUBSIDIOS DE 30 DIAS DELEGADA A STR, sem data conhecida; publicacao da simulacao de rateio de quotas da CDE e do Fator ECR pela STR; publicacao da resolucao normativa resultante",
       "pendencia_verificacao": "A NOTA TECNICA E A MINUTA DA CP 28/2026 NAO FORAM LIDAS. O aviso do DOU nao traz o mérito: traz objeto, modalidade e janela. Nao usar em peca, e-mail ou material qualquer parametro de calculo do ECR, Fator ECR, valor de teto ou estimativa de encargo a partir deste registro. A NT 145/2026-STR, que recomenda consulta por 45 dias e simulou encargo total de R$ 5,15 bilhoes sobre o orcamento de 2026, segue NAO lida e segue em registro proprio, LARANJA. A VERIFICAR: a janela publicada e de 26/08 a 09/10/2026, ou seja 44 dias corridos, e nao os 45 dias recomendados pela NT 145 - a diferenca nao foi explicada por nenhuma fonte lida e nao deve ser apresentada como intencional. CORRECAO DE FALSO NEGATIVO, registrada em 26/08/2026 pela rotina consolidadora: a versao anterior deste registro afirmava que o DOU de 26/08 havia sido varrido item a item nas Secoes 1, 2 e 3 e NAO trazia Aviso de Consulta Publica sobre o ECR nem sobre o teto da CDE. A afirmacao estava ERRADA. O aviso estava na Secao 3, pagina 124 - a MESMA pagina em que o monitor regulatorio capturou o Aviso de Consulta Publica no 27/2026 (revisao tarifaria da CEEE-D). Tres avisos da ANEEL saíram nessa pagina: 27, 28 e 29 de 2026. A varredura leu um dos tres. Licao de metodo: pagina do DOU com um aviso capturado NAO e prova de que a pagina foi esgotada. ADICAO DE 31/08/2026: a Tomada de Subsidios de 30 dias sobre o orcamento e as quotas anuais da CDE NAO tem data de abertura e NAO aparecera em pauta de Diretoria, por ser delegada a superintendencia — exige vigilancia propria. A simulacao de rateio de quotas e do Fator ECR sera elaborada pela STR e ainda nao existe: nenhum numero dela pode ser citado. OBSERVACAO DE GOVERNANCA PARA O CEO: este registro esta classificado VERDE e o fato_id NAO consta da Tabela de Precedencia QSV v1.2; pela regra R7 o teto seria AZUL. A classificacao nao foi alterada unilateralmente por este monitor, e fica registrada para decisao. Mesma observacao para o campo status, que esta fora do dominio permitido (VIGENTE, AGENDADO, PENDENTE, EM DELIBERACAO, VIGENTE (referencia)).",
       "vetores_afetados": [
@@ -570,7 +572,7 @@
       "norma": "NT-ONS DPL 0083/2026, de 31/08/2026 - art. 11 da Portaria Normativa MME no 129/2026 e Decreto no 12.772/2025",
       "numero_status": "ANCORADO_PARCIAL",
       "fonte": "F1 - ONS, acervo digital publico, item 8558; PDF baixado e lido na integra em 01/09/2026",
-      "verificado_em": "2026-09-23",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "nova revisao da NT-ONS DPL 0083/2026; conclusao da etapa de habilitacao da 1a Temporada; indicacao de processo competitivo pelo SGAcesso; publicacao da NT de Quantitativos da Capacidade Remanescente do SIN PARA ESCOAMENTO ate 30/09/2026",
       "pendencia_verificacao": "VALORES POR BARRAMENTO NAO CITAVEIS a partir da extracao automatica: as tabelas do PDF perdem alinhamento de coluna na conversao para texto e os numeros de MW aparecem deslocados em relacao a linha do barramento. Citavel desta execucao: a Tabela 8-1, de tres campos, que extraiu limpa, e todo o texto corrido de metodologia e prazos. NAO citavel sem conferencia visual pagina a pagina: Tabelas 4-1, 4-2, 4-3 e 5-1 a 5-9. ARMADILHA DE NOME REGISTRADA: as secoes intituladas Segmento Geracao para Usinas do LRCAP 2026 e a Secao 7.1 referem-se, conforme a propria Secao 4.3 do documento, aos vencedores dos Leiloes de Reserva de Capacidade na forma de Potencia de 2026 de UTEs a Gas Natural, Carvao Mineral e UHEs e de UTEs a Oleo e Biodiesel, realizados em 18 e 20 de marco de 2026. NAO sao os leiloes de armazenamento de 02 e 04/12/2026, que ainda nao tem vencedores. Nao fundir. Outra colisao de sigla no mesmo documento: REPLAN (REP) 440 kV em SP e REPAR (REP) 230 kV no PR sao subestacoes distintas com a mesma sigla."
     },
@@ -585,7 +587,7 @@
       "norma": "Despacho ANEEL no 3.327, de 25/08/2026 (DOU de 01/09/2026, Secao 1)",
       "numero_status": "ANCORADO",
       "fonte": "F1 - DOU, in.gov.br, edicao de 01/09/2026, Secao 1, ato lido na integra em 01/09/2026",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "recurso administrativo contra o Despacho 3.327/2026; decisao da Diretoria Colegiada sobre casos analogos de carga especial; desfecho da cautelar da J&F e dos Consorcios ION",
       "pendencia_verificacao": "A integra do despacho e eventuais anexos remetem a legislacao.aneel.gov.br, dominio que segue sob desafio de JavaScript e nao foi aberto nesta execucao; o texto lido e o publicado no DOU, que neste caso e completo quanto a decisao. A cautelar da J&F S.A. e dos Consorcios ION, processo no 48500.023878/2026-56, permanece A VERIFICAR: consta da pauta da 18a Reuniao Publica Ordinaria de 01/09/2026, com campo de resultado vazio. Nao cita-la como decidida."
     },
@@ -600,7 +602,7 @@
       "norma": "Consulta Publica ANEEL no 18/2026 - atividade P e E 22-02 da Agenda Regulatoria",
       "numero_status": "PENDENTE_REABERTURA",
       "fonte": "F3 - Tecnico-Regulatorio ABSOLAR, voz oficial, 31/08/2026",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "leitura do aviso de consulta no DOU ou no portal de consultas publicas da ANEEL; encerramento do prazo em 09/09/2026; publicacao do relatorio de AIR",
       "pendencia_verificacao": "Numero, escopo e prazos vem do e-mail da ABSOLAR, nao do ato. O aviso de consulta NAO foi localizado nem lido no DOU nesta execucao. A minuta de contribuicao anexa ao e-mail NAO foi lida: o conector de e-mail entrega nome e tipo de anexo, nao conteudo. Nao citar parametro algum desta consulta em peca externa ate reabertura em F1."
     },
@@ -613,7 +615,7 @@
       "valor": "F1 — ONS, acervo digital, item 8566, arquivo 'Webinar Pos Nota Tecnica de Capacidade Remanescente - Temporada 01 2026.pdf', 1.642.134 bytes, 46 paginas, publicado em 03/09/2026 as 13h31, baixado e lido na integra em 08/09/2026. RESULTADO DA NOTA TECNICA 02 (NT-ONS DPL 0083/2026): 20,28 GW de potencia cadastrada, em 64 barramentos candidatos. 55 por cento com indicacao de atendimento direto ou processo competitivo e 45 por cento permaneceram sem margem; 40 por cento atendimento direto e 15 por cento processo competitivo. SEGMENTO GERACAO: atendimento direto 3,33 GW LRCAP mais 0,66 GW ACL; atendimento direto viavel condicionado 300 MW; processo competitivo 993 MW com 100 MW de margem em 2 barramentos no RS; INABILITACAO 9,28 GW. SEGMENTO CARGA: atendimento direto 3,33 GW; viavel condicionado 468 MW; processo competitivo 1,95 GW com 650 MW de margem em 13 barramentos em SP; inabilitacao zero. BARRAMENTOS SEM MARGEM: 21 no total, sendo 18 na regiao Nordeste, 2 em MG e 1 em GO. Texto literal do documento: 'Escassez de margem: apenas para geracao e 60 por cento dos cadastramentos recebidos'. INABILITACAO POR UF: BA 4.684,4 MW; PI 1.488,4 MW; PB 848,5 MW; RN 798,25 MW; MG 554,2 MW; PE 473,6 MW; SE 300 MW; GO 140 MW. VIABILIDADE FISICA DE CONEXAO: 30 barramentos consultados, 29 classificados Tipo A — reproduz a Tabela 8-1 da NT lida em 01/09/2026. O ONS publicou tambem um painel interativo em Power BI para consulta das capacidades remanescentes calculadas. RESSALVA LITERAL DO PROPRIO ONS: 'Analise indicativa, com base nas capacidades disponiveis nos barramentos candidatos, subareas a areas, sem considerar a etapa de desistencias'. CRONOGRAMA FIXADO NO DOCUMENTO: 31/08 publicacao da Nota Tecnica; 04/09 as 12h00 inicio das declaracoes pos-NT; 11/09 as 12h00 fim das declaracoes; 16/09 resultado da habilitacao, informado individualmente pelo SGAcesso; 28/09 indicacao de atendimento direto ou processo competitivo; 02/10 workshop de simulacao; 08/10 realizacao dos processos competitivos. O documento registra ainda que o cadastramento sera inabilitado a partir de 11/09 as 12h, apos o termino do periodo de manifestacoes, e que o cronograma da Temporada de Acesso de 2027 ainda nao existe, com previsao de publicacao no ultimo trimestre de 2026. Atualizacao 23/09/2026 - F1 ONS, Comunicado Relevante no 06/2026, de 17/09/2026, lido na integra: apos a etapa de manifestacoes, encerrada em 11/09/2026, o ONS indicou Processo Competitivo (PC) apenas para o produto 2029+ do segmento consumo, em barramentos de Sao Paulo limitados pelo criterio de subarea: 451 MW de MUST disputarao 228 MW de capacidade remanescente. Barramentos em PC: Cabreuva (CAV) 230 kV, Edgard de Souza (ESO) 230 kV, Replan (REP) 440 kV e Solvay (SOL) 440 kV. Bom Jardim - Fernao Dias (BOJ_FDI) 440 kV teve Atendimento Direto de 62 MW no produto 2029. Nenhum PC no segmento geracao. Comunicado Relevante no 05/2026, de 17/09/2026: geradores habilitados devem declarar potencia instalada e carga propria minima pelo SGAcesso ate 30/09/2026 (MUST >= potencia instalada - carga propria minima).",
       "status": "VIGENTE",
       "norma": "Nota Tecnica ONS DPL 0083/2026 e apresentacao do webinar de 02/09/2026 sobre as etapas posteriores a sua publicacao, no ambito da 1a Temporada de Acesso de 2026 (PNAST), art. 11 da Portaria Normativa MME no 129/2026 e Decreto no 12.772/2025.",
-      "verificado_em": "2026-09-23",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO",
       "gatilho_revisao": "Indicacao de AD ou PC CUMPRIDA em 17/09/2026 (Comunicado Relevante 06/2026, antes da data de 28/09); declaracao de potencia instalada e carga propria minima dos geradores ate 30/09/2026; workshop de simulacao em 02/10/2026; realizacao dos processos competitivos em 08/10/2026; publicacao do cronograma da Temporada de 2027.",
@@ -628,7 +630,7 @@
       "valor": "F1 — ONS, acervo digital, item 8564, arquivo 'Casos de Referencia da Temporada de Acesso.zip', 168.826.014 bytes, publicado em 02/09/2026 as 21h23, metadado e cabecalho de arquivo confirmados em 08/09/2026 pela rota de API do acervo. E a base de casos eletricos que sustenta as analises de desempenho estatico, dinamico e de curto-circuito da Nota Tecnica 02 da 1a Temporada de Acesso, agora publica e baixavel sem navegador pela rota items(Id)/File do acervo digital. Consequencia para a casa: ate aqui a SOA lia resultados de estudo de rede; com os casos de referencia passa a poder reproduzir o estudo em barramento especifico, que e o insumo que falta para transformar a shortlist de siting BESS de proxy em calculo proprio.",
       "status": "VIGENTE",
       "norma": "Casos de Referencia da 1a Temporada de Acesso de 2026, acervo digital do ONS, item 8564, publicados em 02/09/2026, no ambito do PNAST.",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO_PARCIAL",
       "gatilho_revisao": "Download e inventario do conteudo do arquivo; publicacao de casos de referencia do LRCAP Armazenamento.",
@@ -643,7 +645,7 @@
       "valor": "F1 — DOU de 03/09/2026, Secao 3, AVISO DE CONSULTA PUBLICA No 30/2026, lido na integra em 08/09/2026. Objeto, texto literal do aviso: 'obter subsidios para avaliar as Regras de Comercializacao, versao 2027'. Processo 48500.017724/2026-25. Modalidade: intercambio de documentos. Periodo para envio: 3/9/2026 a 2/10/2026. Assinatura: Andre Ruelli, Superintendente de Mediacao Administrativa e das Relacoes de Consumo. A consulta foi instaurada na Reuniao Publica da Diretoria Colegiada 15/2026, de 01/09/2026, item de ordem 4, com decisao unanime de instaurar consulta publica no periodo de 3 de setembro a 2 de outubro de 2026. Relevancia SOA: as Regras de Comercializacao versao 2027 sao o veiculo pelo qual as regras do LRCAP e a contabilizacao de armazenamento se materializam na CCEE — mesma familia da CP 025/2026 ja rastreada.",
       "status": "EM DELIBERAÇÃO",
       "norma": "Aviso de Consulta Publica ANEEL no 30/2026, DOU de 03/09/2026, Secao 3, processo 48500.017724/2026-25.",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO",
       "gatilho_revisao": "Encerramento das contribuicoes em 02/10/2026; publicacao das Regras de Comercializacao versao 2027.",
@@ -658,7 +660,7 @@
       "valor": "F1 — DOU de 03/09/2026, Secao 3, AVISO DE CONSULTA PUBLICA No 31/2026, lido na integra em 08/09/2026. Objeto, texto literal do aviso: 'obter subsidios para aprimoramento da Resolucao Normativa e do Relatorio de AIR, que estabelecem o Indicador de Atendimento de Mercado (IAM)'. Processo 48500.016976/2026-37. Modalidade: intercambio de documentos. Periodo para envio: 3/9/2026 a 19/10/2026. Assinatura: Andre Ruelli, Superintendente de Mediacao Administrativa e das Relacoes de Consumo. Instaurada na Reuniao Publica da Diretoria Colegiada 15/2026, de 01/09/2026, item de ordem 5, com decisao unanime de instaurar consulta publica na modalidade intercambio documental no periodo de 3 de setembro a 19 de outubro de 2026. A ANEEL descreveu o tema em noticia de 01/09/2026 como novo indicador para incentivar o cumprimento dos prazos de execucao de obras.",
       "status": "EM DELIBERAÇÃO",
       "norma": "Aviso de Consulta Publica ANEEL no 31/2026, DOU de 03/09/2026, Secao 3, processo 48500.016976/2026-37.",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO",
       "gatilho_revisao": "Encerramento das contribuicoes em 19/10/2026; publicacao da Resolucao Normativa do IAM.",
@@ -673,7 +675,7 @@
       "valor": "F1 — DOU de 08/09/2026, Secao 3, AVISO DE TOMADA DE SUBSIDIOS No 21/2026, lido na integra na data da publicacao. Objeto, texto literal do aviso: 'obter subsidios para as alteracoes no Cadastro Nacional da Distribuicao - CND/SIASE regulamentado pelo Submodulo 10.6 do PRORET e alteracoes no Sistema de Acompanhamento de Acompanhamento de Informacoes de Mercado para Regulacao Economica - SAMP'. A duplicacao da palavra 'Acompanhamento' esta no original. Processo 48500.025870/2026-24. Modalidade: intercambio de documentos. Periodo para envio: 08/09/2026 a 09/10/2026. Assinatura: Andre Ruelli, Superintendente de Mediacao Administrativa e das Relacoes de Consumo. Relevancia SOA: CND/SIASE e SAMP sao os cadastros pelos quais a ANEEL enxerga o mercado de distribuicao; uma revisao de seus campos e o lugar natural para propor campos minimos de declaracao, o mesmo desenho que a ABSOLAR solicitou a SOA em 03/09/2026 na discussao da CP ANEEL 18/26.",
       "status": "EM DELIBERAÇÃO",
       "norma": "Aviso de Tomada de Subsidios ANEEL no 21/2026, DOU de 08/09/2026, Secao 3, processo 48500.025870/2026-24; Submodulo 10.6 do PRORET.",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO",
       "gatilho_revisao": "Encerramento das contribuicoes em 09/10/2026; publicacao da revisao do Submodulo 10.6 do PRORET.",
@@ -688,7 +690,7 @@
       "valor": "F1 — noticia oficial da ANEEL de 08/09/2026, 'ANEEL propoe novas regras para preparar a rede eletrica para geracao solar, baterias e veiculos eletricos', aberta e lida em 09/09/2026. A Diretoria deliberou a abertura da consulta na 18a Reuniao Publica Ordinaria de 08/09/2026 (o item constava da pauta lida em 08/09 com campo de decisao vazio). Numero: CP ANEEL no 033/2026. Periodo de contribuicoes: 10/09/2026 a 09/11/2026, sessenta dias. Canal informado no release: cp033_2026@aneel.gov.br. Objeto: atualizacao do Modulo 3 do PRODIST com abordagem integrada para Recursos Energeticos Distribuidos (REDs), abrangendo geracao solar, baterias, veiculos eletricos e cargas com resposta da demanda, introduzindo tres capacidades operacionais para os recursos conectados: observabilidade (enxergar a condicao da rede), operabilidade (comunicar-se com os recursos) e controlabilidade (coordenar a operacao). O release credita a construcao a trabalho conjunto de ONS, ANEEL e das universidades UFSM, UFU e Unioeste. Sinal F3 do GT Geracao Distribuida da ABSOLAR, resumo da 33a reuniao semanal de 08/09/2026, lido na integra: o GT tratou o tema como um dos assuntos regulatorios mais relevantes do ano para a geracao distribuida e alertou, texto literal do resumo, que 'a regulamentacao podera abrir caminho para a inclusao da GD em mecanismos ordinarios de restricao de geracao, potencialmente seguindo logica semelhante a aplicada atualmente a geracao centralizada', com preocupacao central na possibilidade de cortes de geracao por razoes energeticas sem ressarcimento. O mesmo resumo registra consenso de atuacao coordenada do setor e sugestao de contribuicao conjunta com outras entidades. ANCORAGEM DE PROCESSO EM F1, adicionada em 09/09/2026 pela camada consolidadora monitores-regulatorios-soa: o endpoint dadosabertos.aneel.gov.br, que estava fora do ar as 07h16, voltou a responder as 08h52 e o conjunto de dados oficial pautas-e-atas-das-reunioes-publicas-da-diretoria (recurso pautas-atas-reunioes-publicas-diretoria.csv, 18.869.718 bytes, DatGeracaoConjuntoDados 2026-09-04) foi baixado e lido integralmente. A 18a Reuniao Publica Ordinaria de 08/09/2026 tem 32 itens de pauta. O item desta consulta consta da pauta com NUMERO DE PROCESSO 48500.002211/2026-10, relatora Agnes Maria de Aragao da Costa, classificacao de assunto Outros, objeto literal Proposta de abertura de Consulta Publica com vistas a colher subsidios e informacoes adicionais para o aprimoramento do Modulo 3 do Procedimentos de Distribuicao de Energia Eletrica no Sistema Eletrico Nacional - PRODIST. O numero de processo lido em 08/09/2026 fica assim RECONFERIDO em fonte primaria nesta data. ANCORAGEM EM ATO, 10/09/2026: o AVISO DE CONSULTA PUBLICA no 33/2026 foi publicado no DOU de 10/09/2026, Secao 3, pagina 93, e foi aberto e lido na integra. Texto verbatim do aviso: Processo: 48500.002211/2026-10. Objeto: obter subsidios para o aprimoramento do Modulo 3 do Procedimentos de Distribuicao de Energia Eletrica no Sistema Eletrico Nacional - PRODIST para estabelecimento de requisitos de observabilidade, operabilidade e controlabilidade dos Recursos Energeticos Distribuidos (REDs), bem como do Relatorio de Analise de Impacto Regulatorio - AIR, que trata da aplicacao dos requisitos de interoperabilidade ao parque existente de REDs. Modalidade: Intercambio de documentos. Periodo para envio: 10/9/2026 a 9/11/2026. Assinado por ANDRE RUELLI, Superintendente. ELEMENTO NOVO E MATERIAL: o AIR trata da aplicacao dos requisitos ao PARQUE JA INSTALADO de REDs, e nao apenas ao parque novo. Complemento 11/09/2026 - F3 ABSOLAR, comunicado do GT Geracao Distribuida de 10/09/2026: prazo interno da ABSOLAR para contribuicoes dos associados em 02/11/2026, antes do prazo da ANEEL de 09/11/2026. Documentos do processo identificados pela mesma fonte: Nota Tecnica 107/2026-STD-ANEEL e Relatorio de Analise de Impacto Regulatorio 2/2026-STD-ANEEL.",
       "status": "EM DELIBERAÇÃO",
       "norma": "Consulta Publica ANEEL no 033/2026 — proposta de aprimoramento do Modulo 3 do PRODIST; deliberada na 18a Reuniao Publica Ordinaria da Diretoria de 08/09/2026.",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO",
       "gatilho_revisao": "Publicacao do aviso de consulta publica no DOU com numero de processo; encerramento das contribuicoes em 09/11/2026; publicacao da Resolucao Normativa de alteracao do Modulo 3 do PRODIST.",
@@ -704,7 +706,7 @@
       "valor": "F1 — noticia oficial da ANEEL de 08/09/2026, 'Leilao marcado para abril de 2027, o primeiro com contratacao de baterias na transmissao, entra em consulta publica', aberta e lida em 09/09/2026. Numero: CP ANEEL no 032/2026. Periodo de contribuicoes: 10/09/2026 a 26/10/2026. Canal informado no release: cp032_2026@aneel.gov.br. Objeto: versao inicial do edital do Leilao de Transmissao no 01/2027, marcado para 30/04/2027. Escopo do leilao: 12 lotes, projetos em 13 estados, com 3.245 quilometros em linhas de transmissao novas e 1.386 mega-volt-amperes de transformacao; investimento estimado pela area tecnica em R$ 12,9 bilhoes; projecao de 29.500 empregos diretos e indiretos. LOTE 5 — baterias, texto literal do release: '100 MW /200 MWh, conectado no setor de 69 kV', para atender as regioes de Cruzeiro do Sul e Feijo, no Acre. Prazo de concessao de 18 anos, contra 30 anos dos demais 11 lotes, em razao da vida util das baterias, com 36 meses para implantacao. Relevancia: e um regime juridico distinto do LRCAP para o mesmo equipamento fisico — bateria como ativo de transmissao sob contrato de concessao, remunerada por RAP, e nao como agente de mercado contratado por reserva de capacidade. ANCORAGEM DE PROCESSO EM F1, adicionada em 09/09/2026 pela camada consolidadora monitores-regulatorios-soa: o endpoint dadosabertos.aneel.gov.br, que estava fora do ar as 07h16, voltou a responder as 08h52 e o conjunto de dados oficial pautas-e-atas-das-reunioes-publicas-da-diretoria (recurso pautas-atas-reunioes-publicas-diretoria.csv, 18.869.718 bytes, DatGeracaoConjuntoDados 2026-09-04) foi baixado e lido integralmente. A 18a Reuniao Publica Ordinaria de 08/09/2026 tem 32 itens de pauta. O item desta consulta consta da pauta com NUMERO DE PROCESSO 48500.023277/2026-43, relatora Agnes Maria de Aragao da Costa, classificacao de assunto Leilao, objeto literal Proposta de abertura de Consulta Publica com vistas a colher subsidios e informacoes adicionais para o aperfeicoamento do Edital do Leilao no 1/2027 (1o Leilao de Transmissao de 2027) para contratacao de servicos publicos de transmissao. Este numero de processo NAO CONSTAVA de nenhum registro anterior da casa. ANCORAGEM EM ATO, 10/09/2026: o AVISO DE CONSULTA PUBLICA no 32/2026 foi publicado no DOU de 10/09/2026, Secao 3, pagina 93, aberto e lido na integra. Texto verbatim: Processo: 48500.023277/2026-43. Objeto: obter subsidios para o aprimoramento da minuta do Edital e dos Anexos do Leilao no 1/2027-ANEEL. Modalidade: Intercambio de documentos. Periodo para envio: 10/9/2026 a 26/10/2026. Assinado por ANDRE RUELLI, Superintendente.",
       "status": "EM DELIBERAÇÃO",
       "norma": "Consulta Publica ANEEL no 032/2026 — minuta do edital do Leilao de Transmissao no 01/2027.",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO",
       "gatilho_revisao": "Publicacao do aviso de consulta publica no DOU com numero de processo; encerramento das contribuicoes em 26/10/2026; publicacao do edital definitivo; realizacao do leilao em 30/04/2027.",
@@ -720,7 +722,7 @@
       "valor": "F3 ABSOLAR (voz oficial tecnicoregulatorio@absolar.org.br, GT Geracao Centralizada, comunicado de 08/09/2026 12h35 e complemento de 08/09/2026 18h40, assinados por Lucas Kuehl, ambos lidos na integra em 09/09/2026), com cinco CTAs do ONS e a ERRATA da CTA-ONS DPL 1289/2026 anexados a thread e AINDA NAO ABERTOS. Texto literal do comunicado: 'A Revisao 2 do RT-ONS DPL 0532/2023 flexibilizou a precisao requerida para a estampa de tempo dos eventos de SOE, passando de 2 ms para ate 10 ms, alem de prever solucao alternativa, tecnicamente justificada, para os casos em que esse requisito nao possa ser atendido.' Objeto: monitoramento do modo de injecao de corrente reativa sob defeito (modo falta) e, quando aplicavel, do modo de inercia sintetica. Avaliacoes do ONS por fabricante, conforme os dois comunicados: GE Vernova / GE Inversores, modelo GE LV5, considerada atendente, com atraso maximo comprovado de 2,75 ms; Ingeteam, modelo SUNXX TL, familias Power B e Power C, considerada atendente, com diferenca maxima de 3 ms; WEG, modelos SIW700 e SIW750, considerada atendente, com atraso maximo comprovado de 6 ms e registro da necessidade de atualizacao do firmware do inversor no modelo SIW700; Siemens, familias G114, SG3.X e SG5.X, classificada como nao atendente por ausencia de comprovacao do requisito temporal, devendo ser adotada a alternativa denominada RDP Modos; ENERCON, solucao associada ao FACTS 2.0, classificada como nao atendente, condicionada a conclusao do desenvolvimento, ensaios de validacao e comprovacao do requisito temporal, tambem com a alternativa RDP Modos; TBEA, inversores centrais 2050, 2600 e 4400 e inversores string TS228KTL e TS330KTL, classificada como nao atendente, com atraso maximo registrado de 30 ms, superior ao criterio de 10 ms. Relevancia SOA: e o Operador Nacional fixando, em ato proprio, o limite de precisao de marca de tempo que torna um evento verificavel, com criterio de reprovacao e alternativa nomeada para quem nao atende.",
       "status": "VIGENTE",
       "norma": "Revisao 2 do RT-ONS DPL 0532/2023; ERRATA CTA-ONS DPL 1289/2026; CTA-ONS DPL EG 1316, 1320, 1321, 1322, 1323 e 1325/2026, com emissao dos RT-ONS DPL 0389, 0390, 0402, 0404 e 0416/2026.",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "LARANJA",
       "numero_status": "ALEGADO_NAO_ANCORADO",
       "gatilho_revisao": "Abertura e leitura integral da ERRATA da CTA-ONS DPL 1289/2026 e dos cinco CTAs por fabricante; publicacao da Revisao 2 do RT-ONS DPL 0532/2023 em canal publico do ONS.",
@@ -736,7 +738,7 @@
       "valor": "F1 — ATO lido na integra no DOU de 10/09/2026, Secao 1. Texto do despacho, verbatim: Processo no 48500.024249/2026-43. Interessado: Scala Data Centers S.A., CNPJ no 34.562.112/0001-58. Decisao: autorizar o Interessado a acessar a Rede Basica do Sistema Interligado Nacional por meio do seccionamento da LT 525 kV Guaiba 3 - Nova Santa Rita C1, na futura SE Scala AI City, localizada no municipio de Eldorado do Sul, no estado do Rio Grande do Sul. A integra deste Despacho consta dos autos e estara disponivel em legislacao.aneel.gov.br. Assinado por ANDRE MEISTER, Gerente, Gerencia de Outorga de Transmissao e Distribuicao de Energia Eletrica, Superintendencia de Concessoes, Permissoes e Autorizacoes dos Servicos de Energia Eletrica. Primeiro ato de outorga de acesso de data center de inteligencia artificial a Rede Basica registrado por este monitor com nome, barra e seccionamento identificados. Vetor afetado: carga especial e data centers 24/7.",
       "status": "VIGENTE",
       "norma": "Despacho ANEEL no 3.506, de 3 de setembro de 2026 (DOU de 10/09/2026, Secao 1)",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO",
       "gatilho_revisao": "publicacao da integra do despacho em legislacao.aneel.gov.br; eventual aditamento de carga ou de prazo de conexao",
@@ -752,7 +754,7 @@
       "valor": "F1 — ATO LIDO NA INTEGRA. PORTARIA ANEEL no 7.157, de 8 de setembro de 2026, assinada pelo Diretor-Geral SANDOVAL DE ARAUJO FEITOSA NETO, publicada no DOU de 10/09/2026 Secao 1, Processo no 48500.023180/2025-50. Art. 1o: Aprovar a primeira revisao da Agenda Regulatoria da ANEEL para o bienio 2026-2027. Art. 2o: o Anexo I da Portaria no 7.030, de 2 de dezembro de 2025, passa a vigorar na forma do Anexo I desta Portaria. Art. 5o: entra em vigor na data da publicacao. O ANEXO I foi lido e enumerado item a item: 55 atividades regulatorias, sendo 22 com ano previsto de edicao da norma em 2026 e 33 em 2027; por eixo tematico, Geracao e Mercado 26, Transmissao e Distribuicao 16, Regulacao Tarifaria e Financeira 9, Eficiencia Energetica e Consumidor 4. ATIVIDADES DE MAIOR BORDA PARA A CASA, com o ano que consta do Anexo I: AR26-11 Revisao da REN 1030 (Lei no 15.269/25) - Aprimoramento do Constrained off, ano 2027; GER21-07[B] Regulamentacao do Constrained off de centrais geradoras hidreletricas, ano 2027; GER21-02 Estabelecimento de criterios operativos para reducao ou limitacao de geracao, ano 2026; AR26-14 Aprimoramento dos Procedimentos de Rede e Regras de Comercializacao decorrentes da Resolucao Normativa que estabelecera criterios operativos para reducao ou limitacao de geracao, ano 2027; AR25-15 Requisitos de observabilidade, operabilidade e controlabilidade de Recursos Energeticos Distribuidos, ano 2026; AR26-31 Alteracao do Submodulo 5.2 do PRORET para incluir o teto da CDE e o Encargo de Complemento de Recursos, ano 2026; AR26-06 Estabelecimento de Indicadores de Atendimento de Mercado, ano 2026; AR26-48 Regulamentacao dos custos de contratacao entre os geradores dos sistemas de armazenamento na forma de baterias, ano 2026; GER21-18 Insercao de sistemas de armazenamento, incluindo usinas reversiveis, no SIN, primeiro ciclo, ano 2026; AR26-05 Regulamentacao do armazenamento de energia eletrica em sistemas de transmissao e distribuicao, ano 2027; AR26-22 Requisitos de controle, capacidade, flexibilidade e armazenamento para novos geradores, inclusive o rateio do ERCAP, ano 2027; AR26-13 Avaliacao quanto a inversao de fluxo da MMGD na contabilizacao e liquidacao da CCEE, ano 2027; AR24-05 Atualizacao da metodologia de calculo dos limites maximos do PLD, ano 2027; AR24-22 Regulamentacao do art. 17 da Lei no 14.300/2022, metodologia de valoracao de custos e beneficios da microgeracao e minigeracao distribuida, ano 2027.",
       "status": "VIGENTE",
       "norma": "Portaria ANEEL no 7.157, de 8 de setembro de 2026 (DOU de 10/09/2026, Secao 1) — aprova a primeira revisao da Agenda Regulatoria 2026-2027 e substitui o Anexo I da Portaria ANEEL no 7.030/2025",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO",
       "gatilho_revisao": "publicacao de nova revisao da Agenda Regulatoria ou de portaria que altere o Anexo I da Portaria 7.157/2026",
@@ -768,7 +770,7 @@
       "valor": "F3 — comunicado do GT Armazenamento da ABSOLAR de 09/09/2026 as 20h22, assinado por Lucas Kuehl, Tecnico-Regulatorio ABSOLAR, lido na integra. Texto literal: Esta aberta a Consulta Publica n. 027/2026, publicada pelo Ministerio do Desenvolvimento, Industria, Comercio e Servicos (MDIC), referente a proposta de fixacao do Processo Produtivo Basico (PPB) de acumuladores eletricos classificados nos codigos NCM 8507.60 (ions de litio) e 8507.80 (outros acumuladores), fabricados por empresas habilitadas no Programa de Apoio ao Desenvolvimento Tecnologico da Industria de Semicondutores (PADIS). A Consulta Publica permanecera aberta para recebimento de manifestacoes ate o dia 15 de setembro de 2026. E a regra de conteudo local que define o que conta como bateria fabricada no Brasil para efeito de beneficio fiscal, camada industrial a montante do LRCAP Armazenamento.",
       "status": "EM DELIBERAÇÃO",
       "norma": "Consulta Publica MDIC no 027/2026 — prazo de manifestacoes ate 15/09/2026",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "LARANJA",
       "numero_status": "ALEGADO_NAO_ANCORADO",
       "gatilho_revisao": "publicacao do ato de fixacao do PPB ou encerramento da consulta em 15/09/2026",
@@ -784,7 +786,7 @@
       "valor": "F1 — noticia oficial da CCEE de 09/09/2026, aberta e lida em 10/09/2026; evento realizado em 25/08/2026. As simulacoes trataram de modelo hibrido (otimizacao centralizada combinada com ofertas dos agentes), de PLD ex-post, definido na propria noticia como Preco de Liquidacao das Diferencas calculado apos a operacao, e de contabilizacao dupla do Mercado de Curto Prazo. Objetivos declarados: precos mais aderentes a operacao, maior previsibilidade, eficiencia economica e reducao de encargos. Participaram ABCE, Abiape, Abraceel, Abradee, Abrage, Abragel, Cogen e Itaipu Binacional. O trabalho integra o projeto META II, iniciado em 2023, e a noticia menciona a Consulta Publica MME 218/2026. Esta prevista transicao gradual, com periodos de teste sem efeitos financeiros. Relevancia para a casa: um preco calculado apos a operacao e, por construcao, reconstituivel a partir do dado medido.",
       "status": "VIGENTE (referência)",
       "norma": "Projeto META II da CCEE — segunda rodada dos Jogos de Mercado, 25/08/2026",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO_PARCIAL",
       "gatilho_revisao": "publicacao do relatorio dos Jogos de Mercado ou avanco da Consulta Publica MME 218/2026",
@@ -800,7 +802,7 @@
       "valor": "F1 — ATO lido na integra no DOU de 10/09/2026, Secao 1. Fundamento declarado: art. 37 da Lei no 14.600, de 19 de junho de 2023, e deliberacao do Comite de Monitoramento do Setor Eletrico (CMSE) aprovada na 322a Reuniao Ordinaria, realizada em 5 de agosto de 2026, Processo no 48340.006106/2025-59. O art. 1o revoga: I - Portaria MME no 6, de 6 de janeiro de 2014; II - Portaria MME no 483, de 14 de dezembro de 2017; III - Portaria MME no 501, de 28 de dezembro de 2017; IV - Portaria MME no 468, de 31 de outubro de 2018; V - Portaria MME no 659, de 29 de junho de 2022. O art. 2o preve entrada em vigor na data da publicacao. Assinada por ALEXANDRE SILVEIRA.",
       "status": "VIGENTE",
       "norma": "Portaria MME no 935, de 9 de setembro de 2026 (DOU de 10/09/2026, Secao 1)",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO",
       "gatilho_revisao": "identificacao do objeto das cinco portarias revogadas",
@@ -816,7 +818,7 @@
       "valor": "F1 - documento lido na integra. Comunicado Relevante no 04/2026 do ONS, de 10/09/2026, retifica a Tabela 6-21 da NT-ONS DPL 0083/2026 (Segmento Consumo, Sao Paulo, Produto 2029+), linha do barramento Campinas (STCAM) 500 kV, coluna de obras da Rede Basica que impactam a capacidade remanescente: onde se le Configuracoes H, I, J, K, N, O e P da Tabela 6-17, leia-se Configuracoes H, I, J, K, L, N, O e P. Motivo declarado: compatibilizar com os fatores limitantes da Tabela 6-19, entre eles a sobrecarga nos transformadores remanescentes da SE Ribeirao Preto 500/440 kV na contingencia de uma unidade. Demais informacoes e conclusoes da NT permanecem inalteradas.",
       "status": "VIGENTE",
       "norma": "Comunicado Relevante ONS no 04/2026 - 1a Temporada de Acesso de 2026 (retifica a NT-ONS DPL 0083/2026)",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-08",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO",
       "gatilho_revisao": "nova retificacao da NT-ONS DPL 0083/2026 ou publicacao do resultado da habilitacao da 1a Temporada de Acesso",
@@ -835,7 +837,7 @@
       "norma": "Aviso de Licitacao - Leilao no 4/2026-ANEEL (DOU de 23/09/2026, Secao 3)",
       "numero_status": "ANCORADO_PARCIAL",
       "fonte": "F1 DOU (aviso lido na integra em 24/09/2026) + F1 release ANEEL de 22/09/2026",
-      "verificado_em": "2026-09-28",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "resultado do leilao em 30/10/2026; RAP-teto por lote no edital",
       "vetores_afetados": [
         "V1",
@@ -855,7 +857,7 @@
       "norma": "Despacho ANEEL no 3.695/2026",
       "numero_status": "ANCORADO",
       "fonte": "F1 DOU (ato lido na integra em 24/09/2026) + F1 release ANEEL de 22/09/2026",
-      "verificado_em": "2026-09-28",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "cronograma ONS/CCEE para a representacao da RD nos modelos; prazo de 90 dias para transparencia (cerca de 23/12/2026); CP de revisao da REN 1.030",
       "vetores_afetados": [
         "V7",
@@ -875,7 +877,7 @@
       "norma": "Despacho ANEEL no 3.708/2026",
       "numero_status": "ANCORADO",
       "fonte": "F1 DOU, in.gov.br, edicao de 25/09/2026, Secao 1 (ato lido na integra em 25/09/2026 pela consolidadora). Ponteiro F3: resumo GTGC ABSOLAR de 24/09/2026 (msgid 1a0d54572a60fafd)",
-      "verificado_em": "2026-09-28",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "analise de merito pela SGM; eventual recurso ou pedido de reconsideracao; CP de revisao da REN 1.030/2022 (esperada para meados de outubro, F3); colegiado do TRF1 na acao da ABSOLAR/ABEEolica (semana de 05/10, F3)",
       "vetores_afetados": [
         "Contencioso regulatorio",
@@ -898,7 +900,7 @@
       "vetores_afetados": [
         "V3"
       ],
-      "verificado_em": "2026-09-30",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "estudos EPE/ONS de necessidade de potencia submetidos ao MME ate 30/04/2027; portaria de diretrizes do LRCAP 2027; qualquer ajuste do cronograma (art. 3o)",
       "pendencia_verificacao": "Cronograma ESTIMADO, nao data de certame: nao citar como leilao marcado. O ato nao fixa montantes, precos-teto nem regras de TUST. Nao ha registro na Tabela QSV v1.2: teto AZUL (R7)."
     },
@@ -914,7 +916,7 @@
       "norma": "Portaria SNTEP/MME nº 3.240, de 29/09/2026, DOU de 01/10/2026, Edição 186-C, Seção 1, Extra C, página 15. Processo nº 48360.000126/2026-69.",
       "numero_status": "ANCORADO",
       "fonte": "F1 DOU - https://www.in.gov.br/web/dou/-/portaria-sntep/mme-n-3.240-de-29-de-setembro-de-2026-735924821 (lido na íntegra em 02/10/2026)",
-      "verificado_em": "2026-10-02",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "divulgação da planilha do POTEE 2026 (1ª emissão) no site do MME; emissões seguintes; edital de leilão de transmissão que use o plano",
       "pendencia_verificacao": "Planilha de obras nao baixada: nao citar obra, data de necessidade nem o Bipolo Nordeste 2 como aprovados antes de ler a planilha. Fato potee_2026_cp (consulta publica) segue no arquivo com status antigo; decisao de substitui-lo e do CEO no gate. Sem registro na Tabela QSV v1.2: teto AZUL. Em 05/10/2026: noticia oficial da EPE de 02/10 cita duas obras da lista (ver pendente EPE-POTEE-2026-OBRAS-BESS-CRUZEIRO-DO-SUL-BIPOLO-NE2); planilha do MME segue sem leitura; DOU nao relido nesta data."
     },
@@ -930,7 +932,7 @@
       "norma": "Despacho ANEEL nº 3.753, de 28/09/2026, DOU de 02/10/2026, Edição 187, Seção 1, página 83. Processo nº 48500.906218/2017-10 e processos relacionados.",
       "numero_status": "ANCORADO",
       "fonte": "F1 DOU - https://www.in.gov.br/web/dou/-/despacho-n-3.753-de-28-de-setembro-de-2026-736047986 (lido na íntegra em 02/10/2026)",
-      "verificado_em": "2026-10-02",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "recurso das interessadas à Diretoria; leitura da NT 128/2026-SGM; decisão de mérito da SGM nos autos remetidos pelo Despacho 3.708/2026",
       "pendencia_verificacao": "NT 128/2026-SGM nao lida: os motivos do indeferimento nao sao conhecidos. Nao generalizar para outros agentes nem para a fonte solar. Nao citar as empresas em peca externa como exemplo de conduta. Sem registro na Tabela QSV v1.2: teto AZUL."
     },
@@ -946,7 +948,7 @@
       "norma": "Despacho ANEEL nº 3.843, de 01/10/2026, DOU de 02/10/2026, Edição 187, Seção 1, página 79. Processo nº 48500.028349/2026-49.",
       "numero_status": "ANCORADO",
       "fonte": "F1 DOU - https://www.in.gov.br/web/dou/-/despacho-n-3.843-de-1-de-outubro-de-2026-736027296 (lido na íntegra em 02/10/2026)",
-      "verificado_em": "2026-10-02",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "despacho de liberação para operação comercial da mesma unidade; outros despachos de liberação de unidade armazenadora",
       "pendencia_verificacao": "O ato nao informa capacidade em kWh, tecnologia nem regime de outorga da unidade. Nao afirmar que e o primeiro caso: nao foi feita busca historica. Sem registro na Tabela QSV v1.2: teto AZUL."
     },
@@ -962,7 +964,7 @@
       "norma": "Despacho Decisorio SNTEP/MME no 31/2026 (DOU de 06/10/2026, Secao 1); Portaria Normativa MME no 136/2026, Anexo II, Tabela 1",
       "numero_status": "ANCORADO",
       "fonte": "F1 DOU 06/10/2026, Secao 1, integra lida por script em 07/10/2026 (in.gov.br/web/dou/-/despacho-decisorio-n-31/2026-736581765)",
-      "verificado_em": "2026-10-07",
+      "verificado_em": "2026-10-08",
       "gatilho_revisao": "eventual retificacao do Anexo II da PN 136; novo recurso ou decisao judicial sobre a lista de bonificados; publicacao dos editais dos Leiloes 05 e 06/2026-ANEEL",
       "pendencia_verificacao": "Fora da Tabela de Precedencia QSV v1.2: teto AZUL (R7). A NT 150/2026/DPOG/SNTEP e o Parecer CONJUR nao foram lidos (nao estao no DOU). Promovido de _pendentes_verificacao em 07/10/2026 pelo monitor-regulatorio-soa apos leitura da integra.",
       "registrado_em": "2026-10-07",
