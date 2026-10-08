@@ -2244,6 +2244,23 @@
       "verificado_em": "2026-10-08",
       "registrado_em": "2026-10-08",
       "registrado_por": "monitor-regulatorio-soa"
+    },
+    {
+      "fato_id": "CCEE-CO-788-26-RETOMADA-REAPURACAO-RESSARCIMENTOS",
+      "orgao": "CCEE",
+      "tipo_fato": "REGULATORIO_PROCESSUAL",
+      "tema": "Portaria Normativa MME no 140/2026: CCEE retoma a reapuracao dos ressarcimentos de geradores eolicos e fotovoltaicos que ficaram fora do Termo de Compromisso (Comunicado CCEE 788/26)",
+      "valor": "PENDENTE DO OFICIO E DO DESPACHO QUE DAO BASE AO ATO. Comunicado CCEE 788/26, de 07/10/2026, lido na pagina oficial pelo vigia da Portaria 140 em 08/10/2026, com o texto guardado na casa: a CCEE retoma em outubro de 2026 a reapuracao dos ressarcimentos de janeiro a maio de 2026 dos geradores eolicos e fotovoltaicos com CCEAR por disponibilidade e CER, em atendimento ao Oficio no 253/2026/SE-MME. Alcanca so quem nao manifestou interesse no Termo de Compromisso ou foi classificado como nao elegivel; quem consta da lista do Comunicado 778/26 nao tem ressarcimento retomado neste momento. O comunicado cita cronograma, mas a pagina nao traz arquivo. A capacitacao sobre a operacionalizacao da Portaria segue sem data. Nao altera a janela de 01/09/2023 a 25/11/2025 nem as tres classificacoes de corte.",
+      "status": "PENDENTE",
+      "qsv_cor": "LARANJA",
+      "norma": "Comunicado CCEE 788/26 (07/10/2026); Portaria Normativa MME no 140/2026, art. 6o, par. 3o; Oficio no 253/2026/SE-MME (nao localizado); Despacho ANEEL no 148/2026 (nao lido)",
+      "numero_status": "PENDENTE_REABERTURA",
+      "fonte": "F1 pagina oficial da CCEE - https://www.ccee.org.br/-/co-ccee-retoma-reapuracao-de-ressarcimentos-de-agentes-de-geracao-eolica-e-solar-fotovoltaica (texto em _Fontes_F1_Portaria_140, SHA-256 d4f3da06eab97e3ed28e8fedb455150fd45bdc5f8f53b01a2b75d31650e1f1bb)",
+      "gatilho_revisao": "cronograma de reapuracao em arquivo; Oficio no 253/2026/SE-MME em fonte publica ou pelo GTGC; leitura do Despacho ANEEL no 148/2026; data da capacitacao da CCEE (ate 19/10/2026)",
+      "pendencia_verificacao": "Pagina lida pelo vigia-portaria-140-ccee em 08/10/2026, 08h32; a consolidadora nao reabriu a pagina (a CCEE nao abre por script). Sem o Oficio 253 e o Despacho 148 nao da para dizer quais ressarcimentos estavam suspensos nem desde quando. Nada disto vai a peca externa antes dessas leituras.",
+      "verificado_em": "2026-10-08",
+      "registrado_em": "2026-10-08",
+      "registrado_por": "monitores-regulatorios-soa"
     }
   ],
   "_historico_caidos": []
