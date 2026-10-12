@@ -2258,7 +2258,7 @@
       "numero_status": "PENDENTE_REABERTURA",
       "fonte": "F1 pagina oficial da CCEE - https://www.ccee.org.br/-/co-ccee-retoma-reapuracao-de-ressarcimentos-de-agentes-de-geracao-eolica-e-solar-fotovoltaica (texto em _Fontes_F1_Portaria_140, SHA-256 d4f3da06eab97e3ed28e8fedb455150fd45bdc5f8f53b01a2b75d31650e1f1bb)",
       "gatilho_revisao": "cronograma de reapuracao em arquivo; Oficio no 253/2026/SE-MME em fonte publica ou pelo GTGC; leitura do Despacho ANEEL no 148/2026; data da capacitacao da CCEE (ate 19/10/2026)",
-      "pendencia_verificacao": "Pagina lida pelo vigia-portaria-140-ccee em 08/10/2026, 08h32; a consolidadora nao reabriu a pagina (a CCEE nao abre por script). Sem o Oficio 253 e o Despacho 148 nao da para dizer quais ressarcimentos estavam suspensos nem desde quando. Nada disto vai a peca externa antes dessas leituras.",
+      "pendencia_verificacao": "Pagina lida pelo vigia-portaria-140-ccee em 08/10/2026, 08h32; a consolidadora nao reabriu a pagina (a CCEE nao abre por script). Sem o Oficio 253 e o Despacho 148 nao da para dizer quais ressarcimentos estavam suspensos nem desde quando. Nada disto vai a peca externa antes dessas leituras. Em 12/10/2026 a consolidadora registrou a data da capacitacao: CCEE, Momento Capacita 105, em 14/10/2026, 10h, online (noticia oficial de 09/10/2026, reaberta em F1 nesta run); a pauta inclui o cronograma dos processamentos, que segue sem arquivo publico. A pagina do Comunicado 788/26 nao foi reaberta e o verificado_em foi mantido.",
       "verificado_em": "2026-10-08",
       "registrado_em": "2026-10-08",
       "registrado_por": "monitores-regulatorios-soa"
