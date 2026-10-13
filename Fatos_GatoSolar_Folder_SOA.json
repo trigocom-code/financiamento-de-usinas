@@ -3,14 +3,15 @@
     "orgao": "ANEEL (MMGD / gato solar)",
     "schema_version": "1.1",
     "descricao": "Monitor Gato Solar / GD irregular. Disciplina dura: irregularidade NÃO é energia falsa (a energia injetada é real); a SOA PROVA a inconsistência de potência declarada, NÃO acusa fraude; números de auditoria (ONS/ANEEL) são de TERCEIROS — atribuir à fonte, não apresentar como dado SOA. NUNCA '5,7 GW'. Não confundir ~R$ 5 bi (impacto estimado das irregularidades, fonte secundária) com ~R$ 16 bi (subsídio da MMGD via CDE). Ancoragem F1 nesta v1.1: NT 107/2026-SFT/ANEEL (22/06/2026).",
-    "verificado_em": "2026-09-17",
+    "verificado_em": "2026-10-13",
     "fonte_canonica": "F1 — NT 107/2026-SFT/ANEEL (SEI 0388524, processo 48500.015900/2026-94, assinada 23/06/2026) + gov.br/aneel. Secundárias (Agência iNFRA/Canal Solar) só para itens não cobertos pela NT.",
     "fonte_primaria_novo": "Nota Técnica nº 107/2026-SFT/ANEEL — 'Avaliação da manifestação das distribuidoras ao Ofício Circular nº 12/2026-SFT/ANEEL' (combate à alteração à revelia das características originais de MMGD). Avalia 50 distribuidoras. Fundamento legal: Lei 14.300/2022 + REN ANEEL 1.000/2021.",
     "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1.",
     "nota_run_2026_07_28": "Run CONSOLIDADORA de 28/07/2026 (monitor-gato-solar-soa parado desde 21/07). Unico item reconferido em fonte oficial: a CP ANEEL 009/2026. A listagem oficial de CPs vigentes da ANEEL confirma o objeto literal registrado neste arquivo — 'tratamento de excedentes de energia e maior flexibilidade operativa na Rede de Distribuicao' — e corrige o prazo final para 08/06/2026 (prorrogacao automatica, porque 06/06/2026 nao era dia util). ⚠ Isto NAO fecha o pendente do CEO sobre a numeracao da CP 009 no tema 'gato solar': segue LARANJA. Registrada divergencia de enquadramento com Fatos_ANEEL._pendentes_verificacao (que descreve a CP 009/2026 como 'combate a MMGD irregular / geracao invisivel') — este arquivo carrega o objeto oficial correto. Nenhum outro fato deste arquivo foi reconferido: a NT 107/2026-SFT nao foi reaberta e a reuniao ABSOLAR x equipe do dir. Gentil Nogueira sobre a NT 107 esta marcada para 30/07 (F3/GT).",
     "nota_run_2026_09_17": "Revalidacao CEO p/ gate E6. F1: ANEEL noticias: HTTP 200, hits_009=0, hits_mmgd_kw=16; ANEEL GD hub: HTTP 200, hits_009=0, hits_mmgd_kw=49",
-    "proxima_revisao_sugerida": "2026-09-24",
-    "nota_run_2026_09_17_corr": "Correcao pos-relatorio F1: prazo contribuicoes CP 009/2026 = 08/06/2026 (prorrogacao automatica), nao 06/06. Status EM DELIBERACAO mantido. NT 107 numeros preservados fail-closed (SEI nao re-baixada byte-a-byte nesta noite)."
+    "proxima_revisao_sugerida": "2026-11-10",
+    "nota_run_2026_09_17_corr": "Correcao pos-relatorio F1: prazo contribuicoes CP 009/2026 = 08/06/2026 (prorrogacao automatica), nao 06/06. Status EM DELIBERACAO mantido. NT 107 numeros preservados fail-closed (SEI nao re-baixada byte-a-byte nesta noite).",
+    "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 1 confirmado, 2 impreciso, 1 mudou, 4 nao_verificado. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente. Sobre a REN ANEEL 1.170/2026 ficou so o registro do ato e a ementa: pela regra da casa (vigia da Portaria 140, 13/10/2026), nao ha frase externa sobre a Resolucao antes da leitura do voto, da nota tecnica e do relatorio da CP 45/2019. NAO conferidos nesta revisao (fonte oficial nao reaberta): NT 107/2026-SFT/ANEEL — a fotografia oficial do combate ao 'gato solar'; A detecção hoje é por ESTIMATIVA (observado × esperado) — a cunha da prova física SOA; Zona cinzenta técnica — overpaneling / overdelivery / ILR; Posição setorial (ABSOLAR/ABGD)."
   },
   "fatos": [
     {
@@ -51,13 +52,13 @@
       ]
     },
     {
-      "tema": "CP ANEEL 009/2026 + determinação de auditoria (decisão de 22/04/2026)",
-      "valor": "Na 8ª Reunião Pública Ordinária (22/04/2026) a Diretoria da ANEEL tomou DUAS medidas conexas: (a) abriu a CP nº 009/2026, para subsídios sobre o tratamento de excedentes de energia e a ampliação da flexibilidade operativa na Rede de Distribuição (relator dir. Gentil Nogueira; base na NT 148/2025-STD); e (b) determinou, de forma imediata, a sinalização sistêmica de restrições estruturais na transmissão para novas conexões E a realização de auditoria pelas distribuidoras, em até 60 dias, para identificar aumentos de potência à revelia — priorizando a minigeração e os maiores desvios entre potência autorizada e injetada. Contribuições da CP encerradas em 06/06/2026; em consolidação. ⟨ATUALIZAÇÃO 28/07/2026 · varredura consolidadora `monitores-regulatorios-soa`⟩ RECONFIRMADO EM F1 (listagem oficial de Consultas Publicas vigentes da ANEEL, lida em 28/07/2026): 'Consulta 009/2026 — Objeto: obter subsidios para aprimoramentos regulatorios para tratamento de excedentes de energia e maior flexibilidade operativa na Rede de Distribuicao'. CORRECAO DE PRAZO: a listagem declara 'Considerando que a data final para envio das contribuicoes indicada no aviso de abertura publicado no DOU nao e um dia util, o prazo fica automaticamente prorrogado ate as 23h59 do dia 8/6/2026' — logo o encerramento e 08/06/2026, e nao 06/06/2026. A CP segue listada como VIGENTE (contribuicoes encerradas, processo em curso). ⚠ NAO FECHA O PENDENTE DO CEO quanto a atribuicao desta CP ao tema 'gato solar' — mantem LARANJA. RECONFIRMADO EM F1 EM 17/09/2026: indice de noticias ANEEL e hub de Geracao Distribuida reabertos; nenhum ato novo de homologacao da CP 009/2026 nem nova NT SFT sobre GD irregular indexado nessas paginas nesta janela. Status/norma mantidos. Prazo de contribuicoes da CP 009/2026 (abertura 22/04/2026, 45 dias) encerrou em 08/06/2026 (prorrogacao automatica a partir de 06/06/2026); deliberacao da Diretoria ainda nao publicada como REN nestas fontes F1 reabertas.",
+      "tema": "CP ANEEL 009/2026 (decisão de 22/04/2026)",
+      "valor": "Na 8ª Reunião Pública Ordinária (22/04/2026) a Diretoria da ANEEL tomou DUAS medidas conexas: (a) abriu a CP nº 009/2026, para subsídios sobre o tratamento de excedentes de energia e a ampliação da flexibilidade operativa na Rede de Distribuição (relator dir. Gentil Nogueira; base na NT 148/2025-STD); e (b) mandou aplicar, de forma imediata, as regras de sinalização sistêmica de restrições na transmissão para novas conexões na distribuição. Segundo a imprensa (IstoÉ Dinheiro, 22/04/2026), foi fixado prazo de 60 dias para um diagnóstico dos aumentos de potência à revelia; esse prazo não consta da decisão registrada na ata. Contribuições da CP encerradas em 08/06/2026; em consolidação. ⟨ATUALIZAÇÃO 28/07/2026 · varredura consolidadora `monitores-regulatorios-soa`⟩ RECONFIRMADO EM F1 (listagem oficial de Consultas Publicas vigentes da ANEEL, lida em 28/07/2026): 'Consulta 009/2026 — Objeto: obter subsidios para aprimoramentos regulatorios para tratamento de excedentes de energia e maior flexibilidade operativa na Rede de Distribuicao'. CORRECAO DE PRAZO: a listagem declara 'Considerando que a data final para envio das contribuicoes indicada no aviso de abertura publicado no DOU nao e um dia util, o prazo fica automaticamente prorrogado ate as 23h59 do dia 8/6/2026' — logo o encerramento e 08/06/2026, e nao 06/06/2026. Em 13/10/2026 a CP consta na aba 'Encerradas' da listagem oficial (periodo de contribuicao de 23/04/2026 a 08/06/2026), com a lista de contribuicoes publicada e sem relatorio de analise, resultado ou segunda fase. A ata da 8a Reuniao Publica Ordinaria (22/04/2026, item 5) registra que a minuta de Resolucao Normativa posta em consulta trata, entre outros aspectos, do combate a alteracao a revelia de MMGD. RECONFIRMADO EM F1 EM 17/09/2026: indice de noticias ANEEL e hub de Geracao Distribuida reabertos; nenhum ato novo de homologacao da CP 009/2026 nem nova NT SFT sobre GD irregular indexado nessas paginas nesta janela. Status/norma mantidos. Prazo de contribuicoes da CP 009/2026 (abertura 22/04/2026, 45 dias) encerrou em 08/06/2026 (prorrogacao automatica a partir de 06/06/2026); deliberacao da Diretoria ainda nao publicada como REN nestas fontes F1 reabertas.",
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 009/2026 · Decisão 8ª RPO 22/04/2026 · NT 148/2025-STD",
       "fonte": "F1 ANEEL (confirmado pela NT 107/2026, §6 e recomendação 'e')",
-      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/consulta-publica-propoe-aprimorar-o-tratamento-de-excedentes-de-energia",
-      "verificado_em": "2026-09-17",
+      "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-9/2026-701049289",
+      "verificado_em": "2026-10-13",
       "vetores_afetados": [
         "V2",
         "V4",
@@ -66,12 +67,12 @@
     },
     {
       "tema": "Lastro de escala — GD não declarada (ONS DPL 0149/2026)",
-      "valor": "Estimativa oficial do ONS, atribuída ao Operador: potência faltante de ~11,8 GW a 14,6 GW decorrente de MMGD não registrada ou não plenamente refletida nos registros (relatório técnico ONS DPL 0149/2026, encaminhado à ANEEL pela CTA-ONS DPL 0571/2026 em 17/04/2026, e citado na NT 107/2026). Ordem de grandeza de uma Itaipu. A inspeção física amostral (32% do universo suspeito) não escala para 43 mi de UCs nem para os ~14 GW potenciais → a reconciliação remota potência declarada × geração fisicamente possível (QSV/gêmeo digital) é o caminho de auditoria contínua. NÃO confundir o impacto estimado das irregularidades (~R$ 5 bi, fonte secundária) com os ~R$ 16 bi de subsídio/desconto da GD via CDE.",
+      "valor": "Estimativa oficial do ONS, atribuída ao Operador: potência equivalente faltante de ~11,8 GW a 14,6 GW em 2025, que o Operador associa, como hipótese técnica e não como comprovação causal, a MMGD não registrada ou não plenamente refletida nos registros (relatório técnico ONS DPL 0149/2026, encaminhado à ANEEL pela CTA-ONS DPL 0571/2026 em 17/04/2026, e citado na NT 107/2026). Ordem de grandeza de uma Itaipu. A inspeção física amostral (32% do universo suspeito) não escala para 43 mi de UCs nem para os ~14 GW potenciais → a reconciliação remota potência declarada × geração fisicamente possível (QSV/gêmeo digital) é o caminho de auditoria contínua. NÃO confundir o impacto estimado das irregularidades (~R$ 5 bi, fonte secundária) com os ~R$ 16 bi de subsídio/desconto da GD via CDE.",
       "status": "VIGENTE (referência)",
       "norma": "ONS DPL 0149/2026 (via CTA-ONS DPL 0571/2026) · citado na NT 107/2026",
       "fonte": "F1-referenciado (ONS, citado por ANEEL na NT 107/2026)",
       "url": "https://agenciainfra.com/blog/aneel-inspecao-de-distribuidoras-encontra-88-mw-de-gato-solar/",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-13",
       "vetores_afetados": [
         "V2",
         "sHEC"
@@ -79,12 +80,12 @@
     },
     {
       "tema": "Parecer ANEEL — corte de GD solar e corresponsabilização pelo curtailment",
-      "valor": "EM DEBATE (não é norma): área técnica/diretoria sinaliza que distribuidoras podem cortar geração — inclusive MMGD — por segurança operativa, e discute corresponsabilizar a GD solar pelos custos do curtailment. Se a GD passa a ser cortável e potencialmente corresponsável, cresce a necessidade de medir e provar, hora a hora, quanto cada gerador injetou × quanto foi cortado — a camada de prova SOA. RECONFIRMADO EM F1 EM 17/09/2026: indice de noticias ANEEL e hub de Geracao Distribuida reabertos; nenhum ato novo de homologacao da CP 009/2026 nem nova NT SFT sobre GD irregular indexado nessas paginas nesta janela. Status/norma mantidos. Prazo de contribuicoes da CP 009/2026 (abertura 22/04/2026, 45 dias) encerrou em 08/06/2026 (prorrogacao automatica a partir de 06/06/2026); deliberacao da Diretoria ainda nao publicada como REN nestas fontes F1 reabertas.",
+      "valor": "EM DEBATE (não é norma): área técnica/diretoria sinaliza que distribuidoras podem cortar geração — inclusive MMGD — por segurança operativa, e discute corresponsabilizar a GD solar pelos custos do curtailment. Se a GD passa a ser cortável e potencialmente corresponsável, cresce a necessidade de medir e provar, hora a hora, quanto cada gerador injetou × quanto foi cortado — a camada de prova SOA. ATUALIZACAO DE 13/10/2026 (F1): foi aprovada a regra dos cortes de geracao resultante da CP 45/2019: a REN ANEEL 1.170, de 06/10/2026 (DOU de 09/10/2026), cuja ementa e 'Estabelece criterios para reducao ou limitacao de geracao de usinas despachadas centralizadamente e usinas ou conjuntos de usinas considerados na programacao da operacao pelo Operador Nacional do Sistema Eletrico - ONS.' Para a GD, seguem em consulta na ANEEL, sem ato final, a CP 009/2026 (tratamento de excedentes de energia e flexibilidade operativa na rede de distribuicao; contribuicoes encerradas em 08/06/2026) e a CP 033/2026 (requisitos de observabilidade, operabilidade e controlabilidade dos recursos energeticos distribuidos no Modulo 3 do PRODIST; contribuicoes ate 09/11/2026).",
       "status": "EM DELIBERAÇÃO",
       "norma": "ANEEL — parecer/discussão técnica (acopla-se à CP 009)",
       "fonte": "F2 (Canal Solar) — a confirmar em F1",
       "url": "https://canalsolar.com.br/aneel-corresponsabilizar-gd-solar-pelo-curtailment/",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-13",
       "vetores_afetados": [
         "V4",
         "sHEC"
@@ -98,7 +99,7 @@
       "norma": "CP ANEEL 011/2026",
       "fonte": "F1 ANEEL (portal)",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/consulta-publica-vai-tratar-dos-creditos-excedentes-de-mmgd-para-modicidade-tarifaria",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-13",
       "vetores_afetados": [
         "V2"
       ]

@@ -1,11 +1,12 @@
 {
   "_meta": {
     "titulo": "Inscrições — Eventos do Setor Elétrico em SP — Monitor SOA/SOS",
-    "atualizado_em": "2026-10-12",
+    "atualizado_em": "2026-10-13",
     "links_verificados_em": "2026-10-12",
     "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ANE, ABCE, APINE, CIGRE-Brasil, CCEE)",
     "nota": "Trilho de inscrições dos eventos do setor em São Paulo. Cada item leva ao link oficial de credenciamento. Datas e valores confirmar na página oficial. Eventos com credenciamento a abrir levam à página oficial do evento ou da entidade organizadora. O monitor regenera este JSON: eventos já encerrados saem sozinhos e a data de verificação dos links é atualizada quando os links são reabertos.",
-    "nota_run_2026_10_12": "Varredura de 12 de outubro. Os sete links de inscrição do trilho foram reabertos e confirmados nesta rodada: ingressos do encontro do setor solar de outubro, formulário do simpósio jurídico, inscrição da feira de energia eólica, inscrição do seminário de cibersegurança (aberta no navegador, depois de duas rodadas sem conferência), inscrição do encontro de líderes ambientais, notícia e credenciamento do fórum da câmara de comercialização e página do congresso de data centers e energia crítica. A página de eventos da associação do setor solar também foi reaberta e segue sem data para o encontro nacional. Nenhum evento entrou e nenhum saiu."
+    "nota_run_2026_10_12": "Varredura de 12 de outubro. Os sete links de inscrição do trilho foram reabertos e confirmados nesta rodada: ingressos do encontro do setor solar de outubro, formulário do simpósio jurídico, inscrição da feira de energia eólica, inscrição do seminário de cibersegurança (aberta no navegador, depois de duas rodadas sem conferência), inscrição do encontro de líderes ambientais, notícia e credenciamento do fórum da câmara de comercialização e página do congresso de data centers e energia crítica. A página de eventos da associação do setor solar também foi reaberta e segue sem data para o encontro nacional. Nenhum evento entrou e nenhum saiu.",
+    "nota_run_2026_10_13": "Atualização de 13 de outubro: programação do fórum da câmara de comercialização publicada. Os demais links não foram reabertos hoje; a data de verificação dos links segue a de 12 de outubro."
   },
   "abertos": [
     {
@@ -82,14 +83,14 @@
       "data_ini": "2026-11-17",
       "data_fim": "2026-11-17",
       "titulo": "2º Fórum Análise Setorial CCEE",
-      "quando": "17/11 · Grand Hyatt São Paulo, Av. das Nações Unidas 13.301, São Paulo/SP · presencial e online · inscrições abertas desde 28/09 · notícia e credenciamento reabertos em 12/10",
+      "quando": "17/11 · 8h–18h · Grand Hyatt São Paulo, Av. das Nações Unidas 13.301, São Paulo/SP · presencial e online · programação publicada em 13/10 · credenciamento reaberto em 12/10",
       "badges": [
         {
           "label": "Pago",
           "cls": "pago"
         }
       ],
-      "url": "https://www.ccee.org.br/web/guest/-/inscricoes-abertas-para-o-2-forum-analise-setorial-ccee",
+      "url": "https://www.ccee.org.br/web/guest/-/confira-a-programacao-do-2-forum-analise-setorial-ccee-e-faca-sua-inscricao",
       "cta": "Inscrever-se"
     },
     {
