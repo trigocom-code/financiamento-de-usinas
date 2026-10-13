@@ -3,8 +3,8 @@
     "orgao": "CCEE",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo CCEE — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-09-17",
-    "proxima_revisao_sugerida": "2026-07-29",
+    "verificado_em": "2026-10-13",
+    "proxima_revisao_sugerida": "2026-11-10",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina CCEE conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. PLD horário vai pro banco SOA via pipeline.",
     "regra_banco_SOA": "Banco SOA valida FISICO (PLD, volumes); NUNCA valida REGULATORIO.",
@@ -25,17 +25,18 @@
     "nota_run_2026_07_21": "Run de 21/07: sem ato novo. Portal da CCEE reaberto em F1 — notícias mais recentes 20/07 (Encontro do PLD, a ocorrer em 22/07 às 15h), 16/07 e 15/07, todas institucionais/eventos. CP 17/2026 (PSM) sem alteração (18/06 -> 03/08). LIMITAÇÃO MANTIDA: a URL /consultas-publicas volta a redirecionar para a home — a listagem de consultas públicas da CCEE segue INCONCLUSIVA pelo 2º dia. A CCEE também passa a ter dever expresso na Resolução CMSE nº 1/2026 (art. 2º, III e art. 6º, II: impactos financeiros e custos previstos contra verificados, segregados por ACR e ACL) — registrado no monitor MME. Nenhum verificado_em de fato bumpado (R2). | CORREÇÃO NA ETAPA DE VERIFICAÇÃO: CCEE-CP-17-2026-PSM promovido de AZUL a VERDE/ANCORADO. Duas correções materiais: (a) a consulta é da ANEEL (Superintendência de Mediação Administrativa e das Relações de Consumo), não da CCEE — da CCEE é o objeto; (b) o prazo de contribuições foi PRORROGADO para 24/08/2026 pelo Aviso publicado no DOU de 17/07/2026 (Ed. 133, S3, p. 121). A data de 03/08 que o monitor vinha repetindo estava SUPERADA desde 17/07 e quase foi propagada nos digests de hoje. LIÇÃO DE MÉTODO: buscar Avisos na Seção 3 com janela de pelo menos 7 dias e por Órgão Principal, não apenas na janela de 1 dia da run — Avisos de prorrogação não reaparecem.",
     "nota_run_2026_07_28": "Run CONSOLIDADORA de 28/07/2026. O portal da CCEE (ccee.org.br) permanece INACESSIVEL a esta rotina: fetch devolve HTTP 403 e a navegacao pelo navegador foi negada — 3o dia consecutivo de bloqueio registrado. Cobertura suprida por fonte oficial ANEEL e por F2. RECONFIRMACAO F1 RELEVANTE: a listagem oficial de Consultas Publicas vigentes da ANEEL, lida em 28/07, mantem 'Consulta 017/2026 — Objeto: obter subsidios para estabelecer o processo sancionador da Camara de Comercializacao de Energia Eletrica - CCEE' com a nota 'O prazo final de envio de contribuicoes foi prorrogado para 24/8/2026'. ⚠ DIVERGENCIA ENTRE MONITORES: o Digest de Eventos de 28/07 ainda carrega '03/08 - CP no 17/2026 encerra contribuicoes'. O prazo correto e 24/08/2026, ja ancorado neste arquivo desde 21/07 pelo Aviso de Prorrogacao do DOU de 17/07. Corrigir na agenda do monitor de eventos. RECONTABILIZACAO: o relatorio previsto para 29/07 segue F3 (GTGC ABSOLAR), sem confirmacao no calendario oficial da CCEE — que nao pode ser aberto. A Portaria MME 140/2026 (18/07, DOU 21/07) atribui a apuracao/classificacao dos cortes e o calculo da compensacao a procedimento regulamentado — acompanhar o efeito sobre a recontabilizacao.",
     "nota_run_2026_07_29": "Varredura consolidadora de 29/07: ccee.org.br devolveu HTTP 403 tambem nesta execucao (2a confirmacao do dia, em horario distinto — bloqueio persistente, NAO ausencia de publicacao). Nenhum fato reverificado; verificado_em NAO avancado. REGISTRO RELEVANTE VINDO DE F1 DA ANEEL (item 5 da 15a RPO de 28/07): as Regras de Comercializacao alteradas para os LRCAP de 2026 passam a ser aplicadas 'em carater provisorio' desde a abertura da CP no 25/2026 (30/07), 'com a possibilidade dos devidos ajustes pela Camara de Comercializacao de Energia Eletrica - CCEE, caso sejam aprovadas alteracoes no fechamento da Consulta Publica'. Os relatorios de recontabilizacao previstos para 29/07 seguem NAO verificaveis (403).",
-    "nota_run_2026_09_17_cp17": "Atualizacao CEO 17/09: CP ANEEL 17/2026 (PSM) — prazo contribuicoes 24/08/2026 ja encerrado (DOU Aviso Prorrogacao 17/07/2026, Ed. 133). Sem RN/resultado F1; status ajustado. Portal ccee.org.br 403 nesta sessao; lastro no DOU ja ancorado no fato."
+    "nota_run_2026_09_17_cp17": "Atualizacao CEO 17/09: CP ANEEL 17/2026 (PSM) — prazo contribuicoes 24/08/2026 ja encerrado (DOU Aviso Prorrogacao 17/07/2026, Ed. 133). Sem RN/resultado F1; status ajustado. Portal ccee.org.br 403 nesta sessao; lastro no DOU ja ancorado no fato.",
+    "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 1 confirmado, 4 impreciso, 1 mudou, 1 nao_verificado. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente. O fato CCEE-GRUDEM foi reescrito com o que a pagina oficial sustenta sobre o MRE: a sigla GRUDEM nao foi localizada em fonte oficial."
   },
   "fatos": [
     {
       "fato_id": "CCEE-LEI-15269-2025",
       "tema": "Lei 15.269/2025 — Ressarcimento parcial por curtailment",
-      "valor": "Lei 15.269/2025 (originária da MP 1.304/2025) — publicada no DOU em 25/11/2025, sancionada com 16 vetos (Mensagem/VEP nº 1.755/2025), atingindo 20 dispositivos do PLV 10/2025 (fonte primária: contagem direta na Mensagem 1.755; Agência Senado confirma 16). Ressarcimento parcial por curtailment (eólica/solar no SIN): o art. 1º-A, que abrangia todos os cortes de origem externa independentemente da causa, foi VETADO; manteve-se o §11 do art. 1º; o art. 1º-B (restritivo) cobre apenas 01/09/2023 a 25/11/2025, sem previsão para cortes futuros. Compensáveis: indisponibilidade externa (REL) e confiabilidade elétrica (CNF, condicionada); razões energéticas/sobreoferta (ENE) não compensáveis. Recuperação retroativa e one-time, atualmente suspensa (ANEEL, cautelar; CCEE suspendeu o lançamento até a regulação — CP MME 210/2025).",
+      "valor": "Lei 15.269/2025 (originária da MP 1.304/2025) — publicada no DOU em 25/11/2025, sancionada com 16 vetos (Mensagem/VEP nº 1.755/2025), atingindo 20 dispositivos do PLV 10/2025 (fonte primária: contagem direta na Mensagem 1.755; Agência Senado confirma 16). Ressarcimento parcial por curtailment (eólica/solar no SIN): o art. 1º-A, que abrangia todos os cortes de origem externa independentemente da causa, foi VETADO; manteve-se o §11 do art. 1º; o art. 1º-B (restritivo) cobre apenas 01/09/2023 a 25/11/2025 e não alcança cortes posteriores. No período do art. 1º-B, a compensação cobre indisponibilidade externa e confiabilidade elétrica, mediante termo de compromisso com o poder concedente; cortes por sobreoferta ficam fora. Para os cortes posteriores vale o art. 1º, §§ 10 e 11, da Lei 10.848/2004: a indisponibilidade externa entra no Encargo de Serviços do Sistema (§ 10, VI); a confiabilidade elétrica só é vedada no encargo nas duas hipóteses do § 11, I (documentos de acesso que indiquem a possibilidade de restrições; gerador em desconformidade com os requisitos técnicos mínimos de conexão); a sobreoferta é vedada pelo § 11, II. Ficar fora da vedação não cria, por si só, direito a ressarcimento. Compensação retroativa e única, regulamentada pela Portaria Normativa MME nº 140/2026 (DOU de 21/07/2026, edição extra), depois da CP MME 210/2025: depende de adesão ao Termo de Compromisso e é operacionalizada pela CCEE por recontabilização. A CCEE divulgou as regras e os procedimentos adaptados em 21/09/2026 (Comunicado 744/26) e a lista de elegibilidade das usinas em 05/10/2026 (Comunicado 778/26).",
       "status": "VIGENTE",
-      "norma": "Lei 15.269/2025 (art. 1º-B da Lei 10.848/2004)",
+      "norma": "Lei 15.269/2025 (art. 1º, §§ 10 e 11, e art. 1º-B da Lei 10.848/2004) · Portaria Normativa MME nº 140/2026",
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-13",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
       "vetores_afetados": [
@@ -84,7 +85,7 @@
       "status": "PRAZO DE CONTRIBUICOES ENCERRADO (24/08/2026) — deliberacao/resultado final pendente de F1",
       "norma": "Consulta Pública ANEEL nº 17/2026 · abertura no DOU de 18/06/2026, Seção 3, p. 129 · Aviso de Prorrogação no DOU de 17/07/2026, Edição 133, Seção 3, p. 121 · Processo 48500.037295/2025-21",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-719799662",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-13",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 18,
       "vetores_afetados": [
@@ -118,12 +119,12 @@
     },
     {
       "fato_id": "CCEE-SUBMODULO-9",
-      "tema": "Submódulo 9 da CCEE — Liquidação mensal e contabilização",
-      "valor": "Procedimento de Comercialização que define liquidação mensal e classificação final de cortes (ENE/CNF/REL). Terminal institucional canônico SOA.",
+      "tema": "Submódulos 5.1 e 5.2 da CCEE — Contabilização, recontabilização e liquidação no Mercado de Curto Prazo",
+      "valor": "Procedimentos de Comercialização (Módulo 5) que regem a contabilização, a recontabilização e a liquidação no Mercado de Curto Prazo. A apuração e a classificação dos cortes de geração cabem ao ONS; a CCEE recebe os montantes já classificados e faz o cálculo e a contabilização. Terminal institucional canônico SOA.",
       "status": "VIGENTE",
-      "norma": "CCEE · Submódulo 9 (Procedimentos de Comercialização)",
-      "url": "https://www.ccee.org.br/",
-      "verificado_em": "2026-09-17",
+      "norma": "CCEE · Procedimentos de Comercialização, Módulo 5 (Mercado de Curto Prazo): Submódulo 5.1 - Contabilização e recontabilização e Submódulo 5.2 - Liquidação no mercado de curto prazo (versões 5.0, de 28/04/2026)",
+      "url": "https://www.ccee.org.br/mercado/procedimentos-de-comercializacao",
+      "verificado_em": "2026-10-13",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -160,12 +161,12 @@
     },
     {
       "fato_id": "CCEE-MODULOS-6-7",
-      "tema": "Procedimentos de Comercialização — Módulos 6 (Liquidação) e 7 (Encargos)",
-      "valor": "Módulos canônicos que regem liquidação e cálculo de encargos. Insumo regulatório de fundo para estudos SOA sobre custo total de energia (V5, V8).",
+      "tema": "Regras de Comercialização — cadernos 09 (Encargos) e 11 (Liquidação)",
+      "valor": "Cadernos das Regras de Comercialização que regem o cálculo de encargos e a liquidação. Insumo regulatório de fundo para estudos SOA sobre custo total de energia (V5, V8).",
       "status": "VIGENTE",
-      "norma": "CCEE · Procedimentos de Comercialização (Módulos 6 e 7)",
-      "url": "https://www.ccee.org.br/",
-      "verificado_em": "2026-09-17",
+      "norma": "CCEE · Regras de Comercialização (cadernos 09 - Encargos e 11 - Liquidação)",
+      "url": "https://www.ccee.org.br/mercado/regras-de-comercializacao",
+      "verificado_em": "2026-10-13",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -202,12 +203,12 @@
     },
     {
       "fato_id": "CCEE-GRUDEM",
-      "tema": "GRUDEM — Grupo de Estudos sobre Mecanismos de Despacho do MRE",
-      "valor": "Grupo CCEE que estuda modificações no MRE (Mecanismo de Realocação de Energia). Mudanças no MRE alteram o valor da flexibilidade hidráulica (V3).",
-      "status": "EM DELIBERAÇÃO",
-      "norma": "CCEE · GRUDEM (estudos em curso)",
-      "url": "https://www.ccee.org.br/",
-      "verificado_em": "2026-09-17",
+      "tema": "MRE — Mecanismo de Realocação de Energia (caderno 04 das Regras de Comercialização)",
+      "valor": "As regras de comercialização do Mecanismo de Realocação de Energia (MRE) estão no caderno 04 das Regras de Comercialização da CCEE. A versão 2026.1.0, vigente de janeiro a dezembro de 2026, foi aprovada pela REN ANEEL nº 1.146, de 09/12/2025. Mudanças no MRE alteram o valor da flexibilidade hidráulica (V3).",
+      "status": "VIGENTE",
+      "norma": "CCEE · Regras de Comercialização, caderno 04 - Mecanismo de Realocação de Energia (versão 2026.1.0) · REN ANEEL nº 1.146/2025",
+      "url": "https://www.ccee.org.br/mercado/regras-de-comercializacao",
+      "verificado_em": "2026-10-13",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -219,8 +220,8 @@
       "qsv_fontes_independentes": [
         {
           "tipo": "F1_pagina_oficial",
-          "ref": "https://www.ccee.org.br/ — GRUDEM",
-          "trecho_literal": "",
+          "ref": "https://www.ccee.org.br/mercado/regras-de-comercializacao — caderno 04 (MRE)",
+          "trecho_literal": "04 - Mecanismo de Realocação de Energia (MRE) Caderno de regras. Início de vigência jan/2026, versão 2026.1.0.",
           "associacao_origem": null,
           "gt_origem": null
         },
@@ -240,16 +241,17 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "pendencia_verificacao": "13/10/2026 (revisão fato a fato): a sigla GRUDEM e o 'Grupo de Estudos sobre Mecanismos de Despacho do MRE' não foram localizados em fonte oficial (páginas da CCEE e DOU) nem em busca na web. O fato foi reescrito com o que a página oficial das Regras de Comercialização sustenta sobre o MRE. Se a casa tiver a origem da sigla, reabrir."
     },
     {
       "fato_id": "CCEE-BOLETIM-MENSAL",
-      "tema": "Boletim Mensal de Comercialização — relatório de mercado livre",
-      "valor": "Publicação mensal CCEE com indicadores de mercado livre (preços, volumes, contratos). Insumo periódico para análises SOA sobre dinâmica do ACL e contratos de longo prazo de data centers (V5).",
+      "tema": "InfoMercado Mensal — relatório mensal das operações do mercado de energia",
+      "valor": "Relatório mensal da CCEE com as operações do mercado de energia contabilizadas na Câmara (geração, consumo, contratos, agentes ativos, penalizações e liquidações), divulgado com defasagem de cerca de 40 dias. Insumo periódico para análises SOA sobre dinâmica do ACL e contratos de longo prazo de data centers (V5).",
       "status": "VIGENTE",
-      "norma": "CCEE · Boletim Mensal Comercialização",
-      "url": "https://www.ccee.org.br/web/guest/relatorios/boletim",
-      "verificado_em": "2026-09-17",
+      "norma": "CCEE · InfoMercado Mensal",
+      "url": "https://www.ccee.org.br/web/guest/dados-e-analises/dados-mercado-mensal",
+      "verificado_em": "2026-10-13",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -287,11 +289,11 @@
     {
       "fato_id": "CCEE-PORTARIA-140-2026-DEVERES",
       "tema": "Deveres da CCEE na Portaria Normativa MME 140/2026 - emolumento, regras adaptadas, recontabilizacao e auditoria independente",
-      "valor": "Ancorado no texto integral da Portaria Normativa MME no 140, de 18/07/2026 (DOU de 21/07/2026, Edicao Extra, Secao 1), lido em 07/08/2026. A CCEE recebe cinco encargos com prazo. (1) ADESAO E EMOLUMENTO (art. 2o, par. 2o, 4o e 5o): cabe a CCEE operacionalizar o recebimento e analisar a documentacao de representacao legal dos interessados e prover apoio administrativo a celebracao dos Termos; para custear essas atividades a CCEE deve recolher emolumento dos interessados que atenderem a convocacao. O emolumento previsto no ato incide sobre essa etapa documental - nao ha no texto emolumento incidente sobre as recontabilizacoes, o que converge com o entendimento preliminar registrado pelo GT Geracao Centralizada da ABSOLAR em 06/08/2026. (2) MONTANTES DE CORTE (art. 5o, par. 8o): em ate 30 dias do recebimento da base final do ONS, a CCEE divulga os montantes de corte em base horaria e por usina, segregados entre indisponibilidade externa, confiabilidade eletrica e sobreoferta. (3) RECONTABILIZACAO (art. 6o): a compensacao e operacionalizada por recontabilizacao financeira de eventos passados do periodo de 1o/09/2023 a 25/11/2025, com valores atualizados pelo IPCA desde a data do corte ate o pagamento efetivo, concluida em ate 180 dias contados do primeiro dia util apos o prazo final de celebracao do Termo. Ficam suspensas, para quem protocolou manifestacao previa e firmou o Termo, as liquidacoes dos ressarcimentos devidos por geradores eolicos e solares referentes a CER e a CCEAR na modalidade disponibilidade de que trata o Despacho ANEEL no 148, de 20/01/2026. Os efeitos das recontabilizacoes de energia de reserva e da reapuracao de receita de CCEAR precedem os efeitos da recontabilizacao do Mercado de Curto Prazo. Os creditos dos geradores nao participam do rateio de inadimplencia na liquidacao do Mercado de Curto Prazo. (4) REGRAS E PROCEDIMENTOS ADAPTADOS (art. 7o): a CCEE deve aprovar e divulgar as regras e procedimentos de comercializacao adaptados em ate 60 dias da publicacao, termo em 19/09/2026, e realizar capacitacao ao mercado em ate 90 dias, termo em 19/10/2026. As regras adaptadas sao eficazes desde a publicacao e produzem efeitos para as recontabilizacoes de 1o/09/2023 a 25/11/2025. Regulamentacao superveniente da ANEEL nao ensejara nova recontabilizacao dos periodos ja processados. (5) AUDITORIA INDEPENDENTE (art. 8o): a operacionalizacao pela CCEE e objeto de avaliacao de auditoria independente para validacao dos dados e dos resultados, conforme procedimento assegurado nas regras e procedimentos de comercializacao. VALORACAO que a CCEE aplicara (Clausula Quinta do Termo): sem limitacao por garantia fisica, montante contratado, frequencia ou tempo acumulado; o montante cortado conta como energia entregue para CCEAR-D e CER, reduzindo os ressarcimentos contratuais; a parcela nao comprometida e valorada ao PLD do submercado da usina; a parcela Proinfa ao preco contratual vigente na data do corte, paga por intermedio da ENBPar; abate-se o que ja tenha sido pago. RELEVANCIA SOA/SOS: a auditoria independente sobre dados e resultados de uma recontabilizacao de 27 meses, somada a segregacao horaria por usina e por classificacao, e o desenho institucional mais proximo da camada de evidencia ja produzido no setor.",
+      "valor": "Ancorado no texto integral da Portaria Normativa MME no 140, de 18/07/2026 (DOU de 21/07/2026, Edicao Extra, Secao 1), lido em 07/08/2026. A CCEE recebe cinco encargos com prazo. (1) ADESAO E EMOLUMENTO (art. 2o, par. 2o, 4o e 5o): cabe a CCEE operacionalizar o recebimento e analisar a documentacao de representacao legal dos interessados e prover apoio administrativo a celebracao dos Termos; para custear essas atividades a CCEE deve recolher emolumento dos interessados que atenderem a convocacao. O emolumento previsto no ato incide sobre essa etapa documental - nao ha no texto emolumento incidente sobre as recontabilizacoes, o que converge com o entendimento preliminar registrado pelo GT Geracao Centralizada da ABSOLAR em 06/08/2026. (2) MONTANTES DE CORTE (art. 5o, par. 8o): em ate 30 dias do recebimento da base final do ONS, a CCEE divulga os montantes de corte em base horaria e por usina, segregados entre indisponibilidade externa, confiabilidade eletrica e sobreoferta. (3) RECONTABILIZACAO (art. 6o): a compensacao e operacionalizada por recontabilizacao financeira de eventos passados do periodo de 1o/09/2023 a 25/11/2025, com valores atualizados pelo IPCA desde a data do corte ate o pagamento efetivo, concluida em ate 180 dias contados do primeiro dia util apos o prazo final de celebracao do Termo. Ficam suspensas, para quem protocolou manifestacao previa e firmou o Termo, as liquidacoes dos ressarcimentos devidos por geradores eolicos e solares referentes a CER e a CCEAR na modalidade disponibilidade de que trata o Despacho ANEEL no 148, de 20/01/2026. Os efeitos das recontabilizacoes de energia de reserva e da reapuracao de receita de CCEAR precedem os efeitos da recontabilizacao do Mercado de Curto Prazo. Os creditos dos geradores nao participam do rateio de inadimplencia na liquidacao do Mercado de Curto Prazo. (4) REGRAS E PROCEDIMENTOS ADAPTADOS (art. 7o): a CCEE deve aprovar e divulgar as regras e procedimentos de comercializacao adaptados em ate 60 dias da publicacao, termo em 19/09/2026, e realizar capacitacao ao mercado em ate 90 dias, termo em 19/10/2026. EXECUCAO CONFERIDA EM 13/10/2026: a CCEE divulgou as regras e os procedimentos adaptados em 21/09/2026 (Comunicado CCEE 744/26), em quatro conjuntos, com vigencias de set/2023, jan/2024, abr/2024 e jan/2025; divulgou em 05/10/2026 a lista de elegibilidade das usinas que fizeram a manifestacao previa, com avaliacao do ONS (Comunicado CCEE 778/26); anunciou em 07/10/2026 a retomada, em outubro, da reapuracao dos ressarcimentos de janeiro a maio de 2026 devidos por geradores eolicos e solares com CCEAR-D e CER, somente para quem nao manifestou interesse ou nao e elegivel (Comunicado CCEE 788/26); e marcou para 14/10/2026, as 10h, o Momento Capacita no 105, encontro online da CCEE Academy sobre os procedimentos da compensacao. As regras adaptadas sao eficazes desde a publicacao e produzem efeitos para as recontabilizacoes de 1o/09/2023 a 25/11/2025. Regulamentacao superveniente da ANEEL nao ensejara nova recontabilizacao dos periodos ja processados. (5) AUDITORIA INDEPENDENTE (art. 8o): a operacionalizacao pela CCEE e objeto de avaliacao de auditoria independente para validacao dos dados e dos resultados, conforme procedimento assegurado nas regras e procedimentos de comercializacao. VALORACAO que a CCEE aplicara (Clausula Quinta do Termo): sem limitacao por garantia fisica, montante contratado, frequencia ou tempo acumulado; o montante cortado conta como energia entregue para CCEAR-D e CER, reduzindo os ressarcimentos contratuais; a parcela nao comprometida e valorada ao PLD do submercado da usina; a parcela Proinfa ao preco contratual vigente na data do corte, paga por intermedio da ENBPar; abate-se o que ja tenha sido pago. RELEVANCIA SOA/SOS: a auditoria independente sobre dados e resultados de uma recontabilizacao de 27 meses, somada a segregacao horaria por usina e por classificacao, e o desenho institucional mais proximo da camada de evidencia ja produzido no setor.",
       "status": "VIGENTE",
       "norma": "Portaria Normativa MME no 140, de 18/07/2026, arts. 2o, 5o, 6o, 7o e 8o · DOU de 21/07/2026, Edicao Extra, Secao 1",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
-      "verificado_em": "2026-09-17",
+      "verificado_em": "2026-10-13",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 18,
       "vetores_afetados": [

@@ -1,12 +1,34 @@
 {
   "_meta": {
     "titulo": "Agenda do Setor Elétrico — Monitor SOA/SOS",
-    "atualizado_em": "2026-10-12",
+    "atualizado_em": "2026-10-13",
     "fonte": "Monitor de Eventos SOA/SOS · fontes oficiais (gov.br/ANEEL · Senado Federal · EPE · MME · CCEE · ONS · CIGRE-Brasil) + associações do setor (ANE, COGEN, APINE, ABGD, ABSOLAR, ABEEólica, ABCE, ABRAGE), páginas oficiais de eventos e imprensa setorial",
     "nota": "Agenda pública de datas do setor elétrico. Eventos de associação e sinais de fontes secundárias marcados 'A VERIFICAR'; confirmar no ato ou na página oficial antes de citar.",
-    "nota_run_2026_10_12": "Varredura de 12 de outubro, cobrindo a janela desde 7 de outubro; o bloco de ação alcança prazos de até dez dias, até 22 de outubro. (1) A câmara de comercialização marcou para 14 de outubro, às dez horas, online, a capacitação sobre o procedimento das compensações por cortes de geração. (2) O ministério abriu em 8 de outubro a consulta pública do plano decenal de expansão de energia 2036, com contribuições até 6 de novembro. (3) A regra de ordenamento dos cortes de geração foi editada como resolução normativa nº 1.170, de 6 de outubro de 2026; a data de publicação no diário oficial não foi conferida nesta rodada. (4) O encontro técnico do leilão de armazenamento de 14 de outubro e as datas das garantias do leilão de transmissão nº 4/2026 seguem sem página oficial localizada. (5) A consulta de revisão da resolução normativa nº 1.030/2022 não teve abertura noticiada até 12 de outubro."
+    "nota_run_2026_10_12": "Varredura de 12 de outubro, cobrindo a janela desde 7 de outubro; o bloco de ação alcança prazos de até dez dias, até 22 de outubro. (1) A câmara de comercialização marcou para 14 de outubro, às dez horas, online, a capacitação sobre o procedimento das compensações por cortes de geração. (2) O ministério abriu em 8 de outubro a consulta pública do plano decenal de expansão de energia 2036, com contribuições até 6 de novembro. (3) A regra de ordenamento dos cortes de geração foi editada como resolução normativa nº 1.170, de 6 de outubro de 2026; a data de publicação no diário oficial não foi conferida nesta rodada. (4) O encontro técnico do leilão de armazenamento de 14 de outubro e as datas das garantias do leilão de transmissão nº 4/2026 seguem sem página oficial localizada. (5) A consulta de revisão da resolução normativa nº 1.030/2022 não teve abertura noticiada até 12 de outubro.",
+    "nota_run_2026_10_13": "Atualização de 13 de outubro, sobre a varredura de 12 de outubro. (1) A abertura da consulta pública de revisão da resolução normativa nº 1.030/2022 passou de meados de outubro para o início de dezembro, com cerca de 45 dias de contribuições, segundo relato de associação sobre reunião com a área técnica da agência; não há ato oficial. (2) O ministério abriu consulta pública sobre a governança dos modelos computacionais do setor, com prazo de vinte dias; as datas de início e fim não constam da notícia. (3) A consulta do plano decenal de expansão de energia 2036 é a de nº 235/2026. (4) A câmara de comercialização publicou a programação do fórum de 17 de novembro."
   },
   "recentes": [
+    {
+      "data": "2026-10-13",
+      "titulo": "O ministério abriu consulta pública sobre a governança dos modelos computacionais do setor elétrico",
+      "detalhe": "Duas minutas de portaria: uma sobre o rito de mudanças nos modelos de planejamento da expansão e de cálculo da garantia física, outra sobre a gestão integrada de novos modelos pela câmara de comercialização, pela empresa de pesquisa energética e pelo operador nacional. A notícia fala em portaria publicada em edição extra do diário oficial de 9 de outubro e em vinte dias de contribuições, sem dar as datas de início e fim; o prazo vale pelo ato.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br do ministério"
+    },
+    {
+      "data": "2026-10-13",
+      "titulo": "Revisão da resolução normativa nº 1.030/2022: consulta pública esperada para o início de dezembro",
+      "detalhe": "Segundo relato de associação setorial sobre reunião com a área técnica da agência reguladora, a instrução está em fase final e a consulta deve abrir por volta do início de dezembro de 2026, com cerca de 45 dias de contribuições. A previsão anterior era meados de outubro. Não há ato nem notícia oficial.",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-13",
+      "titulo": "A câmara de comercialização publicou a programação do fórum de análise setorial de 17 de novembro",
+      "detalhe": "Das oito às dezoito horas, com três painéis sobre mercado aberto, segurança do mercado e formação de preços, e uma palestra sobre mercados de energia. Inscrições seguem abertas.",
+      "status": "CONFIRMADO",
+      "fonte": "Câmara de comercialização de energia elétrica"
+    },
     {
       "data": "2026-10-09",
       "titulo": "A câmara de comercialização marcou para 14 de outubro a capacitação sobre as compensações por cortes de geração",
@@ -23,7 +45,7 @@
     },
     {
       "data": "2026-10-08",
-      "titulo": "O ministério abriu a consulta pública do plano decenal de expansão de energia 2036",
+      "titulo": "O ministério abriu a consulta pública nº 235/2026, do plano decenal de expansão de energia 2036",
       "detalhe": "Contribuições ao relatório síntese até 6 de novembro, pelo portal de consultas do ministério e pela plataforma Brasil Participativo.",
       "status": "CONFIRMADO",
       "fonte": "gov.br do ministério e empresa de pesquisa energética"
@@ -150,20 +172,6 @@
   ],
   "acao_7dias": [
     {
-      "data": "2026-10-12",
-      "titulo": "Encerra o prazo interno de associação para a consulta pública nº 31/2026, sobre o indicador de cumprimento de prazos de obras da distribuição",
-      "detalhe": "A data cai em feriado nacional; o último dia útil é 9 de outubro. O prazo na agência vai até 19 de outubro.",
-      "status": "CONFIRMADO",
-      "fonte": "Comunicação de associação setorial"
-    },
-    {
-      "data": "2026-10-12",
-      "titulo": "Encerra na agência reguladora a consulta pública nº 29/2026, sobre redes subterrâneas",
-      "detalhe": "Contribuições desde 27 de agosto, por e-mail indicado na notícia oficial da agência.",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br da agência reguladora"
-    },
-    {
       "data": "2026-10-13",
       "titulo": "Circuito deliberativo da diretoria da agência reguladora",
       "detalhe": "Calendário oficial conferido em 7 de outubro; a página do calendário não respondeu em 12 de outubro.",
@@ -183,13 +191,6 @@
       "detalhe": "Às dez horas, online, pelo portal de cursos da câmara, com cadastro. Trata do procedimento das compensações por cortes de geração eólica e solar.",
       "status": "CONFIRMADO",
       "fonte": "Câmara de comercialização de energia elétrica"
-    },
-    {
-      "data": "2026-10-15",
-      "titulo": "Abertura prevista da consulta pública de revisão da resolução normativa nº 1.030/2022, em meados de outubro",
-      "detalhe": "Sem dia fixado; a data registrada é referência do mês. Nenhuma notícia de abertura foi localizada até 12 de outubro.",
-      "status": "A VERIFICAR",
-      "fonte": "Comunicação de associação setorial"
     },
     {
       "data": "2026-10-15",
@@ -253,16 +254,16 @@
       "detalhe": "Trigésima segunda edição, no Blue Tree Premium Faria Lima, presencial. Formulário de inscrição reaberto em 12 de outubro, aceitando respostas.",
       "status": "CONFIRMADO",
       "fonte": "Comunicação de associação setorial"
-    }
-  ],
-  "proximos_30d": [
+    },
     {
       "data": "2026-10-23",
       "titulo": "Encerra a consulta pública do ministério sobre concessões de hidrelétricas vencidas e vincendas",
       "detalhe": "",
       "status": "CONFIRMADO",
       "fonte": "gov.br do ministério"
-    },
+    }
+  ],
+  "proximos_30d": [
     {
       "data": "2026-10-26",
       "titulo": "Encerra a consulta pública nº 32/2026, sobre o edital do leilão de transmissão nº 1/2027",
@@ -334,6 +335,13 @@
       "fonte": "gov.br da agência reguladora"
     },
     {
+      "data": "2026-11-02",
+      "titulo": "Encerra o prazo interno de associação para a consulta pública nº 235/2026, do plano decenal de expansão de energia 2036",
+      "detalhe": "O prazo no ministério vai até 6 de novembro.",
+      "status": "CONFIRMADO",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
       "data": "2026-11-03",
       "titulo": "Reunião pública ordinária da diretoria da agência reguladora",
       "detalhe": "",
@@ -370,7 +378,7 @@
     },
     {
       "data": "2026-11-06",
-      "titulo": "Encerra a consulta pública do plano decenal de expansão de energia 2036",
+      "titulo": "Encerra a consulta pública nº 235/2026 do ministério, do plano decenal de expansão de energia 2036",
       "detalhe": "Contribuições pelo portal de consultas do ministério e pela plataforma Brasil Participativo.",
       "status": "CONFIRMADO",
       "fonte": "gov.br do ministério"
@@ -408,7 +416,7 @@
     {
       "data": "2026-11-17",
       "titulo": "Segunda edição do fórum de análise setorial da câmara de comercialização, em São Paulo, com inscrições abertas",
-      "detalhe": "Grand Hyatt São Paulo, com participação presencial e online. Página de credenciamento reaberta em 12 de outubro.",
+      "detalhe": "Grand Hyatt São Paulo, com participação presencial e online, das oito às dezoito horas. Programação publicada em 13 de outubro; credenciamento reaberto em 12 de outubro.",
       "status": "CONFIRMADO",
       "fonte": "Câmara de comercialização de energia elétrica"
     },
@@ -467,6 +475,13 @@
       "detalhe": "No Novotel Center Norte, com inscrições abertas. Página oficial do evento reaberta em 12 de outubro.",
       "status": "CONFIRMADO",
       "fonte": "Página oficial do evento"
+    },
+    {
+      "data": "2026-12-01",
+      "titulo": "Abertura esperada da consulta pública de revisão da resolução normativa nº 1.030/2022, no início de dezembro",
+      "detalhe": "Sem dia fixado; a data registrada é referência do mês. Previsão relatada por associação setorial depois de reunião com a área técnica da agência, com cerca de 45 dias de contribuições.",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
     },
     {
       "data": "2026-12-02",

@@ -2,16 +2,17 @@
   "_meta": {
     "orgao": "Benefícios da Certificação ESG (por ator)",
     "schema_version": "1.0",
-    "verificado_em": "2026-09-17",
+    "verificado_em": "2026-10-13",
     "regra_fonte_associacao": "F1 — fontes primárias (Planalto, CONFAZ, ANEEL, CVM, BNDES, BNB, BASA, Caixa, Tesouro, Comissão Europeia, leis municipais/estaduais). Só status=='verificado' renderiza; 'pendente' fica na base para acompanhamento e NÃO aparece em folder. SOA/SOS = camada de verificação, não emissora do benefício.",
     "fonte_canonica": "dossie_beneficios_v1 + verificacao_fontes_primarias",
-    "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. CVM noticias -> 200 197378"
+    "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. CVM noticias -> 200 197378",
+    "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 26 confirmado, 11 impreciso, 2 mudou, 6 nao_verificado. Neste arquivo nao ha data por item: o selo de 13/10/2026 cobre os beneficios com status 'verificado' e as frases do cruzamento regulatorio, conferidos em fonte oficial. Pacotes e entregaveis sao texto comercial da casa: nao foram revistos um a um e so foram tocados onde contradiziam item corrigido (CBAM, PNAST e compensacao dos cortes de geracao). As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente. NAO conferidos nesta revisao (fonte oficial nao reaberta): ind_fundos_constitucionais; iptu_municipais_a_confirmar; bitcoin_verde; seguros_prova_risco; mercado_psm_origem; ANEEL-CCEE-LRCAP-TERMICA-REF."
   },
   "_carimbo": {
-    "atualizado_em": "2026-08-18T00:00:00-03:00",
-    "hash": "sha256:de29677969a46c4bbf99bca907afc6e9fa0b28f734924363b28a2aa1d21dd8b3",
+    "atualizado_em": "2026-10-13T00:00:00-03:00",
+    "hash": "sha256:9f564845b642b99654ca765f219886333583ccd8b622c74d818b01251f9714b6",
     "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias",
-    "selado_em": "2026-08-18"
+    "selado_em": "2026-10-13"
   },
   "_schema": {
     "versao": "1.0",
@@ -135,7 +136,7 @@
       "canal": "imposto",
       "titulo": "Limite de ICMS na conta",
       "base_legal": "Convênio ICMS 16/2015 + LC 194/2022",
-      "mecanismo": "ICMS incide só sobre o consumo líquido; a LC 194/2022 veda alíquota acima da modal (~17–18%).",
+      "mecanismo": "O Convênio ICMS 16/2015 autoriza os estados e o Distrito Federal a isentar de ICMS a energia compensada de micro e minigeração, nas condições do convênio; a isenção não alcança custo de disponibilidade, demanda nem uso do sistema de distribuição; a LC 194/2022 veda alíquota acima da aplicada às operações em geral em cada estado.",
       "vigencia": "vigente (por UF)",
       "sem_soa": "—",
       "status": "verificado",
@@ -235,12 +236,12 @@
       ],
       "canal": "imposto",
       "titulo": "REIDI estendido a armazenamento (BESS)",
-      "base_legal": "Lei 15.269/2025 (art. 2º-A)",
-      "mecanismo": "Estende a suspensão de PIS/COFINS a sistemas de armazenamento de energia. Gestor MME.",
+      "base_legal": "Lei 11.488/2007, art. 2º-A (incluído pela Lei 15.269/2025)",
+      "mecanismo": "Estende a suspensão de PIS/COFINS a sistemas de armazenamento de energia. Gestor MME. Renúncia limitada a R$ 1 bilhão por exercício, sujeita à lei orçamentária anual.",
       "vigencia": "2026–2030",
       "sem_soa": "—",
       "status": "verificado",
-      "fonte": "planalto L15269"
+      "fonte": "planalto L11488 art.2º-A (incluído pela L15269)"
     },
     {
       "id": "pj_deb_incentivada",
@@ -312,7 +313,7 @@
       "canal": "credito",
       "titulo": "Crédito com rating ESG / SLL",
       "base_legal": "Res. CMN 4.943/4.944/4.945/2021",
-      "mecanismo": "Regulação prudencial obriga bancos a precificar risco climático → mais verde tende a crédito mais barato. SLL reduz juros quando o tomador bate KPIs (% renovável, redução de emissões).",
+      "mecanismo": "Regulação prudencial obriga bancos a gerenciar os riscos social, ambiental e climático → mais verde tende a crédito mais barato. SLL reduz juros quando o tomador bate KPIs (% renovável, redução de emissões).",
       "vigencia": "vigente (mercado)",
       "sem_soa": "dado defensável = KPI",
       "status": "verificado",
@@ -329,7 +330,7 @@
       "canal": "mercado",
       "titulo": "CBAM — competitividade na exportação à UE",
       "base_legal": "Regulation (EU) 2023/956; simplificação 2025/2083",
-      "mecanismo": "Emissão incorporada verificada evita valores-padrão penalizadores (até 3× maiores). Comprovar eletricidade renovável auditável reduz o fator reportado. Fase definitiva desde 01/01/2026.",
+      "mecanismo": "Emissão incorporada verificada evita valores-padrão penalizadores (média do país exportador acrescida de majoração). A eletricidade consumida só entra no cálculo dos bens em que a emissão indireta é contada (cimento e fertilizantes): neles, o declarante pode usar a emissão real, em vez do valor-padrão, se demonstrar ligação técnica direta com a fonte geradora ou contrato de compra de energia com o produtor (Anexo IV, ponto 6). Em ferro e aço, alumínio e hidrogênio contam só as emissões diretas (art. 7º, 1, e Anexo II). Fase definitiva desde 01/01/2026.",
       "vigencia": "fase definitiva",
       "sem_soa": "eletricidade renovável auditável",
       "status": "verificado",
@@ -455,7 +456,7 @@
       "canal": "credito",
       "titulo": "BNDES Finem — Eficiência Energética (entes públicos)",
       "base_legal": "BNDES Eficiência",
-      "mecanismo": "Financia LED, motores e geração: até 90% do projeto, até 20 anos, mínimo reduzido a R$ 20 mi.",
+      "mecanismo": "Financia redução do consumo de energia em edificações, iluminação pública, redes elétricas e usinas: até 90% do projeto, até 20 anos, mínimo reduzido a R$ 20 mi.",
       "vigencia": "vigente",
       "sem_soa": "—",
       "status": "verificado",
@@ -559,12 +560,12 @@
       ],
       "canal": "imposto",
       "titulo": "REDATA — data centers com energia limpa",
-      "base_legal": "MP 1.318/2025 (CADUCADA 25/02/2026) → PL 278/2026 (Senado)",
-      "mecanismo": "Regime especial (suspensão de PIS/COFINS/IPI/II) condicionado a energia renovável. Não afirmar como lei vigente: depende do PL 278/2026.",
-      "vigencia": "MP caducada · PL em tramitação",
+      "base_legal": "Lei 15.504/2026 e LC 237/2026, de 15/09/2026 (Redata incluído na Lei 11.196/2005)",
+      "mecanismo": "Regime especial com suspensão de PIS/Cofins, IPI e Imposto de Importação para datacenters. Exige atender toda a demanda de energia elétrica com contratos de suprimento ou autoprodução de fontes renováveis ou de baixa emissão, na forma de regulamento, e publicar relatório de sustentabilidade.",
+      "vigencia": "Lei de 15/09/2026 · PIS/Cofins e IPI com efeitos até 31/12/2026",
       "sem_soa": "matching 24/7 comprovável",
       "status": "pendente",
-      "fonte": "Senado PL278/2026"
+      "fonte": "planalto L15504/2026 · LC 237/2026"
     },
     {
       "id": "iptu_municipais_a_confirmar",
@@ -614,11 +615,11 @@
       "canal": "mercado",
       "titulo": "Receita de capacidade no LRCAP de Armazenamento",
       "base_legal": "Portaria MME 136/2026 · REN ANEEL 1.161/2026 e 1.162/2026",
-      "mecanismo": "Leilão de Reserva de Capacidade na forma de POTÊNCIA para baterias (02 e 04/12/2026; contratos CRCAP de 15 anos, suprimento desde 01/08/2028, Receita Fixa ao IPCA). O compromisso é disponibilidade de potência em MW, não energia. RECEITA FIXA REDUZÍVEL: apuração de desempenho em base MENSAL, com abatimento/ressarcimento da Receita Fixa por indisponibilidade e penalidades por não entrega (Portaria 136, art. 5º §1º + art. 9º §4º-IV e §10). Habilitação exige ≥30 MW, ≥4 h, ≥85% de RTE e Grid Forming (art. 7º). Bônus locacional para os 129 barramentos elegíveis do ANEXO II (86% no Nordeste; inclui Pecém II 230 kV) — a LISTA é da portaria; o coeficiente numérico (β=0,9 ≈ +11,1%) vem da Nota Técnica da EPE, não do corpo da portaria. Preço-teto e regra de TUST nas minutas das CP ANEEL 022 e 023/2026 (contribuições até 14/09/2026); edital final ainda não publicado.",
-      "vigencia": "leilões 12/2026 · minutas em CP ANEEL 022/023 até 14/09/2026 · edital final ainda não publicado · suprimento desde 08/2028",
+      "mecanismo": "Leilão de Reserva de Capacidade na forma de POTÊNCIA para baterias (02 e 04/12/2026; contratos CRCAP de 15 anos, suprimento desde 01/08/2028, Receita Fixa ao IPCA). O compromisso é disponibilidade de potência em MW, não energia. RECEITA FIXA REDUZÍVEL: apuração de desempenho em base MENSAL, com abatimento/ressarcimento da Receita Fixa por indisponibilidade e penalidades por não entrega (Portaria 136, art. 5º §1º + art. 9º §4º-IV e §10). Habilitação exige ≥30 MW, ≥4 h, ≥85% de RTE e Grid Forming (art. 7º). Bônus locacional para os 129 barramentos elegíveis do ANEXO II (86% no Nordeste; inclui Pecém II 230 kV) — a LISTA é da portaria; o coeficiente numérico (β=0,9 ≈ +11,1%) está no ANEXO I da própria portaria (Sistemática), com base em estudos da EPE. Preço-teto e regra de TUST nas minutas das CP ANEEL 022 e 023/2026 (contribuições encerradas em 14/09/2026); edital final ainda não publicado.",
+      "vigencia": "leilões 12/2026 · CP ANEEL 022/023 encerradas em 14/09/2026 · edital final ainda não publicado · suprimento desde 08/2028",
       "sem_soa": "sem prova horária de disponibilidade ancorada no PMI, a Receita Fixa é cortada por indisponibilidade e o contrato de 15 anos / o DSCR não se sustentam",
       "status": "verificado",
-      "fonte": "Portaria MME 136/2026 (art. 5º/7º/9º + Anexo II) · β=0,9 → NT EPE · REN ANEEL 1.161/1.162/2026 · CP ANEEL 022/023/2026"
+      "fonte": "Portaria MME 136/2026 (art. 5º/7º/9º + Anexo II) · β=0,9 → Anexo I da portaria · REN ANEEL 1.161/1.162/2026 · CP ANEEL 022/023/2026"
     },
     {
       "id": "pnast_acesso_transmissao",
@@ -632,9 +633,9 @@
       "canal": "mercado",
       "titulo": "Acesso ao sistema de transmissão (PNAST)",
       "base_legal": "Decreto 12.772/2025 (PNAST) · Portaria MME 129/2026 · ONS 1ª temporada 2026",
-      "mecanismo": "O ativo se cadastra e habilita na temporada de acesso da PNAST (Decreto 12.772/2025); a prova horária de RTE/disponibilidade instrui o processo perante o ONS.",
+      "mecanismo": "O ativo se cadastra e habilita na temporada de acesso da PNAST (Decreto 12.772/2025), com Garantia de Participação; onde os pedidos superam a capacidade do barramento, a alocação é por Processo Competitivo do ONS (Portaria Normativa MME 129/2026).",
       "vigencia": "vigente",
-      "sem_soa": "habilitação pleiteada sem evidência de desempenho verificável",
+      "sem_soa": "—",
       "status": "verificado",
       "fonte": "planalto D12772 + ONS + MME Portaria 129/2026"
     },
@@ -712,7 +713,7 @@
         "pj",
         "industria"
       ],
-      "tese": "A usina capta mais barato (Fundo Clima 9,5%, REIDI-BESS, debêntures de infraestrutura) e ainda transforma a energia cortada (curtailment) em tese de ressarcimento — o BESS captura o corte e a evidência horária sustenta a disputa.",
+      "tese": "A usina capta mais barato (Fundo Clima 9,5%, REIDI-BESS, debêntures de infraestrutura) e ainda transforma a energia cortada (curtailment) em dado conferível — o BESS captura o corte e a evidência horária permite conferir a apuração do ONS e da CCEE.",
       "beneficios": [
         "pj_fundoclima",
         "pj_reidi_bess",
@@ -720,7 +721,7 @@
         "pj_deb_incentivada",
         "icms_conv101"
       ],
-      "sem_soa": "curtailment sem evidência horária não vira ressarcimento (Lei 15.269) e o KPI verde não destrava taxa",
+      "sem_soa": "sem evidência horária, o corte apurado pelo ONS não pode ser conferido e o KPI verde não destrava taxa",
       "status": "verificado"
     },
     {
@@ -733,7 +734,7 @@
       "ator": [
         "industria"
       ],
-      "tese": "A indústria acumula o maior pacote: reduz o custo CBAM na UE com eletricidade renovável verificada, fortalece o Escopo 2 do IFRS S2, gera CRVE no SBCE e capta com rating ESG melhor — o mesmo selo horário serve a todos.",
+      "tese": "A indústria acumula o maior pacote: reduz o custo CBAM na UE nos bens em que a eletricidade entra no cálculo (cimento e fertilizantes), fortalece o Escopo 2 do IFRS S2, gera CRVE no SBCE e capta com rating ESG melhor — o mesmo selo horário serve a todos.",
       "beneficios": [
         "ind_cbam",
         "pj_ifrs_s2",
@@ -779,7 +780,7 @@
         "pnast_acesso_transmissao"
       ],
       "sem_soa": "acesso pleiteado sem evidência de desempenho verificável",
-      "status": "verificado"
+      "status": "pendente"
     },
     {
       "id": "pkg_seguros_risco",
@@ -827,7 +828,7 @@
       "vetor": "CBAM exportável",
       "titulo": "HEC + fator de emissão horário (Evidence Pack ISAE 3000)",
       "formato": "JSON assinado · PDF sumário",
-      "descricao": "Certificado horário de eletricidade renovável e fator de emissão real, no formato que o declarante CBAM da UE exige."
+      "descricao": "Certificado horário de eletricidade renovável e fator de emissão real, para uso do declarante CBAM."
     },
     {
       "vetor": "Compliance SBCE",
@@ -839,7 +840,7 @@
       "vetor": "Contencioso regulatório",
       "titulo": "Laudo de Curtailment Canônico + sHEC",
       "formato": "PDF assegurável · CSV",
-      "descricao": "Evidência horária de geração frustrada, reconciliada contra o ONS, para sustentar tese de ressarcimento (Lei 15.269)."
+      "descricao": "Evidência horária de geração frustrada, reconciliada contra o ONS, para conferir a apuração da compensação do art. 1º-B da Lei 10.848/2004."
     },
     {
       "vetor": "Data centers 24/7 CFE",
@@ -861,9 +862,9 @@
     },
     {
       "vetor": "PNAST & acesso",
-      "titulo": "Evidência de desempenho para acesso à transmissão (RTE + disponibilidade)",
+      "titulo": "Evidência de desempenho do ativo (RTE + disponibilidade)",
       "formato": "PDF · CSV auditável",
-      "descricao": "Prova horária de RTE e disponibilidade do ativo, para instruir habilitação e temporada de acesso no âmbito da PNAST (ONS)."
+      "descricao": "Prova horária de RTE e disponibilidade do ativo."
     },
     {
       "vetor": "Seguros & Prova de Risco",
@@ -913,21 +914,21 @@
       "vetores": [
         "BESS auditável"
       ],
-      "porque_certificar": "Outorga de 35 anos com cobrança integral de rede: a prova de performance sustenta o caso financeiro."
+      "porque_certificar": "Outorga de 35 anos: a prova de performance sustenta o caso financeiro."
     },
     {
       "fato_id": "ANEEL-REN-1161-1162-2026",
       "vetores": [
         "BESS auditável"
       ],
-      "porque_certificar": "Consolidação regulatória do BESS — o selo horário torna o ativo elegível e auditável por terceiro."
+      "porque_certificar": "Consolidação regulatória do BESS — o selo horário torna o desempenho do ativo auditável por terceiro."
     },
     {
       "fato_id": "EPE-LRCAP-2026-FAQ-MANUAL",
       "vetores": [
         "BESS auditável"
       ],
-      "porque_certificar": "Cadastro e habilitação técnica; a prova de RTE e disponibilidade é anexo do processo de participação."
+      "porque_certificar": "Cadastro na EPE encerrado em 31/07/2026 e habilitação técnica prevista para 17/11/2026; a RTE mínima de 85% é referida ao ponto de medição por todo o contrato, e o edital definirá como apurá-la."
     },
     {
       "fato_id": "CCEE-LEI-15269-2025",
@@ -935,7 +936,7 @@
         "BESS auditável",
         "Contencioso regulatório"
       ],
-      "porque_certificar": "Ressarcimento de curtailment (REL/CNF) exige evidência horária reconciliada contra o ONS."
+      "porque_certificar": "A compensação dos cortes por indisponibilidade externa e por confiabilidade elétrica do período do art. 1º-B da Lei 10.848/2004 é apurada pelo ONS e calculada pela CCEE (§§ 3º e 4º), mediante termo de compromisso; a evidência horária reconciliada permite ao gerador conferir essa apuração."
     },
     {
       "fato_id": "ANEEL-CP-045-2019",
@@ -943,7 +944,7 @@
         "Contencioso regulatório",
         "BESS auditável"
       ],
-      "porque_certificar": "Tratamento do constrained-off em deliberação; o corte medido pela regra canônica sustenta a tese."
+      "porque_certificar": "Critérios para redução ou limitação de geração estabelecidos pela REN ANEEL 1.170/2026 (DOU de 09/10/2026); a evidência horária do corte permite conferir a apuração."
     },
     {
       "fato_id": "ANEEL-CP-001-2026",
