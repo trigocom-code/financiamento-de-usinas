@@ -1,10 +1,11 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-10-14T08:25:01-03:00",
+                  "gerado_em":  "2026-10-14T12:25:01-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
                      "_bak_acesso-transmissao-pnast_2026-09-01.html":  "2026-09-01T08:39:23-03:00",
+                     "_bak_acesso-transmissao-pnast_2026-10-14_0834.html":  "2026-09-01T08:39:36-03:00",
                      "_bak_ancilares-auditaveis-soa_2026-10-13.html":  "2026-08-21T13:04:48-03:00",
                      "_bak_baterias-curtailment_2026-10-13.html":  "2026-08-21T13:04:48-03:00",
                      "_bak_bitcoin-verde-soa_2026-09-08.html":  "2026-09-08T09:46:05-03:00",
@@ -19,6 +20,7 @@
                      "_bak_Catalogo_SOA_2026-10-13.html":  "2026-07-01T19:44:08-03:00",
                      "_bak_Catalogo_Vivos_SOA_2026-10-13.html":  "2026-09-17T21:57:26-03:00",
                      "_bak_catalogo-vetores-soa_2026-10-13.html":  "2026-07-04T23:42:40-03:00",
+                     "_bak_contencioso-curtailment_2026-10-14_0834.html":  "2026-08-21T13:04:48-03:00",
                      "_bak_Folder_Vivo_CCEE_GitHub_2026-10-13.html":  "2026-07-05T06:47:10-03:00",
                      "_bak_Folder_Vivo_EPE_GitHub_2026-10-13.html":  "2026-07-05T06:46:50-03:00",
                      "_bak_Folder_Vivo_ONS_GitHub_2026-10-13.html":  "2026-07-05T06:46:25-03:00",
@@ -38,7 +40,7 @@
                      "_QSV_Gate_Portaria136_atualizacao_semaforo.html":  "2026-07-13T10:45:27-03:00",
                      "_QSV_Gate_protocolo_3topicos_RELATORIO_semaforo.html":  "2026-07-04T13:59:03-03:00",
                      "_QSV_Matriz_Catalogo_por_link.html":  "2026-07-04T15:58:27-03:00",
-                     "acesso-transmissao-pnast.html":  "2026-09-01T08:39:36-03:00",
+                     "acesso-transmissao-pnast.html":  "2026-10-14T08:34:18-03:00",
                      "acu-iii-lrcap-soa.html":  "2026-08-05T16:43:23-03:00",
                      "Agenda_Eventos_Publico_SOA.json":  "2026-10-13T16:41:47-03:00",
                      "Agenda_Inscricoes_Publico_SOA.json":  "2026-10-13T16:41:47-03:00",
@@ -51,7 +53,7 @@
                      "Catalogo_Vivos_SOA.html":  "2026-10-13T17:55:06-03:00",
                      "catalogo-vetores-soa.html":  "2026-10-13T16:41:37-03:00",
                      "certificacao-esg-auditavel.html":  "2026-08-21T13:04:48-03:00",
-                     "contencioso-curtailment.html":  "2026-08-21T13:04:48-03:00",
+                     "contencioso-curtailment.html":  "2026-10-14T08:34:25-03:00",
                      "eventos-soa.html":  "2026-07-11T14:15:45-03:00",
                      "Fatos_ANEEL_Folder_SOA.bak_consolidadora_20260917.json":  "2026-08-26T08:54:03-03:00",
                      "Fatos_ANEEL_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-17T08:48:08-03:00",
