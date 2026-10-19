@@ -1,33 +1,20 @@
 {
   "_meta": {
     "titulo": "Inscrições — Eventos do Setor Elétrico em SP — Monitor SOA/SOS",
-    "atualizado_em": "2026-10-13",
+    "atualizado_em": "2026-10-19",
     "links_verificados_em": "2026-10-12",
     "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ANE, ABCE, APINE, CIGRE-Brasil, CCEE)",
     "nota": "Trilho de inscrições dos eventos do setor em São Paulo. Cada item leva ao link oficial de credenciamento. Datas e valores confirmar na página oficial. Eventos com credenciamento a abrir levam à página oficial do evento ou da entidade organizadora. O monitor regenera este JSON: eventos já encerrados saem sozinhos e a data de verificação dos links é atualizada quando os links são reabertos.",
     "nota_run_2026_10_12": "Varredura de 12 de outubro. Os sete links de inscrição do trilho foram reabertos e confirmados nesta rodada: ingressos do encontro do setor solar de outubro, formulário do simpósio jurídico, inscrição da feira de energia eólica, inscrição do seminário de cibersegurança (aberta no navegador, depois de duas rodadas sem conferência), inscrição do encontro de líderes ambientais, notícia e credenciamento do fórum da câmara de comercialização e página do congresso de data centers e energia crítica. A página de eventos da associação do setor solar também foi reaberta e segue sem data para o encontro nacional. Nenhum evento entrou e nenhum saiu.",
-    "nota_run_2026_10_13": "Atualização de 13 de outubro: programação do fórum da câmara de comercialização publicada. Os demais links não foram reabertos hoje; a data de verificação dos links segue a de 12 de outubro."
+    "nota_run_2026_10_13": "Atualização de 13 de outubro: programação do fórum da câmara de comercialização publicada. Os demais links não foram reabertos hoje; a data de verificação dos links segue a de 12 de outubro.",
+    "nota_run_2026_10_19": "Varredura de 19 de outubro. Reabertos e confirmados nesta rodada: formulário do simpósio jurídico, inscrição da feira de energia eólica, inscrição do encontro de líderes ambientais, página do fórum da câmara de comercialização e página do congresso de data centers e energia crítica. A página de inscrição do seminário de cibersegurança não carregou o conteúdo e vale a conferência de 12 de outubro; por isso a data geral de verificação dos links fica em 12 de outubro. Saiu do trilho o encontro do setor solar de 19 e 20 de outubro, com ingressos esgotados."
   },
   "abertos": [
-    {
-      "data_ini": "2026-10-19",
-      "data_fim": "2026-10-20",
-      "titulo": "Canal Conecta VI — Canal Solar",
-      "quando": "19–20/10 · FAPCOM, Rua Major Maragliano 191, Vila Mariana, São Paulo/SP · página oficial de ingressos reaberta em 12/10, com venda aberta · lote VIP esgotado",
-      "badges": [
-        {
-          "label": "Pago",
-          "cls": "pago"
-        }
-      ],
-      "url": "https://cursos.canalsolar.com.br/canal-conecta/",
-      "cta": "Inscrever-se"
-    },
     {
       "data_ini": "2026-10-21",
       "data_fim": "2026-10-22",
       "titulo": "XXXII Simpósio Jurídico ABCE",
-      "quando": "21–22/10 · 09h–18h · Blue Tree Premium Faria Lima, São Paulo/SP · presencial · formulário de inscrição reaberto em 12/10, sem aviso de encerramento",
+      "quando": "21–22/10 · 09h–18h · Blue Tree Premium Faria Lima, São Paulo/SP · presencial · formulário de inscrição reaberto em 19/10, aceitando respostas",
       "badges": [
         {
           "label": "Pago",
@@ -41,7 +28,7 @@
       "data_ini": "2026-10-27",
       "data_fim": "2026-10-29",
       "titulo": "Brazil Windpower 2026 — ABEEólica + GWEC",
-      "quando": "27–29/10 · 10h–20h · São Paulo Expo, SP · página de ingressos reaberta em 12/10, com o 4º lote em venda",
+      "quando": "27–29/10 · 10h–20h · São Paulo Expo, SP · página de ingressos reaberta em 19/10, com o 4º lote em venda",
       "badges": [
         {
           "label": "Pago",
@@ -55,7 +42,7 @@
       "data_ini": "2026-10-28",
       "data_fim": "2026-10-29",
       "titulo": "II CIGRE Security — cibersegurança em infraestruturas críticas",
-      "quando": "28–29/10 · SP Hall, esquina da Av. Juscelino Kubitschek com a Av. Chedid Jafet, São Paulo/SP · página de inscrição reaberta em 12/10, com inscrições abertas · data conferida no site do CIGRE-Brasil em 07/10",
+      "quando": "28–29/10 · SP Hall, esquina da Av. Juscelino Kubitschek com a Av. Chedid Jafet, São Paulo/SP · inscrições abertas na conferência de 12/10 · boleto só até 21/10",
       "badges": [
         {
           "label": "Pago",
@@ -69,7 +56,7 @@
       "data_ini": "2026-11-09",
       "data_fim": "2026-11-11",
       "titulo": "17º LASE — Líderes Ambientais no Setor de Energia — COGEN",
-      "quando": "09–11/11 · Hotel Pullman São Paulo Vila Olímpia, Rua Olimpíadas 205, São Paulo/SP · página de inscrição reaberta em 12/10, com ingressos disponíveis",
+      "quando": "09–11/11 · Hotel Pullman São Paulo Vila Olímpia, Rua Olimpíadas 205, São Paulo/SP · página de inscrição reaberta em 19/10",
       "badges": [
         {
           "label": "Pago",
@@ -83,7 +70,7 @@
       "data_ini": "2026-11-17",
       "data_fim": "2026-11-17",
       "titulo": "2º Fórum Análise Setorial CCEE",
-      "quando": "17/11 · 8h–18h · Grand Hyatt São Paulo, Av. das Nações Unidas 13.301, São Paulo/SP · presencial e online · programação publicada em 13/10 · credenciamento reaberto em 12/10",
+      "quando": "17/11 · 8h–18h · Grand Hyatt São Paulo, Av. das Nações Unidas 13.301, São Paulo/SP · presencial e online · página de inscrição reaberta em 19/10",
       "badges": [
         {
           "label": "Pago",
@@ -97,7 +84,7 @@
       "data_ini": "2026-12-01",
       "data_fim": "2026-12-02",
       "titulo": "CDEC 2026 — Congresso de Data Centers e Energia Crítica",
-      "quando": "01–02/12 · Novotel Center Norte, Av. Zaki Narchi 500, Vila Guilherme, São Paulo/SP · inscrições abertas, segundo lote até 20/10 · página oficial reaberta em 12/10",
+      "quando": "01–02/12 · Novotel Center Norte, Av. Zaki Narchi 500, Vila Guilherme, São Paulo/SP · segundo lote até 20/10, terceiro lote até 01/12 · página oficial reaberta em 19/10",
       "badges": [
         {
           "label": "Pago",
@@ -113,7 +100,7 @@
       "data_ini": "2026-12-02",
       "data_fim": "2026-12-03",
       "titulo": "6º Encontro Nacional ABSOLAR",
-      "quando": "02–03/12 · São Paulo/SP · data a confirmar; nenhuma página oficial lista a edição de 2026, pela 16ª leitura, em 12/10",
+      "quando": "02–03/12 · São Paulo/SP · data a confirmar; nenhuma página oficial lista a edição de 2026, pela 17ª leitura, em 19/10",
       "url": "https://eventos.absolar.org.br/"
     }
   ]
