@@ -1,136 +1,21 @@
 ﻿<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SOA/SOS · Prova Horária para Data Centers</title>
+<meta name="robots" content="noindex">
+<title>SOA/SOS · Conteúdo retirado do site</title>
 <style>
-:root{color-scheme:light;--navy:#040F2F;--teal:#1C5AAD;--amber:#FC9D27;--royal:#1C5AAD;--grey:#4B5563;--line:#E0E2E2;--orange:#FC9D27;--yellow:#FEC73D;--wash:#F4F6F8;--line:#E2E6EB}
+:root{color-scheme:light;--navy:#040F2F;--royal:#1C5AAD;--orange:#FC9D27;--yellow:#FEC73D;--grey:#4B5563;--line:#E2E6EB}
 *{box-sizing:border-box}body{margin:0;background:#fff;color:#040F2F;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
-.wrap{max-width:1100px;margin:0 auto;padding:clamp(20px,5vw,40px)}
-h1{font-size:30px;margin:0 0 2px}.sub{color:var(--grey);font-size:14px}
-.tag{color:var(--teal);font-weight:bold;font-size:18px;margin:8px 0 14px}
-.band{background:var(--navy);color:#fff;border-radius:8px;padding:16px 18px;margin:10px 0}
-.band b{font-size:20px}.band span{color:#D5E2F0;font-size:14px;display:block;margin-top:4px}
-.fresh{display:flex;align-items:center;gap:10px;border-radius:8px;padding:12px 16px;margin:12px 0;font-size:14px}
-.fresh.ok{background:#EAF6EC;border-left:6px solid #1B5E20;color:#1B5E20}
-.fresh.warn{background:#FBF3E2;border-left:6px solid var(--amber);color:#7a4a00}
-.src{font-size:11.5px;color:var(--grey);margin:-6px 0 6px}
-.lastro{background:#FBF3E2;border-left:6px solid var(--amber);border-radius:6px;padding:12px 16px;font-size:14px;margin:10px 0}
-h2{color:var(--navy);font-size:19px;margin:22px 0 8px;border-bottom:2px solid var(--line);padding-bottom:4px}
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0}
-.col{border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.col .h{color:#fff;font-weight:bold;font-size:13px;padding:7px 12px}
-.col.b .h{background:var(--teal)}.col.p .h{background:var(--royal)}
-.col ul{margin:0;padding:10px 14px 12px 26px}.col li{font-size:13px;margin-bottom:5px}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0}
-.card{border:1px solid var(--line);border-radius:8px;padding:12px 14px}
-.card .t{font-weight:bold;font-size:14px}.card .v{color:var(--grey);font-size:12.5px;margin:4px 0 8px}
-.card .n{font-size:11.5px;color:var(--grey)}
-.badge{display:inline-block;font-size:11px;font-weight:bold;color:#fff;border-radius:20px;padding:2px 10px;margin-bottom:6px}
-.age{font-size:11px;color:var(--grey);margin-top:6px}.age.stale{color:#9A3412;font-weight:bold}
-.note{background:#F3F6F9;border-left:6px solid var(--teal);border-radius:6px;padding:12px 16px;font-size:13px;margin:14px 0}
-.foot{border-top:3px solid var(--navy);margin-top:20px;padding-top:10px;font-size:12px}
-.foot b{color:var(--navy)}.legend{font-size:11.5px;color:var(--grey);margin-top:6px}
-@media(max-width:600px){.cols,.cards{grid-template-columns:1fr}}
-.cc{width:100%;display:block;border-radius:8px;margin:6px 0 16px;box-shadow:0 1px 6px rgba(15,43,70,.18)}
-.callout{display:block;text-decoration:none;background:#040F2F;color:#fff;border-radius:8px;padding:13px 18px;margin:6px 0 14px;border-left:6px solid #FC9D27}.callout b{color:#fff}.cobadge{display:inline-block;background:#FC9D27;color:#fff;font-size:10px;font-weight:bold;border-radius:20px;padding:2px 10px;margin-right:8px}.callout .cogo{display:inline-block;margin-top:6px;color:#AEC4DC;font-weight:bold;font-size:13px}.callout.off{opacity:.6;pointer-events:none}
-.hero{background:linear-gradient(135deg,#040F2F 0%,#163c61 100%);color:#fff;border-radius:10px;padding:22px 26px;margin:14px 0;border-left:6px solid #FC9D27}.heroq{font-size:22px;font-weight:bold;line-height:1.34}.heroq .amb{color:#FEC73D}.heros{font-size:14px;color:#D5E2F0;margin-top:11px;line-height:1.5}.heros b{color:#fff}
-.grid6{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:8px 0}.gcard{border:1px solid var(--line);border-radius:8px;padding:12px 14px;border-top:3px solid var(--teal)}.gcard .gt{font-weight:bold;color:var(--navy);font-size:14px;margin-bottom:4px}.gcard .gd{font-size:12.5px;color:var(--grey);line-height:1.45}@media(max-width:600px){.grid6{grid-template-columns:1fr}}
-.lead2{font-size:13.5px;color:var(--grey);margin:2px 0 10px}.steps3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:8px 0}.stp{background:var(--wash);border-radius:8px;padding:12px 14px;font-size:12.5px;color:var(--grey);line-height:1.45}.stp b{color:var(--navy)}.stp .n{display:inline-flex;width:22px;height:22px;border-radius:50%;background:var(--orange);color:#fff;font-weight:bold;align-items:center;justify-content:center;margin-right:6px;font-size:12px;vertical-align:middle}.impact{display:flex;gap:18px;align-items:center;background:var(--navy);color:#fff;border-radius:10px;padding:18px 22px;margin:16px 0}.impact .ibig{font-size:30px;font-weight:bold;color:var(--yellow);white-space:nowrap;line-height:1.1}.impact .itxt{font-size:13px;line-height:1.5}.ugrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:8px 0}.ucard{border:1px solid var(--line);border-radius:8px;padding:12px 14px}.ucard .ct{font-weight:bold;color:var(--navy);font-size:13.5px;margin-bottom:4px}.ucard .cd{font-size:12.5px;color:var(--grey);line-height:1.45}@media(max-width:600px){.steps3,.ugrid{grid-template-columns:1fr}.impact{flex-direction:column;align-items:flex-start;gap:8px}}
-.updbar{font-size:12px;color:var(--grey);text-align:right;margin:6px 2px 2px}
-.cta{background:var(--navy);color:#fff;border-radius:12px;padding:22px 24px;margin:18px 0;text-align:center}.cta .ctah{font-size:20px;font-weight:bold;color:var(--yellow);margin-bottom:4px}.cta .ctad{font-size:13.5px;margin-bottom:14px;color:#dbe4ee}.ctabtns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.ctabtn{display:inline-block;background:var(--orange);color:#08203a;font-weight:bold;text-decoration:none;padding:11px 22px;border-radius:8px;font-size:14px}.ctabtn.alt{background:#25D366;color:#fff}
+.wrap{max-width:1100px;margin:0 auto;padding:clamp(16px,4vw,30px)}
+.band{background:var(--navy);color:#fff;border-radius:8px;padding:18px 20px;margin:10px 0;border-left:6px solid var(--orange);font-size:17px}
+.band a{color:var(--yellow);font-weight:bold}
 </style></head><body>
-<div class="soa-stamp" style="position:fixed;top:9px;right:12px;z-index:99999"><span style="display:inline-block;background:#0b1f4d;color:#FEC73D;font:600 11px/1.1 Arial,Helvetica,sans-serif;letter-spacing:.03em;padding:5px 11px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.35)">● Atualizado em 17/09/2026 às 14h45</span></div>
-<div style="max-width:1100px;margin:0 auto;padding:clamp(16px,4vw,30px) clamp(16px,4vw,30px) 0;font-family:Arial,Helvetica,sans-serif"><img src="https://trigocom-code.github.io/financiamento-de-usinas/Solar_One-Logo_capa.png" alt="SOA/SOS — Prova Horária para Data Centers" style="width:100%;display:block;border-radius:14px;box-shadow:0 4px 16px rgba(15,43,70,.14)"/></div>
+<div style="max-width:1100px;margin:0 auto;padding:clamp(16px,4vw,30px) clamp(16px,4vw,30px) 0;font-family:Arial,Helvetica,sans-serif"><img src="https://trigocom-code.github.io/financiamento-de-usinas/Solar_One-Logo_capa.png" alt="SOA/SOS" style="width:100%;display:block;border-radius:14px;box-shadow:0 4px 16px rgba(15,43,70,.14)"/></div>
 <div class="wrap">
-
-
-
-<div class="band"><b>Prova Horária para Data Centers</b><span>Matching 24/7 CFE · fontes de energia no relatório do REDATA · ESG auditável — evidência ex-post por hora, não só no ano.</span></div>
-
-<div class="hero"><div class="heroq">Provar a origem da energia — não só no ano, na <span class="amb">hora</span>.</div><div class="heros">O REDATA (Lei 15.504/2026) exige, para a habilitação, o compromisso de atender a totalidade da demanda de energia elétrica por contratos de suprimento ou autoprodução de fontes renováveis ou de baixa emissão, na forma de regulamento. A lei não exige matching horário nem certificado: a forma de comprovação virá no regulamento. Já o padrão <b>24/7 CFE</b>, adotado por compradores, trabalha com <b>matching horário</b>, e o certificado anual (I-REC) não mostra o MWh consumido às 3h da manhã. A SOA/SOS propõe um <b>Evidence Pack horário</b>, ex-post, com a geração conferida contra o registro público oficial.</div></div>
-<div class="lastro"><b>Nosso lastro:</b> mais de 140 milhões de registros oficiais do sistema elétrico (ONS, CCEE, ANEEL, EPE) — a prova é verificável contra o registro público, não depende da palavra da SOA/SOS.</div>
-
-<h2>Onde a SOA entra</h2>
-<div class="cols">
-<div class="col b"><div class="h">PARA O OPERADOR / HYPERSCALER</div><ul><li>Evidence Pack horário: a medição de consumo cedida pelo cliente confrontada, hora a hora, com a geração contratada</li><li>Subsídio ao relatório público das fontes de energia exigido pelo REDATA (a forma de comprovação depende do regulamento; a habilitação é da Receita Federal)</li><li>Matching granular por site/região para metas 24/7 CFE</li><li>Insumo para o relato de sustentabilidade (CDP, TCFD, IFRS S2)</li></ul></div>
-<div class="col p"><div class="h">PARA O INVESTIDOR / DUE DILIGENCE</div><ul><li>Evidência ex-post e reprodutível dos claims ESG do ativo (não é asseguração nem certificação)</li><li>Trilha que o auditor pode conferir no relato IFRS S2</li><li>Geração conferida contra o registro público — reprodutível por terceiro</li><li>Cadeia de integridade criptográfica (HEC ERC-1155 implementado e validado em testnet)</li></ul></div></div>
-
-<h2>O momento — explosão de demanda</h2>
-<div class="grid6">
-<div class="gcard"><div class="gt">1 GW comissionado</div><div class="gd">capacidade de TI comissionada no Brasil (Q1 2026) — marco histórico. ABDC/datacenterHawk.</div></div>
-<div class="gcard"><div class="gt">38 GW em pedidos</div><div class="gd">pedidos de acesso à rede para data centers (MME, jun/2026).</div></div>
-<div class="gcard"><div class="gt">R$ 159 bilhões</div><div class="gd">investimentos previstos no setor no Brasil (TrendsCE, jun/2026).</div></div>
-<div class="gcard"><div class="gt">3 GW até 2032</div><div class="gd">projeção de crescimento (~750 MW atuais → 3 GW), cenário REDATA.</div></div>
-<div class="gcard"><div class="gt">132 GW globais (2026)</div><div class="gd">+27% vs. 2025; projeção de 290 GW até 2030 (Gartner, jun/2026).</div></div>
-<div class="gcard"><div class="gt">Drivers</div><div class="gd">hyperscalers (AWS, Google, Microsoft, Oracle), IA generativa e soberania digital (LGPD).</div></div>
+<div class="band">Conteúdo retirado do site. Para conhecer o trabalho da SOA/SOS, volte à <a href="index.html">página inicial</a>.</div>
 </div>
-
-<div style="margin-top:2px;border:1px dashed #cbd5e1;border-left:4px solid #1C5AAD;border-radius:8px;padding:14px 18px;background:#f8fafc;margin-bottom:8px"><div style="font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:#64748b;margin-bottom:10px"><b>Contexto global &mdash; MarketsandMarkets · Data Center Tracker (2026)</b> &middot; fonte terceira, para enquadramento de mercado (n&atilde;o &eacute; dado SOA)</div><div class="grid6"><div class="gcard"><div class="gt">~68 GW</div><div class="gd">pipeline global de desenvolvimento de data centers (MnM, 2026).</div></div><div class="gcard"><div class="gt">~US$ 750 bi</div><div class="gd">capex global ligado &agrave; infraestrutura de IA; capacidade de IA +33%/ano (2023&ndash;2030), ~3&times; o DC convencional (MnM).</div></div><div class="gcard"><div class="gt">Energia = gargalo</div><div class="gd">a MnM aponta &ldquo;power constraints slowing new capacity deployment&rdquo; em todas as regi&otilde;es, com mandatos de energia renov&aacute;vel.</div></div></div></div>
-
-<h2>O problema — provar a origem da energia, hora a hora</h2>
-<p class="lead2">O REDATA (Lei 15.504, de 15/09/2026, origem PL 278/2026) condiciona a habilitação ao compromisso de atender <b>a totalidade da demanda de energia elétrica, por contratos de suprimento ou autoprodução, com fontes renováveis ou de baixa emissão</b>, na forma de regulamento, mais indicadores de sustentabilidade e eficiência hídrica (WUE até 0,05 L/kWh). A forma de comprovação ainda depende do regulamento, e a lei não exige matching horário. Em paralelo, o padrão <b>24/7 CFE</b> (Google, Microsoft, EnergyTag) trabalha com <b>matching horário, não anual</b>.</p>
-<div class="ugrid">
-<div class="ucard"><div class="ct">Matching só anual (I-REC)</div><div class="cd">Não prova que o MWh consumido às 3h foi coberto por renovável <b>naquela hora</b>.</div></div>
-<div class="ucard"><div class="ct">Sem rastreabilidade granular</div><div class="cd">Vulnerabilidade em auditoria ESG e na due diligence de investidores.</div></div>
-<div class="ucard"><div class="ct">Sem cadeia de integridade</div><div class="cd">Mais difícil sustentar, se questionadas, as fontes de energia declaradas no relatório público do REDATA.</div></div>
-</div>
-<div class="lastro">A própria Microsoft reconsiderou a meta 24/7 CFE diante do surto de demanda de IA (GeekWire, mai/2026) — prova de que o matching horário é difícil.</div>
-
-<h2>O paradoxo do curtailment</h2>
-<p class="lead2">Sobra renovável no Nordeste, e data centers são carga nova que pode se instalar perto dessa oferta. O REDATA não trata de localização junto à geração: o que a lei faz é reduzir em 20% as contrapartidas de mercado interno e de PD&amp;I para estabelecimentos no Norte, Nordeste e Centro-Oeste.</p>
-<div class="impact"><div class="ibig">Corte no NE</div><div class="itxt">Curtailment +16,7% vs. 2025 (jan–abr), concentrado no Nordeste (CE, BA, PI, PE, PB). Carga nova perto dessa oferta pode reduzir parte do corte, a depender da rede. A SOA registra a geração frustrada (sHEC), que prova frustração, não consumo. Fontes: ONS/Canal Solar, S&P Global e Fitch Ratings (mai/2026).</div></div>
-
-<h2>A camada SOA/SOS — Evidence Pack horário</h2>
-<p class="lead2"><b>1 · Camada probatória.</b> Reconstrução horária sobre dados oficiais, reprodutível por terceiro — a evidência não depende da palavra da SOA.</p>
-<div class="ugrid">
-<div class="ucard"><div class="ct">Reconstrução horária</div><div class="cd">hora a hora sobre os datasets oficiais do ONS (Dados Abertos).</div></div>
-<div class="ucard"><div class="ct">140M+ registros oficiais</div><div class="cd">reconciliação contra base com 140+ milhões de registros (ONS, CCEE, ANEEL, EPE).</div></div>
-<div class="ucard"><div class="ct">Trilha para o relato IFRS S2</div><div class="cd">reprodutível, para o auditor conferir; não substitui a asseguração.</div></div>
-</div>
-<p class="lead2"><b>2 · Camada de tokenização — HEC1155 Registry.</b> O recibo criptográfico que torna a prova interoperável e auditável por terceiro.</p>
-<div class="ugrid">
-<div class="ucard"><div class="ct">MVP em testnet</div><div class="cd">HEC ERC-1155 implementado e validado — 18/18 testes em fork Polygon Amoy (testnet).</div></div>
-<div class="ucard"><div class="ct">Token HEC (1 MWh)</div><div class="cd">carrega o hash do Evidence Pack, timestamp e metadados da usina.</div></div>
-<div class="ucard"><div class="ct">EnergyTag no roadmap</div><div class="cd">interoperabilidade com Granular Certificates (GCs) é objetivo de desenho, ainda não certificada.</div></div>
-</div>
-<div class="lastro"><b>Diferencial:</b> arquitetura com pedidos de patente depositados junto ao INPI (BR 10 2026 003913-6 e BR 10 2026 010655-0). O I-REC opera matching anual sem granularidade; plataformas de carbono (Toucan, ClimateTrade) não operam a camada probatória horária de eletricidade.</div>
-
-<h2>Duas formas de provar o 24/7 — e a que resolve</h2><p class="lead2">Comprar volume renovável no ano não prova energia limpa <b>na hora</b>. O que sustenta o CFE 24/7 é a correspondência hora a hora; o HEC horário <b>do próprio gerador (API)</b> foi desenhado para isso.</p><div class="cols"><div class="col p"><div class="h">MÉDIA ANUAL · REC · o padrão frágil</div><ul><li>Compra-se X MWh de certificado por <b>ano</b> e declara-se 100% renovável — compensação de <b>volume</b>, não de hora.</li><li>Esconde a hora suja: consome fóssil às 20h e "zera" com sol das 12h. Sob <b>CFE 24/7</b>, não se sustenta.</li><li>Certificado desacoplado da geração física — não prova correlação temporal.</li></ul></div><div class="col b"><div class="h">HEC HORÁRIO DO GERADOR (API) · QSV · resolve</div><ul><li>O <b>HEC</b> nasce da telemetria do <b>próprio gerador</b> quando o API é conectado, <b>casado hora a hora</b> com a medição de consumo cedida pelo data center.</li><li>Cada hora é validada pelo <b>QSV — Quad-Source Validation</b>: telemetria + reanálise climática + observação de superfície + vizinhança.</li><li>Prova de <b>correlação temporal real</b> — energia limpa na mesma hora, verificável e auditável, não a média do ano.</li></ul></div></div><div class="lastro"><b>A diferença que decide:</b> a média anual esconde a hora suja; o <b>HEC horário do gerador (API + QSV)</b> evidencia <b>cada hora</b> — o que o padrão 24/7 CFE pede.</div><h2>Quatro vetores de demanda</h2>
-<div class="grid6">
-<div class="gcard"><div class="gt">Operador de Data Center</div><div class="gd">REDATA: Evidence Pack mensal como subsídio ao relatório público das fontes de energia e à comprovação que o regulamento vier a exigir (a habilitação é da Receita Federal).</div></div>
-<div class="gcard"><div class="gt">Hyperscaler</div><div class="gd">24/7 CFE: evidência horária auditável; insumo para CDP/TCFD/IFRS S2; matching por site/região.</div></div>
-<div class="gcard"><div class="gt">Investidor / Fundo</div><div class="gd">due diligence ESG: evidência reprodutível dos claims do ativo e rastreabilidade para relatórios de impacto.</div></div>
-<div class="gcard"><div class="gt">Gerador renovável</div><div class="gd">curtailment: registro auditável da geração frustrada (sHEC), que prova frustração, não consumo.</div></div>
-</div>
-
-<h2>Como engajamos</h2>
-<div class="cols">
-<div class="col b"><div class="h">MODELOS COMERCIAIS</div><ul><li>Recorrente por site — Evidence Pack mensal, pricing por MW instalado</li><li>Portfólio multi-site — tier por capacidade agregada</li><li>REDATA — subsídio anual ao relatório das fontes de energia (não substitui a habilitação na Receita Federal)</li><li>Auditoria pontual — Evidence Pack para due diligence / ESG</li></ul></div>
-<div class="col p"><div class="h">PRÓXIMOS PASSOS</div><ul><li>1 · Reunião exploratória — institucional, sem custo</li><li>2 · Diagnóstico de prontidão — lacunas de evidência para 24/7 CFE e para o relato de energia do REDATA</li><li>3 · Caso piloto — Evidence Pack de um site, 4 semanas</li><li>4 · Contrato recorrente — portfólio, SLA mensal</li></ul></div></div>
-
-<h2>Quadro regulatório · <span id="verstamp"></span></h2>
-<div id="cards" class="cards"></div>
-<div class="legend">Status: <b style="color:#1B5E20">VIGENTE</b> · <b style="color:#1C5AAD">AGENDADO</b> · <b style="color:#9A3412">PENDENTE</b> · <b style="color:#FC9D27">EM DELIBERAÇÃO</b>.</div>
-</div>
-<section id="beneficios" style="max-width:1120px;margin:0 auto;padding:44px 20px;font-family:Arial,Helvetica,sans-serif">
-  <h2 style="color:#040F2F;font-size:26px;margin:0 0 4px">O protocolo SOA</h2>
-  <p style="color:#4a4f55;font-size:14px;max-width:80ch;line-height:1.6">O que entregamos, o que você ganha e o que a composição destrava — lido ao vivo da base canônica; atualiza sozinho quando um monitor regulatório muda. <span data-carimbo style="display:block;margin-top:6px;font-size:12px;color:#9aa0a6"></span></p>
-  <div data-composicao-vetor="Data centers 24/7 CFE"><p style="color:#9aa0a6">(carregando o protocolo SOA…)</p></div>
-</section>
-<div style="background:#040F2F;color:#c7cfe0;max-width:1100px;margin:34px auto 0;padding:34px 24px 46px;text-align:center;font:400 12.5px/1.8 Arial,Helvetica,sans-serif;border-radius:16px">
-  <div style="margin:0 auto 18px;padding-bottom:16px;border-bottom:1px solid #1e3a5f">
-    <div style="color:#fff;font-weight:700;font-size:16px;margin-bottom:4px">Solicitar um piloto</div>
-    <div style="color:#c7cfe0;font-size:12.5px;margin-bottom:12px">Uma reunião exploratória e um diagnóstico — sem custo, sem compromisso.</div>
-    <a href="mailto:limonta@solaroneaccount.com?subject=Solicitar%20um%20piloto%20SOA%2FSOS" style="display:inline-block;background:#FC9D27;color:#04122e;text-decoration:none;font-weight:700;font-size:12.5px;border-radius:8px;padding:9px 18px;margin:3px 5px">Falar por e-mail</a>
-    <a href="https://wa.me/5544999720477" target="_blank" rel="noopener" style="display:inline-block;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:12.5px;border-radius:8px;padding:9px 18px;margin:3px 5px">WhatsApp</a>
-  </div>
-  <div style="color:#FEC73D;font-weight:700;font-size:17px;margin-bottom:8px">Obrigado.</div>
+<div style="background:#040F2F;color:#c7cfe0;max-width:1100px;margin:34px auto 0;padding:28px 24px 34px;text-align:center;font:400 12.5px/1.8 Arial,Helvetica,sans-serif;border-radius:16px">
   <b style="color:#fff">SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40<br>
   Luiz Henrique Limonta (CEO) · limonta@solaroneaccount.com · +55 44 99972-0477<br>
   Otávio Augusto Ferrari Pedro (CTO) · pedro@solaroneaccount.com · +55 44 99764-3333<br>
-  <span style="color:#FEC73D">SOA/SOS · Sistema Operacional de Sustentabilidade · Soluções em Energia</span><br>
-  <span style="color:#8a94a6;font-size:11px">Três pedidos de patente depositados no INPI · 31 reivindicações · PCT único até 19/02/2027 · dados de fontes oficiais (ONS · ANEEL · EPE · MME · CCEE) · material informativo — não constitui recomendação de investimento</span>
+  <span style="color:#FEC73D">SOA/SOS · Sistema Operacional de Sustentabilidade · Soluções em Energia</span>
 </div>
-<script src="/financiamento-de-usinas/soa-carimbo.js" defer></script>
-<script src="/financiamento-de-usinas/soa-quadro-vivo.js" defer></script>
-<script src="/financiamento-de-usinas/soa-sync-fatos.js" data-fontes="Fatos_Regulatorios_Folder_SOA.json,Fatos_Beneficios_ESG_Folder_SOA.json"></script>
 </body></html>
-

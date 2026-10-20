@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Seguros de Renováveis — SOA/SOS · Prova de Risco</title>
-  <meta name="description" content="A camada de prova de risco para o seguro de renováveis. Geração e curtailment auditáveis, hora a hora — do sinistro ao gatilho paramétrico."/>
+  <title>Seguros de Renováveis — SOA/SOS · Evidência de Risco</title>
+  <meta name="description" content="A infraestrutura de evidência de risco para o seguro de renováveis. Geração e curtailment auditáveis, hora a hora — do sinistro ao gatilho paramétrico."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
@@ -46,7 +46,7 @@
     .lastro b{color:var(--orange)}
 
     /* STATS */
-    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 22px}
+    .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:0 0 22px}
     .stat{border:1.5px solid var(--line);border-radius:var(--r-md);padding:16px 12px;text-align:center;background:var(--snow);transition:box-shadow .15s}
     .stat:hover{box-shadow:var(--sh-md)}
     .stat .n{font-family:var(--f-serif);font-size:24px;color:var(--royal);display:block;line-height:1.1;margin-bottom:4px}
@@ -147,7 +147,7 @@
 </style>
 </head>
 <body>
-<div class="soa-stamp" style="position:fixed;top:9px;right:12px;z-index:99999"><span style="display:inline-block;background:#0b1f4d;color:#FEC73D;font:600 11px/1.1 Arial,Helvetica,sans-serif;letter-spacing:.03em;padding:5px 11px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.35)">● Atualizado em 21/08/2026</span></div>
+<div class="soa-stamp" style="position:fixed;top:9px;right:12px;z-index:99999"><span style="display:inline-block;background:#0b1f4d;color:#FEC73D;font:600 11px/1.1 Arial,Helvetica,sans-serif;letter-spacing:.03em;padding:5px 11px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.35)">● Atualizado em 19/10/2026</span></div>
 <div style="max-width:1100px;margin:0 auto;padding:clamp(16px,4vw,30px) clamp(16px,4vw,30px) 0;font-family:Arial,Helvetica,sans-serif"><img src="https://trigocom-code.github.io/financiamento-de-usinas/Solar_One-Logo_capa.png" alt="SOA/SOS — Seguros de Renováveis" style="width:100%;display:block;border-radius:14px;box-shadow:0 4px 16px rgba(15,43,70,.14)"/></div>
 
 <div class="wrap">
@@ -157,11 +157,11 @@
 <div class="doc-h" style="margin-bottom:8px">
   <h1>Seguros de Renováveis</h1>
   <div class="doc-sub">SOA/SOS &middot; Sustainability Operating System &middot; Solu&ccedil;&otilde;es em Energia</div>
-  <div class="doc-tag">A camada de prova de risco para o seguro de renov&aacute;veis</div>
+  <div class="doc-tag">A infraestrutura de evid&ecirc;ncia de risco para o seguro de renov&aacute;veis</div>
 </div>
 
 <div class="hero">
-  <div class="hero-pill">&#9679; Mercado param&eacute;trico &middot; US$ 17 bi → US$ 33 bi (2025→2032)</div>
+  <div class="hero-pill">&#9679; Mercado param&eacute;trico</div>
   <div class="hero-q">O subscritor precifica renov&aacute;vel <span class="hl">no escuro</span>, e o seguro param&eacute;trico cresce mas trava no <span class="hl">basis risk</span>. A SOA/SOS traz o dado-verdade &mdash; gera&ccedil;&atilde;o e curtailment audit&aacute;veis, hora a hora &mdash; que falta ao mercado segurador.</div>
   <div class="hero-s" style="margin-top:10px">A SOA n&atilde;o &eacute; seguradora nem corretora: &eacute; a fonte de dado e evid&ecirc;ncia neutra que torna o risco de renov&aacute;veis mensur&aacute;vel, do sinistro (claims) &agrave; subscri&ccedil;&atilde;o e ao gatilho param&eacute;trico.</div>
 </div>
@@ -172,8 +172,6 @@
 
 <div class="stats">
   <div class="stat alert"><span class="n">20,6%</span><span class="l">curtailment BR 2025 — energia solar+e&oacute;lica cortada (ONS)</span></div>
-  <div class="stat alert"><span class="n">R$ 6,5 bi</span><span class="l">perdas econ&ocirc;micas de curtailment em 2025 (Volt Robotics / O Globo)</span></div>
-  <div class="stat"><span class="n">US$ 17 bi</span><span class="l">mercado param&eacute;trico 2025 &rarr; US$ 33 bi em 2032 (KBV/SNS)</span></div>
   <div class="stat"><span class="n">89 mi+</span><span class="l">registros de curtailment no banco SOA/SOS</span></div>
 </div>
 
@@ -185,18 +183,18 @@
   </div>
   <div class="ctx-item">
     <h4>O problema regulat&oacute;rio que cria o risco</h4>
-    <p>A REN ANEEL 1.030/2022 previa ressarcimento por "indisponibilidade externa" (transmiss&atilde;o); a <b>Lei 15.269/2025</b> ampliou a compensa&ccedil;&atilde;o tamb&eacute;m &agrave; <b>confiabilidade el&eacute;trica (CNF, condicionada)</b>, mas manteve a <b>raz&atilde;o energ&eacute;tica (ENE)</b> — a maior fatia dos cortes — sem ressarcimento e integralmente com o gerador. Esse &eacute; o risco que o seguro precisa cobrir e que a SOA/SOS consegue provar.</p>
+    <p>A REN ANEEL 1.030/2022 previa ressarcimento por "indisponibilidade externa" (REL, transmiss&atilde;o). Com a <b>Lei 15.269/2025</b>, para REL, confiabilidade el&eacute;trica (CNF) e sobreoferta: a REL entra no ESS (§ 10, VI, da Lei 10.848, com a redação da Lei 15.269/2025); a CNF é vedada só nas hipóteses do § 11, I; a sobreoferta é <b>VEDADA</b> (§ 11, II); de 01/09/2023 a 25/11/2025, REL e CNF são compensáveis pelo art. 1º-B, mediante termo de compromisso; escapar da vedação não cria direito automático. O corte sem compensa&ccedil;&atilde;o fica com o gerador: esse &eacute; o risco que o seguro precisa cobrir, e a SOA/SOS o descreve por mem&oacute;ria de c&aacute;lculo reproduz&iacute;vel.</p>
   </div>
 </div>
 
 <div class="cta-early">
   <div>
-    <div class="t">Avaliar a camada de prova de risco para a sua carteira de renov&aacute;veis?</div>
-    <div class="d">Specimen de curtailment-risk de um barramento, do banco real &mdash; sem custo, sem compromisso.</div>
+    <div class="t">Avaliar a infraestrutura de evid&ecirc;ncia de risco para a sua carteira de renov&aacute;veis?</div>
+    <div class="d">Conversa de 20 a 25 minutos, sem compromisso. O trabalho é pago, com preço fixo escrito antes.</div>
   </div>
   <div class="cta-btns">
-    <a class="btn-wt" href="mailto:limonta@solaroneaccount.com?subject=Seguros%20Renov%C3%A1veis%20%E2%80%94%20SOA%2FSOS%20Specimen&body=Ol%C3%A1%2C%20gostaria%20de%20avaliar%20a%20camada%20de%20prova%20de%20risco%20SOA%2FSOS%20para%20a%20nossa%20carteira%20de%20renov%C3%A1veis.">Falar por e-mail &rarr;</a>
-    <a class="btn-wa" target="_blank" rel="noopener" href="https://wa.me/5544999720477?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20specimen%20de%20curtailment-risk%20da%20SOA%2FSOS%20para%20renov%C3%A1veis.">WhatsApp</a>
+    <a class="btn-wt" href="mailto:limonta@solaroneaccount.com?subject=Seguros%20Renov%C3%A1veis%20%E2%80%94%20SOA%2FSOS%20Specimen&body=Ol%C3%A1%2C%20gostaria%20de%20avaliar%20a%20infraestrutura%20de%20evid%C3%AAncia%20de%20risco%20SOA%2FSOS%20para%20a%20nossa%20carteira%20de%20renov%C3%A1veis.">Falar por e-mail &rarr;</a>
+    <a class="btn-wa" target="_blank" rel="noopener" href="https://wa.me/5544999720477?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20uma%20proposta%20para%20o%20specimen%20de%20curtailment-risk%20da%20SOA%2FSOS%20para%20renov%C3%A1veis.">WhatsApp</a>
   </div>
 </div>
 
@@ -239,7 +237,7 @@
       <h3>Claims (ex-post)</h3>
     </div>
     <div class="mod-body">
-      Telemetria QSV imut&aacute;vel como prova de sinistro &agrave; prova de adultera&ccedil;&atilde;o.
+      Telemetria QSV imut&aacute;vel como evid&ecirc;ncia de sinistro assinada digitalmente.
       <div class="mod-soa"><b>Entregável:</b> Evidence Pack com gera&ccedil;&atilde;o real hora a hora, assinado criptograficamente (ECDSA + Merkle Tree + NTP Stratum 1) &rarr; liquida&ccedil;&atilde;o mais r&aacute;pida, menor LAE, menos espa&ccedil;o para controv&eacute;rsia na regula&ccedil;&atilde;o do sinistro.</div>
     </div>
   </div>
@@ -270,63 +268,24 @@
 </div>
 
 <h2 class="sec-h">3 &middot; A janela de mercado &mdash; dados validados</h2>
-<table class="mkt-table">
-  <thead><tr><th>Fonte</th><th>Mercado param&eacute;trico 2025</th><th>Projeção 2032</th><th>CAGR</th></tr></thead>
-  <tbody>
-    <tr><td>KBV Research</td><td>US$ 16,78 bi</td><td>US$ 32,57 bi</td><td>9,9%</td></tr>
-    <tr><td>SNS Insider</td><td>US$ 17,60 bi</td><td>US$ 46,08 bi (2035)</td><td>10,1%</td></tr>
-    <tr><td>Dataintelo</td><td>US$ 18,6 bi</td><td>US$ 44,2 bi (2034)</td><td>10,0%</td></tr>
-    <tr><td>Meridian Consensus</td><td>US$ 16,5 bi</td><td>US$ 42,0 bi (2036)</td><td>8,9%</td></tr>
-    <tr><td><b>Segmento energia</b></td><td colspan="2"><b>CAGR mais alto: 11,9% (SNS) / 14,4% (GMI) — renov&aacute;veis puxam</b></td><td><b>11–14%</b></td></tr>
-  </tbody>
-</table>
-<p>O basis risk &eacute; o gargalo reconhecido &mdash; que dados geoespaciais e de sat&eacute;lite tentam reduzir. No Brasil, o curtailment emergiu como um risco novo e material: <b>20,6% de corte em 2025</b>, causando <b>R$ 6,5 bi em perdas econ&ocirc;micas</b> &mdash; e &eacute; justamente onde a SOA/SOS tem o dado que o mercado global est&aacute; s&oacute; agora come&ccedil;ando a precisar.</p>
+<p>O basis risk &eacute; o gargalo reconhecido &mdash; que dados geoespaciais e de sat&eacute;lite tentam reduzir. No Brasil, o curtailment emergiu como um risco novo e material: <b>20,6% de corte em 2025</b> &mdash; e &eacute; justamente onde a SOA/SOS tem o dado que o mercado global est&aacute; s&oacute; agora come&ccedil;ando a precisar.</p>
 
 <h2 class="sec-h">4 &middot; Contexto do mercado segurador brasileiro</h2>
-<p>O mercado segurador de energia renovável no Brasil está em formação acelerada. Em 2025-2026, três movimentos simultâneos abriram a janela para a camada de dados SOA/SOS:</p>
+<p>O mercado segurador de energia renovável no Brasil está em formação acelerada. Em 2025-2026, dois movimentos simultâneos abriram a janela para a camada de dados SOA/SOS:</p>
 
 <div class="cols">
   <div class="col">
     <div class="col-h navy">Curtailment como novo risco estrutural</div>
     <div class="col-b">
-      O curtailment saltou de 0,5% (2022) para 3,6% (2023), 9,3% (2024) e <b>20,6% (2025)</b>. A Horiens/Volt Robotics estima R$ 6,5 bi em perdas. Mesmo com a Lei 15.269/2025 (que tornou REL e CNF compensáveis), a razão energética (ENE) — a maior fatia dos cortes — segue sem ressarcimento e com o gerador. As seguradoras que subscrevem BI de renováveis nunca tiveram dados hora a hora desse risco.
+      O curtailment saltou de 0,5% (2022) para 3,6% (2023), 9,3% (2024) e <b>20,6% (2025)</b>. Pela Lei 15.269/2025, a REL entra no ESS (§ 10, VI, da Lei 10.848, com a redação da Lei 15.269/2025); a CNF é vedada só nas hipóteses do § 11, I; a sobreoferta é <b>VEDADA</b> (§ 11, II); de 01/09/2023 a 25/11/2025, REL e CNF são compensáveis pelo art. 1º-B, mediante termo de compromisso; escapar da vedação não cria direito automático. As seguradoras que subscrevem BI de renováveis nunca tiveram dados hora a hora desse risco.
     </div>
   </div>
   <div class="col">
     <div class="col-h teal">Leilão BESS aquece seguro-garantia</div>
     <div class="col-b">
-      O leilão de BESS de dez/2026 (R$ 8 bi em jogo) está acelerando um mercado lateral: seguro-garantia para baterias, com demanda projetada de <b>+70% em 2026</b> (Genial). Sem histórico local de performance, subscritores precisarão calibrar com dado externo &mdash; exatamente o que a SOA/SOS oferece.
+      O leilão de BESS de dez/2026 (R$ 8 bi em jogo) está acelerando um mercado lateral: seguro-garantia para baterias. Sem histórico local de performance, subscritores precisarão calibrar com dado externo &mdash; exatamente o que a SOA/SOS oferece.
     </div>
   </div>
-</div>
-
-<div class="players">
-  <div class="player">
-    <div class="player-name">Swiss Re Corp. Solutions</div>
-    <div class="player-role">Resseguro param&eacute;trico</div>
-    <div class="player-desc">Emitiu param&eacute;trico clim&aacute;tico indexado no Brasil j&aacute; em 2016 (agro). Atua em solar e e&oacute;lico na Am&eacute;rica Latina com solu&ccedil;&otilde;es indenizat&oacute;rias e param&eacute;tricas.</div>
-  </div>
-  <div class="player">
-    <div class="player-name">Tokio Marine</div>
-    <div class="player-role">Seguradora local</div>
-    <div class="player-desc">Lan&ccedil;ou o ERI (Energia Renov&aacute;vel Integrada) em ago/2025 &mdash; riscos de engenharia + RC + operacional em uma ap&oacute;lice para fotovoltaico.</div>
-  </div>
-  <div class="player">
-    <div class="player-name">AXA Brasil</div>
-    <div class="player-role">Garantia de energia</div>
-    <div class="player-desc">Lan&ccedil;ou em abr/2026 seguro-garantia de Compra e Venda de Energia para o mercado livre (43% do consumo nacional) &mdash; protege inadimpl&ecirc;ncia do comprador.</div>
-  </div>
-  <div class="player">
-    <div class="player-name">IRB(Re)</div>
-    <div class="player-role">Maior ressegurador BR</div>
-    <div class="player-desc">15,5% de share do resseguro brasileiro. Lucro de R$ 505 mi em 2025 (+35%). Expandindo em P&amp;C e inaugurou a LRS (Letra de Risco de Seguros) no Brasil em mai/2025.</div>
-  </div>
-  <div class="player">
-    <div class="player-name">Munich Re / Allianz</div>
-    <div class="player-role">Resseguro internacional</div>
-    <div class="player-desc">Ativos no Brasil com crescimento de participação no mercado local. Allianz subiu no ranking de resseguros BR. Munich Re atua em solu&ccedil;&otilde;es de renov&aacute;veis na Am&eacute;rica Latina.</div>
-  </div>
-  
 </div>
 
 <h2 class="sec-h">5 &middot; Quadro regulat&oacute;rio pertinente</h2>
@@ -334,26 +293,20 @@
   <div class="rcard">
     <span class="badge" style="background:#166534;">VIGENTE</span>
     <div class="bt">REN ANEEL 1.030/2022 &mdash; tipos de curtailment e ressarcimento</div>
-    <div class="bv">Tr&ecirc;s tipos de corte: (1) indisponibilidade externa (REL); (2) confiabilidade el&eacute;trica (CNF); (3) raz&atilde;o energ&eacute;tica (ENE). A REN 1.030/2022 ressarcia s&oacute; a REL (&gt;78h/ano); a <b>Lei 15.269/2025</b> ampliou a compensa&ccedil;&atilde;o &agrave; CNF (condicionada), mantendo a <b>ENE</b> &mdash; a maior fatia dos cortes &mdash; sem ressarcimento e com o gerador. &Eacute; o risco que o seguro pode cobrir.</div>
-    <div class="bn">REN ANEEL 1.030/2022 · Lei 15.269/2025 · Acende Brasil</div>
-  </div>
-  <div class="rcard">
-    <span class="badge" style="background:#FC9D27;">EM DELIBERAÇÃO</span>
-    <div class="bt">MP 1304 e vetos ao ressarcimento ampliado do curtailment</div>
-    <div class="bv">Governo vetou amplia&ccedil;&atilde;o do ressarcimento a solares e e&oacute;licas em cortes por excesso de oferta. ABEEólica estimou R$ 2,8 bi em ressarcimento pelos cortes desde set/2023. Incerteza regulat&oacute;ria &eacute; mais uma raz&atilde;o para transferência do risco ao mercado segurador.</div>
-    <div class="bn">Canal Solar · Poder360 · ABEEólica (nov/2025)</div>
+    <div class="bv">Tr&ecirc;s tipos de corte: (1) indisponibilidade externa (REL); (2) confiabilidade el&eacute;trica (CNF); (3) raz&atilde;o energ&eacute;tica (ENE). A REN 1.030/2022 ressarcia s&oacute; a REL (&gt;78h/ano). Com a <b>Lei 15.269/2025</b>: a REL entra no ESS (§ 10, VI, da Lei 10.848, com a redação da Lei 15.269/2025); a CNF é vedada só nas hipóteses do § 11, I; a sobreoferta é <b>VEDADA</b> (§ 11, II); de 01/09/2023 a 25/11/2025, REL e CNF são compensáveis pelo art. 1º-B, mediante termo de compromisso; escapar da vedação não cria direito automático. O corte sem compensa&ccedil;&atilde;o fica com o gerador: &eacute; o risco que o seguro pode cobrir. <b>Ato novo:</b> a REN ANEEL 1.170/2026 (DOU de 09/10/2026) estabelece crit&eacute;rios para redu&ccedil;&atilde;o ou limita&ccedil;&atilde;o de gera&ccedil;&atilde;o de usinas despachadas centralizadamente e de usinas consideradas na programa&ccedil;&atilde;o da opera&ccedil;&atilde;o pelo ONS; calend&aacute;rio a conferir no ato.</div>
+    <div class="bn">REN ANEEL 1.030/2022 · REN ANEEL 1.170/2026 · Lei 15.269/2025</div>
   </div>
   <div class="rcard">
     <span class="badge" style="background:#166534;">VIGENTE</span>
     <div class="bt">SUSEP &mdash; mercado segurador de energia no Brasil</div>
-    <div class="bv">Mercado segurador de energia em expansão acelerada. Mercado livre responde por 43% do consumo el&eacute;trico nacional (85 mil consumidores, +21 mil novos em 2025). Sem produto espec&iacute;fico de curtailment no mercado &mdash; a lacuna onde o dado SOA/SOS &eacute; insumo.</div>
-    <div class="bn">AXA Brasil (abr/2026) · SUSEP</div>
+    <div class="bv">Mercado segurador de energia em expansão acelerada. Sem produto espec&iacute;fico de curtailment no mercado &mdash; a lacuna onde o dado SOA/SOS &eacute; insumo.</div>
+    <div class="bn">SUSEP</div>
   </div>
   <div class="rcard">
     <span class="badge" style="background:#1C5AAD;">REFERÊNCIA</span>
     <div class="bt">GHG Protocol Scope 2 &mdash; revis&atilde;o para matching hor&aacute;rio</div>
-    <div class="bv">Revisão em consulta pública (2026) propõe matching horário de energia renovável (em vez do anual). Quando adotada (~2028), vai aumentar a demanda por dados hora a hora de geração e curtailment como os que a SOA/SOS já produz.</div>
-    <div class="bn">GHG Protocol · Repath (fev/2026)</div>
+    <div class="bv">Revisão em andamento propõe matching horário de energia renovável (em vez do anual); calendário do GHG Protocol de 16/10/2026: consulta consolidada no 2º trimestre de 2027 e padrão no 4º trimestre de 2028. Quando adotada, vai aumentar a demanda por dados hora a hora de geração e curtailment como os que a SOA/SOS já produz.</div>
+    <div class="bn">GHG Protocol (blog, 16/10/2026)</div>
   </div>
 </div>
 
@@ -361,7 +314,7 @@
 <div class="cols">
   <div class="col">
     <div class="col-h teal">O que &eacute; o specimen</div>
-    <div class="col-b">Um perfil de curtailment-risk de um barramento real (Nordeste, alto curtailment), tirado do banco ONS/CCEE da SOA/SOS, mostrando: s&eacute;rie hist&oacute;rica mensal, distribui&ccedil;&atilde;o por tipo de corte, sazonalidade e como o &iacute;ndice reduziria o basis risk de um param&eacute;trico naquela posi&ccedil;&atilde;o. &Eacute; o objeto que um subscritor s&ecirc;nior sabe avaliar.</div>
+    <div class="col-b">Um perfil de curtailment-risk de um barramento real (Nordeste, alto curtailment), tirado do banco ONS/CCEE da SOA/SOS, mostrando: s&eacute;rie hist&oacute;rica mensal, distribui&ccedil;&atilde;o por tipo de corte, sazonalidade e como o &iacute;ndice reduziria o basis risk de um param&eacute;trico naquela posi&ccedil;&atilde;o. &Eacute; o objeto que um subscritor s&ecirc;nior sabe avaliar. O trabalho é pago, com preço fixo escrito antes.</div>
   </div>
   <div class="col">
     <div class="col-h navy">Para quem &eacute;</div>
@@ -372,13 +325,13 @@
 <section id="beneficios" style="max-width:1120px;margin:0 auto;padding:44px 20px;font-family:Arial,Helvetica,sans-serif">
   <h2 style="color:#040F2F;font-size:26px;margin:0 0 4px">O protocolo SOA</h2>
   <p style="color:#4a4f55;font-size:14px;max-width:80ch;line-height:1.6">O que entregamos, o que você ganha e o que a composição destrava — lido ao vivo da base canônica; atualiza sozinho quando um monitor regulatório muda. <span data-carimbo style="display:block;margin-top:6px;font-size:12px;color:#9aa0a6"></span></p>
-  <div data-composicao-vetor="Seguros &amp; Prova de Risco"><p style="color:#9aa0a6">(carregando o protocolo SOA…)</p></div>
+  <div data-composicao-vetor="Seguros &amp; Evidência de Risco"><p style="color:#9aa0a6">(carregando o protocolo SOA…)</p></div>
 </section>
 <div style="background:#040F2F;color:#c7cfe0;max-width:1100px;margin:34px auto 0;padding:34px 24px 46px;text-align:center;font:400 12.5px/1.8 Arial,Helvetica,sans-serif;border-radius:16px">
   <div style="margin:0 auto 18px;padding-bottom:16px;border-bottom:1px solid #1e3a5f">
-    <div style="color:#fff;font-weight:700;font-size:16px;margin-bottom:4px">Solicitar um piloto</div>
-    <div style="color:#c7cfe0;font-size:12.5px;margin-bottom:12px">Uma reunião exploratória e um diagnóstico — sem custo, sem compromisso.</div>
-    <a href="mailto:limonta@solaroneaccount.com?subject=Solicitar%20um%20piloto%20SOA%2FSOS" style="display:inline-block;background:#FC9D27;color:#04122e;text-decoration:none;font-weight:700;font-size:12.5px;border-radius:8px;padding:9px 18px;margin:3px 5px">Falar por e-mail</a>
+    <div style="color:#fff;font-weight:700;font-size:16px;margin-bottom:4px">Pedir uma proposta</div>
+    <div style="color:#c7cfe0;font-size:12.5px;margin-bottom:12px">Conversa de 20 a 25 minutos, sem compromisso. O trabalho é pago, com preço fixo escrito antes.</div>
+    <a href="mailto:limonta@solaroneaccount.com?subject=Pedir%20uma%20proposta%20SOA%2FSOS" style="display:inline-block;background:#FC9D27;color:#04122e;text-decoration:none;font-weight:700;font-size:12.5px;border-radius:8px;padding:9px 18px;margin:3px 5px">Falar por e-mail</a>
     <a href="https://wa.me/5544999720477" target="_blank" rel="noopener" style="display:inline-block;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:12.5px;border-radius:8px;padding:9px 18px;margin:3px 5px">WhatsApp</a>
   </div>
   <div style="color:#FEC73D;font-weight:700;font-size:17px;margin-bottom:8px">Obrigado.</div>
