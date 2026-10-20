@@ -147,7 +147,7 @@
       return;
     }
 
-    host.appendChild(topic("1 · O que entregamos","O selo probatório SOA para este vetor — Evidence Pack / HEC / sHEC"));
+    host.appendChild(topic("1 · O que entregamos","A evidência SOA para este vetor — Evidence Pack / HEC / sHEC"));
     host.appendChild(ent.length ? cardsEntregaveis(ent) : fallback());
 
     host.appendChild(topic("2 · O que o cliente ganha","Benefícios com base legal — só o que é direito verificado"));
@@ -174,7 +174,7 @@
     var gan=all.beneficios.filter(function(b){ return b.status===STATUS_OK; });
     var pkgs=all.pacotes.filter(function(p){ return p.status===STATUS_OK; });
 
-    host.appendChild(topic("1 · O que entregamos","O selo probatório SOA por vetor — Evidence Pack / HEC / sHEC"));
+    host.appendChild(topic("1 · O que entregamos","A evidência SOA por vetor — Evidence Pack / HEC / sHEC"));
     host.appendChild(ent.length ? cardsEntregaveis(ent) : fallback());
 
     host.appendChild(topic("2 · O que o cliente ganha","Direitos com base legal, lidos ao vivo — só o que é verificado"));
