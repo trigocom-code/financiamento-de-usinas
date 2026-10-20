@@ -1,196 +1,21 @@
 ﻿<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SOA/SOS · IPTU Verde Auditável</title>
+<meta name="robots" content="noindex">
+<title>SOA/SOS · Conteúdo retirado do site</title>
 <style>
-:root{color-scheme:light;--navy:#040F2F;--teal:#1C5AAD;--amber:#FC9D27;--royal:#1C5AAD;--grey:#4B5563;--line:#E0E2E2;--orange:#FC9D27;--yellow:#FEC73D;--wash:#F4F6F8;--line:#E2E6EB}
+:root{color-scheme:light;--navy:#040F2F;--royal:#1C5AAD;--orange:#FC9D27;--yellow:#FEC73D;--grey:#4B5563;--line:#E2E6EB}
 *{box-sizing:border-box}body{margin:0;background:#fff;color:#040F2F;font-family:Arial,Helvetica,sans-serif;line-height:1.5}
-.wrap{max-width:1100px;margin:0 auto;padding:clamp(20px,5vw,40px)}
-h1{font-size:30px;margin:0 0 2px}.sub{color:var(--grey);font-size:14px}
-.tag{color:var(--teal);font-weight:bold;font-size:18px;margin:8px 0 14px}
-.band{background:var(--navy);color:#fff;border-radius:8px;padding:16px 18px;margin:10px 0}
-.band b{font-size:20px}.band span{color:#D5E2F0;font-size:14px;display:block;margin-top:4px}
-.fresh{display:flex;align-items:center;gap:10px;border-radius:8px;padding:12px 16px;margin:12px 0;font-size:14px}
-.fresh.ok{background:#EAF6EC;border-left:6px solid #1B5E20;color:#1B5E20}
-.fresh.warn{background:#FBF3E2;border-left:6px solid var(--amber);color:#7a4a00}
-.src{font-size:11.5px;color:var(--grey);margin:-6px 0 6px}
-.lastro{background:#FBF3E2;border-left:6px solid var(--amber);border-radius:6px;padding:12px 16px;font-size:14px;margin:10px 0}
-h2{color:var(--navy);font-size:19px;margin:22px 0 8px;border-bottom:2px solid var(--line);padding-bottom:4px}
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0}
-.col{border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.col .h{color:#fff;font-weight:bold;font-size:13px;padding:7px 12px}
-.col.b .h{background:var(--teal)}.col.p .h{background:var(--royal)}
-.col ul{margin:0;padding:10px 14px 12px 26px}.col li{font-size:13px;margin-bottom:5px}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0}
-.card{border:1px solid var(--line);border-radius:8px;padding:12px 14px}
-.card .t{font-weight:bold;font-size:14px}.card .v{color:var(--grey);font-size:12.5px;margin:4px 0 8px}
-.card .n{font-size:11.5px;color:var(--grey)}
-.badge{display:inline-block;font-size:11px;font-weight:bold;color:#fff;border-radius:20px;padding:2px 10px;margin-bottom:6px}
-.age{font-size:11px;color:var(--grey);margin-top:6px}.age.stale{color:#9A3412;font-weight:bold}
-.note{background:#F3F6F9;border-left:6px solid var(--teal);border-radius:6px;padding:12px 16px;font-size:13px;margin:14px 0}
-.foot{border-top:3px solid var(--navy);margin-top:20px;padding-top:10px;font-size:12px}
-.foot b{color:var(--navy)}.legend{font-size:11.5px;color:var(--grey);margin-top:6px}
-@media(max-width:600px){.cols,.cards{grid-template-columns:1fr}}
-.cc{width:100%;display:block;border-radius:8px;margin:6px 0 16px;box-shadow:0 1px 6px rgba(15,43,70,.18)}
-.callout{display:block;text-decoration:none;background:#040F2F;color:#fff;border-radius:8px;padding:13px 18px;margin:6px 0 14px;border-left:6px solid #FC9D27}.callout b{color:#fff}.cobadge{display:inline-block;background:#FC9D27;color:#fff;font-size:10px;font-weight:bold;border-radius:20px;padding:2px 10px;margin-right:8px}.callout .cogo{display:inline-block;margin-top:6px;color:#AEC4DC;font-weight:bold;font-size:13px}.callout.off{opacity:.6;pointer-events:none}
-.hero{background:linear-gradient(135deg,#040F2F 0%,#163c61 100%);color:#fff;border-radius:10px;padding:22px 26px;margin:14px 0;border-left:6px solid #FC9D27}.heroq{font-size:22px;font-weight:bold;line-height:1.34}.heroq .amb{color:#FEC73D}.heros{font-size:14px;color:#D5E2F0;margin-top:11px;line-height:1.5}.heros b{color:#fff}
-.grid6{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:8px 0}.gcard{border:1px solid var(--line);border-radius:8px;padding:12px 14px;border-top:3px solid var(--teal)}.gcard .gt{font-weight:bold;color:var(--navy);font-size:14px;margin-bottom:4px}.gcard .gd{font-size:12.5px;color:var(--grey);line-height:1.45}@media(max-width:600px){.grid6{grid-template-columns:1fr}}
-.lead2{font-size:13.5px;color:var(--grey);margin:2px 0 10px}.steps3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:8px 0}.stp{background:var(--wash);border-radius:8px;padding:12px 14px;font-size:12.5px;color:var(--grey);line-height:1.45}.stp b{color:var(--navy)}.stp .n{display:inline-flex;width:22px;height:22px;border-radius:50%;background:var(--orange);color:#fff;font-weight:bold;align-items:center;justify-content:center;margin-right:6px;font-size:12px;vertical-align:middle}.impact{display:flex;gap:18px;align-items:center;background:var(--navy);color:#fff;border-radius:10px;padding:18px 22px;margin:16px 0}.impact .ibig{font-size:30px;font-weight:bold;color:var(--yellow);white-space:nowrap;line-height:1.1}.impact .itxt{font-size:13px;line-height:1.5}.ugrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:8px 0}.ucard{border:1px solid var(--line);border-radius:8px;padding:12px 14px}.ucard .ct{font-weight:bold;color:var(--navy);font-size:13.5px;margin-bottom:4px}.ucard .cd{font-size:12.5px;color:var(--grey);line-height:1.45}@media(max-width:600px){.steps3,.ugrid{grid-template-columns:1fr}.impact{flex-direction:column;align-items:flex-start;gap:8px}}
-.updbar{font-size:12px;color:var(--grey);text-align:right;margin:6px 2px 2px}
-.cta{background:var(--navy);color:#fff;border-radius:12px;padding:22px 24px;margin:18px 0;text-align:center}.cta .ctah{font-size:20px;font-weight:bold;color:var(--yellow);margin-bottom:4px}.cta .ctad{font-size:13.5px;margin-bottom:14px;color:#dbe4ee}.ctabtns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.ctabtn{display:inline-block;background:var(--orange);color:#08203a;font-weight:bold;text-decoration:none;padding:11px 22px;border-radius:8px;font-size:14px}.ctabtn.alt{background:#25D366;color:#fff}
+.wrap{max-width:1100px;margin:0 auto;padding:clamp(16px,4vw,30px)}
+.band{background:var(--navy);color:#fff;border-radius:8px;padding:18px 20px;margin:10px 0;border-left:6px solid var(--orange);font-size:17px}
+.band a{color:var(--yellow);font-weight:bold}
 </style></head><body>
-<div class="soa-stamp" style="position:fixed;top:9px;right:12px;z-index:99999"><span style="display:inline-block;background:#0b1f4d;color:#FEC73D;font:600 11px/1.1 Arial,Helvetica,sans-serif;letter-spacing:.03em;padding:5px 11px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.35)">● Atualizado em 21/08/2026</span></div>
-<div style="max-width:1100px;margin:0 auto;padding:clamp(16px,4vw,30px) clamp(16px,4vw,30px) 0;font-family:Arial,Helvetica,sans-serif"><img src="https://trigocom-code.github.io/financiamento-de-usinas/Solar_One-Logo_capa.png" alt="SOA/SOS — IPTU Verde Auditável" style="width:100%;display:block;border-radius:14px;box-shadow:0 4px 16px rgba(15,43,70,.14)"/></div>
+<div style="max-width:1100px;margin:0 auto;padding:clamp(16px,4vw,30px) clamp(16px,4vw,30px) 0;font-family:Arial,Helvetica,sans-serif"><img src="https://trigocom-code.github.io/financiamento-de-usinas/Solar_One-Logo_capa.png" alt="SOA/SOS" style="width:100%;display:block;border-radius:14px;box-shadow:0 4px 16px rgba(15,43,70,.14)"/></div>
 <div class="wrap">
-
-
-
-<div class="band"><b>IPTU Verde Auditável</b><span>A prova de desempenho que falta ao incentivo verde municipal — em escala, sem depender de vistoria manual.</span></div>
-
-<div class="hero"><div class="heroq">Defensável perante o <span class="amb">Tribunal de Contas</span> — não dependente de vistoria.</div><div class="heros">O município concede milhões em renúncia fiscal de IPTU Verde. Quando o controle externo pergunta "como comprovar que esses imóveis geram o que dizem?", a vistoria pontual não responde — atesta um instante, não o exercício inteiro. A SOA/SOS dá a prova <b>contínua, remota e auditável</b> que protege a decisão do gestor.</div></div>
-<div class="lastro"><b>Nosso lastro:</b> a base completa de MMGD da ANEEL — mais de 4 milhões de unidades de microgeração distribuída e 140 milhões de registros oficiais (ONS, CCEE, ANEEL, EPE).</div>
-
-<h2>Quem ganha o quê — município e cidadão, separados</h2>
-<p class="lead2">O IPTU Verde tem <b>dois beneficiários com ganhos distintos</b>. Aqui, sem misturar: o que é do <b>município</b> e o que é do <b>cidadão/gerador</b>. As seções seguintes mostram <i>como</i> cada ganho é produzido.</p>
-<div class="cols">
-<div class="col b"><div class="h">O QUE É DO MUNICÍPIO (PREFEITURA)</div><ul>
-<li>Verifica <b>todo o universo</b> de beneficiários — sem vistoria imóvel a imóvel</li>
-<li>Concede o benefício por <b>critério objetivo e isonômico</b>: o desconto alcança quem efetivamente gera</li>
-<li><b>Defensável perante o controle externo / Tribunal de Contas</b> — prova do exercício inteiro, não de um instante</li>
-<li><b>Sabe exatamente quanto a cidade gera de renovável</b> — a base auditável do parque MMGD <b>por bairro</b>: MWh gerados e CO₂ evitado, insumo de planejamento urbano e de inventário de GHG</li>
-<li>A renúncia passa a <b>entregar a geração prometida</b> — cada real de incentivo vira benefício real, não nominal</li>
-<li>Com o excedente verificado, <b>certifica prédios públicos e frota elétrica</b> como renováveis, hora a hora</li>
-</ul></div>
-<div class="col p"><div class="h">O QUE É DO CIDADÃO / GERADOR</div><ul>
-<li><b>Renova o desconto sem burocracia</b> nem agendamento de vistoria</li>
-<li>Ganha <b>monitoramento on-line gratuito</b>, com alerta automático quando a geração cai</li>
-<li><b>Recupera 2–7%/ano</b> de geração perdida por sujeira = economia direta na conta de luz</li>
-<li>Mantém a geração <b>acima do limiar</b> que garante o desconto do IPTU</li>
-<li>Continua <b>dono do seu crédito de energia</b>; a transparência é sobre o desempenho do próprio sistema</li>
-</ul></div></div>
-<div class="note"><b>Como ler este folder:</b> acima está a divisão dos <b>benefícios</b> — de um lado o município, do outro o cidadão. Tudo o que vem a seguir (a camada probatória, o iCleanSolar e o excedente que certifica a cidade) é o <b>mecanismo</b> que produz cada um desses ganhos.</div>
-
-<h2>Um incentivo que já é realidade — 50+ municípios</h2>
-<div class="grid6">
-<div class="gcard"><div class="gt">Palmas (TO) · até 40%</div><div class="gd">LC 327/2015 (Programa Palmas Solar) — abrange IPTU, ITBI e ISSQN.</div></div>
-<div class="gcard"><div class="gt">Goiânia (GO) · até 20–30%</div><div class="gd">regime cumulativo. Percentual a confirmar na lei municipal vigente.</div></div>
-<div class="gcard"><div class="gt">Curitiba (PR)</div><div class="gd">vinculado à certificação de sustentabilidade (teto citado de até ~20%).</div></div>
-<div class="gcard"><div class="gt">Salvador (BA) · 5–10%</div><div class="gd">programa "IPTU Amarelo" — desconto proporcional à capacidade de geração.</div></div>
-<div class="gcard"><div class="gt">Recife (PE)</div><div class="gd">programa municipal próprio de incentivo, em vigor desde 2017.</div></div>
-<div class="gcard"><div class="gt">João Pessoa (PB)</div><div class="gd">benefício condicionado à comprovação anual — validade de 5 anos, renovável. É o gancho do produto.</div></div>
+<div class="band">Conteúdo retirado do site. Para conhecer o trabalho da SOA/SOS, volte à <a href="index.html">página inicial</a>.</div>
 </div>
-
-<h2>A comprovação existe — mas a verificação não escala</h2>
-<div class="grid6">
-<div class="gcard"><div class="gt">Não escala</div><div class="gd">um fiscal por imóvel é inviável para milhares de beneficiários — o custo administrativo supera o benefício.</div></div>
-<div class="gcard"><div class="gt">Pontual e frágil</div><div class="gd">a vistoria confirma a instalação num único instante — não a geração real ao longo do exercício fiscal.</div></div>
-<div class="gcard"><div class="gt">Sem leitura do parque MMGD</div><div class="gd">o município não tem base consolidada e auditável da sua microgeração distribuída registrada.</div></div>
-</div>
-
-<h2>Como funciona a camada probatória</h2>
-<p class="lead2">A SOA/SOS substitui a vistoria pontual por <b>prova contínua</b>: a geração de cada imóvel é reconstruída hora a hora e reconciliada contra o registro público oficial — sem hardware no imóvel, sem visita de campo.</p>
-<div class="ugrid">
-<div class="ucard"><div class="ct">Reconstrução horária por imóvel</div><div class="cd">sobre dados públicos já existentes (base ANEEL MMGD, ONS) — sem custo de instrumentação.</div></div>
-<div class="ucard"><div class="ct">Integridade criptográfica</div><div class="cd">mHEC + Evidence Pack com Merkle Tree, NTP Stratum 1 e ECDSA — resistente a adulteração.</div></div>
-<div class="ucard"><div class="ct">Verificável por qualquer auditor</div><div class="cd">a prova é o registro oficial reconciliado, não a palavra da SOA — defensável perante o controle externo.</div></div>
-</div>
-<div class="lastro"><b>Recorte do produto:</b> cobre microgeração e minigeração distribuída registrada (MMGD/ANEEL) — o segmento relevante para o IPTU Verde. Geração centralizada e unidades não cadastradas estão fora do recorte.</div>
-
-<h2>Duas formas de comprovar a geração — e a que resolve</h2><div class="cols"><div class="col p"><div class="h">RECONSTRUÇÃO SOBRE DADO PÚBLICO · o que escala hoje</div><ul><li>Reconstrói a geração hora a hora a partir da base pública (MMGD/ANEEL + ONS) — sem hardware, sem visita de campo.</li><li>Cobre a cidade inteira de imediato, mas é <b>modelo</b>: estimativa sobre dado público (<b>mHEC</b>), não medição no ponto.</li><li>Serve ao mapa agregado do município; frágil como prova individual, imóvel a imóvel.</li></ul></div><div class="col b"><div class="h">HEC · API DO INVERSOR + QSV · a prova que resolve</div><ul><li>Conecta o <b>API do próprio inversor</b> (telemetria que o telhado já produz — sem instalar equipamento) e o QSV gera o <b>HEC</b>: o certificado horário da <b>energia efetivamente gerada</b>, medida no ponto.</li><li>Cada hora é validada pelo <b>QSV — Quad-Source Validation</b>: telemetria + reanálise climática + observação de superfície + vizinhança.</li><li>Geração <b>medida e cross-validada</b> — prova própria do imóvel, não estimativa sobre dado público.</li></ul></div></div><div class="lastro"><b>A diferença que decide:</b> a reconstrução <b>estima a cidade</b> a partir do dado público; o <b>HEC via API + QSV</b> <b>prova o telhado</b> — evidência medida, própria e auditável, que sustenta o incentivo fiscal imóvel a imóvel.</div><div class="note"><b>API não é hardware novo.</b> Conectar o API do inversor apenas lê a telemetria que a usina de telhado já gera — mantém o "sem visita de campo" e eleva a prova de <b>estimativa</b> para <b>medição no ponto</b>.</div><h2>iCleanSolar — cadastre o telhado, ganhe monitoramento</h2>
-<p class="lead2"><b>Sem ver o telhado, a energia se perde — em silêncio.</b> Painel sujo gera menos: a sujeira (soiling) tira de 2% a mais de 7% da geração ao ano — 10% a 35% quando o vidro está bem sujo. Mês após mês, some da conta sem ninguém perceber. O problema não é a sujeira: é <b>não enxergar a perda a tempo</b>.</p>
-<div class="band"><b>Cadastre seu telhado e ganhe monitoramento on-line — gratuito.</b><span>A SOA/SOS oferece a solução sem custo: ao registrar seu sistema, você passa a ter acompanhamento contínuo da geração e <b>alertas automáticos</b> sempre que ela cai abaixo do esperado. É a garantia de que cada kWh que seu telhado pode gerar realmente apareça na sua conta — sem esforço e sem mensalidade. Para a cidade, é o mesmo cadastro que comprova o IPTU Verde; para o dono, é o telhado rendendo o máximo o ano inteiro.</span></div>
-<p class="lead2">E quando o alerta apontar sujeira, a decisão é sua. Se optar por limpar, a SOA/SOS indica um profissional <b>credenciado e dentro da norma</b>, com prova de antes e depois. O monitoramento é o presente; a limpeza é só a opção.</p>
-
-<p class="lead2"><b>Eficiência financeira — em todas as camadas da sociedade:</b></p>
-<div class="cols">
-<div class="col b"><div class="h">PROPRIETÁRIO (RESIDÊNCIA)</div><ul>
-<li>Recupera <b>2–7%+/ano</b> de geração perdida por sujeira = economia direta na conta de luz</li>
-<li>Protege o ROI e a vida útil do sistema (limpeza correta, sem dano e sem perder garantia)</li>
-<li>Mantém a geração acima do limiar que garante o <b>desconto do IPTU</b></li>
-</ul></div>
-<div class="col p"><div class="h">MUNICÍPIO (EFICIÊNCIA FISCAL)</div><ul>
-<li>A renúncia de IPTU passa a <b>entregar a geração prometida</b> — cada real de incentivo vira benefício real, não nominal</li>
-<li>Reforça a defensabilidade perante o Tribunal de Contas (trilha de limpeza soma à de verificação)</li>
-<li><b>Emprego local qualificado</b> → renda e base tributária no município</li>
-</ul></div>
-<div class="col b"><div class="h">PROFISSIONAIS E EMPRESAS DE LIMPEZA</div><ul>
-<li>Renda recorrente com <b>demanda qualificada</b> (a perda já vem comprovada — menos venda, mais execução)</li>
-<li>Formalização e credenciamento (selo) → acesso a um mercado antes informal</li>
-<li>Padronização (procedimento + prova) reduz retrabalho, disputa e risco</li>
-</ul></div>
-<div class="col p"><div class="h">TREINAMENTO E CAPACITAÇÃO</div><ul>
-<li>Mercado <b>recorrente e previsível</b> (NR-35 recicla a cada 2 anos)</li>
-<li>Nicho especializado: limpeza FV combina NR-35 + NR-10 + procedimento de garantia</li>
-<li>Demanda direcionada pelos vencimentos de certificado da base</li>
-</ul></div>
-<div class="col b"><div class="h">SISTEMA ELÉTRICO E SOCIEDADE</div><ul>
-<li>Mais geração limpa <b>efetivamente injetada</b> (menos perda por sujeira) → menos acionamento de geração marginal cara/fóssil</li>
-<li>Geração distribuída operando no potencial pleno = eficiência do sistema como um todo</li>
-<li>O CO₂ evitado prometido pelo incentivo <b>de fato acontece</b></li>
-</ul></div>
-<div class="col p"><div class="h">SOA/SOS (SUSTENTABILIDADE DO MODELO)</div><ul>
-<li>Monetiza a <b>mesma infraestrutura de verificação duas vezes</b> (IPTU + limpeza) — eficiência de capital</li>
-<li>Cada elo gera o dado que qualifica o próximo (perda → serviço → recuperação → competência)</li>
-<li>Coerente com a tese: "se tem como rastrear, tem como medir, confirmar e auditar"</li>
-</ul></div>
-</div>
-
-<div class="note"><b>A segurança que o sistema constrói:</b> o serviço só é despachado para quem cumpre a norma — esse é o produto. <b>Trabalhador:</b> NR-35 (altura &gt;2 m, treinamento 8 h/validade 2 anos, ancoragem 15 kN), NR-10 (placa energizada, risco de arco) e NR-06 (EPI com CA) — fim do trabalho informal e perigoso no telhado. <b>Consumidor:</b> garantia do módulo preservada, sem dano por limpeza errada. <b>Município:</b> benefício fiscal defensável + trilha auditável. <b>Responsabilidade:</b> o credenciamento gerencia a responsabilidade solidária (a contratante é corresponsável por autônomos/terceirizados). <b>Dado:</b> prova antes/depois rastreável.</div>
-<div class="lastro"><b>Em uma frase:</b> o IPTU Verde dá o telhado; o iCleanSolar transforma esse telhado em economia, emprego e segurança — sem que a prefeitura gaste mais, e sem que o proprietário corra risco.</div>
-
-<h2>O excedente do telhado certifica a cidade: prédios públicos e frota elétrica</h2>
-<p class="lead2">Todo prosumidor que gera a mais injeta o excedente na rede — e recebe crédito de energia (SCEE, Lei 14.300/2022). Mas o <b>atributo ambiental</b> desse excedente — a prova de que é energia renovável — hoje se perde, sem dono. O município, que já enxerga e verifica esses telhados pelo IPTU Verde, pode capturá-lo e usá-lo para <b>certificar o próprio consumo</b>.</p>
-<div class="band"><b>A cidade fica verde com a energia da própria população.</b><span>A SOA/SOS certifica hora a hora (HEC) o excedente renovável verificado e casa esse atributo com o consumo municipal — prédios públicos e recarga da frota elétrica. Resultado: a prefeitura comprova que opera com energia renovável de verdade (matching 24/7), não com a média da rede.</span></div>
-<div class="cols">
-<div class="col b"><div class="h">CAMADA 1 — JÁ POSSÍVEL HOJE (prédios da prefeitura)</div><ul>
-<li>Solar nos próprios prédios públicos gera excedente que, em <b>autoconsumo remoto</b> (mesmo titular, mesma distribuidora), compensa outros prédios</li>
-<li>A SOA certifica esse excedente com HEC granular → prédios e <b>recarga da frota elétrica</b> ficam auditavelmente renováveis</li>
-<li>Entra no <b>inventário de GHG municipal</b> e no relato de sustentabilidade da cidade</li>
-</ul></div>
-<div class="col p"><div class="h">CAMADA 2 — PROGRAMA IPTU VERDE (excedente do cidadão)</div><ul>
-<li>O cidadão cadastrado pode <b>ceder voluntariamente o atributo ambiental</b> do seu excedente — mantendo o crédito de energia, que continua dele</li>
-<li>A SOA contabiliza com <b>anti-double-counting</b>: cada atributo é usado uma única vez</li>
-<li>A cidade soma prova verde sem gastar mais; o cidadão ganha propósito — e o desconto do IPTU</li>
-</ul></div>
-</div>
-<div class="note"><b>O que a cidade certifica:</b> <b>prédios públicos</b> (escolas, postos de saúde, sedes) operando com renovável comprovada; <b>frota elétrica</b> com recarga casada a geração renovável — "mobilidade limpa comprovada", não apenas "elétrica"; e um <b>critério de sustentabilidade defensável em licitação</b> (Lei 14.133/2021). Tudo auditável, hora a hora.</div>
-<div class="lastro"><b>A distinção que torna isso possível:</b> o <b>crédito de energia</b> (SCEE, regulado, do prosumidor) é uma coisa; o <b>atributo ambiental</b> (o HEC, a prova de "verde") é outra. A SOA/SOS certifica o atributo — hoje desperdiçado — e o entrega à cidade sem tirar nada do cidadão. <span class="src">A cessão do atributo é voluntária e não afeta o crédito de energia do consumidor; o controle anti-double-counting garante uso único.</span></div>
-
-<h2>O que o programa constrói além da cidade</h2>
-<p class="lead2">Hoje, quando um telhado gera, o sistema <b>não vê geração — vê consumo que sumiu</b>. Para o operador, aquele bairro simplesmente "gastou menos", e ele não sabe se foi o sol no telhado ou se as pessoas desligaram as coisas. A energia existe fisicamente, mas não aparece em lugar nenhum como geração: são <b>4,4 milhões de telhados que o sistema só enxerga pela sombra que fazem na conta de luz</b>. A distribuidora lê o medidor <b>uma vez por mês</b> — recebe um número fechado do mês inteiro, com até <b>30 dias de atraso</b>, e nenhuma pista de como aquilo se comportou hora a hora. E o ONS, que precisa desse dado para prever a carga, <b>trabalha com estimativa</b>.</p>
-<div class="note">Cada cidade que entra no programa acrescenta uma peça: <b>quanto cada bairro gera e como essa geração se comporta hora a hora</b>. À medida que a cobertura cresce, isso constrói a leitura da geração distribuída que hoje não existe — útil à distribuidora (planejamento de rede) e ao ONS/EPE (previsão de carga). <b>O que circula é agregado: o dado do cidadão não vira mercadoria.</b></div>
-
-<h2>Um piloto com a sua cidade</h2>
-<div class="grid6">
-<div class="gcard"><div class="gt">1 · Leitura do parque</div><div class="gd">mapeamento da base MMGD/ANEEL do município e identificação dos imóveis potencialmente elegíveis.</div></div>
-<div class="gcard"><div class="gt">2 · Verificação-piloto</div><div class="gd">Evidence Pack de desempenho para um lote representativo de beneficiários — sobre o parque real do município.</div></div>
-<div class="gcard"><div class="gt">3 · Relatório-síntese</div><div class="gd">diagnóstico de prontidão de verificação e desenho do fluxo de renovação auditável.</div></div>
-</div>
-<div class="lastro">Sem custo na fase exploratória e sem compromisso de contratação. A plataforma HEC/mHEC opera em <b>estágio pré-operacional (MVP validado)</b>. Tecnologia com pedidos de patente depositados no INPI.</div>
-
-<h2>Quadro regulatório · <span id="verstamp"></span></h2>
-<div id="cards" class="cards"></div>
-<div class="legend">Status: <b style="color:#1B5E20">VIGENTE</b> · <b style="color:#1C5AAD">AGENDADO</b> · <b style="color:#9A3412">PENDENTE</b> · <b style="color:#FC9D27">EM DELIBERAÇÃO</b>.</div>
-</div>
-<section id="beneficios" style="max-width:1120px;margin:0 auto;padding:44px 20px;font-family:Arial,Helvetica,sans-serif">
-  <h2 style="color:#040F2F;font-size:26px;margin:0 0 4px">O protocolo SOA</h2>
-  <p style="color:#4a4f55;font-size:14px;max-width:80ch;line-height:1.6">O que entregamos, o que você ganha e o que a composição destrava — lido ao vivo da base canônica; atualiza sozinho quando um monitor regulatório muda. <span data-carimbo style="display:block;margin-top:6px;font-size:12px;color:#9aa0a6"></span></p>
-  <div data-composicao-vetor="MMGD não observável"><p style="color:#9aa0a6">(carregando o protocolo SOA…)</p></div>
-</section>
-<div style="background:#040F2F;color:#c7cfe0;max-width:1100px;margin:34px auto 0;padding:34px 24px 46px;text-align:center;font:400 12.5px/1.8 Arial,Helvetica,sans-serif;border-radius:16px">
-  <div style="margin:0 auto 18px;padding-bottom:16px;border-bottom:1px solid #1e3a5f">
-    <div style="color:#fff;font-weight:700;font-size:16px;margin-bottom:4px">Solicitar um piloto</div>
-    <div style="color:#c7cfe0;font-size:12.5px;margin-bottom:12px">Uma reunião exploratória e um diagnóstico — sem custo, sem compromisso.</div>
-    <a href="mailto:limonta@solaroneaccount.com?subject=Solicitar%20um%20piloto%20SOA%2FSOS" style="display:inline-block;background:#FC9D27;color:#04122e;text-decoration:none;font-weight:700;font-size:12.5px;border-radius:8px;padding:9px 18px;margin:3px 5px">Falar por e-mail</a>
-    <a href="https://wa.me/5544999720477" target="_blank" rel="noopener" style="display:inline-block;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:12.5px;border-radius:8px;padding:9px 18px;margin:3px 5px">WhatsApp</a>
-  </div>
-  <div style="color:#FEC73D;font-weight:700;font-size:17px;margin-bottom:8px">Obrigado.</div>
+<div style="background:#040F2F;color:#c7cfe0;max-width:1100px;margin:34px auto 0;padding:28px 24px 34px;text-align:center;font:400 12.5px/1.8 Arial,Helvetica,sans-serif;border-radius:16px">
   <b style="color:#fff">SOA/SOS · Solar One Account Ltda</b> · CNPJ 65.312.574/0001-40<br>
   Luiz Henrique Limonta (CEO) · limonta@solaroneaccount.com · +55 44 99972-0477<br>
   Otávio Augusto Ferrari Pedro (CTO) · pedro@solaroneaccount.com · +55 44 99764-3333<br>
-  <span style="color:#FEC73D">SOA/SOS · Sistema Operacional de Sustentabilidade · Soluções em Energia</span><br>
-  <span style="color:#8a94a6;font-size:11px">Três pedidos de patente depositados no INPI · 31 reivindicações oficiais · PCT único até 19/02/2027 · dados de fontes oficiais (ONS · ANEEL · EPE · MME · CCEE) · material informativo — não constitui recomendação de investimento</span>
+  <span style="color:#FEC73D">SOA/SOS · Sistema Operacional de Sustentabilidade · Soluções em Energia</span>
 </div>
-<script src="/financiamento-de-usinas/soa-carimbo.js" defer></script>
-<script src="/financiamento-de-usinas/soa-quadro-vivo.js" defer></script>
-<script src="/financiamento-de-usinas/soa-sync-fatos.js" data-fontes="Fatos_Regulatorios_Folder_SOA.json,Fatos_Beneficios_ESG_Folder_SOA.json,Fatos_IPTUVerde_Folder_SOA.json"></script>
 </body></html>
-
