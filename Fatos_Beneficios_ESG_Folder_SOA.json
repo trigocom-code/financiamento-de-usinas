@@ -10,9 +10,9 @@
   },
   "_carimbo": {
     "atualizado_em": "2026-10-13T00:00:00-03:00",
-    "hash": "sha256:9f564845b642b99654ca765f219886333583ccd8b622c74d818b01251f9714b6",
+    "hash": "sha256:2cd1af14664137f54ce6e493d0e1301d5a5b5498b576cfa0fdbbbaa096ba6c0c",
     "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias",
-    "selado_em": "2026-10-13"
+    "selado_em": "2026-10-19"
   },
   "_schema": {
     "versao": "1.0",
@@ -35,7 +35,7 @@
       "H2V certificado",
       "MMGD não observável",
       "PNAST & acesso",
-      "Seguros & Prova de Risco",
+      "Seguros & Evidência de Risco",
       "Mercado & PSM"
     ],
     "canais": [
@@ -646,7 +646,7 @@
         "comercial"
       ],
       "vetores": [
-        "Seguros & Prova de Risco"
+        "Seguros & Evidência de Risco"
       ],
       "canal": "mercado",
       "titulo": "Prova de risco horária para seguros de renováveis",
@@ -786,7 +786,7 @@
       "id": "pkg_seguros_risco",
       "titulo": "Seguro de renováveis com prova de risco horária",
       "vetores": [
-        "Seguros & Prova de Risco"
+        "Seguros & Evidência de Risco"
       ],
       "ator": [
         "pj",
@@ -867,7 +867,7 @@
       "descricao": "Prova horária de RTE e disponibilidade do ativo."
     },
     {
-      "vetor": "Seguros & Prova de Risco",
+      "vetor": "Seguros & Evidência de Risco",
       "titulo": "Evidence Pack de risco de curtailment (sHEC)",
       "formato": "PDF assegurável · CSV",
       "descricao": "Série horária de geração frustrada (constrained-off) reconciliada contra o ONS, para subscrição e precificação de seguros de renováveis (lucro cessante / paramétrico)."
