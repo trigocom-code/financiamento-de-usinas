@@ -534,6 +534,21 @@
       "pendencia_verificacao": "F1 lida na integra em 22/10/2026 (in.gov.br, DOU 16/10/2026, Secao 1). Sinal pelo GT Armazenamento da ABSOLAR em 21/10/2026. Regulamento do BNDES (Etapa 1, quatro rotas, percentuais) nao aberto: registrado em _ACAO_CEO_baixar_PDFs.md. Leilao Aberto de 04/12 nao citado no ato. Teto AZUL (R7): fato fora da Tabela de Precedencia v1.2."
     },
     {
+      "id": "aneel_ts_041_2026_cde_2027",
+      "fato_id": "ANEEL-TS-041-2026-ORCAMENTO-CDE-2027",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Orçamento da CDE de 2027, Encargo de Complemento de Recursos e rateio das quotas (Tomada de Subsídios ANEEL 41/2026)",
+      "valor": "Tomada de subsídios aberta de 21/10 a 20/11/2026 (intercâmbio de documentos) sobre a proposta do orçamento anual da Conta de Desenvolvimento Energético de 2027, do Encargo de Complemento de Recursos, dos respectivos Fatores ECR e do rateio das quotas anuais da CDE. Em consulta; nada aprovado.",
+      "status": "EM DELIBERAÇÃO",
+      "qsv_cor": "AZUL",
+      "norma": "Aviso de Tomada de Subsídios ANEEL nº 41/2026 (Processo 48500.029681/2026-21), DOU de 21/10/2026, Seção 3",
+      "numero_status": "ANCORADO",
+      "verificado_em": "2026-10-22",
+      "gatilho_revisao": "fim da tomada de subsídios em 20/11/2026; resolução homologatória do orçamento da CDE de 2027",
+      "pendencia_verificacao": "F1 lida em 22/10/2026 pela consolidadora: Aviso no DOU de 21/10/2026, Secao 3 (in.gov.br, texto integral do aviso). Sinal anterior pela ABSOLAR (GTGC/GTGD, 21/10, 15h19 BRT), com prazo interno 16/11. Os valores citados no e-mail da ABSOLAR (despesa das fontes incentivadas, excedente para o ECR, queda dos beneficios da MMGD em 2027) NAO foram conferidos: dependem da NT 192/2026 e das planilhas, nao abertas. Esta e a tomada de subsidios da CDE delegada a STR que constava sem data no fato ANEEL-TS-021-2026-CND-SIASE-SAMP. Liga com ANEEL-NT-145-2026-STR-ECR-CDE. Teto AZUL (R7): fato fora da Tabela de Precedencia v1.2. Mesmo DOU: TS ANEEL 40/2026 (Submodulo 7.10, registro de perturbacoes, processo 48500.020993/2026-79, 21/10 a 04/12/2026), registrada so no digest."
+    },
+    {
       "id": "cp016_encargo_fixo_bt",
       "fato_id": "ANEEL-CP-016-2026-ENCARGO-FIXO-BT",
       "orgao": "ANEEL",
