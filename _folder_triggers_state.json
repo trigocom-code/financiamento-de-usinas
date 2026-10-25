@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-10-24 08:20",
+                  "gerado_em":  "2026-10-25 08:20",
                   "modo":  "v2 cenario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
@@ -88,10 +88,10 @@
                  },
     "folders":  {
                     "baterias-curtailment.html":  {
-                                                      "ciclo":  "2026-10-24",
+                                                      "ciclo":  "2026-10-25",
                                                       "categoria":  "vivo_sob_gatilho",
                                                       "estado":  "avaliacao_represada",
-                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-10-24: monitor-regulatorio-soa",
+                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-10-25: monitor-regulatorio-soa",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-regulatorio-soa"
@@ -99,7 +99,7 @@
                                                       "monitores_parados":  [
                                                                                 "monitor-regulatorio-soa"
                                                                             ],
-                                                      "idade_max_dias":  11,
+                                                      "idade_max_dias":  12,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_ANEEL",
@@ -152,10 +152,10 @@
                                                       "proposta_ref":  null
                                                   },
                     "contencioso-curtailment.html":  {
-                                                         "ciclo":  "2026-10-24",
+                                                         "ciclo":  "2026-10-25",
                                                          "categoria":  "vivo_sob_gatilho",
                                                          "estado":  "avaliacao_represada",
-                                                         "motivo":  "monitor(es) nao rodou no ciclo 2026-10-24: monitor-regulatorio-soa",
+                                                         "motivo":  "monitor(es) nao rodou no ciclo 2026-10-25: monitor-regulatorio-soa",
                                                          "aguarda_fonte":  false,
                                                          "monitores_dependentes":  [
                                                                                        "monitor-regulatorio-soa"
@@ -163,7 +163,7 @@
                                                          "monitores_parados":  [
                                                                                    "monitor-regulatorio-soa"
                                                                                ],
-                                                         "idade_max_dias":  11,
+                                                         "idade_max_dias":  12,
                                                          "deps":  [
                                                                       {
                                                                           "json":  "Fatos_CCEE",
@@ -189,10 +189,10 @@
                                                          "proposta_ref":  null
                                                      },
                     "acesso-transmissao-pnast.html":  {
-                                                          "ciclo":  "2026-10-24",
+                                                          "ciclo":  "2026-10-25",
                                                           "categoria":  "vivo_sob_gatilho",
                                                           "estado":  "avaliacao_represada",
-                                                          "motivo":  "monitor(es) nao rodou no ciclo 2026-10-24: monitor-regulatorio-soa",
+                                                          "motivo":  "monitor(es) nao rodou no ciclo 2026-10-25: monitor-regulatorio-soa",
                                                           "aguarda_fonte":  false,
                                                           "monitores_dependentes":  [
                                                                                         "monitor-regulatorio-soa"
@@ -200,7 +200,7 @@
                                                           "monitores_parados":  [
                                                                                     "monitor-regulatorio-soa"
                                                                                 ],
-                                                          "idade_max_dias":  11,
+                                                          "idade_max_dias":  12,
                                                           "deps":  [
                                                                        {
                                                                            "json":  "Fatos_MME",
@@ -244,10 +244,10 @@
                                                           "proposta_ref":  null
                                                       },
                     "capital-verde-usinas.html":  {
-                                                      "ciclo":  "2026-10-24",
+                                                      "ciclo":  "2026-10-25",
                                                       "categoria":  "vivo_sob_gatilho",
                                                       "estado":  "avaliacao_represada",
-                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-10-24: monitor-capital-verde-soa",
+                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-10-25: monitor-capital-verde-soa",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-capital-verde-soa"
@@ -255,7 +255,7 @@
                                                       "monitores_parados":  [
                                                                                 "monitor-capital-verde-soa"
                                                                             ],
-                                                      "idade_max_dias":  5,
+                                                      "idade_max_dias":  6,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
