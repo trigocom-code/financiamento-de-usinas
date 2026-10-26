@@ -1,14 +1,64 @@
 {
   "_meta": {
     "titulo": "Agenda do Setor Elétrico — Monitor SOA/SOS",
-    "atualizado_em": "2026-10-19",
+    "atualizado_em": "2026-10-26",
     "fonte": "Monitor de Eventos SOA/SOS · fontes oficiais (gov.br/ANEEL · Senado Federal · EPE · MME · CCEE · ONS · CIGRE-Brasil) + associações do setor (ANE, COGEN, APINE, ABGD, ABSOLAR, ABEEólica, ABCE, ABRAGE), páginas oficiais de eventos e imprensa setorial",
     "nota": "Agenda pública de datas do setor elétrico. Eventos de associação e sinais de fontes secundárias marcados 'A VERIFICAR'; confirmar no ato ou na página oficial antes de citar.",
     "nota_run_2026_10_12": "Varredura de 12 de outubro, cobrindo a janela desde 7 de outubro; o bloco de ação alcança prazos de até dez dias, até 22 de outubro. (1) A câmara de comercialização marcou para 14 de outubro, às dez horas, online, a capacitação sobre o procedimento das compensações por cortes de geração. (2) O ministério abriu em 8 de outubro a consulta pública do plano decenal de expansão de energia 2036, com contribuições até 6 de novembro. (3) A regra de ordenamento dos cortes de geração foi editada como resolução normativa nº 1.170, de 6 de outubro de 2026; a data de publicação no diário oficial não foi conferida nesta rodada. (4) O encontro técnico do leilão de armazenamento de 14 de outubro e as datas das garantias do leilão de transmissão nº 4/2026 seguem sem página oficial localizada. (5) A consulta de revisão da resolução normativa nº 1.030/2022 não teve abertura noticiada até 12 de outubro.",
     "nota_run_2026_10_13": "Atualização de 13 de outubro, sobre a varredura de 12 de outubro. (1) A abertura da consulta pública de revisão da resolução normativa nº 1.030/2022 passou de meados de outubro para o início de dezembro, com cerca de 45 dias de contribuições, segundo relato de associação sobre reunião com a área técnica da agência; não há ato oficial. (2) O ministério abriu consulta pública sobre a governança dos modelos computacionais do setor, com prazo de vinte dias; as datas de início e fim não constam da notícia. (3) A consulta do plano decenal de expansão de energia 2036 é a de nº 235/2026. (4) A câmara de comercialização publicou a programação do fórum de 17 de novembro.",
-    "nota_run_2026_10_19": "Varredura de 19 de outubro, cobrindo a janela desde 12 de outubro; o bloco de ação alcança prazos de até dez dias, até 29 de outubro. (1) O banco de desenvolvimento publicou o cronograma oficial dos leilões de reserva de capacidade de armazenamento: aprovação do edital em 27 de outubro, publicação em 29 de outubro, inscrição de 18 a 20 de novembro, garantias de proposta de 18 a 23 de novembro e sessão em 2 de dezembro. (2) A agência reguladora realizou em 14 de outubro o encontro técnico sobre inscrição e habilitação nesses leilões. (3) A empresa de pesquisa energética publicou em 16 de outubro as instruções de cadastramento dos sistemas de armazenamento hidráulico. (4) A empresa de pesquisa energética, o operador nacional e a câmara de comercialização marcaram para 21 de outubro um encontro online sobre previsão de carga. (5) A consulta do ministério sobre a governança dos modelos computacionais segue sem data de encerramento confirmada no ato."
+    "nota_run_2026_10_19": "Varredura de 19 de outubro, cobrindo a janela desde 12 de outubro; o bloco de ação alcança prazos de até dez dias, até 29 de outubro. (1) O banco de desenvolvimento publicou o cronograma oficial dos leilões de reserva de capacidade de armazenamento: aprovação do edital em 27 de outubro, publicação em 29 de outubro, inscrição de 18 a 20 de novembro, garantias de proposta de 18 a 23 de novembro e sessão em 2 de dezembro. (2) A agência reguladora realizou em 14 de outubro o encontro técnico sobre inscrição e habilitação nesses leilões. (3) A empresa de pesquisa energética publicou em 16 de outubro as instruções de cadastramento dos sistemas de armazenamento hidráulico. (4) A empresa de pesquisa energética, o operador nacional e a câmara de comercialização marcaram para 21 de outubro um encontro online sobre previsão de carga. (5) A consulta do ministério sobre a governança dos modelos computacionais segue sem data de encerramento confirmada no ato.",
+    "nota_run_2026_10_26": "Varredura de 26 de outubro, cobrindo a janela desde 19 de outubro; o bloco de ação alcança prazos de até dez dias, até 5 de novembro. (1) A agência reguladora aprovou em 20 de outubro duas consultas públicas sobre a reforma tributária, com contribuições de 21 a 30 de outubro, segundo a imprensa; a página oficial não foi aberta nesta rodada. (2) O orçamento de 2027 da conta de desenvolvimento energético está em tomada de subsídios, com prazo até 20 de novembro segundo associação setorial. (3) O ministério abriu em 23 de outubro consultas sobre a infraestrutura de recarga de veículos elétricos, até 22 de novembro, e sobre as metas do programa Energias da Amazônia, até 11 de novembro. (4) A empresa de pesquisa energética publicou a metodologia do preço-teto dos leilões de armazenamento e, com o operador nacional, revisou a nota técnica de requisitos de conexão das baterias. (5) A lista de notícias da agência reguladora não carregou nesta rodada; os itens da agência desta janela estão marcados A VERIFICAR."
   },
   "recentes": [
+    {
+      "data": "2026-10-23",
+      "titulo": "O ministério abriu consulta pública sobre a infraestrutura de recarga de veículos elétricos",
+      "detalhe": "Coleta de dados, experiências e desafios sobre eletromobilidade. Contribuições até 22 de novembro de 2026, pelo portal de consultas do ministério e pela plataforma Brasil Participativo.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br do ministério"
+    },
+    {
+      "data": "2026-10-23",
+      "titulo": "O ministério abriu consulta pública sobre as metas do programa Energias da Amazônia para 2030 e 2035",
+      "detalhe": "Contribuições até 11 de novembro de 2026, pelo portal de consultas do ministério e pela plataforma Brasil Participativo.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br do ministério"
+    },
+    {
+      "data": "2026-10-22",
+      "titulo": "A empresa de pesquisa energética e o operador nacional revisaram a nota técnica de requisitos mínimos de conexão das baterias para os leilões de armazenamento",
+      "detalhe": "Revisão da nota técnica com os requisitos técnicos mínimos para a conexão de sistemas de armazenamento por baterias. A notícia não traz prazos novos.",
+      "status": "CONFIRMADO",
+      "fonte": "Empresa de pesquisa energética"
+    },
+    {
+      "data": "2026-10-20",
+      "titulo": "A agência reguladora aprovou duas consultas públicas sobre os efeitos da reforma tributária no setor elétrico",
+      "detalhe": "A consulta n.º 39/2026 trata dos contratos regulados de geração e comercialização e dos encargos setoriais, com a retirada do PIS/Pasep e da Cofins dos preços de contratos firmados antes de 16 de janeiro de 2025; a n.º 38/2026 trata das bases de remuneração regulatória. Contribuições de 21 a 30 de outubro; efeitos a partir de 1.º de janeiro de 2027.",
+      "status": "A VERIFICAR",
+      "fonte": "Imprensa setorial e comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-20",
+      "titulo": "Orçamento de 2027 da conta de desenvolvimento energético em tomada de subsídios",
+      "detalhe": "Segundo a imprensa, a proposta soma cerca de 55,1 bilhões de reais, acima do teto legal de cerca de 48,7 bilhões; o excesso, de cerca de 6,37 bilhões, seria coberto por um novo encargo de complemento de recursos. Associação setorial indica contribuições até 20 de novembro.",
+      "status": "A VERIFICAR",
+      "fonte": "Imprensa setorial e comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-19",
+      "titulo": "A empresa de pesquisa energética publicou a metodologia do preço-teto dos leilões de reserva de capacidade de armazenamento",
+      "detalhe": "Nota técnica com as premissas e os parâmetros do custo marginal de referência dos leilões de 2026.",
+      "status": "CONFIRMADO",
+      "fonte": "Empresa de pesquisa energética"
+    },
+    {
+      "data": "2026-10-19",
+      "titulo": "O ministério fixou 30 de outubro para as distribuidoras enviarem as declarações dos leilões de energia existente",
+      "detalhe": "Ratificação ou retificação das informações pelo sistema da câmara de comercialização. Os leilões de um, dois e três anos de antecedência seguem em 13 de novembro.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br do ministério"
+    },
     {
       "data": "2026-10-19",
       "titulo": "Publicado o cronograma oficial dos leilões de reserva de capacidade de armazenamento",
@@ -148,79 +198,9 @@
       "detalhe": "No Grand Hyatt São Paulo, com participação presencial e online. Agentes da câmara têm desconto de associado.",
       "status": "CONFIRMADO",
       "fonte": "Câmara de comercialização de energia elétrica"
-    },
-    {
-      "data": "2026-09-22",
-      "titulo": "A agência reguladora aprovou o edital do leilão de transmissão nº 4/2026, marcado para 30 de outubro",
-      "detalhe": "Aprovação na reunião pública de 22 de setembro, com aviso de licitação no diário oficial de 24 de setembro. São oito lotes na Bahia, em Goiás, no Mato Grosso do Sul, na Paraíba, no Paraná, em Rondônia e em São Paulo, com cerca de oito bilhões e novecentos milhões de reais em investimento previsto. O edital resultou de consulta pública com 258 contribuições.",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br da agência reguladora"
-    },
-    {
-      "data": "2026-09-22",
-      "titulo": "A agência reguladora adiou a representação do programa de resposta da demanda nos modelos",
-      "detalhe": "A diretoria deu noventa dias ao operador nacional e à câmara de comercialização para ampliar a transparência e a divulgação do programa antes de nova deliberação.",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br da agência reguladora"
-    },
-    {
-      "data": "2026-09-22",
-      "titulo": "O ministério abriu consulta pública sobre concessões de hidrelétricas vencidas e vincendas",
-      "detalhe": "Portaria publicada em edição extra do diário oficial de 22 de setembro. Contribuições de 23 de setembro a 23 de outubro, pelo portal de consultas do ministério e pela plataforma Brasil Participativo.",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br do ministério"
     }
   ],
   "acao_7dias": [
-    {
-      "data": "2026-10-19",
-      "titulo": "Encerra a consulta pública nº 31/2026, sobre o indicador de cumprimento de prazos de obras da distribuição",
-      "detalhe": "Vigência do indicador prevista para janeiro de 2027.",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br da agência reguladora e comunicação de associação setorial"
-    },
-    {
-      "data": "2026-10-19",
-      "titulo": "Encontro do setor solar em São Paulo, até 20 de outubro",
-      "detalhe": "Sexta edição, na FAPCOM, na Vila Mariana, com temas de armazenamento, mercado livre, geração distribuída, microrredes e regulação. Página oficial reaberta em 19 de outubro: ingressos esgotados.",
-      "status": "CONFIRMADO",
-      "fonte": "Página oficial do evento"
-    },
-    {
-      "data": "2026-10-20",
-      "titulo": "Reunião pública ordinária da diretoria da agência reguladora",
-      "detalhe": "",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br da agência reguladora"
-    },
-    {
-      "data": "2026-10-21",
-      "titulo": "Encontro de armazenamento de energia em Natal, até 22 de outubro",
-      "detalhe": "Centro de convenções da federação das indústrias do Rio Grande do Norte, com inscrições abertas. Reconfirmado no site oficial do evento em 12 de outubro.",
-      "status": "CONFIRMADO",
-      "fonte": "Página oficial do evento"
-    },
-    {
-      "data": "2026-10-21",
-      "titulo": "Simpósio jurídico de concessionárias de energia elétrica, em São Paulo, até 22 de outubro",
-      "detalhe": "Trigésima segunda edição, no Blue Tree Premium Faria Lima, presencial. Formulário de inscrição reaberto em 19 de outubro, aceitando respostas.",
-      "status": "CONFIRMADO",
-      "fonte": "Comunicação de associação setorial"
-    },
-    {
-      "data": "2026-10-21",
-      "titulo": "Encontro online sobre os processos de previsão de carga",
-      "detalhe": "Promovido pela empresa de pesquisa energética, pelo operador nacional e pela câmara de comercialização, das nove às doze horas e trinta minutos, para representantes dos agentes.",
-      "status": "CONFIRMADO",
-      "fonte": "Empresa de pesquisa energética e câmara de comercialização"
-    },
-    {
-      "data": "2026-10-23",
-      "titulo": "Encerra a consulta pública do ministério sobre concessões de hidrelétricas vencidas e vincendas",
-      "detalhe": "",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br do ministério"
-    },
     {
       "data": "2026-10-26",
       "titulo": "Encerra a consulta pública nº 32/2026, sobre o edital do leilão de transmissão nº 1/2027",
@@ -237,6 +217,13 @@
     },
     {
       "data": "2026-10-27",
+      "titulo": "Aprovação do edital dos leilões de reserva de capacidade de armazenamento",
+      "detalhe": "Data do cronograma oficial dos leilões. Associação setorial indica reunião extraordinária da diretoria da agência reguladora nessa data.",
+      "status": "CONFIRMADO",
+      "fonte": "Página do leilão no banco nacional de desenvolvimento"
+    },
+    {
+      "data": "2026-10-27",
       "titulo": "Circuito deliberativo da diretoria da agência reguladora",
       "detalhe": "",
       "status": "CONFIRMADO",
@@ -245,16 +232,9 @@
     {
       "data": "2026-10-27",
       "titulo": "Congresso e feira de energia eólica em São Paulo, até 29 de outubro",
-      "detalhe": "São Paulo Expo, das dez às vinte horas. Página de inscrição reaberta em 19 de outubro, com o quarto lote em venda.",
+      "detalhe": "São Paulo Expo, das dez às vinte horas. Página de inscrição reaberta em 26 de outubro, com o quarto lote em venda.",
       "status": "CONFIRMADO",
       "fonte": "Página oficial do evento"
-    },
-    {
-      "data": "2026-10-27",
-      "titulo": "Aprovação do edital dos leilões de reserva de capacidade de armazenamento",
-      "detalhe": "Data do cronograma oficial dos leilões.",
-      "status": "CONFIRMADO",
-      "fonte": "Página do leilão no banco nacional de desenvolvimento"
     },
     {
       "data": "2026-10-28",
@@ -269,15 +249,6 @@
       "detalhe": "Data do cronograma oficial dos leilões. Pedidos de esclarecimento até 4 de novembro.",
       "status": "CONFIRMADO",
       "fonte": "Página do leilão no banco nacional de desenvolvimento"
-    }
-  ],
-  "proximos_30d": [
-    {
-      "data": "2026-10-30",
-      "titulo": "Leilão de transmissão nº 4/2026",
-      "detalhe": "Na B3, em São Paulo. Oito lotes em sete estados, com cerca de oito bilhões e novecentos milhões de reais em investimento previsto. Edital aprovado em 22 de setembro.",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br da agência reguladora"
     },
     {
       "data": "2026-10-30",
@@ -287,11 +258,25 @@
       "fonte": "gov.br da agência reguladora"
     },
     {
-      "data": "2026-11-02",
-      "titulo": "Encerra o prazo interno de associação para a consulta pública nº 33/2026, do módulo três dos procedimentos de distribuição",
-      "detalhe": "O prazo na agência vai até 9 de novembro.",
+      "data": "2026-10-30",
+      "titulo": "Encerram as consultas públicas n.º 38/2026 e n.º 39/2026, sobre os efeitos da reforma tributária no setor elétrico",
+      "detalhe": "Contratos regulados de geração e comercialização, encargos setoriais e bases de remuneração regulatória.",
+      "status": "A VERIFICAR",
+      "fonte": "Imprensa setorial e comunicação de associação setorial"
+    },
+    {
+      "data": "2026-10-30",
+      "titulo": "Leilão de transmissão nº 4/2026",
+      "detalhe": "Na B3, em São Paulo. Oito lotes em sete estados, com cerca de oito bilhões e novecentos milhões de reais em investimento previsto. Edital aprovado em 22 de setembro.",
       "status": "CONFIRMADO",
-      "fonte": "Comunicação de associação setorial"
+      "fonte": "gov.br da agência reguladora"
+    },
+    {
+      "data": "2026-10-30",
+      "titulo": "Prazo das distribuidoras para as declarações dos leilões de energia existente",
+      "detalhe": "Ratificação ou retificação das informações pelo sistema da câmara de comercialização.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br do ministério"
     },
     {
       "data": "2026-11-02",
@@ -308,11 +293,11 @@
       "fonte": "Comunicação de associação setorial"
     },
     {
-      "data": "2026-11-03",
-      "titulo": "Reunião pública ordinária da diretoria da agência reguladora",
-      "detalhe": "",
+      "data": "2026-11-02",
+      "titulo": "Encerra o prazo interno de associação para a consulta pública nº 33/2026, do módulo três dos procedimentos de distribuição",
+      "detalhe": "O prazo na agência vai até 9 de novembro.",
       "status": "CONFIRMADO",
-      "fonte": "gov.br da agência reguladora"
+      "fonte": "Comunicação de associação setorial"
     },
     {
       "data": "2026-11-03",
@@ -320,6 +305,13 @@
       "detalhe": "Associação setorial indica 3 de novembro; as notícias oficiais citam vinte dias de contribuições sem dar a data final. O prazo vale pelo ato.",
       "status": "A VERIFICAR",
       "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-11-03",
+      "titulo": "Reunião pública ordinária da diretoria da agência reguladora",
+      "detalhe": "",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora"
     },
     {
       "data": "2026-11-04",
@@ -348,6 +340,15 @@
       "detalhe": "A associação de geração distribuída divulga esta data; o edital da instituição organizadora indica 24 a 26 de setembro. Não foi localizada notícia de realização nem de adiamento.",
       "status": "A VERIFICAR",
       "fonte": "Comunicação de associação setorial"
+    }
+  ],
+  "proximos_30d": [
+    {
+      "data": "2026-11-06",
+      "titulo": "Encerra a consulta pública nº 235/2026 do ministério, do plano decenal de expansão de energia 2036",
+      "detalhe": "Contribuições pelo portal de consultas do ministério e pela plataforma Brasil Participativo.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br do ministério"
     },
     {
       "data": "2026-11-06",
@@ -355,13 +356,6 @@
       "detalhe": "",
       "status": "CONFIRMADO",
       "fonte": "gov.br da agência reguladora"
-    },
-    {
-      "data": "2026-11-06",
-      "titulo": "Encerra a consulta pública nº 235/2026 do ministério, do plano decenal de expansão de energia 2036",
-      "detalhe": "Contribuições pelo portal de consultas do ministério e pela plataforma Brasil Participativo.",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br do ministério"
     },
     {
       "data": "2026-11-09",
@@ -373,7 +367,7 @@
     {
       "data": "2026-11-09",
       "titulo": "Encontro de líderes ambientais no setor de energia, em São Paulo, até 11 de novembro, com inscrições abertas",
-      "detalhe": "Décima sétima edição, no Hotel Pullman Vila Olímpia. Página de inscrição reaberta em 19 de outubro.",
+      "detalhe": "Décima sétima edição, no Hotel Pullman Vila Olímpia. Página de inscrição reaberta em 26 de outubro.",
       "status": "CONFIRMADO",
       "fonte": "Comunicação de associação setorial"
     },
@@ -383,6 +377,13 @@
       "detalhe": "Aquiraz Riviera. Data mantida pela associação de produtores independentes em 12 de outubro; um site do evento indica 30 e 31 de março, em Natal, com o ano grafado de duas formas na mesma página.",
       "status": "A VERIFICAR",
       "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-11-11",
+      "titulo": "Encerra a consulta pública do ministério sobre as metas do programa Energias da Amazônia",
+      "detalhe": "",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br do ministério"
     },
     {
       "data": "2026-11-13",
@@ -400,22 +401,22 @@
     },
     {
       "data": "2026-11-17",
-      "titulo": "Segunda edição do fórum de análise setorial da câmara de comercialização, em São Paulo, com inscrições abertas",
-      "detalhe": "Grand Hyatt São Paulo, com participação presencial e online, das oito às dezoito horas. Programação publicada em 13 de outubro; página de inscrição reaberta em 19 de outubro.",
-      "status": "CONFIRMADO",
-      "fonte": "Câmara de comercialização de energia elétrica"
-    },
-    {
-      "data": "2026-11-17",
       "titulo": "Reunião pública ordinária da diretoria da agência reguladora",
       "detalhe": "Seguem no calendário oficial as reuniões de 1º e de 8 de dezembro e os circuitos deliberativos de 10 e de 24 de novembro.",
       "status": "CONFIRMADO",
       "fonte": "gov.br da agência reguladora"
     },
     {
+      "data": "2026-11-17",
+      "titulo": "Segunda edição do fórum de análise setorial da câmara de comercialização, em São Paulo, com inscrições abertas",
+      "detalhe": "Grand Hyatt São Paulo, com participação presencial e online, das oito às dezoito horas. Programação publicada em 13 de outubro; página de inscrição reaberta em 26 de outubro.",
+      "status": "CONFIRMADO",
+      "fonte": "Câmara de comercialização de energia elétrica"
+    },
+    {
       "data": "2026-11-18",
       "titulo": "Encontro de armazenamento de energia em São Paulo, até 19 de novembro",
-      "detalhe": "Local a definir. O site oficial do evento não respondeu em 29 de setembro, em 7 de outubro nem em 12 de outubro; a associação de geração distribuída segue listando a data.",
+      "detalhe": "Local a definir. Nenhuma página do evento foi localizada em cinco rodadas, até 26 de outubro; a associação de geração distribuída segue listando a data.",
       "status": "A VERIFICAR",
       "fonte": "Comunicação de associação setorial e imprensa setorial"
     },
@@ -425,15 +426,27 @@
       "detalhe": "Das oito horas de 18 de novembro às vinte e três horas de 20 de novembro. As garantias de proposta vão de 18 a 23 de novembro.",
       "status": "CONFIRMADO",
       "fonte": "Página do leilão no banco nacional de desenvolvimento"
-    }
-  ],
-  "horizonte": [
+    },
     {
       "data": "2026-11-19",
       "titulo": "Janela de reenvio de dados de geração para a apuração das compensações por cortes, até 18 de dezembro",
       "detalhe": "Vale para as usinas que aderirem ao termo de compromisso da portaria normativa nº 140/2026.",
       "status": "A VERIFICAR",
       "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-11-20",
+      "titulo": "Encerra a tomada de subsídios sobre o orçamento de 2027 da conta de desenvolvimento energético",
+      "detalhe": "Data indicada por associação setorial; não conferida na página oficial.",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-11-22",
+      "titulo": "Encerra a consulta pública do ministério sobre a infraestrutura de recarga de veículos elétricos",
+      "detalhe": "Contribuições pelo portal de consultas do ministério e pela plataforma Brasil Participativo.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br do ministério"
     },
     {
       "data": "2026-11-22",
@@ -448,7 +461,9 @@
       "detalhe": "Décima nona edição, no Windsor Barra. Data reconfirmada na página da entidade organizadora em 12 de outubro.",
       "status": "CONFIRMADO",
       "fonte": "Página oficial do evento"
-    },
+    }
+  ],
+  "horizonte": [
     {
       "data": "2026-11-26",
       "titulo": "Simulação dos leilões de reserva de capacidade de armazenamento",
@@ -465,15 +480,22 @@
     },
     {
       "data": "2026-12-01",
+      "titulo": "Abertura esperada da consulta pública de revisão da resolução normativa nº 1.030/2022, no início de dezembro",
+      "detalhe": "Sem dia fixado; a data registrada é referência do mês. Previsão relatada por associação setorial depois de reunião com a área técnica da agência, com cerca de 45 dias de contribuições.",
+      "status": "A VERIFICAR",
+      "fonte": "Comunicação de associação setorial"
+    },
+    {
+      "data": "2026-12-01",
       "titulo": "Congresso de data centers e energia crítica, em São Paulo, até 2 de dezembro",
-      "detalhe": "No Novotel Center Norte, com inscrições abertas. Página oficial do evento reaberta em 12 de outubro.",
+      "detalhe": "No Novotel Center Norte, com inscrições abertas no terceiro lote, até 1.º de dezembro. Página oficial do evento reaberta em 26 de outubro.",
       "status": "CONFIRMADO",
       "fonte": "Página oficial do evento"
     },
     {
-      "data": "2026-12-01",
-      "titulo": "Abertura esperada da consulta pública de revisão da resolução normativa nº 1.030/2022, no início de dezembro",
-      "detalhe": "Sem dia fixado; a data registrada é referência do mês. Previsão relatada por associação setorial depois de reunião com a área técnica da agência, com cerca de 45 dias de contribuições.",
+      "data": "2026-12-02",
+      "titulo": "Encontro nacional da associação do setor solar, em São Paulo, até 3 de dezembro",
+      "detalhe": "Sexta edição. A data segue a confirmar: nenhuma página oficial lista a edição de 2026, pela décima oitava leitura, em 26 de outubro.",
       "status": "A VERIFICAR",
       "fonte": "Comunicação de associação setorial"
     },
@@ -485,9 +507,9 @@
       "fonte": "gov.br da agência reguladora"
     },
     {
-      "data": "2026-12-02",
-      "titulo": "Encontro nacional da associação do setor solar, em São Paulo, até 3 de dezembro",
-      "detalhe": "Sexta edição. A data segue a confirmar: nenhuma página oficial lista a edição de 2026, pela décima sétima leitura, em 19 de outubro.",
+      "data": "2026-12-04",
+      "titulo": "Encerra a tomada de subsídios da agência reguladora sobre o submódulo 7.10 dos procedimentos de regulação tarifária",
+      "detalhe": "Data indicada por associação setorial; não conferida na página oficial.",
       "status": "A VERIFICAR",
       "fonte": "Comunicação de associação setorial"
     },
