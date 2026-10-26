@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-10-26T08:25:02-03:00",
+                  "gerado_em":  "2026-10-26T12:25:02-03:00",
                   "descricao":  "Manifesto de frescor - hora da ultima regeneracao (canonica) de cada material publicado. O catalogo le ESTE arquivo (1 fetch, sem API GitHub). Gerado pela rotina_publicacao_soa.ps1."
               },
     "arquivos":  {
@@ -56,8 +56,9 @@
                      "contencioso-curtailment.html":  "2026-10-20T06:12:49-03:00",
                      "eventos-soa.html":  "2026-07-11T14:15:45-03:00",
                      "Fatos_ANEEL_Folder_SOA.bak_consolidadora_20260917.json":  "2026-08-26T08:54:03-03:00",
+                     "Fatos_ANEEL_Folder_SOA.bak_consolidadora_20261026_0900.json":  "2026-10-13T16:41:57-03:00",
                      "Fatos_ANEEL_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-17T08:48:08-03:00",
-                     "Fatos_ANEEL_Folder_SOA.json":  "2026-10-13T16:41:57-03:00",
+                     "Fatos_ANEEL_Folder_SOA.json":  "2026-10-26T08:42:09-03:00",
                      "Fatos_Beneficios_ESG_Folder_SOA.bak_pre_bump_20260917.json":  "2026-08-18T11:30:29-03:00",
                      "Fatos_Beneficios_ESG_Folder_SOA.json":  "2026-10-20T06:12:48-03:00",
                      "Fatos_CapitalVerde_Folder_SOA.bak_consolidadora_20260911.json":  "2026-08-31T08:09:35-03:00",
@@ -80,8 +81,9 @@
                      "Fatos_MME_Folder_SOA.bak_consolidadora_20260916.json":  "2026-09-16T08:20:05-03:00",
                      "Fatos_MME_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-17T08:20:03-03:00",
                      "Fatos_MME_Folder_SOA.json":  "2026-10-13T16:41:57-03:00",
+                     "Fatos_ONS_Folder_SOA.bak_consolidadora_20261026_0900.json":  "2026-10-13T16:41:57-03:00",
                      "Fatos_ONS_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-01T08:49:43-03:00",
-                     "Fatos_ONS_Folder_SOA.json":  "2026-10-13T16:41:57-03:00",
+                     "Fatos_ONS_Folder_SOA.json":  "2026-10-26T08:42:09-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_20260908.json":  "2026-09-08T09:31:46-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_20260914.json":  "2026-09-11T07:14:36-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_20260923.json":  "2026-09-23T07:17:28-03:00",
@@ -112,11 +114,12 @@
                      "Fatos_Regulatorios_Folder_SOA.bak_consolidadora_20261009_0847.json":  "2026-10-09T08:20:04-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_consolidadora_20261012_0846.json":  "2026-10-12T08:20:03-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_consolidadora_20261022_0853.json":  "2026-10-22T07:22:25-03:00",
+                     "Fatos_Regulatorios_Folder_SOA.bak_consolidadora_20261026_0900.json":  "2026-10-26T07:30:35-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_monitorreg_20260928.json":  "2026-09-25T11:54:34-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_monitorreg_20260929.json":  "2026-09-28T07:22:19-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-17T07:14:13-03:00",
                      "Fatos_Regulatorios_Folder_SOA.bak_publicar_20261019.json":  "2026-10-19T08:20:04-03:00",
-                     "Fatos_Regulatorios_Folder_SOA.json":  "2026-10-26T07:30:35-03:00",
+                     "Fatos_Regulatorios_Folder_SOA.json":  "2026-10-26T08:42:09-03:00",
                      "Fatos_Seguros_Folder_SOA.bak_consolidadora_20261001.json":  "2026-09-30T06:30:00-03:00",
                      "Fatos_Seguros_Folder_SOA.bak_pre_bump_20260917.json":  "2026-09-14T09:10:37-03:00",
                      "Fatos_Seguros_Folder_SOA.json":  "2026-10-26T08:17:12-03:00",
