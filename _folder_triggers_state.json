@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-10-26 08:20",
+                  "gerado_em":  "2026-10-27 08:20",
                   "modo":  "v2 cenario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
@@ -19,47 +19,47 @@
                                                                      "via_cenario":  true
                                                                  },
                                      "monitor-capital-verde-soa":  {
-                                                                       "rodou_hoje":  true,
-                                                                       "via_digest":  true,
-                                                                       "via_cenario":  true
+                                                                       "rodou_hoje":  false,
+                                                                       "via_digest":  false,
+                                                                       "via_cenario":  false
                                                                    },
                                      "monitor-esg-soa":  {
-                                                             "rodou_hoje":  true,
-                                                             "via_digest":  true,
-                                                             "via_cenario":  true
+                                                             "rodou_hoje":  false,
+                                                             "via_digest":  false,
+                                                             "via_cenario":  false
                                                          }
                                  },
                   "cenario_lido":  {
                                        "monitor-seguros-soa":  {
-                                                                   "hoje":  "SIM",
+                                                                   "hoje":  "NAO",
                                                                    "ultimo":  "2026-10-26"
                                                                },
                                        "monitor-esg-soa":  {
-                                                               "hoje":  "SIM",
+                                                               "hoje":  "NAO",
                                                                "ultimo":  "2026-10-26"
                                                            },
                                        "monitor-regulatorio-soa":  {
                                                                        "hoje":  "SIM",
-                                                                       "ultimo":  "2026-10-26"
+                                                                       "ultimo":  "2026-10-27"
                                                                    },
                                        "monitor-capital-verde-soa":  {
-                                                                         "hoje":  "SIM",
+                                                                         "hoje":  "NAO",
                                                                          "ultimo":  "2026-10-26"
                                                                      },
                                        "monitor-eventos-soa":  {
-                                                                   "hoje":  "SIM",
+                                                                   "hoje":  "NAO",
                                                                    "ultimo":  "2026-10-26"
                                                                },
                                        "monitor-leis-soa":  {
-                                                                "hoje":  "SIM",
+                                                                "hoje":  "NAO",
                                                                 "ultimo":  "2026-10-26"
                                                             },
                                        "monitor-gt-absolar-soa":  {
                                                                       "hoje":  "SIM",
-                                                                      "ultimo":  "2026-10-26"
+                                                                      "ultimo":  "2026-10-27"
                                                                   },
                                        "monitor-gato-solar-soa":  {
-                                                                      "hoje":  "SIM",
+                                                                      "hoje":  "NAO",
                                                                       "ultimo":  "2026-10-26"
                                                                   },
                                        "monitor-iptu-verde-soa":  {
@@ -88,10 +88,10 @@
                  },
     "folders":  {
                     "baterias-curtailment.html":  {
-                                                      "ciclo":  "2026-10-26",
+                                                      "ciclo":  "2026-10-27",
                                                       "categoria":  "vivo_sob_gatilho",
                                                       "estado":  "stale",
-                                                      "motivo":  "dado defasado: fato mais velho com 13 dias (\u003e 2); revalidar",
+                                                      "motivo":  "dado defasado: fato mais velho com 14 dias (\u003e 2); revalidar",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-regulatorio-soa"
@@ -99,7 +99,7 @@
                                                       "monitores_parados":  [
 
                                                                             ],
-                                                      "idade_max_dias":  13,
+                                                      "idade_max_dias":  14,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_ANEEL",
@@ -152,10 +152,10 @@
                                                       "proposta_ref":  null
                                                   },
                     "contencioso-curtailment.html":  {
-                                                         "ciclo":  "2026-10-26",
+                                                         "ciclo":  "2026-10-27",
                                                          "categoria":  "vivo_sob_gatilho",
                                                          "estado":  "stale",
-                                                         "motivo":  "dado defasado: fato mais velho com 13 dias (\u003e 2); revalidar",
+                                                         "motivo":  "dado defasado: fato mais velho com 14 dias (\u003e 2); revalidar",
                                                          "aguarda_fonte":  false,
                                                          "monitores_dependentes":  [
                                                                                        "monitor-regulatorio-soa"
@@ -163,7 +163,7 @@
                                                          "monitores_parados":  [
 
                                                                                ],
-                                                         "idade_max_dias":  13,
+                                                         "idade_max_dias":  14,
                                                          "deps":  [
                                                                       {
                                                                           "json":  "Fatos_CCEE",
@@ -189,10 +189,10 @@
                                                          "proposta_ref":  null
                                                      },
                     "acesso-transmissao-pnast.html":  {
-                                                          "ciclo":  "2026-10-26",
+                                                          "ciclo":  "2026-10-27",
                                                           "categoria":  "vivo_sob_gatilho",
                                                           "estado":  "stale",
-                                                          "motivo":  "dado defasado: fato mais velho com 13 dias (\u003e 2); revalidar",
+                                                          "motivo":  "dado defasado: fato mais velho com 14 dias (\u003e 2); revalidar",
                                                           "aguarda_fonte":  false,
                                                           "monitores_dependentes":  [
                                                                                         "monitor-regulatorio-soa"
@@ -200,7 +200,7 @@
                                                           "monitores_parados":  [
 
                                                                                 ],
-                                                          "idade_max_dias":  13,
+                                                          "idade_max_dias":  14,
                                                           "deps":  [
                                                                        {
                                                                            "json":  "Fatos_MME",
@@ -244,18 +244,18 @@
                                                           "proposta_ref":  null
                                                       },
                     "capital-verde-usinas.html":  {
-                                                      "ciclo":  "2026-10-26",
+                                                      "ciclo":  "2026-10-27",
                                                       "categoria":  "vivo_sob_gatilho",
-                                                      "estado":  "herda_pendente",
-                                                      "motivo":  "depende de fato pendente: Finep Mais Inovação Brasil — Rodada 2 · Transição Energética (PENDENTE)",
+                                                      "estado":  "avaliacao_represada",
+                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-10-27: monitor-capital-verde-soa",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-capital-verde-soa"
                                                                                 ],
                                                       "monitores_parados":  [
-
+                                                                                "monitor-capital-verde-soa"
                                                                             ],
-                                                      "idade_max_dias":  0,
+                                                      "idade_max_dias":  1,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
