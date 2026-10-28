@@ -40,9 +40,9 @@
       "qsv_cor": "VERDE",
       "norma": "Portaria Normativa MME 136/2026, de 1o/06/2026 (DOU 03/06/2026, Secao 1) -- texto integral, ANEXO I e ANEXO II",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-10-19",
+      "verificado_em": "2026-10-28",
       "gatilho_revisao": "publicacao/alteracao do edital ANEEL; mudanca de datas; publicacao da NT de Quantitativos da Capacidade Remanescente do SIN PARA ESCOAMENTO ate 30/09/2026 (art. 11 par. 4o)",
-      "pendencia_verificacao": "CORRECAO DE DISPOSITIVO ancorada no ato e lida em 01/09/2026: o prazo de 30/09/2026 para a NT de Quantitativos esta no ART. 11 PARAGRAFO 4o, NAO no art. 15 par. 4o. O art. 15 trata de outra coisa (afasta o art. 9o da Portaria GM/MME 514/2011, mantido o art. 7o). Corrigir em todo material interno, inclusive no prompt do monitor-regulatorio-soa. ARMADILHA DE NOME: a NT publicada pelo ONS em 31/08/2026 (NT-ONS DPL 0083/2026) e a Nota Tecnica 02 do art. 11 da Portaria 129/2026, ambito PNAST/Temporada de Acesso -- NAO e a NT do art. 11 par. 4o da 136/2026, que trata da capacidade PARA ESCOAMENTO e vence em 30/09. As duas se distinguem pela expressao 'para Escoamento'. | 07/10/2026: Despacho Decisorio SNTEP/MME 31/2026 (DOU 06/10) nega inclusao de Janauba 3 500 kV no Anexo II; lista de bonificados mantida. Fato canonico Fatos_Canonicos_LRCAP_Portaria136_v1.md precisa registrar o despacho."
+      "pendencia_verificacao": "28/10/2026 (consolidadora): datas reconferidas em F1 no release da ANEEL de 27/10/2026, 19h00 ('Editais No 05/2026 e No 06/2026 dos leiloes de Armazenamento de Energia sao aprovados pela ANEEL'), aberto e lido nesta run: certames em 2 e 4 de dezembro de 2026, exclusivamente via internet; produto por disponibilidade de potencia (MW); inicio em 1o/08/2028; suprimento de 15 anos; edital 05 com criterio de nacionalizacao, edital 06 sem. Valor do fato inalterado. O aviso de licitacao e o texto do edital ainda nao estavam no DOU as 08h30 de 28/10. | CORRECAO DE DISPOSITIVO ancorada no ato e lida em 01/09/2026: o prazo de 30/09/2026 para a NT de Quantitativos esta no ART. 11 PARAGRAFO 4o, NAO no art. 15 par. 4o. O art. 15 trata de outra coisa (afasta o art. 9o da Portaria GM/MME 514/2011, mantido o art. 7o). Corrigir em todo material interno, inclusive no prompt do monitor-regulatorio-soa. ARMADILHA DE NOME: a NT publicada pelo ONS em 31/08/2026 (NT-ONS DPL 0083/2026) e a Nota Tecnica 02 do art. 11 da Portaria 129/2026, ambito PNAST/Temporada de Acesso -- NAO e a NT do art. 11 par. 4o da 136/2026, que trata da capacidade PARA ESCOAMENTO e vence em 30/09. As duas se distinguem pela expressao 'para Escoamento'. | 07/10/2026: Despacho Decisorio SNTEP/MME 31/2026 (DOU 06/10) nega inclusao de Janauba 3 500 kV no Anexo II; lista de bonificados mantida. Fato canonico Fatos_Canonicos_LRCAP_Portaria136_v1.md precisa registrar o despacho."
     },
     {
       "id": "lrcap_edital",
@@ -1031,6 +1031,27 @@
       "registrado_por": "monitores-regulatorios-soa",
       "promovido_em": "2026-10-07",
       "promovido_por": "monitor-regulatorio-soa"
+    },
+    {
+      "id": "aneel_cp_040_2026_fim_desconto_tusd_tust",
+      "fato_id": "ANEEL-CP-040-2026-FIM-DESCONTO-TUSD-TUST",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Consulta Publica ANEEL no 040/2026 — regulamentacao do fim do desconto na TUSD e na TUST para quem migrar ao mercado livre",
+      "valor": "F1 — release oficial da ANEEL de 27/10/2026, 19h09, aberto e lido em 28/10/2026. A Diretoria aprovou em Circuito Deliberativo de 27/10 a abertura da CP no 040/2026. Alcance: consumidores que, apos a vigencia da Lei 15.269/2025, migrarem para o mercado livre ou pedirem aumento da capacidade contratada de uso dos sistemas. Propostas: alterar as RENs 1.000/2021 e 1.009/2022; autoprodutor mantem o beneficio so na parcela atendida por geracao propria; ampliacao posterior de carga pode perder o desconto proporcionalmente; distribuidoras e ONS atualizam os montantes de uso na CCEE. Contribuicoes de 29/10 a 14/12/2026, por intercambio documental, no e-mail cp040_2026@aneel.gov.br. E consulta, nao regra.",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "Consulta Publica ANEEL no 040/2026 (Circuito Deliberativo de 27/10/2026); Lei 15.269/2025; RENs ANEEL 1.000/2021 e 1.009/2022",
+      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/mercado-livre-de-energia-consulta-publica-propoe-regulamentacao-do-fim-do-desconto-nas-tarifas-de-uso-dos-sistemas",
+      "verificado_em": "2026-10-28",
+      "qsv_cor": "AZUL",
+      "numero_status": "ANCORADO_PARCIAL",
+      "vetores_afetados": [
+        "V5",
+        "V2"
+      ],
+      "gatilho_revisao": "Publicacao do aviso no DOU com numero de processo; leitura da nota tecnica e das minutas; fim das contribuicoes em 14/12/2026.",
+      "pendencia_verificacao": "Nota tecnica e minutas nao lidas; aviso no DOU nao localizado ate 28/10, 08h30; numero do processo nao ancorado neste fato (a pauta citava 48500.004840/2026-84, conferir no aviso). Decidir se a casa contribui via ABSOLAR, so ao TR.",
+      "fonte": "F1 ANEEL (release oficial de 27/10/2026)."
     }
   ],
   "_pendentes_verificacao": [
