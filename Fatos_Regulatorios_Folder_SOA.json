@@ -42,7 +42,7 @@
       "numero_status": "ANCORADO",
       "verificado_em": "2026-10-29",
       "gatilho_revisao": "publicacao/alteracao do edital ANEEL; mudanca de datas; publicacao da NT de Quantitativos da Capacidade Remanescente do SIN PARA ESCOAMENTO ate 30/09/2026 (art. 11 par. 4o)",
-      "pendencia_verificacao": "28/10/2026 (consolidadora): datas reconferidas em F1 no release da ANEEL de 27/10/2026, 19h00 ('Editais No 05/2026 e No 06/2026 dos leiloes de Armazenamento de Energia sao aprovados pela ANEEL'), aberto e lido nesta run: certames em 2 e 4 de dezembro de 2026, exclusivamente via internet; produto por disponibilidade de potencia (MW); inicio em 1o/08/2028; suprimento de 15 anos; edital 05 com criterio de nacionalizacao, edital 06 sem. Valor do fato inalterado. O aviso de licitacao e o texto do edital ainda nao estavam no DOU as 08h30 de 28/10. | CORRECAO DE DISPOSITIVO ancorada no ato e lida em 01/09/2026: o prazo de 30/09/2026 para a NT de Quantitativos esta no ART. 11 PARAGRAFO 4o, NAO no art. 15 par. 4o. O art. 15 trata de outra coisa (afasta o art. 9o da Portaria GM/MME 514/2011, mantido o art. 7o). Corrigir em todo material interno, inclusive no prompt do monitor-regulatorio-soa. ARMADILHA DE NOME: a NT publicada pelo ONS em 31/08/2026 (NT-ONS DPL 0083/2026) e a Nota Tecnica 02 do art. 11 da Portaria 129/2026, ambito PNAST/Temporada de Acesso -- NAO e a NT do art. 11 par. 4o da 136/2026, que trata da capacidade PARA ESCOAMENTO e vence em 30/09. As duas se distinguem pela expressao 'para Escoamento'. | 07/10/2026: Despacho Decisorio SNTEP/MME 31/2026 (DOU 06/10) nega inclusao de Janauba 3 500 kV no Anexo II; lista de bonificados mantida. Fato canonico Fatos_Canonicos_LRCAP_Portaria136_v1.md precisa registrar o despacho."
+      "pendencia_verificacao": "29/10/2026 (consolidadora, 08h43): datas reconferidas em F1 no DOU de 29/10/2026, Secao 3: Aviso de Licitacao do Leilao 5/2026-ANEEL (Armazenamento Nacional, baterias com conteudo nacional, sessao em 02/12/2026) e do Leilao 6/2026-ANEEL (Armazenamento, sessao em 04/12/2026), ambos de 27/10/2026, assinados pelo diretor-geral; edital e anexos 'a partir de 29 de outubro de 2026'. Lidos na integra por curl. Valor do fato inalterado. Portal leilao.aneel.gov.br/editalGeracao conferido pelo Chrome por volta das 08h42: Leiloes 5 e 6 ainda sem o PDF do edital. ATENCAO: o carimbo 2026-10-29 deste e de outros 58 fatos foi gravado as 08h20 pelo PASSO 2 do motor (_rotina_fatos_engine.log), sem reconferencia; este fato foi reconferido de fato por esta run. | 28/10/2026 (consolidadora): datas reconferidas em F1 no release da ANEEL de 27/10/2026, 19h00 ('Editais No 05/2026 e No 06/2026 dos leiloes de Armazenamento de Energia sao aprovados pela ANEEL'), aberto e lido nesta run: certames em 2 e 4 de dezembro de 2026, exclusivamente via internet; produto por disponibilidade de potencia (MW); inicio em 1o/08/2028; suprimento de 15 anos; edital 05 com criterio de nacionalizacao, edital 06 sem. Valor do fato inalterado. O aviso de licitacao e o texto do edital ainda nao estavam no DOU as 08h30 de 28/10. | CORRECAO DE DISPOSITIVO ancorada no ato e lida em 01/09/2026: o prazo de 30/09/2026 para a NT de Quantitativos esta no ART. 11 PARAGRAFO 4o, NAO no art. 15 par. 4o. O art. 15 trata de outra coisa (afasta o art. 9o da Portaria GM/MME 514/2011, mantido o art. 7o). Corrigir em todo material interno, inclusive no prompt do monitor-regulatorio-soa. ARMADILHA DE NOME: a NT publicada pelo ONS em 31/08/2026 (NT-ONS DPL 0083/2026) e a Nota Tecnica 02 do art. 11 da Portaria 129/2026, ambito PNAST/Temporada de Acesso -- NAO e a NT do art. 11 par. 4o da 136/2026, que trata da capacidade PARA ESCOAMENTO e vence em 30/09. As duas se distinguem pela expressao 'para Escoamento'. | 07/10/2026: Despacho Decisorio SNTEP/MME 31/2026 (DOU 06/10) nega inclusao de Janauba 3 500 kV no Anexo II; lista de bonificados mantida. Fato canonico Fatos_Canonicos_LRCAP_Portaria136_v1.md precisa registrar o despacho."
     },
     {
       "id": "lrcap_edital",
@@ -1052,6 +1052,28 @@
       "gatilho_revisao": "Publicacao do aviso no DOU com numero de processo; leitura da nota tecnica e das minutas; fim das contribuicoes em 14/12/2026.",
       "pendencia_verificacao": "Nota tecnica e minutas nao lidas; aviso no DOU nao localizado ate 28/10, 08h30; numero do processo nao ancorado neste fato (a pauta citava 48500.004840/2026-84, conferir no aviso). Decidir se a casa contribui via ABSOLAR, so ao TR.",
       "fonte": "F1 ANEEL (release oficial de 27/10/2026)."
+    },
+    {
+      "id": "mme_potee_diretrizes_cp_portaria_3256",
+      "fato_id": "MME-POTEE-DIRETRIZES-CP-3256-2026",
+      "orgao": "MME",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Consulta publica do MME sobre as diretrizes do Plano de Outorgas de Transmissao (POTEE)",
+      "valor": "F1, DOU de 29/10/2026, Secao 1: a Portaria SNTEP/MME no 3.256, de 26/10/2026, divulga para consulta publica, por 30 dias contados da publicacao, a minuta de Portaria Normativa com as diretrizes para elaborar o POTEE, dos estudos de planejamento da transmissao ate os leiloes de ampliacao e a autorizacao de reforcos e melhorias. Pela minuta, a EPE apresenta ate 15 de dezembro de cada ano a proposta de programacao dos estudos de planejamento da transmissao, e a SNTEP aprova ate 15 de janeiro do ano seguinte. O art. 4o, par. 6o, manda a programacao contemplar estudos de economicidade para eliminar ou reduzir restricoes internas aos submercados e subsistemas ou entre eles, incluidos os casos de geracao despachada independentemente da ordem de merito, em articulacao com o ONS e a CCEE. Documentos no Portal de Consultas Publicas do MME e no Brasil Participativo. E consulta, nao regra.",
+      "status": "EM CONSULTA (30 dias a partir de 29/10/2026)",
+      "qsv_cor": "AZUL",
+      "norma": "Portaria SNTEP/MME no 3.256, de 26/10/2026 (DOU de 29/10/2026, Secao 1); Portaria Normativa MME no 129/2026; Processo 48360.000364/2026-74",
+      "url": "https://www.in.gov.br/web/dou/-/portaria-sntep/mme-n-3.256-de-26-de-outubro-de-2026-741166906",
+      "numero_status": "ANCORADO_PARCIAL",
+      "verificado_em": "2026-10-29",
+      "vetores_afetados": [
+        "V1",
+        "V2",
+        "V4"
+      ],
+      "gatilho_revisao": "Fim da consulta (cerca de 28/11/2026); publicacao da Portaria Normativa final; posicao da ABSOLAR (GTGC).",
+      "pendencia_verificacao": "Minuta lida em parte (arts. 1o a 4o, cerca de 7 mil de 35 mil caracteres) em 29/10/2026 por curl no DOU. Data exata de fim da consulta a conferir no portal do MME (30 dias contados de 29/10 dao cerca de 28/11). Ligacao com o tema de restricao de escoamento (curtailment) e leitura da casa, nao do ato. Decidir se a casa contribui via ABSOLAR, so ao TR.",
+      "fonte": "F1 DOU (Portaria SNTEP/MME 3.256/2026, texto aberto em 29/10/2026)."
     }
   ],
   "_pendentes_verificacao": [
