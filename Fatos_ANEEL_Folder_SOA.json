@@ -30,7 +30,8 @@
     "nota_run_2026_07_29": "Varredura CONSOLIDADORA de 29/07. F1 reaberta com sucesso via navegador (web_fetch devolveu 403 em www2.aneel.gov.br e 404 no indice de CPs do gov.br). ACHADO PRINCIPAL: a previa da 15a RPO, que ontem nao trazia decisao para o item 4, HOJE TRAZ — a vista coletiva do Dir. Gentil Nogueira na CP 45/19 e a 4a fase de CP proposta no voto-vista do Dir. Mosna passam de F3 (relato ABSOLAR) a F1 institucional. Fecha a 'prioridade no 1 da varredura de 29/07' registrada ontem. 2 pendentes novos (CP 25/2026 e CP do Decreto 12.772/2025). Correcao de rotulo: o item 6 NAO e nominalmente 'CP da PNAST'. Indice de noticias da ANEEL reconferido as 12h: NENHUM item datado de 29/07 — confirma o achado independente dos monitores de gato-solar e regulatorio. Nenhum fato promovido a VERDE (todos os documentos sao previa, sem DOU).",
     "nota_run_2026_08_21_consolidadora": "Varredura consolidadora de 21/08/2026: quatro registros de _pendentes_verificacao estavam travados na MESMA condição — a publicação do respectivo Aviso de Consulta Pública no DOU. Os quatro Avisos (16, 18, 22, 23 e 25 de 2026) foram abertos no in.gov.br pelo navegador e lidos. Nenhum fato foi promovido a VERDE: a régua exige fonte oficial reaberta E número ancorado, e o conteúdo remanescente destes registros (AIR da CP 016, minutas e CRCAP dos Leilões 05 e 06/2026) segue sem leitura.",
     "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. ANEEL noticias -> 200 267521; ANEEL CPs -> None HTTP Error 404: Not Found",
-    "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 2 confirmado, 6 impreciso, 8 mudou. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente. Sobre a REN ANEEL 1.170/2026 ficou so o registro do ato e a ementa: pela regra da casa (vigia da Portaria 140, 13/10/2026), nao ha frase externa sobre a Resolucao antes da leitura do voto, da nota tecnica e do relatorio da CP 45/2019."
+    "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 2 confirmado, 6 impreciso, 8 mudou. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente. Sobre a REN ANEEL 1.170/2026 ficou so o registro do ato e a ementa: pela regra da casa (vigia da Portaria 140, 13/10/2026), nao ha frase externa sobre a Resolucao antes da leitura do voto, da nota tecnica e do relatorio da CP 45/2019.",
+    "nota_run_2026_11_02_consolidadora": "Run consolidadora de 02/11/2026: so o fato ANEEL-CP-034-2026-TIPO-III foi reconferido em F1 (aviso de prorrogacao no DOU de 29/10, Secao 3) e teve verificado_em atualizado. _meta.verificado_em NAO foi alterado: os demais fatos seguem com a data da ultima reconferencia real."
   },
   "fatos": [
     {
@@ -703,12 +704,12 @@
     },
     {
       "fato_id": "ANEEL-CP-034-2026-TIPO-III",
-      "tema": "CP ANEEL no 34/2026 — revisao da classificacao das modalidades de operacao de usinas (Procedimentos de Rede): contribuicoes de 17/09 a 02/11/2026",
-      "valor": "CONSULTA PUBLICA ABERTA E ANCORADA EM F1. Aviso de Consulta Publica no 34/2026 da ANEEL, DOU de 17/09/2026, Edicao 176, Secao 3, pagina 108. Processo no 48500.033896/2025-65. Objeto: aprimorar a proposta de alteracao dos Procedimentos de Rede associada a revisao da classificacao das modalidades de operacao de usinas conectadas ao sistema, em 22 submodulos (1.2, 2.1, 2.4, 2.12, 2.14, 2.15, 3.1, 3.4, 3.5, 3.9, 3.10, 4.1, 4.2, 4.4, 4.5, 6.1, 6.9, 7.1, 7.2, 7.4, 7.11 e 7.13), nos termos das minutas do ONS. Modalidade: intercambio de documentos. Periodo para envio: 17/09/2026 a 02/11/2026. E consulta, nao regra: as modalidades vigentes seguem as dos Procedimentos de Rede em vigor. NUMERACAO: o aviso no DOU fixa o numero 34/2026; a noticia da ANEEL de 15/09 tambem diz 034, mas indicava o e-mail cp043_2026, divergencia tratada como erro material da noticia.",
-      "status": "CONSULTA PUBLICA ABERTA — contribuicoes de 17/09/2026 a 02/11/2026",
-      "norma": "Aviso de Consulta Publica ANEEL no 34/2026 — DOU de 17/09/2026, Secao 3, p. 108 · Processo no 48500.033896/2025-65",
+      "tema": "CP ANEEL no 34/2026 — revisao da classificacao das modalidades de operacao de usinas (Procedimentos de Rede): contribuicoes de 17/09 a 12/11/2026 (prorrogada)",
+      "valor": "CONSULTA PUBLICA ABERTA E ANCORADA EM F1. Aviso de Consulta Publica no 34/2026 da ANEEL, DOU de 17/09/2026, Edicao 176, Secao 3, pagina 108. Processo no 48500.033896/2025-65. Objeto: aprimorar a proposta de alteracao dos Procedimentos de Rede associada a revisao da classificacao das modalidades de operacao de usinas conectadas ao sistema, em 22 submodulos (1.2, 2.1, 2.4, 2.12, 2.14, 2.15, 3.1, 3.4, 3.5, 3.9, 3.10, 4.1, 4.2, 4.4, 4.5, 6.1, 6.9, 7.1, 7.2, 7.4, 7.11 e 7.13), nos termos das minutas do ONS. Modalidade: intercambio de documentos. Periodo para envio: 17/09/2026 a 02/11/2026, PRORROGADO ate 12/11/2026 pelo Aviso de Prorrogacao da Consulta Publica no 34/2026 (DOU de 29/10/2026, Secao 3), que mantem inalteradas as demais informacoes do aviso de 17/09. E consulta, nao regra: as modalidades vigentes seguem as dos Procedimentos de Rede em vigor. NUMERACAO: o aviso no DOU fixa o numero 34/2026; a noticia da ANEEL de 15/09 tambem diz 034, mas indicava o e-mail cp043_2026, divergencia tratada como erro material da noticia.",
+      "status": "CONSULTA PUBLICA ABERTA — contribuicoes de 17/09/2026 a 12/11/2026 (prorrogada)",
+      "norma": "Aviso de Consulta Publica ANEEL no 34/2026 — DOU de 17/09/2026, Secao 3, p. 108 · Processo no 48500.033896/2025-65 — prazo prorrogado ate 12/11/2026 (Aviso de Prorrogacao, DOU de 29/10/2026, Secao 3)",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-34/2026-732288687",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-02",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -733,6 +734,14 @@
           "nota_qsv": "Noticia oficial lida na integra em 16/09/2026; traz o numero 034 no texto e o e-mail cp043_2026, divergencia resolvida pelo aviso no DOU.",
           "associacao_origem": null,
           "gt_origem": null
+        },
+        {
+          "tipo": "F1_DOU",
+          "ref": "https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-da-consulta-publica-n-34/2026-740998215 (DOU 29/10/2026, Secao 3)",
+          "trecho_literal": "AVISO DE PRORROGACAO DA CONSULTA PUBLICA No 34/2026 Processo: 48500.033896/2025-65. [...] Periodo para envio: O prazo final para envio de contribuicoes foi prorrogado ate o dia 12 de novembro de 2026. Permanecem inalteradas as demais informacoes publicadas no Diario Oficial da Uniao de 17/09/2026, Secao 3, pag. 108.",
+          "nota_qsv": "Aviso de prorrogacao aberto e lido na integra em 02/11/2026 pela rotina consolidadora (curl na pagina do ato). Confirma a data informada pelo GTGC em 29/10.",
+          "associacao_origem": null,
+          "gt_origem": null
         }
       ],
       "numero_status": "ANCORADO",
@@ -744,8 +753,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "pendencia_verificacao": "Minutas do ONS, NT Conjunta 18/2026 (SEI 0445583) e voto do relator NAO lidos: nenhum conteudo de merito (conjuntos operativos, criterios por modalidade) pode ser afirmado a partir deste fato. Canal de envio (e-mail da CP) a confirmar na pagina de consultas publicas, fora do ar por DNS. Mapeamento de vetores V4/V3 proposto pela consolidadora por analogia ao ANEEL-CP-045-2019; confirmar. Prazo interno ABSOLAR ainda nao definido.",
-      "gatilho_revisao": "publicacao das minutas e da NT no portal da ANEEL; definicao do prazo interno ABSOLAR; encerramento em 02/11/2026"
+      "pendencia_verificacao": "Minutas do ONS, NT Conjunta 18/2026 (SEI 0445583) e voto do relator NAO lidos: nenhum conteudo de merito (conjuntos operativos, criterios por modalidade) pode ser afirmado a partir deste fato. Canal de envio (e-mail da CP) a confirmar na pagina de consultas publicas, fora do ar por DNS. Mapeamento de vetores V4/V3 proposto pela consolidadora por analogia ao ANEEL-CP-045-2019; confirmar. Prazo interno ABSOLAR ainda nao definido. Atualizacao 02/11/2026: prazo ANEEL prorrogado para 12/11/2026 (F1); prazo interno ABSOLAR 09/11 (fonte ABSOLAR, briefing GT); a casa enviou comentarios em 28/10.",
+      "gatilho_revisao": "publicacao das minutas e da NT no portal da ANEEL; encerramento em 12/11/2026 (prorrogado); relatorio de contribuicoes"
     }
   ],
   "_pendentes_verificacao": [
