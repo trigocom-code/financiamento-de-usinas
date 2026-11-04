@@ -2,7 +2,7 @@
   "_meta": {
     "schema_version": "1.3",
     "descricao": "Fonte ÚNICA de fatos regulatórios do Folder 'Onde Entramos'. Schema 1.3 (alinhado aos monitores per-órgão e à Tabela de Precedência QSV v1.2). O folder Folder_Vivo_Regulatorio_GitHub.html consome DESTE arquivo (data.fatos[]). O monitor regulatório SOA mantém este arquivo. Schema legado aposentado em Fatos_Regulatorios_Folder_SOA.legacy.deprecated.json.",
-    "verificado_em": "2026-11-02",
+    "verificado_em": "2026-11-04",
     "schema_migrado_em": "2026-06-29",
     "proxima_revisao_sugerida": "2026-11-03",
     "responsavel_atualizacao": "Monitor Regulatório SOA (digest diário) — escreve schema 1.3, aplica Tabela_Precedencia_QSV_v1_2",
@@ -1074,6 +1074,23 @@
       "gatilho_revisao": "Fim da consulta (cerca de 28/11/2026); publicacao da Portaria Normativa final; posicao da ABSOLAR (GTGC).",
       "pendencia_verificacao": "Minuta lida em parte (arts. 1o a 4o, cerca de 7 mil de 35 mil caracteres) em 29/10/2026 por curl no DOU. Data exata de fim da consulta a conferir no portal do MME (30 dias contados de 29/10 dao cerca de 28/11). Ligacao com o tema de restricao de escoamento (curtailment) e leitura da casa, nao do ato. Decidir se a casa contribui via ABSOLAR, so ao TR.",
       "fonte": "F1 DOU (Portaria SNTEP/MME 3.256/2026, texto aberto em 29/10/2026)."
+    },
+    {
+      "id": "ren_1175_2026_open_energy",
+      "fato_id": "ANEEL-REN-1175-2026-OPEN-ENERGY",
+      "orgao": "ANEEL",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Open Energy: acesso e compartilhamento padronizado de dados do consumidor (REN ANEEL 1.175/2026)",
+      "valor": "Publicada no DOU de 04/11/2026 e vigente na publicacao. Participacao obrigatoria da CCEE, dos varejistas e das distribuidoras (estes dois como transmissores de dados); outras instituicoes podem atuar como receptoras voluntarias, com registro e homologacao na CCEE, consentimento do titular, vedacao de repasse a terceiros e sem cobranca pela participacao. Dados: cadastrais e historico de faturamento e de pagamentos dos ultimos 12 meses. Consentimento por 30 dias, 90 dias, 180 dias ou 1 ano. Prazos: ate 12 meses para o acesso do consumidor aos proprios dados e para a pagina da CCEE de comparacao de ofertas; ate 24 meses para o compartilhamento por API.",
+      "status": "VIGENTE",
+      "qsv_cor": "AZUL",
+      "norma": "Resolucao Normativa ANEEL no 1.175, de 27/10/2026, DOU de 04/11/2026, Secao 1 (arts. 1o, 5o, 6o, 20, 22 a 24).",
+      "numero_status": "ANCORADO",
+      "fonte": "F1 DOU - lido na integra em 04/11/2026",
+      "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-n-1.175-de-27-de-outubro-de-2026-741551074",
+      "verificado_em": "2026-11-04",
+      "gatilho_revisao": "publicacao do Manual de Instrucoes do Open Energy pela ANEEL; documentos da CCEE sobre registro de instituicao receptora; fim dos prazos do art. 22 (11/2027 e 11/2028)",
+      "pendencia_verificacao": "Manual de Instrucoes e dicionario de dados nao publicados/lidos: conferir se o historico de faturamento traz consumo e injecao por posto. O ato nao lista dados de medicao de intervalo. Fora da Tabela QSV v1.2: teto AZUL (R7). REN 1.174/2026 (abertura do Grupo A), mesma edicao, nao lida."
     }
   ],
   "_pendentes_verificacao": [
@@ -1419,7 +1436,9 @@
       "numero_status": "NAO_ANCORADO",
       "fonte": "F2 convergente (Lefosse, TozziniFreire, pv magazine Brasil) - pv magazine devolveu HTTP 403 e nao foi lido",
       "verificado_em": "2026-08-14",
-      "pendencia_verificacao": "[A VERIFICAR] Numero da REN de 02/06/2026 nao localizado e texto do ato nao lido. DIVERGENCIA DE DATA dentro do proprio F2 para o prazo do ONS informar os elegiveis: uma fonte aponta 15/08/2026, outra aponta 20/08/2026. Nao citar prazo sem o texto da REN."
+      "pendencia_verificacao": "[A VERIFICAR] Numero da REN de 02/06/2026 nao localizado e texto do ato nao lido. DIVERGENCIA DE DATA dentro do proprio F2 para o prazo do ONS informar os elegiveis: uma fonte aponta 15/08/2026, outra aponta 20/08/2026. Nao citar prazo sem o texto da REN.",
+      "atualizacao_2026_11_04": "F1 noticia ANEEL de 03/11/2026: pelo Despacho no 3.585/2026, no mecanismo da REN 1.157/2026, a ANEEL revogou as autorizacoes de 178 centrais geradoras (cerca de 7,80 GW instalados; cerca de 7,68 GW de MUST contratado) e determinou ao ONS a rescisao dos CUST listados nos Anexos I a XVII, sem encargos rescisorios. Despacho e anexos NAO lidos (nao localizados no DOU de 04/11): segue PENDENTE_REABERTURA. URL noticia: https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/aneel-revoga-autorizacoes-de-178-usinas-e-determina-rescisao-dos-contratos-de-transmissao",
+      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/aneel-revoga-autorizacoes-de-178-usinas-e-determina-rescisao-dos-contratos-de-transmissao"
     },
     {
       "fato_id": "MME-LEILOES-ENERGIA-EXISTENTE-A1-A2-A3-2026",
