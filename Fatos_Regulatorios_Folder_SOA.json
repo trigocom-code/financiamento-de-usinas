@@ -2390,15 +2390,16 @@
       "orgao": "MME",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Consulta publica do MME sobre metodologia de calculo e revisao da garantia fisica de usinas eolicas e solares fotovoltaicas",
-      "valor": "Consulta aberta em 04/11/2026, contribuicoes ate 18/12/2026. Segundo a noticia oficial do MME, a principal inovacao das minutas e o tratamento dos cortes de geracao no calculo da geracao media. Proposta em consulta, nao aprovada.",
+      "valor": "Consulta Publica MME no 241/2026 aberta em 04/11/2026 pela Portaria SNTEP/MME no 3.257, de 28/10/2026: divulga minutas de portaria com as metodologias e procedimentos de calculo e revisao da garantia fisica de usinas eolicas e solares fotovoltaicas, com Analise de Impacto Regulatorio. Art. 2o da portaria: prazo de 45 dias contados da publicacao, pelo Portal de Consultas Publicas do MME e pelo Participa + Brasil; o portal e a noticia do MME indicam 18/12/2026. Segundo a noticia oficial do MME, a principal inovacao e o tratamento dos cortes de geracao no calculo da geracao media. Proposta em consulta, nao aprovada.",
       "status": "EM DELIBERAÇÃO",
-      "norma": "Consulta publica MME de 04/11/2026 (numero e portaria de abertura pendentes de confirmacao)",
+      "norma": "Consulta Publica MME no 241/2026, aberta pela Portaria SNTEP/MME no 3.257, de 28/10/2026 (DOU de 04/11/2026); Processo no 48360.000333/2024-51",
       "qsv_cor": "LARANJA",
       "numero_status": "PENDENTE_REABERTURA",
       "gatilho_revisao": "Leitura das minutas e da AIR; publicacao da portaria final de garantia fisica",
       "verificado_em": "2026-11-05",
       "url": "https://www.gov.br/mme/pt-br/assuntos/noticias/novembro-26/mme-abre-consulta-publica-para-aprimoramento-da-metodologia-de-calculo-de-garantia-fisica-de-usinas-eolicas-e-solares-fotovoltaicas",
-      "pendencia_verificacao": "[A VERIFICAR] numero da CP, minutas e AIR nao abertos em 05/11/2026; lida so a noticia F1 do MME. Conferir como os cortes entram na geracao media e a vigencia."
+      "pendencia_verificacao": "Numero da CP e portaria de abertura ANCORADOS em F1 em 05/11/2026 (texto da Portaria 3.257 lido). [A VERIFICAR] minutas EOL e UFV, NT 153/2026 e AIR (NT 250/2026) baixadas pelo vigia da Portaria 140 em 05/11 em _Fontes_F1_Portaria_140/CP241_MME_GF_EOL_UFV_2026-11-04, nao lidas na integra. Prazo: 45 dias de 04/11 cai em 19/12 (sabado); portal diz 18/12: usar 18/12 como data segura. Classificacao de constrained-off nas minutas cita a REN ANEEL 1.030/2022 (indisponibilidade externa, confiabilidade eletrica, razao energetica), nao a da Portaria 140. Corrige o digest do monitor regulatorio de 04/11, que tratou a Portaria 3.257 como ato de rotina.",
+      "fonte": "F1 - Portaria SNTEP/MME no 3.257/2026 (PDF oficial do portal de consultas do MME, lido na integra em 05/11/2026) e noticia do MME de 04/11/2026."
     }
   ],
   "_historico_caidos": []
