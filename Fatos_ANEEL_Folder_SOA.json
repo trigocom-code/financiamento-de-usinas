@@ -3,7 +3,7 @@
     "orgao": "ANEEL",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ANEEL — schema v1.3 com tipo_fato, qsv_cor, fontes independentes, associacao_origem, ancoragem numérica. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-11-04",
+    "verificado_em": "2026-11-05",
     "proxima_revisao_sugerida": "2026-11-10",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ANEEL conforme QSV-R v3.0",
     "nota_run_2026_07_16": "Varredura de 16/07: nenhuma reabertura F1 efetiva → NENHUM fato teve verificado_em bumpado (postura conservadora, R2). _meta.verificado_em reflete a data da varredura, não a de reconferência de fato. Página-mãe de notícias da ANEEL veio JS-truncada (inconclusiva para 08–16/07); a subpasta /noticias/2026-defeso-eleitoral carimba 'Atualizado em 07/07/2026 17h39' e vale como negativo APENAS para essa subpasta. Detectados 6 itens novos via F3 (ABSOLAR GTGD 15/07 + Agência iNFRA 13/07), todos em _pendentes_verificacao. A run de 15/07 escreveu JSON mas não escreveu digest — lacuna reportada ao CEO.",
@@ -41,7 +41,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.161/2026 · assinada 02/06/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.161-de-2-de-junho-de-2026-714430510",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -91,7 +91,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.162/2026 (altera RENs 846/2019, 875/2020, 905/2020, 921/2021, 1.000/2021, 1.009/2022, 1.029/2022, 1.030/2022, 1.031/2022 e 1.071/2023) · assinada 02/06/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.162-de-2-de-junho-de-2026-714416734",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -141,7 +141,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.170/2026 · assinada 06/10/2026 · DOU 09/10/2026, Ed. 192, Seção 1, p. 122 · Processo 48500.900375/2019-83 · resultado da 3ª fase da CP ANEEL 045/2019",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-n-1.170-de-6-de-outubro-de-2026-737462879",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
       "vetores_afetados": [
@@ -219,7 +219,7 @@
       "status": "VIGENTE",
       "norma": "CP ANEEL 039/2023 · NT Conjunta 3/2026-SGM-SCE-STD-STR-SFT/ANEEL · RENs 1.161/2026 e 1.162/2026",
       "url": "https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -268,7 +268,7 @@
       "status": "VIGENTE",
       "norma": "Despacho ANEEL 3.431, de 18/11/2025 · DOU 25/11/2025, Ed. 224, Seção 1, p. 93 · Processo 48500.033898/2025-54",
       "url": "https://www.in.gov.br/web/dou/-/despacho-n-3.431-de-18-de-novembro-de-2025-670734868",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -310,7 +310,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.059/2023 (Lei 14.300/2022)",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -353,7 +353,7 @@
       "status": "VIGENTE",
       "norma": "MME · Portarias Normativas 111/2025 (DOU 23/06/2025) e 126/2026 (DOU 29/01/2026) (regulamentação ANEEL pendente)",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -395,7 +395,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.062/2023 · Resolução Autorizativa ANEEL 16.539/2025 · Edital SA-SR/001/2025-ONS",
       "url": "https://www.ons.org.br/paginas/energia-amanha/sandbox-controle-de-tensao",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -437,7 +437,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 046/2025",
       "url": "https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -479,7 +479,7 @@
       "status": "PRAZO DE CONTRIBUIÇÕES ENCERRADO",
       "norma": "TS ANEEL 23/2025",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -530,7 +530,7 @@
         "V2",
         "sHEC"
       ],
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "pendencia_verificacao": "ANDAIME MOVIDO DO CAMPO RENDERIZADO EM 28/07/2026 (exigencia do gate validar_fatos.py, regra E1). Marcacoes originais: [A VERIFICAR no Aviso do DOU]. Sentido inalterado: os elementos assim marcados NAO estao ancorados em fonte primaria reaberta e nao podem ser citados externamente ate a leitura do ato no DOU."
     },
     {
@@ -540,7 +540,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "Aviso de Consulta Pública ANEEL nº 20/2026 · DOU de 15/07/2026, Ed. 131, Seção 3, p. 104 · Processo 48500.027624/2025-26",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-20/2026-719154741",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -600,7 +600,7 @@
       "status": "PRAZO DE CONTRIBUICOES ENCERRADO",
       "norma": "Consulta Publica ANEEL no 18/2026 · Lei no 9.991/2000 · contribuicoes ate 09/09/2026",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_PROCESSUAL",
       "score_soa": 14,
       "vetores_afetados": [
@@ -635,7 +635,7 @@
       "status": "PRAZO DE CONTRIBUICOES ATE 13/10/2026 (23h59) — prorrogado automaticamente; o aviso fixava 12/10/2026",
       "norma": "Aviso de Consulta Publica ANEEL no 29/2026 — DOU de 26/08/2026, Secao 3, p. 124 · Processo no 48500.006650/2023-59",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-29%2F2026-727896573",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -672,7 +672,7 @@
       "status": "PRAZO DE CONTRIBUICOES ENCERRADO",
       "norma": "Aviso de Consulta Publica ANEEL no 26/2026 — DOU de 06/08/2026, Secao 3, p. 107 · Processo no 48500.019929/2026-45",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-26%2F2026-723652899",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 3,
       "vetores_afetados": [
@@ -709,7 +709,7 @@
       "status": "CONSULTA PUBLICA ABERTA — contribuicoes de 17/09/2026 a 12/11/2026 (prorrogada)",
       "norma": "Aviso de Consulta Publica ANEEL no 34/2026 — DOU de 17/09/2026, Secao 3, p. 108 · Processo no 48500.033896/2025-65 — prazo prorrogado ate 12/11/2026 (Aviso de Prorrogacao, DOU de 29/10/2026, Secao 3)",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-34/2026-732288687",
-      "verificado_em": "2026-11-04",
+      "verificado_em": "2026-11-05",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
