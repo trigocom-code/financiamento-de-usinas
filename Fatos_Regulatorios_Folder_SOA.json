@@ -2384,6 +2384,21 @@
       "verificado_em": "2026-10-08",
       "registrado_em": "2026-10-08",
       "registrado_por": "monitores-regulatorios-soa"
+    },
+    {
+      "fato_id": "MME-CP-GARANTIA-FISICA-EOL-FV-2026",
+      "orgao": "MME",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "tema": "Consulta publica do MME sobre metodologia de calculo e revisao da garantia fisica de usinas eolicas e solares fotovoltaicas",
+      "valor": "Consulta aberta em 04/11/2026, contribuicoes ate 18/12/2026. Segundo a noticia oficial do MME, a principal inovacao das minutas e o tratamento dos cortes de geracao no calculo da geracao media. Proposta em consulta, nao aprovada.",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "Consulta publica MME de 04/11/2026 (numero e portaria de abertura pendentes de confirmacao)",
+      "qsv_cor": "LARANJA",
+      "numero_status": "PENDENTE_REABERTURA",
+      "gatilho_revisao": "Leitura das minutas e da AIR; publicacao da portaria final de garantia fisica",
+      "verificado_em": "2026-11-05",
+      "url": "https://www.gov.br/mme/pt-br/assuntos/noticias/novembro-26/mme-abre-consulta-publica-para-aprimoramento-da-metodologia-de-calculo-de-garantia-fisica-de-usinas-eolicas-e-solares-fotovoltaicas",
+      "pendencia_verificacao": "[A VERIFICAR] numero da CP, minutas e AIR nao abertos em 05/11/2026; lida so a noticia F1 do MME. Conferir como os cortes entram na geracao media e a vigencia."
     }
   ],
   "_historico_caidos": []
