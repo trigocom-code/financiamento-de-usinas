@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-11-05 08:20",
+                  "gerado_em":  "2026-11-06 08:20",
                   "modo":  "v2 cenario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
@@ -40,7 +40,7 @@
                                                            },
                                        "monitor-regulatorio-soa":  {
                                                                        "hoje":  "SIM",
-                                                                       "ultimo":  "2026-11-05"
+                                                                       "ultimo":  "2026-11-06"
                                                                    },
                                        "monitor-capital-verde-soa":  {
                                                                          "hoje":  "NAO",
@@ -56,7 +56,7 @@
                                                             },
                                        "monitor-gt-absolar-soa":  {
                                                                       "hoje":  "SIM",
-                                                                      "ultimo":  "2026-11-05"
+                                                                      "ultimo":  "2026-11-06"
                                                                   },
                                        "monitor-gato-solar-soa":  {
                                                                       "hoje":  "NAO",
@@ -88,10 +88,10 @@
                  },
     "folders":  {
                     "baterias-curtailment.html":  {
-                                                      "ciclo":  "2026-11-05",
+                                                      "ciclo":  "2026-11-06",
                                                       "categoria":  "vivo_sob_gatilho",
                                                       "estado":  "stale",
-                                                      "motivo":  "dado defasado: fato mais velho com 23 dias (\u003e 2); revalidar",
+                                                      "motivo":  "dado defasado: fato mais velho com 24 dias (\u003e 2); revalidar",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-regulatorio-soa"
@@ -99,12 +99,12 @@
                                                       "monitores_parados":  [
 
                                                                             ],
-                                                      "idade_max_dias":  23,
+                                                      "idade_max_dias":  24,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_ANEEL",
                                                                        "ref":  "ANEEL-REN-1161-2026-BESS",
-                                                                       "verificado_em":  "2026-11-05",
+                                                                       "verificado_em":  "2026-11-06",
                                                                        "qsv_cor":  "VERDE",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
@@ -122,7 +122,7 @@
                                                                    {
                                                                        "json":  "Fatos_ANEEL",
                                                                        "ref":  "ANEEL-REN-1071-LRCAP",
-                                                                       "verificado_em":  "2026-11-05",
+                                                                       "verificado_em":  "2026-11-06",
                                                                        "qsv_cor":  "VERDE",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
@@ -131,7 +131,7 @@
                                                                    {
                                                                        "json":  "Fatos_ONS",
                                                                        "ref":  "ONS-NT-DPL-0111-2025",
-                                                                       "verificado_em":  "2026-11-05",
+                                                                       "verificado_em":  "2026-11-06",
                                                                        "qsv_cor":  "AZUL",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
@@ -152,10 +152,10 @@
                                                       "proposta_ref":  null
                                                   },
                     "contencioso-curtailment.html":  {
-                                                         "ciclo":  "2026-11-05",
+                                                         "ciclo":  "2026-11-06",
                                                          "categoria":  "vivo_sob_gatilho",
                                                          "estado":  "stale",
-                                                         "motivo":  "dado defasado: fato mais velho com 23 dias (\u003e 2); revalidar",
+                                                         "motivo":  "dado defasado: fato mais velho com 24 dias (\u003e 2); revalidar",
                                                          "aguarda_fonte":  false,
                                                          "monitores_dependentes":  [
                                                                                        "monitor-regulatorio-soa"
@@ -163,7 +163,7 @@
                                                          "monitores_parados":  [
 
                                                                                ],
-                                                         "idade_max_dias":  23,
+                                                         "idade_max_dias":  24,
                                                          "deps":  [
                                                                       {
                                                                           "json":  "Fatos_CCEE",
@@ -177,7 +177,7 @@
                                                                       {
                                                                           "json":  "Fatos_ANEEL",
                                                                           "ref":  "ANEEL-CP-045-2019",
-                                                                          "verificado_em":  "2026-11-05",
+                                                                          "verificado_em":  "2026-11-06",
                                                                           "qsv_cor":  "AZUL",
                                                                           "monitor":  "monitor-regulatorio-soa",
                                                                           "achou":  true,
@@ -189,10 +189,10 @@
                                                          "proposta_ref":  null
                                                      },
                     "acesso-transmissao-pnast.html":  {
-                                                          "ciclo":  "2026-11-05",
+                                                          "ciclo":  "2026-11-06",
                                                           "categoria":  "vivo_sob_gatilho",
                                                           "estado":  "stale",
-                                                          "motivo":  "dado defasado: fato mais velho com 23 dias (\u003e 2); revalidar",
+                                                          "motivo":  "dado defasado: fato mais velho com 24 dias (\u003e 2); revalidar",
                                                           "aguarda_fonte":  false,
                                                           "monitores_dependentes":  [
                                                                                         "monitor-regulatorio-soa"
@@ -200,7 +200,7 @@
                                                           "monitores_parados":  [
 
                                                                                 ],
-                                                          "idade_max_dias":  23,
+                                                          "idade_max_dias":  24,
                                                           "deps":  [
                                                                        {
                                                                            "json":  "Fatos_MME",
@@ -214,7 +214,7 @@
                                                                        {
                                                                            "json":  "Fatos_ONS",
                                                                            "ref":  "ONS-NT-PNAST",
-                                                                           "verificado_em":  "2026-11-05",
+                                                                           "verificado_em":  "2026-11-06",
                                                                            "qsv_cor":  "AZUL",
                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                            "achou":  true,
@@ -244,10 +244,10 @@
                                                           "proposta_ref":  null
                                                       },
                     "capital-verde-usinas.html":  {
-                                                      "ciclo":  "2026-11-05",
+                                                      "ciclo":  "2026-11-06",
                                                       "categoria":  "vivo_sob_gatilho",
                                                       "estado":  "avaliacao_represada",
-                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-11-05: monitor-capital-verde-soa",
+                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-11-06: monitor-capital-verde-soa",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-capital-verde-soa"
@@ -255,7 +255,7 @@
                                                       "monitores_parados":  [
                                                                                 "monitor-capital-verde-soa"
                                                                             ],
-                                                      "idade_max_dias":  3,
+                                                      "idade_max_dias":  4,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
