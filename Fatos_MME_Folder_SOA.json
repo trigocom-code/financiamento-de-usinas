@@ -385,7 +385,7 @@
       "status": "VIGENTE",
       "norma": "Portaria Normativa MME no 140, de 18/07/2026 · DOU de 21/07/2026, Edicao 135-A, Secao 1 - Extra A, Pagina 10 · regulamenta o art. 1o-B da Lei no 10.848/2004, incluido pela Lei no 15.269, de 24/11/2025 · Processo 48370.000267/2025-81",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-08",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 20,
       "vetores_afetados": [
@@ -419,7 +419,7 @@
         "verificado_em": "2026-07-28"
       },
       "gatilho_revisao": "divulgacao pelo ONS das funcoes de produtividade, com termo em 31/08/2026 pela regra de dia util; despacho de convocacao para assinatura do Termo publicado no DOU; regras de comercializacao adaptadas da CCEE ate 19/09/2026; metodologia do MME para a revisao de garantia fisica do art. 10",
-      "pendencia_verificacao": "07/08/2026 - RESOLVIDA a pendencia de leitura: texto integral lido no repositorio oficial do MME e arquivado em _Fontes_F1_Portaria_140/. Residual de menor grau: a pagina do DOU de 21/07/2026, Edicao Extra, Secao 1, em in.gov.br NAO foi aberta de forma independente (socket hang up e HTTP 403 em execucoes consecutivas); a ancoragem se apoia no carimbo de publicacao impresso no proprio ato pelo orgao emissor. Confirmar tambem, quando o DOU abrir, a data da Lei 15.269 - o ato traz 24/11/2025 e a noticia do MME trazia 25/11/2025."
+      "pendencia_verificacao": "07/08/2026 - RESOLVIDA a pendencia de leitura: texto integral lido no repositorio oficial do MME e arquivado em _Fontes_F1_Portaria_140/. Residual de menor grau: a pagina do DOU de 21/07/2026, Edicao Extra, Secao 1, em in.gov.br NAO foi aberta de forma independente (socket hang up e HTTP 403 em execucoes consecutivas); a ancoragem se apoia no carimbo de publicacao impresso no proprio ato pelo orgao emissor. Confirmar tambem, quando o DOU abrir, a data da Lei 15.269 - o ato traz 24/11/2025 e a noticia do MME trazia 25/11/2025. | 08/11/2026 (rastreador): residuo resolvido. A pagina do DOU foi aberta e lida: https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777 (DOU 21/07/2026, ed. 135-A, Secao 1 - Extra A, p. 10; em vigor na publicacao, art. 12). O texto do DOU confere com a copia do MME no conteudo e difere so na redacao (cabecalhos de pagina, 'Substituto' na assinatura, 'Portaria Normativa' x 'Portaria'). No DOU, a Lei 15.269 e citada como 'Lei no 15.269, de 24 de novembro de 2025', igual a copia do MME. Para citar, usar o DOU."
     }
   ],
   "_pendentes_verificacao": [
