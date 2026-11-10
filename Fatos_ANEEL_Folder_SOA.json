@@ -432,12 +432,12 @@
     },
     {
       "fato_id": "ANEEL-CP-046-2025",
-      "tema": "CP ANEEL 046/2025 — Tarifa Branca",
-      "valor": "CP sobre a aplicação automática da Tarifa Horária (Tarifa Branca) a consumidores de baixa tensão dos subgrupos B1, B2 e B3 com consumo mensal igual ou superior a 1 MWh. Convergência V3 (sinal horário) e tese SOA sobre granularidade. Contribuições recebidas de 10/12/2025 a 09/03/2026; prazo encerrado, com a análise das contribuições em andamento na ANEEL.",
+      "tema": "CP ANEEL 046/2025 — Tarifa Branca (Tarifa Hora Certa)",
+      "valor": "CP sobre o enquadramento automático de consumidores de baixa tensão (B1, B2 e B3) na tarifa horária, que passará a se chamar Tarifa Hora Certa. Contribuições recebidas de 10/12/2025 a 09/03/2026. Em 09/11/2026 a ANEEL informou que as áreas técnicas proporão à Diretoria Colegiada: enquadramento automático a partir de 500 kWh/mês, em três etapas (1.800 kWh/mês a partir de abril de 2028, 1.000 kWh/mês a partir de abril de 2029 e 500 kWh/mês a partir de abril de 2031); unidades com micro ou minigeração distribuída que consomem ou injetam, em média, a partir de 500 kWh/mês também entram; novas adesões ao Sistema de Compensação com pedido de conexão feito a partir de 90 dias da publicação da norma entram sem opção de saída, assim como novas estações comerciais de recarga de veículos elétricos. Proposta técnica, ainda sem decisão da Diretoria; nada aprovado.",
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 046/2025",
-      "url": "https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
-      "verificado_em": "2026-11-06",
+      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/tarifa-hora-certa-proposta-preve-enquadramento-automatico-de-consumidores-que-usam-mais-de-500-kwh-mes",
+      "verificado_em": "2026-11-10",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -447,6 +447,13 @@
       "qsv_cor": "AZUL",
       "qsv_origem_classificacao": "mecanismo_v3.0",
       "qsv_fontes_independentes": [
+        {
+          "tipo": "F1_pagina_oficial",
+          "ref": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/tarifa-hora-certa-proposta-preve-enquadramento-automatico-de-consumidores-que-usam-mais-de-500-kwh-mes",
+          "trecho_literal": "Entrarão no enquadramento automático aquelas que consomem ou injetam na rede, em média, a partir de 500 kWh/mês",
+          "associacao_origem": null,
+          "gt_origem": null
+        },
         {
           "tipo": "F1_pagina_oficial",
           "ref": "https://www.aneel.gov.br/consultas-publicas",
@@ -470,7 +477,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "pendencia_verificacao": "10/11/2026 (consolidadora): estado lido na notícia oficial da ANEEL de 09/11/2026, 16h35. Falta a nota técnica e a minuta da proposta à Diretoria, e a data da reunião em que será deliberada. Sem ato no DOU. Fica AZUL."
     },
     {
       "fato_id": "ANEEL-TS-23-2025",
