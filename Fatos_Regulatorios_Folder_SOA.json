@@ -2336,7 +2336,7 @@
       "orgao": "ANEEL",
       "tipo_fato": "REGULATORIO_PROCESSUAL",
       "tema": "Leiloes de Energia Existente A-1, A-2 e A-3 de 2026 (nos 7, 8 e 9/2026-ANEEL): edital aprovado, sessao em 13/11/2026",
-      "valor": "PENDENTE DO EDITAL E DA PORTARIA DE DIRETRIZES. Noticia oficial da ANEEL de 06/10/2026, lida na pagina: a Diretoria aprovou o edital dos Leiloes A-1, A-2 e A-3 de 2026, com sessao em 13/11/2026, energia de qualquer fonte, suprimento a partir de janeiro de 2027, 2028 e 2029, contratos de dois anos sem atualizacao de precos; precos-teto informados pelo MME de R$ 290/MWh (A-1), R$ 270/MWh (A-2) e R$ 245/MWh (A-3). Edital, anexos e portaria de diretrizes nao lidos.",
+      "valor": "PENDENTE DO EDITAL E DA PORTARIA DE DIRETRIZES. Noticia oficial da ANEEL de 06/10/2026, lida na pagina: a Diretoria aprovou o edital dos Leiloes A-1, A-2 e A-3 de 2026, com sessao em 13/11/2026, energia de qualquer fonte, suprimento a partir de janeiro de 2027, 2028 e 2029, contratos de dois anos sem atualizacao de precos; precos-teto informados pelo MME de R$ 290/MWh (A-1), R$ 270/MWh (A-2) e R$ 245/MWh (A-3). Edital, anexos e portaria de diretrizes nao lidos. Notícia oficial da ANEEL de 10/11/2026 (17h29), reaberta em 11/11: os leilões de energia existente acontecem na sexta-feira, 13/11/2026, com contratos de fornecimento a partir de 2027, 2028 e 2029, e podem ser acompanhados pelo site da CCEE.",
       "status": "PENDENTE",
       "qsv_cor": "LARANJA",
       "norma": "Leiloes nos 7, 8 e 9/2026-ANEEL (edital aprovado em 06/10/2026)",
@@ -2344,7 +2344,7 @@
       "fonte": "F1 noticia oficial ANEEL de 06/10/2026 - https://www.gov.br/aneel/pt-br/assuntos/noticias/2026-defeso-eleitoral/agencia-aprova-edital-dos-leiloes-de-energia-existente-a-1-a-2-e-a-3",
       "gatilho_revisao": "publicacao do edital na pagina de leiloes da ANEEL; portaria MME de diretrizes no DOU",
       "pendencia_verificacao": "Borda baixa para a casa (folder Mercado & PSM). So registro.",
-      "verificado_em": "2026-10-07",
+      "verificado_em": "2026-11-11",
       "registrado_em": "2026-10-07",
       "registrado_por": "monitores-regulatorios-soa"
     },
