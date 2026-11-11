@@ -32,11 +32,11 @@
     {
       "fato_id": "EPE-PDE-2035",
       "tema": "PDE 2035 — Plano Decenal de Expansão de Energia",
-      "valor": "Horizonte 2026–2035. CP MME 214/2026 aberta de 12/02 a 29/03/2026 (prazo prorrogado; encerrada). Plano aprovado pela Portaria MME nº 923/2026 (DOU de 02/07/2026), com Relatório Final publicado. O PDE 2036 está em consulta pública (CP MME 235/2026, de 08/10 a 06/11/2026) e ainda não foi aprovado. 15 Cadernos temáticos publicados. Dados brutos em painel público.",
+      "valor": "Horizonte 2026–2035. CP MME 214/2026 aberta de 12/02 a 29/03/2026 (prazo prorrogado; encerrada). Plano aprovado pela Portaria MME nº 923/2026 (DOU de 02/07/2026), com Relatório Final publicado. A consulta pública do PDE 2036 (CP MME 235/2026) ficou aberta de 08/10 a 06/11/2026 e está encerrada; até 11/11/2026 o PDE 2036 não tinha portaria de aprovação. 15 Cadernos temáticos publicados. Dados brutos em painel público.",
       "status": "VIGENTE",
-      "norma": "EPE/MME · ciclo anual · Portaria MME nº 923/2026 (aprovação; DOU de 02/07/2026)",
+      "norma": "EPE/MME · ciclo anual · Portaria MME nº 923, de 30/06/2026 (aprovação; DOU de 02/07/2026)",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-11",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -78,7 +78,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_11": "Página oficial do PDE 2035 na EPE reaberta em 11/11/2026: 'aprovado pela Portaria MME n° 923, de 30 de junho de 2026'; 15 cadernos temáticos listados. Encerramento da CP 235 em 06/11 conforme Portaria SNTEP/MME 3.246/2026 (30 dias) e listagem do Brasil Participativo; nenhuma portaria de aprovação do PDE 2036 localizada."
     },
     {
       "fato_id": "EPE-PNE-2055",
