@@ -3,7 +3,7 @@
     "orgao": "MME",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo MME — schema v1.3. Aplicada Precedência v1.2. Portaria 136/2026 enriquecida em 04/07/2026 (leitura integral: art. 5º/7º/9º + Anexo II). Portaria Normativa 140/2026 lida na integra em 07/08/2026 no texto oficial do MME (10 paginas) - fato promovido de LARANJA para VERDE.",
-    "verificado_em": "2026-10-13",
+    "verificado_em": "2026-11-14",
     "proxima_revisao_sugerida": "2026-11-10",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina MME conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
@@ -25,17 +25,18 @@
     "nota_run_2026_07_21": "Run de 21/07: DUAS PROMOÇÕES A VERDE no MME, ambas por leitura integral do ato no DOU. (1) MME-CMSE-RESOLUCAO-DESPACHO-TERMICO saiu de _pendentes_verificacao para fatos[]: Resolução CMSE nº 1, de 06/07/2026, DOU 08/07/2026 Ed. 126 S1 p.134 — fecha a lacuna de monitor aberta em 17/07. (2) MME-POTEE-2026-CP passou de AZUL a VERDE: Portaria SNTEP/MME nº 3.159, de 10/07/2026, DOU 14/07/2026 Ed. 130 S1 p.99, com o prazo de 30 dias contado da PUBLICAÇÃO DA PORTARIA (encerra 13/08/2026). Termo de Compromisso segue LARANJA com 2º negativo verificado no DOU. MP 1.318/REDATA segue LARANJA: estado do PL 278/2026 verificado no Senado (Emenda 22 em 17/07; requerimento de urgência ainda não incluído em Ordem do Dia) — detectado, não cravado.",
     "nota_run_2026_07_28": "Run CONSOLIDADORA de 28/07/2026. F1 REABERTA: indice de noticias gov.br/mme (janela 20-28/07). O ATO QUE ESTAVA PENDENTE SAIU: 'MME regulamenta procedimentos para celebracao de Termo de Compromisso sobre compensacao por cortes de geracao' (noticia oficial de 22/07/2026) ancora a PORTARIA no 140, DE 18 DE JULHO DE 2026, publicada no DOU de 21/07/2026. O pendente MME-TERMO-COMPROMISSO-SOBREOFERTA sai de 'ATO NAO PUBLICADO' e o fato novo MME-PORTARIA-140-2026-TERMO-COMPROMISSO entra em fatos[] com o conteudo LIMITADO ao que a fonte oficial afirma. ⚠ DIVERGENCIA DE DENOMINACAO REGISTRADA: os digests dos monitores carregam 'Portaria Normativa MME no 140/2026'; a noticia oficial do MME grafa 'Portaria no 140, de 18 de julho de 2026'. Nao cravar a forma 'Normativa' antes de ler o ato no DOU. ⚠ DIVERGENCIA DE JANELA: a fonte oficial delimita os cortes compensaveis a 01/09/2023-25/11/2025, enquanto a camada GT/e-mail fala em janela de apuracao 01/09/2023-31/03/2024 e janela de ajuste 01/08/2022-31/03/2024 para as funcoes de produtividade — sao objetos distintos (periodo compensavel x janela de dados), NAO reconciliar sem ler a portaria. Outros itens da janela: CMSE de 22/07 aprovou a antecipacao de 1,8 GW para setembro/2026 (noticia oficial). REDATA/PL 278/2026 sem movimento — Congresso em recesso ate 01/08.",
     "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. MME -> 200 195417",
-    "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 1 confirmado, 4 impreciso, 4 mudou. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente."
+    "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 1 confirmado, 4 impreciso, 4 mudou. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente.",
+    "nota_run_2026_11_14_reconferencia": "Reconferencia item a item em fonte oficial em 14/11/2026 (decisao D38 = a), com segunda leitura independente: ATUALIZAR 4, CONFIRMADO 7. Itens sem F1 acessivel mantem o proprio verificado_em e levam tentado_em e pendencia_verificacao."
   },
   "fatos": [
     {
       "fato_id": "MME-PORTARIA-136-2026-LRCAP",
       "tema": "Portaria Normativa MME 136/2026 — LRCAP de Armazenamento (calendário + parâmetros + regime de receita + Anexo II)",
-      "valor": "Portaria de 1º/06/2026, publicada no DOU 03/06/2026. Base: arts. 3º e 3º-A da Lei 10.848/2004, Decreto 10.707/2021, Processo 48360.000272/2024-22. Cria DOIS leilões de Reserva de Capacidade na forma de POTÊNCIA via baterias novas (SAE — Sistemas de Armazenamento de Energia) que acrescentem potência ao SIN: (a) LRCAP 2026 Armazenamento NACIONAL → Produto Potência 2028A, leilão 02/12/2026, com requisito de nacionalização (Sistema-CFI do BNDES); (b) LRCAP 2026 Armazenamento → Produto Potência 2028B, leilão 04/12/2026, sem conteúdo nacional, cuja realização depende da capacidade produtiva nacional apurada no 2028A (§4º). Cadastro EPE 15/06 a 31/07/2026. Suprimento desde 01/08/2028; contratos CRCAP de 15 anos, Receita Fixa indexada ao IPCA. COMPROMISSO = disponibilidade de POTÊNCIA em MW (não energia). PARÂMETROS TÉCNICOS MÍNIMOS DO SAE (arts. 4º e 7º): potência ≥30 MW; duração ≥4h consecutivas; eficiência round-trip (RTE) ≥85% referenciada ao PMI; recarga completa ≤6h; capacidade grid-forming; CVU=zero; ciclo completo = potência × 4h, até 2 ciclos/dia, limitado a 366/ano; ONS pode despachar até 12h com potência proporcionalmente menor. REGIME DE RECEITA (gatilho de prova SOA — vetor BESS auditável): Receita Fixa em R$/ano por disponibilidade de potência (art. 5º); apuração de desempenho operativo em BASE MENSAL, receita REDUZIDA conforme desempenho (art. 5º §1º e art. 9º §4º-IV); o art. 9º §4º-IV exige que os CRCAP contenham cláusulas de ABATIMENTO/RESSARCIMENTO da Receita Fixa por indisponibilidade ou não entrega da potência requerida; art. 9º §10 detalha PENALIDADES por não atendimento à disponibilidade; art. 9º §6º-8º: energia de carga/descarga liquidada no MCP ao PLD, resultado à CONCAP. ANEXO II, Tabela 1: 129 barramentos (pontos de conexão, em 98 subestações) elegíveis à bonificação de LOCALIZAÇÃO, concentrados no NE + norte de MG — BA 42, CE 39 (≈63% juntas), MG 18, PI 17, PE 6, AL 3, RN 2, PB 2; inclui Pecém II 230 kV (CE). CAVEAT QSV: a constante de bonificação é fixada pela própria portaria — ANEXO I, art. 2º, §12: β = 0,9 para os pontos de conexão do ANEXO II e β = 1 para os demais (art. 17, §3º); a metodologia locacional é a da Nota Técnica da EPE de nov/2025 (art. 17, §2º). A capacidade remanescente em MW por barramento NÃO consta da portaria: vem da Nota Técnica de Quantitativos (art. 11, §4º, e ANEXO II, art. 3º, parágrafo único), publicada em 30/09/2026 pelo ONS, em conjunto com a ANEEL e a EPE (NT-ONS DPL 0095/2026). A LISTA DE NOMES e o β são da portaria; os MW, da Nota Técnica. O Despacho Decisório nº 31/2026, da SNTEP/MME (DOU 06/10/2026), negou a inclusão da SE Janaúba 3 500 kV, e a lista do ANEXO II ficou como publicada. É a norma de referência do LRCAP de armazenamento (não a REN 1.071).",
+      "valor": "Portaria de 1º/06/2026, publicada no DOU 03/06/2026. Base: arts. 3º e 3º-A da Lei 10.848/2004, Decreto 10.707/2021, Processo 48360.000272/2024-22. Cria DOIS leilões de Reserva de Capacidade na forma de POTÊNCIA via baterias novas (SAE — Sistemas de Armazenamento de Energia) que acrescentem potência ao SIN: (a) LRCAP 2026 Armazenamento NACIONAL → Produto Potência 2028A, leilão 02/12/2026, com requisito de nacionalização (Sistema-CFI do BNDES); (b) LRCAP 2026 Armazenamento → Produto Potência 2028B, leilão 04/12/2026, sem conteúdo nacional, cuja realização depende da capacidade produtiva nacional apurada no 2028A (§4º). Cadastro EPE 15/06 a 31/07/2026. Suprimento desde 01/08/2028; contratos CRCAP de 15 anos, Receita Fixa indexada ao IPCA. COMPROMISSO = disponibilidade de POTÊNCIA em MW (não energia). PARÂMETROS TÉCNICOS MÍNIMOS DO SAE (arts. 4º e 7º): potência ≥30 MW; duração ≥4h consecutivas; eficiência round-trip (RTE) ≥85% referenciada ao PMI; recarga completa ≤6h; capacidade grid-forming; CVU=zero; ciclo completo = potência × 4h, até 2 ciclos/dia, limitado a 366/ano; ONS pode despachar até 12h com potência proporcionalmente menor. REGIME DE RECEITA (gatilho de prova SOA — vetor BESS auditável): Receita Fixa em R$/ano por disponibilidade de potência (art. 5º); apuração de desempenho operativo em BASE MENSAL, receita REDUZIDA conforme desempenho (art. 5º §1º e art. 9º §4º-IV); o art. 9º §4º-IV exige que os CRCAP contenham cláusulas de ABATIMENTO/RESSARCIMENTO da Receita Fixa por indisponibilidade ou não entrega da potência requerida; art. 9º §10 detalha PENALIDADES por não atendimento à disponibilidade; art. 9º §6º-8º: energia de carga/descarga liquidada no MCP ao PLD, resultado à CONCAP. ANEXO II, Tabela 1: 129 barramentos (pontos de conexão, em 98 subestações) elegíveis à bonificação de LOCALIZAÇÃO, concentrados no NE + norte de MG — BA 42, CE 39 (≈63% juntas), MG 18, PI 17, PE 6, AL 3, RN 2, PB 2; inclui Pecém II 230 kV (CE). CAVEAT QSV: a constante de bonificação é fixada pela própria portaria — ANEXO I, art. 2º, §12: β = 0,9 para os pontos de conexão do ANEXO II e β = 1 para os demais (art. 17, §3º); a metodologia locacional é a da Nota Técnica da EPE de nov/2025 (art. 17, §2º). A capacidade remanescente em MW por barramento NÃO consta da portaria: vem da Nota Técnica de Quantitativos (art. 11, §4º, e ANEXO II, art. 3º, parágrafo único), publicada em 30/09/2026 pelo ONS, em conjunto com a ANEEL e a EPE (NT-ONS DPL 0095/2026), e revista pela Revisão 1 (emitida em 23/10/2026 e divulgada em 26/10/2026), que mudou a margem do barramento de 69 kV da SE Milagres de zero para ≤ 50 MW; os demais ajustes da revisão não alteraram as margens. A LISTA DE NOMES e o β são da portaria; os MW, da Nota Técnica. O Despacho Decisório nº 31/2026, da SNTEP/MME (DOU 06/10/2026), negou a inclusão da SE Janaúba 3 500 kV, e a lista do ANEXO II ficou como publicada. É a norma de referência do LRCAP de armazenamento (não a REN 1.071).",
       "status": "AGENDADO",
       "norma": "Portaria Normativa MME 136/2026 · DOU 03/06/2026 · arts. 4º, 5º, 7º, 9º, 11 e 17 + Anexos I e II",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-136-2026.pdf",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 18,
       "vetores_afetados": [
@@ -81,7 +82,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ons.org.br/AcervoDigitalDocumentosEPublicacoes/NT-ONS%20DPL%200095-2026-R1%20%E2%80%93%20LRCAP%20Armazenamento%202026.pdf"
     },
     {
       "fato_id": "MME-PORTARIA-129-DEC-12772",
@@ -90,7 +92,7 @@
       "status": "VIGENTE",
       "norma": "Decreto 12.772/2025 (institui a PNAST) + Portaria Normativa MME 129/2026 (diretrizes das Temporadas de Acesso)",
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12772.htm",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -132,7 +134,7 @@
       "status": "VIGENTE",
       "norma": "Lei 14.948/2024 (marco legal do hidrogênio de baixa emissão de carbono), regulamentada pelo Decreto 13.096/2026 + Lei 15.042/2024 (SBCE) · Planalto",
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14948.htm",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -174,7 +176,7 @@
       "status": "VIGENTE",
       "norma": "Portaria Normativa MME 111/2025 (18/06/2025) + Portaria Normativa MME 126/2026 (28/01/2026, altera a 111)",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2025/portaria-normativa-mme-n-111-2025.pdf",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -212,11 +214,11 @@
     {
       "fato_id": "MME-PNTE-PLANTE",
       "tema": "PNTE (Política Nacional de Transição Energética) + Plante",
-      "valor": "Política guarda-chuva da transição energética, instituída pela Resolução CNPE nº 5, de 26/08/2024, com dois instrumentos: o Plano Nacional (Plante) e o Fórum (Fonte). A minuta do Plante foi a consulta pública por 45 dias pela Portaria SNTEP/MME nº 3.128/2026 (DOU 29/04/2026); a aprovação cabe ao CNPE (art. 9º). Base para diálogo institucional V6. Coordenação: SNTEP/MME (art. 17 da Resolução CNPE nº 5/2024).",
+      "valor": "Política guarda-chuva da transição energética, instituída pela Resolução CNPE nº 5, de 26/08/2024, com dois instrumentos: o Plano Nacional (Plante) e o Fórum (Fonte). A minuta do Plante foi a consulta pública por 45 dias pela Portaria SNTEP/MME nº 3.128/2026 (DOU 29/04/2026); a aprovação cabe ao CNPE (art. 9º), que aprovou o Plante em reunião extraordinária de 06/11/2026, com ciclos de implementação de quatro anos e um GT Plante coordenado pelo MME; a resolução de aprovação não estava publicada no DOU até 14/11/2026 (número a conferir no ato). Base para diálogo institucional V6. Coordenação: SNTEP/MME (art. 17 da Resolução CNPE nº 5/2024).",
       "status": "VIGENTE",
       "norma": "Resolução CNPE nº 5, de 26/08/2024 (DOU 28/08/2024, Seção 1, p. 2) · MME · SNTEP",
       "url": "https://www.in.gov.br/web/dou/-/despacho-do-presidente-da-republica-580836599",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -249,7 +251,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.gov.br/mma/pt-br/noticias/governo-lula-estabelece-diretrizes-para-reduzir-gradualmente-dependencia-de-combustiveis-fosseis-no-brasil"
     },
     {
       "fato_id": "MME-REDATA",
@@ -258,7 +261,7 @@
       "status": "VIGENTE",
       "norma": "Lei nº 15.504/2026 (DOU 15/09/2026, Ed. 174-C, Seção 1 Extra C) · altera a Lei 11.196/2005, arts. 11-A a 11-J · Lei Complementar nº 237/2026 (mesma edição do DOU) · regulamento do Executivo pendente",
       "url": "https://www.in.gov.br/web/dou/-/lei-n-15.504-de-15-de-setembro-de-2026-731892072",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -309,7 +312,7 @@
       "status": "VIGENTE (plano aprovado em 29/09/2026; consulta pública encerrada em 13/08/2026)",
       "norma": "Portaria SNTEP/MME nº 3.240, de 29 de setembro de 2026 — DOU de 01/10/2026, Edição 186-C, Seção 1 - Extra C, Página 15 (aprova o POTEE 2026 — Ampliações e Reforços, 1ª emissão) · consulta pública: Portaria SNTEP/MME nº 3.159, de 10 de julho de 2026 — DOU de 14/07/2026, Edição 130, Seção 1, Página 99",
       "url": "https://www.in.gov.br/web/dou/-/portaria-sntep/mme-n-3.240-de-29-de-setembro-de-2026-735924821",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -347,7 +350,7 @@
       "status": "VIGENTE",
       "norma": "Resolução CMSE nº 1, de 6 de julho de 2026 — DOU de 08/07/2026, Edição 126, Seção 1, Página 134",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -385,7 +388,7 @@
       "status": "VIGENTE",
       "norma": "Portaria Normativa MME no 140, de 18/07/2026 · DOU de 21/07/2026, Edicao 135-A, Secao 1 - Extra A, Pagina 10 · regulamenta o art. 1o-B da Lei no 10.848/2004, incluido pela Lei no 15.269, de 24/11/2025 · Processo 48370.000267/2025-81",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
-      "verificado_em": "2026-11-08",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 20,
       "vetores_afetados": [
@@ -428,9 +431,9 @@
       "tema": "MP 1.318/2025 — REDATA (CADUCADA em 25/02/2026)",
       "valor": "*** ATUALIZADO EM 13/10/2026 (revisão fato a fato): o Redata está em vigor pela Lei 15.504, de 15/09/2026, com a Lei Complementar 237/2026 (ver o cartão do Redata nesta página). O texto abaixo é registro histórico do período da MP e do PL 278/2026. *** Medida Provisória CADUCADA por não conversão no prazo constitucional (60+60 dias). Conteúdo migrou para o PL 278/2026 (José Guimarães). Confirmado na fonte 30/06.",
       "status": "CADUCADA",
-      "norma": "MP 1.318/2025 (caducada — sem efeito jurídico atual) · PL 278/2026 (Senado)",
-      "url": "https://www12.senado.leg.br/noticias/",
-      "verificado_em": "2026-06-30",
+      "norma": "MP 1.318/2025 (caducada em 25/02/2026 — sem efeito jurídico atual) · PL 278/2026, transformado na Lei nº 15.504/2026 (DOU 15/09/2026)",
+      "url": "https://www.congressonacional.leg.br/materias/medidas-provisorias/-/mpv/170521",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -458,16 +461,17 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "CADUCADA em 25/02/2026. Mantida em LARANJA conforme Precedência v1.2: só deixa de ser pendência quando texto for completamente reescrito como caducada em todos materiais. Conteúdo no PL 278/2026 (Senado).",
-      "pendencia_verificacao": "21/07/2026 - ESTADO PROCESSUAL VERIFICADO NA FONTE PRIMÁRIA (portal de matérias do Senado, PL 278/2026, matéria 172786, resolvido nesta run após falhar em 20/07): situação 'Em tramitação'; último local/estado 26/02/2026 - Plenário do Senado Federal - AGUARDANDO INCLUSÃO ORDEM DO DIA DE REQUERIMENTO (Requerimento nº 112/2026, de Líderes, de urgência, arts. 336, III e 338, III do RISF). MOVIMENTO NOVO: Emenda nº 22 PLEN, do Senador Laércio Oliveira (PP/SE), recebida em 17/07/2026 — total de 22 emendas (a nº 1 foi retirada pelo autor). Última atualização de dados legislativos: 17/07/2026 12:42, compatível com o recesso parlamentar iniciado em 18/07. CONCLUSÃO: nada muda no fato — a MP 1.318/2025 segue CADUCADA e o regime REDATA segue NÃO VIGENTE; o PL 278/2026 sequer teve o requerimento de urgência incluído em Ordem do Dia. MANTIDO LARANJA (item 3 da lista do CEO — o único genuinamente pendente). Reforço do negativo: busca no DOU por \"data center\", Seção 1, 14-21/07/2026 -> 2 resultados, ambos Portarias PC-MD do Ministério da Defesa sobre salas de informação classificada; nenhum ato de REDATA."
+      "pendencia_verificacao": "21/07/2026 - ESTADO PROCESSUAL VERIFICADO NA FONTE PRIMÁRIA (portal de matérias do Senado, PL 278/2026, matéria 172786, resolvido nesta run após falhar em 20/07): situação 'Em tramitação'; último local/estado 26/02/2026 - Plenário do Senado Federal - AGUARDANDO INCLUSÃO ORDEM DO DIA DE REQUERIMENTO (Requerimento nº 112/2026, de Líderes, de urgência, arts. 336, III e 338, III do RISF). MOVIMENTO NOVO: Emenda nº 22 PLEN, do Senador Laércio Oliveira (PP/SE), recebida em 17/07/2026 — total de 22 emendas (a nº 1 foi retirada pelo autor). Última atualização de dados legislativos: 17/07/2026 12:42, compatível com o recesso parlamentar iniciado em 18/07. CONCLUSÃO: nada muda no fato — a MP 1.318/2025 segue CADUCADA e o regime REDATA segue NÃO VIGENTE; o PL 278/2026 sequer teve o requerimento de urgência incluído em Ordem do Dia. MANTIDO LARANJA (item 3 da lista do CEO — o único genuinamente pendente). Reforço do negativo: busca no DOU por \"data center\", Seção 1, 14-21/07/2026 -> 2 resultados, ambos Portarias PC-MD do Ministério da Defesa sobre salas de informação classificada; nenhum ato de REDATA.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.congressonacional.leg.br/materias/medidas-provisorias/-/mpv/170521"
     },
     {
       "fato_id": "MME-TERMO-COMPROMISSO-SOBREOFERTA",
       "tema": "Termo de Compromisso do MME (sobreoferta / recontabilização) — anunciado pronto para publicação",
-      "valor": "DETECTADO 18/07 (ponteiro F3 ABSOLAR, GTGC 17/07): o MME comunicou que o 'Termo de Compromisso' está concluído e pronto para publicação, com expectativa de divulgação na semana de 14–18/07, o que NÃO ocorreu até 17/07. Preocupação das associações: o texto deverá ser publicado SEM incorporar o pleito de reclassificação da sobreoferta equivalente à geração da MMGD e da geração térmica fora da ordem de mérito em confiabilidade elétrica. Sinalizada também a não continuidade da prorrogação relacionada ao Despacho nº 1.669/2026. O grupo acompanhará a recontabilização da CCEE prevista para 29/07. Borda SOA MÉDIA: toca constrained-off/confiabilidade e a classificação da sobreoferta (adjacente à tese V4/sHEC). F3 NÃO fecha VERDE: ato não publicado; teor não lido em F1 nem no DOU. ⟨ATUALIZAÇÃO 28/07/2026 · varredura consolidadora `monitores-regulatorios-soa`⟩ RESOLVIDO NO PLANO DA EXISTENCIA DO ATO: a noticia oficial do MME de 22/07/2026 ancora a PORTARIA no 140, DE 18 DE JULHO DE 2026 (DOU de 21/07/2026), que regulamenta o art. 1o-B da Lei no 10.848/2004 (incluido pela Lei no 15.269/2025) e aprova, em anexo, a minuta do Termo de Compromisso. Ver o fato novo MME-PORTARIA-140-2026-TERMO-COMPROMISSO. ⚠ A PREOCUPACAO DE MERITO QUE ORIGINOU ESTE PENDENTE CONTINUA ABERTA: nao foi possivel verificar, nesta run, se o texto publicado incorpora ou nao o pleito de reclassificacao da sobreoferta equivalente a geracao de MMGD e a geracao termica fora da ordem de merito — isso exige o texto integral no DOU. Idem para o Despacho no 1.669/2026 e para a recontabilizacao da CCEE.",
-      "status": "RESOLVIDO — ATO PUBLICADO (Portaria MME no 140, de 18/07/2026, DOU 21/07/2026)",
-      "norma": "MME — 'Termo de Compromisso' (não publicado) · Despacho nº 1.669/2026 (referência F3) · recontabilização CCEE 29/07",
-      "url": "https://www.gov.br/mme/pt-br",
-      "verificado_em": "2026-07-28",
+      "valor": "DETECTADO 18/07 (ponteiro F3 ABSOLAR, GTGC 17/07): o MME comunicou que o 'Termo de Compromisso' está concluído e pronto para publicação, com expectativa de divulgação na semana de 14–18/07, o que NÃO ocorreu até 17/07. Preocupação das associações: o texto deverá ser publicado SEM incorporar o pleito de reclassificação da sobreoferta equivalente à geração da MMGD e da geração térmica fora da ordem de mérito em confiabilidade elétrica. Sinalizada também a não continuidade da prorrogação relacionada ao Despacho nº 1.669/2026. O grupo acompanhará a recontabilização da CCEE prevista para 29/07. Borda SOA MÉDIA: toca constrained-off/confiabilidade e a classificação da sobreoferta (adjacente à tese V4/sHEC). F3 NÃO fecha VERDE: ato não publicado; teor não lido em F1 nem no DOU. ⟨ATUALIZAÇÃO 28/07/2026 · varredura consolidadora `monitores-regulatorios-soa`⟩ RESOLVIDO NO PLANO DA EXISTENCIA DO ATO: a noticia oficial do MME de 22/07/2026 ancora a PORTARIA no 140, DE 18 DE JULHO DE 2026 (DOU de 21/07/2026), que regulamenta o art. 1o-B da Lei no 10.848/2004 (incluido pela Lei no 15.269/2025) e aprova, em anexo, a minuta do Termo de Compromisso. Ver o fato novo MME-PORTARIA-140-2026-TERMO-COMPROMISSO. ⚠ A PREOCUPACAO DE MERITO QUE ORIGINOU ESTE PENDENTE CONTINUA ABERTA: nao foi possivel verificar, nesta run, se o texto publicado incorpora ou nao o pleito de reclassificacao da sobreoferta equivalente a geracao de MMGD e a geracao termica fora da ordem de merito — isso exige o texto integral no DOU. Idem para o Despacho no 1.669/2026 e para a recontabilizacao da CCEE. ⟨ATUALIZAÇÃO 14/11/2026 · reconferência no DOU⟩ A preocupação de mérito fica respondida pelo texto publicado: a Portaria Normativa MME nº 140 enquadra os cortes exclusivamente em indisponibilidade externa, confiabilidade elétrica ou sobreoferta (art. 5º, § 4º), não menciona MMGD nem geração térmica fora da ordem de mérito, e o corte por sobreoferta não é objeto de compensação (Termo, Cláusula Primeira, Subcláusula Segunda); o pleito de reclassificação não foi incorporado. O Despacho nº 1.669/2026 é da ANEEL, de 12/05/2026 (DOU 18/05/2026), e prorrogou por 60 dias a suspensão de ressarcimentos do Despacho nº 148/2026; o pedido de nova prorrogação foi declarado extinto pelo Despacho ANEEL nº 3.831, de 29/09/2026 (DOU 07/10/2026), por exaurimento de finalidade decorrente da publicação da Portaria Normativa MME nº 140. A recontabilização da CCEE de 29/07 não foi conferida em fonte oficial.",
+      "status": "RESOLVIDO — ATO PUBLICADO (Portaria Normativa MME no 140, de 18/07/2026, DOU 21/07/2026)",
+      "norma": "Portaria Normativa MME nº 140, de 18/07/2026 (DOU 21/07/2026, Ed. 135-A, Seção 1 - Extra A, p. 10), Anexo I - Termo de Compromisso · Despacho ANEEL nº 1.669, de 12/05/2026 (DOU 18/05/2026) · Despacho ANEEL nº 3.831, de 29/09/2026 (DOU 07/10/2026)",
+      "url": "https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 11,
       "vetores_afetados": [
@@ -495,7 +499,8 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Ponteiro F3 (ABSOLAR). Vigiar publicação do Termo de Compromisso no DOU e a recontabilização da CCEE de 29/07. Confirmar se a versão publicada exclui a reclassificação da sobreoferta MMGD/térmica.",
-      "pendencia_verificacao": "F3 puro em 18/07. Ato não publicado; Despacho 1.669/2026 não lido em F1. Não citar teor em material externo antes de F1/DOU. | 20/07/2026 - NEGATIVO VERIFICADO NO DOU (primeira vez com o DOU efetivamente acessivel): busca no in.gov.br via render JS na janela 15-20/07/2026 nao retornou nenhum 'Termo de Compromisso' do MME em materia de energia, e a busca por 'Portaria Normativa' com Orgao Principal = Ministerio de Minas e Energia retornou apenas ato de pessoal. A pagina oficial de noticias do MME foi reaberta em F1 (carimbo 'Atualizado em 17/07/2026 14h01'), item mais recente 17/07 sem ato regulatorio. CONCLUSAO: o Termo anunciado por F3 (GTGC 17/07) como 'pronto para publicacao' NAO foi publicado ate 20/07/2026. MANTIDO LARANJA. Vigiar DOU e a recontabilizacao CCEE de 29/07. | 21/07/2026 - NEGATIVO VERIFICADO NO DOU PELA 2ª VEZ: busca no in.gov.br (render JS) por \"Termo de Compromisso\", Seção 1, Órgão Principal = Ministério de Minas e Energia, janela 18-21/07/2026 -> 0 resultados. Página de notícias do MME reaberta em F1 (carimbo 'Atualizado em 20/07/2026 14h35'): item mais recente 20/07 é matéria didática de planejamento energético, sem ato. O Termo anunciado por F3 (GTGC 17/07) segue NÃO PUBLICADO. MANTIDO LARANJA. Vigiar DOU e a recontabilização CCEE de 29/07."
+      "pendencia_verificacao": "F3 puro em 18/07. Ato não publicado; Despacho 1.669/2026 não lido em F1. Não citar teor em material externo antes de F1/DOU. | 20/07/2026 - NEGATIVO VERIFICADO NO DOU (primeira vez com o DOU efetivamente acessivel): busca no in.gov.br via render JS na janela 15-20/07/2026 nao retornou nenhum 'Termo de Compromisso' do MME em materia de energia, e a busca por 'Portaria Normativa' com Orgao Principal = Ministerio de Minas e Energia retornou apenas ato de pessoal. A pagina oficial de noticias do MME foi reaberta em F1 (carimbo 'Atualizado em 17/07/2026 14h01'), item mais recente 17/07 sem ato regulatorio. CONCLUSAO: o Termo anunciado por F3 (GTGC 17/07) como 'pronto para publicacao' NAO foi publicado ate 20/07/2026. MANTIDO LARANJA. Vigiar DOU e a recontabilizacao CCEE de 29/07. | 21/07/2026 - NEGATIVO VERIFICADO NO DOU PELA 2ª VEZ: busca no in.gov.br (render JS) por \"Termo de Compromisso\", Seção 1, Órgão Principal = Ministério de Minas e Energia, janela 18-21/07/2026 -> 0 resultados. Página de notícias do MME reaberta em F1 (carimbo 'Atualizado em 20/07/2026 14h35'): item mais recente 20/07 é matéria didática de planejamento energético, sem ato. O Termo anunciado por F3 (GTGC 17/07) segue NÃO PUBLICADO. MANTIDO LARANJA. Vigiar DOU e a recontabilização CCEE de 29/07.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777"
     }
   ],
   "_historico_caidos": []

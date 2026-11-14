@@ -3,7 +3,7 @@
     "orgao": "CCEE",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo CCEE — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-10-13",
+    "verificado_em": "2026-11-14",
     "proxima_revisao_sugerida": "2026-11-10",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina CCEE conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. PLD horário vai pro banco SOA via pipeline.",
@@ -26,7 +26,8 @@
     "nota_run_2026_07_28": "Run CONSOLIDADORA de 28/07/2026. O portal da CCEE (ccee.org.br) permanece INACESSIVEL a esta rotina: fetch devolve HTTP 403 e a navegacao pelo navegador foi negada — 3o dia consecutivo de bloqueio registrado. Cobertura suprida por fonte oficial ANEEL e por F2. RECONFIRMACAO F1 RELEVANTE: a listagem oficial de Consultas Publicas vigentes da ANEEL, lida em 28/07, mantem 'Consulta 017/2026 — Objeto: obter subsidios para estabelecer o processo sancionador da Camara de Comercializacao de Energia Eletrica - CCEE' com a nota 'O prazo final de envio de contribuicoes foi prorrogado para 24/8/2026'. ⚠ DIVERGENCIA ENTRE MONITORES: o Digest de Eventos de 28/07 ainda carrega '03/08 - CP no 17/2026 encerra contribuicoes'. O prazo correto e 24/08/2026, ja ancorado neste arquivo desde 21/07 pelo Aviso de Prorrogacao do DOU de 17/07. Corrigir na agenda do monitor de eventos. RECONTABILIZACAO: o relatorio previsto para 29/07 segue F3 (GTGC ABSOLAR), sem confirmacao no calendario oficial da CCEE — que nao pode ser aberto. A Portaria MME 140/2026 (18/07, DOU 21/07) atribui a apuracao/classificacao dos cortes e o calculo da compensacao a procedimento regulamentado — acompanhar o efeito sobre a recontabilizacao.",
     "nota_run_2026_07_29": "Varredura consolidadora de 29/07: ccee.org.br devolveu HTTP 403 tambem nesta execucao (2a confirmacao do dia, em horario distinto — bloqueio persistente, NAO ausencia de publicacao). Nenhum fato reverificado; verificado_em NAO avancado. REGISTRO RELEVANTE VINDO DE F1 DA ANEEL (item 5 da 15a RPO de 28/07): as Regras de Comercializacao alteradas para os LRCAP de 2026 passam a ser aplicadas 'em carater provisorio' desde a abertura da CP no 25/2026 (30/07), 'com a possibilidade dos devidos ajustes pela Camara de Comercializacao de Energia Eletrica - CCEE, caso sejam aprovadas alteracoes no fechamento da Consulta Publica'. Os relatorios de recontabilizacao previstos para 29/07 seguem NAO verificaveis (403).",
     "nota_run_2026_09_17_cp17": "Atualizacao CEO 17/09: CP ANEEL 17/2026 (PSM) — prazo contribuicoes 24/08/2026 ja encerrado (DOU Aviso Prorrogacao 17/07/2026, Ed. 133). Sem RN/resultado F1; status ajustado. Portal ccee.org.br 403 nesta sessao; lastro no DOU ja ancorado no fato.",
-    "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 1 confirmado, 4 impreciso, 1 mudou, 1 nao_verificado. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente. O fato CCEE-GRUDEM foi reescrito com o que a pagina oficial sustenta sobre o MRE: a sigla GRUDEM nao foi localizada em fonte oficial."
+    "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 1 confirmado, 4 impreciso, 1 mudou, 1 nao_verificado. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente. O fato CCEE-GRUDEM foi reescrito com o que a pagina oficial sustenta sobre o MRE: a sigla GRUDEM nao foi localizada em fonte oficial.",
+    "nota_run_2026_11_14_reconferencia": "Reconferencia item a item em fonte oficial em 14/11/2026 (decisao D38 = a), com segunda leitura independente: ATUALIZAR 1, CONFIRMADO 6. Itens sem F1 acessivel mantem o proprio verificado_em e levam tentado_em e pendencia_verificacao."
   },
   "fatos": [
     {
@@ -36,7 +37,7 @@
       "status": "VIGENTE",
       "norma": "Lei 15.269/2025 (art. 1º, §§ 10 e 11, e art. 1º-B da Lei 10.848/2004) · Portaria Normativa MME nº 140/2026",
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
       "vetores_afetados": [
@@ -85,7 +86,7 @@
       "status": "PRAZO DE CONTRIBUICOES ENCERRADO (24/08/2026) — deliberacao/resultado final pendente de F1",
       "norma": "Consulta Pública ANEEL nº 17/2026 · abertura no DOU de 18/06/2026, Seção 3, p. 129 · Aviso de Prorrogação no DOU de 17/07/2026, Edição 133, Seção 3, p. 121 · Processo 48500.037295/2025-21",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-719799662",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 18,
       "vetores_afetados": [
@@ -124,7 +125,7 @@
       "status": "VIGENTE",
       "norma": "CCEE · Procedimentos de Comercialização, Módulo 5 (Mercado de Curto Prazo): Submódulo 5.1 - Contabilização e recontabilização e Submódulo 5.2 - Liquidação no mercado de curto prazo (versões 5.0, de 28/04/2026)",
       "url": "https://www.ccee.org.br/mercado/procedimentos-de-comercializacao",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -166,7 +167,7 @@
       "status": "VIGENTE",
       "norma": "CCEE · Regras de Comercialização (cadernos 09 - Encargos e 11 - Liquidação)",
       "url": "https://www.ccee.org.br/mercado/regras-de-comercializacao",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -208,7 +209,7 @@
       "status": "VIGENTE",
       "norma": "CCEE · Regras de Comercialização, caderno 04 - Mecanismo de Realocação de Energia (versão 2026.1.0) · REN ANEEL nº 1.146/2025",
       "url": "https://www.ccee.org.br/mercado/regras-de-comercializacao",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -251,7 +252,7 @@
       "status": "VIGENTE",
       "norma": "CCEE · InfoMercado Mensal",
       "url": "https://www.ccee.org.br/web/guest/dados-e-analises/dados-mercado-mensal",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -293,7 +294,7 @@
       "status": "VIGENTE",
       "norma": "Portaria Normativa MME no 140, de 18/07/2026, arts. 2o, 5o, 6o, 7o e 8o · DOU de 21/07/2026, Edicao Extra, Secao 1",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 18,
       "vetores_afetados": [
@@ -320,7 +321,8 @@
         "verificado_em": "2026-08-07"
       },
       "gatilho_revisao": "publicacao pela CCEE das regras e procedimentos de comercializacao adaptados, termo em 19/09/2026",
-      "pendencia_verificacao": "O portal da CCEE (ccee.org.br/web/guest/consultas-publicas) devolveu HTTP 403 nesta execucao; nao foi possivel verificar de forma independente se a CCEE ja abriu consulta ou publicou minuta das regras adaptadas. Fonte secundaria indica aprovacao, pela diretoria da CCEE, da abertura de consulta publica especifica para inclusao do LRCAP 2026 nas Regras de Comercializacao - assunto distinto, nao confundir com o art. 7o da Portaria 140. || [CARIMBO NAO E LEITURA - consolidadora 24/08/2026] O campo verificado_em deste fato foi levado a 24/08/2026 pelo motor de fatos, que promove a hoje todo fato BYTE-IDENTICO ao baseline quando o monitor dono do arquivo rodou no dia. O motor NAO checa se a fonte abriu. Nesta execucao a varredura consolidadora reabriu as duas fontes e registra: portal do ONS servindo template vazio com placeholders nao preenchidos pela 12a execucao consecutiva, e portal de consultas publicas da CCEE em HTTP 403 pela 5a execucao consecutiva. Portanto: inalterado NAO equivale a reconfirmado. Nao afirmar frescor de hoje para este fato em peca, e-mail ou material. Pendencia de decisao do CEO registrada em _ACAO_CEO_CONSOLIDADO.md."
+      "pendencia_verificacao": "RESOLVIDA em 14/11/2026: portal da CCEE acessivel. Reabertos na fonte oficial os Comunicados CCEE 744/26 (21/09/2026), 778/26 (05/10/2026) e 788/26 (07/10/2026), a noticia da CCEE de 09/10/2026 que anunciou o Momento Capacita #105 para 14/10/2026, as 10h, e o texto integral da Portaria no repositorio oficial do MME. Pendencias anteriores (HTTP 403 e carimbo sem leitura) superadas.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ccee.org.br/en/web/guest/-/momento-capacita-aborda-procedimento-para-compensacoes-por-cortes-de-geracao-eolica-e-solar"
     }
   ],
   "_pendentes_verificacao": [],
