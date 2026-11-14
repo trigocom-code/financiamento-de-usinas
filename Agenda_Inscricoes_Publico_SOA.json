@@ -1,9 +1,9 @@
 {
   "_meta": {
     "titulo": "Inscrições — Eventos do Setor Elétrico em SP — Monitor SOA/SOS",
-    "atualizado_em": "2026-11-09",
-    "links_verificados_em": "2026-11-09",
-    "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ANE, ABCE, APINE, CIGRE-Brasil, CCEE)",
+    "atualizado_em": "2026-11-14",
+    "links_verificados_em": "2026-11-14",
+    "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ABESCO, ANE, ABCE, APINE, CIGRE-Brasil, CCEE)",
     "nota": "Trilho de inscrições dos eventos do setor em São Paulo. Cada item leva ao link oficial de credenciamento. Datas e valores confirmar na página oficial. Eventos com credenciamento a abrir levam à página oficial do evento ou da entidade organizadora. O monitor regenera este JSON: eventos já encerrados saem sozinhos e a data de verificação dos links é atualizada quando os links são reabertos.",
     "nota_run_2026_10_12": "Varredura de 12 de outubro. Os sete links de inscrição do trilho foram reabertos e confirmados nesta rodada: ingressos do encontro do setor solar de outubro, formulário do simpósio jurídico, inscrição da feira de energia eólica, inscrição do seminário de cibersegurança (aberta no navegador, depois de duas rodadas sem conferência), inscrição do encontro de líderes ambientais, notícia e credenciamento do fórum da câmara de comercialização e página do congresso de data centers e energia crítica. A página de eventos da associação do setor solar também foi reaberta e segue sem data para o encontro nacional. Nenhum evento entrou e nenhum saiu.",
     "nota_run_2026_10_13": "Atualização de 13 de outubro: programação do fórum da câmara de comercialização publicada. Os demais links não foram reabertos hoje; a data de verificação dos links segue a de 12 de outubro.",
@@ -14,24 +14,24 @@
   },
   "abertos": [
     {
-      "data_ini": "2026-11-09",
-      "data_fim": "2026-11-11",
-      "titulo": "17º LASE — Líderes Ambientais no Setor de Energia — COGEN",
-      "quando": "09–11/11 · Hotel Pullman São Paulo Vila Olímpia, Rua Olimpíadas 205, São Paulo/SP · página de inscrição reaberta em 09/11",
+      "data_ini": "2026-11-16",
+      "data_fim": "2026-11-17",
+      "titulo": "22º COBEE — Congresso Brasileiro de Eficiência Energética — ABESCO",
+      "quando": "16–17/11 · Auditório do CREA-SP, Av. Angélica 2.364, Consolação, São Paulo/SP · inscrições até 17/11 · página oficial de inscrição reaberta em 14/11",
       "badges": [
         {
           "label": "Pago",
           "cls": "pago"
         }
       ],
-      "url": "https://www.sympla.com.br/evento/17-lase---lideres-ambientais-no-setor-de-energia/3277178",
+      "url": "https://app.higestor.com.br/inscricao/18750/22-cobee",
       "cta": "Inscrever-se"
     },
     {
       "data_ini": "2026-11-17",
       "data_fim": "2026-11-17",
       "titulo": "2º Fórum Análise Setorial CCEE",
-      "quando": "17/11 · Grand Hyatt São Paulo, Av. das Nações Unidas 13.301, São Paulo/SP · presencial e online · inscrições nas últimas semanas, sem data limite publicada · página reaberta em 09/11",
+      "quando": "17/11 · Grand Hyatt São Paulo, Av. das Nações Unidas 13.301, São Paulo/SP · presencial e online · inscrições abertas, sem data limite publicada · programação com painelistas publicada em 10/11 · página reaberta em 14/11",
       "badges": [
         {
           "label": "Pago",
@@ -45,7 +45,7 @@
       "data_ini": "2026-12-01",
       "data_fim": "2026-12-02",
       "titulo": "CDEC 2026 — Congresso de Data Centers e Energia Crítica",
-      "quando": "01–02/12 · Novotel Center Norte, Av. Zaki Narchi 500, Vila Guilherme, São Paulo/SP · terceiro lote até 01/12 · página oficial reaberta em 09/11",
+      "quando": "01–02/12 · Novotel Center Norte, Av. Zaki Narchi 500, Vila Guilherme, São Paulo/SP · terceiro lote até 01/12 · página oficial reaberta em 14/11",
       "badges": [
         {
           "label": "Pago",
@@ -56,13 +56,5 @@
       "cta": "Inscrever-se"
     }
   ],
-  "a_abrir": [
-    {
-      "data_ini": "2026-12-02",
-      "data_fim": "2026-12-03",
-      "titulo": "6º Encontro Nacional ABSOLAR",
-      "quando": "02–03/12 · São Paulo/SP · data a confirmar; a página oficial de eventos não lista a edição de 2026, pela 20ª leitura, em 09/11",
-      "url": "https://eventos.absolar.org.br/"
-    }
-  ]
+  "a_abrir": []
 }
