@@ -3,7 +3,7 @@
     "orgao": "ONS",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ONS — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-11-06",
+    "verificado_em": "2026-11-14",
     "proxima_revisao_sugerida": "2026-11-10",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ONS conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Dados Abertos vão direto pro banco SOA.",
@@ -26,17 +26,37 @@
     "nota_run_2026_07_29": "Varredura consolidadora de 29/07: ons.org.br/paginas/noticias devolveu HTTP 502 tambem nesta execucao (2a confirmacao do dia, em horario distinto da varredura das 09h11 — falha persistente do servidor, NAO ausencia de publicacao). Nenhum fato do ONS foi reverificado; verificado_em dos fatos NAO avancado. Incluido 1 pendente novo cuja fonte e a ANEEL (nao o ONS): prazo condicional de 45 dias para Procedimentos de Rede do Decreto 12.772/2025.",
     "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. ONS home -> 200 159906",
     "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 2 confirmado, 4 impreciso, 2 mudou, 1 nao_verificado. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente. Sobre a REN ANEEL 1.170/2026 ficou so o registro do ato e a ementa: pela regra da casa (vigia da Portaria 140, 13/10/2026), nao ha frase externa sobre a Resolucao antes da leitura do voto, da nota tecnica e do relatorio da CP 45/2019. NAO conferidos nesta revisao (fonte oficial nao reaberta): ONS-NT-DPL-0031-2024-REVISAO-FV.",
-    "nota_run_2026_11_02_consolidadora": "Run consolidadora de 02/11/2026: corrigido no fato ONS-PROCEDIMENTOS-903 o fim da CP ANEEL 34/2026 (12/11/2026, aviso de prorrogacao no DOU de 29/10). So o trecho da CP foi reconferido; verificado_em do fato e do _meta mantidos."
+    "nota_run_2026_11_02_consolidadora": "Run consolidadora de 02/11/2026: corrigido no fato ONS-PROCEDIMENTOS-903 o fim da CP ANEEL 34/2026 (12/11/2026, aviso de prorrogacao no DOU de 29/10). So o trecho da CP foi reconferido; verificado_em do fato e do _meta mantidos.",
+    "rodizio": [
+      {
+        "data": "2026-11-14",
+        "relidos": [
+          "fatos[0]",
+          "fatos[1]",
+          "fatos[2]",
+          "fatos[3]",
+          "fatos[4]",
+          "fatos[5]",
+          "fatos[6]",
+          "fatos[7]",
+          "fatos[8]",
+          "_pendentes_verificacao[0]",
+          "_pendentes_verificacao[1]",
+          "_pendentes_verificacao[2]"
+        ]
+      }
+    ],
+    "nota_run_2026_11_14_reconferencia": "Rodizio diario de reconferencia F1 (1a run, 14/11/2026, decisao D38 = a), itens mais antigos primeiro, com segunda leitura independente: ATUALIZAR 5, CONFIRMADO 2, SEM_FONTE_ACESSIVEL 5. _meta.verificado_em = data do item publicado mais antigo."
   },
   "fatos": [
     {
       "fato_id": "ONS-NT-DPL-0111-2025",
       "tema": "NT-ONS DPL 0111/2025 — Requisitos técnicos de baterias (LRCAP)",
-      "valor": "Requisitos técnicos de conexão de baterias (grid-forming) — NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (mesmo doc conjunto ONS/EPE, rev.4). Os limiares de ELEGIBILIDADE do LRCAP (≥30 MW, ≥4h, ≥85% RTE) NÃO estão nesta NT: estão na Portaria MME 136/2026, Art. 7º (III/IV/VI); o grid-forming obrigatório está na Portaria 136/2026 Art. 4º §13 e detalhado aqui. Pré-condição técnica da Frente A SOA.",
+      "valor": "Requisitos técnicos de conexão de baterias (grid-forming) — NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (mesmo doc conjunto ONS/EPE; revisão mais recente: Revisão 5, de 22/10/2026, com revisões pontuais de clareza e a opção de enviar os modelos em ORGANON, além do ANATEM). Os limiares de ELEGIBILIDADE do LRCAP (≥30 MW, ≥4h, ≥85% RTE) NÃO estão nesta NT: estão na Portaria MME 136/2026, Art. 7º (III/IV/VI); o grid-forming obrigatório está na Portaria 136/2026 Art. 4º §13 e detalhado aqui. Pré-condição técnica da Frente A SOA.",
       "status": "VIGENTE",
       "norma": "NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (conexão/grid-forming) · limiares na Portaria MME 136/2026 Art. 7º + Art. 4º §13",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -69,7 +89,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-976/NT%20ONS%20DPL%200111-2025%20-%20EPE-DEE-NT-095-2025%20-%20Requisitos%20SAE-B_Rev5_Final.pdf"
     },
     {
       "fato_id": "ONS-SUBMODULO-9",
@@ -78,7 +99,7 @@
       "status": "VIGENTE",
       "norma": "ONS · Procedimentos de Rede (REN ANEEL 903/2020) · Lei 10.848/2004, art. 1º-B, §§ 3º e 4º",
       "url": "https://www.ons.org.br/paginas/sobre-o-ons/procedimentos-de-rede/vigentes",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -116,11 +137,11 @@
     {
       "fato_id": "ONS-PROCEDIMENTOS-903",
       "tema": "Procedimentos de Rede — REN ANEEL 903/2020 (estrutura vigente: Módulos 1 a 9)",
-      "valor": "Conjunto de Submódulos que regulam a operação do SIN, na estrutura de nove módulos aprovada pela REN ANEEL 903/2020, em vigor desde 01/01/2021: (1) Relacionamento com Agentes; (2) Critérios e Requisitos; (3) Planejamento da Operação; (4) Programação da Operação; (5) Operação do Sistema; (6) Avaliação da Operação; (7) Integração de Instalações; (8) Administração dos Contratos e Contabilização Financeira; (9) Indicadores. Em consulta: CP ANEEL 34/2026 (contribuições de 17/09 a 12/11/2026, prazo prorrogado pelo aviso no DOU de 29/10/2026), sobre a revisão da classificação das modalidades de operação de usinas, com minutas do ONS para 22 submódulos; é proposta, ainda não é regra.",
+      "valor": "Conjunto de Submódulos que regulam a operação do SIN, na estrutura de nove módulos aprovada pela REN ANEEL 903/2020, em vigor desde 01/01/2021: (1) Relacionamento com Agentes; (2) Critérios e Requisitos; (3) Planejamento da Operação; (4) Programação da Operação; (5) Operação do Sistema; (6) Avaliação da Operação; (7) Integração de Instalações; (8) Administração de Contratos e Contabilização Financeira; (9) Indicadores. Proposta em análise: CP ANEEL 34/2026, sobre a revisão da classificação das modalidades de operação de usinas, com minutas do ONS para 22 submódulos; o prazo de contribuições ia de 17/09 a 12/11/2026 (prorrogado pelo aviso no DOU de 29/10/2026); até a deliberação da ANEEL, é proposta, ainda não é regra.",
       "status": "VIGENTE",
-      "norma": "ONS · REN ANEEL 903/2020 · em consulta: CP ANEEL 34/2026",
+      "norma": "ONS · REN ANEEL 903/2020 · proposta: CP ANEEL 34/2026 (contribuições até 12/11/2026)",
       "url": "https://www.ons.org.br/paginas/sobre-o-ons/procedimentos-de-rede/vigentes",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -153,16 +174,18 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "pendencia_verificacao": "Em 14/11/2026 não foi relido em F1 se as contribuições da CP ANEEL 34/2026 de fato se encerraram em 12/11/2026 ou se houve nova prorrogação: o DOU não respondeu e a página de consultas da ANEEL devolveu HTTP 403. A contagem de 22 submódulos também não foi reconferida. Reabrir o aviso no DOU e a página da CP antes de afirmar encerramento ou deliberação.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ons.org.br/AcervoDigitalDocumentosEPublicacoes/relacao_SM_reestruturados_antiga_estrutura.pdf"
     },
     {
       "fato_id": "ONS-NT-PNAST",
       "tema": "NT 02 PNAST — Capacidade por barramento + MUST",
-      "valor": "Nota Técnica que apresenta os quantitativos da capacidade remanescente do SIN por barramento candidato, subárea e área, para acesso de geradores e consumidores à Rede Básica (PNAST, 1ª Temporada de Acesso de 2026). Habilita TVM v2. Publicada em 31/08/2026: NT-ONS DPL 0083/2026, Revisão 00. ATUALIZAÇÃO 07/07/2026: o ONS admitiu 367 cadastramentos na 1ª Temporada de Acesso de 2026 (PNAST) — ponteiro F3 ABSOLAR (GT Armazenamento, 07/07). Marca o volume da 1ª janela de acesso. ATUALIZAÇÃO 09/07/2026 (ponteiro F3 ABSOLAR, GTGC 08/07): a lista de cadastramentos ADMITIDOS na 1ª Temporada de Acesso do PNAST totaliza 20,31 GW — 14,56 GW de geração + 5,74 GW de consumo. Divulgação AGREGADA (sem detalhe por projeto; não é possível separar FV). Próxima etapa: transmissoras informam barramentos candidatos ao ONS, que avalia a margem de escoamento. Nota de disciplina: os 367 cadastramentos e os 20,31 GW descrevem o mesmo conjunto, o dos cadastramentos ADMITIDOS (etapa de Admissão); a Habilitação é a etapa seguinte. ATUALIZAÇÃO 13/10/2026 (F1 ONS): a notícia do ONS de 06/07/2026 e o Comunicado Relevante nº 02/2026 registram 404 cadastramentos recebidos e 367 admitidos (288 de geração e 79 de consumo), com montante admitido de 20,31 GW (14,56 GW de geração e 5,74 GW de consumo). A NT-ONS DPL 0083/2026 (Revisão 00, aprovada em 31/08/2026) saiu no prazo do art. 11 da Portaria Normativa MME 129/2026 e foi retificada pelo Comunicado Relevante nº 04/2026 (10/09/2026). Em 07/10/2026 o ONS noticiou o encerramento da 1ª Temporada e o resultado do primeiro processo competitivo. A ANEEL abriu a Consulta Pública nº 36/2026 (contribuições de 08/10 a 22/11/2026 pelo aviso; como 22/11 é domingo, a ANEEL registra a prorrogação automática para 23/11/2026) sobre minutas de Resolução Normativa e de revisão dos Módulos 1 e 5 das Regras dos Serviços de Transmissão (Nota Técnica nº 97/2026-STD/ANEEL); é proposta em consulta, ainda não é regra.",
+      "valor": "Nota Técnica que apresenta os quantitativos da capacidade remanescente do SIN por barramento candidato, subárea e área, para acesso de geradores e consumidores à Rede Básica (PNAST, 1ª Temporada de Acesso de 2026). Habilita TVM v2. Publicada em 31/08/2026: NT-ONS DPL 0083/2026, Revisão 00. ATUALIZAÇÃO 07/07/2026: o ONS admitiu 367 cadastramentos na 1ª Temporada de Acesso de 2026 (PNAST) — ponteiro F3 ABSOLAR (GT Armazenamento, 07/07). Marca o volume da 1ª janela de acesso. ATUALIZAÇÃO 09/07/2026 (ponteiro F3 ABSOLAR, GTGC 08/07): a lista de cadastramentos ADMITIDOS na 1ª Temporada de Acesso do PNAST totaliza 20,31 GW — 14,56 GW de geração + 5,74 GW de consumo. Divulgação AGREGADA (sem detalhe por projeto; não é possível separar FV). Próxima etapa: transmissoras informam barramentos candidatos ao ONS, que avalia a margem de escoamento. Nota de disciplina: os 367 cadastramentos e os 20,31 GW descrevem o mesmo conjunto, o dos cadastramentos ADMITIDOS (etapa de Admissão); a Habilitação é a etapa seguinte. ATUALIZAÇÃO 13/10/2026 (F1 ONS): a notícia do ONS de 06/07/2026 e o Comunicado Relevante nº 02/2026 registram 404 cadastramentos recebidos e 367 admitidos (288 de geração e 79 de consumo), com montante admitido de 20,31 GW (14,56 GW de geração e 5,74 GW de consumo). A NT-ONS DPL 0083/2026 (Revisão 00, aprovada em 31/08/2026) saiu no prazo do art. 11 da Portaria Normativa MME 129/2026 e foi retificada pelo Comunicado Relevante nº 04/2026 (10/09/2026). Em 07/10/2026 o ONS noticiou o encerramento da 1ª Temporada e o resultado do primeiro processo competitivo. ATUALIZAÇÃO 14/11/2026 (F1 ONS): o Comunicado Relevante nº 08/2026, de 15/10/2026, homologou os resultados da 1ª Temporada de Acesso de 2026, inclusive o do Processo Competitivo realizado em 06/10/2026; em 07/10/2026 o ONS publicou as etapas e o cronograma da Temporada de Acesso 01/2027. A ANEEL abriu a Consulta Pública nº 36/2026 (contribuições de 08/10 a 22/11/2026 pelo aviso; como 22/11 é domingo, a ANEEL registra a prorrogação automática para 23/11/2026) sobre minutas de Resolução Normativa e de revisão dos Módulos 1 e 5 das Regras dos Serviços de Transmissão (Nota Técnica nº 97/2026-STD/ANEEL); é proposta em consulta, ainda não é regra.",
       "status": "VIGENTE",
       "norma": "NT-ONS DPL 0083/2026, Revisão 00, de 31/08/2026 (Nota Técnica 02 da 1ª Temporada de Acesso de 2026) · art. 11 da Portaria Normativa MME 129/2026 · Comunicado Relevante ONS nº 02/2026 e notícia do ONS de 06/07/2026: 367 cadastramentos admitidos, 20,31 GW = 14,56 GW geração + 5,74 GW consumo",
       "url": "https://www.ons.org.br/paginas/energia-no-futuro/transmissao/pnast",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -210,16 +233,17 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ons.org.br/AcervoDigitalDocumentosEPublicacoes/Comunicado%20Relevante%2008%202026_%20Resultado%20Homologado.pdf"
     },
     {
       "fato_id": "ONS-NT-CAPACIDADE-REMANESCENTE",
       "tema": "NT Quantitativos da Capacidade Remanescente do SIN (Art. 11 §4º Portaria 136)",
-      "valor": "Nota Técnica de Quantitativos da Capacidade Remanescente do SIN para Escoamento — define a capacidade por barramento/subárea usada na classificação dos lances do LRCAP. ANCORADO: a Portaria MME 136/2026, Art. 11 §4º, determina que a NT de QUANTITATIVOS 'deverá ser publicada até 30 de setembro de 2026'. AVANÇO: em 03/07/2026, EPE e ONS publicaram a Nota Técnica Conjunta de METODOLOGIA, premissas e critérios (NT-ONS DPL 0057/2026 = EPE-DEE-RE-067/2026-R0) que precede os quantitativos — ponteiro F3 ABSOLAR (GT Armazenamento, 07/07) + cobertura setorial. Distinguir: a NT de metodologia (NT-01, publicada em 03/07/2026) ≠ NT de quantitativos por barramento (NT-02, publicada em 30/09/2026). (A citação anterior 'Art. 15 §4º' estava errada — o Art. 15 trata da não aplicação do art. 9º da Portaria 514.) FALSO-POSITIVO AFASTADO EM 09/07/2026: a notícia oficial ANEEL 'ANEEL, ONS e EPE divulgam revisão da nota técnica sobre quantitativos da capacidade remanescente do SIN' refere-se à NT-ONS DPL 0005/2026-R1, PUBLICADA EM 15/03/2026, relativa aos LRCAPs de UTE/UHE (Portarias 444/2016, 118/2025 e 119/2025) — NÃO é a NT de armazenamento. ATUALIZAÇÃO 13/10/2026 (F1 ONS e EPE): a NT de quantitativos de armazenamento saiu no prazo. É a NT-ONS DPL 0095/2026, Revisão 0, de 30/09/2026 ('Nota Técnica 02'), divulgada por ONS, ANEEL e EPE. Traz a capacidade remanescente para conexão de novos sistemas de armazenamento por Barramento Candidato, Subárea e Área (três níveis de inequação), para o Produto Potência Armazenamento 2028 A (LRCAP de 2026 - Armazenamento Nacional, em 02/12/2026) e o Produto Potência Armazenamento 2028 B (LRCAP de 2026 - Armazenamento, em 04/12/2026), ambos com início de suprimento em 01/08/2028. A metodologia é a da NT-01 (NT-ONS DPL 0057/2026 / EPE-DEE-RE-067/2026-r0), de 03/07/2026.",
+      "valor": "Nota Técnica de Quantitativos da Capacidade Remanescente do SIN para Escoamento — define a capacidade por barramento/subárea usada na classificação dos lances do LRCAP. ANCORADO: a Portaria MME 136/2026, Art. 11 §4º, determina que a NT de QUANTITATIVOS 'deverá ser publicada até 30 de setembro de 2026'. AVANÇO: em 03/07/2026, EPE e ONS publicaram a Nota Técnica Conjunta de METODOLOGIA, premissas e critérios (NT-ONS DPL 0057/2026 = EPE-DEE-RE-067/2026-R0) que precede os quantitativos — ponteiro F3 ABSOLAR (GT Armazenamento, 07/07) + cobertura setorial. Distinguir: a NT de metodologia (NT-01, publicada em 03/07/2026) ≠ NT de quantitativos por barramento (NT-02, publicada em 30/09/2026). (A citação anterior 'Art. 15 §4º' estava errada — o Art. 15 trata da não aplicação do art. 9º da Portaria 514.) FALSO-POSITIVO AFASTADO EM 09/07/2026: a notícia oficial ANEEL 'ANEEL, ONS e EPE divulgam revisão da nota técnica sobre quantitativos da capacidade remanescente do SIN' refere-se à NT-ONS DPL 0005/2026-R1, PUBLICADA EM 15/03/2026, relativa aos LRCAPs de UTE/UHE (Portarias 444/2016, 118/2025 e 119/2025) — NÃO é a NT de armazenamento. ATUALIZAÇÃO 13/10/2026 (F1 ONS e EPE): a NT de quantitativos de armazenamento saiu no prazo. É a NT-ONS DPL 0095/2026, Revisão 0, de 30/09/2026 ('Nota Técnica 02'), divulgada por ONS, ANEEL e EPE. Traz a capacidade remanescente para conexão de novos sistemas de armazenamento por Barramento Candidato, Subárea e Área (três níveis de inequação), para o Produto Potência Armazenamento 2028 A (LRCAP de 2026 - Armazenamento Nacional, em 02/12/2026) e o Produto Potência Armazenamento 2028 B (LRCAP de 2026 - Armazenamento, em 04/12/2026), ambos com início de suprimento em 01/08/2028. A metodologia é a da NT-01 (NT-ONS DPL 0057/2026 / EPE-DEE-RE-067/2026-r0), de 03/07/2026. ATUALIZAÇÃO 14/11/2026 (F1 EPE e ONS): a NT-02 tem Revisão 1, de 23/10/2026, divulgada por EPE, ONS e ANEEL em 26/10/2026. Ela incorpora a retificação, pela transmissora, da disponibilidade física para novas conexões no barramento de 69 kV da SE Milagres, cuja margem passou de 0 (zero) para \"≤ 50 MW\" na Tabela 4-1, e da capacidade de interrupção de um disjuntor de 230 kV da mesma subestação (de 40 kA para 50 kA, sem mudar o resultado das análises de curto-circuito); os demais ajustes, de caráter geral, não alteraram as margens dos barramentos candidatos.",
       "status": "VIGENTE",
-      "norma": "NT quantitativos (NT-02): NT-ONS DPL 0095/2026, Revisão 0, de 30/09/2026 · NT metodologia (NT-01): NT-ONS DPL 0057/2026 = EPE-DEE-RE-067/2026-R0 (publicada em 03/07/2026) · Art. 11 §4º da Portaria Normativa MME 136/2026",
-      "url": "https://www.ons.org.br/AcervoDigitalDocumentosEPublicacoes/NT-ONS%20DPL%200095-2026-R0%20%E2%80%93%20LRCAP%20Armazenamento%202026.pdf",
-      "verificado_em": "2026-11-06",
+      "norma": "NT quantitativos (NT-02): NT-ONS DPL 0095/2026, Revisão 1, de 23/10/2026 (Revisão 0 de 30/09/2026) · NT metodologia (NT-01): NT-ONS DPL 0057/2026 = EPE-DEE-RE-067/2026-R0 (publicada em 03/07/2026) · Art. 11 §4º da Portaria Normativa MME 136/2026",
+      "url": "https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-976/NT-ONS%20DPL%200095-2026-R1%20%E2%80%93%20LRCAP%20Armazenamento%202026.pdf",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -259,16 +283,17 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-976/NT-ONS%20DPL%200095-2026-R1%20%E2%80%93%20LRCAP%20Armazenamento%202026.pdf"
     },
     {
       "fato_id": "ONS-SANDBOX-TENSAO",
       "tema": "Ato ONS · Sandbox Controle de Tensão — primeiro mecanismo competitivo",
-      "valor": "Sandbox Regulatório de Suporte de Potência Reativa para Controle de Tensão: a Resolução Autorizativa ANEEL nº 16.539, de 21/10/2025, autorizou o ONS a operar mecanismo competitivo para adquirir esse serviço ancilar. O primeiro mecanismo competitivo (Edital nº SA-SR/001/2025-ONS, atualizado em 18/11/2025) é limitado à absorção de potência reativa por geradores, para controle de tensão na área Minas Gerais. A página do ONS reúne o edital, o contrato (CPSA-SR), a rotina operacional (RO-CT.BR.02), as perguntas e respostas e o material dos workshops. A camada QSV + telemetria da SOA pode servir de evidência de prestação.",
+      "valor": "Sandbox Regulatório de Suporte de Potência Reativa para Controle de Tensão: a Resolução Autorizativa ANEEL nº 16.539, de 21/10/2025, autorizou o ONS a operar mecanismo competitivo para adquirir esse serviço ancilar. O primeiro mecanismo competitivo (Edital nº SA-SR/001/2025-ONS, atualizado em 18/11/2025) é limitado à absorção de potência reativa por geradores, para controle de tensão na área Minas Gerais. A página do ONS reúne o edital, o contrato (CPSA-SR), a rotina operacional (RO-CT.BR.02), as perguntas e respostas e o material dos workshops. Em 2026 o ONS prepara o 2º Mecanismo Competitivo, que amplia a abrangência para absorção e injeção de potência reativa nas áreas de Minas Gerais, São Paulo e Paraná; as minutas do Edital, do CPSA-SR e da Rotina Operacional estão em consulta externa de 5 a 18/11/2026, e o workshop ONS/CCEE foi realizado em 05/11/2026. A camada QSV + telemetria da SOA pode servir de evidência de prestação.",
       "status": "VIGENTE",
       "norma": "Resolução Autorizativa ANEEL nº 16.539, de 21/10/2025 · REN ANEEL nº 1.062/2023 · Edital nº SA-SR/001/2025-ONS (Sandbox Controle de Tensão)",
       "url": "https://www.ons.org.br/paginas/energia-amanha/sandbox-controle-de-tensao",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -300,7 +325,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ons.org.br/paginas/energia-amanha/sandbox-controle-de-tensao"
     },
     {
       "fato_id": "ONS-RESOLUCAO-CMSE-1-2026-DEVERES",
@@ -339,7 +365,8 @@
       "agente_comercial_envolvido": null,
       "orgao": "ONS",
       "gatilho_revisao": "Publicação da metodologia dos estudos prospectivos pelo ONS (prazo do Art. 4º, I: 180 dias de 08/07/2026, ~04/01/2027 por contagem própria) e primeira CRef aprovada pelo CMSE (até dezembro/2026).",
-      "pendencia_verificacao": "Os deveres estão ancorados no ato. O CUMPRIMENTO por parte do ONS não foi verificado — o portal do ONS segue cego para o monitor. Não afirmar que o ONS publicou metodologia ou CRef sem reabrir a fonte."
+      "pendencia_verificacao": "Os deveres estão ancorados no ato. O CUMPRIMENTO por parte do ONS não foi verificado — o portal do ONS segue cego para o monitor. Não afirmar que o ONS publicou metodologia ou CRef sem reabrir a fonte. | sem F1 acessível em 14/11/2026: Concordo: não há F1 legível hoje para os artigos. O link do DOU deu 'socket hang up' no WebFetch, também na versão de impressão do pesquisa.in.gov.br. Pelo Chrome, a página do DOU nunca terminou de carregar: três tentativas, e depois o grupo de abas foi fechado por ou",
+      "tentado_em": "2026-11-14"
     },
     {
       "fato_id": "ONS-PORTARIA-140-2026-DEVERES",
@@ -348,7 +375,7 @@
       "status": "VIGENTE",
       "norma": "Portaria Normativa MME no 140, de 18/07/2026, arts. 4o, 5o e 11 · DOU de 21/07/2026, Edicao Extra, Secao 1",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 20,
       "vetores_afetados": [
@@ -413,7 +440,9 @@
         "verificado_em": "2026-08-08"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "tentado_em": "2026-11-14",
+      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Concordo. Duas buscas restritas a ons.org.br, gov.br, ccee.org.br e aneel.gov.br não acharam a NT-ONS DPL 0031/2024 revisada, nem notícia oficial sobre a correção nas horas de nascer e pôr do sol. Apareceram só a REN 1.073/2023 e submódulos que descrevem a função de p"
     }
   ],
   "_pendentes_verificacao": [
@@ -435,8 +464,9 @@
       "qsv_origem_classificacao": "reverificacao_negativa_F1_acervo_publico_ONS_01set2026_0847_rota_anonima",
       "numero_status": "SEM_NUMEROS",
       "motivo_pendencia": "Exige camada portal / SINTEGRE (Chrome logado, sessao interativa). Reverificar diariamente ate a contestacao de 09/09.",
-      "pendencia_verificacao": "[A VERIFICAR] SINtegre (portal logado, HTTP 302 anonimo reconfirmado em 01/09) - unica rota que distingue nao consta do acervo publico de nao foi divulgado. [NOTA DE METODO 01/09] O limite declarado de que a lista entrega METADADO e nao ARQUIVO esta SUPERADO: a rota items(<Id>)/File devolve HTTP 200 com Name, ServerRelativeUrl e Length, e o PDF e baixado direto de www.ons.org.br mais o ServerRelativeUrl. AttachmentFiles em HTTP 400 e _api/search/query em HTTP 500 seguem falhando, mas eram a rota errada.",
-      "gatilho_revisao": "publicacao no acervo publico do ONS ou no SINtegre; leitura do fim do dia de 31/08; abertura da janela de contestacao do art. 4o par. 2o"
+      "pendencia_verificacao": "[A VERIFICAR] SINtegre (portal logado, HTTP 302 anonimo reconfirmado em 01/09) - unica rota que distingue nao consta do acervo publico de nao foi divulgado. [NOTA DE METODO 01/09] O limite declarado de que a lista entrega METADADO e nao ARQUIVO esta SUPERADO: a rota items(<Id>)/File devolve HTTP 200 com Name, ServerRelativeUrl e Length, e o PDF e baixado direto de www.ons.org.br mais o ServerRelativeUrl. AttachmentFiles em HTTP 400 e _api/search/query em HTTP 500 seguem falhando, mas eram a rota errada. | sem F1 acessível em 14/11/2026: Concordo. A rota do item (API da lista do Acervo Digital do ONS) foi recusada pelo controle de permissões desta sessão no WebFetch. O SINtegre exige login. A busca em ons.org.br, gov.br e ccee.org.br não achou publicação do ONS com cronograma ou critérios de validação",
+      "gatilho_revisao": "publicacao no acervo publico do ONS ou no SINtegre; leitura do fim do dia de 31/08; abertura da janela de contestacao do art. 4o par. 2o",
+      "tentado_em": "2026-11-14"
     },
     {
       "fato_id": "ONS-PROCEDIMENTOS-REDE-DECRETO-12772-2025",
@@ -449,7 +479,9 @@
       "tipo_fato": "REGULATORIO_DECISORIO",
       "qsv_cor": "LARANJA",
       "qsv_origem_classificacao": "F1_institucional_ANEEL_reaberta_29jul2026 — obrigacao condicionada a proclamacao do resultado",
-      "gatilho_revisao": "envio efetivo das propostas pelo ONS; abertura de consulta sobre os Procedimentos de Rede"
+      "gatilho_revisao": "envio efetivo das propostas pelo ONS; abertura de consulta sobre os Procedimentos de Rede",
+      "tentado_em": "2026-11-14",
+      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Concordo. O Despacho ANEEL 4.065/2026 não abriu: WebFetch deu 'socket hang up', e o Chrome não carregou o DOU nem a página de consultas da ANEEL. A busca restrita a gov.br, in.gov.br, aneel.gov.br e ons.org.br não achou o despacho. Confirmei só o entorno: a notícia da"
     },
     {
       "fato_id": "ONS-FUNCOES-PRODUTIVIDADE-ART4-DIVULGACAO-2026",
@@ -468,8 +500,9 @@
       "qsv_cor": "LARANJA",
       "qsv_origem_classificacao": "marco_de_calendario_ancorado_no_ato + reverificacao_negativa_FORTE_canal_publico_01set2026_0847_rota_anonima_propria",
       "numero_status": "ANCORADO_PARCIAL",
-      "pendencia_verificacao": "[A VERIFICAR] Se a divulgacao ocorreu no SINtegre em 31/08/2026 - so o portal logado responde, e ele devolve HTTP 302 anonimo. Enquanto nao houver essa leitura, nao se afirma nem a ocorrencia nem a ausencia da divulgacao; afirma-se apenas que nao consta do acervo publico do ONS. Nao cravar o inicio do prazo de contestacao: a casa trabalha com 09/09/2026 por leitura conservadora, e essa data so se sustenta se a divulgacao tiver ocorrido em 31/08. [NOTA DE METODO 01/09] O limite declarado ate 31/08 de que o acervo entrega metadado e nao arquivo esta SUPERADO: a rota items(<Id>)/File devolve HTTP 200 com ServerRelativeUrl e permite baixar o PDF direto, comprovada em dois documentos nesta janela. AttachmentFiles em HTTP 400 e _api/search/query em HTTP 500 continuam falhando, mas eram a rota errada. Consequencia: se as funcoes aparecerem no acervo, elas poderao ser lidas na integra sem navegador.",
-      "gatilho_revisao": "leitura do SINtegre; publicacao no acervo publico do ONS; qualquer comunicacao do ONS ou da CCEE sobre a abertura da janela de contestacao"
+      "pendencia_verificacao": "[A VERIFICAR] Se a divulgacao ocorreu no SINtegre em 31/08/2026 - so o portal logado responde, e ele devolve HTTP 302 anonimo. Enquanto nao houver essa leitura, nao se afirma nem a ocorrencia nem a ausencia da divulgacao; afirma-se apenas que nao consta do acervo publico do ONS. Nao cravar o inicio do prazo de contestacao: a casa trabalha com 09/09/2026 por leitura conservadora, e essa data so se sustenta se a divulgacao tiver ocorrido em 31/08. [NOTA DE METODO 01/09] O limite declarado ate 31/08 de que o acervo entrega metadado e nao arquivo esta SUPERADO: a rota items(<Id>)/File devolve HTTP 200 com ServerRelativeUrl e permite baixar o PDF direto, comprovada em dois documentos nesta janela. AttachmentFiles em HTTP 400 e _api/search/query em HTTP 500 continuam falhando, mas eram a rota errada. Consequencia: se as funcoes aparecerem no acervo, elas poderao ser lidas na integra sem navegador. | sem F1 acessível em 14/11/2026: Concordo. A parte normativa confere na Portaria 140, lida hoje: art. 4º, § 1º, III ('em até quarenta dias, o ONS deverá divulgar as funções de produtividade'), § 2º (contestação em 10 dias), § 3º (20 dias) e § 4º (prorrogação). Os 40 dias caem em 30/08/2026, domingo, ",
+      "gatilho_revisao": "leitura do SINtegre; publicacao no acervo publico do ONS; qualquer comunicacao do ONS ou da CCEE sobre a abertura da janela de contestacao",
+      "tentado_em": "2026-11-14"
     }
   ],
   "_historico_caidos": []

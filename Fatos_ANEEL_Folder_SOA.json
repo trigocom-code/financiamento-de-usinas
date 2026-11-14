@@ -31,7 +31,22 @@
     "nota_run_2026_08_21_consolidadora": "Varredura consolidadora de 21/08/2026: quatro registros de _pendentes_verificacao estavam travados na MESMA condição — a publicação do respectivo Aviso de Consulta Pública no DOU. Os quatro Avisos (16, 18, 22, 23 e 25 de 2026) foram abertos no in.gov.br pelo navegador e lidos. Nenhum fato foi promovido a VERDE: a régua exige fonte oficial reaberta E número ancorado, e o conteúdo remanescente destes registros (AIR da CP 016, minutas e CRCAP dos Leilões 05 e 06/2026) segue sem leitura.",
     "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. ANEEL noticias -> 200 267521; ANEEL CPs -> None HTTP Error 404: Not Found",
     "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 2 confirmado, 6 impreciso, 8 mudou. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente. Sobre a REN ANEEL 1.170/2026 ficou so o registro do ato e a ementa: pela regra da casa (vigia da Portaria 140, 13/10/2026), nao ha frase externa sobre a Resolucao antes da leitura do voto, da nota tecnica e do relatorio da CP 45/2019.",
-    "nota_run_2026_11_02_consolidadora": "Run consolidadora de 02/11/2026: so o fato ANEEL-CP-034-2026-TIPO-III foi reconferido em F1 (aviso de prorrogacao no DOU de 29/10, Secao 3) e teve verificado_em atualizado. _meta.verificado_em NAO foi alterado: os demais fatos seguem com a data da ultima reconferencia real."
+    "nota_run_2026_11_02_consolidadora": "Run consolidadora de 02/11/2026: so o fato ANEEL-CP-034-2026-TIPO-III foi reconferido em F1 (aviso de prorrogacao no DOU de 29/10, Secao 3) e teve verificado_em atualizado. _meta.verificado_em NAO foi alterado: os demais fatos seguem com a data da ultima reconferencia real.",
+    "rodizio": [
+      {
+        "data": "2026-11-14",
+        "relidos": [
+          "fatos[0]",
+          "fatos[1]",
+          "fatos[2]",
+          "fatos[3]",
+          "_pendentes_verificacao[5]",
+          "_pendentes_verificacao[6]",
+          "_pendentes_verificacao[7]"
+        ]
+      }
+    ],
+    "nota_run_2026_11_14_reconferencia": "Rodizio diario de reconferencia F1 (1a run, 14/11/2026, decisao D38 = a), itens mais antigos primeiro, com segunda leitura independente: ATUALIZAR 4, CONFIRMADO 3. _meta.verificado_em = data do item publicado mais antigo."
   },
   "fatos": [
     {
@@ -41,7 +56,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.161/2026 · assinada 02/06/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.161-de-2-de-junho-de-2026-714430510",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -91,7 +106,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.162/2026 (altera RENs 846/2019, 875/2020, 905/2020, 921/2021, 1.000/2021, 1.009/2022, 1.029/2022, 1.030/2022, 1.031/2022 e 1.071/2023) · assinada 02/06/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.162-de-2-de-junho-de-2026-714416734",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -141,7 +156,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.170/2026 · assinada 06/10/2026 · DOU 09/10/2026, Ed. 192, Seção 1, p. 122 · Processo 48500.900375/2019-83 · resultado da 3ª fase da CP ANEEL 045/2019",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-n-1.170-de-6-de-outubro-de-2026-737462879",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
       "vetores_afetados": [
@@ -215,11 +230,11 @@
     {
       "fato_id": "ANEEL-CP-039-2023",
       "tema": "CP ANEEL 039/2023 — Armazenamento de energia (2ª fase)",
-      "valor": "2ª fase concluída com publicação da NT 03/2026; tratada tarifa dupla (TUST consumo + geração); destravou 1º LRCAP de baterias. Consolidada pelas RENs 1.161/2026 (outorga) e 1.162/2026 (tratamento regulatório e faturamento), publicadas no DOU de 24/06/2026.",
-      "status": "VIGENTE",
+      "valor": "2ª fase da CP 039/2023 (Aviso no DOU de 11/12/2024, Seção 3, p. 131; contribuições de 12/12/2024 a 30/01/2025), com as contribuições analisadas na NT Conjunta nº 13/2025-SGM-SCE-STD-STE-STR-SFT/ANEEL e no Relatório de Análise das Contribuições. Resultado deliberado na 11ª Reunião Pública Ordinária da Diretoria, em 02/06/2026: por maioria, a Diretoria acompanhou o voto-vista do Diretor Willamy Frota e aprovou a regulamentação da outorga de Sistemas de Armazenamento de Energia (Anexo I da NT Conjunta nº 3/2026-SGM-SCE-STD-STR-SFT/ANEEL) e o tratamento regulatório do armazenamento, com alteração de dez RENs (Anexo II da mesma NT), além de ajustes no Submódulo 5.5 do PRORET e nas Regras dos Serviços de Transmissão. Consolidada pelas RENs 1.161/2026 (outorga) e 1.162/2026 (tratamento regulatório e faturamento), ambas de 02/06/2026 e publicadas no DOU de 24/06/2026. A REN 1.162/2026 determina que o faturamento de central geradora com SAE colocalizado ou de SAE autônomo contemple, cumulativamente, parcela associada ao consumo e parcela associada à injeção. As diretrizes dos leilões de baterias (LRCAP de 2026 - Armazenamento Nacional e LRCAP de 2026 - Armazenamento) estão na Portaria Normativa MME nº 136, de 01/06/2026.",
+      "status": "ENCERRADA — resultado em vigor nas RENs 1.161/2026 e 1.162/2026",
       "norma": "CP ANEEL 039/2023 · NT Conjunta 3/2026-SGM-SCE-STD-STR-SFT/ANEEL · RENs 1.161/2026 e 1.162/2026",
       "url": "https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -259,7 +274,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/dsp_detalheNoticia.cfm?idNoticia=14758&idAreaNoticia=425"
     },
     {
       "fato_id": "ANEEL-REN-1150-2026",
@@ -985,11 +1001,11 @@
     {
       "fato_id": "ANEEL-PROC-48500-015900-2026-94-MMGD-REVELIA",
       "tema": "Processo ANEEL 48500.015900/2026-94 — alteração à revelia das características originais da MMGD (NT 107/2026-SFT)",
-      "valor": "DETECTADO 16/07 via F3 (ABSOLAR, GTGD 15/07/2026). A Nota Técnica nº 107/2026-SFT/ANEEL foi encaminhada ao ONS, solicitando apresentação técnica — preferencialmente em 29/07/2026 — para detalhamento da metodologia utilizada pelo Operador na identificação de AMPLIAÇÕES NÃO AUTORIZADAS DE CAPACIDADE INSTALADA da MMGD, dos mecanismos de monitoramento empregados e dos impactos técnicos, operacionais e regulatórios associados. CONVERGÊNCIA DIRETA com a borda SOA (evidência de capacidade real × cadastro declarado). ATENÇÃO: processo DISTINTO da CP 009/2026 (gato-solar) — não fundir os dois. O PDF da NT 107/2026 (SEI_ANEEL 0398228) veio ANEXO ao e-mail de 15/07 — documento primário disponível, ainda NÃO lido.",
+      "valor": "DETECTADO 16/07 via F3 (ABSOLAR, GTGD 15/07/2026). A Nota Técnica nº 107/2026-SFT/ANEEL foi encaminhada ao ONS, solicitando apresentação técnica — preferencialmente em 29/07/2026 — para detalhamento da metodologia utilizada pelo Operador na identificação de AMPLIAÇÕES NÃO AUTORIZADAS DE CAPACIDADE INSTALADA da MMGD, dos mecanismos de monitoramento empregados e dos impactos técnicos, operacionais e regulatórios associados. CONVERGÊNCIA DIRETA com a borda SOA (evidência de capacidade real × cadastro declarado). ATENÇÃO: processo DISTINTO da CP 009/2026 (gato-solar) — não fundir os dois. CORREÇÃO EM 14/11/2026 (F1): o documento SEI 0398228, antes tido como o PDF desta NT, é a Nota Técnica nº 107/2026-STD/ANEEL, de 03/07/2026, do Processo 48500.002211/2026-10 (Módulo 3 do PRODIST, hoje CP ANEEL 033/2026), publicada na página oficial dessa CP; ela não trata de ampliações não autorizadas da MMGD. A NT 107/2026-SFT e o Processo 48500.015900/2026-94 seguem sem leitura em F1.",
       "status": "EM DELIBERAÇÃO",
       "norma": "Processo ANEEL nº 48500.015900/2026-94 · Nota Técnica nº 107/2026-SFT/ANEEL",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-16",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -1016,16 +1032,18 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "motivo_pendencia": "Ler a NT 107/2026 (PDF anexo, SEI 0398228) antes de qualquer uso — é documento primário chegado por ponteiro F3. Confirmar o processo no SEI/ANEEL. Acompanhar a apresentação do ONS de 29/07."
+      "motivo_pendencia": "Ler a NT 107/2026 (PDF anexo, SEI 0398228) antes de qualquer uso — é documento primário chegado por ponteiro F3. Confirmar o processo no SEI/ANEEL. Acompanhar a apresentação do ONS de 29/07.",
+      "pendencia_verificacao": "14/11/2026: o SEI 0398228 foi lido em F1 (página oficial da CP 033/2026 na ANEEL) e é a NT 107/2026-STD do Processo 48500.002211/2026-10, sem relação com este tema; a numeração 107/2026 pode coincidir entre superintendências ou o F3 pode ter confundido os documentos. Seguem pendentes, só no SEI da ANEEL (CAPTCHA): a existência da NT 107/2026-SFT, o Processo 48500.015900/2026-94 e a realização da apresentação do ONS prevista para 29/07/2026. As pautas, atas e listas de sorteio da Diretoria publicadas pela ANEEL de maio a novembro de 2026, varridas nesta run, não citam o processo.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://antigo.aneel.gov.br/web/guest/consultas-publicas?p_p_id=participacaopublica_WAR_participacaopublicaportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2&_participacaopublica_WAR_partic"
     },
     {
       "fato_id": "ANEEL-PROC-48500-002211-2026-10-PRODIST-M3",
       "tema": "Processo ANEEL 48500.002211/2026-10 — aprimoramento do Módulo 3 do PRODIST (observabilidade/operabilidade/controlabilidade)",
-      "valor": "*** ATUALIZADO EM 13/10/2026 (revisão fato a fato): o processo virou a CP ANEEL 033/2026 (requisitos de observabilidade, operabilidade e controlabilidade dos recursos energéticos distribuídos no Módulo 3 do PRODIST), com contribuições até 09/11/2026. *** DETECTADO 16/07 via F3 (ABSOLAR, GTGD 15/07/2026). Relatório preliminar propõe novos requisitos de OBSERVABILIDADE, OPERABILIDADE e CONTROLABILIDADE para novas conexões e alterações relevantes em sistemas existentes, INCLUINDO INSTALAÇÕES DE ARMAZENAMENTO DE ENERGIA. Baseado na NT nº 107/2026 e no RAIR nº 2/2026-STD. Prevê prazo de até 180 dias para adequação das mini GD e de 120 dias para empreendimentos enquadrados como geração tipo III. Tema deverá ser objeto de futura consulta pública da ANEEL. Borda SOA alta: observabilidade regulada é exatamente a camada de prova/evidência.",
-      "status": "EM DELIBERAÇÃO",
-      "norma": "Processo ANEEL nº 48500.002211/2026-10 · Módulo 3 do PRODIST · NT 107/2026 · RAIR nº 2/2026-STD",
+      "valor": "ATUALIZADO EM 14/11/2026 (F1: página oficial da CP na ANEEL, Avisos no DOU, NT nº 107/2026-STD/ANEEL e minuta de REN anexa): o Processo 48500.002211/2026-10 virou a CP ANEEL 033/2026 (Aviso de abertura no DOU de 10/09/2026, Seção 3, p. 93), que colhe subsídios para o aprimoramento do Módulo 3 do PRODIST, com requisitos de observabilidade, operabilidade e controlabilidade dos Recursos Energéticos Distribuídos (REDs), e para o Relatório de Análise de Impacto Regulatório sobre a aplicação dos requisitos de interoperabilidade ao parque existente de REDs. Contribuições por intercâmbio documental de 10/09/2026 a 30/11/2026: o prazo original, 09/11/2026, foi prorrogado (Aviso de prorrogação no DOU de 05/11/2026, Seção 3, p. 136). Documentos da CP: NT nº 107/2026-STD/ANEEL, de 03/07/2026, com minuta de REN anexa, e Relatório de AIR nº 002/2026-STD/ANEEL. Pela minuta, a definição de RED inclui sistemas de armazenamento de energia; os novos requisitos valem para todas as novas conexões a partir da vigência da REN (proposta para 180 dias após a publicação); e, para as instalações com pedido de conexão anterior à vigência, inclusive as já conectadas, a adequação aos itens 115 a 137.1 do Anexo I teria prazo de 120 dias para centrais de geração conectadas diretamente à rede de distribuição (a NT as chama de centrais geradoras Tipo III) e de 180 dias para minigeração distribuída, contados da entrada em vigor. Origem: DETECTADO 16/07 via F3 (ABSOLAR, GTGD 15/07/2026), como relatório preliminar. Borda SOA alta: observabilidade regulada é exatamente a camada de prova/evidência.",
+      "status": "CP ABERTA — contribuições até 30/11/2026",
+      "norma": "CP ANEEL 033/2026 · Processo ANEEL nº 48500.002211/2026-10 · Módulo 3 do PRODIST · NT nº 107/2026-STD/ANEEL · Relatório de AIR nº 002/2026-STD/ANEEL",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-07-16",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 11,
       "vetores_afetados": [
@@ -1052,16 +1070,18 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "motivo_pendencia": "F3 ponteiro. Confirmar no SEI/ANEEL e aguardar a abertura da CP. Fio de convergência estrutural com V2/V3 — acompanhar de perto."
+      "motivo_pendencia": "F3 ponteiro. Confirmar no SEI/ANEEL e aguardar a abertura da CP. Fio de convergência estrutural com V2/V3 — acompanhar de perto.",
+      "pendencia_verificacao": "14/11/2026 - RESOLVIDA EM F1: abertura da CP 033/2026 (DOU de 10/09/2026, Seção 3, p. 93), prorrogação do prazo para 30/11/2026 (DOU de 05/11/2026, Seção 3, p. 136), número do processo (nos dois Avisos e na NT 107/2026-STD) e prazos de adequação da minuta (art. 8º, § 1º: 120 e 180 dias) conferidos. Os prazos são proposta da minuta, ainda não norma. Acompanhar o fim das contribuições em 30/11/2026 e a análise da ANEEL.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://antigo.aneel.gov.br/web/guest/consultas-publicas?p_p_id=participacaopublica_WAR_participacaopublicaportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2&_participacaopublica_WAR_partic"
     },
     {
       "fato_id": "ANEEL-NT-078-2026-FIM-DESCONTO-TUSD-TUST",
-      "tema": "Regulamentação do fim do desconto na TUSD/TUST (Lei 15.269/2025) — NT 78/2026, CP de 45 dias proposta",
-      "valor": "DETECTADO 18/07 (ponteiro F3 ABSOLAR, GTGC 17/07): processo de 'Regulamentação do fim do desconto na TUSD/TUST aos consumidores' foi SORTEADO em 13/07/2026 ao Dir. Willamy. Conforme a NT nº 78/2026, a ANEEL propõe abertura de Consulta Pública por 45 dias para colher subsídios à minuta de REN que regulamentará os pontos da Lei nº 15.269/2025 — que vedou o desconto na parcela consumo (TUSD/TUST) para consumidores que optarem pela migração ao ACL ou que ampliarem montantes de uso contratados após sua vigência. Borda SOA MÉDIA-ALTA: regulamentação de lei-âncora do arcabouço SOA. F3 NÃO fecha VERDE: CP ainda não aberta; NT 78/2026 e eventual Aviso de CP não lidos em F1 (ANEEL) nem no DOU.",
-      "status": "PONTEIRO F3 — CP NÃO ABERTA",
-      "norma": "ANEEL — NT nº 78/2026 (processo sorteado 13/07/2026, Dir. Willamy) · regulamenta Lei nº 15.269/2025 (vedação de desconto TUSD/TUST na parcela consumo)",
+      "tema": "CP ANEEL 040/2026 — regulamentação do fim do desconto na TUSD/TUST (Lei 15.269/2025) — NT 78/2026-SGM",
+      "valor": "PENDÊNCIA RESOLVIDA EM 14/11/2026 (F1: página oficial da CP na ANEEL, Aviso no DOU, NT nº 78/2026-SGM/ANEEL e atas da Diretoria): o processo de regulamentação do fim do desconto na TUSD/TUST aos consumidores (Processo ANEEL 48500.004840/2026-84) foi sorteado ao Diretor Willamy Frota em 13/07/2026, na 27ª Sessão Pública Ordinária de Distribuição de Processos. A NT nº 78/2026-SGM/ANEEL, de 08/07/2026, propôs Consulta Pública de 45 dias sobre a minuta de REN. No 19º Circuito Deliberativo Público Ordinário, em 27/10/2026, a Diretoria, por unanimidade, com relatoria do Diretor Willamy Frota, instaurou a Consulta Pública nº 040/2026 pelo prazo de 47 dias, com Aviso no DOU de 29/10/2026, Seção 3, p. 98. A CP busca subsídios para regulamentar o § 14 do art. 26 da Lei nº 9.427/1996, inserido pela Lei nº 15.269/2025, que veda o desconto na parcela consumo da TUSD/TUST aos consumidores que, a partir da vigência do dispositivo, migrarem para o ACL ou pedirem ampliação do montante de uso contratado (nesse caso, mantido o desconto sobre o montante já contratado). Contribuições de 29/10/2026 a 14/12/2026, por intercâmbio documental. Documentos da CP: NT nº 78/2026-SGM/ANEEL, NT nº 123/2026-SGM/ANEEL, Nota Técnica nº 20/2026/GRPC/GEREG/AGM, Submódulo 1.2 (Cadastro de agentes), Submódulo 1.8 (Comercialização varejista), Cálculo do Desconto Aplicado à TUSD/TUST e minuta de REN. Origem: ponteiro F3 (ABSOLAR, GTGC 17/07). Borda SOA MÉDIA-ALTA: regulamentação de lei-âncora do arcabouço SOA.",
+      "status": "CP ABERTA — contribuições até 14/12/2026",
+      "norma": "CP ANEEL 040/2026 (Aviso no DOU de 29/10/2026, Seção 3, p. 98) · Processo ANEEL nº 48500.004840/2026-84 · NT nº 78/2026-SGM/ANEEL e NT nº 123/2026-SGM/ANEEL · regulamenta o § 14 do art. 26 da Lei nº 9.427/1996, inserido pela Lei nº 15.269/2025 (fim do desconto na TUSD/TUST)",
       "url": "https://www.aneel.gov.br/consultas-publicas",
-      "verificado_em": "2026-07-18",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -1089,7 +1109,8 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Ponteiro F3 (ABSOLAR). Reabrir a NT nº 78/2026 e o eventual Aviso de CP na página oficial da ANEEL + DOU para ancorar numeração da CP, prazo e minuta de REN. Não citar em material externo antes de F1.",
-      "pendencia_verificacao": "F3 puro em 18/07. CP não aberta; NT 78/2026 não lida em F1. Vigiar abertura da CP (45 dias) e publicação da minuta de REN. | 20/07/2026 - NEGATIVO VERIFICADO NO DOU: busca no in.gov.br (render JS) na janela 15-20/07/2026 nao retornou Aviso de Consulta Publica da ANEEL nem ato relativo a NT 78/26. O DOU de 20/07 (Edicao 134) traz apenas Despachos ANEEL 2.628 a 2.632, de 17/07/2026, da Gerencia de Fiscalizacao da Geracao - rotina, sem relacao com o tema. MANTIDO LARANJA."
+      "pendencia_verificacao": "F3 puro em 18/07. CP não aberta; NT 78/2026 não lida em F1. Vigiar abertura da CP (45 dias) e publicação da minuta de REN. | 20/07/2026 - NEGATIVO VERIFICADO NO DOU: busca no in.gov.br (render JS) na janela 15-20/07/2026 nao retornou Aviso de Consulta Publica da ANEEL nem ato relativo a NT 78/26. O DOU de 20/07 (Edicao 134) traz apenas Despachos ANEEL 2.628 a 2.632, de 17/07/2026, da Gerencia de Fiscalizacao da Geracao - rotina, sem relacao com o tema. MANTIDO LARANJA. | 14/11/2026 - RESOLVIDA EM F1: CP 040/2026 aberta (Aviso no DOU de 29/10/2026, Seção 3, p. 98; contribuições de 29/10 a 14/12/2026); decisão unânime do 19º Circuito Deliberativo Público Ordinário de 27/10/2026 (relator Dir. Willamy Frota, prazo de 47 dias); sorteio de 13/07/2026 confirmado na lista da 27ª Sessão Pública Ordinária de Distribuição de Processos; proposta de CP de 45 dias confirmada no item 49 da NT 78/2026-SGM. Da NT 78/2026 foram lidos o cabeçalho, os fatos e a conclusão; a NT 123/2026 e a minuta de REN não foram lidas na íntegra. Acompanhar o fim das contribuições em 14/12/2026.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/dsp_detalheNoticia.cfm?idNoticia=14827&idAreaNoticia=425"
     },
     {
       "fato_id": "ANEEL-SNAPSHOT-CPS-VIGENTES-28JUL2026",
