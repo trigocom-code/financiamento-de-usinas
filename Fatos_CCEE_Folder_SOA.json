@@ -27,7 +27,15 @@
     "nota_run_2026_07_29": "Varredura consolidadora de 29/07: ccee.org.br devolveu HTTP 403 tambem nesta execucao (2a confirmacao do dia, em horario distinto — bloqueio persistente, NAO ausencia de publicacao). Nenhum fato reverificado; verificado_em NAO avancado. REGISTRO RELEVANTE VINDO DE F1 DA ANEEL (item 5 da 15a RPO de 28/07): as Regras de Comercializacao alteradas para os LRCAP de 2026 passam a ser aplicadas 'em carater provisorio' desde a abertura da CP no 25/2026 (30/07), 'com a possibilidade dos devidos ajustes pela Camara de Comercializacao de Energia Eletrica - CCEE, caso sejam aprovadas alteracoes no fechamento da Consulta Publica'. Os relatorios de recontabilizacao previstos para 29/07 seguem NAO verificaveis (403).",
     "nota_run_2026_09_17_cp17": "Atualizacao CEO 17/09: CP ANEEL 17/2026 (PSM) — prazo contribuicoes 24/08/2026 ja encerrado (DOU Aviso Prorrogacao 17/07/2026, Ed. 133). Sem RN/resultado F1; status ajustado. Portal ccee.org.br 403 nesta sessao; lastro no DOU ja ancorado no fato.",
     "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 1 confirmado, 4 impreciso, 1 mudou, 1 nao_verificado. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente. O fato CCEE-GRUDEM foi reescrito com o que a pagina oficial sustenta sobre o MRE: a sigla GRUDEM nao foi localizada em fonte oficial.",
-    "nota_run_2026_11_14_reconferencia": "Reconferencia item a item em fonte oficial em 14/11/2026 (decisao D38 = a), com segunda leitura independente: ATUALIZAR 1, CONFIRMADO 6. Itens sem F1 acessivel mantem o proprio verificado_em e levam tentado_em e pendencia_verificacao."
+    "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 1. _meta.verificado_em = data do item publicado mais antigo.",
+    "rodizio": [
+      {
+        "data": "2026-11-14",
+        "relidos": [
+          "fatos[6]"
+        ]
+      }
+    ]
   },
   "fatos": [
     {
@@ -320,9 +328,9 @@
         "resultado": "N/A_REGULATORIO",
         "verificado_em": "2026-08-07"
       },
-      "gatilho_revisao": "publicacao pela CCEE das regras e procedimentos de comercializacao adaptados, termo em 19/09/2026",
+      "gatilho_revisao": "divulgacao pela CCEE dos montantes de corte em base horaria e por usina, segregados por classificacao, em ate 30 dias do recebimento da base de dados final do ONS (art. 5o, par. 8o); essa etapa depende do rito do art. 5o, cujo primeiro prazo, do ONS, vence em 18/11/2026 (art. 5o, par. 1o, I); depois, recontabilizacao em ate 180 dias contados do primeiro dia util apos o prazo final de celebracao do Termo, fixado na convocacao do MME (art. 6o, par. 2o)",
       "pendencia_verificacao": "RESOLVIDA em 14/11/2026: portal da CCEE acessivel. Reabertos na fonte oficial os Comunicados CCEE 744/26 (21/09/2026), 778/26 (05/10/2026) e 788/26 (07/10/2026), a noticia da CCEE de 09/10/2026 que anunciou o Momento Capacita #105 para 14/10/2026, as 10h, e o texto integral da Portaria no repositorio oficial do MME. Pendencias anteriores (HTTP 403 e carimbo sem leitura) superadas.",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ccee.org.br/en/web/guest/-/momento-capacita-aborda-procedimento-para-compensacoes-por-cortes-de-geracao-eolica-e-solar"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777"
     }
   ],
   "_pendentes_verificacao": [],

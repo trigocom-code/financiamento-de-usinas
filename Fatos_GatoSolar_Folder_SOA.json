@@ -12,7 +12,16 @@
     "proxima_revisao_sugerida": "2026-11-10",
     "nota_run_2026_09_17_corr": "Correcao pos-relatorio F1: prazo contribuicoes CP 009/2026 = 08/06/2026 (prorrogacao automatica), nao 06/06. Status EM DELIBERACAO mantido. NT 107 numeros preservados fail-closed (SEI nao re-baixada byte-a-byte nesta noite).",
     "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 1 confirmado, 2 impreciso, 1 mudou, 4 nao_verificado. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente. Sobre a REN ANEEL 1.170/2026 ficou so o registro do ato e a ementa: pela regra da casa (vigia da Portaria 140, 13/10/2026), nao ha frase externa sobre a Resolucao antes da leitura do voto, da nota tecnica e do relatorio da CP 45/2019. NAO conferidos nesta revisao (fonte oficial nao reaberta): NT 107/2026-SFT/ANEEL — a fotografia oficial do combate ao 'gato solar'; A detecção hoje é por ESTIMATIVA (observado × esperado) — a cunha da prova física SOA; Zona cinzenta técnica — overpaneling / overdelivery / ILR; Posição setorial (ABSOLAR/ABGD).",
-    "nota_run_2026_11_14_reconferencia": "Reconferencia item a item em fonte oficial em 14/11/2026 (decisao D38 = a), com segunda leitura independente: ATUALIZAR 1, CONFIRMADO 2, SEM_FONTE_ACESSIVEL 5. Itens sem F1 acessivel mantem o proprio verificado_em e levam tentado_em e pendencia_verificacao."
+    "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: CONFIRMADO 2. _meta.verificado_em = data do item publicado mais antigo.",
+    "rodizio": [
+      {
+        "data": "2026-11-14",
+        "relidos": [
+          "fatos[5]",
+          "fatos[3]"
+        ]
+      }
+    ]
   },
   "fatos": [
     {

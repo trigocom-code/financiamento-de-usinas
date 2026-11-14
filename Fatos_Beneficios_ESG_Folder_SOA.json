@@ -7,11 +7,21 @@
     "fonte_canonica": "dossie_beneficios_v1 + verificacao_fontes_primarias",
     "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. CVM noticias -> 200 197378",
     "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 26 confirmado, 11 impreciso, 2 mudou, 6 nao_verificado. Neste arquivo nao ha data por item: o selo de 13/10/2026 cobre os beneficios com status 'verificado' e as frases do cruzamento regulatorio, conferidos em fonte oficial. Pacotes e entregaveis sao texto comercial da casa: nao foram revistos um a um e so foram tocados onde contradiziam item corrigido (CBAM, PNAST e compensacao dos cortes de geracao). As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente. NAO conferidos nesta revisao (fonte oficial nao reaberta): ind_fundos_constitucionais; iptu_municipais_a_confirmar; bitcoin_verde; seguros_prova_risco; mercado_psm_origem; ANEEL-CCEE-LRCAP-TERMICA-REF.",
-    "nota_run_2026_11_14_reconferencia": "Reconferencia item a item em fonte oficial em 14/11/2026 (decisao D38 = a), com segunda leitura independente: ATUALIZAR 11, CONFIRMADO 31, SEM_FONTE_ACESSIVEL 3. Itens sem F1 acessivel mantem o proprio verificado_em e levam tentado_em e pendencia_verificacao."
+    "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 3. _meta.verificado_em = data do item publicado mais antigo.",
+    "rodizio": [
+      {
+        "data": "2026-11-14",
+        "relidos": [
+          "beneficios[30]",
+          "cruzamento_regulatorio[8]",
+          "beneficios[27]"
+        ]
+      }
+    ]
   },
   "_carimbo": {
     "atualizado_em": "2026-10-13T00:00:00-03:00",
-    "hash": "sha256:24f82c3653bc85dc04283009b7ce2bc39157b7aff1e61e01126b9e4335e87819",
+    "hash": "sha256:dcb0d74188617a3ddde22d497a2d52774a4c6baa788b1a18ffe77961ca4436e0",
     "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias",
     "selado_em": "2026-11-14"
   },
@@ -593,14 +603,15 @@
         "Data centers 24/7 CFE"
       ],
       "canal": "imposto",
-      "titulo": "REDATA — data centers com energia limpa",
+      "titulo": "REDATA — data centers com energia renovável ou de baixa emissão",
       "base_legal": "Lei 15.504/2026 e LC 237/2026, de 15/09/2026 (Redata incluído na Lei 11.196/2005)",
       "mecanismo": "Regime especial com suspensão de PIS/Cofins, IPI e Imposto de Importação para datacenters. Exige atender toda a demanda de energia elétrica com contratos de suprimento ou autoprodução de fontes renováveis ou de baixa emissão, na forma de regulamento, e publicar relatório de sustentabilidade.",
       "vigencia": "Lei de 15/09/2026 · PIS/Cofins e IPI com efeitos até 31/12/2026",
       "sem_soa": "matching 24/7 comprovável",
       "status": "pendente",
       "fonte": "planalto L15504/2026 · LC 237/2026",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-14",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/lei-n-15.504-de-15-de-setembro-de-2026-731892072"
     },
     {
       "id": "iptu_municipais_a_confirmar",
@@ -654,13 +665,13 @@
       "canal": "mercado",
       "titulo": "Receita de capacidade no LRCAP de Armazenamento",
       "base_legal": "Portaria MME 136/2026 · REN ANEEL 1.161/2026 e 1.162/2026",
-      "mecanismo": "Leilão de Reserva de Capacidade na forma de POTÊNCIA para baterias (02 e 04/12/2026; contratos CRCAP de 15 anos, suprimento desde 01/08/2028, Receita Fixa ao IPCA). O compromisso é disponibilidade de potência em MW, não energia. RECEITA FIXA REDUZÍVEL: apuração de desempenho em base MENSAL, com abatimento/ressarcimento da Receita Fixa por indisponibilidade e penalidades por não entrega (Portaria 136, art. 5º §1º + art. 9º §4º-IV e §10). Habilitação exige ≥30 MW, ≥4 h, ≥85% de RTE e Grid Forming (art. 7º). Bônus locacional para os 129 barramentos elegíveis do ANEXO II (86% no Nordeste; inclui Pecém II 230 kV) — a LISTA é da portaria; o coeficiente numérico (β=0,9 ≈ +11,1%) está no ANEXO I da própria portaria (Sistemática), com base em estudos da EPE. Preço-teto e regra de TUST nos Editais ANEEL nº 05/2026 e 06/2026, aprovados pela diretoria em 27/10/2026 após as CP ANEEL 022 e 023/2026 (contribuições encerradas em 14/09/2026); texto final dos editais a conferir no ato.",
-      "vigencia": "leilões 12/2026 · CP ANEEL 022/023 encerradas em 14/09/2026 · Editais ANEEL 05 e 06/2026 aprovados em 27/10/2026 · suprimento desde 08/2028",
+      "mecanismo": "Leilão de Reserva de Capacidade na forma de POTÊNCIA para baterias (02 e 04/12/2026; contratos CRCAP de 15 anos, suprimento desde 01/08/2028, Receita Fixa ao IPCA). O compromisso é disponibilidade de potência em MW, não energia. RECEITA FIXA REDUZÍVEL: apuração de desempenho em base MENSAL, com abatimento/ressarcimento da Receita Fixa por indisponibilidade e penalidades por não entrega (Portaria 136, art. 5º §1º + art. 9º §4º-IV e §10). Habilitação exige ≥30 MW, ≥4 h, ≥85% de RTE e Grid Forming (art. 7º). Bônus locacional para os 129 barramentos elegíveis do ANEXO II (86% no Nordeste; inclui Pecém II 230 kV) — a LISTA é da portaria; o coeficiente numérico (β=0,9 ≈ +11,1%) está no ANEXO I da própria portaria (Sistemática), com base em estudos da EPE. Preço inicial e regra de tarifa de uso nos Editais ANEEL nº 05/2026 e 06/2026, aprovados pela Diretoria em 27/10/2026 após as CP ANEEL 022 e 023/2026 (contribuições encerradas em 14/09/2026) e em vigor desde 29/10/2026 pelas Resoluções Homologatórias ANEEL nº 3.616 e 3.617/2026 (DOU de 29/10/2026, Seção 1, p. 54, art. 5º): preço inicial do lance no item 10.5.1 de cada edital e TUSDg de referência no art. 2º das REH. Inscrição de 18 a 20/11/2026 (seção 19 dos editais).",
+      "vigencia": "leilões em 02/12 e 04/12/2026 · CP ANEEL 022/023 encerradas em 14/09/2026 · Editais ANEEL 05 e 06/2026 aprovados pelas REH ANEEL 3.616 e 3.617/2026 (DOU de 29/10/2026), em vigor desde 29/10/2026 · inscrição de 18 a 20/11/2026 · suprimento desde 08/2028",
       "sem_soa": "sem prova horária de disponibilidade ancorada no PMI, a Receita Fixa é cortada por indisponibilidade e o contrato de 15 anos / o DSCR não se sustentam",
       "status": "verificado",
       "fonte": "Portaria MME 136/2026 (art. 5º/7º/9º + Anexo II) · β=0,9 → Anexo I da portaria · REN ANEEL 1.161/1.162/2026 · CP ANEEL 022/023/2026 · ANEEL Editais 05 e 06/2026 (aprovados em 27/10/2026)",
       "verificado_em": "2026-11-14",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/editais-no-05-2026-e-no-06-2026-dos-leiloes-de-armazenamento-de-energia-sao-aprovados-pela-aneel"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/resolucao-homologatoria-n-3.616-de-27-de-outubro-de-2026-741103804"
     },
     {
       "id": "pnast_acesso_transmissao",
@@ -1002,7 +1013,9 @@
       ],
       "porque_certificar": "Critérios para redução ou limitação de geração estabelecidos pela REN ANEEL 1.170/2026 (DOU de 09/10/2026); a evidência horária do corte permite conferir a apuração.",
       "tentado_em": "2026-11-14",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: A notícia oficial da ANEEL, publicada em 06/10/2026 às 14h42, confirma a aprovação na Reunião Pública Ordinária de 6/10, no âmbito da CP 45/2019, mas não dá o número da REN nem a data do DOU. O número '1.170' e o DOU de 09/10 constam só no lex.com.br, no Atlas Público"
+      "pendencia_verificacao": "F1 relida em 14/11/2026: Resolução Normativa ANEEL nº 1.170, de 06/10/2026, no DOU de 09/10/2026, Edição 192, Seção 1, p. 122 (https://www.in.gov.br/web/dou/-/resolucao-normativa-n-1.170-de-6-de-outubro-de-2026-737462879), em vigor desde a publicação (art. 15).",
+      "verificado_em": "2026-11-14",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/resolucao-normativa-n-1.170-de-6-de-outubro-de-2026-737462879"
     },
     {
       "fato_id": "ANEEL-CP-001-2026",
