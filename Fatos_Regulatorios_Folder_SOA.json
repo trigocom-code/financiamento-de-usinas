@@ -2,7 +2,7 @@
   "_meta": {
     "schema_version": "1.3",
     "descricao": "Fonte ÚNICA de fatos regulatórios do Folder 'Onde Entramos'. Schema 1.3 (alinhado aos monitores per-órgão e à Tabela de Precedência QSV v1.2). O folder Folder_Vivo_Regulatorio_GitHub.html consome DESTE arquivo (data.fatos[]). O monitor regulatório SOA mantém este arquivo. Schema legado aposentado em Fatos_Regulatorios_Folder_SOA.legacy.deprecated.json.",
-    "verificado_em": "2026-11-04",
+    "verificado_em": "2026-10-29",
     "schema_migrado_em": "2026-06-29",
     "proxima_revisao_sugerida": "2026-11-03",
     "responsavel_atualizacao": "Monitor Regulatório SOA (digest diário) — escreve schema 1.3, aplica Tabela_Precedencia_QSV_v1_2",
@@ -12,7 +12,27 @@
     "regra_staleness": "Fato com verificado_em > 90 dias deve ser exibido com alerta e reconferido.",
     "nota_render": "O folder lê f.tema/f.valor/f.status/f.norma. Campos QSV (fato_id/orgao/qsv_cor/numero_status) são metadados de governança, não renderizados. _pendentes_verificacao NÃO é renderizado (fica fora de fatos[]).",
     "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1.",
-    "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. ANEEL noticias -> 200 267515; MME -> 200 195417"
+    "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. ANEEL noticias -> 200 267515; MME -> 200 195417",
+    "rodizio": [
+      {
+        "data": "2026-11-14",
+        "relidos": [
+          "fatos[0]",
+          "fatos[1]",
+          "fatos[3]",
+          "fatos[4]",
+          "fatos[5]",
+          "fatos[7]",
+          "fatos[60]",
+          "_pendentes_verificacao[0]",
+          "_pendentes_verificacao[1]",
+          "_pendentes_verificacao[6]",
+          "_pendentes_verificacao[7]",
+          "_pendentes_verificacao[9]"
+        ]
+      }
+    ],
+    "nota_run_2026_11_14_reconferencia": "Rodizio diario de reconferencia F1 (1a run, 14/11/2026, decisao D38 = a), itens mais antigos primeiro, com segunda leitura independente: ATUALIZAR 6, CONFIRMADO 5, SEM_FONTE_ACESSIVEL 1. _meta.verificado_em = data do item publicado mais antigo."
   },
   "fatos": [
     {
@@ -26,7 +46,7 @@
       "qsv_cor": "AZUL",
       "norma": "REN ANEEL 1.059/2023 (regulamenta a Lei 14.300/2022)",
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-10-29",
+      "verificado_em": "2026-11-14",
       "gatilho_revisao": "alteração da REN 1.059 ou novo marco legal da GD"
     },
     {
@@ -35,14 +55,15 @@
       "orgao": "MME",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "LRCAP de Armazenamento (baterias) — calendário",
-      "valor": "Leiloes 02/12/2026 (Nacional, c/ requisito de nacionalizacao) e 04/12/2026 (Aberto). Cadastro EPE 15/06-31/07/2026. Suprimento 15 anos, inicio 01/08/2028. TEXTO DO ATO LIDO NA INTEGRA EM 01/09/2026 (DOU de 03/06/2026, Secao 1, 79.258 caracteres, ANEXO I e ANEXO II): art. 11 par. 4o -- a Nota Tecnica de Quantitativos da Capacidade Remanescente do SIN PARA ESCOAMENTO, prevista no art. 2o inciso XVI da Portaria GM/MME 444/2016, devera ser publicada ate 30 de setembro de 2026, afastado o prazo do art. 3o par. 5o da 444/2016. art. 12 -- dos quantitativos de Capacidade Remanescente para Escoamento serao DESCONTADOS os montantes dos empreendimentos vencedores de Temporadas de Acesso (Decreto 12.772/2025 e Portaria Normativa MME 129/2026) realizadas anteriormente aos certames. art. 14 -- para o LRCAP de 2026 Armazenamento serao subtraidos os montantes dos vencedores do LRCAP de 2026 Armazenamento Nacional. art. 11 par. 13 -- a capacidade calculada para o descarregamento pode ser REDUZIDA OU ANULADA se houver restricoes que inviabilizem ou limitem o CARREGAMENTO do SAE. art. 11 par. 14 e 15 -- violacao de capacidade de interrupcao de disjuntores atribuivel aos produtos do leilao e fator impeditivo da Capacidade Remanescente, e nao se aceitam alternativas tecnicas distintas da substituicao do equipamento. art. 4o inciso V -- nao participam empreendimentos cujo Barramento Candidato tenha capacidade remanescente para escoamento inferior a potencia injetada e a necessaria para a recarga. art. 17 par. 3o -- os SAEs conectados aos pontos do ANEXO II fazem jus, exclusivamente para fins de competitividade nos Leiloes, a reducao do preco de disponibilidade de potencia por constante de bonificacao de localizacao (beta) definida no par. 12 do art. 2o do ANEXO I, com base em estudos da EPE. art. 16 inciso II -- modificacao do ponto de conexao que altere a elegibilidade descaracteriza o projeto.",
+      "valor": "Leiloes 02/12/2026 (Nacional, c/ requisito de nacionalizacao) e 04/12/2026 (Aberto). Cadastro EPE 15/06-31/07/2026. Suprimento 15 anos, inicio 01/08/2028. TEXTO DO ATO LIDO NA INTEGRA EM 01/09/2026 (DOU de 03/06/2026, Secao 1, 79.258 caracteres, ANEXO I e ANEXO II): art. 11 par. 4o -- a Nota Tecnica de Quantitativos da Capacidade Remanescente do SIN PARA ESCOAMENTO, prevista no art. 2o inciso XVI da Portaria GM/MME 444/2016, devera ser publicada ate 30 de setembro de 2026, afastado o prazo do art. 3o par. 5o da 444/2016. art. 12 -- dos quantitativos de Capacidade Remanescente para Escoamento serao DESCONTADOS os montantes dos empreendimentos vencedores de Temporadas de Acesso (Decreto 12.772/2025 e Portaria Normativa MME 129/2026) realizadas anteriormente aos certames. art. 14 -- para o LRCAP de 2026 Armazenamento serao subtraidos os montantes dos vencedores do LRCAP de 2026 Armazenamento Nacional. art. 11 par. 13 -- a capacidade calculada para o descarregamento pode ser REDUZIDA OU ANULADA se houver restricoes que inviabilizem ou limitem o CARREGAMENTO do SAE. art. 11 par. 14 e 15 -- violacao de capacidade de interrupcao de disjuntores atribuivel exclusivamente aos produtos do leilao e fator impeditivo da Capacidade Remanescente quando nao houver recomendacao de substituicao com conclusao prevista ate o ano do produto ou quando nao houver viabilidade tecnica para a substituicao, e nao se aceitam alternativas tecnicas distintas da substituicao do equipamento. art. 7o inciso V -- nao serao habilitados tecnicamente pela EPE empreendimentos cujo Barramento Candidato tenha capacidade remanescente para escoamento inferior a potencia injetada e a necessaria para a recarga. art. 17 par. 3o -- os SAEs conectados aos pontos do ANEXO II fazem jus, exclusivamente para fins de competitividade nos Leiloes, a reducao do preco de disponibilidade de potencia por constante de bonificacao de localizacao (beta) definida no par. 12 do art. 2o do ANEXO I, com base em estudos da EPE. art. 16 par. unico inciso II -- e vedada a alteracao de caracteristicas tecnicas que resulte em modificacao do ponto de conexao que altere a elegibilidade do projeto a bonificacao de localizacao. PRAZO DO ART. 11 PAR. 4o CUMPRIDO: a NT-ONS DPL 0095/2026 (Nota Tecnica 02, quantitativos da Capacidade Remanescente do SIN para conexao de novos SAEs, em atendimento ao art. 11) saiu em versao final datada de 30/09/2026; a Revisao 1, datada de 23/10/2026 (retificacao da disponibilidade fisica do barramento de 69 kV da SE Milagres), foi divulgada pela EPE em 26/10/2026. Editais ANEEL 05/2026 e 06/2026 aprovados em 27/10/2026, certames em 2 e 4/12/2026 exclusivamente via internet.",
       "status": "AGENDADO",
       "qsv_cor": "VERDE",
       "norma": "Portaria Normativa MME 136/2026, de 1o/06/2026 (DOU 03/06/2026, Secao 1) -- texto integral, ANEXO I e ANEXO II",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-10-29",
-      "gatilho_revisao": "publicacao/alteracao do edital ANEEL; mudanca de datas; publicacao da NT de Quantitativos da Capacidade Remanescente do SIN PARA ESCOAMENTO ate 30/09/2026 (art. 11 par. 4o)",
-      "pendencia_verificacao": "29/10/2026 (consolidadora, 08h43): datas reconferidas em F1 no DOU de 29/10/2026, Secao 3: Aviso de Licitacao do Leilao 5/2026-ANEEL (Armazenamento Nacional, baterias com conteudo nacional, sessao em 02/12/2026) e do Leilao 6/2026-ANEEL (Armazenamento, sessao em 04/12/2026), ambos de 27/10/2026, assinados pelo diretor-geral; edital e anexos 'a partir de 29 de outubro de 2026'. Lidos na integra por curl. Valor do fato inalterado. Portal leilao.aneel.gov.br/editalGeracao conferido pelo Chrome por volta das 08h42: Leiloes 5 e 6 ainda sem o PDF do edital. ATENCAO: o carimbo 2026-10-29 deste e de outros 58 fatos foi gravado as 08h20 pelo PASSO 2 do motor (_rotina_fatos_engine.log), sem reconferencia; este fato foi reconferido de fato por esta run. | 28/10/2026 (consolidadora): datas reconferidas em F1 no release da ANEEL de 27/10/2026, 19h00 ('Editais No 05/2026 e No 06/2026 dos leiloes de Armazenamento de Energia sao aprovados pela ANEEL'), aberto e lido nesta run: certames em 2 e 4 de dezembro de 2026, exclusivamente via internet; produto por disponibilidade de potencia (MW); inicio em 1o/08/2028; suprimento de 15 anos; edital 05 com criterio de nacionalizacao, edital 06 sem. Valor do fato inalterado. O aviso de licitacao e o texto do edital ainda nao estavam no DOU as 08h30 de 28/10. | CORRECAO DE DISPOSITIVO ancorada no ato e lida em 01/09/2026: o prazo de 30/09/2026 para a NT de Quantitativos esta no ART. 11 PARAGRAFO 4o, NAO no art. 15 par. 4o. O art. 15 trata de outra coisa (afasta o art. 9o da Portaria GM/MME 514/2011, mantido o art. 7o). Corrigir em todo material interno, inclusive no prompt do monitor-regulatorio-soa. ARMADILHA DE NOME: a NT publicada pelo ONS em 31/08/2026 (NT-ONS DPL 0083/2026) e a Nota Tecnica 02 do art. 11 da Portaria 129/2026, ambito PNAST/Temporada de Acesso -- NAO e a NT do art. 11 par. 4o da 136/2026, que trata da capacidade PARA ESCOAMENTO e vence em 30/09. As duas se distinguem pela expressao 'para Escoamento'. | 07/10/2026: Despacho Decisorio SNTEP/MME 31/2026 (DOU 06/10) nega inclusao de Janauba 3 500 kV no Anexo II; lista de bonificados mantida. Fato canonico Fatos_Canonicos_LRCAP_Portaria136_v1.md precisa registrar o despacho."
+      "verificado_em": "2026-11-14",
+      "gatilho_revisao": "publicacao/alteracao do edital ANEEL; mudanca de datas; resultado dos certames de 02 e 04/12/2026; nova revisao da NT-ONS DPL 0095/2026 (quantitativos da Capacidade Remanescente, art. 11 par. 4o)",
+      "pendencia_verificacao": "29/10/2026 (consolidadora, 08h43): datas reconferidas em F1 no DOU de 29/10/2026, Secao 3: Aviso de Licitacao do Leilao 5/2026-ANEEL (Armazenamento Nacional, baterias com conteudo nacional, sessao em 02/12/2026) e do Leilao 6/2026-ANEEL (Armazenamento, sessao em 04/12/2026), ambos de 27/10/2026, assinados pelo diretor-geral; edital e anexos 'a partir de 29 de outubro de 2026'. Lidos na integra por curl. Valor do fato inalterado. Portal leilao.aneel.gov.br/editalGeracao conferido pelo Chrome por volta das 08h42: Leiloes 5 e 6 ainda sem o PDF do edital. ATENCAO: o carimbo 2026-10-29 deste e de outros 58 fatos foi gravado as 08h20 pelo PASSO 2 do motor (_rotina_fatos_engine.log), sem reconferencia; este fato foi reconferido de fato por esta run. | 28/10/2026 (consolidadora): datas reconferidas em F1 no release da ANEEL de 27/10/2026, 19h00 ('Editais No 05/2026 e No 06/2026 dos leiloes de Armazenamento de Energia sao aprovados pela ANEEL'), aberto e lido nesta run: certames em 2 e 4 de dezembro de 2026, exclusivamente via internet; produto por disponibilidade de potencia (MW); inicio em 1o/08/2028; suprimento de 15 anos; edital 05 com criterio de nacionalizacao, edital 06 sem. Valor do fato inalterado. O aviso de licitacao e o texto do edital ainda nao estavam no DOU as 08h30 de 28/10. | CORRECAO DE DISPOSITIVO ancorada no ato e lida em 01/09/2026: o prazo de 30/09/2026 para a NT de Quantitativos esta no ART. 11 PARAGRAFO 4o, NAO no art. 15 par. 4o. O art. 15 trata de outra coisa (afasta o art. 9o da Portaria GM/MME 514/2011, mantido o art. 7o). Corrigir em todo material interno, inclusive no prompt do monitor-regulatorio-soa. ARMADILHA DE NOME: a NT publicada pelo ONS em 31/08/2026 (NT-ONS DPL 0083/2026) e a Nota Tecnica 02 do art. 11 da Portaria 129/2026, ambito PNAST/Temporada de Acesso -- NAO e a NT do art. 11 par. 4o da 136/2026, que trata da capacidade PARA ESCOAMENTO e vence em 30/09. As duas se distinguem pela expressao 'para Escoamento'. | 07/10/2026: Despacho Decisorio SNTEP/MME 31/2026 (DOU 06/10) nega inclusao de Janauba 3 500 kV no Anexo II; lista de bonificados mantida. Fato canonico Fatos_Canonicos_LRCAP_Portaria136_v1.md precisa registrar o despacho.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-136-2026.pdf"
     },
     {
       "id": "lrcap_edital",
@@ -68,13 +89,14 @@
       "orgao": "ANEEL/CCEE",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "tema": "Referência de valor de capacidade (LRCAP térmica)",
-      "valor": "Preço-teto térmica a gás R$ 1,12–2,25 mi/MW-ano (2º LRCAP, 18/03/2026; ~R$ 39 bi de receita fixa contratada)",
+      "valor": "Preço inicial (teto) do 2º LRCAP de 2026 (Leilão 2/2026, 18/03/2026; 4º LRCAP na numeração da CCEE): R$ 2,25 mi/MW-ano para térmica existente e R$ 2,90 mi/MW-ano para térmica nova (produtos POTT; gás natural e carvão) e R$ 1,40 mi/MW-ano para ampliação de hidrelétrica (POTH). Resultado (CCEE): preço médio R$ 2,33 mi/MW-ano, preço marginal R$ 2,89 mi/MW-ano, deságio de 5,52%, receita fixa de ~R$ 38,96 bi por ano (soma simples das ofertas atendidas) e ~R$ 515,7 bi de receita total no período de suprimento.",
       "status": "VIGENTE (referência)",
       "qsv_cor": "AZUL",
-      "norma": "ANEEL/CCEE — homologação LRCAP 2026",
+      "norma": "Leilão de Reserva de Capacidade 2/2026 (2º LRCAP de 2026; Portaria MME 118/2025); resultado em CCEE InfoLeilão nº 041, de 09/04/2026; homologação parcial pela ANEEL (release de 28/07/2026)",
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "verificado_em": "2026-10-29",
-      "gatilho_revisao": "novo LRCAP ou divulgação do preço-teto de armazenamento"
+      "verificado_em": "2026-11-14",
+      "gatilho_revisao": "novo LRCAP ou divulgação do preço-teto de armazenamento",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ccee.org.br/documents/80415/31119355/InfoLeil%C3%A3o_04-05_LRC.pdf/36409d58-087d-706d-222e-76460e883baa"
     },
     {
       "id": "bess_nt",
@@ -87,7 +109,7 @@
       "qsv_cor": "VERDE",
       "norma": "Portaria MME 136/2026 Art. 7º (III/IV/VI) + Art. 4º §13 (grid-forming) · NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-10-29",
+      "verificado_em": "2026-11-14",
       "gatilho_revisao": "revisão da NT de requisitos; NT-ONS 0111 = EPE-095 (mesmo doc conjunto)"
     },
     {
@@ -101,7 +123,7 @@
       "qsv_cor": "VERDE",
       "norma": "REN ANEEL 1.161/2026 (assinada 02/06; publicada no DOU 24/06/2026)",
       "numero_status": "ANCORADO",
-      "verificado_em": "2026-10-29",
+      "verificado_em": "2026-11-14",
       "gatilho_revisao": "revisão da REN 1.161 ou regra de TUST do edital LRCAP"
     },
     {
@@ -131,7 +153,7 @@
       "qsv_cor": "AZUL",
       "norma": "bases públicas oficiais",
       "numero_status": "SEM_NUMEROS",
-      "verificado_em": "2026-10-29",
+      "verificado_em": "2026-11-14",
       "gatilho_revisao": "n/a (estrutural)",
       "pendencia_verificacao": "ACHADO DE ROTA DA CAMADA CONSOLIDADORA EM 27/08/2026, e ele reclassifica bloqueios que os monitores vinham tratando como falhas separadas. (1) ANEEL: www2.aneel.gov.br/cedoc, biblioteca.aneel.gov.br, legislacao.aneel.gov.br, antigo.aneel.gov.br e www.aneel.gov.br devolvem HTTP 403 com o cabecalho Cf-Mitigated: challenge e Server: cloudflare, e o corpo e a pagina Just a moment. Isto e desafio de JavaScript do Cloudflare, nao negacao de acesso e nao endereco quebrado. Consequencia dura: nenhuma troca de User-Agent, nenhum conjunto de cabecalhos e nenhuma repeticao de curl passa por ele, por construcao. A unica rota e um navegador que execute JavaScript. (2) A rota gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas responde HTTP 200 com 217 KB, e nao 404 como registrado em 26/08; porem e apenas pagina de apresentacao, e todo o acervo de consultas fica atras do link para antigo.aneel.gov.br, que esta sob o mesmo desafio do Cloudflare. Registrar a rota como viva e o acervo como bloqueado. (3) CCEE: o 403 NAO e Cloudflare e NAO e generico. O corpo e uma pagina propria da CCEE, Bloqueio Manutencao, que diz que o acesso foi bloqueado por nao atender as politicas de seguranca da CCEE, exibe o IP de origem 201.95.196.99, exibe um codigo de erro e instrui a abrir chamado na CCEE informando esse codigo e esse IP. Ou seja, o bloqueio e por IP e tem rota administrativa de solucao, o que nenhuma execucao anterior havia apurado. (4) DOU: a rota estavel e in.gov.br/leiturajornal com os parametros data e secao, que devolve o indice do dia dentro de um bloco JSON no proprio HTML e funciona por curl com User-Agent de navegador; em 27/08 devolveu 3.248 itens, o mesmo total que o monitor das 07h48 apurou, e confirmou que nao houve edicao extra. (5) EPE: confirmada a regra de 26 e 27/08, falha por curl nas listagens e funciona por WebFetch, e adicionalmente responde a HEAD com Last-Modified nos arquivos. (6) ONS: a rota _api do SharePoint responde anonimamente e foi reconferida as 08h50; o acervo de documentos e publicacoes tem item mais recente em 26/08/2026 12h58, o IPDO de 25/08, e nada do rito da Portaria 140. || REGISTRO ANTERIOR: | 27/08/2026 ROTA: a EPE falha por curl, as listagens devolvem apenas o menu, mas FUNCIONA por WebFetch nas tres rotas testadas, pagina do LRCAP, indice de noticias e calendario de publicacoes. Paginas de ARTIGO da EPE sao renderizadas no servidor e abrem ate por curl, mas exigem conhecer o slug. ONS e CCEE permanecem inacessiveis sem navegador: ONS devolve 502 por WebFetch e template com placeholders por curl; CCEE devolve 403 pelas duas vias. REGRA: testar curl, WebFetch e navegador antes de declarar gap de fonte."
     },
@@ -1049,18 +1071,19 @@
       "tema": "Consulta Publica ANEEL no 040/2026 — regulamentacao do fim do desconto na TUSD e na TUST para quem migrar ao mercado livre",
       "valor": "F1 — release oficial da ANEEL de 27/10/2026, 19h09, aberto e lido em 28/10/2026. A Diretoria aprovou em Circuito Deliberativo de 27/10 a abertura da CP no 040/2026. Alcance: consumidores que, apos a vigencia da Lei 15.269/2025, migrarem para o mercado livre ou pedirem aumento da capacidade contratada de uso dos sistemas. Propostas: alterar as RENs 1.000/2021 e 1.009/2022; autoprodutor mantem o beneficio so na parcela atendida por geracao propria; ampliacao posterior de carga pode perder o desconto proporcionalmente; distribuidoras e ONS atualizam os montantes de uso na CCEE. Contribuicoes de 29/10 a 14/12/2026, por intercambio documental, no e-mail cp040_2026@aneel.gov.br. E consulta, nao regra.",
       "status": "EM DELIBERAÇÃO",
-      "norma": "Consulta Publica ANEEL no 040/2026 (Circuito Deliberativo de 27/10/2026); Lei 15.269/2025; RENs ANEEL 1.000/2021 e 1.009/2022",
+      "norma": "Consulta Publica ANEEL no 040/2026 (Circuito Deliberativo de 27/10/2026; Aviso no DOU de 29/10/2026, Secao 3, p. 98; Processo 48500.004840/2026-84); § 14 do art. 26 da Lei 9.427/1996, inserido pela Lei 15.269/2025; RENs ANEEL 1.000/2021 e 1.009/2022",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/mercado-livre-de-energia-consulta-publica-propoe-regulamentacao-do-fim-do-desconto-nas-tarifas-de-uso-dos-sistemas",
-      "verificado_em": "2026-10-28",
+      "verificado_em": "2026-11-14",
       "qsv_cor": "AZUL",
       "numero_status": "ANCORADO_PARCIAL",
       "vetores_afetados": [
         "V5",
         "V2"
       ],
-      "gatilho_revisao": "Publicacao do aviso no DOU com numero de processo; leitura da nota tecnica e das minutas; fim das contribuicoes em 14/12/2026.",
-      "pendencia_verificacao": "Nota tecnica e minutas nao lidas; aviso no DOU nao localizado ate 28/10, 08h30; numero do processo nao ancorado neste fato (a pauta citava 48500.004840/2026-84, conferir no aviso). Decidir se a casa contribui via ABSOLAR, so ao TR.",
-      "fonte": "F1 ANEEL (release oficial de 27/10/2026)."
+      "gatilho_revisao": "Leitura da nota tecnica e das minutas; fim das contribuicoes em 14/12/2026; deliberacao da Diretoria sobre o resultado da CP.",
+      "pendencia_verificacao": "14/11/2026: aviso localizado e lido em F1 -- Aviso de Consulta Publica no 40/2026, DOU de 29/10/2026, Secao 3, p. 98, Processo 48500.004840/2026-84 (confere com a pauta), intercambio de documentos de 29/10/2026 a 14/12/2026. Continuam nao lidas nesta reconferencia a nota tecnica e as minutas (acervo de consultas da ANEEL atras de desafio do Cloudflare). Decidir se a casa contribui via ABSOLAR, so ao TR.",
+      "fonte": "F1 ANEEL (release oficial de 27/10/2026) + F1 DOU (Aviso de Consulta Publica no 40/2026, 29/10/2026, Secao 3, p. 98).",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-40/2026-741096371"
     },
     {
       "id": "mme_potee_diretrizes_cp_portaria_3256",
@@ -1123,13 +1146,14 @@
       "fato_id": "ONS-GIZ-MMGD-PR-2026",
       "orgao": "ONS",
       "tema": "Estimação e previsão da MMGD — 2ª fase do estudo ONS/GIZ/UFSC (Performance Ratio e base cadastral)",
-      "valor": "F3 ABSOLAR (voz oficial tecnicoregulatorio@absolar.org.br, resumo do Workshop ONS+GIZ de 14/07/2026, enviado 15/07; reforçado no resumo do GTGD de 15/07): a metodologia ATUAL do ONS estima a MMGD com 3 variáveis — potência instalada da base pública da ANEEL, irradiação do modelo europeu ECMWF e Performance Ratio (PR) FIXO de 80%. 1ª fase: os dados de irradiação do ONS têm qualidade equivalente aos melhores provedores de mercado e NÃO são a fonte principal da divergência entre curva prevista e verificada. 2ª fase (base de ~9,2 mil sistemas FV monitorados pela SolarZ): PR médio nacional real de aproximadamente 72% (vs. 80% adotado), com variação relevante por hora, mês e região — não representável por valor fixo; o ~72% é consistente com usinas FV de grande porte. Modelagem dinâmica por Machine Learning (Random Forest, XGBoost, LightGBM, CatBoost) reduziu em até 40% o erro de previsão em alguns agrupamentos regionais. ACHADO CENTRAL: mesmo após corrigir irradiação e PR, permanece divergência relevante entre carga prevista e observada — a hipótese principal do ONS é a própria BASE PÚBLICA DE POTÊNCIA INSTALADA DA ANEEL, com atraso de atualização pelas distribuidoras ou ausência de parte dos sistemas efetivamente instalados. Encaminhamento: resultados AINDA NÃO incorporados à metodologia do ONS; serão implementados no futuro, com fator de overload de inversor e evolução para outros REDs (baterias, VE); a Nota Técnica e os materiais completos serão publicados pelo ONS após consolidação. Relevância SOA: é o Operador declarando em fórum técnico que a base cadastral pública de MMGD é a principal fonte de erro residual na previsão de carga do SIN — convergente com a tese de MMGD não observável e com a CP 009/2026 ('Gato Solar', 11,8-14,6 GW não registrados). NÃO CITAR os números externamente (72%, 9,2 mil sistemas, -40%) até a publicação da NT do ONS em F1.",
+      "valor": "F3 ABSOLAR (voz oficial tecnicoregulatorio@absolar.org.br, resumo do Workshop ONS+GIZ de 14/07/2026, enviado 15/07; reforçado no resumo do GTGD de 15/07): a metodologia ATUAL do ONS estima a MMGD com 3 variáveis — potência instalada da base pública da ANEEL, irradiação do modelo europeu ECMWF e Performance Ratio (PR) FIXO de 80%. 1ª fase: os dados de irradiação do ONS têm qualidade equivalente aos melhores provedores de mercado e NÃO são a fonte principal da divergência entre curva prevista e verificada. 2ª fase (base de ~9,2 mil sistemas FV monitorados pela SolarZ): PR médio nacional real de aproximadamente 72% (vs. 80% adotado), com variação relevante por hora, mês e região — não representável por valor fixo; o ~72% é consistente com usinas FV de grande porte. Modelagem dinâmica por Machine Learning (Random Forest, XGBoost, LightGBM, CatBoost) reduziu em até 40% o erro de previsão em alguns agrupamentos regionais. ACHADO CENTRAL: mesmo após corrigir irradiação e PR, permanece divergência relevante entre carga prevista e observada — a hipótese principal do ONS é a própria BASE PÚBLICA DE POTÊNCIA INSTALADA DA ANEEL, com atraso de atualização pelas distribuidoras ou ausência de parte dos sistemas efetivamente instalados. Encaminhamento: resultados AINDA NÃO incorporados à metodologia do ONS; serão implementados no futuro, com fator de overload de inversor e evolução para outros REDs (baterias, VE); a Nota Técnica e os materiais completos serão publicados pelo ONS após consolidação. Relevância SOA: é o Operador declarando em fórum técnico que a base cadastral pública de MMGD é a principal fonte de erro residual na previsão de carga do SIN — convergente com a tese de MMGD não observável e com a CP ANEEL 009/2026 (excedentes de energia e flexibilidade operativa na rede de distribuição; tratamento da ampliação à revelia de MMGD a conferir no ato). NÃO CITAR os números externamente (72%, 9,2 mil sistemas, -40%) até a publicação da NT do ONS em F1.",
       "status": "EM DELIBERAÇÃO",
       "qsv_cor": "LARANJA",
       "norma": "estudo ONS/GIZ/UFSC 'Aprimoramento da Estimação e Previsão de Mini e Micro Geração Fotovoltaica (MMGD)' — NT do ONS pendente de publicação",
       "numero_status": "ALEGADO_NAO_ANCORADO",
-      "fonte": "F3 ABSOLAR (GT Geração Distribuída, 15/07/2026 — resumo do Workshop de 14/07). F1 (NT/materiais do ONS) não publicada.",
-      "verificado_em": "2026-07-16"
+      "fonte": "F3 ABSOLAR (GT Geração Distribuída, 15/07/2026 — resumo do Workshop de 14/07). F1 (NT/materiais do ONS) não publicada: Acervo Digital do ONS reconsultado em 14/11/2026, sem NT nem material do estudo de 2026 (último item GIZ sobre MMGD: dezembro de 2024).",
+      "verificado_em": "2026-11-14",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ons.org.br/paginas/conhecimento/acervo-digital/documentos-e-publicacoes"
     },
     {
       "fato_id": "ANEEL-NT-107-2026-SFT-MMGD",
@@ -1141,7 +1165,9 @@
       "norma": "NT nº 107/2026-SFT/ANEEL · Processo ANEEL nº 48500.015900/2026-94",
       "numero_status": "ALEGADO_NAO_ANCORADO",
       "fonte": "F3 ABSOLAR (GT Geração Distribuída, 15/07/2026). PDF anexo ao e-mail; F1 SEI/ANEEL não reaberto.",
-      "verificado_em": "2026-07-16"
+      "verificado_em": "2026-07-16",
+      "tentado_em": "2026-11-14",
+      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Confirmo SEM_FONTE_ACESSIVEL. A NT nº 107/2026-SFT (Processo 48500.015900/2026-94) só existe no SEI da ANEEL, cuja pesquisa pública pede CAPTCHA. O acervo da ANEEL está atrás de desafio do Cloudflare (403, Cf-Mitigated: challenge). A busca na web achou só a NT 107/202"
     },
     {
       "fato_id": "ANEEL-PRODIST-MOD3-OBSERVABILIDADE",
@@ -1199,14 +1225,15 @@
     {
       "fato_id": "ANEEL-CP-009-GATO-SOLAR",
       "orgao": "ANEEL",
-      "tema": "CP ANEEL 009/2026 — combate à MMGD irregular ('geração invisível')",
-      "valor": "CONFIRMADA: é a CP 009/2026 (distinta da 009/2025, sobre curtailment FV). Aberta 22/04/2026, contribuições até 06/06/2026. Combate à ampliação/alteração à revelia de MMGD (11,8–14,6 GW de capacidade não registrada): redefine potência instalada como potência nominal CA na saída dos inversores; auditoria em até 60 dias (satélite/drones); faturamento retroativo de até 36 ciclos; risco de perda da GD I (Fio B até 2045). Paralela: CP 011/2026 (créditos vencidos / validade 60 meses).",
+      "tema": "CP ANEEL 009/2026 — excedentes de energia e flexibilidade operativa na rede de distribuição (MMGD)",
+      "valor": "F1 DOU (Aviso de Consulta Pública nº 9/2026, Seção 3, 23/04/2026, p. 167; Processo 48500.035430/2025-02): objeto oficial 'obter subsídios para aprimoramentos regulatórios para tratamento de excedentes de energia e maior flexibilidade operativa na Rede de Distribuição'; intercâmbio de documentos de 23/04 a 06/06/2026. É a CP 009/2026 (distinta da 009/2025, sobre curtailment FV). Contribuições encerradas em 06/06/2026; resultado da CP não localizado em F1 até 14/11/2026. A conferir no ato (nota técnica, voto e minuta não lidos em F1: SEI com CAPTCHA e acervo de consultas da ANEEL atrás de desafio do Cloudflare; as medidas constam da imprensa especializada, entre ela o Portal Solar de 05/05/2026): combate à ampliação/alteração à revelia de MMGD; potência instalada redefinida como potência nominal CA na saída dos inversores; auditoria pelas distribuidoras em até 60 dias segundo a imprensa (satélite/drones; a cópia não oficial da NT 148/2025-STD propunha até 90 dias); faturamento retroativo de até 36 ciclos; risco de perda da GD I (Fio B até 2045). Paralela: CP 011/2026 (Aviso no DOU de 30/04/2026, Seção 3, p. 149; Processo 48500.909318/2022-65: tratamento regulatório e contábil dos créditos de MMGD em prol da modicidade tarifária; contribuições de 30/04 a 15/06/2026).",
       "status": "EM DELIBERAÇÃO",
       "qsv_cor": "AZUL",
-      "norma": "CP ANEEL 009/2026 (aberta 22/04/2026) · CP ANEEL 011/2026",
-      "numero_status": "ANCORADO",
-      "fonte": "Portal Solar 05/05/2026 + ANEEL (confirmar voto final)",
-      "verificado_em": "2026-06-30"
+      "norma": "CP ANEEL 009/2026 (Aviso no DOU de 23/04/2026, Processo 48500.035430/2025-02) · CP ANEEL 011/2026 (Aviso no DOU de 30/04/2026, Processo 48500.909318/2022-65)",
+      "numero_status": "ALEGADO_NAO_ANCORADO",
+      "fonte": "F1 DOU (Avisos de CP ANEEL 9/2026 e 11/2026) + release ANEEL de 22/04/2026 (corpo da notícia retirado desde 03/07/2026); medidas detalhadas: Portal Solar 05/05/2026, a conferir no ato.",
+      "verificado_em": "2026-11-14",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-9/2026-701049289"
     },
     {
       "fato_id": "CCEE-LEI-15269-2025",
@@ -1218,7 +1245,7 @@
       "norma": "Lei 15.269/2025 (art. 1º-B da Lei 10.848/2004)",
       "numero_status": "ANCORADO",
       "fonte": "Planalto — texto oficial Lei 15.269/2025, confirmado 30/06/2026",
-      "verificado_em": "2026-06-30"
+      "verificado_em": "2026-11-14"
     },
     {
       "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
@@ -1237,12 +1264,13 @@
       "fato_id": "EPE-BASE-INTEGRADA-GT-2026",
       "orgao": "EPE",
       "tema": "Base de Dados Integrada Geracao + Transmissao (G+T) — reuniao EPE x setor FV em 30/07/2026",
-      "valor": "F3 ABSOLAR (voz oficial lkuehl@absolar.org.br, 16/07/2026 16h37, cross-post GT Armazenamento + GD + GC + Fabricantes): 'A ABSOLAR recebeu convite da Empresa de Pesquisa Energetica (EPE) para participar de reuniao sobre a nova Base Integrada Geracao + Transmissao (G+T), que sera realizada no dia 30 de julho, as 15h.' Na reuniao a EPE apresentara 'os avancos na representacao do Sistema Interligado Nacional (SIN), com a integracao de informacoes detalhadas de geracao e transmissao e a utilizacao de novas ferramentas para o planejamento da expansao do setor eletrico', e sera oportunidade de 'discutir possiveis contribuicoes ao aprimoramento da plataforma, especialmente quanto as caracteristicas e necessidades do setor solar fotovoltaico'. Aprofunda o workshop de lancamento de 08/07/2026 (release EPE F1 de 08/07: a base 'representa a rede eletrica de forma detalhada, com analises mensais e horarias, consideracao das restricoes fisicas e da resolucao espacial dos empreendimentos e modelagem mais realista das incertezas dos recursos naturais'). Plataforma: Microsoft Teams. PENDENTE: F1 da EPE sobre a reuniao de 30/07 nao reaberta; nao ha confirmacao oficial de que a base sera publicada em Dados Abertos nem do grao de divulgacao. Relevancia SOA: grao horario + resolucao espacial oficiais sao a camada em que a SOA opera; a reuniao e a janela para perguntar diretamente a EPE sobre disponibilizacao e grao. Fecha a pendencia deixada em aberto pelo digest de 10/07.",
+      "valor": "F3 ABSOLAR (voz oficial da ABSOLAR, e-mail de 16/07/2026 16h37, cross-post GT Armazenamento + GD + GC + Fabricantes): 'A ABSOLAR recebeu convite da Empresa de Pesquisa Energetica (EPE) para participar de reuniao sobre a nova Base Integrada Geracao + Transmissao (G+T), que sera realizada no dia 30 de julho, as 15h.' Na reuniao a EPE apresentara 'os avancos na representacao do Sistema Interligado Nacional (SIN), com a integracao de informacoes detalhadas de geracao e transmissao e a utilizacao de novas ferramentas para o planejamento da expansao do setor eletrico', e sera oportunidade de 'discutir possiveis contribuicoes ao aprimoramento da plataforma, especialmente quanto as caracteristicas e necessidades do setor solar fotovoltaico'. Aprofunda o workshop de lancamento de 08/07/2026 (release EPE F1 de 08/07: a base 'representa a rede eletrica de forma detalhada, com analises mensais e horarias, consideracao das restricoes fisicas e da resolucao espacial dos empreendimentos e modelagem mais realista das incertezas dos recursos naturais'). Plataforma: Microsoft Teams. RECONFERIDO EM F1 EM 14/11/2026: a pagina oficial da EPE (Estudos Integrados de Geracao e Transmissao) apresenta a Base Integrada G+T como base unificada e publica do setor, disponivel no formato do modelo SDDP, com acesso pelo repositorio oficial da EPE no GitHub (EPE-GOV-BR/BaseDadosGT), relatorio de criacao em PDF e evolucao prevista para formato agnostico; a EPE informa que, a partir de 2026, disponibilizara a base com frequencia. A pagina nao cita o portal de Dados Abertos nem o grao temporal dos arquivos publicados. PENDENTE: nenhum registro oficial da EPE sobre a reuniao de 30/07/2026 foi localizado. Relevancia SOA: grao horario + resolucao espacial oficiais sao a camada em que a SOA opera; a reuniao e a janela para perguntar diretamente a EPE sobre disponibilizacao e grao. Fecha a pendencia deixada em aberto pelo digest de 10/07.",
       "status": "PENDENTE_REABERTURA",
       "qsv_cor": "LARANJA",
-      "fonte": "F3 ABSOLAR (voz oficial) — e-mail de 16/07/2026. F1 EPE do convite/reuniao NAO reaberta.",
-      "verificado_em": "2026-07-17",
-      "gatilho_revisao": "reuniao de 30/07/2026 as 15h; publicacao pela EPE da Base Integrada G+T em Dados Abertos; NT/documentacao da base"
+      "fonte": "F3 ABSOLAR (voz oficial) — e-mail de 16/07/2026. F1 EPE: release de 08/07/2026 e pagina da Base Integrada G+T reabertos em 14/11/2026; registro oficial da reuniao de 30/07 nao localizado.",
+      "verificado_em": "2026-11-14",
+      "gatilho_revisao": "registro oficial da EPE sobre a reuniao de 30/07/2026; publicacao da Base Integrada G+T no portal de Dados Abertos ou em formato agnostico; nova versao da base",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/pt/areas-de-atuacao/energia-eletrica/estudos-integrados-de-geracao-e-transmissao/base-de-dados-integrada-de-geracao-e-transmissao"
     },
     {
       "fato_id": "MME-TERMO-COMPROMISSO-CURTAILMENT",
