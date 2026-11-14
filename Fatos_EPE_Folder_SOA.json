@@ -27,7 +27,16 @@
     "nota_run_2026_07_21": "Run de 21/07: página de Publicações reaberta em F1. NOVIDADE de borda baixa no topo da listagem: 'Fact Sheet - Mineralização de carbono como nova fronteira das rotas de CCS' — tema CCS, sem borda para a tese de evidência horária; NÃO cravado em fatos[]. PET/PELP Ciclo 2026 - 1º Semestre segue listado SEM DATA de emissão -> mantido AZUL, sem bump. PDE 2036 segue como 'em elaboração em 2026'. Nenhum verificado_em de fato bumpado (R2).",
     "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. EPE publicacoes -> 200 114933",
     "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 1 confirmado, 5 impreciso, 7 mudou. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente.",
-    "nota_run_2026_11_14_reconferencia": "Reconferencia item a item em fonte oficial em 14/11/2026 (decisao D38 = a), com segunda leitura independente: ATUALIZAR 5, CONFIRMADO 10, SEM_FONTE_ACESSIVEL 1. Itens sem F1 acessivel mantem o proprio verificado_em e levam tentado_em e pendencia_verificacao."
+    "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: CONFIRMADO 2. _meta.verificado_em = data do item publicado mais antigo.",
+    "rodizio": [
+      {
+        "data": "2026-11-14",
+        "relidos": [
+          "fatos[0]",
+          "_pendentes_verificacao[1]"
+        ]
+      }
+    ]
   },
   "fatos": [
     {

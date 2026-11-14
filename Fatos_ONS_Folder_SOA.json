@@ -44,9 +44,16 @@
           "_pendentes_verificacao[1]",
           "_pendentes_verificacao[2]"
         ]
+      },
+      {
+        "data": "2026-11-14",
+        "relidos": [
+          "fatos[2]",
+          "fatos[7]"
+        ]
       }
     ],
-    "nota_run_2026_11_14_reconferencia": "Rodizio diario de reconferencia F1 (1a run, 14/11/2026, decisao D38 = a), itens mais antigos primeiro, com segunda leitura independente: ATUALIZAR 5, CONFIRMADO 2, SEM_FONTE_ACESSIVEL 5. _meta.verificado_em = data do item publicado mais antigo."
+    "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 1, CONFIRMADO 1. _meta.verificado_em = data do item publicado mais antigo."
   },
   "fatos": [
     {
@@ -175,8 +182,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "pendencia_verificacao": "Em 14/11/2026 não foi relido em F1 se as contribuições da CP ANEEL 34/2026 de fato se encerraram em 12/11/2026 ou se houve nova prorrogação: o DOU não respondeu e a página de consultas da ANEEL devolveu HTTP 403. A contagem de 22 submódulos também não foi reconferida. Reabrir o aviso no DOU e a página da CP antes de afirmar encerramento ou deliberação.",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ons.org.br/AcervoDigitalDocumentosEPublicacoes/relacao_SM_reestruturados_antiga_estrutura.pdf"
+      "pendencia_verificacao": "14/11/2026: aviso de prorrogacao da CP ANEEL 34/2026 (DOU de 29/10/2026, Ed. 205, Secao 3, p. 98) relido no DOU, com os 22 submodulos listados; busca no DOU ate 13/11/2026 sem nova prorrogacao; dados abertos de pautas e atas da ANEEL (arquivo de 13/11/2026) sem deliberacao do resultado. Contribuicoes encerradas em 12/11/2026; a proposta segue em analise e ainda nao e regra.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-da-consulta-publica-n-34/2026-740998215 ; https://dadosabertos.aneel.gov.br/dataset/a9fb5b4b-59ca-4be8-9690-876d9547271d/resource/43386a8b-4781-44ec-a082-fa7fdfe33186/download/pautas-atas-reunioes-publicas-diretoria.csv"
     },
     {
       "fato_id": "ONS-NT-PNAST",
