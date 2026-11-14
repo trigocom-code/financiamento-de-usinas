@@ -3,7 +3,7 @@
     "orgao": "EPE",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo EPE — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-10-13",
+    "verificado_em": "2026-11-14",
     "proxima_revisao_sugerida": "2026-11-10",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina EPE conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. qsv_cor LARANJA → _pendentes_verificacao.",
@@ -26,17 +26,18 @@
     "nota_run_2026_07_20": "Pagina oficial de Publicacoes da EPE reaberta em F1. Ordem atual da listagem: Fact Sheet Mineralizacao de carbono (CCS); PET/PELP Ciclo 2026 - 1o Semestre; PDE 2036 ('em elaboracao em 2026'); Relatorio Rodadas de Licitacao no Mundo 2026; ferramenta SAF HEFA/ATJ; CP do Zoneamento de Oleo e Gas; NT Biometano/GNC; BEN 2026. UNICO verificado_em avancado: EPE-PET-PELP (reconferido em F1, mantido AZUL por falta de data). Nenhuma publicacao nova da EPE detectada na janela 18-20/07.",
     "nota_run_2026_07_21": "Run de 21/07: página de Publicações reaberta em F1. NOVIDADE de borda baixa no topo da listagem: 'Fact Sheet - Mineralização de carbono como nova fronteira das rotas de CCS' — tema CCS, sem borda para a tese de evidência horária; NÃO cravado em fatos[]. PET/PELP Ciclo 2026 - 1º Semestre segue listado SEM DATA de emissão -> mantido AZUL, sem bump. PDE 2036 segue como 'em elaboração em 2026'. Nenhum verificado_em de fato bumpado (R2).",
     "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. EPE publicacoes -> 200 114933",
-    "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 1 confirmado, 5 impreciso, 7 mudou. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente."
+    "nota_run_2026_10_13_revisao": "Revisao fato a fato de 13/10/2026, contra fontes oficiais reabertas no dia (DOU, Planalto, paginas dos orgaos), feita em sessao interativa a pedido do CEO. Resultado dos laudos: 1 confirmado, 5 impreciso, 7 mudou. Cada fato conferido teve verificado_em renovado; os nao conferidos mantem a data anterior. As citacoes dos laudos foram reconferidas nas paginas oficiais pela sessao principal, e o texto final passou por leitura independente.",
+    "nota_run_2026_11_14_reconferencia": "Reconferencia item a item em fonte oficial em 14/11/2026 (decisao D38 = a), com segunda leitura independente: ATUALIZAR 5, CONFIRMADO 10, SEM_FONTE_ACESSIVEL 1. Itens sem F1 acessivel mantem o proprio verificado_em e levam tentado_em e pendencia_verificacao."
   },
   "fatos": [
     {
       "fato_id": "EPE-PDE-2035",
       "tema": "PDE 2035 — Plano Decenal de Expansão de Energia",
-      "valor": "Horizonte 2026–2035. CP MME 214/2026 aberta de 12/02 a 29/03/2026 (prazo prorrogado; encerrada). Plano aprovado pela Portaria MME nº 923/2026 (DOU de 02/07/2026), com Relatório Final publicado. A consulta pública do PDE 2036 (CP MME 235/2026) ficou aberta de 08/10 a 06/11/2026 e está encerrada; até 11/11/2026 o PDE 2036 não tinha portaria de aprovação. 15 Cadernos temáticos publicados. Dados brutos em painel público.",
+      "valor": "Horizonte 2026–2035. CP MME 214/2026 aberta de 12/02 a 29/03/2026 (prazo prorrogado; encerrada). Plano aprovado pela Portaria MME nº 923, de 1º/07/2026 (DOU de 02/07/2026), com Relatório Final publicado. A consulta pública do PDE 2036 (CP MME 235/2026) ficou aberta de 08/10 a 06/11/2026 e está encerrada; até 13/11/2026 o PDE 2036 não tinha portaria de aprovação (busca no DOU pelo título do plano retorna só a Portaria SNTEP/MME nº 3.246/2026, que abriu a consulta). 15 Cadernos temáticos publicados. Dados brutos em painel público.",
       "status": "VIGENTE",
-      "norma": "EPE/MME · ciclo anual · Portaria MME nº 923, de 30/06/2026 (aprovação; DOU de 02/07/2026)",
+      "norma": "EPE/MME · ciclo anual · Portaria MME nº 923, de 1º/07/2026 (aprovação; DOU de 02/07/2026, Ed. 122, Seção 1, p. 75)",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035",
-      "verificado_em": "2026-11-11",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -79,16 +80,17 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "nota_reconferencia_2026_11_11": "Página oficial do PDE 2035 na EPE reaberta em 11/11/2026: 'aprovado pela Portaria MME n° 923, de 30 de junho de 2026'; 15 cadernos temáticos listados. Encerramento da CP 235 em 06/11 conforme Portaria SNTEP/MME 3.246/2026 (30 dias) e listagem do Brasil Participativo; nenhuma portaria de aprovação do PDE 2036 localizada."
+      "nota_reconferencia_2026_11_11": "Página oficial do PDE 2035 na EPE reaberta em 11/11/2026: 'aprovado pela Portaria MME n° 923, de 30 de junho de 2026'; 15 cadernos temáticos listados. Encerramento da CP 235 em 06/11 conforme Portaria SNTEP/MME 3.246/2026 (30 dias) e listagem do Brasil Participativo; nenhuma portaria de aprovação do PDE 2036 localizada.",
+      "nota_reconferencia_2026_11_13": "DOU reaberto em 13/11/2026: Portaria MME nº 923 é de 1º/07/2026 (DOU 02/07/2026, Ed. 122, Seção 1, p. 75; SHA256 9597163857e5...0b9d). A página da EPE e o PDF do MME trazem 30/06/2026; prevalece o DOU. Busca no DOU pelo título do PDE 2036 retorna só a Portaria SNTEP/MME 3.246/2026 (abertura da CP 235). P-5e108c07 aprovada com esse ajuste."
     },
     {
       "fato_id": "EPE-PNE-2055",
       "tema": "PNE 2055 — Plano Nacional de Energia",
-      "valor": "Horizonte 30 anos (2026–2055). CP MME 215/2026 aberta em 12/02/2026 e prorrogada até 29/03/2026 (encerrada). Plano aprovado pela Portaria MME nº 938, de 25/09/2026 (DOU de 29/09/2026, edição extra), com Caderno Síntese em versão final (setembro/2026). Coordenação na elaboração: Patricia Nunes (EPE). ANCORADO: o release oficial EPE/MME (12/02/2026) confirma literalmente 'o país possui potencial renovável anual estimado em cerca de 1,6 bilhão de toneladas equivalentes de petróleo' (tep).",
+      "valor": "Horizonte 30 anos (2026–2055). CP MME 215/2026 aberta em 12/02/2026 e prorrogada até 29/03/2026 (encerrada). Plano aprovado pela Portaria MME nº 938, de 25/09/2026 (DOU de 29/09/2026, edição extra), com Caderno Síntese em versão final (outubro/2026). Coordenação na elaboração: Patricia Nunes (EPE). ANCORADO: o release oficial EPE/MME (12/02/2026) confirma literalmente 'o país possui potencial renovável anual estimado em cerca de 1,6 bilhão de toneladas equivalentes de petróleo' (tep).",
       "status": "VIGENTE",
       "norma": "EPE/MME · ciclo quinquenal · Portaria MME nº 938/2026 (aprovação; DOU de 29/09/2026, edição extra)",
       "url": "https://www.epe.gov.br/pt/imprensa/noticias/mme-e-epe-lancam-consultas-publicas-do-pde-2035-e-do-pne-2055-e-reforcam-planejamento-estrategico-do-setor-energetico",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -130,7 +132,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-nacional-de-energia-2055"
     },
     {
       "fato_id": "EPE-CARGAS-CE-PI",
@@ -139,7 +142,7 @@
       "status": "VIGENTE",
       "norma": "EPE · Estudo Prospectivo para Inserção de Cargas Eletrointensivas na Região Nordeste (19/06/2026)",
       "url": "https://www.epe.gov.br/pt/imprensa/noticias/epe-propoe-solucao-de-transmissao-flexivel-e-escalonavel-para-atendimento-a-ate-4gw-de-cargas-eletrointensivas-no-ceara-e-piaui",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "HIBRIDO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -177,11 +180,11 @@
     {
       "fato_id": "EPE-MAPA-BARRAMENTOS-LRCAP",
       "tema": "Mapa de Barramentos LRCAP (critério de bonificação locacional)",
-      "valor": "CONFLITO RESOLVIDO NA FONTE (texto da Portaria conferido no DOU em 13/10/2026). A LISTA é oficial e definitiva: ANEXO II (TABELA 1) da Portaria MME 136/2026 lista 129 barramentos bonificados em 98 subestações, 8 estados — BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste (inclui Pecém II 230 kV). O art. 17, § 3º, manda aplicar a constante de bonificação de localização (β) 'definida nos termos do § 12 do art. 2º do ANEXO I desta Portaria, com base em estudos elaborados pela EPE'. Esse § 12 fixa β = 0,9 para os empreendimentos conectados aos pontos de conexão do ANEXO II e β = 1 para os demais (vantagem 1/0,9 ≈ +11,1%): o VALOR está na própria Portaria. O parágrafo único do art. 3º do ANEXO II condiciona só os quantitativos de capacidade remanescente dos barramentos da TABELA 1 à NT de Quantitativos, publicada em 30/09/2026 (NT-ONS DPL 0095/2026, de ONS, ANEEL e EPE). O Despacho Decisório SNTEP/MME nº 31/2026 (DOU de 06/10/2026) negou recurso que pedia a inclusão da SE Janaúba 3 500 kV na lista. O 'γ' anterior era de doc SOA interno (LMP), não oficial.",
+      "valor": "CONFLITO RESOLVIDO NA FONTE (texto da Portaria conferido no DOU em 13/10/2026). A LISTA é oficial e definitiva: ANEXO II (TABELA 1) da Portaria MME 136/2026 lista 129 barramentos bonificados em 98 subestações, 8 estados — BA 42 (33%), CE 39 (30%), MG-norte 18 (14%), PI 17 (13%), PE 6, AL 3, PB 2, RN 2 — 86% no Nordeste (inclui Pecém II 230 kV). O art. 17, § 3º, manda aplicar a constante de bonificação de localização (β) 'definida nos termos do § 12 do art. 2º do ANEXO I desta Portaria, com base em estudos elaborados pela EPE'. Esse § 12 fixa β = 0,9 para os empreendimentos conectados aos pontos de conexão do ANEXO II e β = 1 para os demais (vantagem 1/0,9 ≈ +11,1%): o VALOR está na própria Portaria. O parágrafo único do art. 3º do ANEXO II condiciona só os quantitativos de capacidade remanescente dos barramentos da TABELA 1 à NT de Quantitativos, publicada em 30/09/2026 (NT-ONS DPL 0095/2026, de ONS, ANEEL e EPE) e revista pela Revisão 1 (datada de 23/10/2026 e divulgada em 26/10/2026). O Despacho Decisório SNTEP/MME nº 31/2026 (DOU de 06/10/2026) negou recurso que pedia a inclusão da SE Janaúba 3 500 kV na lista. O 'γ' anterior era de doc SOA interno (LMP), não oficial.",
       "status": "VIGENTE",
-      "norma": "Portaria MME 136/2026 ANEXO II (lista, definitiva) + Art. 17 §3º e ANEXO I, art. 2º, §12 (β=0,9, 'com base em estudos elaborados pela EPE') · NT-ONS DPL 0095/2026 (quantitativos, 30/09/2026) · Despacho Decisório SNTEP/MME 31/2026 (DOU de 06/10/2026)",
+      "norma": "Portaria MME 136/2026 ANEXO II (lista, definitiva) + Art. 17 §3º e ANEXO I, art. 2º, §12 (β=0,9, 'com base em estudos elaborados pela EPE') · NT-ONS DPL 0095/2026 (quantitativos, 30/09/2026; Revisão 1, de 23/10/2026, divulgada em 26/10/2026) · Despacho Decisório SNTEP/MME 31/2026 (DOU de 06/10/2026)",
       "url": "https://www.epe.gov.br/pt/leiloes-de-energia/leiloes/leilao-de-reserva-de-capacidade-na-forma-de-potencia-armazenamento-2026",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "HIBRIDO",
       "score_soa": 16,
       "vetores_afetados": [
@@ -223,7 +226,8 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "_aviso_precedencia": "CONFERIDO NO DOU EM 13/10/2026 (revisão fato a fato): a LISTA de 129 barramentos (ANEXO II, TABELA 1) segue ancorada e definitiva. O VALOR de β ESTÁ na própria Portaria Normativa MME 136/2026: ANEXO I, art. 2º, § 12 (β = 0,9 nos pontos de conexão do ANEXO II; β = 1 nos demais), por remissão do art. 17, § 3º. O registro de 05/07/2026, que dizia que o valor não constava da Portaria e vinha de nota técnica da EPE, estava errado; o de 30/06/2026, que citava o ANEXO I, art. 2º, § 12, estava certo. Não reverter sem reler o texto no DOU.",
-      "pendencia_verificacao": "VERIFICADO EM F1 EM 27/08/2026 PELA CAMADA CONSOLIDADORA. A pagina do LRCAP Armazenamento 2026 na EPE segue com os mesmos 9 arquivos, sem resultado locacional, sem lista de barramentos elegiveis a bonificacao e sem mapa. Impressao digital HTTP dos 9 arquivos, colhida por requisicao HEAD em 27/08/2026: Informe LRCAP Armazenamento 2026 Portugues 1.pdf 356.953 bytes Last-Modified 05/08/2026 14:25:16 GMT; Informe English 1.pdf 373.257 bytes 05/08/2026 14:24:53 GMT; Informe Espanol 1.pdf 364.876 bytes 05/08/2026 14:23:36 GMT; NT-ONS DPL 0057-2026 EPE-DEE-RE-067-2026-R0 1.538.525 bytes 03/07/2026 21:56:53 GMT; MemoriadeCalculo-MetodologiaLocacional.zip 13.828.444 bytes 26/06/2026 11:29:57 GMT; EPE-DEE-NT-095-2025 Requisitos Conexao SAE_Rev4.pdf 1.352.780 bytes 23/06/2026 17:59:43 GMT; FAQ - LRCAP Armazenamento de 2026_R4.pdf 614.682 bytes 14/07/2026 18:56:40 GMT; EPE-DEE-NT-086-2025-Rev0.pdf 782.209 bytes 09/06/2026 15:24:25 GMT; Base de Dados LRCAP 2026-Rev2.zip 24.145.089 bytes 09/06/2026 15:23:32 GMT. Arquivo mais recente do conjunto: 05/08/2026. Nenhum arquivo novo desde entao. DIVERGENCIA DA BASE DE DADOS RESOLVIDA EM 27/08/2026 PELA CAMADA CONSOLIDADORA, SEM MUDANCA NA FONTE. O registro de 26/08 transcreveu o ROTULO exibido na pagina, que e Base de Dados LRCAP 2026; o registro de 27/08 as 07h48 transcreveu o NOME DO ARQUIVO no endereco de download, que e Base de Dados LRCAP 2026-Rev2.zip. Sao duas descricoes corretas de coisas diferentes, e nao duas leituras conflitantes da mesma coisa. A requisicao HEAD ao proprio arquivo devolve Last-Modified de 09/06/2026 15:23:32 GMT e Content-Length de 24.145.089 bytes, ou seja, a base NAO foi atualizada e o sufixo Rev2 e anterior a esta semana. Sufixos de revisao no nome do arquivo sao a norma nesta pagina, e nao sinal de novidade: o mesmo padrao aparece em Requisitos Conexao SAE_Rev4.pdf e em FAQ - LRCAP Armazenamento de 2026_R4.pdf. Nao citar Rev2 como novidade. Impressao digital HTTP dos 9 arquivos, colhida por requisicao HEAD em 27/08/2026: Informe LRCAP Armazenamento 2026 Portugues 1.pdf 356.953 bytes Last-Modified 05/08/2026 14:25:16 GMT; Informe English 1.pdf 373.257 bytes 05/08/2026 14:24:53 GMT; Informe Espanol 1.pdf 364.876 bytes 05/08/2026 14:23:36 GMT; NT-ONS DPL 0057-2026 EPE-DEE-RE-067-2026-R0 1.538.525 bytes 03/07/2026 21:56:53 GMT; MemoriadeCalculo-MetodologiaLocacional.zip 13.828.444 bytes 26/06/2026 11:29:57 GMT; EPE-DEE-NT-095-2025 Requisitos Conexao SAE_Rev4.pdf 1.352.780 bytes 23/06/2026 17:59:43 GMT; FAQ - LRCAP Armazenamento de 2026_R4.pdf 614.682 bytes 14/07/2026 18:56:40 GMT; EPE-DEE-NT-086-2025-Rev0.pdf 782.209 bytes 09/06/2026 15:24:25 GMT; Base de Dados LRCAP 2026-Rev2.zip 24.145.089 bytes 09/06/2026 15:23:32 GMT. Arquivo mais recente do conjunto: 05/08/2026. Nenhum arquivo novo desde entao. METODO NOVO DISPONIVEL PARA A VIGILANCIA DESTA PAGINA: a pagina da EPE nao expoe data nem tamanho ao lado dos arquivos, mas o servidor responde a requisicao HEAD em cada endereco de download com Last-Modified e Content-Length. Isso transforma a vigilancia do LRCAP de comparacao de lista de nomes, que e fragil, em comparacao de impressao digital, que e verificavel. Recomendacao para os monitores: gravar a impressao digital a cada run e comparar com a anterior; arquivo novo, ou Last-Modified que avance, e sinal duro de publicacao de resultado locacional, lista de barramentos ou mapa. || REGISTRO ANTERIOR: "
+      "pendencia_verificacao": "VERIFICADO EM F1 EM 27/08/2026 PELA CAMADA CONSOLIDADORA. A pagina do LRCAP Armazenamento 2026 na EPE segue com os mesmos 9 arquivos, sem resultado locacional, sem lista de barramentos elegiveis a bonificacao e sem mapa. Impressao digital HTTP dos 9 arquivos, colhida por requisicao HEAD em 27/08/2026: Informe LRCAP Armazenamento 2026 Portugues 1.pdf 356.953 bytes Last-Modified 05/08/2026 14:25:16 GMT; Informe English 1.pdf 373.257 bytes 05/08/2026 14:24:53 GMT; Informe Espanol 1.pdf 364.876 bytes 05/08/2026 14:23:36 GMT; NT-ONS DPL 0057-2026 EPE-DEE-RE-067-2026-R0 1.538.525 bytes 03/07/2026 21:56:53 GMT; MemoriadeCalculo-MetodologiaLocacional.zip 13.828.444 bytes 26/06/2026 11:29:57 GMT; EPE-DEE-NT-095-2025 Requisitos Conexao SAE_Rev4.pdf 1.352.780 bytes 23/06/2026 17:59:43 GMT; FAQ - LRCAP Armazenamento de 2026_R4.pdf 614.682 bytes 14/07/2026 18:56:40 GMT; EPE-DEE-NT-086-2025-Rev0.pdf 782.209 bytes 09/06/2026 15:24:25 GMT; Base de Dados LRCAP 2026-Rev2.zip 24.145.089 bytes 09/06/2026 15:23:32 GMT. Arquivo mais recente do conjunto: 05/08/2026. Nenhum arquivo novo desde entao. DIVERGENCIA DA BASE DE DADOS RESOLVIDA EM 27/08/2026 PELA CAMADA CONSOLIDADORA, SEM MUDANCA NA FONTE. O registro de 26/08 transcreveu o ROTULO exibido na pagina, que e Base de Dados LRCAP 2026; o registro de 27/08 as 07h48 transcreveu o NOME DO ARQUIVO no endereco de download, que e Base de Dados LRCAP 2026-Rev2.zip. Sao duas descricoes corretas de coisas diferentes, e nao duas leituras conflitantes da mesma coisa. A requisicao HEAD ao proprio arquivo devolve Last-Modified de 09/06/2026 15:23:32 GMT e Content-Length de 24.145.089 bytes, ou seja, a base NAO foi atualizada e o sufixo Rev2 e anterior a esta semana. Sufixos de revisao no nome do arquivo sao a norma nesta pagina, e nao sinal de novidade: o mesmo padrao aparece em Requisitos Conexao SAE_Rev4.pdf e em FAQ - LRCAP Armazenamento de 2026_R4.pdf. Nao citar Rev2 como novidade. Impressao digital HTTP dos 9 arquivos, colhida por requisicao HEAD em 27/08/2026: Informe LRCAP Armazenamento 2026 Portugues 1.pdf 356.953 bytes Last-Modified 05/08/2026 14:25:16 GMT; Informe English 1.pdf 373.257 bytes 05/08/2026 14:24:53 GMT; Informe Espanol 1.pdf 364.876 bytes 05/08/2026 14:23:36 GMT; NT-ONS DPL 0057-2026 EPE-DEE-RE-067-2026-R0 1.538.525 bytes 03/07/2026 21:56:53 GMT; MemoriadeCalculo-MetodologiaLocacional.zip 13.828.444 bytes 26/06/2026 11:29:57 GMT; EPE-DEE-NT-095-2025 Requisitos Conexao SAE_Rev4.pdf 1.352.780 bytes 23/06/2026 17:59:43 GMT; FAQ - LRCAP Armazenamento de 2026_R4.pdf 614.682 bytes 14/07/2026 18:56:40 GMT; EPE-DEE-NT-086-2025-Rev0.pdf 782.209 bytes 09/06/2026 15:24:25 GMT; Base de Dados LRCAP 2026-Rev2.zip 24.145.089 bytes 09/06/2026 15:23:32 GMT. Arquivo mais recente do conjunto: 05/08/2026. Nenhum arquivo novo desde entao. METODO NOVO DISPONIVEL PARA A VIGILANCIA DESTA PAGINA: a pagina da EPE nao expoe data nem tamanho ao lado dos arquivos, mas o servidor responde a requisicao HEAD em cada endereco de download com Last-Modified e Content-Length. Isso transforma a vigilancia do LRCAP de comparacao de lista de nomes, que e fragil, em comparacao de impressao digital, que e verificavel. Recomendacao para os monitores: gravar a impressao digital a cada run e comparar com a anterior; arquivo novo, ou Last-Modified que avance, e sinal duro de publicacao de resultado locacional, lista de barramentos ou mapa. || REGISTRO ANTERIOR: ",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/pt/leiloes-de-energia/leiloes/leilao-de-reserva-de-capacidade-na-forma-de-potencia-armazenamento-2026"
     },
     {
       "fato_id": "EPE-BOLETIM-CONSUMO-25",
@@ -232,7 +236,7 @@
       "status": "VIGENTE",
       "norma": "EPE · Boletim Trimestral",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Resenha-e-Boletim-do-Mercado-de-Energia-Eletrica",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -274,7 +278,7 @@
       "status": "VIGENTE",
       "norma": "EPE · documento gerencial publicado duas vezes ao ano (PET determinativo, seis anos seguintes; PELP indicativo, a partir do sétimo ano) · relatório EPE-DEE-RE-068/2026",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/programa-de-expansao-da-transmissao-pet-plano-de-expansao-de-longo-prazo-pelp-ciclo-2026-1-semestre",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -337,7 +341,7 @@
       "status": "VIGENTE",
       "norma": "EPE · publicação anual · edição 2026 (ano-base 2025), notícia oficial de 03/06/2026",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/anuario-estatistico-de-energia-eletrica",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -378,7 +382,7 @@
       "status": "VIGENTE",
       "norma": "EPE · Caderno temático PDE 2035",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 11,
       "vetores_afetados": [
@@ -421,7 +425,7 @@
       "status": "VIGENTE",
       "norma": "MME · SNTEP",
       "url": "https://www.epe.gov.br/pt/imprensa/noticias/mme-e-epe-lancam-consultas-publicas-do-pde-2035-e-do-pne-2055-e-reforcam-planejamento-estrategico-do-setor-energetico",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -470,7 +474,7 @@
       "status": "VIGENTE",
       "norma": "EPE · estrutura organizacional 2026",
       "url": "https://www.epe.gov.br/pt/a-epe/nossa-equipe",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 5,
       "vetores_afetados": [
@@ -511,7 +515,7 @@
       "status": "VIGENTE",
       "norma": "EPE-DEE-RE-016/2026-REV1 (Estudo de Atendimento ao Sudeste do Pará, abril/2026) · NT socioambiental EPE-DEA-SMA-NT-011/2026",
       "url": "https://www.epe.gov.br/pt/areas-de-atuacao/energia-eletrica/planejamento-da-transmissao/estudos-de-planejamento",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "HIBRIDO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -552,7 +556,7 @@
       "status": "VIGENTE",
       "norma": "EPE · Plano de Dados Abertos — Mercado de Distribuição de Energia Elétrica 2026 (versão de 29/09/2026)",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/dados-abertos/dados-do-mercado-de-distribuicao",
-      "verificado_em": "2026-10-13",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -592,24 +596,25 @@
       "qsv_cor": "AZUL",
       "norma": "EPE · FAQ (Versão 5, 27/08/2026), Instruções e Informe de Cadastramento (ago/2026) do LRCAP 2026 (Armazenamento) · Portaria Normativa MME 136/2026",
       "numero_status": "ANCORADO",
-      "fonte": "F1 EPE — 'FAQ Leilões · LRCAP de 2026 – Armazenamento Nacional e Armazenamento · Portaria Normativa MME n. 136, de 1° de junho de 2026' (Versão 2, 16/06/2026, documento em mãos, lido 01/07/2026) + F3 ABSOLAR (GT Armazenamento, 15/06/2026)",
-      "trecho_literal": "Conforme o Art 7° da Portaria Normativa MME n. 136/2026, inciso IV, não serão habilitados tecnicamente 'SAEs cuja eficiência total (Round-Trip Efficiency - RTE) seja inferior a 85% referenciada ao PMI, ao longo do horizonte contratual'.",
+      "fonte": "F1 EPE — 'FAQ Leilões · LRCAP de 2026 – Armazenamento Nacional e Armazenamento · Portaria Normativa MME n. 136, de 1° de junho de 2026' (Versão 5, 27/08/2026, reconferida na página do LRCAP em 14/11/2026) + F3 ABSOLAR (GT Armazenamento, 15/06/2026)",
+      "trecho_literal": "Conforme o Art 7° da Portaria Normativa MME n. 136/2026, inciso IV [sic: no texto publicado no DOU a RTE mínima é o inciso VI do art. 7º], não serão habilitados tecnicamente 'SAEs cuja eficiência total (Round-Trip Efficiency - RTE) seja inferior a 85% referenciada ao PMI, ao longo do horizonte contratual'.",
       "vetores_afetados": [
         "V3",
         "V7"
       ],
-      "verificado_em": "2026-10-13"
+      "verificado_em": "2026-11-14",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-136-de-1-de-junho-de-2026-710152085"
     }
   ],
   "_pendentes_verificacao": [
     {
       "fato_id": "EPE-REVISAO-QUADRIMESTRAL",
       "tema": "Revisão Quadrimestral da Carga",
-      "valor": "EPE publica ~3×/ano revisão de previsão de carga. Aguardando próxima publicação. Input estrutural para V3/V5 quando sair.",
+      "valor": "EPE, ONS e CCEE publicam ~3×/ano a previsão de carga do Planejamento Anual da Operação Energética (PLAN) e suas revisões quadrimestrais. Ciclo 2026-2030: PLAN, 1ª e 2ª Revisões Quadrimestrais já publicadas na página da EPE (a 2ª RQ usa consumo até junho e carga até julho de 2026). Aguardando a próxima publicação (ciclo PLAN 2027-2031). Input estrutural para V3/V5.",
       "status": "AGENDADO",
       "norma": "EPE · ~3 revisões/ano",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Revisoes-Quadrimestrais-da-Carga",
-      "verificado_em": "2026-06-28",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -636,16 +641,17 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "motivo_pendencia": "Aguarda próxima publicação periódica"
+      "motivo_pendencia": "Aguarda próxima publicação periódica",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/revisoes-quadrimestrais-da-carga"
     },
     {
       "fato_id": "EPE-PROXIMAS-CPS",
       "tema": "Próximas Consultas Públicas EPE — janela de submissão SOA",
-      "valor": "*** ATUALIZADO EM 13/10/2026 (revisão fato a fato): a consulta do PDE 2036 abriu em 08/10/2026 (CP MME 235/2026, até 06/11/2026). *** CP do PDE 2035 e PNE 2055 ENCERRADAS (fev-mar 2026). Próxima janela: PDE 2036 (esperado fev-mar 2027) e Caderno de MMGD atualizado. V6 SOA.",
+      "valor": "*** ATUALIZADO EM 14/11/2026 (reconferência): a consulta do PDE 2036 (CP MME 235/2026) ficou aberta de 08/10 a 06/11/2026 e está encerrada. *** CP do PDE 2035 e PNE 2055 ENCERRADAS (fev-mar 2026). Próxima janela: consulta do PDE 2037 (ciclo anual; data ainda não publicada). O tema MMGD do PDE 2036 já foi publicado no Caderno de Eficiência Energética e Recursos Energéticos Distribuídos (página do PDE 2036 na EPE). V6 SOA.",
       "status": "AGENDADO",
       "norma": "EPE · ciclo anual de consulta pública",
-      "url": "https://www.epe.gov.br/pt/leiloes-de-energia/consultas-publicas",
-      "verificado_em": "2026-06-28",
+      "url": "https://www.gov.br/mme/pt-br/servicos/consultas-publicas",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -671,7 +677,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "motivo_pendencia": "Previsão futura — aguarda calendário do PDE 2036"
+      "motivo_pendencia": "Previsão futura — aguarda calendário do PDE 2037",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2036"
     },
     {
       "fato_id": "EPE-STATUS-MONITOR",
@@ -706,7 +713,9 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "motivo_pendencia": "Fato meta-interno — sem fonte externa independente por design"
+      "motivo_pendencia": "Fato meta-interno — sem fonte externa independente por design",
+      "tentado_em": "2026-11-14",
+      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Concordo com SEM_FONTE_ACESSIVEL. O fato descreve a arquitetura interna do Monitor da casa. Ele não tem fonte F1 possível: a URL é o site da própria casa, e a única referência é um documento interno de desenho. Não pode receber verificado_em novo. Também não é falso, "
     }
   ],
   "_historico_caidos": []
