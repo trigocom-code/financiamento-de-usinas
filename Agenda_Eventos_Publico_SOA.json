@@ -1,8 +1,8 @@
 {
   "_meta": {
     "titulo": "Agenda do Setor Elétrico — Monitor SOA/SOS",
-    "atualizado_em": "2026-11-09",
-    "fonte": "Monitor de Eventos SOA/SOS · fontes oficiais (gov.br/ANEEL · Senado Federal · EPE · MME · CCEE · ONS · CIGRE-Brasil) + associações do setor (ANE, COGEN, APINE, ABGD, ABSOLAR, ABEEólica, ABCE, ABRAGE), páginas oficiais de eventos e imprensa setorial",
+    "atualizado_em": "2026-11-14",
+    "fonte": "Monitor de Eventos SOA/SOS · fontes oficiais (gov.br/ANEEL · Senado Federal · EPE · MME · CCEE · ONS · CIGRE-Brasil · BNDES) + associações do setor (ANE, COGEN, APINE, ABGD, ABSOLAR, ABEEólica, ABCE, ABRAGE, ABESCO), páginas oficiais de eventos e imprensa setorial",
     "nota": "Agenda pública de datas do setor elétrico. Eventos de associação e sinais de fontes secundárias marcados 'A VERIFICAR'; confirmar no ato ou na página oficial antes de citar.",
     "nota_run_2026_10_12": "Varredura de 12 de outubro, cobrindo a janela desde 7 de outubro; o bloco de ação alcança prazos de até dez dias, até 22 de outubro. (1) A câmara de comercialização marcou para 14 de outubro, às dez horas, online, a capacitação sobre o procedimento das compensações por cortes de geração. (2) O ministério abriu em 8 de outubro a consulta pública do plano decenal de expansão de energia 2036, com contribuições até 6 de novembro. (3) A regra de ordenamento dos cortes de geração foi editada como resolução normativa nº 1.170, de 6 de outubro de 2026; a data de publicação no diário oficial não foi conferida nesta rodada. (4) O encontro técnico do leilão de armazenamento de 14 de outubro e as datas das garantias do leilão de transmissão nº 4/2026 seguem sem página oficial localizada. (5) A consulta de revisão da resolução normativa nº 1.030/2022 não teve abertura noticiada até 12 de outubro.",
     "nota_run_2026_10_13": "Atualização de 13 de outubro, sobre a varredura de 12 de outubro. (1) A abertura da consulta pública de revisão da resolução normativa nº 1.030/2022 passou de meados de outubro para o início de dezembro, com cerca de 45 dias de contribuições, segundo relato de associação sobre reunião com a área técnica da agência; não há ato oficial. (2) O ministério abriu consulta pública sobre a governança dos modelos computacionais do setor, com prazo de vinte dias; as datas de início e fim não constam da notícia. (3) A consulta do plano decenal de expansão de energia 2036 é a de nº 235/2026. (4) A câmara de comercialização publicou a programação do fórum de 17 de novembro.",
@@ -12,6 +12,62 @@
     "nota_run_2026_11_09": "Varredura de 9 de novembro, cobrindo a janela desde 2 de novembro; o bloco de ação alcança prazos de até dez dias, até 19 de novembro. (1) A aprovação dos editais dos leilões de armazenamento em 27 de outubro foi conferida na notícia oficial da agência reguladora; a publicação no diário oficial segue não conferida. (2) O ministério abriu em 4 de novembro consulta pública sobre a garantia física das usinas eólicas e solares, com contribuições até 18 de dezembro. (3) A agência reguladora abriu a consulta pública nº 40/2026, sobre o fim do desconto nas tarifas de uso dos sistemas no mercado livre, até 14 de dezembro. (4) O ministério fixou 16 de novembro para as previsões de declarações de necessidades dos leilões de energia nova de 2027. (5) A lista de notícias da agência reguladora segue sem carregar; itens da agência foram conferidos em páginas avulsas. (6) A partir desta rodada cada item traz o campo url com a fonte oficial; sem fonte oficial localizada, o campo leva a marca [pendente-fonte]."
   },
   "recentes": [
+    {
+      "data": "2026-11-13",
+      "titulo": "Realizados os leilões de energia existente de um, dois e três anos de antecedência, com 2.859,7 megawatts médios contratados",
+      "detalhe": "Atendem 31 distribuidoras, com cerca de 14,25 bilhões de reais movimentados e suprimento de 2027 a 2030. Deságio médio de 1,26 por cento no certame de um ano, de 0,41 por cento no de dois anos e de 2,45 por cento no de três anos, segundo a agência reguladora.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora",
+      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/leiloes-de-energia-existente-sao-encerrados-com-a-contratacao-de-2-859-7-mw-medios"
+    },
+    {
+      "data": "2026-11-13",
+      "titulo": "A empresa de pesquisa energética abriu chamada para receber projetos de sistemas de armazenamento hidráulico",
+      "detalhe": "Usinas hidrelétricas reversíveis, inclusive em estágio preliminar. Envio até 18 de dezembro de 2026, depois de manifestação de interesse pelo e-mail indicado na notícia. A chamada serve a estudos de planejamento e não constitui habilitação nem inscrição para contratação futura.",
+      "status": "CONFIRMADO",
+      "fonte": "Empresa de pesquisa energética",
+      "url": "https://www.epe.gov.br/pt/imprensa/noticias/epe-abre-chamada-para-recebimento-de-projetos-de-sistemas-de-armazenamento-hidraulico-sah-"
+    },
+    {
+      "data": "2026-11-11",
+      "titulo": "A agência reguladora autorizou o acesso à rede básica de um projeto de hidrogênio verde",
+      "detalhe": "Projeto de produção de amônia verde a partir de hidrogênio obtido por eletrólise da água. O número do despacho e a demanda contratada não foram conferidos no ato nesta rodada.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora",
+      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/aneel-autoriza-acesso-do-primeiro-projeto-de-hidrogenio-verde-a-rede-basica"
+    },
+    {
+      "data": "2026-11-10",
+      "titulo": "O ministério abriu a consulta pública nº 242/2026, sobre o novo manual de operacionalização do programa Luz para Todos",
+      "detalhe": "Portaria nº 946, de 6 de novembro de 2026. Contribuições de 10 de novembro a 10 de dezembro, pelo portal de consultas do ministério e pela plataforma Brasil Participativo.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br do ministério e portal de consultas do ministério",
+      "url": "https://www.gov.br/mme/pt-br/assuntos/noticias/mme-abre-consulta-publica-sobre-novo-manual-de-operacionalizacao-do-luz-para-todos"
+    },
+    {
+      "data": "2026-11-10",
+      "titulo": "A agência reguladora abriu prazo de manifestação de interesse no projeto de governança do sandbox regulatório Energias da Floresta",
+      "detalhe": "Vinte dias contados da publicação do despacho da superintendência responsável, que a notícia não data; protocolo pelo sistema eletrônico de informações da agência. Podem manifestar interesse os agentes que aplicam recursos do programa de pesquisa, desenvolvimento e inovação da agência.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora",
+      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/aneel-abre-prazo-para-manifestacao-de-interesse-em-projeto-de-governanca-do-sandbox-energias-da-floresta"
+    },
+    {
+      "data": "2026-11-09",
+      "titulo": "A agência reguladora divulgou a proposta técnica da Tarifa Hora Certa, que ainda vai à diretoria",
+      "detalhe": "Resulta da consulta pública nº 46/2025 e não é norma vigente. Prevê enquadramento automático em etapas: a partir de abril de 2028 para consumo médio de 1.800 quilowatts-hora por mês ou mais, de abril de 2029 para 1.000 ou mais e de abril de 2031 para 500 ou mais. Unidades com micro ou minigeração entram se consumirem ou injetarem, em média, 500 quilowatts-hora por mês ou mais; as que pedirem conexão ao sistema de compensação a partir de noventa dias da publicação da norma entram sem opção de saída.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora",
+      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/tarifa-hora-certa-proposta-preve-enquadramento-automatico-de-consumidores-que-usam-mais-de-500-kwh-mes"
+    },
+    {
+      "data": "2026-11-09",
+      "titulo": "A agência reguladora abriu a tomada de subsídios nº 43/2026, sobre os requisitos técnicos mínimos de conexão às instalações de transmissão",
+      "detalhe": "Revisão do submódulo 2.10 dos procedimentos de rede e dos submódulos afetados. Contribuições de 9 de novembro a 24 de dezembro, por intercâmbio documental, com aviso no diário oficial de 9 de novembro.",
+      "status": "CONFIRMADO",
+      "fonte": "Página de tomadas de subsídios da agência reguladora",
+      "url": "https://antigo.aneel.gov.br/web/guest/tomadas-de-subsidios"
+    },
     {
       "data": "2026-11-06",
       "titulo": "A câmara de comercialização publicou os materiais da sala técnica sobre a abertura do mercado e convidou os agentes a enviar propostas",
@@ -30,7 +86,7 @@
     },
     {
       "data": "2026-11-04",
-      "titulo": "O ministério abriu consulta pública sobre a metodologia de cálculo e revisão da garantia física das usinas eólicas e solares",
+      "titulo": "O ministério abriu a consulta pública nº 241/2026, sobre a metodologia de cálculo e revisão da garantia física das usinas eólicas e solares",
       "detalhe": "Portaria SNTEP/MME nº 3.257, de 28 de outubro de 2026. Contribuições até 18 de dezembro, pelo portal de consultas do ministério e pela plataforma Brasil Participativo. Segundo a imprensa, a proposta trata dos cortes de geração no cálculo e adota base P90; esses pontos não foram conferidos na minuta.",
       "status": "CONFIRMADO",
       "fonte": "gov.br do ministério",
@@ -43,6 +99,14 @@
       "status": "CONFIRMADO",
       "fonte": "Empresa de pesquisa energética",
       "url": "https://www.epe.gov.br/pt/imprensa/noticias/epe-publica-notas-tecnicas-de-calculo-e-revisao-de-garantia-fisica-do-terceiro-trimestre-de-2026"
+    },
+    {
+      "data": "2026-11-03",
+      "titulo": "A agência reguladora revogou as autorizações de 178 usinas e determinou a rescisão dos contratos de uso da transmissão",
+      "detalhe": "Despacho nº 3.585/2026, pelo mecanismo excepcional da resolução normativa nº 1.157/2026. Cerca de 7,80 gigawatts de potência instalada e cerca de 7,68 gigawatts de montante de uso da transmissão, liberado para novos acessos, observadas as condições técnicas.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora",
+      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/aneel-revoga-autorizacoes-de-178-usinas-e-determina-rescisao-dos-contratos-de-transmissao"
     },
     {
       "data": "2026-11-03",
@@ -62,18 +126,18 @@
     },
     {
       "data": "2026-10-29",
-      "titulo": "O ministério abriu consulta pública sobre as diretrizes do leilão de suprimento aos sistemas isolados de 2027",
-      "detalhe": "Portaria com a minuta publicada no diário oficial de 29 de outubro. Segundo a imprensa, contribuições até 17 de novembro, pelo portal de consultas do ministério e pela plataforma Brasil Participativo, e proposta de mínimo de 30 por cento de renováveis. O prazo não foi conferido no portal.",
-      "status": "A VERIFICAR",
-      "fonte": "gov.br do ministério e imprensa setorial",
-      "url": "https://consultas-publicas.mme.gov.br/"
+      "titulo": "O ministério abriu a consulta pública nº 240/2026, sobre as diretrizes do leilão de suprimento aos sistemas isolados de 2027",
+      "detalhe": "Minuta de diretrizes e informe técnico da empresa de pesquisa energética com a proposta de preços de referência e de custo de combustível. Contribuições de 29 de outubro a 17 de novembro, pelo portal de consultas do ministério e pela plataforma Brasil Participativo. O ministério fez webinar sobre a proposta em 10 de novembro. Segundo a imprensa, a proposta prevê mínimo de 30 por cento de renováveis; esse ponto não foi conferido na minuta.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br do ministério e portal de consultas do ministério",
+      "url": "https://www.gov.br/mme/pt-br/assuntos/noticias/novembro-26/mme-promove-webinar-sobre-as-diretrizes-do-leilao-dos-sistemas-isolados-de-2027"
     },
     {
       "data": "2026-10-29",
-      "titulo": "O ministério abriu consulta pública sobre as regras do plano de outorgas de transmissão",
-      "detalhe": "A proposta revoga a portaria anterior sobre o tema. Segundo a imprensa, contribuições até 30 de novembro, pelo portal de consultas do ministério e pela plataforma Brasil Participativo. O prazo não foi conferido no portal.",
-      "status": "A VERIFICAR",
-      "fonte": "gov.br do ministério e imprensa setorial",
+      "titulo": "O ministério abriu a consulta pública nº 239/2026, sobre as diretrizes de elaboração do plano de outorgas de transmissão",
+      "detalhe": "A proposta cobre desde a concepção dos estudos de planejamento da transmissão até os leilões de ampliação e a autorização de reforços e melhorias em instalações existentes. Contribuições de 29 de outubro a 30 de novembro, segundo o portal de consultas do ministério.",
+      "status": "CONFIRMADO",
+      "fonte": "Portal de consultas do ministério",
       "url": "https://consultas-publicas.mme.gov.br/"
     },
     {
@@ -110,7 +174,7 @@
     },
     {
       "data": "2026-10-23",
-      "titulo": "O ministério abriu consulta pública sobre a infraestrutura de recarga de veículos elétricos",
+      "titulo": "O ministério abriu a consulta pública nº 237/2026, sobre a infraestrutura de recarga de veículos elétricos",
       "detalhe": "Coleta de dados, experiências e desafios sobre eletromobilidade. Contribuições até 22 de novembro de 2026, pelo portal de consultas do ministério e pela plataforma Brasil Participativo.",
       "status": "CONFIRMADO",
       "fonte": "gov.br do ministério",
@@ -133,17 +197,25 @@
       "url": "[pendente-fonte]"
     },
     {
-      "data": "2026-10-20",
-      "titulo": "A agência reguladora aprovou duas consultas públicas sobre os efeitos da reforma tributária no setor elétrico",
-      "detalhe": "A consulta n.º 39/2026 trata dos contratos regulados de geração e comercialização e dos encargos setoriais, com a retirada do PIS/Pasep e da Cofins dos preços de contratos firmados antes de 16 de janeiro de 2025; a n.º 38/2026 trata das bases de remuneração regulatória. Contribuições de 21 a 30 de outubro; efeitos a partir de 1.º de janeiro de 2027.",
-      "status": "A VERIFICAR",
-      "fonte": "Imprensa setorial e comunicação de associação setorial",
-      "url": "[pendente-fonte]"
+      "data": "2026-10-21",
+      "titulo": "A agência reguladora abriu a tomada de subsídios nº 41/2026, sobre o orçamento de 2027 da conta de desenvolvimento energético",
+      "detalhe": "Inclui o encargo de complemento de recursos, os fatores desse encargo e o rateio das quotas anuais. Contribuições de 21 de outubro a 20 de novembro, por intercâmbio documental, com aviso no diário oficial de 21 de outubro. Segundo a imprensa, a proposta soma cerca de 55,1 bilhões de reais, acima do teto legal de cerca de 48,7 bilhões; esses valores não foram conferidos na nota técnica.",
+      "status": "CONFIRMADO",
+      "fonte": "Página de tomadas de subsídios da agência reguladora",
+      "url": "https://antigo.aneel.gov.br/web/guest/tomadas-de-subsidios"
+    },
+    {
+      "data": "2026-10-21",
+      "titulo": "A agência reguladora abriu a tomada de subsídios nº 40/2026, sobre o submódulo 7.10 dos procedimentos de rede",
+      "detalhe": "Implantação e análise do sistema de registro de perturbações. Contribuições de 21 de outubro a 4 de dezembro, por intercâmbio documental, com aviso no diário oficial de 21 de outubro.",
+      "status": "CONFIRMADO",
+      "fonte": "Página de tomadas de subsídios da agência reguladora",
+      "url": "https://antigo.aneel.gov.br/web/guest/tomadas-de-subsidios"
     },
     {
       "data": "2026-10-20",
-      "titulo": "Orçamento de 2027 da conta de desenvolvimento energético em tomada de subsídios",
-      "detalhe": "Segundo a imprensa, a proposta soma cerca de 55,1 bilhões de reais, acima do teto legal de cerca de 48,7 bilhões; o excesso, de cerca de 6,37 bilhões, seria coberto por um novo encargo de complemento de recursos. Associação setorial indica contribuições até 20 de novembro.",
+      "titulo": "A agência reguladora aprovou duas consultas públicas sobre os efeitos da reforma tributária no setor elétrico",
+      "detalhe": "A consulta n.º 39/2026 trata dos contratos regulados de geração e comercialização e dos encargos setoriais, com a retirada do PIS/Pasep e da Cofins dos preços de contratos firmados antes de 16 de janeiro de 2025; a n.º 38/2026 trata das bases de remuneração regulatória. Contribuições de 21 a 30 de outubro; efeitos a partir de 1.º de janeiro de 2027.",
       "status": "A VERIFICAR",
       "fonte": "Imprensa setorial e comunicação de associação setorial",
       "url": "[pendente-fonte]"
@@ -187,89 +259,9 @@
       "status": "CONFIRMADO",
       "fonte": "gov.br da agência reguladora",
       "url": "[pendente-fonte]"
-    },
-    {
-      "data": "2026-10-13",
-      "titulo": "O ministério abriu consulta pública sobre a governança dos modelos computacionais do setor elétrico",
-      "detalhe": "Duas minutas de portaria: uma sobre o rito de mudanças nos modelos de planejamento da expansão e de cálculo da garantia física, outra sobre a gestão integrada de novos modelos pela câmara de comercialização, pela empresa de pesquisa energética e pelo operador nacional. A portaria saiu em edição extra do diário oficial de 9 de outubro, com vinte dias de contribuições; a data de encerramento não consta das notícias e vale pelo ato.",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br do ministério",
-      "url": "https://consultas-publicas.mme.gov.br/"
-    },
-    {
-      "data": "2026-10-13",
-      "titulo": "Revisão da resolução normativa nº 1.030/2022: consulta pública esperada para o início de dezembro",
-      "detalhe": "Segundo relato de associação setorial sobre reunião com a área técnica da agência reguladora, a instrução está em fase final e a consulta deve abrir por volta do início de dezembro de 2026, com cerca de 45 dias de contribuições. A previsão anterior era meados de outubro. Não há ato nem notícia oficial.",
-      "status": "A VERIFICAR",
-      "fonte": "Comunicação de associação setorial",
-      "url": "[pendente-fonte]"
-    },
-    {
-      "data": "2026-10-13",
-      "titulo": "A câmara de comercialização publicou a programação do fórum de análise setorial de 17 de novembro",
-      "detalhe": "Das oito às dezoito horas, com três painéis sobre mercado aberto, segurança do mercado e formação de preços, e uma palestra sobre mercados de energia. Inscrições seguem abertas.",
-      "status": "CONFIRMADO",
-      "fonte": "Câmara de comercialização de energia elétrica",
-      "url": "https://www.ccee.org.br/web/guest/-/ultimas-semanas-para-garantir-sua-participacao-no-2-forum-analise-setorial-ccee"
-    },
-    {
-      "data": "2026-10-09",
-      "titulo": "A câmara de comercialização marcou para 14 de outubro a capacitação sobre as compensações por cortes de geração",
-      "detalhe": "Encontro online, às dez horas, sobre o procedimento das compensações por cortes de geração eólica e solar. O acesso é pelo portal de cursos da câmara, na aba de transmissões ao vivo, e exige cadastro.",
-      "status": "CONFIRMADO",
-      "fonte": "Câmara de comercialização de energia elétrica",
-      "url": "[pendente-fonte]"
-    },
-    {
-      "data": "2026-10-09",
-      "titulo": "Regra de ordenamento dos cortes de geração editada como resolução normativa nº 1.170, de 6 de outubro de 2026",
-      "detalhe": "O texto circula em repositório jurídico e em comunicação de associação setorial, que indica publicação em 9 de outubro. A data no diário oficial não foi conferida nesta rodada.",
-      "status": "A VERIFICAR",
-      "fonte": "Repositório jurídico e comunicação de associação setorial",
-      "url": "[pendente-fonte]"
     }
   ],
   "acao_7dias": [
-    {
-      "data": "2026-11-09",
-      "titulo": "Encerra na agência reguladora a consulta pública nº 33/2026, do módulo três dos procedimentos de distribuição",
-      "detalhe": "Contribuições por sessenta dias, desde 10 de setembro. Comunicação de associação setorial indica prorrogação até 30 de novembro; a prorrogação não foi conferida em ato oficial.",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br da agência reguladora",
-      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026-defeso-eleitoral/aneel-propoe-novas-regras-para-preparar-a-rede-eletrica-para-geracao-solar-baterias-e-veiculos-eletricos"
-    },
-    {
-      "data": "2026-11-09",
-      "titulo": "Encontro de líderes ambientais no setor de energia, em São Paulo, até 11 de novembro",
-      "detalhe": "Décima sétima edição, no Hotel Pullman Vila Olímpia. Página de inscrição reaberta em 9 de novembro.",
-      "status": "CONFIRMADO",
-      "fonte": "Página de inscrição do evento",
-      "url": "https://www.sympla.com.br/evento/17-lase---lideres-ambientais-no-setor-de-energia/3277178"
-    },
-    {
-      "data": "2026-11-10",
-      "titulo": "Congresso de energia no Ceará, até 13 de novembro",
-      "detalhe": "Aquiraz Riviera, segundo a associação de produtores independentes. Um site do evento indica 30 e 31 de março de 2027, em Natal. Nenhuma página do evento com a data de novembro foi localizada.",
-      "status": "A VERIFICAR",
-      "fonte": "Comunicação de associação setorial",
-      "url": "[pendente-fonte]"
-    },
-    {
-      "data": "2026-11-11",
-      "titulo": "Encerra a consulta pública do ministério sobre as metas do programa Energias da Amazônia",
-      "detalhe": "",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br do ministério",
-      "url": "https://consultas-publicas.mme.gov.br/"
-    },
-    {
-      "data": "2026-11-13",
-      "titulo": "Sessão pública dos leilões de energia existente",
-      "detalhe": "Certames de um, dois e três anos de antecedência, para qualquer fonte, com contratos de dois anos e suprimento a partir de janeiro de 2027, de 2028 e de 2029.",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br da agência reguladora",
-      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026-defeso-eleitoral/agencia-aprova-edital-dos-leiloes-de-energia-existente-a-1-a-2-e-a-3"
-    },
     {
       "data": "2026-11-16",
       "titulo": "Prazo para as distribuidoras enviarem as previsões de declarações de necessidades dos leilões de energia nova de 2027",
@@ -281,7 +273,7 @@
     {
       "data": "2026-11-16",
       "titulo": "Treinamento da sistemática dos leilões de reserva de capacidade de armazenamento",
-      "detalhe": "",
+      "detalhe": "Cronograma reconferido na página do leilão em 14 de novembro, sem alteração.",
       "status": "CONFIRMADO",
       "fonte": "Página do leilão no banco nacional de desenvolvimento",
       "url": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/servicos-online/credenciamento-de-equipamentos/leilao-reserva-capacidade-forma-de-potencia-lrcap-2026"
@@ -289,15 +281,15 @@
     {
       "data": "2026-11-16",
       "titulo": "Congresso brasileiro de eficiência energética, em São Paulo, até 17 de novembro",
-      "detalhe": "Vigésima segunda edição, promovida pela associação das empresas de serviços de conservação de energia. Local e inscrições não conferidos na página oficial.",
-      "status": "A VERIFICAR",
-      "fonte": "Imprensa setorial",
-      "url": "[pendente-fonte]"
+      "detalhe": "Vigésima segunda edição, promovida pela associação das empresas de serviços de conservação de energia, no auditório do conselho regional de engenharia de São Paulo, na Avenida Angélica, 2.364. Inscrições pagas até 17 de novembro. Datas conferidas na página da associação e na página oficial de inscrição em 14 de novembro.",
+      "status": "CONFIRMADO",
+      "fonte": "Página da associação organizadora e página oficial de inscrição",
+      "url": "https://www.abesco.com.br/"
     },
     {
       "data": "2026-11-17",
       "titulo": "Reunião pública ordinária da diretoria da agência reguladora",
-      "detalhe": "Seguem no calendário oficial o circuito deliberativo de 24 de novembro e as reuniões de 1º e de 8 de dezembro.",
+      "detalhe": "Seguem no calendário oficial o circuito deliberativo de 24 de novembro e as reuniões de 1º e de 8 de dezembro. Calendário reaberto em 14 de novembro.",
       "status": "CONFIRMADO",
       "fonte": "gov.br da agência reguladora",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2025/aneel-divulga-calendario-de-reunioes-publicas-e-circuitos-deliberativos-de-2026"
@@ -305,69 +297,61 @@
     {
       "data": "2026-11-17",
       "titulo": "Segunda edição do fórum de análise setorial da câmara de comercialização, em São Paulo, com inscrições abertas",
-      "detalhe": "Grand Hyatt São Paulo, com participação presencial e online. A câmara anunciou em 6 de novembro as últimas semanas de inscrição, sem data limite.",
+      "detalhe": "Grand Hyatt São Paulo, presencial e online, a partir das nove horas. A câmara publicou em 10 de novembro a programação com os painelistas confirmados e informou que as inscrições estão abertas, sem data limite.",
       "status": "CONFIRMADO",
       "fonte": "Câmara de comercialização de energia elétrica",
-      "url": "https://www.ccee.org.br/web/guest/-/ultimas-semanas-para-garantir-sua-participacao-no-2-forum-analise-setorial-ccee"
+      "url": "https://www.ccee.org.br/web/guest/-/2-forum-analise-setorial-ccee-confira-os-painelistas-confirmados-para-discutir-o-futuro-da-energia"
     },
     {
       "data": "2026-11-17",
-      "titulo": "Encerra a consulta pública do ministério sobre as diretrizes do leilão dos sistemas isolados de 2027",
-      "detalhe": "Data indicada pela imprensa; não conferida no portal de consultas.",
-      "status": "A VERIFICAR",
-      "fonte": "Imprensa setorial",
-      "url": "https://consultas-publicas.mme.gov.br/"
+      "titulo": "Encerra a consulta pública nº 240/2026, do ministério, sobre as diretrizes do leilão dos sistemas isolados de 2027",
+      "detalhe": "Prazo confirmado na notícia oficial de 11 de novembro e no portal de consultas do ministério, reaberto em 14 de novembro.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br do ministério e portal de consultas do ministério",
+      "url": "https://www.gov.br/mme/pt-br/assuntos/noticias/novembro-26/mme-promove-webinar-sobre-as-diretrizes-do-leilao-dos-sistemas-isolados-de-2027"
     },
     {
       "data": "2026-11-18",
       "titulo": "Inscrição nos leilões de reserva de capacidade de armazenamento, até 20 de novembro",
-      "detalhe": "Das oito horas de 18 de novembro às vinte e três horas de 20 de novembro. As garantias de proposta vão de 18 a 23 de novembro.",
+      "detalhe": "Das oito horas de 18 de novembro às vinte e três horas de 20 de novembro. As garantias de proposta vão de 18 a 23 de novembro. Cronograma reconferido em 14 de novembro.",
       "status": "CONFIRMADO",
       "fonte": "Página do leilão no banco nacional de desenvolvimento",
       "url": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/servicos-online/credenciamento-de-equipamentos/leilao-reserva-capacidade-forma-de-potencia-lrcap-2026"
     },
     {
-      "data": "2026-11-19",
-      "titulo": "Janela de reenvio de dados de geração para a apuração das compensações por cortes, até 18 de dezembro",
-      "detalhe": "Vale para as usinas que aderirem ao termo de compromisso da portaria normativa nº 140/2026.",
-      "status": "A VERIFICAR",
-      "fonte": "Comunicação de associação setorial",
-      "url": "[pendente-fonte]"
-    }
-  ],
-  "proximos_30d": [
-    {
       "data": "2026-11-20",
-      "titulo": "Encerra a tomada de subsídios sobre o orçamento de 2027 da conta de desenvolvimento energético",
-      "detalhe": "Data indicada por associação setorial; não conferida na página oficial.",
-      "status": "A VERIFICAR",
-      "fonte": "Comunicação de associação setorial",
-      "url": "[pendente-fonte]"
+      "titulo": "Encerra a tomada de subsídios nº 41/2026, sobre o orçamento de 2027 da conta de desenvolvimento energético",
+      "detalhe": "Contribuições pelo e-mail indicado na página oficial, por intercâmbio documental.",
+      "status": "CONFIRMADO",
+      "fonte": "Página de tomadas de subsídios da agência reguladora",
+      "url": "https://antigo.aneel.gov.br/web/guest/tomadas-de-subsidios"
     },
     {
       "data": "2026-11-22",
-      "titulo": "Encerra a consulta pública do ministério sobre a infraestrutura de recarga de veículos elétricos",
-      "detalhe": "Contribuições pelo portal de consultas do ministério e pela plataforma Brasil Participativo.",
+      "titulo": "Encerra a consulta pública nº 237/2026, do ministério, sobre a infraestrutura de recarga de veículos elétricos",
+      "detalhe": "Contribuições pelo portal de consultas do ministério e pela plataforma Brasil Participativo. Prazo reconferido no portal em 14 de novembro.",
       "status": "CONFIRMADO",
-      "fonte": "gov.br do ministério",
+      "fonte": "Portal de consultas do ministério",
       "url": "https://consultas-publicas.mme.gov.br/"
     },
     {
-      "data": "2026-11-22",
+      "data": "2026-11-23",
       "titulo": "Encerra a consulta pública nº 36/2026, sobre as regras de acesso à transmissão",
-      "detalhe": "",
+      "detalhe": "Minutas de resolução e revisão dos módulos 1 e 5 das regras dos serviços de transmissão. O aviso fixava 22 de novembro; como a data não é dia útil, a página oficial de consultas indica prazo automático até as 23h59 de 23 de novembro.",
       "status": "CONFIRMADO",
-      "fonte": "gov.br da agência reguladora",
-      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026-defeso-eleitoral/aneel-abre-consulta-publica-para-aprimorar-regras-em-funcao-da-implantacao-de-politica-nacional-de-acesso-ao-sistema-de-transmissao"
+      "fonte": "Página de consultas públicas da agência reguladora",
+      "url": "https://antigo.aneel.gov.br/web/guest/consultas-publicas"
     },
     {
       "data": "2026-11-24",
       "titulo": "Encontro para debates de assuntos de operação, no Rio de Janeiro, até 26 de novembro",
-      "detalhe": "Décima nona edição, no Windsor Barra. Data reconfirmada na página da entidade organizadora em 12 de outubro.",
+      "detalhe": "Décima nona edição, no Windsor Barra Hotel. Datas e local reconfirmados no site oficial do evento em 14 de novembro; a página da entidade organizadora traz as mesmas datas.",
       "status": "CONFIRMADO",
       "fonte": "Página oficial do evento",
-      "url": "https://cigre.org.br/proximos-eventos/"
-    },
+      "url": "https://edao.com.br/"
+    }
+  ],
+  "proximos_30d": [
     {
       "data": "2026-11-26",
       "titulo": "Simulação dos leilões de reserva de capacidade de armazenamento",
@@ -379,26 +363,26 @@
     {
       "data": "2026-11-30",
       "titulo": "Encontro técnico sobre transformadores e subestações, em Belo Horizonte, até 2 de dezembro",
-      "detalhe": "Décima segunda edição, no Minascentro. Reconfirmado no site oficial do evento em 7 de outubro.",
+      "detalhe": "Décima segunda edição, no Minascentro. Datas e local reconfirmados no site oficial do evento em 14 de novembro.",
       "status": "CONFIRMADO",
       "fonte": "Página oficial do evento",
-      "url": "[pendente-fonte]"
+      "url": "https://cigreworkspot.com.br/"
     },
     {
       "data": "2026-11-30",
-      "titulo": "Encerra a consulta pública do ministério sobre as regras do plano de outorgas de transmissão",
-      "detalhe": "Data indicada pela imprensa; não conferida no portal de consultas.",
-      "status": "A VERIFICAR",
-      "fonte": "Imprensa setorial",
+      "titulo": "Encerra a consulta pública nº 239/2026, do ministério, sobre as diretrizes do plano de outorgas de transmissão",
+      "detalhe": "Prazo conferido no portal de consultas do ministério em 14 de novembro.",
+      "status": "CONFIRMADO",
+      "fonte": "Portal de consultas do ministério",
       "url": "https://consultas-publicas.mme.gov.br/"
     },
     {
-      "data": "2026-12-01",
-      "titulo": "Abertura esperada da consulta pública de revisão da resolução normativa nº 1.030/2022, no início de dezembro",
-      "detalhe": "Sem dia fixado; a data registrada é referência do mês. Previsão relatada por associação setorial, com cerca de 45 dias de contribuições.",
-      "status": "A VERIFICAR",
-      "fonte": "Comunicação de associação setorial",
-      "url": "[pendente-fonte]"
+      "data": "2026-11-30",
+      "titulo": "Encerra a consulta pública nº 33/2026, do módulo três dos procedimentos de distribuição, com prazo prorrogado",
+      "detalhe": "Requisitos de observabilidade, operabilidade e controlabilidade dos recursos energéticos distribuídos. O prazo original era 9 de novembro; a página oficial de consultas indica prorrogação até 30 de novembro. Contribuições em formato Word, no modelo da agência.",
+      "status": "CONFIRMADO",
+      "fonte": "Página de consultas públicas da agência reguladora",
+      "url": "https://antigo.aneel.gov.br/web/guest/consultas-publicas"
     },
     {
       "data": "2026-12-01",
@@ -411,18 +395,10 @@
     {
       "data": "2026-12-01",
       "titulo": "Congresso de data centers e energia crítica, em São Paulo, até 2 de dezembro",
-      "detalhe": "No Novotel Center Norte, com inscrições abertas no terceiro lote, até 1.º de dezembro. Página oficial do evento reaberta em 9 de novembro.",
+      "detalhe": "No Novotel Center Norte, com inscrições abertas no terceiro lote, até 1º de dezembro. Página oficial do evento reaberta em 14 de novembro.",
       "status": "CONFIRMADO",
       "fonte": "Página oficial do evento",
       "url": "https://eventocdec.com.br/"
-    },
-    {
-      "data": "2026-12-02",
-      "titulo": "Encontro nacional da associação do setor solar, em São Paulo, até 3 de dezembro",
-      "detalhe": "Sexta edição. A data segue a confirmar: a página de eventos da associação não lista a edição de 2026, pela vigésima leitura, em 9 de novembro.",
-      "status": "A VERIFICAR",
-      "fonte": "Comunicação de associação setorial",
-      "url": "https://eventos.absolar.org.br/"
     },
     {
       "data": "2026-12-02",
@@ -434,11 +410,11 @@
     },
     {
       "data": "2026-12-04",
-      "titulo": "Encerra a tomada de subsídios da agência reguladora sobre o submódulo 7.10 dos procedimentos de regulação tarifária",
-      "detalhe": "Data indicada por associação setorial; não conferida na página oficial.",
-      "status": "A VERIFICAR",
-      "fonte": "Comunicação de associação setorial",
-      "url": "[pendente-fonte]"
+      "titulo": "Encerra a tomada de subsídios nº 40/2026, sobre o submódulo 7.10 dos procedimentos de rede",
+      "detalhe": "Implantação e análise do sistema de registro de perturbações. Prazo conferido na página oficial em 14 de novembro.",
+      "status": "CONFIRMADO",
+      "fonte": "Página de tomadas de subsídios da agência reguladora",
+      "url": "https://antigo.aneel.gov.br/web/guest/tomadas-de-subsidios"
     },
     {
       "data": "2026-12-08",
@@ -447,24 +423,64 @@
       "status": "CONFIRMADO",
       "fonte": "gov.br da agência reguladora",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2025/aneel-divulga-calendario-de-reunioes-publicas-e-circuitos-deliberativos-de-2026"
+    },
+    {
+      "data": "2026-12-10",
+      "titulo": "Encerra a consulta pública nº 242/2026, do ministério, sobre o manual do programa Luz para Todos",
+      "detalhe": "Prazo conferido no portal de consultas do ministério em 14 de novembro.",
+      "status": "CONFIRMADO",
+      "fonte": "Portal de consultas do ministério",
+      "url": "https://consultas-publicas.mme.gov.br/"
+    },
+    {
+      "data": "2026-12-14",
+      "titulo": "Encerra a consulta pública nº 40/2026, sobre o fim do desconto nas tarifas de uso dos sistemas no mercado livre",
+      "detalhe": "Consulta listada como vigente na página oficial de consultas em 14 de novembro.",
+      "status": "CONFIRMADO",
+      "fonte": "gov.br da agência reguladora",
+      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/mercado-livre-de-energia-consulta-publica-propoe-regulamentacao-do-fim-do-desconto-nas-tarifas-de-uso-dos-sistemas"
     }
   ],
   "horizonte": [
     {
-      "data": "2026-12-14",
-      "titulo": "Encerra a consulta pública nº 40/2026, sobre o fim do desconto nas tarifas de uso dos sistemas no mercado livre",
-      "detalhe": "",
+      "data": "2026-12-18",
+      "titulo": "Encerra a consulta pública nº 241/2026, do ministério, sobre a garantia física das usinas eólicas e solares",
+      "detalhe": "Prazo reconferido no portal de consultas do ministério em 14 de novembro.",
       "status": "CONFIRMADO",
-      "fonte": "gov.br da agência reguladora",
-      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/mercado-livre-de-energia-consulta-publica-propoe-regulamentacao-do-fim-do-desconto-nas-tarifas-de-uso-dos-sistemas"
+      "fonte": "gov.br do ministério e portal de consultas do ministério",
+      "url": "https://www.gov.br/mme/pt-br/assuntos/noticias/novembro-26/mme-abre-consulta-publica-para-aprimoramento-da-metodologia-de-calculo-de-garantia-fisica-de-usinas-eolicas-e-solares-fotovoltaicas"
     },
     {
       "data": "2026-12-18",
-      "titulo": "Encerra a consulta pública do ministério sobre a garantia física das usinas eólicas e solares",
+      "titulo": "Encerra a chamada da empresa de pesquisa energética para projetos de sistemas de armazenamento hidráulico",
       "detalhe": "",
       "status": "CONFIRMADO",
-      "fonte": "gov.br do ministério",
-      "url": "https://www.gov.br/mme/pt-br/assuntos/noticias/novembro-26/mme-abre-consulta-publica-para-aprimoramento-da-metodologia-de-calculo-de-garantia-fisica-de-usinas-eolicas-e-solares-fotovoltaicas"
+      "fonte": "Empresa de pesquisa energética",
+      "url": "https://www.epe.gov.br/pt/imprensa/noticias/epe-abre-chamada-para-recebimento-de-projetos-de-sistemas-de-armazenamento-hidraulico-sah-"
+    },
+    {
+      "data": "2026-12-18",
+      "titulo": "Entrega à câmara de comercialização dos documentos de habilitação dos leilões de reserva de capacidade de armazenamento",
+      "detalhe": "Etapa posterior à sessão, pelo sistema de gerenciamento de leilões, segundo o cronograma oficial.",
+      "status": "CONFIRMADO",
+      "fonte": "Página do leilão no banco nacional de desenvolvimento",
+      "url": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/servicos-online/credenciamento-de-equipamentos/leilao-reserva-capacidade-forma-de-potencia-lrcap-2026"
+    },
+    {
+      "data": "2026-12-21",
+      "titulo": "Encerra a segunda fase da tomada de subsídios nº 22/2024, sobre a ferramenta de cálculo das tarifas de uso da transmissão e da distribuição para geradores",
+      "detalhe": "Substituição da ferramenta de cálculo e publicação das tarifas com duas casas decimais. A data final do aviso não é dia útil; a página oficial indica prazo automático até as 23h59 de 21 de dezembro.",
+      "status": "CONFIRMADO",
+      "fonte": "Página de tomadas de subsídios da agência reguladora",
+      "url": "https://antigo.aneel.gov.br/web/guest/tomadas-de-subsidios"
+    },
+    {
+      "data": "2026-12-24",
+      "titulo": "Encerra a tomada de subsídios nº 43/2026, sobre os requisitos técnicos mínimos de conexão às instalações de transmissão",
+      "detalhe": "",
+      "status": "CONFIRMADO",
+      "fonte": "Página de tomadas de subsídios da agência reguladora",
+      "url": "https://antigo.aneel.gov.br/web/guest/tomadas-de-subsidios"
     },
     {
       "data": "2026-12-31",
@@ -484,7 +500,7 @@
     },
     {
       "data": "2027-04-30",
-      "titulo": "Leilão de transmissão nº 1/2027, o primeiro com baterias na transmissão",
+      "titulo": "Leilão de transmissão nº 1/2027, com contratação de baterias na transmissão",
       "detalhe": "Na B3, em São Paulo. O edital passa por consulta pública até 26 de outubro, deliberação prévia da diretoria e análise do tribunal de contas a partir de dezembro.",
       "status": "CONFIRMADO",
       "fonte": "gov.br da agência reguladora e imprensa setorial",
@@ -492,7 +508,7 @@
     },
     {
       "data": "2027-11-25",
-      "titulo": "Primeiro marco de abertura do mercado livre para consumidores de baixa tensão",
+      "titulo": "Marco inicial de abertura do mercado livre para consumidores de baixa tensão",
       "detalhe": "O decreto de 2026 fixa a abertura para consumidores comerciais e industriais de baixa tensão nesta data, e para residenciais e demais em 25 de novembro de 2028.",
       "status": "CONFIRMADO",
       "fonte": "gov.br da agência reguladora",
