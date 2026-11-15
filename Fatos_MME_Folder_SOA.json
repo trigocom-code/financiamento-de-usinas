@@ -36,6 +36,14 @@
           "fatos[5]",
           "_pendentes_verificacao[0]"
         ]
+      },
+      {
+        "data": "2026-11-15",
+        "relidos": [
+          "fatos[0]",
+          "_pendentes_verificacao[1]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ]
   },
@@ -47,7 +55,7 @@
       "status": "AGENDADO",
       "norma": "Portaria Normativa MME 136/2026 · DOU 03/06/2026 · arts. 4º, 5º, 7º, 9º, 11 e 17 + Anexos I e II",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-136-2026.pdf",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 18,
       "vetores_afetados": [
@@ -94,7 +102,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ons.org.br/AcervoDigitalDocumentosEPublicacoes/NT-ONS%20DPL%200095-2026-R1%20%E2%80%93%20LRCAP%20Armazenamento%202026.pdf"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ons.org.br/AcervoDigitalDocumentosEPublicacoes/NT-ONS%20DPL%200095-2026-R1%20%E2%80%93%20LRCAP%20Armazenamento%202026.pdf",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-136-2026.pdf | PDF do MME relido em 15/11/2026. Conferem a portaria de 1º/06/2026, as datas dos leiloes (02/12 e 04/12), o suprimento 'em 1º de agosto de 2028', o limite de 30 MW e a frase 'β = 0,9 para EMPREENDIMENTOS conectados aos pontos de conexão descritos no ANEXO II'. Nenhuma marca de alteracao no PDF. Stat"
     },
     {
       "fato_id": "MME-PORTARIA-129-DEC-12772",
@@ -483,7 +492,7 @@
       "status": "RESOLVIDO — ATO PUBLICADO (Portaria Normativa MME no 140, de 18/07/2026, DOU 21/07/2026)",
       "norma": "Portaria Normativa MME nº 140, de 18/07/2026 (DOU 21/07/2026, Ed. 135-A, Seção 1 - Extra A, p. 10), Anexo I - Termo de Compromisso · Despacho ANEEL nº 1.669, de 12/05/2026 (DOU 18/05/2026) · Despacho ANEEL nº 3.831, de 29/09/2026 (DOU 07/10/2026)",
       "url": "https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 11,
       "vetores_afetados": [
@@ -512,7 +521,8 @@
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Ponteiro F3 (ABSOLAR). Vigiar publicação do Termo de Compromisso no DOU e a recontabilização da CCEE de 29/07. Confirmar se a versão publicada exclui a reclassificação da sobreoferta MMGD/térmica.",
       "pendencia_verificacao": "F3 puro em 18/07. Ato não publicado; Despacho 1.669/2026 não lido em F1. Não citar teor em material externo antes de F1/DOU. | 20/07/2026 - NEGATIVO VERIFICADO NO DOU (primeira vez com o DOU efetivamente acessivel): busca no in.gov.br via render JS na janela 15-20/07/2026 nao retornou nenhum 'Termo de Compromisso' do MME em materia de energia, e a busca por 'Portaria Normativa' com Orgao Principal = Ministerio de Minas e Energia retornou apenas ato de pessoal. A pagina oficial de noticias do MME foi reaberta em F1 (carimbo 'Atualizado em 17/07/2026 14h01'), item mais recente 17/07 sem ato regulatorio. CONCLUSAO: o Termo anunciado por F3 (GTGC 17/07) como 'pronto para publicacao' NAO foi publicado ate 20/07/2026. MANTIDO LARANJA. Vigiar DOU e a recontabilizacao CCEE de 29/07. | 21/07/2026 - NEGATIVO VERIFICADO NO DOU PELA 2ª VEZ: busca no in.gov.br (render JS) por \"Termo de Compromisso\", Seção 1, Órgão Principal = Ministério de Minas e Energia, janela 18-21/07/2026 -> 0 resultados. Página de notícias do MME reaberta em F1 (carimbo 'Atualizado em 20/07/2026 14h35'): item mais recente 20/07 é matéria didática de planejamento energético, sem ato. O Termo anunciado por F3 (GTGC 17/07) segue NÃO PUBLICADO. MANTIDO LARANJA. Vigiar DOU e a recontabilização CCEE de 29/07.",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777 | DOU 21/07/2026, Ed. 135-A, p. 10, relido. O art. 5º, § 4º, enquadra os cortes 'exclusivamente em uma das seguintes classificações: I - indisponibilidade externa; II - confiabilidade el[étrica]...'. Busca no texto por MMGD, minigeracao e ordem de merito: zero ocorrencias. Os Despachos ANEEL 1.669/202"
     }
   ],
   "_historico_caidos": []

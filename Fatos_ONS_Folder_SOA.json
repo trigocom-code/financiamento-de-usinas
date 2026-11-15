@@ -51,6 +51,16 @@
           "fatos[2]",
           "fatos[7]"
         ]
+      },
+      {
+        "data": "2026-11-15",
+        "relidos": [
+          "fatos[6]",
+          "fatos[8](sem F1)",
+          "_pendentes_verificacao[0](sem F1)",
+          "_pendentes_verificacao[2](sem F1)"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 1, CONFIRMADO 1. _meta.verificado_em = data do item publicado mais antigo."
@@ -342,7 +352,7 @@
       "status": "VIGENTE",
       "norma": "Resolução CMSE nº 1, de 6 de julho de 2026, arts. 2º, II; 3º, I; 4º, I; e 6º, I — DOU 08/07/2026, Ed. 126, Seção 1, p. 134",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 11,
       "vetores_afetados": [
@@ -373,7 +383,8 @@
       "orgao": "ONS",
       "gatilho_revisao": "Publicação da metodologia dos estudos prospectivos pelo ONS (prazo do Art. 4º, I: 180 dias de 08/07/2026, ~04/01/2027 por contagem própria) e primeira CRef aprovada pelo CMSE (até dezembro/2026).",
       "pendencia_verificacao": "Os deveres estão ancorados no ato. O CUMPRIMENTO por parte do ONS não foi verificado — o portal do ONS segue cego para o monitor. Não afirmar que o ONS publicou metodologia ou CRef sem reabrir a fonte. | sem F1 acessível em 14/11/2026: Concordo: não há F1 legível hoje para os artigos. O link do DOU deu 'socket hang up' no WebFetch, também na versão de impressão do pesquisa.in.gov.br. Pelo Chrome, a página do DOU nunca terminou de carregar: três tentativas, e depois o grupo de abas foi fechado por ou",
-      "tentado_em": "2026-11-14"
+      "tentado_em": "2026-11-14",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289 | Ato lido no DOU em 15/11/2026 por curl: 08/07/2026, Ed. 126, Secao 1, p. 134. Conferem o art. 4, I ('180 (cento e oitenta) dias... observando o princípio da transparência') e o art. 6 ('até a terceira reunião ordinária do CMSE do ano subsequente'). Cumprimento pelo ONS (metodologia, CRef de nov/2026"
     },
     {
       "fato_id": "ONS-PORTARIA-140-2026-DEVERES",
@@ -448,8 +459,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "tentado_em": "2026-11-14",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Concordo. Duas buscas restritas a ons.org.br, gov.br, ccee.org.br e aneel.gov.br não acharam a NT-ONS DPL 0031/2024 revisada, nem notícia oficial sobre a correção nas horas de nascer e pôr do sol. Apareceram só a REN 1.073/2023 e submódulos que descrevem a função de p"
+      "tentado_em": "2026-11-15",
+      "pendencia_verificacao": "sem F1 acessível em 15/11/2026: A NT-ONS DPL 0031/2024 revisada nao foi achada em dominio oficial (busca em ons.org.br, gov.br, ccee.org.br). A consulta a API do acervo do ONS foi negada pelo controle de permissoes desta sessao, e o SINtegre exige login. || anterior: sem F1 acessível em 14/11/2026: Concordo. Duas buscas restritas a ons.org.br, gov.br, ccee.org.br e aneel.gov.br não acharam a NT-ONS DPL 0031/2024 revisada, nem notícia oficial sobre a correção nas horas de nascer e pôr do sol. Apareceram só a REN 1.073/2023 e submódulos que descrevem a função de p"
     }
   ],
   "_pendentes_verificacao": [
@@ -471,9 +482,9 @@
       "qsv_origem_classificacao": "reverificacao_negativa_F1_acervo_publico_ONS_01set2026_0847_rota_anonima",
       "numero_status": "SEM_NUMEROS",
       "motivo_pendencia": "Exige camada portal / SINTEGRE (Chrome logado, sessao interativa). Reverificar diariamente ate a contestacao de 09/09.",
-      "pendencia_verificacao": "[A VERIFICAR] SINtegre (portal logado, HTTP 302 anonimo reconfirmado em 01/09) - unica rota que distingue nao consta do acervo publico de nao foi divulgado. [NOTA DE METODO 01/09] O limite declarado de que a lista entrega METADADO e nao ARQUIVO esta SUPERADO: a rota items(<Id>)/File devolve HTTP 200 com Name, ServerRelativeUrl e Length, e o PDF e baixado direto de www.ons.org.br mais o ServerRelativeUrl. AttachmentFiles em HTTP 400 e _api/search/query em HTTP 500 seguem falhando, mas eram a rota errada. | sem F1 acessível em 14/11/2026: Concordo. A rota do item (API da lista do Acervo Digital do ONS) foi recusada pelo controle de permissões desta sessão no WebFetch. O SINtegre exige login. A busca em ons.org.br, gov.br e ccee.org.br não achou publicação do ONS com cronograma ou critérios de validação",
+      "pendencia_verificacao": "sem F1 acessível em 15/11/2026: A consulta a API do Acervo Digital do ONS foi negada pelo controle de permissoes desta sessao. O SINtegre exige login. Busca em ons.org.br, gov.br e ccee.org.br nao achou publicacao com cronograma ou criterios de validacao do art. 4, § 1, I. || anterior: [A VERIFICAR] SINtegre (portal logado, HTTP 302 anonimo reconfirmado em 01/09) - unica rota que distingue nao consta do acervo publico de nao foi divulgado. [NOTA DE METODO 01/09] O limite declarado de que a lista entrega METADADO e nao ARQUIVO esta SUPERADO: a rota items(<Id>)/File devolve HTTP 200 com Name, ServerRelativeUrl e Length, e o PDF e baixado direto de www.ons.org.br mais o ServerRelativeUrl. AttachmentFiles em HTTP 400 e _api/search/query em HTTP 500 seguem falhando, mas eram a rota errada. | sem F1 acessível em 14/11/2026: Concordo. A rota do item (API da lista do Acervo Digital do ONS) foi recusada pelo controle de permissões desta sessão no WebFetch. O SINtegre exige login. A busca em ons.org.br, gov.br e ccee.org.br não achou publicação do ONS com cronograma ou critérios de validação",
       "gatilho_revisao": "publicacao no acervo publico do ONS ou no SINtegre; leitura do fim do dia de 31/08; abertura da janela de contestacao do art. 4o par. 2o",
-      "tentado_em": "2026-11-14"
+      "tentado_em": "2026-11-15"
     },
     {
       "fato_id": "ONS-PROCEDIMENTOS-REDE-DECRETO-12772-2025",
@@ -507,9 +518,9 @@
       "qsv_cor": "LARANJA",
       "qsv_origem_classificacao": "marco_de_calendario_ancorado_no_ato + reverificacao_negativa_FORTE_canal_publico_01set2026_0847_rota_anonima_propria",
       "numero_status": "ANCORADO_PARCIAL",
-      "pendencia_verificacao": "[A VERIFICAR] Se a divulgacao ocorreu no SINtegre em 31/08/2026 - so o portal logado responde, e ele devolve HTTP 302 anonimo. Enquanto nao houver essa leitura, nao se afirma nem a ocorrencia nem a ausencia da divulgacao; afirma-se apenas que nao consta do acervo publico do ONS. Nao cravar o inicio do prazo de contestacao: a casa trabalha com 09/09/2026 por leitura conservadora, e essa data so se sustenta se a divulgacao tiver ocorrido em 31/08. [NOTA DE METODO 01/09] O limite declarado ate 31/08 de que o acervo entrega metadado e nao arquivo esta SUPERADO: a rota items(<Id>)/File devolve HTTP 200 com ServerRelativeUrl e permite baixar o PDF direto, comprovada em dois documentos nesta janela. AttachmentFiles em HTTP 400 e _api/search/query em HTTP 500 continuam falhando, mas eram a rota errada. Consequencia: se as funcoes aparecerem no acervo, elas poderao ser lidas na integra sem navegador. | sem F1 acessível em 14/11/2026: Concordo. A parte normativa confere na Portaria 140, lida hoje: art. 4º, § 1º, III ('em até quarenta dias, o ONS deverá divulgar as funções de produtividade'), § 2º (contestação em 10 dias), § 3º (20 dias) e § 4º (prorrogação). Os 40 dias caem em 30/08/2026, domingo, ",
+      "pendencia_verificacao": "sem F1 acessível em 15/11/2026: A divulgacao das funcoes pelo ONS nao e verificavel: a API do acervo foi negada nesta sessao, o SINtegre exige login e a busca em dominios oficiais nao trouxe nada. || anterior: [A VERIFICAR] Se a divulgacao ocorreu no SINtegre em 31/08/2026 - so o portal logado responde, e ele devolve HTTP 302 anonimo. Enquanto nao houver essa leitura, nao se afirma nem a ocorrencia nem a ausencia da divulgacao; afirma-se apenas que nao consta do acervo publico do ONS. Nao cravar o inicio do prazo de contestacao: a casa trabalha com 09/09/2026 por leitura conservadora, e essa data so se sustenta se a divulgacao tiver ocorrido em 31/08. [NOTA DE METODO 01/09] O limite declarado ate 31/08 de que o acervo entrega metadado e nao arquivo esta SUPERADO: a rota items(<Id>)/File devolve HTTP 200 com ServerRelativeUrl e permite baixar o PDF direto, comprovada em dois documentos nesta janela. AttachmentFiles em HTTP 400 e _api/search/query em HTTP 500 continuam falhando, mas eram a rota errada. Consequencia: se as funcoes aparecerem no acervo, elas poderao ser lidas na integra sem navegador. | sem F1 acessível em 14/11/2026: Concordo. A parte normativa confere na Portaria 140, lida hoje: art. 4º, § 1º, III ('em até quarenta dias, o ONS deverá divulgar as funções de produtividade'), § 2º (contestação em 10 dias), § 3º (20 dias) e § 4º (prorrogação). Os 40 dias caem em 30/08/2026, domingo, ",
       "gatilho_revisao": "leitura do SINtegre; publicacao no acervo publico do ONS; qualquer comunicacao do ONS ou da CCEE sobre a abertura da janela de contestacao",
-      "tentado_em": "2026-11-14"
+      "tentado_em": "2026-11-15"
     }
   ],
   "_historico_caidos": []

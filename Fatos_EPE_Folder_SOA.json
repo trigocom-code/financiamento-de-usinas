@@ -35,6 +35,16 @@
           "fatos[0]",
           "_pendentes_verificacao[1]"
         ]
+      },
+      {
+        "data": "2026-11-15",
+        "relidos": [
+          "fatos[10]",
+          "fatos[11](sem F1)",
+          "_pendentes_verificacao[2](sem F1)",
+          "_pendentes_verificacao[0]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ]
   },
@@ -524,7 +534,7 @@
       "status": "VIGENTE",
       "norma": "EPE-DEE-RE-016/2026-REV1 (Estudo de Atendimento ao Sudeste do Pará, abril/2026) · NT socioambiental EPE-DEA-SMA-NT-011/2026",
       "url": "https://www.epe.gov.br/pt/areas-de-atuacao/energia-eletrica/planejamento-da-transmissao/estudos-de-planejamento",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "HIBRIDO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -556,7 +566,9 @@
         "verificado_em": "2026-06-30"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.epe.gov.br/pt/areas-de-atuacao/energia-eletrica/planejamento-da-transmissao/estudos-de-planejamento | Na página, o link do relatório está rotulado 'EPE-DEE-RE-016/2026-rev0' e o da NT 'EPE-DEA-SMA-NT-011/2026-rev0'; a norma do fato cita REV1. Conferir o rótulo do arquivo (rev0 x REV1). Nenhuma revisão posterior listada. Números (602 MW, R$ 1,315 bi) não relidos no PDF hoje.",
+      "pendencia_verificacao": "15/11/2026: a pagina da EPE rotula o relatorio como rev0; o fato cita REV1. Conferir a revisao no PDF."
     },
     {
       "fato_id": "EPE-MERCADO-DISTRIBUICAO-2025",
@@ -592,7 +604,9 @@
         "verificado_em": "2026-06-30"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "tentado_em": "2026-11-15",
+      "pendencia_verificacao": "sem F1 acessível em 15/11/2026: A página abre, mas só oferece Dados_abertos_Mercado_Distribuicao.xlsx e o dicionário, sem data de versão e sem números; o xlsx não foi lido, então a 'versão de 29/09/2026' e as cifras de GWh não foram reconferidas."
     },
     {
       "id": "lrcap_faq_manual_armazenamento",
@@ -623,7 +637,7 @@
       "status": "AGENDADO",
       "norma": "EPE · ~3 revisões/ano",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Revisoes-Quadrimestrais-da-Carga",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -651,7 +665,8 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Aguarda próxima publicação periódica",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/revisoes-quadrimestrais-da-carga"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/revisoes-quadrimestrais-da-carga",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/revisoes-quadrimestrais-da-carga | O ciclo mais recente na página segue 2026-2030 (PLAN, 1ª e 2ª RQ); nem 3ª RQ nem PLAN 2027-2031 publicados. Status AGENDADO mantido."
     },
     {
       "fato_id": "EPE-PROXIMAS-CPS",
@@ -723,8 +738,8 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Fato meta-interno — sem fonte externa independente por design",
-      "tentado_em": "2026-11-14",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Concordo com SEM_FONTE_ACESSIVEL. O fato descreve a arquitetura interna do Monitor da casa. Ele não tem fonte F1 possível: a URL é o site da própria casa, e a única referência é um documento interno de desenho. Não pode receber verificado_em novo. Também não é falso, "
+      "tentado_em": "2026-11-15",
+      "pendencia_verificacao": "sem F1 acessível em 15/11/2026: Fato meta-interno (arquitetura do Monitor da casa); não existe F1 externa por desenho. || anterior: sem F1 acessível em 14/11/2026: Concordo com SEM_FONTE_ACESSIVEL. O fato descreve a arquitetura interna do Monitor da casa. Ele não tem fonte F1 possível: a URL é o site da própria casa, e a única referência é um documento interno de desenho. Não pode receber verificado_em novo. Também não é falso, "
     }
   ],
   "_historico_caidos": []

@@ -62,6 +62,18 @@
           "fatos[8]",
           "_pendentes_verificacao[1]"
         ]
+      },
+      {
+        "data": "2026-11-15",
+        "relidos": [
+          "fatos[13]",
+          "fatos[14]",
+          "fatos[4]",
+          "fatos[5]",
+          "_pendentes_verificacao[8]",
+          "_pendentes_verificacao[10]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 7, CONFIRMADO 6. _meta.verificado_em = data do item publicado mais antigo."
@@ -302,7 +314,7 @@
       "status": "VIGENTE",
       "norma": "Despacho ANEEL 3.431, de 18/11/2025 · DOU 25/11/2025, Ed. 224, Seção 1, p. 93 · Processo 48500.033898/2025-54",
       "url": "https://www.in.gov.br/web/dou/-/despacho-n-3.431-de-18-de-novembro-de-2025-670734868",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -335,7 +347,9 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.in.gov.br/web/dou/-/despacho-n-3.431-de-18-de-novembro-de-2025-670734868 | Lido no DOU: 25/11/2025, Ed. 224, Secao 1, p. 93, processo 48500.033898/2025-54, 12 distribuidoras nomeadas (CPFL Paulista, Cemig D, Energisa MT, Copel D, Elektro, Celesc, Equatorial GO, Energisa MS, Coelba, RGE, EDP ES, Neoenergia PE); prazo de 20 dias para a IO. Higiene: o fato_id (ANEEL-REN-1150-",
+      "pendencia_verificacao": "15/11/2026: conteudo confere no DOU; o fato_id e as fontes do registro citam 'REN 1.150/2026', que nao e este ato (Despacho 3.431/2025). Corrigir cadastro com ok do CEO."
     },
     {
       "fato_id": "ANEEL-REN-1059-2023",
@@ -344,7 +358,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.059/2023 (Lei 14.300/2022)",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -378,7 +392,9 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.059-de-7-de-fevereiro-de-2023-463828999 | REN 1.059, de 7/2/2023, DOU 10/02/2023. Pelo ato, a fotovoltaica com baterias so e despachavel 'de até 3 MW de potência instalada', com modulacao de pelo menos 20%. O ato tem ainda a alinea c) da transicao: 5 MW para UCs ja conectadas em 7/1/2022 ou que protocolaram ate o prazo, que o valor omite. A",
+      "pendencia_verificacao": "15/11/2026: limites conferem no DOU de 10/02/2023; o ato tem regra de transicao de 5 MW para quem ja estava conectado em 07/01/2022, omitida no registro. A cifra de UCs do banco SOA nao e F1 (o Banco SOA nunca valida fato regulatorio)."
     },
     {
       "fato_id": "ANEEL-MME-PORTARIAS-126-111",
@@ -674,11 +690,11 @@
     {
       "fato_id": "ANEEL-CP-029-2026-PADROES-REDE-RESILIENCIA",
       "tema": "CP ANEEL no 29/2026 — padroes de rede e resiliencia dos sistemas de distribuicao: contribuicoes de 27/08 a 13/10/2026",
-      "valor": "CONSULTA PUBLICA ANCORADA EM F1, COM CONTRIBUICOES ATE 13/10/2026 (23h59). A ficha da consulta na ANEEL registra que, como a data final do aviso (12/10/2026) nao e dia util, o prazo fica automaticamente prorrogado ate as 23h59 de 13/10/2026. Aviso de Consulta Publica no 29/2026 da ANEEL, DOU de 26/08/2026, Secao 3, pagina 124. Processo no 48500.006650/2023-59. OBJETO VERBATIM: 'obter subsidios e informacoes adicionais para avaliar a necessidade e conveniencia de intervencao regulatoria para atualizar o aparato regulatorio relativo aos padroes de rede com vistas ao aumento da resiliencia dos sistemas de distribuicao de energia eletrica.' Modalidade: Intercambio de documentos. PERIODO PARA ENVIO VERBATIM: '27/8/2026 a 12/10/2026'. CORRECAO DE ROTULO, 26/08/2026: material interno da casa vinha descrevendo esta consulta como sendo de 'metas de enterramento de redes'. O objeto declarado no ato e mais amplo e nao usa essa expressao - fala de padroes de rede e resiliencia da distribuicao. Nao apresentar a CP 29/2026 como consulta de enterramento de redes.",
-      "status": "PRAZO DE CONTRIBUICOES ATE 13/10/2026 (23h59) — prorrogado automaticamente; o aviso fixava 12/10/2026",
+      "valor": "PRAZO ENCERRADO EM 13/10/2026; sem resultado publicado no DOU ate 15/11/2026. CONSULTA PUBLICA ANCORADA EM F1, COM CONTRIBUICOES ATE 13/10/2026 (23h59). A ficha da consulta na ANEEL registra que, como a data final do aviso (12/10/2026) nao e dia util, o prazo fica automaticamente prorrogado ate as 23h59 de 13/10/2026. Aviso de Consulta Publica no 29/2026 da ANEEL, DOU de 26/08/2026, Secao 3, pagina 124. Processo no 48500.006650/2023-59. OBJETO VERBATIM: 'obter subsidios e informacoes adicionais para avaliar a necessidade e conveniencia de intervencao regulatoria para atualizar o aparato regulatorio relativo aos padroes de rede com vistas ao aumento da resiliencia dos sistemas de distribuicao de energia eletrica.' Modalidade: Intercambio de documentos. PERIODO PARA ENVIO VERBATIM: '27/8/2026 a 12/10/2026'. CORRECAO DE ROTULO, 26/08/2026: material interno da casa vinha descrevendo esta consulta como sendo de 'metas de enterramento de redes'. O objeto declarado no ato e mais amplo e nao usa essa expressao - fala de padroes de rede e resiliencia da distribuicao. Nao apresentar a CP 29/2026 como consulta de enterramento de redes.",
+      "status": "PRAZO DE CONTRIBUICOES ENCERRADO em 13/10/2026 (23h59; o aviso fixava 12/10/2026, prorrogacao automatica)",
       "norma": "Aviso de Consulta Publica ANEEL no 29/2026 — DOU de 26/08/2026, Secao 3, p. 124 · Processo no 48500.006650/2023-59",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-29%2F2026-727896573",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -706,7 +722,8 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "pendencia_verificacao": "NOTA TECNICA E RELATORIO DE AIR NAO LIDOS - so o aviso foi lido. O numero do processo (48500.006650/2023-59) e de 2023, ou seja, a instrucao e anterior a consulta; nada foi lido sobre esse historico. Borda para a SOA/SOS e indireta, por perda nao tecnica e observabilidade da rede de distribuicao: registrar, nao priorizar.",
-      "gatilho_revisao": "publicacao da nota tecnica e do relatorio de AIR; encerramento do prazo em 12/10/2026"
+      "gatilho_revisao": "publicacao da nota tecnica e do relatorio de AIR; encerramento do prazo em 12/10/2026",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-29%2F2026-727896573 | Lido no DOU em 15/11/2026 (curl). Busca no DOU 20/08-15/11/2026 por 'Consulta Publica no 29/2026' achou so o aviso original: nenhum aviso de prorrogacao nem de resultado. A data 13/10 vem da ficha da ANEEL, nao relida hoje. Mudanca e so de fase (prazo vencido); o conteudo segue sustentado."
     },
     {
       "fato_id": "ANEEL-CP-026-2026-PROCEL-5PAR",
@@ -715,7 +732,7 @@
       "status": "PRAZO DE CONTRIBUICOES ENCERRADO",
       "norma": "Aviso de Consulta Publica ANEEL no 26/2026 — DOU de 06/08/2026, Secao 3, p. 107 · Processo no 48500.019929/2026-45",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-26%2F2026-723652899",
-      "verificado_em": "2026-11-06",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 3,
       "vetores_afetados": [
@@ -743,7 +760,8 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "pendencia_verificacao": "Prestacao de contas de programa de eficiencia energetica. Avaliada como provavelmente FORA do escopo dos vetores da SOA/SOS; registrada para fechar a data, nao para gerar peca. Documentos da prestacao de contas nao lidos.",
-      "gatilho_revisao": "encerramento do prazo em 04/09/2026"
+      "gatilho_revisao": "encerramento do prazo em 04/09/2026",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-26%2F2026-723652899 | DOU 06/08/2026, Ed. 147, Secao 3, p. 107 confere. Ficha da ANEEL (09/09) e retificacao de 10/08 nao relidas hoje; prazo encerrado nas duas leituras."
     },
     {
       "fato_id": "ANEEL-CP-034-2026-TIPO-III",
@@ -1142,7 +1160,7 @@
       "status": "SNAPSHOT DE FONTE OFICIAL — insumo de correcao, nao ato novo",
       "norma": "Listagem de Consultas Publicas vigentes da ANEEL (participacao social)",
       "url": "https://antigo.aneel.gov.br/pt/web/guest/consultas-publicas",
-      "verificado_em": "2026-07-28",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -1171,7 +1189,8 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Propagar as correcoes de prazo (CP 017 -> 24/08; CP 021 -> 17/08) para as agendas dos monitores de eventos e regulatorio. Abrir CP 015/2026 e CP 007/2026 em F1 para decidir se entram na watchlist.",
-      "pendencia_verificacao": "Avisos do DOU de cada CP nao reabertos item a item nesta run. || ANDAIME MOVIDO DO CAMPO RENDERIZADO EM 28/07/2026 (exigencia do gate validar_fatos.py, regra E1). Marcacoes originais: [A VERIFICAR F1]. Sentido inalterado: os elementos assim marcados NAO estao ancorados em fonte primaria reaberta e nao podem ser citados externamente ate a leitura do ato no DOU."
+      "pendencia_verificacao": "Avisos do DOU de cada CP nao reabertos item a item nesta run. || ANDAIME MOVIDO DO CAMPO RENDERIZADO EM 28/07/2026 (exigencia do gate validar_fatos.py, regra E1). Marcacoes originais: [A VERIFICAR F1]. Sentido inalterado: os elementos assim marcados NAO estao ancorados em fonte primaria reaberta e nao podem ser citados externamente ate a leitura do ato no DOU.",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-719799662 | Avisos do DOU relidos um a um: CP 17 prorrogada ate 24/08/2026 (DOU 17/07); CP 15 prorrogada ate 28/07/2026 (aviso no DOU 09/07); CP 21 com envio de 17/7 a 15/8/2026 (DOU 15/07), e 15/8 caiu num sabado, o que explica o 17/08 da listagem. As tres CPs estao encerradas hoje. O snapshot e historico, e a"
     },
     {
       "fato_id": "ANEEL-CP-025-2026-REGRAS-COMERCIALIZACAO",
@@ -1217,7 +1236,7 @@
       "status": "CONSULTA PUBLICA ABERTA — CP 036/2026, contribuicoes de 08/10/2026 a 23/11/2026 (o aviso fixava 22/11/2026)",
       "norma": "Item 6 da 15a RPO da ANEEL de 28/07/2026 (previa) · Processo 48500.000846/2026-82 · Decreto no 12.772/2025 · REN 905/2020, Modulos 1 e 5",
       "url": "https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/dsp_detalheNoticia.cfm?idNoticia=14784&idAreaNoticia=425",
-      "verificado_em": "2026-10-26",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "vetores_afetados": [
         "V3"
@@ -1234,7 +1253,8 @@
           "gt_origem": null
         }
       ],
-      "gatilho_revisao": "retorno do processo a pauta apos a vista; eventual instauracao da CP com numero e prazo proprios; envio pelo ONS das propostas de Procedimentos de Rede · leitura da NT 97/2026-STD e minutas; fim da CP em 22/11/2026"
+      "gatilho_revisao": "retorno do processo a pauta apos a vista; eventual instauracao da CP com numero e prazo proprios; envio pelo ONS das propostas de Procedimentos de Rede · leitura da NT 97/2026-STD e minutas; fim da CP em 22/11/2026",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-36/2026-737394063 | O Despacho 4.065/2026 foi relido no DOU (curl) e confere: CP de 45 dias de 8/10 a 22/11/2026, prioridade de MUST de 2029 e limites (iii) a (vi). O dia 22/11/2026 cai num domingo, e a prorrogacao para 23/11 (pela ficha da ANEEL) e coerente, mas a ficha nao foi relida. Faltam 8 dias. Higiene: o campo "
     }
   ],
   "_historico_caidos": []
