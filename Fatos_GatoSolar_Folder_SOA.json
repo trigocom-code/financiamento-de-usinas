@@ -20,6 +20,13 @@
           "fatos[5]",
           "fatos[3]"
         ]
+      },
+      {
+        "data": "2026-11-15",
+        "relidos": [
+          "fatos[0](sem F1)"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ]
   },
@@ -36,8 +43,8 @@
         "V2",
         "sHEC"
       ],
-      "tentado_em": "2026-11-14",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Concordo com o veredito. Não achei cópia da NT 107/2026-SFT em domínio oficial: a busca só devolve a NT 148/2025-STD e uma NT 107/2026-STR, que trata de tarifa da Energisa Tocantins e não tem relação com o tema. A busca no DOU pelo processo 48500.015900/2026-94 volta "
+      "tentado_em": "2026-11-15",
+      "pendencia_verificacao": "sem F1 acessível em 15/11/2026: A NT 107/2026-SFT esta no SEI da ANEEL. A conferencia por codigo CRC exige formulario e CAPTCHA, que nao preencho. Nao ha copia em dominio oficial aberto. || anterior: sem F1 acessível em 14/11/2026: Concordo com o veredito. Não achei cópia da NT 107/2026-SFT em domínio oficial: a busca só devolve a NT 148/2025-STD e uma NT 107/2026-STR, que trata de tarifa da Energisa Tocantins e não tem relação com o tema. A busca no DOU pelo processo 48500.015900/2026-94 volta "
     },
     {
       "tema": "A detecção hoje é por ESTIMATIVA (observado × esperado) — a cunha da prova física SOA",

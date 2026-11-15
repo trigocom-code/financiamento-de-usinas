@@ -3,7 +3,7 @@
     "orgao": "SUSEP/CNSP/STF (seguros · vetor Seguros & Evidência de Risco)",
     "schema_version": "1.0",
     "descricao": "Monitor Regulatório de Seguros. Trava canônica: a SOA/SOS é provedor NEUTRO de dado/índice/evidência — NUNCA seguradora, corretora ou MGA; NUNCA precifica, garante ou transfere risco. Cada item é PERÍMETRO/RISCO, HABILITADOR ou DEVER DO DADO. Validação jurídica de advogado de seguros é necessária antes de uso externo — o monitor sinaliza, não dá parecer.",
-    "verificado_em": "2026-10-26",
+    "verificado_em": "2026-11-02",
     "fonte_canonica": "gov.br/susep + BNPortal SUSEP (www2.susep.gov.br/safe/bnportal, inclusive API oficial bnmapi) + Sistema de Consultas Publicas da SUSEP (www2.susep.gov.br/safe/SCP) + CNSP + STF (ADI) + DOU + gov.br/agricultura (MAPA/PSR, condicoes gerais de produtos parametricos)",
     "regra_fonte_associacao": "F3 — associações setoriais que entregam ponteiro (link DOU/oficial) por e-mail. R6 universal, dedup por e-mail. ASSOCIACOES_PONTEIRO_ATIVO = {ABSOLAR}. EMAIL_TO_ASSOCIACAO_MAP: absolar.org.br + gcabsolar@googlegroups.com + arabsolar@googlegroups.com -> ABSOLAR. Remetente dos resumos: tecnicoregulatorio@absolar.org.br. F3 não fecha VERDE quando a matéria exige F1.",
     "nota_run_2026_09_17_lote": "Bump cosmético CEO renovacao: F1 hubs reabertos sem mudanca de tese nesta passada. SUSEP -> 200 512575",
@@ -31,6 +31,14 @@
           "fatos[12]",
           "fatos[16]"
         ]
+      },
+      {
+        "data": "2026-11-15",
+        "relidos": [
+          "fatos[13]",
+          "fatos[14]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Rodizio diario de reconferencia F1 (1a run, 14/11/2026, decisao D38 = a), itens mais antigos primeiro, com segunda leitura independente: ATUALIZAR 7, CONFIRMADO 3. _meta.verificado_em = data do item publicado mais antigo."
@@ -165,7 +173,8 @@
       "norma": "Edital de Consulta Publica 5/2026/SUSEP, DOU de 17/09/2026, Secao 3. Origem: item 8 da pauta da 17a Reuniao Ordinaria do Conselho Diretor da Susep de 09/09/2026, documento SEI 2891911, Processo Susep 15414.627760/2026-11. Objeto: minuta de Resolucao Susep que revoga e substitui a Circular Susep 666, de 27/06/2022, e nova versao da minuta do Manual de Orientacao das Tabelas Padrao para o Relatorio de Sustentabilidade.",
       "url": "https://www.in.gov.br/web/dou/-/edital-de-consulta-publica-n-5/2026/susep-732352624",
       "pendencia_verificacao": "Pauta oficial em PDF baixada do sitio da Susep e lida na integra em 08/09/2026, oito itens. PENDENTE: a reuniao ainda nao ocorreu na data desta verificacao, de modo que NAO se sabe se os itens 7 e 8 serao aprovados, com que redacao, nem por quanto tempo ficaria aberta eventual consulta publica. A pauta prova a proposta, nao o desfecho. Nenhum edital de consulta publica correspondente havia sido publicado no DOU ate 08/09/2026. Reabrir a pasta de atas, o DOU e a pagina de consultas publicas a partir de 10/09/2026. ATUALIZACAO 14/09/2026 [A VERIFICAR, fonte secundaria]: noticia da CQCS de 11/09/2026 afirma que a Susep vai abrir consulta publica, por 30 dias, sobre proposta que substitui a Circular 666/2022 e adota divulgacao de informacoes financeiras de sustentabilidade e clima no padrao IFRS S1 e S2, CBPS 01 e 02, em quatro tabelas padronizadas de Governanca, Estrategia, Gestao de riscos e Metricas e metas, com proporcionalidade, vigencia proposta em 31/12/2026, coleta ao longo de 2027 e divulgacao em 2028. NADA DISSO FOI CONFIRMADO EM F1: sem numero de edital, sem data de abertura e sem link oficial. O Sistema de Consultas Publicas da Susep devolveu 403 e os sistemas da autarquia estiveram fora do ar de 11 a 14/09. Registrado no arquivo de acao do CEO. Status mantido EM DELIBERACAO ate a leitura do edital ou da ata. ATUALIZACAO 21/09/2026 (F1): edital lido no DOU de 17/09/2026, Secao 3, e noticia oficial da Susep de 17/09/2026 lida; os pontos da CQCS de 11/09 ficam confirmados em fonte oficial quanto a IFRS S1 e S2, CBPS 01 e 02, proporcionalidade, cronograma e cooperativas. Correcao de data: o edital cita a Circular 666 como de 27 de junho de 2022, enquanto a pauta de 09/09 dizia 27 de julho; prevalece o edital. PENDENTE: a minuta de resolucao e o manual NAO foram lidos, porque o Sistema de Consultas Publicas da Susep devolveu 403 a script em 21/09/2026; registrado no arquivo de acao do CEO. Status mantido EM DELIBERACAO: e minuta em consulta, nao norma. Prazo exato de encerramento a confirmar no proprio sistema. Nenhuma contribuicao da SOA sem leitura integral da minuta e do manual. 26/10/2026: encerramento confirmado pela API do Sistema de Consultas Publicas (dataFim 19/10/2026 21:00). Minuta segue nao lida (download devolveu 502). Vigiar a publicacao da Resolucao Susep final.",
-      "verificado_em": "2026-10-26"
+      "verificado_em": "2026-11-15",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.in.gov.br/web/dou/-/edital-de-consulta-publica-n-5/2026/susep-732352624 | Edital relido no DOU (17/09/2026, Ed. 176, S3, p. 84; prazo de 30 dias). Busca no DOU por \"Circular Susep nº 666\" de 18/09 a 15/11/2026 deu 0 resultados: nenhum sinal de Resolução final. Encerramento em 19/10 não foi reconferido no sistema da Susep."
     },
     {
       "tema": "Portaria Susep nº 8.593/2026 — Grupo de Trabalho de Seguros de Infraestrutura (item 23C do Plano de Regulação); revoga a Portaria Susep nº 8.588/2026",
@@ -173,8 +182,9 @@
       "status": "VIGENTE",
       "norma": "Portaria Susep 8.593, de 30 de setembro de 2026, arts. 1 a 8 e Anexos I e II, DOU de 01/10/2026, Secao 1, pagina 39, Processo Susep 15414.643492/2026-85. Revoga a Portaria Susep 8.588, de 17 de setembro de 2026 (DOU de 21/09/2026, Secao 2). Materializa o item 23C (Seguro e Infraestrutura, GABIN, prioridade P1) do Plano de Regulacao revisado pela Resolucao Susep 91/2026.",
       "url": "https://www.in.gov.br/web/dou/-/portaria-susep-n-8.593-de-30-de-setembro-de-2026-735722698",
-      "verificado_em": "2026-10-26",
-      "pendencia_verificacao": "ANCORADO no texto do DOU lido em 01/10/2026 pela consolidadora (Chrome). A comparacao com a Portaria 8.588 usa o registro anterior deste fato (54 entidades, com orgaos publicos); o texto da 8.588 nao foi reaberto hoje. Acompanhar: ato de designacao dos representantes; memorias ou relatorio do GT; os 60 dias contam da primeira reuniao (02/10/2026), ou seja, por volta de 01/12/2026, prorrogavel uma vez; verificar quem a coordenacao convida para exposicoes. 26/10/2026: divergencia de prazo a conferir. A Portaria (art. 5) conta 60 dias da primeira reuniao; a pagina oficial do GT diz 60 dias da publicacao da Portaria (30/09/2026). Pela pagina, o fim seria por volta de 29/11/2026. Despacho 1418/2026 lido na integra; Anexo I da Portaria tem 41 entidades e o despacho designou 23. Nao ha memoria publicada dos encontros de outubro."
+      "verificado_em": "2026-11-15",
+      "pendencia_verificacao": "ANCORADO no texto do DOU lido em 01/10/2026 pela consolidadora (Chrome). A comparacao com a Portaria 8.588 usa o registro anterior deste fato (54 entidades, com orgaos publicos); o texto da 8.588 nao foi reaberto hoje. Acompanhar: ato de designacao dos representantes; memorias ou relatorio do GT; os 60 dias contam da primeira reuniao (02/10/2026), ou seja, por volta de 01/12/2026, prorrogavel uma vez; verificar quem a coordenacao convida para exposicoes. 26/10/2026: divergencia de prazo a conferir. A Portaria (art. 5) conta 60 dias da primeira reuniao; a pagina oficial do GT diz 60 dias da publicacao da Portaria (30/09/2026). Pela pagina, o fim seria por volta de 29/11/2026. Despacho 1418/2026 lido na integra; Anexo I da Portaria tem 41 entidades e o despacho designou 23. Nao ha memoria publicada dos encontros de outubro.",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.in.gov.br/web/dou/-/portaria-susep-n-8.593-de-30-de-setembro-de-2026-735722698 | DOU 01/10/2026, Ed. 186, S1, p. 39. Art. 7 revoga a 8.588; Anexo I tem 41 entidades; Anexo II com os 5 encontros. A Portaria resolve a divergência: o prazo conta da 1ª reunião (02/10), não da publicação. Despacho 1418/2026 e página do GT não foram reabertos."
     },
     {
       "tema": "Consulta Pública Susep 10/2026 — credenciamento de quem conduz a resolução alternativa de conflitos em seguro (art. 129, parágrafo único, Lei 15.040/2024)",

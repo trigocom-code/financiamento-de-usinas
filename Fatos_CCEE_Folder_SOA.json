@@ -34,6 +34,13 @@
         "relidos": [
           "fatos[6]"
         ]
+      },
+      {
+        "data": "2026-11-15",
+        "relidos": [
+          "fatos[0]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ]
   },
@@ -45,7 +52,7 @@
       "status": "VIGENTE",
       "norma": "Lei 15.269/2025 (art. 1º, §§ 10 e 11, e art. 1º-B da Lei 10.848/2004) · Portaria Normativa MME nº 140/2026",
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
       "vetores_afetados": [
@@ -85,7 +92,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15269.htm | No Planalto conferem: 'LEI Nº 15.269, DE 24 DE NOVEMBRO DE 2025', 'Este texto não substitui o publicado no DOU de 25.11.2025', a mensagem de veto VEP-1755-25, o 'Art. 1º-A. (VETADO)', o art. 1º-B ('desde 1º de setembro de 2023 até a entrada em vigor deste dispositivo') e o § 10, VI (indisponibilidad"
     },
     {
       "fato_id": "CCEE-CP-17-2026-PSM",

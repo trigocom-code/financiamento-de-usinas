@@ -16,14 +16,25 @@
           "cruzamento_regulatorio[8]",
           "beneficios[27]"
         ]
+      },
+      {
+        "data": "2026-11-15",
+        "relidos": [
+          "beneficios[0]",
+          "beneficios[10]",
+          "beneficios[11]",
+          "beneficios[12]",
+          "beneficios[13]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ]
   },
   "_carimbo": {
     "atualizado_em": "2026-10-13T00:00:00-03:00",
-    "hash": "sha256:dcb0d74188617a3ddde22d497a2d52774a4c6baa788b1a18ffe77961ca4436e0",
+    "hash": "sha256:6f6930ab79a76af71c8a70143689d9b12810ac7d5c642ebe95bf9901aa8bf68c",
     "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias",
-    "selado_em": "2026-11-14"
+    "selado_em": "2026-11-15"
   },
   "_schema": {
     "versao": "1.0",
@@ -78,7 +89,8 @@
       "sem_soa": "a geração precisa ser comprovável",
       "status": "verificado",
       "fonte": "planalto L14300",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-15",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14300.htm | Art. 13. Art. 19: bandeiras 'não se aplicam sobre a energia excedente que foi compensada'. A página anota 'Vide MP 1.300/2025' e alterações pela Lei 15.269/2025 (art. 22, parágrafo único, revogado; art. 25 com nova redação), que não tocam o mecanismo descrito. RENs ANEEL não relidas."
     },
     {
       "id": "pf_gd1",
@@ -283,7 +295,8 @@
       "sem_soa": "lastro verde do projeto",
       "status": "verificado",
       "fonte": "planalto L12431",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-15",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12431.htm | Art. 2º, I: '0% (zero por cento), quando auferidos por pessoa física'. Alterações vistas: §§ 9º e 10 pela Lei 14.801/2024; 'Vide MP 1.303/2025' (vigência encerrada) nos §§ 2º a 4º. Último trecho da página (~29 mil caracteres) não lido."
     },
     {
       "id": "pj_deb_infra",
@@ -304,7 +317,9 @@
       "sem_soa": "enquadramento verde",
       "status": "verificado",
       "fonte": "planalto L14801",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-15",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14801.htm | Art. 6º, II. Emissões 'até 31 de dezembro de 2030' (art. 2º, § 5º). EVENTO NOVO no texto compilado: art. 2º, § 2º, II com redação dada pela Lei 15.506/2026 (inclui transformação de minerais críticos e estratégicos para a transição energética) e § 10 incluído pela mesma lei; amplia o enquadramento, n",
+      "pendencia_verificacao": "15/11/2026: Lei 15.506/2026 reescreveu o art. 2, par. 2, II e incluiu o par. 10 da Lei 14.801 (transformacao de minerais criticos); amplia emissores sem mudar a superdeducao de 30% nem o prazo de 2030."
     },
     {
       "id": "pj_setores_prioritarios",
@@ -324,8 +339,9 @@
       "sem_soa": "—",
       "status": "verificado",
       "fonte": "planalto D11964",
-      "verificado_em": "2026-11-14",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/d11964.htm"
+      "verificado_em": "2026-11-15",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/d11964.htm",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/decreto/d11964.htm | Art. 17, 'exclusivamente para fins de emissão dos valores mobiliários a que se refere o art. 2º da Lei nº 12.431, de 2011'. Art. 4º, III: energia inclui geração renovável, transmissão e distribuição (a), hidrogênio de baixo carbono (e) e CCUS (f). Sem nota de alteração visível. A lista 'debêntures, "
     },
     {
       "id": "pj_sll_rating",
@@ -344,7 +360,8 @@
       "sem_soa": "dado defensável = KPI",
       "status": "verificado",
       "fonte": "BCB GRSAC",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-15",
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.bcb.gov.br/api/conteudo/app/normativos/exibenormativo?p1=Resolu%C3%A7%C3%A3o%20CMN&p2=4945 | 4.943 (altera a 4.557, gerenciamento de riscos), 4.944 (altera a 4.606, PRS5) e 4.945 (PRSAC), todas de 15/09/2021, não revogadas. A 4.945 foi alterada pela Res. CMN 5.194/2024 (efeitos a partir de 1º/1/2025). 'Mais verde tende a crédito mais barato' e o desenho de SLL são leitura de mercado, sem F1"
     },
     {
       "id": "ind_cbam",
