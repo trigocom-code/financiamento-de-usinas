@@ -437,6 +437,7 @@
   function render(card, d, origem) {
     const tsEl = card.querySelector('[data-ts]');
     const fEl = card.querySelector('[data-fresh]');
+    if (!tsEl || !fEl) return;
     // Materiais ESTATICOS (sem JSON em runtime) nao decaem: mostram a data da ultima
     // edicao real, sem alarme de defasagem. Regra canonica secao 4.4: nao falsear o selo.
     if (card.hasAttribute('data-static')) {
@@ -454,6 +455,7 @@
   function renderIndisponivel(card, msg) {
     const tsEl = card.querySelector('[data-ts]');
     const fEl = card.querySelector('[data-fresh]');
+    if (!tsEl || !fEl) return;
     tsEl.innerHTML = '<b>Selo indisponível</b><br>' + msg;
     fEl.className = 'fresh a';
     fEl.textContent = 'selo indisponível';
@@ -488,10 +490,13 @@
       const r = await fetch('_frescor.json?v=' + Date.now(), {cache: 'no-store'});
       if (r.ok) { const j = await r.json(); manifesto = j.arquivos || null; }
     } catch(e) {}
-    document.querySelectorAll('.card').forEach(function(card) {
+    document.querySelectorAll('.card[data-file]').forEach(function(card) {
+      if (!card.querySelector('[data-ts]') || !card.querySelector('[data-fresh]')) return;
       const file = card.dataset.file;
-      if (manifesto && manifesto[file]) render(card, new Date(manifesto[file]), 'manifesto');
-      else viaApi(card, file);
+      try {
+        if (manifesto && manifesto[file]) render(card, new Date(manifesto[file]), 'manifesto');
+        else viaApi(card, file);
+      } catch (e) {}
     });
   }
   boot();
