@@ -27,14 +27,25 @@
           "beneficios[13]"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-16",
+        "relidos": [
+          "cruzamento_regulatorio[1](sem F1)",
+          "cruzamento_regulatorio[4](sem F1)",
+          "beneficios[1]",
+          "beneficios[2]",
+          "beneficios[3](sem F1)"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ]
   },
   "_carimbo": {
     "atualizado_em": "2026-10-13T00:00:00-03:00",
-    "hash": "sha256:6f6930ab79a76af71c8a70143689d9b12810ac7d5c642ebe95bf9901aa8bf68c",
+    "hash": "sha256:73aaed265160931d0315e8b70885a0cd134297e295954a2a2dcd50d096a9985c",
     "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias",
-    "selado_em": "2026-11-15"
+    "selado_em": "2026-11-16"
   },
   "_schema": {
     "versao": "1.0",
@@ -109,7 +120,8 @@
       "sem_soa": "prova de titularidade/geração",
       "status": "verificado",
       "fonte": "planalto L14300 art.26",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-16",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14300.htm"
     },
     {
       "id": "pf_fiob",
@@ -128,7 +140,8 @@
       "sem_soa": "o valor do autoconsumo cresce",
       "status": "verificado",
       "fonte": "planalto L14300 art.27",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-16",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14300.htm"
     },
     {
       "id": "iptu_verde",
@@ -149,7 +162,9 @@
       "status": "verificado",
       "fonte": "leis municipais",
       "verificado_em": "2026-11-14",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www2.sefaz.salvador.ba.gov.br/storage/7583/36.288---DOM-DE-18-11-2022.pdf"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www2.sefaz.salvador.ba.gov.br/storage/7583/36.288---DOM-DE-18-11-2022.pdf",
+      "tentado_em": "2026-11-16",
+      "pendencia_verificacao": "sem F1 acessivel em 16/11/2026: item agregado (leis municipais) sem norma unica reabrivel"
     },
     {
       "id": "icms_lc194",
@@ -967,8 +982,8 @@
         "BESS auditável"
       ],
       "porque_certificar": "Preço-teto e TUST do edital definem a receita; a evidência horária protege o DSCR do risco de dupla cobrança.",
-      "tentado_em": "2026-11-14",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Não consegui abrir o texto dos Editais 05 e 06/2026: a página de editais da ANEEL dá 403, e a notícia oficial não fala de preço-teto nem de TUST. A 'dupla cobrança' vem da REN 1.162/2026 (faturamento cumulativo de consumo e injeção), mas isso só aparece em escritórios"
+      "tentado_em": "2026-11-16",
+      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Não consegui abrir o texto dos Editais 05 e 06/2026: a página de editais da ANEEL dá 403, e a notícia oficial não fala de preço-teto nem de TUST. A 'dupla cobrança' vem da REN 1.162/2026 (faturamento cumulativo de consumo e injeção), mas isso só aparece em escritórios | sem F1 acessivel em 16/11/2026: gov.br/aneel e bndes.gov.br ECONNREFUSED; in.gov.br ENOTFOUND"
     },
     {
       "fato_id": "ANEEL-CCEE-LRCAP-TERMICA-REF",
@@ -993,8 +1008,8 @@
         "BESS auditável"
       ],
       "porque_certificar": "Outorga de 35 anos: a prova de performance sustenta o caso financeiro.",
-      "tentado_em": "2026-11-14",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Tentei de novo em 14/11: o cedoc dá 403 e o DOU (in.gov.br) não respondeu, nem pelo WebFetch nem pelo Chrome. Os '35 anos' de outorga do SAE autônomo aparecem só em fontes secundárias (Cescon Barrieu, Canal Solar), e as datas de publicação divergem entre elas (24 ou 2"
+      "tentado_em": "2026-11-16",
+      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Tentei de novo em 14/11: o cedoc dá 403 e o DOU (in.gov.br) não respondeu, nem pelo WebFetch nem pelo Chrome. Os '35 anos' de outorga do SAE autônomo aparecem só em fontes secundárias (Cescon Barrieu, Canal Solar), e as datas de publicação divergem entre elas (24 ou 2 | sem F1 acessivel em 16/11/2026: gov.br ECONNREFUSED; in.gov.br ENOTFOUND"
     },
     {
       "fato_id": "ANEEL-REN-1161-1162-2026",
