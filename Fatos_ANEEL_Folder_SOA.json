@@ -3,7 +3,7 @@
     "orgao": "ANEEL",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ANEEL — schema v1.3 com tipo_fato, qsv_cor, fontes independentes, associacao_origem, ancoragem numérica. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-11-17",
+    "verificado_em": "2026-11-14",
     "proxima_revisao_sugerida": "2026-11-10",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ANEEL conforme QSV-R v3.0",
     "nota_run_2026_07_16": "Varredura de 16/07: nenhuma reabertura F1 efetiva → NENHUM fato teve verificado_em bumpado (postura conservadora, R2). _meta.verificado_em reflete a data da varredura, não a de reconferência de fato. Página-mãe de notícias da ANEEL veio JS-truncada (inconclusiva para 08–16/07); a subpasta /noticias/2026-defeso-eleitoral carimba 'Atualizado em 07/07/2026 17h39' e vale como negativo APENAS para essa subpasta. Detectados 6 itens novos via F3 (ABSOLAR GTGD 15/07 + Agência iNFRA 13/07), todos em _pendentes_verificacao. A run de 15/07 escreveu JSON mas não escreveu digest — lacuna reportada ao CEO.",
@@ -84,10 +84,21 @@
           "_pendentes_verificacao[1](sem F1)"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-17",
+        "ids_relidos": [
+          "fatos[6]",
+          "fatos[9]",
+          "_pendentes_verificacao[0]",
+          "_pendentes_verificacao[1]"
+        ],
+        "monitor": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 7, CONFIRMADO 6. _meta.verificado_em = data do item publicado mais antigo.",
-    "nota_carimbo_engine_2026_11_16": "12 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005)."
+    "nota_carimbo_engine_2026_11_16": "12 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
+    "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 16 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46."
   },
   "fatos": [
     {
@@ -97,7 +108,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.161/2026 · assinada 02/06/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.161-de-2-de-junho-de-2026-714430510",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -147,7 +158,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.162/2026 (altera RENs 846/2019, 875/2020, 905/2020, 921/2021, 1.000/2021, 1.009/2022, 1.029/2022, 1.030/2022, 1.031/2022 e 1.071/2023) · assinada 02/06/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.162-de-2-de-junho-de-2026-714416734",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -197,7 +208,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.170/2026 · assinada 06/10/2026 · DOU 09/10/2026, Ed. 192, Seção 1, p. 122 · Processo 48500.900375/2019-83 · resultado da 3ª fase da CP ANEEL 045/2019",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-n-1.170-de-6-de-outubro-de-2026-737462879",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
       "vetores_afetados": [
@@ -275,7 +286,7 @@
       "status": "ENCERRADA — resultado em vigor nas RENs 1.161/2026 e 1.162/2026",
       "norma": "CP ANEEL 039/2023 · NT Conjunta 3/2026-SGM-SCE-STD-STR-SFT/ANEEL · RENs 1.161/2026 e 1.162/2026",
       "url": "https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -325,7 +336,7 @@
       "status": "VIGENTE",
       "norma": "Despacho ANEEL 3.431, de 18/11/2025 · DOU 25/11/2025, Ed. 224, Seção 1, p. 93 · Processo 48500.033898/2025-54",
       "url": "https://www.in.gov.br/web/dou/-/despacho-n-3.431-de-18-de-novembro-de-2025-670734868",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -369,7 +380,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.059/2023 (Lei 14.300/2022)",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -448,8 +459,7 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "tentado_em": "2026-11-16",
-      "pendencia_verificacao": "sem F1 acessivel em 16/11/2026: gov.br/mme recusou conexao (ECONNREFUSED) e in.gov.br nao resolveu (ENOTFOUND)"
+      "reconferencia_2026_11_17": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2025/portaria-normativa-mme-n-111-2025.pdf :: PN MME 111/2025 compilada, art. 4 com redacao da PN 126/2026: 2% das UCs ao ano por 24 meses a partir de 01/03/2026; art. 4-A ACB a Aneel ate 29/02/2028."
     },
     {
       "fato_id": "ANEEL-SANDBOX-CONTROLE-TENSAO",
@@ -458,7 +468,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.062/2023 · Resolução Autorizativa ANEEL 16.539/2025 · Edital SA-SR/001/2025-ONS",
       "url": "https://www.ons.org.br/paginas/energia-amanha/sandbox-controle-de-tensao",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-16",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -500,7 +510,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 046/2025",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/tarifa-hora-certa-proposta-preve-enquadramento-automatico-de-consumidores-que-usam-mais-de-500-kwh-mes",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -550,7 +560,7 @@
       "status": "PRAZO DE CONTRIBUIÇÕES ENCERRADO",
       "norma": "TS ANEEL 23/2025",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-06",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -583,7 +593,9 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "tentado_em": "2026-11-17",
+      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: 403 na listagem oficial de CPs/TS da ANEEL; ato de resultado da TS 23/2025 nao localizado; so imprensa"
     },
     {
       "id": "medicao_inteligente_cp001",
@@ -601,7 +613,7 @@
         "V2",
         "sHEC"
       ],
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-14",
       "pendencia_verificacao": "ANDAIME MOVIDO DO CAMPO RENDERIZADO EM 28/07/2026 (exigencia do gate validar_fatos.py, regra E1). Marcacoes originais: [A VERIFICAR no Aviso do DOU]. Sentido inalterado: os elementos assim marcados NAO estao ancorados em fonte primaria reaberta e nao podem ser citados externamente ate a leitura do ato no DOU."
     },
     {
@@ -611,7 +623,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "Aviso de Consulta Pública ANEEL nº 20/2026 · DOU de 15/07/2026, Ed. 131, Seção 3, p. 104 · Processo 48500.027624/2025-26",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-20/2026-719154741",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -671,7 +683,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "Consulta Publica ANEEL no 18/2026 · Lei no 9.991/2000 · contribuicoes ate 09/09/2026",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-723324899",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_PROCESSUAL",
       "score_soa": 14,
       "vetores_afetados": [
@@ -707,7 +719,7 @@
       "status": "PRAZO DE CONTRIBUICOES ENCERRADO em 13/10/2026 (23h59; o aviso fixava 12/10/2026, prorrogacao automatica)",
       "norma": "Aviso de Consulta Publica ANEEL no 29/2026 — DOU de 26/08/2026, Secao 3, p. 124 · Processo no 48500.006650/2023-59",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-29%2F2026-727896573",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -745,7 +757,7 @@
       "status": "PRAZO DE CONTRIBUICOES ENCERRADO",
       "norma": "Aviso de Consulta Publica ANEEL no 26/2026 — DOU de 06/08/2026, Secao 3, p. 107 · Processo no 48500.019929/2026-45",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-26%2F2026-723652899",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 3,
       "vetores_afetados": [
@@ -783,7 +795,7 @@
       "status": "PRAZO DE CONTRIBUIÇÕES ENCERRADO — contribuições de 17/09/2026 a 12/11/2026 (prorrogada); em análise na ANEEL",
       "norma": "Aviso de Consulta Publica ANEEL no 34/2026 — DOU de 17/09/2026, Secao 3, p. 108 · Processo no 48500.033896/2025-65 — prazo prorrogado ate 12/11/2026 (Aviso de Prorrogacao, DOU de 29/10/2026, Secao 3)",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-34/2026-732288687",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -840,7 +852,7 @@
       "status": "VIGENTE (referência)",
       "norma": "Avisos de Consulta Pública ANEEL nº 22/2026 e nº 23/2026 · DOU de 30/07/2026, Ed. 142, Seção 3, p. 116 · Processos 48500.015992/2026-11 e 48500.019603/2026-18 · Leilões nº 05/2026-ANEEL e nº 06/2026-ANEEL · Portaria MME 136/2026 · ato final: Resoluções Homologatórias ANEEL nº 3.616 e nº 3.617/2026 (DOU de 29/10/2026, edição 205, Seção 1, p. 54)",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-23/2026-722333896",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-17",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 19,
       "vetores_afetados": [
@@ -881,7 +893,7 @@
       "pendencia_verificacao": "Minutas de Edital, Anexos e CRCAP não baixadas. Audiência pública de 01/09/2026 às 14h30 não consta dos Avisos do DOU. Preço-teto e regra de TUST não publicados. | 08/11/2026 (rastreador): superado. Os editais finais e os CRCAP dos Leiloes 5 e 6/2026 foram aprovados pelas REH ANEEL 3.616 e 3.617/2026 (DOU 29/10/2026, ed. 205, Secao 1, p. 54) e estao em vigor desde 29/10/2026 (art. 5o). 'Preco-teto e regra de TUST nao publicados' deixou de valer: preco inicial no item 10.5.1 dos editais (R$ 1.760.000/MW.ano no Leilao 5; R$ 1.580.000/MW.ano no Leilao 6) e TUSDg de referencia no art. 2o das REH (Anexo I). As minutas da CP foram baixadas e comparadas com o texto final pelo rastreador (_Consultas_Publicas/_Rastreador_Contribuicoes_Regras/_downloads/lote1/minutas_cp_txt). A audiencia publica de 01/09/2026, 14h30, esta na ata da 15a RPO de 28/07/2026 (dados abertos da ANEEL). Status CONSULTA PUBLICA ENCERRADA continua certo. O fato que vale agora e ANEEL-EDITAL-LRCAP-ARMAZ (Fatos_Regulatorios). Fonte: https://www.in.gov.br/web/dou/-/resolucao-homologatoria-n-3.616-de-27-de-outubro-de-2026-741103804. | 09/11/2026 (rastreador, 3a rodada): status 'CONSULTA PUBLICA ENCERRADA — abertura em 30/07/2026, encerramento em 14/09/2026, AP em 01/09/2026 14h30' (fora da lista aceita) trocado por 'VIGENTE (referência)': as consultas terminaram e o ato final esta em vigor (REH ANEEL 3.616 e 3.617/2026, DOU 29/10/2026, ed. 205, Secao 1, p. 54, art. 5o; reabertas no DOU em 09/11/2026, 01h09). No valor, as duas frases que diziam 'NAO PUBLICADOS' passaram ao passado, com a data, e o valor ganhou um aviso de atualizacao no inicio; a norma ganhou o ato final; verificado_em 2026-08-21 -> 2026-11-09. Textos anteriores guardados, sem edicao, em status_anterior_ate_2026_11_09 e valor_anterior_ate_2026_11_09. Ficam com o monitor dono: qsv_cor AZUL e qsv_origem_classificacao ('elementos ainda nao publicados'), que ficaram velhos, e a alinea (c) do motivo_pendencia, ja cumprida pelo rastreador (minutas baixadas e comparadas). Fontes: https://www.in.gov.br/web/dou/-/resolucao-homologatoria-n-3.616-de-27-de-outubro-de-2026-741103804 e https://www.in.gov.br/web/dou/-/resolucao-homologatoria-n-3.617-de-27-de-outubro-de-2026-741164754. | sem F1 acessivel em 16/11/2026: in.gov.br ENOTFOUND; gov.br/aneel e bndes.gov.br ECONNREFUSED",
       "status_anterior_ate_2026_11_09": "CONSULTA PUBLICA ENCERRADA — abertura em 30/07/2026, encerramento em 14/09/2026, AP em 01/09/2026 14h30",
       "valor_anterior_ate_2026_11_09": "*** ATUALIZADO EM 13/10/2026 (revisão fato a fato): as CPs ANEEL 022 e 023/2026 (minutas dos editais dos leilões de baterias) constam entre as encerradas na listagem oficial; o aviso da CP 22/2026 fixou o envio de 30/07 a 14/09/2026. *** DECIDIDO EM 28/07/2026, POR UNANIMIDADE, conforme a PAUTA/ATA (PREVIA) DA 15a REUNIAO PUBLICA ORDINARIA DA DIRETORIA DE 2026 (F1 institucional, www2.aneel.gov.br, idNoticia=14784), itens 1 e 2, relator Gentil Nogueira de Sa Junior, area Secretaria de Leiloes - SEL. ITEM 1 · Processo 48500.015992/2026-11: 'A Diretoria, por unanimidade, decidiu instaurar Consulta Publica, no periodo de 46 (quarenta e seis) dias, entre os dias 30 de julho e 14 de setembro de 2026, com Audiencia Publica em 1o de setembro de 2026, as 14h30min, na sede da ANEEL, com vistas a colher subsidios e informacoes adicionais para o aprimoramento da minuta de Edital, de seus Anexos e do respectivo CRCAP do Leilao no 05/2026-ANEEL (Leilao de Reserva de Capacidade na forma de Potencia de 2026 - Armazenamento Nacional)'. ITEM 2 · Processo 48500.019603/2026-18: mesma decisao, mesmos prazos, para o Leilao no 06/2026-ANEEL (LRCAP 2026 - Armazenamento). Houve apresentacao tecnica conjunta do servidor Igor Barra Caminha (SEL); sustentacao oral de Fabio Monteiro Lima (ABSAE) no item 1 e de Marcello Cabral (ABEEolica) no item 2. LEITURA SOA: o gatilho no 3 do monitor (edital/preco-teto do LRCAP Armazenamento) avanca para o PASSO ANTERIOR — ha MINUTA DE EDITAL EM CONSULTA, com janela formal de contribuicao de 46 dias e audiencia publica marcada. CP nao e edital e nao e preco-teto: o edital final e o preco-teto seguem NAO PUBLICADOS. A janela de 30/07 a 14/09 e a oportunidade formal de sustentar COMO se prova disponibilidade e degradacao hora a hora — convergente com o escopo declarado do acompanhamento do TCU. ⟨RECONFERIDO 29/07/2026 · consolidadora⟩ Decisao e 'Ordem de julgamento' (1 e 2) seguem registradas na previa reaberta hoje, com o mesmo teor. CORROBORACAO F1 ADICIONAL lida hoje na noticia oficial da ANEEL ('Primeiros leiloes de armazenamento de energia do Brasil entram em consulta publica', 28/07/2026): potencia minima de '30 megawatts (MW) ou mais'; suprimento por 15 anos 'a partir de 1/8/2028'; despacho com 'duracao de quatro horas' e 'por dia, os sistemas poderao ser demandados duas vezes'; verificacao de conteudo nacional 'realizada pelo Banco Nacional de Desenvolvimento Economico e Social (BNDES)' no Leilao Nacional. CONFIRMA a correcao da AUDIENCIA PUBLICA para 01/09/2026 as 14h30 (o numero 26/08 que circulou em analise F3 esta ERRADO). Edital assinado e preco-teto seguem NAO publicados — status inalterado. ⟨ANCORAGEM F1/DOU 21/08/2026 · consolidadora⟩ Os dois Avisos de Consulta Pública foram abertos e lidos na íntegra no DOU de 30/07/2026, Edição 142, Seção 3, página 116, assinados por André Ruelli. AVISO Nº 22/2026, Processo 48500.015992/2026-11, Leilão nº 05/2026-ANEEL, Leilão de Reserva de Capacidade na forma de Potência de 2026 - Armazenamento Nacional. AVISO Nº 23/2026, Processo 48500.019603/2026-18, Leilão nº 06/2026-ANEEL, Leilão de Reserva de Capacidade na forma de Potência de 2026 - Armazenamento. Os dois com modalidade intercâmbio de documentos e período para envio de 30/7/2026 a 14/9/2026. Isto ENCERRA a alínea (a) da pendência: a numeração definitiva das duas consultas é 22/2026 e 23/2026 e o prazo regulatório de 14/09/2026, que a casa carregava por resumo de associação, está agora ancorado em fonte primária. Os dois Avisos NÃO mencionam a audiência pública de 01/09/2026, que segue vindo da prévia da 15ª RPO, e nada dizem sobre preço-teto, garantias ou regra de TUST.",
-      "tentado_em": "2026-11-16"
+      "reconferencia_2026_11_17": "https://www.in.gov.br/web/dou/-/resolucao-homologatoria-n-3.616-de-27-de-outubro-de-2026-741103804 :: DOU 29/10/2026, S1, p. 54: REH 3.616 aprova o Edital do Leilao 5/2026-ANEEL e as TUSDg de referencia; REH 3.617 consta na busca; Aviso CP 23/2026 (DOU 30/07) com envio de 30/7 a 14/9/2026."
     },
     {
       "fato_id": "ANEEL-CP-009-GATO-SOLAR",
@@ -919,8 +931,8 @@
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "PENDENTE DO CEO — mantem LARANJA. Em 28/07 a listagem oficial da ANEEL confirmou objeto ('tratamento de excedentes de energia e maior flexibilidade operativa na Rede de Distribuicao') e prazo final (08/06/2026, prorrogado do 06/06). Falta o CEO fechar, na fonte, a atribuicao da CP 009/2026 ao tema 'gato solar' e o voto final. Reconciliar com Fatos_GatoSolar[3], que ja carregava o objeto correto.",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-9/2026-701049289",
-      "tentado_em": "2026-11-16",
-      "pendencia_verificacao": "sem F1 acessivel em 16/11/2026: www2.aneel.gov.br ENOTFOUND; gov.br/aneel ECONNREFUSED (pendencia CEO intocada)"
+      "tentado_em": "2026-11-17",
+      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: 403 na listagem oficial da ANEEL; numeracao da CP 009 e pendencia do CEO, nao cravar"
     },
     {
       "fato_id": "ANEEL-SORTEIO-RELATOR-LRCAP-BATERIAS",
