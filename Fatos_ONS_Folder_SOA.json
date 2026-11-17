@@ -480,7 +480,7 @@
       "valor": "Reverificacao NEGATIVA de 01/09/2026 as 08h47, feita pela rotina consolidadora por rota anonima e reproduzivel: lista Acervo Digital - Documentos e Publicacoes do SharePoint do ONS, ordenada por Modified desc. O item mais recente do acervo publico e a Nota Tecnica de Quantitativos da Capacidade Remanescente do SIN da 1a Temporada de Acesso de 2026, Id 8558, Modified 2026-08-31T23:24:21Z. Nenhum item do acervo trata do cronograma, das especificacoes tecnicas ou dos criterios de validacao do art. 4o par. 1o I, cujo termo venceu em 27/07/2026 - hoje sao 36 dias de atraso no canal publico. FORMULACAO CITAVEL, e apenas ela: nao consta do acervo publico do ONS. E vedado escrever que o ONS nao publicou: a divulgacao do Operador ocorre no SINtegre, portal logado que devolveu HTTP 302 para tela de login. A RESSALVA DE FRESCOR REGISTRADA EM 31/08 CAIU: naquela data o acervo estava parado desde 28/08 20h30 e o negativo era fraco; o acervo recebeu item novo em 31/08 as 23h24, provando que a fonte estava viva, e o que entrou nao foi o rito do art. 4o. LEITURA SOA inalterada: e este documento que define COMO o contrafactual de corte sera reconstruido, e portanto onde a verificacao ex-post tem lastro procedimental.",
       "status": "NAO CONSTA DO ACERVO PUBLICO - reverificacao negativa por rota anonima; ressalva de frescor de 31/08 superada",
       "norma": "Portaria MME no 140, de 18/07/2026 (DOU 21/07/2026) — prazo vencido em 27/07/2026",
-      "url": "https://www.ons.org.br/_api/web/lists/getbytitle('Acervo Digital - Documentos e Publicacoes')/items",
+      "url": "https://www.ons.org.br/paginas/noticias/details.aspx?i=13067",
       "verificado_em": "2026-09-01",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 18,

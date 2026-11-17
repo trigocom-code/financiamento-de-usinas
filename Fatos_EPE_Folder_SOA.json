@@ -278,7 +278,7 @@
       "qsv_fontes_independentes": [
         {
           "tipo": "F1_pagina_oficial",
-          "ref": "https://www.epe.gov.br/.../Resenha-e-Boletim",
+          "ref": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/resenha-e-boletim-do-mercado-de-energia-eletrica",
           "trecho_literal": "",
           "associacao_origem": null,
           "gt_origem": null
@@ -382,7 +382,7 @@
       "qsv_fontes_independentes": [
         {
           "tipo": "F1_pagina_oficial",
-          "ref": "https://www.epe.gov.br/.../anuario-estatistico",
+          "ref": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/anuario-estatistico-de-energia-eletrica",
           "trecho_literal": "",
           "associacao_origem": null,
           "gt_origem": null
@@ -425,7 +425,7 @@
       "qsv_fontes_independentes": [
         {
           "tipo": "F1_pagina_oficial",
-          "ref": "https://www.epe.gov.br/.../plano-decenal-2035",
+          "ref": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035",
           "trecho_literal": "",
           "associacao_origem": null,
           "gt_origem": null
@@ -660,7 +660,7 @@
       "qsv_fontes_independentes": [
         {
           "tipo": "F1_pagina_oficial",
-          "ref": "https://www.epe.gov.br/.../Revisoes-Quadrimestrais-da-Carga",
+          "ref": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/revisoes-quadrimestrais-da-carga",
           "trecho_literal": "",
           "associacao_origem": null,
           "gt_origem": null
@@ -697,7 +697,7 @@
       "qsv_fontes_independentes": [
         {
           "tipo": "F1_pagina_oficial",
-          "ref": "https://www.epe.gov.br/.../consultas-publicas",
+          "ref": "https://www.epe.gov.br/pt/acesso-a-informacao/participacao-social/audiencias-e-consultas-publicas",
           "trecho_literal": "",
           "associacao_origem": null,
           "gt_origem": null
