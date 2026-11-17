@@ -38,14 +38,26 @@
           "beneficios[3](sem F1)"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-17",
+        "ids_relidos": [
+          "cruzamento_regulatorio[1]",
+          "cruzamento_regulatorio[4]",
+          "beneficios[4]",
+          "beneficios[5]",
+          "beneficios[6]",
+          "beneficios[7]"
+        ],
+        "monitor": "monitores-regulatorios-soa"
       }
     ]
   },
   "_carimbo": {
     "atualizado_em": "2026-10-13T00:00:00-03:00",
-    "hash": "sha256:73aaed265160931d0315e8b70885a0cd134297e295954a2a2dcd50d096a9985c",
+    "hash": "sha256:f5a0af04f06db226306b09a192da4f3f683a117f6a3c4bf857d90905999cedb4",
     "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias",
-    "selado_em": "2026-11-16"
+    "selado_em": "2026-11-17"
   },
   "_schema": {
     "versao": "1.0",
@@ -184,7 +196,8 @@
       "sem_soa": "—",
       "status": "verificado",
       "fonte": "planalto LC194",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-17",
+      "reconferencia_2026_11_17": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp194.htm :: LC 194/2022 inclui art. 18-A no CTN (vedada aliquota acima das operacoes em geral); Conv. ICMS 16/15 no CONFAZ conferido."
     },
     {
       "id": "icms_conv101",
@@ -205,7 +218,8 @@
       "sem_soa": "—",
       "status": "verificado",
       "fonte": "CONFAZ CV101/97",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-17",
+      "reconferencia_2026_11_17": "https://www.confaz.fazenda.gov.br/legislacao/convenios/1997/CV101_97 :: Conv. ICMS 101/97 prorrogado ate 31/12/28 pelo Conv. ICMS 156/17."
     },
     {
       "id": "pj_finem_energia",
@@ -226,7 +240,8 @@
       "sem_soa": "performance auditável do ativo",
       "status": "verificado",
       "fonte": "BNDES",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-17",
+      "reconferencia_2026_11_17": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/bndes-finem-energia :: Finem Energia: solar TLP + a partir de 1,1% a.a.; demais TLP + 1,5%; minimo R$ 40 mi; ate 80%; ate 24 anos."
     },
     {
       "id": "pj_fundoclima",
@@ -250,7 +265,8 @@
       "sem_soa": "KPI ambiental verificável",
       "status": "verificado",
       "fonte": "BNDES Fundo Clima",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-17",
+      "reconferencia_2026_11_17": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/fundo-clima :: Fundo Clima transicao energetica, PJ privada: solar 9,5% a.a.; demais 6,5% + taxa BNDES; minimo R$ 20 mi."
     },
     {
       "id": "pj_reidi",
@@ -982,8 +998,8 @@
         "BESS auditável"
       ],
       "porque_certificar": "Preço-teto e TUST do edital definem a receita; a evidência horária protege o DSCR do risco de dupla cobrança.",
-      "tentado_em": "2026-11-16",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Não consegui abrir o texto dos Editais 05 e 06/2026: a página de editais da ANEEL dá 403, e a notícia oficial não fala de preço-teto nem de TUST. A 'dupla cobrança' vem da REN 1.162/2026 (faturamento cumulativo de consumo e injeção), mas isso só aparece em escritórios | sem F1 acessivel em 16/11/2026: gov.br/aneel e bndes.gov.br ECONNREFUSED; in.gov.br ENOTFOUND"
+      "tentado_em": "2026-11-17",
+      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: item analitico; texto do edital (preco-teto e TUST) no site da ANEEL nao aberto, cedoc 403; REH 3.616/2026 no DOU de 29/10 confirma so edital e TUSDg de referencia"
     },
     {
       "fato_id": "ANEEL-CCEE-LRCAP-TERMICA-REF",
@@ -1008,8 +1024,8 @@
         "BESS auditável"
       ],
       "porque_certificar": "Outorga de 35 anos: a prova de performance sustenta o caso financeiro.",
-      "tentado_em": "2026-11-16",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Tentei de novo em 14/11: o cedoc dá 403 e o DOU (in.gov.br) não respondeu, nem pelo WebFetch nem pelo Chrome. Os '35 anos' de outorga do SAE autônomo aparecem só em fontes secundárias (Cescon Barrieu, Canal Solar), e as datas de publicação divergem entre elas (24 ou 2 | sem F1 acessivel em 16/11/2026: gov.br ECONNREFUSED; in.gov.br ENOTFOUND"
+      "verificado_em": "2026-11-17",
+      "reconferencia_2026_11_17": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.161-de-2-de-junho-de-2026-714430510 :: DOU 24/06/2026, S1, p. 90: REN 1.161, art. 8, par. 2: outorgas de autorizacao com vigencia de 35 anos."
     },
     {
       "fato_id": "ANEEL-REN-1161-1162-2026",

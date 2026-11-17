@@ -39,6 +39,14 @@
           "fatos[14]"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-17",
+        "ids_relidos": [
+          "fatos[0]",
+          "fatos[1]"
+        ],
+        "monitor": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Rodizio diario de reconferencia F1 (1a run, 14/11/2026, decisao D38 = a), itens mais antigos primeiro, com segunda leitura independente: ATUALIZAR 7, CONFIRMADO 3. _meta.verificado_em = data do item publicado mais antigo.",
@@ -51,9 +59,10 @@
       "status": "VIGENTE",
       "norma": "ADI 7074, incidente STF 6342164, numero unico 0114018-76.2022.1.00.0000, relator ministro Gilmar Mendes, requerente Partido dos Trabalhadores, amici curiae FENSEG, FENABER e Instituto Brasileiro de Direito do Seguro (IBDS). Decisao monocratica de 31/08/2026 julgando a acao prejudicada, publicada no DJE de 01/09/2026, divulgada em 31/08/2026. Resolucao CNSP 407, de 29/03/2021, revogada pelo art. 53 da Resolucao CNSP 496, de 17/08/2026. Transito em julgado certificado em 24/09/2026 e baixa ao arquivo do STF em 24/09/2026, Guia 29545/2026.",
       "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6342164",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-17",
       "pendencia_verificacao": "Andamentos, peticoes e pautas reabertos em F1 em 08/09/2026 por rota curl nas abas abaAndamentos, abaPeticoes e abaPautas. PENDENTE_REABERTURA em tres pontos: (a) o INTEIRO TEOR da decisao de 31/08 nao foi lido, porque downloadPeca.asp do portal do STF devolveu corpo vazio nas duas tentativas, com e sem cookie de sessao, de modo que os fundamentos da prejudicialidade seguem por ler; (b) a natureza da peticao 110725, protocolada pela PGR em 01/09/2026 no mesmo dia da intimacao, nao consta da aba de peticoes, que so informa data e unidade recebedora, e pode ser mera ciencia ou agravo regimental; (c) nao ha andamento de transito em julgado nem de arquivamento. Os tres pontos foram registrados no arquivo de acao do CEO. Validacao juridica de advogado de seguros necessaria antes de qualquer uso externo da leitura de que o risco retroativo do periodo 2021 a 2026 esta encerrado. RECONFERENCIA EM F1 em 14/09/2026 pelas abas abaAndamentos e abaPeticoes: o ultimo andamento segue sendo a peticao 110725 da PGR, de 01/09/2026; nenhum andamento novo em treze dias, nenhuma peticao nova, nenhum transito em julgado, nenhum arquivamento e nenhum agravo regimental registrado. Os tres pontos pendentes seguem abertos. RECONFERENCIA EM F1 em 21/09/2026 pelas abas abaAndamentos e abaPeticoes: andamento novo de 16/09/2026, Retirado de pauta, Tribunal Pleno, Julgamento Presencial: Merito. Nenhuma peticao nova apos a 110725 de 01/09/2026, nenhum transito em julgado, nenhum arquivamento e nenhum agravo regimental registrado. Os tres pontos pendentes seguem abertos. Atualizacao 30/09/2026: abaAndamentos reaberta em F1; transito em julgado e baixa ao arquivo em 24/09/2026. Status passa a VIGENTE no sentido de decisao definitiva. Resta apenas, como pendencia de baixa prioridade, a leitura do inteiro teor da decisao e da peticao 110725 da PGR.",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://portal.stf.jus.br/processos/detalhe.asp?incidente=6342164"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://portal.stf.jus.br/processos/detalhe.asp?incidente=6342164",
+      "reconferencia_2026_11_17": "https://portal.stf.jus.br/processos/abaAndamentos.asp?incidente=6342164 :: ADI 7074: prejudicada em 31/08/2026; transito em julgado e baixa ao arquivo em 24/09/2026."
     },
     {
       "tema": "Resolução CNSP nº 496/2026 — nova resolução de Seguros de Danos (Lei 15.040/2024), sucessora da CP SUSEP 10/2025",
@@ -61,8 +70,9 @@
       "status": "VIGENTE",
       "norma": "Resolução CNSP nº 496, de 17 de agosto de 2026 · DOU de 18/08/2026, Edição 155-B, Seção 1 - Extra B, p. 7 · Processo Susep nº 15414.616113/2025-01 · Lei 15.040/2024 · sucessora do Edital de Consulta Pública SUSEP nº 10/2025 · revoga a Resolução CNSP nº 407/2021",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-cnsp-n-496-de-17-de-agosto-de-2026-726174976",
-      "verificado_em": "2026-11-14",
-      "pendencia_verificacao": "Texto oficial do DOU lido na íntegra em 21/08/2026. Falta ler a regulamentação complementar da Susep prevista nos arts. 7º, 11 parágrafo 1º, 30 e 51, ainda não editada — é nela que caberia um tratamento dedicado do paramétrico e da figura do terceiro apurador de índice. Validação jurídica de advogado de seguros necessária antes de uso externo. Reconferido em F1 em 21/09/2026: texto oficial reaberto no DOU, sem republicacao, art. 53 e art. 30 inalterados. Varredura dos indices do DOU, Secoes 1, 1 Extra, 1 A e 3, de 15 a 21/09/2026: nenhuma Resolucao CNSP e nenhuma Resolucao Susep de regulamentacao complementar da Resolucao CNSP 496. Contexto da Lei 15.040/2024: a pauta oficial da 18a Reuniao Ordinaria do Conselho Diretor, de 23/09/2026, item 3, Processo Susep 15414.669418/2025-16, traz proposta de Resolucao Susep que regulamenta o paragrafo unico do art. 129 da Lei 15.040, sobre credenciamento de entidades e pessoas naturais responsaveis pela resolucao alternativa de conflitos em contratos de seguro, para consulta publica. E proposta em pauta, ainda nao deliberada. Atualizacao 30/09/2026: a regulamentacao do art. 129, paragrafo unico, da Lei 15.040 foi a consulta publica pelo Edital 10/2026/SUSEP (DOU de 29/09/2026); ver fato dedicado. Texto da 496 nao reaberto nesta execucao."
+      "verificado_em": "2026-11-17",
+      "pendencia_verificacao": "Texto oficial do DOU lido na íntegra em 21/08/2026. Falta ler a regulamentação complementar da Susep prevista nos arts. 7º, 11 parágrafo 1º, 30 e 51, ainda não editada — é nela que caberia um tratamento dedicado do paramétrico e da figura do terceiro apurador de índice. Validação jurídica de advogado de seguros necessária antes de uso externo. Reconferido em F1 em 21/09/2026: texto oficial reaberto no DOU, sem republicacao, art. 53 e art. 30 inalterados. Varredura dos indices do DOU, Secoes 1, 1 Extra, 1 A e 3, de 15 a 21/09/2026: nenhuma Resolucao CNSP e nenhuma Resolucao Susep de regulamentacao complementar da Resolucao CNSP 496. Contexto da Lei 15.040/2024: a pauta oficial da 18a Reuniao Ordinaria do Conselho Diretor, de 23/09/2026, item 3, Processo Susep 15414.669418/2025-16, traz proposta de Resolucao Susep que regulamenta o paragrafo unico do art. 129 da Lei 15.040, sobre credenciamento de entidades e pessoas naturais responsaveis pela resolucao alternativa de conflitos em contratos de seguro, para consulta publica. E proposta em pauta, ainda nao deliberada. Atualizacao 30/09/2026: a regulamentacao do art. 129, paragrafo unico, da Lei 15.040 foi a consulta publica pelo Edital 10/2026/SUSEP (DOU de 29/09/2026); ver fato dedicado. Texto da 496 nao reaberto nesta execucao.",
+      "reconferencia_2026_11_17": "https://www.in.gov.br/web/dou/-/resolucao-cnsp-n-496-de-17-de-agosto-de-2026-726174976 :: Res. CNSP 496/2026: adaptacao ate 04/01/2027; contratos a partir de 05/01/2027; revoga CNSP 407/2021."
     },
     {
       "tema": "Sandbox Regulatório SUSEP — 3ª edição (transformação ecológica)",
