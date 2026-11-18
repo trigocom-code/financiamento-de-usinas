@@ -43,54 +43,25 @@
           "fatos[3]"
         ],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-18",
+        "relidos": [
+          "fatos[0](sem F1)",
+          "fatos[1](sem F1)",
+          "fatos[2](sem F1)",
+          "fatos[4](sem F1)",
+          "fatos[7](sem F1)"
+        ],
+        "por": "reconferencia_fatos_2026-11-16 (sessao interativa, retomada em 18/11/2026)",
+        "acao": "os 5 itens sem F1 sairam de fatos para _pendentes_verificacao; indices anteriores a esta entrada"
       }
     ],
-    "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005)."
+    "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
+    "nota_run_2026_11_18_reconferencia": "Reconferencia de 16-18/11/2026 (auditoria do catalogo de 16/11). _meta.verificado_em = conferencia do item publicado mais antigo, agora 2026-11-14 (fatos[1]). Itens sem F1 acessivel sairam da secao exibida para _pendentes_verificacao (opcao a). Mapa de indices: {\"fatos[0]\": \"_pendentes_verificacao[0]\", \"fatos[1]\": \"_pendentes_verificacao[1]\", \"fatos[2]\": \"_pendentes_verificacao[2]\", \"fatos[3]\": \"fatos[0]\", \"fatos[4]\": \"_pendentes_verificacao[3]\", \"fatos[5]\": \"fatos[1]\", \"fatos[6]\": \"fatos[2]\", \"fatos[7]\": \"_pendentes_verificacao[4]\"}",
+    "nota_rodizio_2026_11_18": "18/11/2026: as entradas de rodizio de 14/11 (lote 2, ONS: lista inteira) e de 17/11 ('ids_relidos') incluem itens que so tiveram tentativa sem F1 (campo tentado_em), sem a marca '(sem F1)'. Nessas entradas, 'relido' quer dizer 'tentado'. Nao reescrever o historico; ler junto com tentado_em e pendencia_verificacao de cada item."
   },
   "fatos": [
-    {
-      "tema": "NT 107/2026-SFT/ANEEL — a fotografia oficial do combate ao 'gato solar'",
-      "valor": "Nota Técnica que consolida a resposta de 50 distribuidoras ao Ofício Circular nº 12/2026-SFT/ANEEL. Confirma (F1) que quase todos os agentes já têm processos estruturados de detecção da 'alteração à revelia' de MMGD e adota uma estratégia em DUAS camadas: (1) triagem analítica por dados e (2) fiscalização/vistoria em campo. Resultados de terceiros, atribuídos à ANEEL: 70.187 UCs suspeitas, 22.739 inspeções realizadas (32% do universo suspeito), 13.402 irregularidades identificadas (59%) e 87,93 MW de potência à revelia — equivalente a 0,31% da potência de MMGD total registrada (Tabela 1 + §51). Recomenda dar ciência ao Diretor-Relator da CP nº 009/2026 e cobrar o ONS sobre a metodologia do relatório DPL 0149/2026. RECONFIRMADO EM F1 EM 17/09/2026: indice de noticias ANEEL e hub de Geracao Distribuida reabertos; nenhum ato novo de homologacao da CP 009/2026 nem nova NT SFT sobre GD irregular indexado nessas paginas nesta janela. Status/norma mantidos. Prazo de contribuicoes da CP 009/2026 (abertura 22/04/2026, 45 dias) encerrou em 08/06/2026 (prorrogacao automatica a partir de 06/06/2026); deliberacao da Diretoria ainda nao publicada como REN nestas fontes F1 reabertas.",
-      "status": "VIGENTE",
-      "norma": "NT 107/2026-SFT/ANEEL (22/06/2026) · Ofício Circular 12/2026-SFT · Ref. 48500.015900/2026-94",
-      "fonte": "F1 ANEEL (SEI 0388524, CRC 78D83A6B, assinada 23/06/2026)",
-      "url": "https://sei.aneel.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0",
-      "verificado_em": "2026-09-17",
-      "vetores_afetados": [
-        "V2",
-        "sHEC"
-      ],
-      "tentado_em": "2026-11-16",
-      "pendencia_verificacao": "sem F1 acessível em 15/11/2026: A NT 107/2026-SFT esta no SEI da ANEEL. A conferencia por codigo CRC exige formulario e CAPTCHA, que nao preencho. Nao ha copia em dominio oficial aberto. || anterior: sem F1 acessível em 14/11/2026: Concordo com o veredito. Não achei cópia da NT 107/2026-SFT em domínio oficial: a busca só devolve a NT 148/2025-STD e uma NT 107/2026-STR, que trata de tarifa da Energisa Tocantins e não tem relação com o tema. A busca no DOU pelo processo 48500.015900/2026-94 volta  | sem F1 acessivel em 16/11/2026: NT 107/2026-SFT so no SEI ANEEL com CAPTCHA (3a run sem F1)"
-    },
-    {
-      "tema": "A detecção hoje é por ESTIMATIVA (observado × esperado) — a cunha da prova física SOA",
-      "valor": "F1 (NT 107/2026, §III.1 e §III.7): toda a triagem das distribuidoras compara geração OBSERVADA com uma geração ESPERADA calculada por modelo. CEMIG-D usa Eg = Pg × FC × 24 × 30 (FC de referência 16%, adotado 160 h/mês); CPFL usa o indicador Ra = P_máx_injetada / P_aprovada (Ra>1 = indício) para o Grupo A e um indicador RB para o Grupo B; CELESC usa coeficiente de geração (kWh/kW). As PRÓPRIAS distribuidoras reconhecem o limite: a Light aponta a lacuna do ILR (Inverter Loading Ratio) e que 'limitações de medição/modelagem podem ampliar o espaço para questionamentos sobre a detecção baseada em estimativas'; a Nova Palma aponta 'ausência de previsão suficientemente objetiva'. É exatamente aqui que entra a prova SOA: reconciliação potência declarada × geração fisicamente possível (irradiância NASA POWER × modelo pvlib), hora a hora — medida, não estimada.",
-      "status": "VIGENTE",
-      "norma": "NT 107/2026-SFT/ANEEL §III.1 (detecção) e §III.7 (desafios)",
-      "fonte": "F1 ANEEL",
-      "verificado_em": "2026-09-17",
-      "vetores_afetados": [
-        "V2",
-        "sHEC"
-      ],
-      "tentado_em": "2026-11-17",
-      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: NT 107/2026-SFT so no SEI/ANEEL (CAPTCHA), cedoc 403"
-    },
-    {
-      "tema": "Zona cinzenta técnica — overpaneling / overdelivery / ILR",
-      "valor": "F1 (NT 107/2026, §III.7.2): há situações limítrofes que a detecção por estimativa não separa bem. 'Overpaneling' (ou overload) = acréscimo de módulos sem atualização formal do projeto, elevando a energia injetada. 'Overdelivery' = inversor injetando potência ativa acima da nominal de placa, próximo à máxima aparente dos módulos, sem substituição formal do inversor. CPFL e Neoenergia pedem clareza sobre a potência de referência a considerar (nominal × máxima efetiva na saída do inversor). O gêmeo digital horário da SOA mede a injeção real contra o teto físico do sistema declarado — endereçando a distinção entre fenômeno técnico-operacional e irregularidade que hoje fica em aberto. RECONFIRMADO EM F1 EM 17/09/2026: indice de noticias ANEEL e hub de Geracao Distribuida reabertos; nenhum ato novo de homologacao da CP 009/2026 nem nova NT SFT sobre GD irregular indexado nessas paginas nesta janela. Status/norma mantidos. Prazo de contribuicoes da CP 009/2026 (abertura 22/04/2026, 45 dias) encerrou em 08/06/2026 (prorrogacao automatica a partir de 06/06/2026); deliberacao da Diretoria ainda nao publicada como REN nestas fontes F1 reabertas.",
-      "status": "EM DELIBERAÇÃO",
-      "norma": "NT 107/2026-SFT/ANEEL §III.7.2 (ambiguidades técnicas) · insumo à CP 009/2026",
-      "fonte": "F1 ANEEL",
-      "verificado_em": "2026-09-17",
-      "vetores_afetados": [
-        "V2",
-        "sHEC"
-      ],
-      "tentado_em": "2026-11-17",
-      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: nucleo depende da NT 107/2026-SFT, sem copia oficial acessivel (SEI com CAPTCHA, cedoc 403)"
-    },
     {
       "tema": "CP ANEEL 009/2026 (decisão de 22/04/2026)",
       "valor": "Na 8ª Reunião Pública Ordinária (22/04/2026) a Diretoria da ANEEL tomou DUAS medidas conexas: (a) abriu a CP nº 009/2026, para subsídios sobre o tratamento de excedentes de energia e a ampliação da flexibilidade operativa na Rede de Distribuição (relator dir. Gentil Nogueira; base na NT 148/2025-STD); e (b) mandou aplicar, de forma imediata, as regras de sinalização sistêmica de restrições na transmissão para novas conexões na distribuição. Segundo a imprensa (IstoÉ Dinheiro, 22/04/2026), foi fixado prazo de 60 dias para um diagnóstico dos aumentos de potência à revelia; esse prazo não consta da decisão registrada na ata. Contribuições da CP encerradas em 08/06/2026; em consolidação. ⟨ATUALIZAÇÃO 28/07/2026 · varredura consolidadora `monitores-regulatorios-soa`⟩ RECONFIRMADO EM F1 (listagem oficial de Consultas Publicas vigentes da ANEEL, lida em 28/07/2026): 'Consulta 009/2026 — Objeto: obter subsidios para aprimoramentos regulatorios para tratamento de excedentes de energia e maior flexibilidade operativa na Rede de Distribuicao'. CORRECAO DE PRAZO: a listagem declara 'Considerando que a data final para envio das contribuicoes indicada no aviso de abertura publicado no DOU nao e um dia util, o prazo fica automaticamente prorrogado ate as 23h59 do dia 8/6/2026' — logo o encerramento e 08/06/2026, e nao 06/06/2026. Em 13/10/2026 a CP consta na aba 'Encerradas' da listagem oficial (periodo de contribuicao de 23/04/2026 a 08/06/2026), com a lista de contribuicoes publicada e sem relatorio de analise, resultado ou segunda fase. A ata da 8a Reuniao Publica Ordinaria (22/04/2026, item 5) registra que a minuta de Resolucao Normativa posta em consulta trata, entre outros aspectos, do combate a alteracao a revelia de MMGD. RECONFIRMADO EM F1 EM 17/09/2026: indice de noticias ANEEL e hub de Geracao Distribuida reabertos; nenhum ato novo de homologacao da CP 009/2026 nem nova NT SFT sobre GD irregular indexado nessas paginas nesta janela. Status/norma mantidos. Prazo de contribuicoes da CP 009/2026 (abertura 22/04/2026, 45 dias) encerrou em 08/06/2026 (prorrogacao automatica a partir de 06/06/2026); deliberacao da Diretoria ainda nao publicada como REN nestas fontes F1 reabertas.",
@@ -105,21 +76,6 @@
         "sHEC"
       ],
       "reconferencia_2026_11_17": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-9/2026-701049289 :: Aviso CP 9/2026, envio de 23/4 a 6/6/2026; sem REN nem 2a fase no DOU ate 17/11 (segue em deliberacao)."
-    },
-    {
-      "tema": "Lastro de escala — GD não declarada (ONS DPL 0149/2026)",
-      "valor": "Estimativa oficial do ONS, atribuída ao Operador: potência equivalente faltante de ~11,8 GW a 14,6 GW em 2025, que o Operador associa, como hipótese técnica e não como comprovação causal, a MMGD não registrada ou não plenamente refletida nos registros (relatório técnico ONS DPL 0149/2026, encaminhado à ANEEL pela CTA-ONS DPL 0571/2026 em 17/04/2026, e citado na NT 107/2026). Ordem de grandeza de uma Itaipu. A inspeção física amostral (32% do universo suspeito) não escala para 43 mi de UCs nem para os ~14 GW potenciais → a reconciliação remota potência declarada × geração fisicamente possível (QSV/gêmeo digital) é o caminho de auditoria contínua. NÃO confundir o impacto estimado das irregularidades (~R$ 5 bi, fonte secundária) com os ~R$ 16 bi de subsídio/desconto da GD via CDE.",
-      "status": "VIGENTE (referência)",
-      "norma": "ONS DPL 0149/2026 (via CTA-ONS DPL 0571/2026) · citado na NT 107/2026",
-      "fonte": "F1-referenciado (ONS, citado por ANEEL na NT 107/2026)",
-      "url": "https://agenciainfra.com/blog/aneel-inspecao-de-distribuidoras-encontra-88-mw-de-gato-solar/",
-      "verificado_em": "2026-10-13",
-      "vetores_afetados": [
-        "V2",
-        "sHEC"
-      ],
-      "tentado_em": "2026-11-14",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Concordo. A busca só acha o RT-ONS DPL 0149/2026 e a CTA-ONS DPL 0571/2026 hospedados pela Agência iNFRA (F2); nada em ons.org.br. Não abri o verificador do Portal de Assinaturas do ONS: tentativa barrada no meu ambiente, e o 1º revisor relata reCAPTCHA. Fonte F1 late"
     },
     {
       "tema": "Parecer ANEEL — corte de GD solar e corresponsabilização pelo curtailment",
@@ -147,6 +103,70 @@
       "vetores_afetados": [
         "V2"
       ]
+    }
+  ],
+  "_pendentes_verificacao": [
+    {
+      "tema": "NT 107/2026-SFT/ANEEL — a fotografia oficial do combate ao 'gato solar'",
+      "valor": "Nota Técnica que consolida a resposta de 50 distribuidoras ao Ofício Circular nº 12/2026-SFT/ANEEL. Confirma (F1) que quase todos os agentes já têm processos estruturados de detecção da 'alteração à revelia' de MMGD e adota uma estratégia em DUAS camadas: (1) triagem analítica por dados e (2) fiscalização/vistoria em campo. Resultados de terceiros, atribuídos à ANEEL: 70.187 UCs suspeitas, 22.739 inspeções realizadas (32% do universo suspeito), 13.402 irregularidades identificadas (59%) e 87,93 MW de potência à revelia — equivalente a 0,31% da potência de MMGD total registrada (Tabela 1 + §51). Recomenda dar ciência ao Diretor-Relator da CP nº 009/2026 e cobrar o ONS sobre a metodologia do relatório DPL 0149/2026. RECONFIRMADO EM F1 EM 17/09/2026: indice de noticias ANEEL e hub de Geracao Distribuida reabertos; nenhum ato novo de homologacao da CP 009/2026 nem nova NT SFT sobre GD irregular indexado nessas paginas nesta janela. Status/norma mantidos. Prazo de contribuicoes da CP 009/2026 (abertura 22/04/2026, 45 dias) encerrou em 08/06/2026 (prorrogacao automatica a partir de 06/06/2026); deliberacao da Diretoria ainda nao publicada como REN nestas fontes F1 reabertas.",
+      "status": "VIGENTE",
+      "norma": "NT 107/2026-SFT/ANEEL (22/06/2026) · Ofício Circular 12/2026-SFT · Ref. 48500.015900/2026-94",
+      "fonte": "F1 ANEEL (SEI 0388524, CRC 78D83A6B, assinada 23/06/2026)",
+      "url": "https://sei.aneel.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0",
+      "verificado_em": "2026-09-17",
+      "vetores_afetados": [
+        "V2",
+        "sHEC"
+      ],
+      "tentado_em": "2026-11-18",
+      "pendencia_verificacao": "sem F1 acessível em 18/11/2026: NT 107/2026-SFT so no SEI da ANEEL; em 18/11/2026 06:17 a pagina de conferencia devolveu HTTP 403 (Cloudflare) e exige CRC e CAPTCHA, que nao se resolve; nao ha copia em dominio oficial aberto. || anterior: sem F1 acessível em 15/11/2026: A NT 107/2026-SFT esta no SEI da ANEEL. A conferencia por codigo CRC exige formulario e CAPTCHA, que nao preencho. Nao ha copia em dominio oficial aberto. || anterior: sem F1 acessível em 14/11/2026: Concordo com o veredito. Não achei cópia da NT 107/2026-SFT em domínio oficial: a busca só devolve a NT 148/2025-STD e uma NT 107/2026-STR, que trata de tarifa da Energisa Tocantins e não tem relação com o tema. A busca no DOU pelo processo 48500.015900/2026-94 volta  | sem F1 acessivel em 16/11/2026: NT 107/2026-SFT so no SEI ANEEL com CAPTCHA (3a run sem F1)",
+      "motivo_pendencia": "Retirado da secao publicada (fatos) em 18/11/2026 pela regra do dono: sem conferencia real na fonte oficial nao se carimba data. verificado_em abaixo e historico e nao e exibido. Volta a fatos so com releitura em F1 (data, URL e sha256)."
+    },
+    {
+      "tema": "A detecção hoje é por ESTIMATIVA (observado × esperado) — a cunha da prova física SOA",
+      "valor": "F1 (NT 107/2026, §III.1 e §III.7): toda a triagem das distribuidoras compara geração OBSERVADA com uma geração ESPERADA calculada por modelo. CEMIG-D usa Eg = Pg × FC × 24 × 30 (FC de referência 16%, adotado 160 h/mês); CPFL usa o indicador Ra = P_máx_injetada / P_aprovada (Ra>1 = indício) para o Grupo A e um indicador RB para o Grupo B; CELESC usa coeficiente de geração (kWh/kW). As PRÓPRIAS distribuidoras reconhecem o limite: a Light aponta a lacuna do ILR (Inverter Loading Ratio) e que 'limitações de medição/modelagem podem ampliar o espaço para questionamentos sobre a detecção baseada em estimativas'; a Nova Palma aponta 'ausência de previsão suficientemente objetiva'. É exatamente aqui que entra a prova SOA: reconciliação potência declarada × geração fisicamente possível (irradiância NASA POWER × modelo pvlib), hora a hora — medida, não estimada.",
+      "status": "VIGENTE",
+      "norma": "NT 107/2026-SFT/ANEEL §III.1 (detecção) e §III.7 (desafios)",
+      "fonte": "F1 ANEEL",
+      "verificado_em": "2026-09-17",
+      "vetores_afetados": [
+        "V2",
+        "sHEC"
+      ],
+      "tentado_em": "2026-11-18",
+      "pendencia_verificacao": "sem F1 acessível em 18/11/2026: Texto depende dos §III.1 e §III.7 da NT 107/2026-SFT, so no SEI (HTTP 403 Cloudflare + CAPTCHA em 18/11/2026); sem F1 alternativa. || anterior: sem F1 acessível em 17/11/2026: NT 107/2026-SFT so no SEI/ANEEL (CAPTCHA), cedoc 403",
+      "motivo_pendencia": "Retirado da secao publicada (fatos) em 18/11/2026 pela regra do dono: sem conferencia real na fonte oficial nao se carimba data. verificado_em abaixo e historico e nao e exibido. Volta a fatos so com releitura em F1 (data, URL e sha256)."
+    },
+    {
+      "tema": "Zona cinzenta técnica — overpaneling / overdelivery / ILR",
+      "valor": "F1 (NT 107/2026, §III.7.2): há situações limítrofes que a detecção por estimativa não separa bem. 'Overpaneling' (ou overload) = acréscimo de módulos sem atualização formal do projeto, elevando a energia injetada. 'Overdelivery' = inversor injetando potência ativa acima da nominal de placa, próximo à máxima aparente dos módulos, sem substituição formal do inversor. CPFL e Neoenergia pedem clareza sobre a potência de referência a considerar (nominal × máxima efetiva na saída do inversor). O gêmeo digital horário da SOA mede a injeção real contra o teto físico do sistema declarado — endereçando a distinção entre fenômeno técnico-operacional e irregularidade que hoje fica em aberto. RECONFIRMADO EM F1 EM 17/09/2026: indice de noticias ANEEL e hub de Geracao Distribuida reabertos; nenhum ato novo de homologacao da CP 009/2026 nem nova NT SFT sobre GD irregular indexado nessas paginas nesta janela. Status/norma mantidos. Prazo de contribuicoes da CP 009/2026 (abertura 22/04/2026, 45 dias) encerrou em 08/06/2026 (prorrogacao automatica a partir de 06/06/2026); deliberacao da Diretoria ainda nao publicada como REN nestas fontes F1 reabertas.",
+      "status": "EM DELIBERAÇÃO",
+      "norma": "NT 107/2026-SFT/ANEEL §III.7.2 (ambiguidades técnicas) · insumo à CP 009/2026",
+      "fonte": "F1 ANEEL",
+      "verificado_em": "2026-09-17",
+      "vetores_afetados": [
+        "V2",
+        "sHEC"
+      ],
+      "tentado_em": "2026-11-18",
+      "pendencia_verificacao": "sem F1 acessível em 18/11/2026: Nucleo do fato no §III.7.2 da NT 107/2026-SFT, so no SEI (HTTP 403 Cloudflare + CAPTCHA em 18/11/2026). || anterior: sem F1 acessível em 17/11/2026: nucleo depende da NT 107/2026-SFT, sem copia oficial acessivel (SEI com CAPTCHA, cedoc 403)",
+      "motivo_pendencia": "Retirado da secao publicada (fatos) em 18/11/2026 pela regra do dono: sem conferencia real na fonte oficial nao se carimba data. verificado_em abaixo e historico e nao e exibido. Volta a fatos so com releitura em F1 (data, URL e sha256)."
+    },
+    {
+      "tema": "Lastro de escala — GD não declarada (ONS DPL 0149/2026)",
+      "valor": "Estimativa oficial do ONS, atribuída ao Operador: potência equivalente faltante de ~11,8 GW a 14,6 GW em 2025, que o Operador associa, como hipótese técnica e não como comprovação causal, a MMGD não registrada ou não plenamente refletida nos registros (relatório técnico ONS DPL 0149/2026, encaminhado à ANEEL pela CTA-ONS DPL 0571/2026 em 17/04/2026, e citado na NT 107/2026). Ordem de grandeza de uma Itaipu. A inspeção física amostral (32% do universo suspeito) não escala para 43 mi de UCs nem para os ~14 GW potenciais → a reconciliação remota potência declarada × geração fisicamente possível (QSV/gêmeo digital) é o caminho de auditoria contínua. NÃO confundir o impacto estimado das irregularidades (~R$ 5 bi, fonte secundária) com os ~R$ 16 bi de subsídio/desconto da GD via CDE.",
+      "status": "VIGENTE (referência)",
+      "norma": "ONS DPL 0149/2026 (via CTA-ONS DPL 0571/2026) · citado na NT 107/2026",
+      "fonte": "F1-referenciado (ONS, citado por ANEEL na NT 107/2026)",
+      "url": "https://agenciainfra.com/blog/aneel-inspecao-de-distribuidoras-encontra-88-mw-de-gato-solar/",
+      "verificado_em": "2026-10-13",
+      "vetores_afetados": [
+        "V2",
+        "sHEC"
+      ],
+      "tentado_em": "2026-11-18",
+      "pendencia_verificacao": "sem F1 acessível em 18/11/2026: RT-ONS DPL 0149/2026 nao esta no Acervo Digital publico do ONS (busca '0149' sem resultado em 18/11/2026); so ha copia na Agencia iNFRA (F2); o verificador de assinaturas do ONS exige reCAPTCHA. || anterior: sem F1 acessível em 14/11/2026: Concordo. A busca só acha o RT-ONS DPL 0149/2026 e a CTA-ONS DPL 0571/2026 hospedados pela Agência iNFRA (F2); nada em ons.org.br. Não abri o verificador do Portal de Assinaturas do ONS: tentativa barrada no meu ambiente, e o 1º revisor relata reCAPTCHA. Fonte F1 late",
+      "motivo_pendencia": "Retirado da secao publicada (fatos) em 18/11/2026 pela regra do dono: sem conferencia real na fonte oficial nao se carimba data. verificado_em abaixo e historico e nao e exibido. Volta a fatos so com releitura em F1 (data, URL e sha256)."
     },
     {
       "tema": "Posição setorial (ABSOLAR/ABGD)",
@@ -159,8 +179,9 @@
         "V2",
         "sHEC"
       ],
-      "tentado_em": "2026-11-14",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Concordo. Posição de associação não tem F1 por natureza, e o próprio campo fonte já a classifica como F3. Na minha busca, a nota conjunta de 12/06/2026 só aparece na imprensa (Agência iNFRA, Cenário Energia, Canal Solar), sem o texto original no site da ABSOLAR. Pela "
+      "tentado_em": "2026-11-18",
+      "pendencia_verificacao": "sem F1 acessível em 18/11/2026: Posicao de associacao (F3 por natureza); a nota conjunta ABSOLAR/ABGD de 12/06/2026 nao aparece no site da ABSOLAR (buscas 'gato solar', 'nota conjunta', 'ABGD' em 18/11/2026). || anterior: sem F1 acessível em 14/11/2026: Concordo. Posição de associação não tem F1 por natureza, e o próprio campo fonte já a classifica como F3. Na minha busca, a nota conjunta de 12/06/2026 só aparece na imprensa (Agência iNFRA, Cenário Energia, Canal Solar), sem o texto original no site da ABSOLAR. Pela ",
+      "motivo_pendencia": "Retirado da secao publicada (fatos) em 18/11/2026 pela regra do dono: sem conferencia real na fonte oficial nao se carimba data. verificado_em abaixo e historico e nao e exibido. Volta a fatos so com releitura em F1 (data, URL e sha256)."
     }
   ]
 }
