@@ -70,10 +70,21 @@
           "_pendentes_verificacao[2](sem F1)"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-17",
+        "ids_relidos": [
+          "fatos[8]",
+          "fatos[0]",
+          "_pendentes_verificacao[0]",
+          "_pendentes_verificacao[2]"
+        ],
+        "monitor": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 1, CONFIRMADO 1. _meta.verificado_em = data do item publicado mais antigo.",
-    "nota_carimbo_engine_2026_11_16": "4 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005)."
+    "nota_carimbo_engine_2026_11_16": "4 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
+    "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 9 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46."
   },
   "fatos": [
     {
@@ -83,7 +94,7 @@
       "status": "VIGENTE",
       "norma": "NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (conexão/grid-forming) · limiares na Portaria MME 136/2026 Art. 7º + Art. 4º §13",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-17",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -117,7 +128,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-976/NT%20ONS%20DPL%200111-2025%20-%20EPE-DEE-NT-095-2025%20-%20Requisitos%20SAE-B_Rev5_Final.pdf"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-976/NT%20ONS%20DPL%200111-2025%20-%20EPE-DEE-NT-095-2025%20-%20Requisitos%20SAE-B_Rev5_Final.pdf",
+      "reconferencia_2026_11_17": "https://www.epe.gov.br/pt/imprensa/noticias/epe-e-ons-revisam-nota-tecnica-com-os-requisitos-minimos-para-o-leilao-de-reserva-de-capacidade-lrcap-de-armazenamento-de-2026 :: EPE 22/10/2026: revisao da NT-ONS DPL 0111/2025 / EPE-DEE-NT-095/2025 com esclarecimentos pontuais; pagina do LRCAP traz Requisitos SAE-B_Rev5_Final.pdf."
     },
     {
       "fato_id": "ONS-SUBMODULO-9",
@@ -469,8 +481,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "tentado_em": "2026-11-16",
-      "pendencia_verificacao": "sem F1 acessível em 15/11/2026: A NT-ONS DPL 0031/2024 revisada nao foi achada em dominio oficial (busca em ons.org.br, gov.br, ccee.org.br). A consulta a API do acervo do ONS foi negada pelo controle de permissoes desta sessao, e o SINtegre exige login. || anterior: sem F1 acessível em 14/11/2026: Concordo. Duas buscas restritas a ons.org.br, gov.br, ccee.org.br e aneel.gov.br não acharam a NT-ONS DPL 0031/2024 revisada, nem notícia oficial sobre a correção nas horas de nascer e pôr do sol. Apareceram só a REN 1.073/2023 e submódulos que descrevem a função de p | sem F1 acessivel em 16/11/2026: NT DPL 0031/2024 revisada so no SINtegre (login) e acervo do ONS"
+      "tentado_em": "2026-11-17",
+      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: SINtegre exige login; pagina de noticias do ONS sem conteudo estatico; so imprensa"
     }
   ],
   "_pendentes_verificacao": [
@@ -480,7 +492,7 @@
       "valor": "Reverificacao NEGATIVA de 01/09/2026 as 08h47, feita pela rotina consolidadora por rota anonima e reproduzivel: lista Acervo Digital - Documentos e Publicacoes do SharePoint do ONS, ordenada por Modified desc. O item mais recente do acervo publico e a Nota Tecnica de Quantitativos da Capacidade Remanescente do SIN da 1a Temporada de Acesso de 2026, Id 8558, Modified 2026-08-31T23:24:21Z. Nenhum item do acervo trata do cronograma, das especificacoes tecnicas ou dos criterios de validacao do art. 4o par. 1o I, cujo termo venceu em 27/07/2026 - hoje sao 36 dias de atraso no canal publico. FORMULACAO CITAVEL, e apenas ela: nao consta do acervo publico do ONS. E vedado escrever que o ONS nao publicou: a divulgacao do Operador ocorre no SINtegre, portal logado que devolveu HTTP 302 para tela de login. A RESSALVA DE FRESCOR REGISTRADA EM 31/08 CAIU: naquela data o acervo estava parado desde 28/08 20h30 e o negativo era fraco; o acervo recebeu item novo em 31/08 as 23h24, provando que a fonte estava viva, e o que entrou nao foi o rito do art. 4o. LEITURA SOA inalterada: e este documento que define COMO o contrafactual de corte sera reconstruido, e portanto onde a verificacao ex-post tem lastro procedimental.",
       "status": "NAO CONSTA DO ACERVO PUBLICO - reverificacao negativa por rota anonima; ressalva de frescor de 31/08 superada",
       "norma": "Portaria MME no 140, de 18/07/2026 (DOU 21/07/2026) — prazo vencido em 27/07/2026",
-      "url": "https://www.ons.org.br/_api/web/lists/getbytitle('Acervo Digital - Documentos e Publicacoes')/items",
+      "url": "https://www.ons.org.br/paginas/noticias/details.aspx?i=13067",
       "verificado_em": "2026-09-01",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 18,
@@ -492,9 +504,9 @@
       "qsv_origem_classificacao": "reverificacao_negativa_F1_acervo_publico_ONS_01set2026_0847_rota_anonima",
       "numero_status": "SEM_NUMEROS",
       "motivo_pendencia": "Exige camada portal / SINTEGRE (Chrome logado, sessao interativa). Reverificar diariamente ate a contestacao de 09/09.",
-      "pendencia_verificacao": "sem F1 acessível em 15/11/2026: A consulta a API do Acervo Digital do ONS foi negada pelo controle de permissoes desta sessao. O SINtegre exige login. Busca em ons.org.br, gov.br e ccee.org.br nao achou publicacao com cronograma ou criterios de validacao do art. 4, § 1, I. || anterior: [A VERIFICAR] SINtegre (portal logado, HTTP 302 anonimo reconfirmado em 01/09) - unica rota que distingue nao consta do acervo publico de nao foi divulgado. [NOTA DE METODO 01/09] O limite declarado de que a lista entrega METADADO e nao ARQUIVO esta SUPERADO: a rota items(<Id>)/File devolve HTTP 200 com Name, ServerRelativeUrl e Length, e o PDF e baixado direto de www.ons.org.br mais o ServerRelativeUrl. AttachmentFiles em HTTP 400 e _api/search/query em HTTP 500 seguem falhando, mas eram a rota errada. | sem F1 acessível em 14/11/2026: Concordo. A rota do item (API da lista do Acervo Digital do ONS) foi recusada pelo controle de permissões desta sessão no WebFetch. O SINtegre exige login. A busca em ons.org.br, gov.br e ccee.org.br não achou publicação do ONS com cronograma ou critérios de validação | sem F1 acessivel em 16/11/2026: SINtegre exige login; cronograma nao achado em dominio aberto",
+      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: pagina do ONS sem conteudo estatico; acervo publico nao reconsultado; SINtegre exige login",
       "gatilho_revisao": "publicacao no acervo publico do ONS ou no SINtegre; leitura do fim do dia de 31/08; abertura da janela de contestacao do art. 4o par. 2o",
-      "tentado_em": "2026-11-16"
+      "tentado_em": "2026-11-17"
     },
     {
       "fato_id": "ONS-PROCEDIMENTOS-REDE-DECRETO-12772-2025",
@@ -528,9 +540,9 @@
       "qsv_cor": "LARANJA",
       "qsv_origem_classificacao": "marco_de_calendario_ancorado_no_ato + reverificacao_negativa_FORTE_canal_publico_01set2026_0847_rota_anonima_propria",
       "numero_status": "ANCORADO_PARCIAL",
-      "pendencia_verificacao": "sem F1 acessível em 15/11/2026: A divulgacao das funcoes pelo ONS nao e verificavel: a API do acervo foi negada nesta sessao, o SINtegre exige login e a busca em dominios oficiais nao trouxe nada. || anterior: [A VERIFICAR] Se a divulgacao ocorreu no SINtegre em 31/08/2026 - so o portal logado responde, e ele devolve HTTP 302 anonimo. Enquanto nao houver essa leitura, nao se afirma nem a ocorrencia nem a ausencia da divulgacao; afirma-se apenas que nao consta do acervo publico do ONS. Nao cravar o inicio do prazo de contestacao: a casa trabalha com 09/09/2026 por leitura conservadora, e essa data so se sustenta se a divulgacao tiver ocorrido em 31/08. [NOTA DE METODO 01/09] O limite declarado ate 31/08 de que o acervo entrega metadado e nao arquivo esta SUPERADO: a rota items(<Id>)/File devolve HTTP 200 com ServerRelativeUrl e permite baixar o PDF direto, comprovada em dois documentos nesta janela. AttachmentFiles em HTTP 400 e _api/search/query em HTTP 500 continuam falhando, mas eram a rota errada. Consequencia: se as funcoes aparecerem no acervo, elas poderao ser lidas na integra sem navegador. | sem F1 acessível em 14/11/2026: Concordo. A parte normativa confere na Portaria 140, lida hoje: art. 4º, § 1º, III ('em até quarenta dias, o ONS deverá divulgar as funções de produtividade'), § 2º (contestação em 10 dias), § 3º (20 dias) e § 4º (prorrogação). Os 40 dias caem em 30/08/2026, domingo,  | sem F1 acessivel em 16/11/2026: SINtegre exige login; divulgacao das funcoes nao verificavel",
+      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: SINtegre exige login; acervo publico do ONS nao reconsultado",
       "gatilho_revisao": "leitura do SINtegre; publicacao no acervo publico do ONS; qualquer comunicacao do ONS ou da CCEE sobre a abertura da janela de contestacao",
-      "tentado_em": "2026-11-16"
+      "tentado_em": "2026-11-17"
     }
   ],
   "_historico_caidos": []
