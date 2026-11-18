@@ -14,3 +14,5 @@ jobs:
         run: python3 validar_fatos.py .
       - name: Selo catálogo — data de conferência (_meta.verificado_em)
         run: python3 tests/test_selo_data_conferencia.py
+      - name: Checar allowlist de publicacao (_frescor.json)
+        run: python3 scripts/checar_allowlist.py
