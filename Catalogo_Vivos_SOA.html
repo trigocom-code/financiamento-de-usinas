@@ -112,7 +112,7 @@
 </div>
 
 <div class="lastro">
-  <b>Como o frescor é conferido.</b> Cada cartão consulta a API pública do GitHub (`api.github.com/repos/.../commits?path=…`) ao abrir e mostra o timestamp do último commit que tocou aquele arquivo. Nos vivos, é a última regeneração pelo monitor. <b>Fontes do monitor:</b> F1 (páginas oficiais/DOU), F2 (imprensa setorial) e <b>F3 — associações que entregam ponteiro por e-mail (hoje: ABSOLAR, via seus Grupos de Trabalho)</b>. F3 não fecha um fato em VERDE sozinha quando a matéria exige F1.
+  <b>Como o frescor é conferido.</b> Cada cartão com JSON canônico abre o próprio arquivo de dados (mesma origem, sem cache) e lê <code>_meta.verificado_em</code> — data de conferência do item publicado mais antigo gravado na fonte. O selo mostra essa data e a idade (verde/amarelo/vermelho pelos mesmos limites). Sem esse campo ou com data inválida, o cartão exibe <b>sem data de conferência</b> (amarelo), sem substituir por outra data. <b>Fontes do monitor:</b> F1 (páginas oficiais/DOU), F2 (imprensa setorial) e <b>F3 — associações que entregam ponteiro por e-mail (hoje: ABSOLAR, via seus Grupos de Trabalho)</b>. F3 não fecha um fato em VERDE sozinha quando a matéria exige F1.
 </div>
 
 <div class="legend">
@@ -412,7 +412,7 @@
   <a href="mailto:pedro@solaroneaccount.com" style="color:#1C5AAD;">pedro@solaroneaccount.com</a> ·
   <a href="https://wa.me/5544999720477" target="_blank" rel="noopener" style="color:#25D366;">WhatsApp</a><br/>
   Três pedidos de patente depositados no INPI: BR 10 2026 003913-6 · BR 10 2026 010655-0 · BR 10 2026 011466-9<br/>
-  <span style="color:#9ca3af;">Selos de frescor: manifesto publicado junto com o site (_frescor.json, gerado pela rotina diária) · fallback: API pública do GitHub com cache de 30 min · sem credenciais · sem rastreamento.</span>
+  <span style="color:#9ca3af;">Selos de frescor: data de conferência na fonte gravada no próprio arquivo JSON (<code>_meta.verificado_em</code>, item publicado mais antigo); sem o campo, o cartão mostra “sem data de conferência”.</span>
 </div>
 
 </div>
@@ -424,9 +424,10 @@
     return pad(d.getDate()) + '/' + pad(d.getMonth()+1) + '/' + d.getFullYear() +
            ' às ' + pad(d.getHours()) + 'h' + pad(d.getMinutes());
   }
+  function fmtDate(d) {
+    return pad(d.getDate()) + '/' + pad(d.getMonth()+1) + '/' + d.getFullYear();
+  }
   document.getElementById('liveStamp').textContent = '● Catálogo aberto em ' + fmt(new Date());
-
-  const REPO = 'trigocom-code/financiamento-de-usinas';
 
   function classify(diffHours) {
     if (diffHours < 24) return {cls:'g', label:'atualizado hoje'};
@@ -434,11 +435,17 @@
     return {cls:'r', label: Math.floor(diffHours/24) + 'd · DEFASADO'};
   }
 
-  function render(card, d, origem) {
+  function parseVerificadoEm(raw) {
+    if (typeof raw !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(raw)) return null;
+    const p = raw.split('-');
+    const d = new Date(+p[0], +p[1] - 1, +p[2]);
+    return isNaN(d.getTime()) ? null : d;
+  }
+
+  function renderConferencia(card, d) {
     const tsEl = card.querySelector('[data-ts]');
     const fEl = card.querySelector('[data-fresh]');
-    // Materiais ESTATICOS (sem JSON em runtime) nao decaem: mostram a data da ultima
-    // edicao real, sem alarme de defasagem. Regra canonica secao 4.4: nao falsear o selo.
+    if (!tsEl || !fEl) return;
     if (card.hasAttribute('data-static')) {
       tsEl.innerHTML = '<b>Última edição:</b><br>' + fmt(d);
       fEl.className = 'fresh s';
@@ -447,52 +454,58 @@
     }
     const diffH = (Date.now() - d.getTime()) / 36e5;
     const cls = classify(diffH);
-    tsEl.innerHTML = '<b>Última regeneração' + (origem ? ' (' + origem + ')' : '') + ':</b><br>' + fmt(d);
+    tsEl.innerHTML = '<b>Conferido na fonte:</b><br>' + fmtDate(d);
     fEl.className = 'fresh ' + cls.cls;
     fEl.textContent = cls.label;
   }
-  function renderIndisponivel(card, msg) {
+
+  function renderSemConferencia(card) {
     const tsEl = card.querySelector('[data-ts]');
     const fEl = card.querySelector('[data-fresh]');
-    tsEl.innerHTML = '<b>Selo indisponível</b><br>' + msg;
+    if (!tsEl || !fEl) return;
+    tsEl.innerHTML = '<b>Conferido na fonte:</b><br>sem data de conferência';
     fEl.className = 'fresh a';
-    fEl.textContent = 'selo indisponível';
+    fEl.textContent = 'sem data de conferência';
   }
 
-  // Fallback: API do GitHub com cache local de 30 min (limite anonimo = 60 req/h/IP)
-  async function viaApi(card, file) {
-    const ck = 'frescor:' + file;
-    try {
-      const hit = JSON.parse(localStorage.getItem(ck) || 'null');
-      if (hit && (Date.now() - hit.t) < 30*60*1000) { render(card, new Date(hit.d), 'cache'); return; }
-    } catch(e) {}
-    try {
-      const url = 'https://api.github.com/repos/' + REPO + '/commits?path=' + encodeURIComponent(file) + '&per_page=1';
-      const r = await fetch(url, {cache: 'no-store'});
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      const commits = await r.json();
-      if (!commits.length) throw new Error('sem commits');
-      const d = new Date(commits[0].commit.author.date);
-      try { localStorage.setItem(ck, JSON.stringify({t: Date.now(), d: d.toISOString()})); } catch(e) {}
-      render(card, d, 'commit');
-    } catch(e) {
-      if (String(e.message).indexOf('403') >= 0) renderIndisponivel(card, 'limite de consultas da API atingido — o material abre normalmente; recarregue em ~1h');
-      else renderIndisponivel(card, e.message);
-    }
+  const jsonCache = new Map();
+
+  async function verificadoEmFromJson(file) {
+    if (jsonCache.has(file)) return jsonCache.get(file);
+    const task = (async function() {
+      try {
+        const r = await fetch(file + '?v=' + Date.now(), {cache: 'no-store'});
+        if (!r.ok) return null;
+        const j = await r.json();
+        return parseVerificadoEm(j && j._meta && j._meta.verificado_em);
+      } catch (e) {
+        return null;
+      }
+    })();
+    jsonCache.set(file, task);
+    return task;
   }
 
-  // Fonte primária do selo: manifesto estático _frescor.json (1 fetch, sem API, sem limite)
   async function boot() {
-    let manifesto = null;
-    try {
-      const r = await fetch('_frescor.json?v=' + Date.now(), {cache: 'no-store'});
-      if (r.ok) { const j = await r.json(); manifesto = j.arquivos || null; }
-    } catch(e) {}
-    document.querySelectorAll('.card').forEach(function(card) {
-      const file = card.dataset.file;
-      if (manifesto && manifesto[file]) render(card, new Date(manifesto[file]), 'manifesto');
-      else viaApi(card, file);
+    const cards = Array.from(document.querySelectorAll('.card[data-file]')).filter(function(card) {
+      return card.querySelector('[data-ts]') && card.querySelector('[data-fresh]');
     });
+    const byFile = new Map();
+    cards.forEach(function(card) {
+      const file = card.dataset.file;
+      if (!file || !/\.json$/i.test(file)) return;
+      if (!byFile.has(file)) byFile.set(file, []);
+      byFile.get(file).push(card);
+    });
+    await Promise.all(Array.from(byFile.entries()).map(async function(entry) {
+      const file = entry[0];
+      const group = entry[1];
+      const d = await verificadoEmFromJson(file);
+      group.forEach(function(card) {
+        if (d) renderConferencia(card, d);
+        else renderSemConferencia(card);
+      });
+    }));
   }
   boot();
 })();
