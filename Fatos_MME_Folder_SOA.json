@@ -3,7 +3,7 @@
     "orgao": "MME",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo MME — schema v1.3. Aplicada Precedência v1.2. Portaria 136/2026 enriquecida em 04/07/2026 (leitura integral: art. 5º/7º/9º + Anexo II). Portaria Normativa 140/2026 lida na integra em 07/08/2026 no texto oficial do MME (10 paginas) - fato promovido de LARANJA para VERDE.",
-    "verificado_em": "2026-11-14",
+    "verificado_em": "2026-11-18",
     "proxima_revisao_sugerida": "2026-11-10",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina MME conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
@@ -75,7 +75,7 @@
       "status": "AGENDADO",
       "norma": "Portaria Normativa MME 136/2026 · DOU 03/06/2026 · arts. 4º, 5º, 7º, 9º, 11 e 17 + Anexos I e II",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-136-2026.pdf",
-      "verificado_em": "2026-11-15",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 18,
       "vetores_afetados": [
@@ -132,7 +132,7 @@
       "status": "VIGENTE",
       "norma": "Decreto 12.772/2025 (institui a PNAST) + Portaria Normativa MME 129/2026 (diretrizes das Temporadas de Acesso)",
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12772.htm",
-      "verificado_em": "2026-11-16",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -174,7 +174,7 @@
       "status": "VIGENTE",
       "norma": "Lei 14.948/2024 (marco legal do hidrogênio de baixa emissão de carbono), regulamentada pelo Decreto 13.096/2026 + Lei 15.042/2024 (SBCE) · Planalto",
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14948.htm",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -217,7 +217,7 @@
       "status": "VIGENTE",
       "norma": "Portaria Normativa MME 111/2025 (18/06/2025) + Portaria Normativa MME 126/2026 (28/01/2026, altera a 111)",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2025/portaria-normativa-mme-n-111-2025.pdf",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -260,7 +260,7 @@
       "status": "VIGENTE",
       "norma": "Resolução CNPE nº 5, de 26/08/2024 (DOU 28/08/2024, Seção 1, p. 2) · MME · SNTEP",
       "url": "https://www.in.gov.br/web/dou/-/despacho-do-presidente-da-republica-580836599",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -304,7 +304,7 @@
       "status": "VIGENTE",
       "norma": "Lei nº 15.504/2026 (DOU 15/09/2026, Ed. 174-C, Seção 1 Extra C) · altera a Lei 11.196/2005, arts. 11-A a 11-J · Lei Complementar nº 237/2026 (mesma edição do DOU) · regulamento do Executivo pendente",
       "url": "https://www.in.gov.br/web/dou/-/lei-n-15.504-de-15-de-setembro-de-2026-731892072",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -355,7 +355,7 @@
       "status": "VIGENTE (plano aprovado em 29/09/2026; consulta pública encerrada em 13/08/2026)",
       "norma": "Portaria SNTEP/MME nº 3.240, de 29 de setembro de 2026 — DOU de 01/10/2026, Edição 186-C, Seção 1 - Extra C, Página 15 (aprova o POTEE 2026 — Ampliações e Reforços, 1ª emissão) · consulta pública: Portaria SNTEP/MME nº 3.159, de 10 de julho de 2026 — DOU de 14/07/2026, Edição 130, Seção 1, Página 99",
       "url": "https://www.in.gov.br/web/dou/-/portaria-sntep/mme-n-3.240-de-29-de-setembro-de-2026-735924821",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -393,7 +393,7 @@
       "status": "VIGENTE",
       "norma": "Resolução CMSE nº 1, de 6 de julho de 2026 — DOU de 08/07/2026, Edição 126, Seção 1, Página 134",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -431,7 +431,7 @@
       "status": "VIGENTE",
       "norma": "Portaria Normativa MME no 140, de 18/07/2026 · DOU de 21/07/2026, Edicao 135-A, Secao 1 - Extra A, Pagina 10 · regulamenta o art. 1o-B da Lei no 10.848/2004, incluido pela Lei no 15.269, de 24/11/2025 · Processo 48370.000267/2025-81",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 20,
       "vetores_afetados": [
