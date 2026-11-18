@@ -53,9 +53,19 @@
           "_pendentes_verificacao[1]"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-17",
+        "ids_relidos": [
+          "fatos[2]",
+          "fatos[3]",
+          "fatos[4]"
+        ],
+        "monitor": "monitores-regulatorios-soa"
       }
     ],
-    "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005)."
+    "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
+    "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 9 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46."
   },
   "fatos": [
     {
@@ -164,7 +174,7 @@
       "status": "VIGENTE",
       "norma": "Lei 14.948/2024 (marco legal do hidrogênio de baixa emissão de carbono), regulamentada pelo Decreto 13.096/2026 + Lei 15.042/2024 (SBCE) · Planalto",
       "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14948.htm",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-17",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -197,7 +207,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "reconferencia_2026_11_17": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d13096.htm :: Lei 14.948/2024 no Planalto; Decreto 13.096 de 12/08/2026 regulamenta (Coges-PNH2, SBCH2, Rehidro, PHBC)."
     },
     {
       "fato_id": "MME-PORTARIAS-126-111",
@@ -206,7 +217,7 @@
       "status": "VIGENTE",
       "norma": "Portaria Normativa MME 111/2025 (18/06/2025) + Portaria Normativa MME 126/2026 (28/01/2026, altera a 111)",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2025/portaria-normativa-mme-n-111-2025.pdf",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-17",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -239,7 +250,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "reconferencia_2026_11_17": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2025/portaria-normativa-mme-n-111-2025.pdf :: PN 111/2025 com redacao da PN 126/2026: 2% a.a. por 24 meses desde 01/03/2026; ACB ate 29/02/2028."
     },
     {
       "fato_id": "MME-PNTE-PLANTE",
@@ -248,7 +260,7 @@
       "status": "VIGENTE",
       "norma": "Resolução CNPE nº 5, de 26/08/2024 (DOU 28/08/2024, Seção 1, p. 2) · MME · SNTEP",
       "url": "https://www.in.gov.br/web/dou/-/despacho-do-presidente-da-republica-580836599",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-17",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -282,7 +294,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.gov.br/mma/pt-br/noticias/governo-lula-estabelece-diretrizes-para-reduzir-gradualmente-dependencia-de-combustiveis-fosseis-no-brasil"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.gov.br/mma/pt-br/noticias/governo-lula-estabelece-diretrizes-para-reduzir-gradualmente-dependencia-de-combustiveis-fosseis-no-brasil",
+      "reconferencia_2026_11_17": "https://www.in.gov.br/web/dou/-/despacho-do-presidente-da-republica-580836599 :: DOU 28/08/2024: Res. CNPE 5/2024 institui PNTE e Plante; aprovacao do Plante em 06/11/2026 so em noticia de governo, resolucao fora do DOU ate 17/11."
     },
     {
       "fato_id": "MME-REDATA",

@@ -48,9 +48,18 @@
           "fatos[1](sem F1)"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-17",
+        "ids_relidos": [
+          "fatos[1]",
+          "fatos[2]"
+        ],
+        "monitor": "monitores-regulatorios-soa"
       }
     ],
-    "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005)."
+    "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
+    "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 7 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46."
   },
   "fatos": [
     {
@@ -110,7 +119,7 @@
       "status": "PRAZO DE CONTRIBUICOES ENCERRADO (24/08/2026) — deliberacao/resultado final pendente de F1",
       "norma": "Consulta Pública ANEEL nº 17/2026 · abertura no DOU de 18/06/2026, Seção 3, p. 129 · Aviso de Prorrogação no DOU de 17/07/2026, Edição 133, Seção 3, p. 121 · Processo 48500.037295/2025-21",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-719799662",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-17",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 18,
       "vetores_afetados": [
@@ -140,8 +149,7 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "pendencia_verificacao": "RESOLVIDA em 21/07/2026 quanto a prazo e órgão. Ressalva: o Aviso de ABERTURA (DOU de 18/06/2026, Seção 3, p. 129) NÃO foi reaberto nesta run — as demais condições da consulta (forma de envio, documentos de referência) permanecem não lidas na fonte. Antes de submeter contribuição, abrir o Aviso de 18/06 na íntegra. NÃO usar mais a data de 03/08/2026: está superada pela prorrogação. | sem F1 acessivel em 16/11/2026: in.gov.br e www2.aneel.gov.br ENOTFOUND; gov.br/aneel ECONNREFUSED",
-      "tentado_em": "2026-11-16"
+      "reconferencia_2026_11_17": "https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-719799662 :: DOU 17/07/2026, S3, p. 121: CP 17/2026 prorrogada ate 24/08/2026; sem REN de resultado localizada."
     },
     {
       "fato_id": "CCEE-SUBMODULO-9",
@@ -150,7 +158,7 @@
       "status": "VIGENTE",
       "norma": "CCEE · Procedimentos de Comercialização, Módulo 5 (Mercado de Curto Prazo): Submódulo 5.1 - Contabilização e recontabilização e Submódulo 5.2 - Liquidação no mercado de curto prazo (versões 5.0, de 28/04/2026)",
       "url": "https://www.ccee.org.br/mercado/procedimentos-de-comercializacao",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-17",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -183,7 +191,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "reconferencia_2026_11_17": "https://www.ccee.org.br/mercado/procedimentos-de-comercializacao :: CCEE lista Submodulo 5.1 e 5.2, Versao 5.0 de 28/04/2026."
     },
     {
       "fato_id": "CCEE-MODULOS-6-7",

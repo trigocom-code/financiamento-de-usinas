@@ -34,6 +34,15 @@
           "fatos[0](sem F1)"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-17",
+        "ids_relidos": [
+          "fatos[1]",
+          "fatos[2]",
+          "fatos[3]"
+        ],
+        "monitor": "monitores-regulatorios-soa"
       }
     ],
     "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005)."
@@ -65,8 +74,8 @@
         "V2",
         "sHEC"
       ],
-      "tentado_em": "2026-11-14",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Concordo. O texto inteiro depende dos §III.1 e §III.7 da NT 107/2026-SFT: fórmulas da CEMIG-D, indicadores Ra e RB da CPFL, coeficiente da CELESC e citações da Light e da Nova Palma. Não há F1 alternativa com esse nível de detalhe, e a nota não está em domínio oficial"
+      "tentado_em": "2026-11-17",
+      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: NT 107/2026-SFT so no SEI/ANEEL (CAPTCHA), cedoc 403"
     },
     {
       "tema": "Zona cinzenta técnica — overpaneling / overdelivery / ILR",
@@ -79,8 +88,8 @@
         "V2",
         "sHEC"
       ],
-      "tentado_em": "2026-11-14",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Concordo. O núcleo do fato (definições de overpaneling e overdelivery, pedidos da CPFL e da Neoenergia) está no §III.7.2 da NT 107/2026-SFT, sem cópia F1 acessível. A parte lateral confere no DOU. O Aviso de CP nº 9/2026 (DOU de 23/04/2026, ed. 75, S3, p. 167) traz 'P"
+      "tentado_em": "2026-11-17",
+      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: nucleo depende da NT 107/2026-SFT, sem copia oficial acessivel (SEI com CAPTCHA, cedoc 403)"
     },
     {
       "tema": "CP ANEEL 009/2026 (decisão de 22/04/2026)",
@@ -89,12 +98,13 @@
       "norma": "CP ANEEL 009/2026 · Decisão 8ª RPO 22/04/2026 · NT 148/2025-STD",
       "fonte": "F1 ANEEL (confirmado pela NT 107/2026, §6 e recomendação 'e')",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-9/2026-701049289",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-17",
       "vetores_afetados": [
         "V2",
         "V4",
         "sHEC"
-      ]
+      ],
+      "reconferencia_2026_11_17": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-9/2026-701049289 :: Aviso CP 9/2026, envio de 23/4 a 6/6/2026; sem REN nem 2a fase no DOU ate 17/11 (segue em deliberacao)."
     },
     {
       "tema": "Lastro de escala — GD não declarada (ONS DPL 0149/2026)",

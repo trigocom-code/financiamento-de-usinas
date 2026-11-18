@@ -1,6 +1,6 @@
 ﻿{
     "_meta":  {
-                  "gerado_em":  "2026-11-16 08:20",
+                  "gerado_em":  "2026-11-17 08:20",
                   "modo":  "v2 cenario+stale",
                   "threshold_stale_dias":  2,
                   "indicador_aguardando_fonte":  {
@@ -19,47 +19,47 @@
                                                                      "via_cenario":  true
                                                                  },
                                      "monitor-capital-verde-soa":  {
-                                                                       "rodou_hoje":  true,
-                                                                       "via_digest":  true,
-                                                                       "via_cenario":  true
+                                                                       "rodou_hoje":  false,
+                                                                       "via_digest":  false,
+                                                                       "via_cenario":  false
                                                                    },
                                      "monitor-esg-soa":  {
-                                                             "rodou_hoje":  true,
-                                                             "via_digest":  true,
-                                                             "via_cenario":  true
+                                                             "rodou_hoje":  false,
+                                                             "via_digest":  false,
+                                                             "via_cenario":  false
                                                          }
                                  },
                   "cenario_lido":  {
                                        "monitor-seguros-soa":  {
-                                                                   "hoje":  "SIM",
+                                                                   "hoje":  "NAO",
                                                                    "ultimo":  "2026-11-16"
                                                                },
                                        "monitor-esg-soa":  {
-                                                               "hoje":  "SIM",
+                                                               "hoje":  "NAO",
                                                                "ultimo":  "2026-11-16"
                                                            },
                                        "monitor-regulatorio-soa":  {
                                                                        "hoje":  "SIM",
-                                                                       "ultimo":  "2026-11-16"
+                                                                       "ultimo":  "2026-11-17"
                                                                    },
                                        "monitor-capital-verde-soa":  {
-                                                                         "hoje":  "SIM",
+                                                                         "hoje":  "NAO",
                                                                          "ultimo":  "2026-11-16"
                                                                      },
                                        "monitor-eventos-soa":  {
                                                                    "hoje":  "SIM",
-                                                                   "ultimo":  "2026-11-16"
+                                                                   "ultimo":  "2026-11-17"
                                                                },
                                        "monitor-leis-soa":  {
-                                                                "hoje":  "SIM",
+                                                                "hoje":  "NAO",
                                                                 "ultimo":  "2026-11-16"
                                                             },
                                        "monitor-gt-absolar-soa":  {
                                                                       "hoje":  "SIM",
-                                                                      "ultimo":  "2026-11-16"
+                                                                      "ultimo":  "2026-11-17"
                                                                   },
                                        "monitor-gato-solar-soa":  {
-                                                                      "hoje":  "SIM",
+                                                                      "hoje":  "NAO",
                                                                       "ultimo":  "2026-11-16"
                                                                   },
                                        "monitor-iptu-verde-soa":  {
@@ -88,10 +88,10 @@
                  },
     "folders":  {
                     "baterias-curtailment.html":  {
-                                                      "ciclo":  "2026-11-16",
+                                                      "ciclo":  "2026-11-17",
                                                       "categoria":  "vivo_sob_gatilho",
-                                                      "estado":  "quadro_mudou",
-                                                      "motivo":  "fato(s) mudaram: MME-PORTARIA-136-2026-LRCAP, ONS-NT-DPL-0111-2025, EPE-MAPA-BARRAMENTOS-LRCAP",
+                                                      "estado":  "estavel",
+                                                      "motivo":  "quadro parado; monitores rodaram no ciclo e dado fresco",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-regulatorio-soa"
@@ -104,7 +104,7 @@
                                                                    {
                                                                        "json":  "Fatos_ANEEL",
                                                                        "ref":  "ANEEL-REN-1161-2026-BESS",
-                                                                       "verificado_em":  "2026-11-16",
+                                                                       "verificado_em":  "2026-11-17",
                                                                        "qsv_cor":  "VERDE",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
@@ -113,16 +113,16 @@
                                                                    {
                                                                        "json":  "Fatos_MME",
                                                                        "ref":  "MME-PORTARIA-136-2026-LRCAP",
-                                                                       "verificado_em":  "2026-11-16",
+                                                                       "verificado_em":  "2026-11-17",
                                                                        "qsv_cor":  "VERDE",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  true
+                                                                       "mudou":  false
                                                                    },
                                                                    {
                                                                        "json":  "Fatos_ANEEL",
                                                                        "ref":  "ANEEL-REN-1071-LRCAP",
-                                                                       "verificado_em":  "2026-11-16",
+                                                                       "verificado_em":  "2026-11-17",
                                                                        "qsv_cor":  "VERDE",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
@@ -131,28 +131,28 @@
                                                                    {
                                                                        "json":  "Fatos_ONS",
                                                                        "ref":  "ONS-NT-DPL-0111-2025",
-                                                                       "verificado_em":  "2026-11-16",
+                                                                       "verificado_em":  "2026-11-17",
                                                                        "qsv_cor":  "AZUL",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  true
+                                                                       "mudou":  false
                                                                    },
                                                                    {
                                                                        "json":  "Fatos_EPE",
                                                                        "ref":  "EPE-MAPA-BARRAMENTOS-LRCAP",
-                                                                       "verificado_em":  "2026-11-16",
+                                                                       "verificado_em":  "2026-11-17",
                                                                        "qsv_cor":  "VERDE",
                                                                        "monitor":  "monitor-regulatorio-soa",
                                                                        "achou":  true,
-                                                                       "mudou":  true
+                                                                       "mudou":  false
                                                                    }
                                                                ],
-                                                      "fato_gatilho":  "MME-PORTARIA-136-2026-LRCAP, ONS-NT-DPL-0111-2025, EPE-MAPA-BARRAMENTOS-LRCAP",
-                                                      "tipo":  "gate (modo X: sinaliza, NAO reescreve)",
-                                                      "proposta_ref":  "_folders_revisao_pendente.md"
+                                                      "fato_gatilho":  null,
+                                                      "tipo":  null,
+                                                      "proposta_ref":  null
                                                   },
                     "contencioso-curtailment.html":  {
-                                                         "ciclo":  "2026-11-16",
+                                                         "ciclo":  "2026-11-17",
                                                          "categoria":  "vivo_sob_gatilho",
                                                          "estado":  "estavel",
                                                          "motivo":  "quadro parado; monitores rodaram no ciclo e dado fresco",
@@ -168,7 +168,7 @@
                                                                       {
                                                                           "json":  "Fatos_CCEE",
                                                                           "ref":  "CCEE-LEI-15269-2025",
-                                                                          "verificado_em":  "2026-11-16",
+                                                                          "verificado_em":  "2026-11-17",
                                                                           "qsv_cor":  "AZUL",
                                                                           "monitor":  "monitor-regulatorio-soa",
                                                                           "achou":  true,
@@ -177,7 +177,7 @@
                                                                       {
                                                                           "json":  "Fatos_ANEEL",
                                                                           "ref":  "ANEEL-CP-045-2019",
-                                                                          "verificado_em":  "2026-11-16",
+                                                                          "verificado_em":  "2026-11-17",
                                                                           "qsv_cor":  "AZUL",
                                                                           "monitor":  "monitor-regulatorio-soa",
                                                                           "achou":  true,
@@ -189,10 +189,10 @@
                                                          "proposta_ref":  null
                                                      },
                     "acesso-transmissao-pnast.html":  {
-                                                          "ciclo":  "2026-11-16",
+                                                          "ciclo":  "2026-11-17",
                                                           "categoria":  "vivo_sob_gatilho",
-                                                          "estado":  "quadro_mudou",
-                                                          "motivo":  "fato(s) mudaram: ONS-NT-PNAST",
+                                                          "estado":  "estavel",
+                                                          "motivo":  "quadro parado; monitores rodaram no ciclo e dado fresco",
                                                           "aguarda_fonte":  false,
                                                           "monitores_dependentes":  [
                                                                                         "monitor-regulatorio-soa"
@@ -205,7 +205,7 @@
                                                                        {
                                                                            "json":  "Fatos_MME",
                                                                            "ref":  "MME-PORTARIA-129-DEC-12772",
-                                                                           "verificado_em":  "2026-11-16",
+                                                                           "verificado_em":  "2026-11-17",
                                                                            "qsv_cor":  "AZUL",
                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                            "achou":  true,
@@ -214,16 +214,16 @@
                                                                        {
                                                                            "json":  "Fatos_ONS",
                                                                            "ref":  "ONS-NT-PNAST",
-                                                                           "verificado_em":  "2026-11-16",
+                                                                           "verificado_em":  "2026-11-17",
                                                                            "qsv_cor":  "AZUL",
                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                            "achou":  true,
-                                                                           "mudou":  true
+                                                                           "mudou":  false
                                                                        },
                                                                        {
                                                                            "json":  "Fatos_EPE",
                                                                            "ref":  "EPE-PET-PELP",
-                                                                           "verificado_em":  "2026-11-16",
+                                                                           "verificado_em":  "2026-11-17",
                                                                            "qsv_cor":  "AZUL",
                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                            "achou":  true,
@@ -232,35 +232,35 @@
                                                                        {
                                                                            "json":  "Fatos_EPE",
                                                                            "ref":  "EPE-ATENDIMENTO-PARA",
-                                                                           "verificado_em":  "2026-11-16",
+                                                                           "verificado_em":  "2026-11-17",
                                                                            "qsv_cor":  "VERDE",
                                                                            "monitor":  "monitor-regulatorio-soa",
                                                                            "achou":  true,
                                                                            "mudou":  false
                                                                        }
                                                                    ],
-                                                          "fato_gatilho":  "ONS-NT-PNAST",
-                                                          "tipo":  "gate (modo X: sinaliza, NAO reescreve)",
-                                                          "proposta_ref":  "_folders_revisao_pendente.md"
+                                                          "fato_gatilho":  null,
+                                                          "tipo":  null,
+                                                          "proposta_ref":  null
                                                       },
                     "capital-verde-usinas.html":  {
-                                                      "ciclo":  "2026-11-16",
+                                                      "ciclo":  "2026-11-17",
                                                       "categoria":  "vivo_sob_gatilho",
-                                                      "estado":  "herda_pendente",
-                                                      "motivo":  "depende de fato pendente: Finep Mais Inovação Brasil — Rodada 2 · Transição Energética (PENDENTE)",
+                                                      "estado":  "avaliacao_represada",
+                                                      "motivo":  "monitor(es) nao rodou no ciclo 2026-11-17: monitor-capital-verde-soa",
                                                       "aguarda_fonte":  false,
                                                       "monitores_dependentes":  [
                                                                                     "monitor-capital-verde-soa"
                                                                                 ],
                                                       "monitores_parados":  [
-
+                                                                                "monitor-capital-verde-soa"
                                                                             ],
-                                                      "idade_max_dias":  0,
+                                                      "idade_max_dias":  3,
                                                       "deps":  [
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Fundo Clima — BNDES",
-                                                                       "verificado_em":  "2026-11-16",
+                                                                       "verificado_em":  "2026-11-14",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
@@ -269,7 +269,7 @@
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Eco Invest Brasil — Min. Fazenda",
-                                                                       "verificado_em":  "2026-11-16",
+                                                                       "verificado_em":  "2026-11-14",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
@@ -278,7 +278,7 @@
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Debêntures de Infraestrutura / incentivadas verdes",
-                                                                       "verificado_em":  "2026-11-16",
+                                                                       "verificado_em":  "2026-11-14",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
@@ -287,7 +287,7 @@
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Sustainability-Linked (SLL/SLB)",
-                                                                       "verificado_em":  "2026-11-16",
+                                                                       "verificado_em":  "2026-11-14",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
@@ -296,7 +296,7 @@
                                                                    {
                                                                        "json":  "Fatos_CapitalVerde",
                                                                        "ref":  "Finep Mais Inovação Brasil — Rodada 2 · Transição Energética",
-                                                                       "verificado_em":  "2026-11-16",
+                                                                       "verificado_em":  "2026-11-14",
                                                                        "qsv_cor":  "",
                                                                        "monitor":  "monitor-capital-verde-soa",
                                                                        "achou":  true,
