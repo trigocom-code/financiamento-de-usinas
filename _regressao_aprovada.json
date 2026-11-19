@@ -1,0 +1,64 @@
+{
+  "_meta": {
+    "data": "2026-11-18",
+    "motivo": "itens sem fonte oficial movidos para pendentes",
+    "total_itens": 10,
+    "observacao": "Mensagem do monitor (132299b) cita 11 itens; diff Fatos_* vs origin/main contabiliza 10 saidas de fatos[] para _pendentes_verificacao"
+  },
+  "por_arquivo": {
+    "Fatos_GatoSolar_Folder_SOA.json": {
+      "contagem_antes": 8,
+      "contagem_depois": 3,
+      "itens": [
+        {
+          "id": "NT 107/2026-SFT/ANEEL — a fotografia oficial do combate ao 'gato solar'"
+        },
+        {
+          "id": "A detecção hoje é por ESTIMATIVA (observado × esperado) — a cunha da prova física SOA"
+        },
+        {
+          "id": "Zona cinzenta técnica — overpaneling / overdelivery / ILR"
+        },
+        {
+          "id": "Lastro de escala — GD não declarada (ONS DPL 0149/2026)"
+        },
+        {
+          "id": "Posição setorial (ABSOLAR/ABGD)"
+        }
+      ]
+    },
+    "Fatos_IPTUVerde_Folder_SOA.json": {
+      "contagem_antes": 26,
+      "contagem_depois": 24,
+      "itens": [
+        {
+          "id": "Mapa de IPTU Verde municipal — desconto por geração solar"
+        },
+        {
+          "id": "Votuporanga (SP) — PL de benefício fiscal de IPTU por geração solar"
+        }
+      ]
+    },
+    "Fatos_ONS_Folder_SOA.json": {
+      "contagem_antes": 9,
+      "contagem_depois": 8,
+      "itens": [
+        {
+          "id": "ONS-NT-DPL-0031-2024-REVISAO-FV"
+        }
+      ]
+    },
+    "Fatos_Regulatorios_Folder_SOA.json": {
+      "contagem_antes": 65,
+      "contagem_depois": 63,
+      "itens": [
+        {
+          "id": "ONS-RD-3O-MECANISMO-2026"
+        },
+        {
+          "id": "ONS-RT-DPL-0532-2023-REV2-ESTAMPA-TEMPO-SOE"
+        }
+      ]
+    }
+  }
+}
