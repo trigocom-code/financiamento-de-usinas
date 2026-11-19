@@ -56,10 +56,21 @@
           "fatos[2]"
         ],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-18",
+        "ids_relidos": [
+          "fatos[3]"
+        ],
+        "sem_f1": [],
+        "corrigidos": [],
+        "movidos_para_pendentes": [],
+        "monitor": "monitores-regulatorios-soa"
       }
     ],
     "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
-    "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 7 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46."
+    "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 7 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46.",
+    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 7 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46."
   },
   "fatos": [
     {
@@ -201,7 +212,7 @@
       "status": "VIGENTE",
       "norma": "CCEE · Regras de Comercialização (cadernos 09 - Encargos e 11 - Liquidação)",
       "url": "https://www.ccee.org.br/mercado/regras-de-comercializacao",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -234,7 +245,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www.ccee.org.br/mercado/regras-de-comercializacao | caderno 09 Encargos v2026.6.4 (06/2026 a 12/2026); caderno 11 Liquidacao v2026.2.0 (02/2026 a 12/2026)"
     },
     {
       "fato_id": "CCEE-GRUDEM",
