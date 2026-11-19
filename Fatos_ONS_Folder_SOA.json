@@ -80,11 +80,39 @@
           "_pendentes_verificacao[2]"
         ],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-18",
+        "relidos": [
+          "_pendentes_verificacao[0]",
+          "_pendentes_verificacao[1]",
+          "_pendentes_verificacao[2]"
+        ],
+        "por": "reconferencia_fatos_2026-11-16 (sessao interativa, retomada em 18/11/2026)"
+      },
+      {
+        "data": "2026-11-18",
+        "ids_relidos": [
+          "fatos[1]",
+          "_pendentes_verificacao[1]"
+        ],
+        "sem_f1": [
+          "fatos[8]",
+          "_pendentes_verificacao[0]"
+        ],
+        "corrigidos": [],
+        "movidos_para_pendentes": [
+          "ONS-NT-DPL-0031-2024-REVISAO-FV"
+        ],
+        "monitor": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 1, CONFIRMADO 1. _meta.verificado_em = data do item publicado mais antigo.",
     "nota_carimbo_engine_2026_11_16": "4 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
-    "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 9 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46."
+    "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 9 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46.",
+    "nota_run_2026_11_18_reconferencia": "Reconferencia de 16-18/11/2026 (auditoria do catalogo de 16/11). _meta.verificado_em = conferencia do item publicado mais antigo, agora 2026-11-06 (fatos[8]). Os 3 pendentes exibidos foram relidos em F1 (Portaria MME 140 no gov.br, noticia ONS de 05/08/2026, Acervo Digital e noticias do ONS, Despacho ANEEL 4.065 no DOU).",
+    "nota_rodizio_2026_11_18": "18/11/2026: as entradas de rodizio de 14/11 (lote 2, ONS: lista inteira) e de 17/11 ('ids_relidos') incluem itens que so tiveram tentativa sem F1 (campo tentado_em), sem a marca '(sem F1)'. Nessas entradas, 'relido' quer dizer 'tentado'. Nao reescrever o historico; ler junto com tentado_em e pendencia_verificacao de cada item.",
+    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 12 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46."
   },
   "fatos": [
     {
@@ -138,7 +166,7 @@
       "status": "VIGENTE",
       "norma": "ONS · Procedimentos de Rede (REN ANEEL 903/2020) · Lei 10.848/2004, art. 1º-B, §§ 3º e 4º",
       "url": "https://www.ons.org.br/paginas/sobre-o-ons/procedimentos-de-rede/vigentes",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -171,7 +199,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.848.htm | Submodulo 9.1 rev. 2020.12 (REN 903/2020); Lei 10.848, art. 1-B, par. 3 e 4: ONS apura e envia a CCEE, CCEE calcula ressarcimentos"
     },
     {
       "fato_id": "ONS-PROCEDIMENTOS-903",
@@ -445,6 +474,68 @@
       "agente_comercial_envolvido": null,
       "gatilho_revisao": "publicacao das funcoes de produtividade pelo ONS, termo em 31/08/2026; abertura da ferramenta computacional do art. 5o, termo em 18/11/2026",
       "pendencia_verificacao": "O cumprimento pelo ONS do prazo de 5 dias do art. 4o par. 1o I, com termo em 27/07/2026, NAO foi verificado de forma independente: ons.org.br devolveu HTTP 502 na home de noticias e template nao renderizado na raiz, quarta execucao consecutiva. A ABSOLAR relatou em F3 que o cronograma nao havia sido publicado ate 03/08; a reuniao ABSOLAR com o ONS de 04/08 indica que o procedimento estava em curso. Reabrir ons.org.br assim que responder. || [CARIMBO NAO E LEITURA - consolidadora 24/08/2026] O campo verificado_em deste fato foi levado a 24/08/2026 pelo motor de fatos, que promove a hoje todo fato BYTE-IDENTICO ao baseline quando o monitor dono do arquivo rodou no dia. O motor NAO checa se a fonte abriu. Nesta execucao a varredura consolidadora reabriu as duas fontes e registra: portal do ONS servindo template vazio com placeholders nao preenchidos pela 12a execucao consecutiva, e portal de consultas publicas da CCEE em HTTP 403 pela 5a execucao consecutiva. Portanto: inalterado NAO equivale a reconfirmado. Nao afirmar frescor de hoje para este fato em peca, e-mail ou material. Pendencia de decisao do CEO registrada em _ACAO_CEO_CONSOLIDADO.md."
+    }
+  ],
+  "_pendentes_verificacao": [
+    {
+      "fato_id": "ONS-CRONOGRAMA-CRITERIOS-VALIDACAO-PORT140",
+      "tema": "ONS — cronograma, especificacoes tecnicas e criterios de validacao dos dados do ressarcimento (Portaria MME 140/2026): publicacao NAO LOCALIZADA na area publica",
+      "valor": "Reconferido em 18/11/2026. NORMA (Portaria Normativa MME nº 140/2026, art. 4º, § 1º, I): em até cinco dias da publicação (DOU de 21/07/2026), o ONS deveria divulgar em seu sítio eletrônico o cronograma, as especificações técnicas e os critérios de validação do envio dos registros solarimétricos de 1º/09/2023 a 31/03/2024; o termo caiu em 26/07/2026, domingo, e passou a 27/07/2026 pelo § 4º. O QUE O ONS PUBLICOU NO CANAL PÚBLICO: notícia oficial de 05/08/2026 com o cronograma do art. 5º (atualização de dados de 1º/09/2023 a 10/02/2025: ferramenta e cronograma até 18/11/2026; recebimento das informações dos agentes de 19/11/2026 a 18/12/2026; base final enviada à CCEE até 28/04/2027) e com o aviso de que o envio dos registros solarimétricos do art. 4º ficava aberto até 10/08/2026; a mesma notícia diz que as especificações técnicas e os critérios de validação do art. 5º serão divulgados oportunamente e remete os agentes à documentação do ONS e ao SINtegre. O QUE NÃO CONSTA: em 18/11/2026, a busca por nome no Acervo Digital público do ONS e a busca por título nas notícias do ONS não trazem documento com as especificações técnicas ou os critérios de validação, nem do art. 4º nem do art. 5º. FORMULAÇÃO CITÁVEL: não consta do acervo público do ONS. É vedado escrever que o ONS não publicou: a rota do Operador para os agentes é o SINtegre, portal com login. LEITURA SOA: é este rito que define como o contrafactual de corte será reconstruído e, portanto, onde a verificação ex-post tem lastro procedimental.",
+      "status": "NAO CONSTA DO ACERVO PUBLICO (reconferido em 18/11/2026); cronograma do art. 5º divulgado pelo ONS em 05/08/2026",
+      "norma": "Portaria Normativa MME nº 140, de 18/07/2026 (DOU 21/07/2026), art. 4º, § 1º, I (prazo vencido em 27/07/2026) e art. 5º, § 1º, I (120 dias, até 18/11/2026)",
+      "url": "https://www.ons.org.br/paginas/noticias/details.aspx?i=13067",
+      "verificado_em": "2026-11-18",
+      "tipo_fato": "REGULATORIO_NORMATIVO",
+      "score_soa": 18,
+      "vetores_afetados": [
+        "V4",
+        "sHEC"
+      ],
+      "qsv_cor": "LARANJA",
+      "qsv_origem_classificacao": "F1_portaria_MME_140_relida_18nov2026 + F1_noticia_ONS_05ago2026 + reverificacao_negativa_canal_publico_ONS_18nov2026_busca_acervo_e_noticias",
+      "numero_status": "SEM_NUMEROS",
+      "motivo_pendencia": "Exige leitura do SINtegre (portal com login). Reabrir o canal publico do ONS depois de 18/11/2026, termo do art. 5º, § 1º, I.",
+      "pendencia_verificacao": "sem F1 acessivel em 18/11/2026: noticia ONS 13067 so com JS; acervo e SINtegre (login) nao relidos nesta run || conferido em 18/11/2026: norma relida na Portaria (gov.br/mme, PDF); noticia ONS 13067 (05/08/2026) lida; Acervo Digital e noticias do ONS sem especificacoes nem criterios de validacao. SINtegre segue sem leitura (login). || anterior: sem F1 acessível em 17/11/2026: pagina do ONS sem conteudo estatico; acervo publico nao reconsultado; SINtegre exige login",
+      "gatilho_revisao": "publicacao das especificacoes tecnicas e dos criterios de validacao (art. 4º ou art. 5º) no sitio do ONS; leitura do SINtegre; abertura do recebimento de 19/11/2026",
+      "nota_reconferencia_2026_11_18": "F1 relida em 18/11/2026: https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf ; https://www.ons.org.br/paginas/noticias/details.aspx?i=13067",
+      "tentado_em": "2026-11-18"
+    },
+    {
+      "fato_id": "ONS-PROCEDIMENTOS-REDE-DECRETO-12772-2025",
+      "tema": "ONS — prazo de ate 45 dias para propor alteracoes nos Procedimentos de Rede decorrentes do Decreto no 12.772/2025 (termo inicial nao conferido)",
+      "valor": "*** ATUALIZADO EM 26/10/2026: a vista terminou. Despacho ANEEL no 4.065, de 06/10/2026, publicado no DOU de 26/10/2026, Secao 1, p. 62 (https://www.in.gov.br/web/dou/-/despacho-n-4.065-de-6-de-outubro-de-2026-740386313) determina ao ONS o envio, no prazo de ate 45 dias, de propostas de alteracao dos Procedimentos de Rede ligadas as atribuicoes do Decreto 12.772/2025, e manda o ONS priorizar a contratacao dos incrementos de MUST de 2029 de unidades consumidoras que cumpriam quatro condicoes em 8/12/2025. O texto do despacho nao fixa o termo inicial dos 45 dias (data do despacho, 06/10, ou da publicacao, 26/10): nao cravar data-limite. *** *** ATUALIZADO EM 13/10/2026 (revisão fato a fato): a ANEEL abriu a CP 036/2026 (Aviso no DOU de 08/10/2026; Processo 48500.000846/2026-82) sobre as minutas de Resolução Normativa e de revisão dos Módulos 1 e 5 das Regras dos Serviços de Transmissão. *** Origem F1 ANEEL (nao ONS): item 6 da 15a RPO de 28/07/2026, Processo 48500.000846/2026-82. O voto do Diretor-Relator Fernando Mosna, acompanhado por Gentil Nogueira de Sa Junior e Willamy Moreira Frota, determina ao ONS 'o envio, no prazo de ate 45 dias, de propostas de alteracao, bem como de outras que se mostrem necessarias, dos Procedimentos de Rede relacionados a operacionalizacao das atribuicoes que lhe foram delegadas pelo Decreto no 12.772/2025'. ⚠ CONDICIONAL — NAO E PRAZO EM VIGOR: o Diretor-Geral Sandoval de Araujo Feitosa Neto pediu vista do processo, de modo que o resultado NAO foi proclamado. A ata registra que os votos anteriores a vista continuam validos, facultada reforma ate a proclamacao (art. 53 §2o da NO no 1 / REN 1.133/2025). O termo inicial dos 45 dias so existe apos a proclamacao. NAO tratar como obrigacao vigente do ONS nem cravar data-limite.",
+      "status": "DETERMINACAO EM VIGOR (Despacho ANEEL 4.065/2026, DOU 26/10/2026) — termo inicial dos 45 dias nao fixado no texto",
+      "norma": "Despacho ANEEL no 4.065, de 06/10/2026 (DOU 26/10/2026) · Decreto no 12.772/2025 · REN 905/2020, Modulos 1 e 5",
+      "url": "https://www.in.gov.br/web/dou/-/despacho-n-4.065-de-6-de-outubro-de-2026-740386313",
+      "verificado_em": "2026-11-18",
+      "tipo_fato": "REGULATORIO_DECISORIO",
+      "qsv_cor": "LARANJA",
+      "qsv_origem_classificacao": "F1_DOU_despacho_ANEEL_4065_2026_relido_18nov2026",
+      "gatilho_revisao": "envio efetivo das propostas pelo ONS; abertura de consulta sobre os Procedimentos de Rede",
+      "pendencia_verificacao": "conferido em 18/11/2026: Despacho ANEEL 4.065/2026 relido no DOU (26/10/2026, Ed. 202, Secao 1, p. 62): item (ii) manda o ONS enviar em ate 45 dias as propostas de alteracao dos Procedimentos de Rede ligadas ao Decreto 12.772/2025, sem fixar o termo inicial; itens (iii) a (vii) conferem com a prioridade aos incrementos de MUST de 2029. Sem novidade desde 10/2026. || anterior: sem F1 acessível em 14/11/2026: Concordo. O Despacho ANEEL 4.065/2026 não abriu: WebFetch deu 'socket hang up', e o Chrome não carregou o DOU nem a página de consultas da ANEEL. A busca restrita a gov.br, in.gov.br, aneel.gov.br e ons.org.br não achou o despacho. Confirmei só o entorno: a notícia da",
+      "nota_reconferencia_2026_11_18": "F1 relida em 18/11/2026: https://www.in.gov.br/web/dou/-/despacho-n-4.065-de-6-de-outubro-de-2026-740386313",
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www.in.gov.br/web/dou/-/despacho-n-4.065-de-6-de-outubro-de-2026-740386313 | Despacho 4.065, DOU 26/10/2026, ed. 202, S1, p. 62; itens (ii) a (vii) conferem"
+    },
+    {
+      "fato_id": "ONS-FUNCOES-PRODUTIVIDADE-ART4-DIVULGACAO-2026",
+      "tema": "ONS - divulgacao das funcoes de produtividade fotovoltaicas do art. 4o da Portaria Normativa MME 140/2026: o marco venceu em 31/08/2026 e as funcoes nao constam do acervo publico",
+      "valor": "Reconferido em 18/11/2026. NORMA (Portaria Normativa MME nº 140/2026, art. 4º): em até quarenta dias da publicação (DOU de 21/07/2026), o ONS deveria divulgar as funções de produtividade das centrais fotovoltaicas elaboradas para 1º/09/2023 a 31/03/2024 (§ 1º, III); o termo caiu em 30/08/2026, domingo, e passou a 31/08/2026 pelo § 4º. Depois da divulgação, os interessados têm dez dias para contestar (§ 2º), e o ONS tem vinte dias, contados do fim das contestações, para divulgar as funções atualizadas e a análise das contestações (§ 3º). ESTADO NO CANAL PÚBLICO EM 18/11/2026: a busca por nome no Acervo Digital do ONS e a busca por título nas notícias do ONS não trazem as funções nem aviso de sua divulgação; a única notícia do ONS sobre a Portaria 140 é a de 05/08/2026 (cronograma do art. 5º e envio dos registros solarimétricos até 10/08/2026). A divulgação restrita aos agentes pelo SINtegre, portal com login, segue possível e não é distinguível por canal público; por isso as datas de contestação e de análise final não se cravam. FORMULAÇÃO CITÁVEL: as funções não constam do canal público do ONS. É vedado escrever que o ONS não as divulgou.",
+      "status": "MARCO VENCIDO EM 31/08/2026; divulgacao nao verificavel por canal publico (reconferido em 18/11/2026)",
+      "norma": "Portaria Normativa MME no 140, de 18/07/2026 (DOU de 21/07/2026), art. 4o par. 1o III, par. 2o e par. 4o",
+      "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
+      "verificado_em": "2026-11-18",
+      "tipo_fato": "REGULATORIO_NORMATIVO",
+      "score_soa": 20,
+      "vetores_afetados": [
+        "V4",
+        "sHEC"
+      ],
+      "qsv_cor": "LARANJA",
+      "qsv_origem_classificacao": "marco_de_calendario_ancorado_no_ato_relido_18nov2026 + reverificacao_negativa_canal_publico_ONS_18nov2026_busca_acervo_e_noticias",
+      "numero_status": "ANCORADO_PARCIAL",
+      "pendencia_verificacao": "conferido em 18/11/2026: art. 4º, § 1º, III, §§ 2º a 4º relidos na Portaria (gov.br/mme, PDF); Acervo Digital e noticias do ONS sem as funcoes. As datas de 09/09 e 29/09 da versao anterior foram retiradas: dependem da data de divulgacao, que nao se ve por canal publico, e pela contagem que exclui o dia do comeco dariam 10/09 e 30/09. || anterior: sem F1 acessível em 17/11/2026: SINtegre exige login; acervo publico do ONS nao reconsultado",
+      "gatilho_revisao": "leitura do SINtegre; publicacao das funcoes no acervo publico do ONS; qualquer comunicacao do ONS ou da CCEE sobre a janela de contestacao do art. 4º, § 2º",
+      "nota_reconferencia_2026_11_18": "F1 relida em 18/11/2026: https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf ; https://www.ons.org.br/paginas/conhecimento/acervo-digital/documentos-e-publicacoes ; https://www.ons.org.br/paginas/imprensa/noticias"
     },
     {
       "fato_id": "ONS-NT-DPL-0031-2024-REVISAO-FV",
@@ -481,68 +572,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "tentado_em": "2026-11-17",
-      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: SINtegre exige login; pagina de noticias do ONS sem conteudo estatico; so imprensa"
-    }
-  ],
-  "_pendentes_verificacao": [
-    {
-      "fato_id": "ONS-CRONOGRAMA-CRITERIOS-VALIDACAO-PORT140",
-      "tema": "ONS — cronograma, especificacoes tecnicas e criterios de validacao dos dados do ressarcimento (Portaria MME 140/2026): publicacao NAO LOCALIZADA na area publica",
-      "valor": "Reverificacao NEGATIVA de 01/09/2026 as 08h47, feita pela rotina consolidadora por rota anonima e reproduzivel: lista Acervo Digital - Documentos e Publicacoes do SharePoint do ONS, ordenada por Modified desc. O item mais recente do acervo publico e a Nota Tecnica de Quantitativos da Capacidade Remanescente do SIN da 1a Temporada de Acesso de 2026, Id 8558, Modified 2026-08-31T23:24:21Z. Nenhum item do acervo trata do cronograma, das especificacoes tecnicas ou dos criterios de validacao do art. 4o par. 1o I, cujo termo venceu em 27/07/2026 - hoje sao 36 dias de atraso no canal publico. FORMULACAO CITAVEL, e apenas ela: nao consta do acervo publico do ONS. E vedado escrever que o ONS nao publicou: a divulgacao do Operador ocorre no SINtegre, portal logado que devolveu HTTP 302 para tela de login. A RESSALVA DE FRESCOR REGISTRADA EM 31/08 CAIU: naquela data o acervo estava parado desde 28/08 20h30 e o negativo era fraco; o acervo recebeu item novo em 31/08 as 23h24, provando que a fonte estava viva, e o que entrou nao foi o rito do art. 4o. LEITURA SOA inalterada: e este documento que define COMO o contrafactual de corte sera reconstruido, e portanto onde a verificacao ex-post tem lastro procedimental.",
-      "status": "NAO CONSTA DO ACERVO PUBLICO - reverificacao negativa por rota anonima; ressalva de frescor de 31/08 superada",
-      "norma": "Portaria MME no 140, de 18/07/2026 (DOU 21/07/2026) — prazo vencido em 27/07/2026",
-      "url": "https://www.ons.org.br/paginas/noticias/details.aspx?i=13067",
-      "verificado_em": "2026-09-01",
-      "tipo_fato": "REGULATORIO_NORMATIVO",
-      "score_soa": 18,
-      "vetores_afetados": [
-        "V4",
-        "sHEC"
-      ],
-      "qsv_cor": "LARANJA",
-      "qsv_origem_classificacao": "reverificacao_negativa_F1_acervo_publico_ONS_01set2026_0847_rota_anonima",
-      "numero_status": "SEM_NUMEROS",
-      "motivo_pendencia": "Exige camada portal / SINTEGRE (Chrome logado, sessao interativa). Reverificar diariamente ate a contestacao de 09/09.",
-      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: pagina do ONS sem conteudo estatico; acervo publico nao reconsultado; SINtegre exige login",
-      "gatilho_revisao": "publicacao no acervo publico do ONS ou no SINtegre; leitura do fim do dia de 31/08; abertura da janela de contestacao do art. 4o par. 2o",
-      "tentado_em": "2026-11-17"
-    },
-    {
-      "fato_id": "ONS-PROCEDIMENTOS-REDE-DECRETO-12772-2025",
-      "tema": "ONS — prazo de ate 45 dias para propor alteracoes nos Procedimentos de Rede decorrentes do Decreto no 12.772/2025 (termo inicial nao conferido)",
-      "valor": "*** ATUALIZADO EM 26/10/2026: a vista terminou. Despacho ANEEL no 4.065, de 06/10/2026, publicado no DOU de 26/10/2026, Secao 1, p. 62 (https://www.in.gov.br/web/dou/-/despacho-n-4.065-de-6-de-outubro-de-2026-740386313) determina ao ONS o envio, no prazo de ate 45 dias, de propostas de alteracao dos Procedimentos de Rede ligadas as atribuicoes do Decreto 12.772/2025, e manda o ONS priorizar a contratacao dos incrementos de MUST de 2029 de unidades consumidoras que cumpriam quatro condicoes em 8/12/2025. O texto do despacho nao fixa o termo inicial dos 45 dias (data do despacho, 06/10, ou da publicacao, 26/10): nao cravar data-limite. *** *** ATUALIZADO EM 13/10/2026 (revisão fato a fato): a ANEEL abriu a CP 036/2026 (Aviso no DOU de 08/10/2026; Processo 48500.000846/2026-82) sobre as minutas de Resolução Normativa e de revisão dos Módulos 1 e 5 das Regras dos Serviços de Transmissão. *** Origem F1 ANEEL (nao ONS): item 6 da 15a RPO de 28/07/2026, Processo 48500.000846/2026-82. O voto do Diretor-Relator Fernando Mosna, acompanhado por Gentil Nogueira de Sa Junior e Willamy Moreira Frota, determina ao ONS 'o envio, no prazo de ate 45 dias, de propostas de alteracao, bem como de outras que se mostrem necessarias, dos Procedimentos de Rede relacionados a operacionalizacao das atribuicoes que lhe foram delegadas pelo Decreto no 12.772/2025'. ⚠ CONDICIONAL — NAO E PRAZO EM VIGOR: o Diretor-Geral Sandoval de Araujo Feitosa Neto pediu vista do processo, de modo que o resultado NAO foi proclamado. A ata registra que os votos anteriores a vista continuam validos, facultada reforma ate a proclamacao (art. 53 §2o da NO no 1 / REN 1.133/2025). O termo inicial dos 45 dias so existe apos a proclamacao. NAO tratar como obrigacao vigente do ONS nem cravar data-limite.",
-      "status": "DETERMINACAO EM VIGOR (Despacho ANEEL 4.065/2026, DOU 26/10/2026) — termo inicial dos 45 dias nao fixado no texto",
-      "norma": "Despacho ANEEL no 4.065, de 06/10/2026 (DOU 26/10/2026) · Decreto no 12.772/2025 · REN 905/2020, Modulos 1 e 5",
-      "url": "https://www.in.gov.br/web/dou/-/despacho-n-4.065-de-6-de-outubro-de-2026-740386313",
-      "verificado_em": "2026-10-26",
-      "tipo_fato": "REGULATORIO_DECISORIO",
-      "qsv_cor": "LARANJA",
-      "qsv_origem_classificacao": "F1_institucional_ANEEL_reaberta_29jul2026 — obrigacao condicionada a proclamacao do resultado",
-      "gatilho_revisao": "envio efetivo das propostas pelo ONS; abertura de consulta sobre os Procedimentos de Rede",
-      "tentado_em": "2026-11-14",
-      "pendencia_verificacao": "sem F1 acessível em 14/11/2026: Concordo. O Despacho ANEEL 4.065/2026 não abriu: WebFetch deu 'socket hang up', e o Chrome não carregou o DOU nem a página de consultas da ANEEL. A busca restrita a gov.br, in.gov.br, aneel.gov.br e ons.org.br não achou o despacho. Confirmei só o entorno: a notícia da"
-    },
-    {
-      "fato_id": "ONS-FUNCOES-PRODUTIVIDADE-ART4-DIVULGACAO-2026",
-      "tema": "ONS - divulgacao das funcoes de produtividade fotovoltaicas do art. 4o da Portaria Normativa MME 140/2026: o marco venceu em 31/08/2026 e as funcoes nao constam do acervo publico",
-      "valor": "Marco de calendario ancorado no proprio ato: o art. 4o par. 1o III conta 40 dias da publicacao (21/07/2026), o que cai em 30/08/2026, domingo, e o art. 4o par. 4o prorroga o termo para o proximo dia util, 31/08/2026. A data que vale e a do ato: 31/08. O TERMO VENCEU ONTEM e o estado passa a ser T+1. ESTADO EM 01/09/2026 as 08h47, reverificado pela rotina consolidadora por rota anonima propria e independente da varredura das 07h18: a lista Acervo Digital do SharePoint do ONS, ordenada por Modified desc, tem como item mais recente a Nota Tecnica de Quantitativos da Capacidade Remanescente do SIN da 1a Temporada de Acesso de 2026, Id 8558, Modified 2026-08-31T23:24:21Z. As funcoes de produtividade nao constam do acervo publico do ONS. GANHO DE FORCA PROBATORIA EM RELACAO A ONTEM: a ressalva de frescor registrada em 31/08 caiu. Naquela verificacao o acervo estava parado desde 28/08 20h30 e o negativo era fraco por fonte parada; agora esta provado que a fonte estava viva e indexando as 23h24 do proprio dia do prazo, e o que ela recebeu nao foram as funcoes de produtividade. O negativo sobre o dia 31/08 inteiro e, portanto, negativo forte. Permanece fraco por construcao apenas o negativo sobre a manha de 01/09, porque o acervo nao recebeu nenhum item novo desde 31/08 23h24. E vedado escrever que o ONS nao publicou: a rota do Operador e o SINtegre, logado, e a divulgacao restrita a agentes segue sendo hipotese viva e nao distinguivel por canal publico. CONSEQUENCIA PRATICA, e ela e binaria: se a divulgacao ocorreu pelo SINtegre em 31/08, o prazo de dez dias do art. 4o par. 2o comecou a correr e a contestacao vence em 09/09/2026; se nao ocorreu, o marco esta em atraso e o cronograma inteiro do art. 4o desliza. A casa nao distingue os dois casos por canal publico. A analise final das contestacoes pelo ONS segue prevista para 29/09/2026.",
-      "status": "MARCO VENCIDO EM 31/08 - T+1; divulgacao nao verificavel por canal publico",
-      "norma": "Portaria Normativa MME no 140, de 18/07/2026 (DOU de 21/07/2026), art. 4o par. 1o III, par. 2o e par. 4o",
-      "url": "https://www.in.gov.br/",
-      "verificado_em": "2026-09-01",
-      "tipo_fato": "REGULATORIO_NORMATIVO",
-      "score_soa": 20,
-      "vetores_afetados": [
-        "V4",
-        "sHEC"
-      ],
-      "qsv_cor": "LARANJA",
-      "qsv_origem_classificacao": "marco_de_calendario_ancorado_no_ato + reverificacao_negativa_FORTE_canal_publico_01set2026_0847_rota_anonima_propria",
-      "numero_status": "ANCORADO_PARCIAL",
-      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: SINtegre exige login; acervo publico do ONS nao reconsultado",
-      "gatilho_revisao": "leitura do SINtegre; publicacao no acervo publico do ONS; qualquer comunicacao do ONS ou da CCEE sobre a abertura da janela de contestacao",
-      "tentado_em": "2026-11-17"
+      "tentado_em": "2026-11-18",
+      "pendencia_verificacao": "fora do ar publico desde 18/11/2026: sem conferencia na fonte desde 06/11/2026 (sem F1 acessivel em 18/11/2026: NT DPL 0031/2024 revisada e funcoes de produtividade revisadas so no SINtegre (login); noticias do ONS sem texto (JS, 502/404); so imprensa descreve a correcao)"
     }
   ],
   "_historico_caidos": []
