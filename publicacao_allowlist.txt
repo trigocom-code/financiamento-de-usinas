@@ -42,6 +42,7 @@ Solar_One-Logo_capa.png
 _Catalogo_SOA.html
 _folder_triggers_state.json
 _frescor.json
+_regressao_aprovada.json
 acesso-transmissao-pnast.html
 acu-iii-lrcap-soa.html
 anatomia-jogo3-brasil-escocia.html
