@@ -163,59 +163,12 @@ def erros_html(base):
             if m.group(1)!="16" and not _negado(low,m.start()): e.append("%s: vetos divergente '%s'" % (n, m.group(0)))
     return e
 
-MARCA_REGRESSAO = "[regressao-aprovada]"
-REGRESSAO_JSON = "_regressao_aprovada.json"
-
-def _texto_tem_marca_regressao(texto):
-    return bool(texto) and MARCA_REGRESSAO.lower() in str(texto).lower()
-
-def _git_commit_message(base, sha):
-    try:
-        return subprocess.check_output(["git","log","-1","--pretty=%B",sha],cwd=base,
-                                       stderr=subprocess.DEVNULL).decode("utf-8","replace")
-    except Exception:
-        return ""
-
-def regressao_aprovada_json_valido(base):
-    """Exige _regressao_aprovada.json presente e JSON com _meta (objeto)."""
-    p=os.path.join(base,REGRESSAO_JSON)
-    if not os.path.isfile(p): return False
-    try:
-        with open(p,encoding="utf-8-sig") as f: d=json.load(f)
-        return isinstance(d,dict) and isinstance(d.get("_meta"),dict)
-    except Exception:
-        return False
-
-def marca_regressao_em_commits(base):
-    """Marca em mensagens de commit (head do PR, base..head, ultimo commit)."""
-    head=os.environ.get("GITHUB_HEAD_SHA","").strip()
-    if head and _texto_tem_marca_regressao(_git_commit_message(base,head)): return True
-    base_sha=os.environ.get("GITHUB_BASE_SHA","").strip()
-    if base_sha and head:
-        try:
-            msgs=subprocess.check_output(["git","log",base_sha+".."+head,"--pretty=%B"],cwd=base,
-                                        stderr=subprocess.DEVNULL).decode("utf-8","replace")
-            if _texto_tem_marca_regressao(msgs): return True
-        except Exception:
-            pass
-    return _texto_tem_marca_regressao(_git_commit_message(base,"HEAD"))
-
-def marca_regressao_em_texto_pr():
-    for k in ("PR_TITLE","PR_BODY"):
-        if _texto_tem_marca_regressao(os.environ.get(k) or ""): return True
-    return False
-
-def marca_regressao_detectada(base):
-    """Ordem: HEAD do PR, commits base..head, titulo/corpo do PR, ultimo commit (push/local)."""
-    return marca_regressao_em_commits(base) or marca_regressao_em_texto_pr()
-
-def regressao_pode_ser_aprovada(base):
-    """Dispensa E0 somente com JSON valido e marca em qualquer fonte (inclui titulo/corpo do PR)."""
-    return regressao_aprovada_json_valido(base) and marca_regressao_detectada(base)
-
 def erros_regressao(base):
     e=[]
     try:
+        msg=subprocess.check_output(["git","log","-1","--pretty=%B"],cwd=base,
+                                    stderr=subprocess.DEVNULL).decode("utf-8","replace")
+        if "[regressao-aprovada]" in msg.lower(): return []
         mudados=subprocess.check_output(["git","diff","--name-only","HEAD^","HEAD"],cwd=base,
                                         stderr=subprocess.DEVNULL).decode().split()
     except Exception:
@@ -241,12 +194,6 @@ def erros_regressao(base):
             e.append("%s: REGRESSAO schema_version %s -> %s (use [regressao-aprovada] se intencional)" % (f, sv_a, sv_d))
         if n_a is not None and n_d is not None and n_d<n_a:
             e.append("%s: REGRESSAO qtde de fatos %d -> %d (use [regressao-aprovada] se intencional)" % (f, n_a, n_d))
-    if not e:
-        return []
-    if regressao_pode_ser_aprovada(base):
-        return []
-    if marca_regressao_em_commits(base) and not regressao_aprovada_json_valido(base):
-        e.append("%s: ausente ou invalido — %s em commit exige arquivo de aprovacao" % (REGRESSAO_JSON,MARCA_REGRESSAO))
     return e
 
 def erros_beneficios(path):

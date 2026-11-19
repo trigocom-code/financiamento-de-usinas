@@ -66,11 +66,21 @@
         "corrigidos": [],
         "movidos_para_pendentes": [],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-19",
+        "relidos": [
+          "fatos[4]"
+        ],
+        "corrigidos": [],
+        "sem_f1_tentados": [],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
     "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 7 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46.",
-    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 7 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46."
+    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 7 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46.",
+    "nota_carimbo_engine_2026_11_19": "Em 19/11/2026 08h28 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje sem releitura de fonte (D46, 4o dia). Desfeito pela consolidadora com o backup _backup_reconciliacao/2026-11-19_082824 (diferenca conferida por script: so verificado_em)."
   },
   "fatos": [
     {
@@ -255,7 +265,7 @@
       "status": "VIGENTE",
       "norma": "CCEE · Regras de Comercialização, caderno 04 - Mecanismo de Realocação de Energia (versão 2026.1.0) · REN ANEEL nº 1.146/2025",
       "url": "https://www.ccee.org.br/mercado/regras-de-comercializacao",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [

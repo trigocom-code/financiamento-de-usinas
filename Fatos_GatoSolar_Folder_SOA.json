@@ -67,6 +67,17 @@
         "corrigidos": [],
         "movidos_para_pendentes": [],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-19",
+        "relidos": [],
+        "corrigidos": [],
+        "sem_f1_tentados": [
+          "fatos[1]",
+          "_pendentes_verificacao[0]",
+          "_pendentes_verificacao[1]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
@@ -101,9 +112,9 @@
         "V4",
         "sHEC"
       ],
-      "pendencia_verificacao": "sem F1 acessivel em 18/11/2026: parecer ANEEL sobre corte de MMGD sem ato ou documento oficial em dominio aberto || A verificar: status formal — segue como parecer/discussão, sem ato vinculante.",
+      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: in.gov.br fora do ar; a fonte principal do item é Canal Solar (F2) | sem F1 acessivel em 18/11/2026: parecer ANEEL sobre corte de MMGD sem ato ou documento oficial em dominio aberto || A verificar: status formal — segue como parecer/discussão, sem ato vinculante.",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-da-consulta-publica-n-33/2026-742072056",
-      "tentado_em": "2026-11-18"
+      "tentado_em": "2026-11-19"
     },
     {
       "tema": "CP ANEEL 011/2026 — créditos vencidos de MMGD (adjacente)",
@@ -131,8 +142,8 @@
         "V2",
         "sHEC"
       ],
-      "tentado_em": "2026-11-18",
-      "pendencia_verificacao": "sem F1 acessivel em 18/11/2026: NT 107/2026-SFT so no SEI da ANEEL (403 e CAPTCHA)",
+      "tentado_em": "2026-11-19",
+      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: SEI da ANEEL com CAPTCHA; o item já está fora da seção publicada | sem F1 acessivel em 18/11/2026: NT 107/2026-SFT so no SEI da ANEEL (403 e CAPTCHA)",
       "motivo_pendencia": "Retirado da secao publicada (fatos) em 18/11/2026 pela regra do dono: sem conferencia real na fonte oficial nao se carimba data. verificado_em abaixo e historico e nao e exibido. Volta a fatos so com releitura em F1 (data, URL e sha256)."
     },
     {
@@ -146,8 +157,8 @@
         "V2",
         "sHEC"
       ],
-      "tentado_em": "2026-11-18",
-      "pendencia_verificacao": "sem F1 acessivel em 18/11/2026: depende da NT 107/2026-SFT, so no SEI (403 e CAPTCHA)",
+      "tentado_em": "2026-11-19",
+      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: SEI da ANEEL com CAPTCHA; item sem url próprio | sem F1 acessivel em 18/11/2026: depende da NT 107/2026-SFT, so no SEI (403 e CAPTCHA)",
       "motivo_pendencia": "Retirado da secao publicada (fatos) em 18/11/2026 pela regra do dono: sem conferencia real na fonte oficial nao se carimba data. verificado_em abaixo e historico e nao e exibido. Volta a fatos so com releitura em F1 (data, URL e sha256)."
     },
     {

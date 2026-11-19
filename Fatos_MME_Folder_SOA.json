@@ -3,7 +3,7 @@
     "orgao": "MME",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo MME — schema v1.3. Aplicada Precedência v1.2. Portaria 136/2026 enriquecida em 04/07/2026 (leitura integral: art. 5º/7º/9º + Anexo II). Portaria Normativa 140/2026 lida na integra em 07/08/2026 no texto oficial do MME (10 paginas) - fato promovido de LARANJA para VERDE.",
-    "verificado_em": "2026-11-14",
+    "verificado_em": "2026-11-15",
     "proxima_revisao_sugerida": "2026-11-10",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina MME conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[].",
@@ -75,11 +75,24 @@
         "corrigidos": [],
         "movidos_para_pendentes": [],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-19",
+        "relidos": [
+          "fatos[7]",
+          "fatos[8]",
+          "_pendentes_verificacao[0]",
+          "_pendentes_verificacao[1]"
+        ],
+        "corrigidos": [],
+        "sem_f1_tentados": [],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
     "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 9 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46.",
-    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 9 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46."
+    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 9 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46.",
+    "nota_carimbo_engine_2026_11_19": "Em 19/11/2026 08h28 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje sem releitura de fonte (D46, 4o dia). Desfeito pela consolidadora com o backup _backup_reconciliacao/2026-11-19_082824 (diferenca conferida por script: so verificado_em)."
   },
   "fatos": [
     {
@@ -409,7 +422,7 @@
       "status": "VIGENTE",
       "norma": "Resolução CMSE nº 1, de 6 de julho de 2026 — DOU de 08/07/2026, Edição 126, Seção 1, Página 134",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -447,7 +460,7 @@
       "status": "VIGENTE",
       "norma": "Portaria Normativa MME no 140, de 18/07/2026 · DOU de 21/07/2026, Edicao 135-A, Secao 1 - Extra A, Pagina 10 · regulamenta o art. 1o-B da Lei no 10.848/2004, incluido pela Lei no 15.269, de 24/11/2025 · Processo 48370.000267/2025-81",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 20,
       "vetores_afetados": [
@@ -493,7 +506,7 @@
       "status": "CADUCADA",
       "norma": "MP 1.318/2025 (caducada em 25/02/2026 — sem efeito jurídico atual) · PL 278/2026, transformado na Lei nº 15.504/2026 (DOU 15/09/2026)",
       "url": "https://www.congressonacional.leg.br/materias/medidas-provisorias/-/mpv/170521",
-      "verificado_em": "2026-11-18",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -532,7 +545,7 @@
       "status": "RESOLVIDO — ATO PUBLICADO (Portaria Normativa MME no 140, de 18/07/2026, DOU 21/07/2026)",
       "norma": "Portaria Normativa MME nº 140, de 18/07/2026 (DOU 21/07/2026, Ed. 135-A, Seção 1 - Extra A, p. 10), Anexo I - Termo de Compromisso · Despacho ANEEL nº 1.669, de 12/05/2026 (DOU 18/05/2026) · Despacho ANEEL nº 3.831, de 29/09/2026 (DOU 07/10/2026)",
       "url": "https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777",
-      "verificado_em": "2026-11-18",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 11,
       "vetores_afetados": [

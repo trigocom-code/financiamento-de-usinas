@@ -69,14 +69,31 @@
           "ANEEL-EDITAL-LRCAP-ARMAZ"
         ],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-19",
+        "relidos": [
+          "beneficios[17]",
+          "beneficios[18]",
+          "beneficios[20]",
+          "beneficios[21]",
+          "beneficios[22]",
+          "beneficios[23]"
+        ],
+        "corrigidos": [],
+        "sem_f1_tentados": [
+          "beneficios[19]",
+          "_pendentes_verificacao[0]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ]
   },
   "_carimbo": {
     "atualizado_em": "2026-10-13T00:00:00-03:00",
-    "hash": "sha256:53bf6ec7b114dd215e318864eda5c6b6e291876c26264c312dd87186e143c467",
+    "hash": "sha256:5bc44b0ac1c2c7db81db3123724adf35012642e20b34f84b65a7a6ecfb474633",
     "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias",
-    "selado_em": "2026-11-18"
+    "selado_em": "2026-11-19"
   },
   "_schema": {
     "versao": "1.0",
@@ -492,7 +509,7 @@
       "sem_soa": "enquadramento defensável",
       "status": "verificado",
       "fonte": "planalto D12705",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-19"
     },
     {
       "id": "ind_fundos_constitucionais",
@@ -512,7 +529,7 @@
       "sem_soa": "—",
       "status": "pendente",
       "fonte": "Lei 7.827/1989 · D6306/2007 art.9º III · BNB FNE Verde · CMN 5.013/2022 (não rural) · CMN 5.329/2026 (rural)",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20CMN&numero=5013"
     },
     {
@@ -531,7 +548,9 @@
       "sem_soa": "verificação em escala sem vistoria",
       "status": "verificado",
       "fonte": "leis municipais",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-14",
+      "tentado_em": "2026-11-19",
+      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: PDF oficial de Salvador ilegível pela ferramenta; sem texto do artigo de IPTU Verde; Curitiba sem F1 aberta."
     },
     {
       "id": "mun_autoconsumo",
@@ -549,7 +568,7 @@
       "sem_soa": "prova de economia",
       "status": "verificado",
       "fonte": "planalto L14300",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14300.htm"
     },
     {
@@ -568,7 +587,7 @@
       "sem_soa": "—",
       "status": "verificado",
       "fonte": "BNDES",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-19"
     },
     {
       "id": "mun_compras_14133",
@@ -587,7 +606,7 @@
       "sem_soa": "prova de mitigação",
       "status": "verificado",
       "fonte": "planalto L14133",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-19"
     },
     {
       "id": "est_icms_gd",
@@ -605,7 +624,7 @@
       "sem_soa": "—",
       "status": "verificado",
       "fonte": "CONFAZ CV16/15",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-19"
     },
     {
       "id": "uni_fundoclima",
@@ -1104,8 +1123,8 @@
         "BESS auditável"
       ],
       "porque_certificar": "Preço-teto e TUST do edital definem a receita; a evidência horária protege o DSCR do risco de dupla cobrança.",
-      "tentado_em": "2026-11-18",
-      "pendencia_verificacao": "fora do ar publico desde 18/11/2026: sem conferencia na fonte desde sem data (sem F1 acessivel em 18/11/2026: item analitico; edital do LRCAP de armazenamento (preco-teto e TUST) nao aberto nesta run; FAQ da EPE com 404)"
+      "tentado_em": "2026-11-19",
+      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: Item analítico pendente: edital do LRCAP de armazenamento (preço-teto e TUST) sem ato aberto nesta run; nada a conferir em fonte oficial. | fora do ar publico desde 18/11/2026: sem conferencia na fonte desde sem data (sem F1 acessivel em 18/11/2026: item analitico; edital do LRCAP de armazenamento (preco-teto e TUST) nao aberto nesta run; FAQ da EPE com 404)"
     }
   ]
 }
