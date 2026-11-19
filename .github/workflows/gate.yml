@@ -3,10 +3,15 @@ name: Gate SOA/SOS - Fatos
 jobs:
   validar-fatos:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+      GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+      PR_TITLE: ${{ github.event.pull_request.title }}
+      PR_BODY: ${{ github.event.pull_request.body }}
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
