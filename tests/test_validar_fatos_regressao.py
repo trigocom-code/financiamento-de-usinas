@@ -143,6 +143,40 @@ class ErrosRegressaoTests(unittest.TestCase):
             self.assertTrue(erros)
             self.assertTrue(any(REGRESSAO_JSON in x for x in erros))
 
+    def test_commit_com_marca_meta_sem_queda_de_fatos_passa(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _init_repo(root)
+            _write_fatos(root, 5)
+            subprocess.run(["git", "add", FATOS], cwd=root, check=True)
+            subprocess.run(["git", "commit", "-q", "-m", "base"], cwd=root, check=True)
+            (root / "notas.txt").write_text("doc", encoding="utf-8")
+            subprocess.run(["git", "add", "notas.txt"], cwd=root, check=True)
+            subprocess.run(
+                ["git", "commit", "-q", "-m", "docs sobre [regressao-aprovada] no gate"],
+                cwd=root,
+                check=True,
+            )
+            self._clear_pr_env()
+            erros = vf.erros_regressao(str(root))
+            self.assertEqual(erros, [])
+
+    def test_titulo_pr_com_marca_sem_json_nao_dispensa_regressao(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            _init_repo(root)
+            _write_fatos(root, 8)
+            subprocess.run(["git", "add", FATOS], cwd=root, check=True)
+            subprocess.run(["git", "commit", "-q", "-m", "base"], cwd=root, check=True)
+            _write_fatos(root, 3)
+            subprocess.run(["git", "add", FATOS], cwd=root, check=True)
+            subprocess.run(["git", "commit", "-q", "-m", "queda"], cwd=root, check=True)
+            self._clear_pr_env()
+            os.environ["PR_TITLE"] = "pub [regressao-aprovada] sem json"
+            erros = vf.erros_regressao(str(root))
+            self.assertTrue(any("REGRESSAO qtde" in x for x in erros))
+            self.assertFalse(any(REGRESSAO_JSON in x for x in erros))
+
     def test_push_ultimo_commit_com_marca_e_sinal_valido_passa(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

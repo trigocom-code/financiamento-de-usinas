@@ -186,8 +186,8 @@ def regressao_aprovada_json_valido(base):
     except Exception:
         return False
 
-def marca_regressao_detectada(base):
-    """Ordem: HEAD do PR, commits base..head, titulo/corpo do PR, ultimo commit (push/local)."""
+def marca_regressao_em_commits(base):
+    """Marca em mensagens de commit (head do PR, base..head, ultimo commit)."""
     head=os.environ.get("GITHUB_HEAD_SHA","").strip()
     if head and _texto_tem_marca_regressao(_git_commit_message(base,head)): return True
     base_sha=os.environ.get("GITHUB_BASE_SHA","").strip()
@@ -198,20 +198,28 @@ def marca_regressao_detectada(base):
             if _texto_tem_marca_regressao(msgs): return True
         except Exception:
             pass
+    return _texto_tem_marca_regressao(_git_commit_message(base,"HEAD"))
+
+def marca_regressao_em_texto_pr():
     for k in ("PR_TITLE","PR_BODY"):
         if _texto_tem_marca_regressao(os.environ.get(k) or ""): return True
-    return _texto_tem_marca_regressao(_git_commit_message(base,"HEAD"))
+    return False
+
+def marca_regressao_detectada(base):
+    """Ordem: HEAD do PR, commits base..head, titulo/corpo do PR, ultimo commit (push/local)."""
+    return marca_regressao_em_commits(base) or marca_regressao_em_texto_pr()
+
+def regressao_pode_ser_aprovada(base):
+    """Dispensa E0 somente com JSON valido e marca em qualquer fonte (inclui titulo/corpo do PR)."""
+    return regressao_aprovada_json_valido(base) and marca_regressao_detectada(base)
 
 def erros_regressao(base):
     e=[]
-    if marca_regressao_detectada(base):
-        if regressao_aprovada_json_valido(base): return []
-        e.append("%s: ausente ou invalido — %s exige arquivo de aprovacao" % (REGRESSAO_JSON,MARCA_REGRESSAO))
     try:
         mudados=subprocess.check_output(["git","diff","--name-only","HEAD^","HEAD"],cwd=base,
                                         stderr=subprocess.DEVNULL).decode().split()
     except Exception:
-        return e
+        return []
     def parse(txt):
         try:
             d=json.loads(txt)
@@ -233,6 +241,12 @@ def erros_regressao(base):
             e.append("%s: REGRESSAO schema_version %s -> %s (use [regressao-aprovada] se intencional)" % (f, sv_a, sv_d))
         if n_a is not None and n_d is not None and n_d<n_a:
             e.append("%s: REGRESSAO qtde de fatos %d -> %d (use [regressao-aprovada] se intencional)" % (f, n_a, n_d))
+    if not e:
+        return []
+    if regressao_pode_ser_aprovada(base):
+        return []
+    if marca_regressao_em_commits(base) and not regressao_aprovada_json_valido(base):
+        e.append("%s: ausente ou invalido — %s em commit exige arquivo de aprovacao" % (REGRESSAO_JSON,MARCA_REGRESSAO))
     return e
 
 def erros_beneficios(path):
