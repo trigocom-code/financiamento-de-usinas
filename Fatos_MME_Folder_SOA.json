@@ -62,10 +62,24 @@
           "fatos[4]"
         ],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-18",
+        "ids_relidos": [
+          "fatos[5]",
+          "fatos[6]",
+          "_pendentes_verificacao[0]",
+          "_pendentes_verificacao[1]"
+        ],
+        "sem_f1": [],
+        "corrigidos": [],
+        "movidos_para_pendentes": [],
+        "monitor": "monitores-regulatorios-soa"
       }
     ],
     "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
-    "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 9 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46."
+    "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 9 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46.",
+    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 9 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46."
   },
   "fatos": [
     {
@@ -304,7 +318,7 @@
       "status": "VIGENTE",
       "norma": "Lei nº 15.504/2026 (DOU 15/09/2026, Ed. 174-C, Seção 1 Extra C) · altera a Lei 11.196/2005, arts. 11-A a 11-J · Lei Complementar nº 237/2026 (mesma edição do DOU) · regulamento do Executivo pendente",
       "url": "https://www.in.gov.br/web/dou/-/lei-n-15.504-de-15-de-setembro-de-2026-731892072",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -346,7 +360,8 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "pendencia_verificacao": "16/09/2026 consolidadora: status EM DELIBERAÇÃO -> VIGENTE por leitura integral do ato no DOU (in.gov.br, via navegador, 16/09 ~08:50). Cor AZUL mantida de propósito: o REDATA/MP 1.318 é um dos 4 fatos pendentes da conferência do CEO; promoção a VERDE é decisão dele. Não reconferido por esta camada: (a) ausência de mensagem de veto ao projeto — o texto publicado não traz dispositivo marcado como vetado, e o monitor-regulatorio registrou que a Mensagem 752 só restitui o autógrafo; (b) vínculo formal Lei 15.504 <- PL 278/2026, que a API do Senado (matéria 172786, 16/09) ainda mostra como 'REMETIDA À SANÇÃO' sem norma gerada. Histórico: em 15/09 o texto dizia 'remetido à sanção em 04/09, prazo 25/09'; antes, em 08/07, 'travado no Senado' (carimbado sem verificação pelo motor em 15/09, D15). O texto sancionado não menciona certificados de energia: não atribuir à lei exigência de certificação.",
-      "gatilho_revisao": "Decreto regulamentador do REDATA e atos da Receita Federal / Poder Executivo com a lista de produtos (art. 11-C, §4º)"
+      "gatilho_revisao": "Decreto regulamentador do REDATA e atos da Receita Federal / Poder Executivo com a lista de produtos (art. 11-C, §4º)",
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www.in.gov.br/web/dou/-/lei-n-15.504-de-15-de-setembro-de-2026-731892072 | DOU 15/09/2026, ed. 174-C, Extra C, p. 1; art. 11-B, par. 1, III: fontes renovaveis ou de baixa emissao; art. 11-J, p.u.: ate 31/12/2026"
     },
     {
       "fato_id": "MME-POTEE-2026-CP",
@@ -355,7 +370,7 @@
       "status": "VIGENTE (plano aprovado em 29/09/2026; consulta pública encerrada em 13/08/2026)",
       "norma": "Portaria SNTEP/MME nº 3.240, de 29 de setembro de 2026 — DOU de 01/10/2026, Edição 186-C, Seção 1 - Extra C, Página 15 (aprova o POTEE 2026 — Ampliações e Reforços, 1ª emissão) · consulta pública: Portaria SNTEP/MME nº 3.159, de 10 de julho de 2026 — DOU de 14/07/2026, Edição 130, Seção 1, Página 99",
       "url": "https://www.in.gov.br/web/dou/-/portaria-sntep/mme-n-3.240-de-29-de-setembro-de-2026-735924821",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -384,7 +399,8 @@
         }
       ],
       "pendencia_verificacao": "RESOLVIDA em 21/07/2026: a Portaria SNTEP/MME nº 3.159/2026 foi lida na íntegra no DOU. O prazo é de 30 dias CONTADOS DA PUBLICAÇÃO DA PORTARIA (14/07/2026) — não da abertura noticiada — logo, encerramento em 13/08/2026. Ressalva remanescente: a Portaria não atribui número de CP (não existe 'CP nº X/2026' para o POTEE); em material externo citar 'Consulta Pública do POTEE 2026, instituída pela Portaria SNTEP/MME nº 3.159/2026', nunca um número de consulta inventado.",
-      "numero_status": "ANCORADO"
+      "numero_status": "ANCORADO",
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www.in.gov.br/web/dou/-/portaria-sntep/mme-n-3.240-de-29-de-setembro-de-2026-735924821 | DOU 01/10/2026, ed. 186-C, p. 15: aprova o POTEE 2026 (1a emissao), proc. 48360.000126/2026-69 (detalhe da LT Angicos-Itaporanga 2 nao relido)"
     },
     {
       "fato_id": "MME-CMSE-RESOLUCAO-DESPACHO-TERMICO",
@@ -477,7 +493,7 @@
       "status": "CADUCADA",
       "norma": "MP 1.318/2025 (caducada em 25/02/2026 — sem efeito jurídico atual) · PL 278/2026, transformado na Lei nº 15.504/2026 (DOU 15/09/2026)",
       "url": "https://www.congressonacional.leg.br/materias/medidas-provisorias/-/mpv/170521",
-      "verificado_em": "2026-11-16",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -506,7 +522,8 @@
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "CADUCADA em 25/02/2026. Mantida em LARANJA conforme Precedência v1.2: só deixa de ser pendência quando texto for completamente reescrito como caducada em todos materiais. Conteúdo seguiu no PL 278/2026, que virou a Lei nº 15.504/2026, em vigor desde 15/09/2026.",
       "pendencia_verificacao": "21/07/2026 - ESTADO PROCESSUAL VERIFICADO NA FONTE PRIMÁRIA (portal de matérias do Senado, PL 278/2026, matéria 172786, resolvido nesta run após falhar em 20/07): situação 'Em tramitação'; último local/estado 26/02/2026 - Plenário do Senado Federal - AGUARDANDO INCLUSÃO ORDEM DO DIA DE REQUERIMENTO (Requerimento nº 112/2026, de Líderes, de urgência, arts. 336, III e 338, III do RISF). MOVIMENTO NOVO: Emenda nº 22 PLEN, do Senador Laércio Oliveira (PP/SE), recebida em 17/07/2026 — total de 22 emendas (a nº 1 foi retirada pelo autor). Última atualização de dados legislativos: 17/07/2026 12:42, compatível com o recesso parlamentar iniciado em 18/07. CONCLUSÃO: nada muda no fato — a MP 1.318/2025 segue CADUCADA e o regime REDATA segue NÃO VIGENTE; o PL 278/2026 sequer teve o requerimento de urgência incluído em Ordem do Dia. MANTIDO LARANJA (item 3 da lista do CEO — o único genuinamente pendente). Reforço do negativo: busca no DOU por \"data center\", Seção 1, 14-21/07/2026 -> 2 resultados, ambos Portarias PC-MD do Ministério da Defesa sobre salas de informação classificada; nenhum ato de REDATA. | 14/11/2026: a nota de 21/07 sobre o regime fora de vigor ficou superada. A MP 1.318/2025 perdeu a eficácia em 25/02/2026 (Senado, dados abertos da MPV 1318/2025: 'SEM EFICÁCIA'); o PL 278/2026 virou a Lei nº 15.504, de 15/09/2026, em vigor desde a publicação (art. 5º); o regulamento do Executivo segue sem ato no DOU até 14/11/2026.",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://legis.senado.leg.br/dadosabertos/processo?sigla=MPV&numero=1318&ano=2025"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://legis.senado.leg.br/dadosabertos/processo?sigla=MPV&numero=1318&ano=2025",
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://legis.senado.leg.br/dadosabertos/processo?sigla=MPV&numero=1318&ano=2025 | MPV 1318/2025 perda de eficacia em 25/02/2026; PL 278/2026 transformado na Lei 15.504 de 15/09/2026 (ponto pendente do CEO nao cravado)"
     },
     {
       "fato_id": "MME-TERMO-COMPROMISSO-SOBREOFERTA",
@@ -515,7 +532,7 @@
       "status": "RESOLVIDO — ATO PUBLICADO (Portaria Normativa MME no 140, de 18/07/2026, DOU 21/07/2026)",
       "norma": "Portaria Normativa MME nº 140, de 18/07/2026 (DOU 21/07/2026, Ed. 135-A, Seção 1 - Extra A, p. 10), Anexo I - Termo de Compromisso · Despacho ANEEL nº 1.669, de 12/05/2026 (DOU 18/05/2026) · Despacho ANEEL nº 3.831, de 29/09/2026 (DOU 07/10/2026)",
       "url": "https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777",
-      "verificado_em": "2026-11-16",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 11,
       "vetores_afetados": [
@@ -545,7 +562,8 @@
       "motivo_pendencia": "Ponteiro F3 (ABSOLAR). Vigiar publicação do Termo de Compromisso no DOU e a recontabilização da CCEE de 29/07. Confirmar se a versão publicada exclui a reclassificação da sobreoferta MMGD/térmica.",
       "pendencia_verificacao": "F3 puro em 18/07. Ato não publicado; Despacho 1.669/2026 não lido em F1. Não citar teor em material externo antes de F1/DOU. | 20/07/2026 - NEGATIVO VERIFICADO NO DOU (primeira vez com o DOU efetivamente acessivel): busca no in.gov.br via render JS na janela 15-20/07/2026 nao retornou nenhum 'Termo de Compromisso' do MME em materia de energia, e a busca por 'Portaria Normativa' com Orgao Principal = Ministerio de Minas e Energia retornou apenas ato de pessoal. A pagina oficial de noticias do MME foi reaberta em F1 (carimbo 'Atualizado em 17/07/2026 14h01'), item mais recente 17/07 sem ato regulatorio. CONCLUSAO: o Termo anunciado por F3 (GTGC 17/07) como 'pronto para publicacao' NAO foi publicado ate 20/07/2026. MANTIDO LARANJA. Vigiar DOU e a recontabilizacao CCEE de 29/07. | 21/07/2026 - NEGATIVO VERIFICADO NO DOU PELA 2ª VEZ: busca no in.gov.br (render JS) por \"Termo de Compromisso\", Seção 1, Órgão Principal = Ministério de Minas e Energia, janela 18-21/07/2026 -> 0 resultados. Página de notícias do MME reaberta em F1 (carimbo 'Atualizado em 20/07/2026 14h35'): item mais recente 20/07 é matéria didática de planejamento energético, sem ato. O Termo anunciado por F3 (GTGC 17/07) segue NÃO PUBLICADO. MANTIDO LARANJA. Vigiar DOU e a recontabilização CCEE de 29/07.",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777",
-      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777 | DOU 21/07/2026, Ed. 135-A, p. 10, relido. O art. 5º, § 4º, enquadra os cortes 'exclusivamente em uma das seguintes classificações: I - indisponibilidade externa; II - confiabilidade el[étrica]...'. Busca no texto por MMGD, minigeracao e ordem de merito: zero ocorrencias. Os Despachos ANEEL 1.669/202"
+      "nota_reconferencia_2026_11_15": "F1 relida em 15/11/2026: https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777 | DOU 21/07/2026, Ed. 135-A, p. 10, relido. O art. 5º, § 4º, enquadra os cortes 'exclusivamente em uma das seguintes classificações: I - indisponibilidade externa; II - confiabilidade el[étrica]...'. Busca no texto por MMGD, minigeracao e ordem de merito: zero ocorrencias. Os Despachos ANEEL 1.669/202",
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www.in.gov.br/web/dou/-/portaria-normativa-mme-n-140-de-18-de-julho-de-2026-720529777 | DOU 21/07/2026, ed. 135-A, p. 10; art. 5o, par. 4; Termo de Compromisso: corte por sobreoferta nao objeto de compensacao"
     }
   ],
   "_historico_caidos": []

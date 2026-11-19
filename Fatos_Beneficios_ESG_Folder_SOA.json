@@ -50,14 +50,33 @@
           "beneficios[7]"
         ],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-18",
+        "ids_relidos": [
+          "beneficios[3]",
+          "beneficios[8]",
+          "beneficios[9]",
+          "beneficios[14]",
+          "beneficios[15]",
+          "beneficios[16]"
+        ],
+        "sem_f1": [
+          "cruzamento_regulatorio[1]"
+        ],
+        "corrigidos": [],
+        "movidos_para_pendentes": [
+          "ANEEL-EDITAL-LRCAP-ARMAZ"
+        ],
+        "monitor": "monitores-regulatorios-soa"
       }
     ]
   },
   "_carimbo": {
     "atualizado_em": "2026-10-13T00:00:00-03:00",
-    "hash": "sha256:f5a0af04f06db226306b09a192da4f3f683a117f6a3c4bf857d90905999cedb4",
+    "hash": "sha256:53bf6ec7b114dd215e318864eda5c6b6e291876c26264c312dd87186e143c467",
     "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias",
-    "selado_em": "2026-11-17"
+    "selado_em": "2026-11-18"
   },
   "_schema": {
     "versao": "1.0",
@@ -173,10 +192,9 @@
       "sem_soa": "benefício contestável sem prova contínua",
       "status": "verificado",
       "fonte": "leis municipais",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-18",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www2.sefaz.salvador.ba.gov.br/storage/7583/36.288---DOM-DE-18-11-2022.pdf",
-      "tentado_em": "2026-11-16",
-      "pendencia_verificacao": "sem F1 acessivel em 16/11/2026: item agregado (leis municipais) sem norma unica reabrivel"
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www2.sefaz.salvador.ba.gov.br/storage/7583/36.288---DOM-DE-18-11-2022.pdf | Dec. Salvador 36.288/2022: Bronze 50, Prata 70, Ouro 100 pontos; descontos 5%, 7%, 10%; paineis fotovoltaicos 16 pontos (so Salvador relido)"
     },
     {
       "id": "icms_lc194",
@@ -287,7 +305,8 @@
       "sem_soa": "—",
       "status": "verificado",
       "fonte": "planalto L11488",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-18",
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11488.htm | art. 3o suspende PIS/Pasep e Cofins; par. 2 converte em aliquota zero; art. 5o: cinco anos da habilitacao"
     },
     {
       "id": "pj_reidi_bess",
@@ -306,7 +325,8 @@
       "sem_soa": "—",
       "status": "verificado",
       "fonte": "planalto L11488 art.2º-A (incluído pela L15269)",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-18",
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11488.htm | art. 2o-A: REIDI para armazenamento; renuncia limitada a R$ 1 bilhao por exercicio; 01/01/2026 a 31/12/2030"
     },
     {
       "id": "pj_deb_incentivada",
@@ -410,7 +430,8 @@
       "sem_soa": "eletricidade renovável auditável",
       "status": "verificado",
       "fonte": "EU 2023/956",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-18",
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: http://publications.europa.eu/resource/celex/02023R0956-20251020 | Reg. (UE) 2023/956 consolidado: art. 7(1), Anexo IV ponto 6, art. 36 (aplicacao a partir de 01/01/2026)"
     },
     {
       "id": "pj_ifrs_s2",
@@ -431,7 +452,8 @@
       "sem_soa": "Escopo 2 sem ressalva no assurance",
       "status": "verificado",
       "fonte": "CVM Res.193/244",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-18",
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://conteudo.cvm.gov.br/export/sites/cvm/legislacao/resolucoes/anexos/200/resol244.pdf | Res. CVM 244 de 29/05/2026 revoga o art. 2o da CVM 193; a partir de 01/01/2027 quem nao arquivar justifica por comunicado ao mercado (parte ISSB nao reaberta)"
     },
     {
       "id": "ind_sbce",
@@ -450,7 +472,8 @@
       "sem_soa": "MRV obrigatório",
       "status": "verificado",
       "fonte": "planalto L15042 art.50 · D12677/2025 · SEMC/MF 2026",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-18",
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15042.htm | Lei 15.042, art. 50, I (fase I de 12 meses, prorrogavel) e art. 30, II (acima de 25.000 tCO2e/ano); Dec. 12.677/2025 (SEMC gestora temporaria)"
     },
     {
       "id": "tsb",
@@ -993,15 +1016,6 @@
       "verificado_em": "2026-11-14"
     },
     {
-      "fato_id": "ANEEL-EDITAL-LRCAP-ARMAZ",
-      "vetores": [
-        "BESS auditável"
-      ],
-      "porque_certificar": "Preço-teto e TUST do edital definem a receita; a evidência horária protege o DSCR do risco de dupla cobrança.",
-      "tentado_em": "2026-11-17",
-      "pendencia_verificacao": "sem F1 acessível em 17/11/2026: item analitico; texto do edital (preco-teto e TUST) no site da ANEEL nao aberto, cedoc 403; REH 3.616/2026 no DOU de 29/10 confirma so edital e TUSDg de referencia"
-    },
-    {
       "fato_id": "ANEEL-CCEE-LRCAP-TERMICA-REF",
       "vetores": [
         "BESS auditável"
@@ -1081,6 +1095,17 @@
       ],
       "porque_certificar": "Limites de GD e híbrido solar+bateria ≥20% — a prova define o enquadramento correto.",
       "verificado_em": "2026-11-14"
+    }
+  ],
+  "_pendentes_verificacao": [
+    {
+      "fato_id": "ANEEL-EDITAL-LRCAP-ARMAZ",
+      "vetores": [
+        "BESS auditável"
+      ],
+      "porque_certificar": "Preço-teto e TUST do edital definem a receita; a evidência horária protege o DSCR do risco de dupla cobrança.",
+      "tentado_em": "2026-11-18",
+      "pendencia_verificacao": "fora do ar publico desde 18/11/2026: sem conferencia na fonte desde sem data (sem F1 acessivel em 18/11/2026: item analitico; edital do LRCAP de armazenamento (preco-teto e TUST) nao aberto nesta run; FAQ da EPE com 404)"
     }
   ]
 }
