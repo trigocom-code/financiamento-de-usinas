@@ -111,12 +111,27 @@
         ],
         "movidos_para_pendentes": [],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-19",
+        "relidos": [
+          "fatos[2]",
+          "fatos[8]",
+          "_pendentes_verificacao[3]"
+        ],
+        "corrigidos": [],
+        "sem_f1_tentados": [
+          "fatos[3]",
+          "_pendentes_verificacao[4]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 7, CONFIRMADO 6. _meta.verificado_em = data do item publicado mais antigo.",
     "nota_carimbo_engine_2026_11_16": "12 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
     "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 16 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46.",
-    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 16 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46."
+    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 16 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46.",
+    "nota_carimbo_engine_2026_11_19": "Em 19/11/2026 08h28 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje sem releitura de fonte (D46, 4o dia). Desfeito pela consolidadora com o backup _backup_reconciliacao/2026-11-19_082824 (diferenca conferida por script: so verificado_em)."
   },
   "fatos": [
     {
@@ -228,7 +243,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.170/2026 · assinada 06/10/2026 · DOU 09/10/2026, Ed. 192, Seção 1, p. 122 · Processo 48500.900375/2019-83 · resultado da 3ª fase da CP ANEEL 045/2019",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-n-1.170-de-6-de-outubro-de-2026-737462879",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
       "vetores_afetados": [
@@ -347,7 +362,9 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/dsp_detalheNoticia.cfm?idNoticia=14758&idAreaNoticia=425"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www2.aneel.gov.br/aplicacoes_liferay/noticias_area/dsp_detalheNoticia.cfm?idNoticia=14758&idAreaNoticia=425",
+      "tentado_em": "2026-11-19",
+      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: 403 no www2.aneel; página de CPs sem conteúdo individual"
     },
     {
       "fato_id": "ANEEL-REN-1150-2026",
@@ -530,7 +547,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 046/2025",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/tarifa-hora-certa-proposta-preve-enquadramento-automatico-de-consumidores-que-usam-mais-de-500-kwh-mes",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -1003,7 +1020,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "Aviso de Consulta Pública ANEEL nº 16/2026 · DOU de 08/06/2026, Ed. 104, Seção 3, p. 120 · Processo 48500.011409/2026-94",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-16/2026-710729067",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 5,
       "vetores_afetados": [
@@ -1083,8 +1100,9 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "F3 ponteiro. Abrir a CP 18/2026 em F1 (ANEEL) para ancorar.",
-      "pendencia_verificacao": "Janela de contribuições não lida em 21/08/2026 e resolvida depois: em 14/11/2026 o Aviso nº 18/2026 (DOU de 25/06/2026, Seção 3, p. 111: envio de 25/6 a 10/8/2026) e o Aviso de Prorrogação (DOU de 05/08/2026, Seção 3, p. 105: prazo final até 9 de setembro de 2026) foram relidos na íntegra. Higiene: existe registro homônimo ANEEL-CP-018-2026-PEE em fatos[]; deduplicar na próxima run. | ANCORAGEM F1 26/08/2026, rotina consolidadora: o Aviso de Prorrogacao da CP no 18/2026 foi aberto e lido na integra no DOU (edicao no 146, Secao 3, pagina 105). VERBATIM: 'O prazo final para envio de contribuicoes foi prorrogado ate o dia 9 de setembro de 2026. Permanecem inalteradas as demais informacoes publicadas no Diario Oficial da Uniao de 25/6/2026, Secao 3, pag. 111.' Processo no 48500.019238/2025-61. Objeto verbatim: subsidios para aprimoramento da Analise de Impacto Regulatorio da ANEEL no ambito da atividade P&E22-02, 'Aperfeicoamento do Programa de Eficiencia Energetica para a Transicao Energetica', da Agenda Regulatoria. RESOLVE A DIVERGENCIA DE DATA: o prazo do orgao e 09/09/2026, em F1. O 08/09/2026 que este registro carregava vinha de F3 e esta ERRADO - nao usar. Datas internas de associacao nao valem como fato e sairam do texto publico em 14/11/2026. Este pendente e duplicata do fato ANEEL-CP-018-2026-PEE, que ja esta VERDE com a mesma data de 09/09/2026 - a fusao dos dois segue pendente.",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-723324899"
+      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: in.gov.br fora do ar para o leitor nesta execução | Janela de contribuições não lida em 21/08/2026 e resolvida depois: em 14/11/2026 o Aviso nº 18/2026 (DOU de 25/06/2026, Seção 3, p. 111: envio de 25/6 a 10/8/2026) e o Aviso de Prorrogação (DOU de 05/08/2026, Seção 3, p. 105: prazo final até 9 de setembro de 2026) foram relidos na íntegra. Higiene: existe registro homônimo ANEEL-CP-018-2026-PEE em fatos[]; deduplicar na próxima run. | ANCORAGEM F1 26/08/2026, rotina consolidadora: o Aviso de Prorrogacao da CP no 18/2026 foi aberto e lido na integra no DOU (edicao no 146, Secao 3, pagina 105). VERBATIM: 'O prazo final para envio de contribuicoes foi prorrogado ate o dia 9 de setembro de 2026. Permanecem inalteradas as demais informacoes publicadas no Diario Oficial da Uniao de 25/6/2026, Secao 3, pag. 111.' Processo no 48500.019238/2025-61. Objeto verbatim: subsidios para aprimoramento da Analise de Impacto Regulatorio da ANEEL no ambito da atividade P&E22-02, 'Aperfeicoamento do Programa de Eficiencia Energetica para a Transicao Energetica', da Agenda Regulatoria. RESOLVE A DIVERGENCIA DE DATA: o prazo do orgao e 09/09/2026, em F1. O 08/09/2026 que este registro carregava vinha de F3 e esta ERRADO - nao usar. Datas internas de associacao nao valem como fato e sairam do texto publico em 14/11/2026. Este pendente e duplicata do fato ANEEL-CP-018-2026-PEE, que ja esta VERDE com a mesma data de 09/09/2026 - a fusao dos dois segue pendente.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-723324899",
+      "tentado_em": "2026-11-19"
     },
     {
       "fato_id": "ANEEL-PROC-48500-015900-2026-94-MMGD-REVELIA",

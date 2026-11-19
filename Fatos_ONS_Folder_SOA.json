@@ -105,6 +105,19 @@
           "ONS-NT-DPL-0031-2024-REVISAO-FV"
         ],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-19",
+        "relidos": [
+          "fatos[3]"
+        ],
+        "corrigidos": [],
+        "sem_f1_tentados": [
+          "fatos[2]",
+          "_pendentes_verificacao[3]",
+          "_pendentes_verificacao[0]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 1, CONFIRMADO 1. _meta.verificado_em = data do item publicado mais antigo.",
@@ -112,7 +125,8 @@
     "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 9 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46.",
     "nota_run_2026_11_18_reconferencia": "Reconferencia de 16-18/11/2026 (auditoria do catalogo de 16/11). _meta.verificado_em = conferencia do item publicado mais antigo, agora 2026-11-06 (fatos[8]). Os 3 pendentes exibidos foram relidos em F1 (Portaria MME 140 no gov.br, noticia ONS de 05/08/2026, Acervo Digital e noticias do ONS, Despacho ANEEL 4.065 no DOU).",
     "nota_rodizio_2026_11_18": "18/11/2026: as entradas de rodizio de 14/11 (lote 2, ONS: lista inteira) e de 17/11 ('ids_relidos') incluem itens que so tiveram tentativa sem F1 (campo tentado_em), sem a marca '(sem F1)'. Nessas entradas, 'relido' quer dizer 'tentado'. Nao reescrever o historico; ler junto com tentado_em e pendencia_verificacao de cada item.",
-    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 12 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46."
+    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 12 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46.",
+    "nota_carimbo_engine_2026_11_19": "Em 19/11/2026 08h28 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje sem releitura de fonte (D46, 4o dia). Desfeito pela consolidadora com o backup _backup_reconciliacao/2026-11-19_082824 (diferenca conferida por script: so verificado_em)."
   },
   "fatos": [
     {
@@ -243,8 +257,9 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "pendencia_verificacao": "14/11/2026: aviso de prorrogacao da CP ANEEL 34/2026 (DOU de 29/10/2026, Ed. 205, Secao 3, p. 98) relido no DOU, com os 22 submodulos listados; busca no DOU ate 13/11/2026 sem nova prorrogacao; dados abertos de pautas e atas da ANEEL (arquivo de 13/11/2026) sem deliberacao do resultado. Contribuicoes encerradas em 12/11/2026; a proposta segue em analise e ainda nao e regra.",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-da-consulta-publica-n-34/2026-740998215 ; https://dadosabertos.aneel.gov.br/dataset/a9fb5b4b-59ca-4be8-9690-876d9547271d/resource/43386a8b-4781-44ec-a082-fa7fdfe33186/download/pautas-atas-reunioes-publicas-diretoria.csv"
+      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: DOU/ANEEL não abriram para a CP 34/2026; a parte REN 903/2020 está confirmada. | 14/11/2026: aviso de prorrogacao da CP ANEEL 34/2026 (DOU de 29/10/2026, Ed. 205, Secao 3, p. 98) relido no DOU, com os 22 submodulos listados; busca no DOU ate 13/11/2026 sem nova prorrogacao; dados abertos de pautas e atas da ANEEL (arquivo de 13/11/2026) sem deliberacao do resultado. Contribuicoes encerradas em 12/11/2026; a proposta segue em analise e ainda nao e regra.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-da-consulta-publica-n-34/2026-740998215 ; https://dadosabertos.aneel.gov.br/dataset/a9fb5b4b-59ca-4be8-9690-876d9547271d/resource/43386a8b-4781-44ec-a082-fa7fdfe33186/download/pautas-atas-reunioes-publicas-diretoria.csv",
+      "tentado_em": "2026-11-19"
     },
     {
       "fato_id": "ONS-NT-PNAST",
@@ -253,7 +268,7 @@
       "status": "VIGENTE",
       "norma": "NT-ONS DPL 0083/2026, Revisão 00, de 31/08/2026 (Nota Técnica 02 da 1ª Temporada de Acesso de 2026) · art. 11 da Portaria Normativa MME 129/2026 · Comunicado Relevante ONS nº 02/2026 e notícia do ONS de 06/07/2026: 367 cadastramentos admitidos, 20,31 GW = 14,56 GW geração + 5,74 GW consumo",
       "url": "https://www.ons.org.br/paginas/energia-no-futuro/transmissao/pnast",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -495,10 +510,10 @@
       "qsv_origem_classificacao": "F1_portaria_MME_140_relida_18nov2026 + F1_noticia_ONS_05ago2026 + reverificacao_negativa_canal_publico_ONS_18nov2026_busca_acervo_e_noticias",
       "numero_status": "SEM_NUMEROS",
       "motivo_pendencia": "Exige leitura do SINtegre (portal com login). Reabrir o canal publico do ONS depois de 18/11/2026, termo do art. 5º, § 1º, I.",
-      "pendencia_verificacao": "sem F1 acessivel em 18/11/2026: noticia ONS 13067 so com JS; acervo e SINtegre (login) nao relidos nesta run || conferido em 18/11/2026: norma relida na Portaria (gov.br/mme, PDF); noticia ONS 13067 (05/08/2026) lida; Acervo Digital e noticias do ONS sem especificacoes nem criterios de validacao. SINtegre segue sem leitura (login). || anterior: sem F1 acessível em 17/11/2026: pagina do ONS sem conteudo estatico; acervo publico nao reconsultado; SINtegre exige login",
+      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: Notícia ONS 13067 sem conteúdo estático; acervo/notícias do ONS e SINtegre não verificáveis; a parte normativa está sustentada. | sem F1 acessivel em 18/11/2026: noticia ONS 13067 so com JS; acervo e SINtegre (login) nao relidos nesta run || conferido em 18/11/2026: norma relida na Portaria (gov.br/mme, PDF); noticia ONS 13067 (05/08/2026) lida; Acervo Digital e noticias do ONS sem especificacoes nem criterios de validacao. SINtegre segue sem leitura (login). || anterior: sem F1 acessível em 17/11/2026: pagina do ONS sem conteudo estatico; acervo publico nao reconsultado; SINtegre exige login",
       "gatilho_revisao": "publicacao das especificacoes tecnicas e dos criterios de validacao (art. 4º ou art. 5º) no sitio do ONS; leitura do SINtegre; abertura do recebimento de 19/11/2026",
       "nota_reconferencia_2026_11_18": "F1 relida em 18/11/2026: https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf ; https://www.ons.org.br/paginas/noticias/details.aspx?i=13067",
-      "tentado_em": "2026-11-18"
+      "tentado_em": "2026-11-19"
     },
     {
       "fato_id": "ONS-PROCEDIMENTOS-REDE-DECRETO-12772-2025",
@@ -572,8 +587,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "tentado_em": "2026-11-18",
-      "pendencia_verificacao": "fora do ar publico desde 18/11/2026: sem conferencia na fonte desde 06/11/2026 (sem F1 acessivel em 18/11/2026: NT DPL 0031/2024 revisada e funcoes de produtividade revisadas so no SINtegre (login); noticias do ONS sem texto (JS, 502/404); so imprensa descreve a correcao)"
+      "tentado_em": "2026-11-19",
+      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: Sem F1 público para o texto da NT e da revisão (SINtegre com login; busca no acervo sem resultado). | fora do ar publico desde 18/11/2026: sem conferencia na fonte desde 06/11/2026 (sem F1 acessivel em 18/11/2026: NT DPL 0031/2024 revisada e funcoes de produtividade revisadas so no SINtegre (login); noticias do ONS sem texto (JS, 502/404); so imprensa descreve a correcao)"
     }
   ],
   "_historico_caidos": []

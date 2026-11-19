@@ -59,6 +59,17 @@
         "corrigidos": [],
         "movidos_para_pendentes": [],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-19",
+        "relidos": [
+          "fatos[9]",
+          "fatos[10]",
+          "fatos[11]"
+        ],
+        "corrigidos": [],
+        "sem_f1_tentados": [],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Rodizio diario de reconferencia F1 (1a run, 14/11/2026, decisao D38 = a), itens mais antigos primeiro, com segunda leitura independente: ATUALIZAR 7, CONFIRMADO 3. _meta.verificado_em = data do item publicado mais antigo.",
@@ -159,7 +170,7 @@
       "status": "VIGENTE",
       "norma": "Resolução CNSP nº 496, de 17 de agosto de 2026, arts. 4º inciso XXXVIII, 12 parágrafo 2º, 15 parágrafo único inciso V, 26, 27, 28 e 30 · DOU de 18/08/2026, Edição 155-B, Seção 1 - Extra B, p. 7 · em vigor desde a publicação",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-cnsp-n-496-de-17-de-agosto-de-2026-726174976",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "pendencia_verificacao": "Dispositivos lidos verbatim no texto oficial em 21/08/2026. O enquadramento da SOA como terceiro interveniente é LEITURA DO MONITOR sobre norma vigente, não é reconhecimento formal da Susep nem parecer jurídico: exige validação de advogado de seguros antes de qualquer uso externo. Falta ler a regulamentação complementar da Susep prevista nos arts. 7º e 30, que dirá o que os relatórios de regulação e liquidação devem conter.",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15040.htm"
     },
@@ -169,7 +180,7 @@
       "status": "VIGENTE",
       "norma": "Resolução Susep nº 91, de 18 de agosto de 2026, item 23C do Anexo I (DOU de 20/08/2026, Seção 1 Extra) · altera o Anexo I da Resolução Susep nº 72, de 17 de dezembro de 2025 · Tomada de Subsídios do Plano de Regulação Susep 2027, Brasil Participativo, aberta em 12/08/2026 e encerrada em 30/09/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-susep-n-91-de-18-de-agosto-de-2026-726726458",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "pendencia_verificacao": "Pagina oficial do processo reaberta em F1 em 08/09/2026: status Aberta, inicio 12/08/2026, encerramento 30/09/2026, responsavel CGAST, contato cgast@susep.gov.br, contribuicoes exclusivamente pelo formulario da plataforma, painel de dados participativos marcando 3 participantes e 3 respostas. E a terceira afericao consecutiva com o mesmo numero: 3 em 21/08, 3 em 31/08 e 3 em 08/09, dezoito dias sem participante novo. Restam 22 dias. A decisao interna da SOA sobre contribuir, e sob que assinatura, tinha 31/08/2026 como data-limite sugerida e segue em aberto ha 8 dias. ATUALIZACAO 14/09/2026: pagina oficial reaberta em F1, status Aberta, encerramento 30/09/2026, painel com 4 participantes e 4 respostas, ou seja, uma contribuicao nova entre 08 e 14/09. Restam 16 dias. A decisao interna da SOA sobre contribuir segue em aberto ha 14 dias. ATUALIZACAO 21/09/2026: pagina oficial reaberta em F1, status Aberta, encerramento 30/09/2026, painel com 7 participantes e 7 respostas. Restam 9 dias. Nao ha registro no projeto de decisao da SOA sobre contribuir; a pendencia interna segue aberta ha 21 dias. Atualizacao 30/09/2026: janela encerra hoje; nenhuma decisao de contribuicao da SOA registrada no projeto ate esta execucao. Reaberto em F1 em 07/10/2026: status Encerrada, 26 participantes e 26 respostas. A SOA nao contribuiu. Acompanhar a publicacao das contribuicoes e a minuta do Plano de Regulacao de 2027, que costuma sair no fim do ano.",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://brasilparticipativo.presidencia.gov.br/processes/susep-planoderegulacao2027"
     },
@@ -180,7 +191,7 @@
       "norma": "Oficio-Circular Eletronico 17/2026/DISUC/SUSEP, de 18/08/2026, Processo Susep 15414.604947/2025-66, documento SEI 2871950. Oficio-Circular Eletronico 19/2026/DISUC/SUSEP, documento SEI 2885427, assinado em 31/08/2026 as 09:50. Oficio-Circular Eletronico 20/2026/DISUC/SUSEP, documento SEI 2886128. Pagina oficial de Conteudo Informacional do Sistema de Registro de Operacoes da Susep, leiautes v3.0.3, v3.0.4 e v3.1.0. Arquivos oficiais v3-0-4.zip, v3-1-0-rc-4.zip e v3-1-0-rc-5.zip (este publicado em 21/09/2026 em substituicao ao rc-4), campo cobertura_tipo ancorado na Circular Susep 710, de 24/12/2024, Anexo I, art. 1, inciso III, alinea h. Base normativa geral: Circulares Susep 710, 711, 713, 714 e 715, todas de 24/12/2024, alteradas pela Resolucao Susep 93, de 02/09/2026.",
       "url": "https://www.gov.br/susep/pt-br/assuntos/sistema-de-registro-de-operacoes/conteudo-informacional",
       "pendencia_verificacao": "Pagina oficial de Conteudo Informacional reaberta em F1 em 08/09/2026 e conferida linha a linha. Os arquivos v3-1-0-rc-4.zip, de 423.974 bytes, e v3-0-4.zip, de 293.010 bytes, foram baixados do sitio da Susep, descompactados e as planilhas abertas por dentro na mesma data, o que ENCERRA a pendencia de leitura do detalhe campo a campo aberta em 31/08/2026. Os Oficios-Circulares 19 e 20 de 2026 foram baixados e lidos na integra em 08/09/2026. A leitura do campo cobertura_tipo como reconhecimento oficial do produto parametrico e LEITURA DO MONITOR sobre norma vigente, nao e reconhecimento formal da Susep nem parecer juridico, e exige validacao de advogado de seguros antes de qualquer uso externo. Segue por confirmar se a data de publicacao 30/03/2026 exibida para a versao 3.1.0 sera mantida apos as atualizacoes do arquivo. Reconferido em F1 em 14/09/2026: tabela de versoes inalterada, v3.0.4 em homologacao desde 14/09/2026 e obrigatoria em 21/09/2026, v3.1.0 com homologacao em 04/01/2027 e obrigatoriedade em 01/04/2027; nenhuma versao nova listada. Os sistemas da Susep, inclusive o SEI, ficaram indisponiveis das 18h de 11/09 as 9h de 14/09 conforme noticia oficial de 09/09/2026, sem mencao a prorrogacao de prazos. Reconferido em F1 em 21/09/2026, manha da data de obrigatoriedade da v3.0.4: a tabela oficial segue com as mesmas datas, v3.0.4 com homologacao em 14/09/2026 e obrigatoriedade em 21/09/2026, v3.1.0 com homologacao em 04/01/2027 e obrigatoriedade em 01/04/2027; a pagina ainda lista a v3.0.3 como versao em producao e a v3.0.4 entre as proximas versoes, o que indica apenas que a pagina nao foi atualizada ate a hora da consulta. A pagina Regulamentacao do SRO foi modificada em 14/09/2026. A Resolucao Susep 93 foi republicada no DOU de 15/09/2026, ver fato proprio. Atualizacao 30/09/2026: rc.5 nao aberta por dentro; verificar em execucao futura se o campo cobertura_tipo e a ausencia de campo de apurador se mantem. Pagina oficial de Conteudo Informacional reaberta em F1 em 07/10/2026: datas inalteradas, versao 3.0.4 com obrigatoriedade em 21/09/2026 e versao 3.1.0 com homologacao em 04/01/2027 e obrigatoriedade em 01/04/2027; o arquivo da 3.1.0 segue marcado como atualizado em 21/09/2026. O pacote rc.5 continua sem abertura por dentro. Reconferido em F1 em 14/11/2026: a pagina oficial de Conteudo Informacional, modificada pela ultima vez em 03/11/2026 (arquivo de Perguntas e Respostas v1.3 atualizado nessa data), lista a v3.0.4 como Versao em Producao (publicacao 18/08/2026, homologacao 14/09/2026, obrigatoriedade 21/09/2026) e a v3.0.3 entre as versoes descontinuadas (descontinuacao em 21/09/2026); a v3.1.0 segue com publicacao em 30/03/2026, homologacao em 04/01/2027 e obrigatoriedade em 01/04/2027, arquivo v3-1-0-rc-5.zip atualizado em 21/09/2026, o que confirma a manutencao da data de publicacao. Pacote rc.5 baixado do sitio da Susep e aberto por dentro: 24 abas e 5.179 cadeias de texto; o campo cobertura_tipo segue nas abas 1 Documento e 2 Documento alteracao, com o dominio 1 Parametrico, 2 Intermitente, 3 Regular comum, 4 Capital Global e 5 Parametrico e Intermitente e a mesma ancora na Circular 710/2024, Anexo I, art. 1, inciso III, alinea h; zero ocorrencias de agente de calculo, apurador, provedor, telemetria, sensor, indexado, terceirizacao, laudo, regulador de sinistro, meteorologico, climatico e gatilho. Fica encerrada a pendencia de abertura do rc.5.",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.gov.br/susep/pt-br/assuntos/sistema-de-registro-de-operacoes/conteudo-informacional"
     },
     {

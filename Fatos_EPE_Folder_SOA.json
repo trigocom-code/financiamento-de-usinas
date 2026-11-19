@@ -78,11 +78,25 @@
         "corrigidos": [],
         "movidos_para_pendentes": [],
         "monitor": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-19",
+        "relidos": [
+          "fatos[5]",
+          "fatos[6]",
+          "_pendentes_verificacao[0]"
+        ],
+        "corrigidos": [],
+        "sem_f1_tentados": [
+          "_pendentes_verificacao[2]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_carimbo_engine_2026_11_16": "11 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
     "nota_carimbo_engine_2026_11_17": "Em 17/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 13 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-17_082004); ficam so as releituras reais do rodizio de hoje. Ver D46.",
-    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 13 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46."
+    "nota_carimbo_engine_2026_11_18": "Em 18/11/2026 08h20 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje em 13 itens sem releitura de fonte (criterio: monitor rodou e fato nao mudou). Desfeito pela consolidadora com o backup do proprio engine (_backup_reconciliacao/2026-11-18_082005); ficam so as releituras reais do rodizio de hoje. Ver D46.",
+    "nota_carimbo_engine_2026_11_19": "Em 19/11/2026 08h28 o rotina_fatos_engine.py (passo 2) gravou verificado_em=hoje sem releitura de fonte (D46, 4o dia). Desfeito pela consolidadora com o backup _backup_reconciliacao/2026-11-19_082824 (diferenca conferida por script: so verificado_em)."
   },
   "fatos": [
     {
@@ -335,7 +349,7 @@
       "status": "VIGENTE",
       "norma": "EPE · documento gerencial publicado duas vezes ao ano (PET determinativo, seis anos seguintes; PELP indicativo, a partir do sétimo ano) · relatório EPE-DEE-RE-068/2026",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/programa-de-expansao-da-transmissao-pet-plano-de-expansao-de-longo-prazo-pelp-ciclo-2026-1-semestre",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -398,7 +412,7 @@
       "status": "VIGENTE",
       "norma": "EPE · publicação anual · edição 2026 (ano-base 2025), notícia oficial de 03/06/2026",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/anuario-estatistico-de-energia-eletrica",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -675,7 +689,7 @@
       "status": "AGENDADO",
       "norma": "EPE · ~3 revisões/ano",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/Revisoes-Quadrimestrais-da-Carga",
-      "verificado_em": "2026-11-17",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -778,8 +792,8 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Fato meta-interno — sem fonte externa independente por design",
-      "tentado_em": "2026-11-18",
-      "pendencia_verificacao": "sem F1 acessivel em 18/11/2026: fato meta-interno (arquitetura do monitor), sem fonte oficial externa por desenho"
+      "tentado_em": "2026-11-19",
+      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: Fato meta-interno, sem fonte oficial externa por desenho. | sem F1 acessivel em 18/11/2026: fato meta-interno (arquitetura do monitor), sem fonte oficial externa por desenho"
     }
   ],
   "_historico_caidos": []
