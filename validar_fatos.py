@@ -163,16 +163,55 @@ def erros_html(base):
             if m.group(1)!="16" and not _negado(low,m.start()): e.append("%s: vetos divergente '%s'" % (n, m.group(0)))
     return e
 
+MARCA_REGRESSAO = "[regressao-aprovada]"
+REGRESSAO_JSON = "_regressao_aprovada.json"
+
+def _texto_tem_marca_regressao(texto):
+    return bool(texto) and MARCA_REGRESSAO.lower() in str(texto).lower()
+
+def _git_commit_message(base, sha):
+    try:
+        return subprocess.check_output(["git","log","-1","--pretty=%B",sha],cwd=base,
+                                       stderr=subprocess.DEVNULL).decode("utf-8","replace")
+    except Exception:
+        return ""
+
+def regressao_aprovada_json_valido(base):
+    """Exige _regressao_aprovada.json presente e JSON com _meta (objeto)."""
+    p=os.path.join(base,REGRESSAO_JSON)
+    if not os.path.isfile(p): return False
+    try:
+        with open(p,encoding="utf-8-sig") as f: d=json.load(f)
+        return isinstance(d,dict) and isinstance(d.get("_meta"),dict)
+    except Exception:
+        return False
+
+def marca_regressao_detectada(base):
+    """Ordem: HEAD do PR, commits base..head, titulo/corpo do PR, ultimo commit (push/local)."""
+    head=os.environ.get("GITHUB_HEAD_SHA","").strip()
+    if head and _texto_tem_marca_regressao(_git_commit_message(base,head)): return True
+    base_sha=os.environ.get("GITHUB_BASE_SHA","").strip()
+    if base_sha and head:
+        try:
+            msgs=subprocess.check_output(["git","log",base_sha+".."+head,"--pretty=%B"],cwd=base,
+                                        stderr=subprocess.DEVNULL).decode("utf-8","replace")
+            if _texto_tem_marca_regressao(msgs): return True
+        except Exception:
+            pass
+    for k in ("PR_TITLE","PR_BODY"):
+        if _texto_tem_marca_regressao(os.environ.get(k) or ""): return True
+    return _texto_tem_marca_regressao(_git_commit_message(base,"HEAD"))
+
 def erros_regressao(base):
     e=[]
+    if marca_regressao_detectada(base):
+        if regressao_aprovada_json_valido(base): return []
+        e.append("%s: ausente ou invalido — %s exige arquivo de aprovacao" % (REGRESSAO_JSON,MARCA_REGRESSAO))
     try:
-        msg=subprocess.check_output(["git","log","-1","--pretty=%B"],cwd=base,
-                                    stderr=subprocess.DEVNULL).decode("utf-8","replace")
-        if "[regressao-aprovada]" in msg.lower(): return []
         mudados=subprocess.check_output(["git","diff","--name-only","HEAD^","HEAD"],cwd=base,
                                         stderr=subprocess.DEVNULL).decode().split()
     except Exception:
-        return []
+        return e
     def parse(txt):
         try:
             d=json.loads(txt)
