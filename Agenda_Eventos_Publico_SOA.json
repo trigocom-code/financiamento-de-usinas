@@ -1,7 +1,7 @@
 {
   "_meta": {
     "titulo": "Agenda do Setor Elétrico — Monitor SOA/SOS",
-    "atualizado_em": "2026-11-19",
+    "atualizado_em": "2026-11-20",
     "fonte": "Monitor de Eventos SOA/SOS · fontes oficiais (gov.br/ANEEL · Senado Federal · EPE · MME · CCEE · ONS · CIGRE-Brasil · BNDES) + associações do setor (ANE, COGEN, APINE, ABGD, ABSOLAR, ABEEólica, ABCE, ABRAGE, ABESCO), páginas oficiais de eventos e imprensa setorial",
     "nota": "Agenda pública de datas do setor elétrico. Eventos de associação e sinais de fontes secundárias marcados 'A VERIFICAR'; confirmar no ato ou na página oficial antes de citar.",
     "nota_run_2026_10_12": "Varredura de 12 de outubro, cobrindo a janela desde 7 de outubro; o bloco de ação alcança prazos de até dez dias, até 22 de outubro. (1) A câmara de comercialização marcou para 14 de outubro, às dez horas, online, a capacitação sobre o procedimento das compensações por cortes de geração. (2) O ministério abriu em 8 de outubro a consulta pública do plano decenal de expansão de energia 2036, com contribuições até 6 de novembro. (3) A regra de ordenamento dos cortes de geração foi editada como resolução normativa nº 1.170, de 6 de outubro de 2026; a data de publicação no diário oficial não foi conferida nesta rodada. (4) O encontro técnico do leilão de armazenamento de 14 de outubro e as datas das garantias do leilão de transmissão nº 4/2026 seguem sem página oficial localizada. (5) A consulta de revisão da resolução normativa nº 1.030/2022 não teve abertura noticiada até 12 de outubro.",
@@ -11,7 +11,8 @@
     "nota_run_2026_11_02": "Varredura de 2 de novembro, cobrindo a janela desde 26 de outubro; o bloco de ação alcança prazos de até dez dias, até 12 de novembro. (1) A agência reguladora aprovou em 27 de outubro os editais dos dois leilões de reserva de capacidade de armazenamento, segundo a imprensa; a publicação do edital no diário oficial não foi conferida nesta rodada. (2) O ministério abriu em 29 de outubro consultas sobre as diretrizes do leilão dos sistemas isolados de 2027 e sobre as regras do plano de outorgas de transmissão; os prazos vêm da imprensa. (3) O leilão de transmissão nº 4/2026 foi realizado em 30 de outubro, com os oito lotes contratados. (4) O ministério publicou o cronograma dos leilões de transmissão de 2027 a 2029. (5) Saiu da agenda o encontro de armazenamento de 18 e 19 de novembro, sem página do evento em seis rodadas. (6) A lista de notícias da agência reguladora segue sem carregar; os itens da agência desta janela estão marcados A VERIFICAR.",
     "nota_run_2026_11_09": "Varredura de 9 de novembro, cobrindo a janela desde 2 de novembro; o bloco de ação alcança prazos de até dez dias, até 19 de novembro. (1) A aprovação dos editais dos leilões de armazenamento em 27 de outubro foi conferida na notícia oficial da agência reguladora; a publicação no diário oficial segue não conferida. (2) O ministério abriu em 4 de novembro consulta pública sobre a garantia física das usinas eólicas e solares, com contribuições até 18 de dezembro. (3) A agência reguladora abriu a consulta pública nº 40/2026, sobre o fim do desconto nas tarifas de uso dos sistemas no mercado livre, até 14 de dezembro. (4) O ministério fixou 16 de novembro para as previsões de declarações de necessidades dos leilões de energia nova de 2027. (5) A lista de notícias da agência reguladora segue sem carregar; itens da agência foram conferidos em páginas avulsas. (6) A partir desta rodada cada item traz o campo url com a fonte oficial; sem fonte oficial localizada, o campo leva a marca [pendente-fonte].",
     "nota_run_2026_11_17": "Varredura de 17 de novembro, cobrindo a janela desde 15 de novembro; o bloco de ação alcança prazos de até dez dias, até 27 de novembro. (1) A câmara de comercialização marcou para 18 de novembro, às 15 horas, online, o encontro sobre o preço de liquidação das diferenças. (2) A notícia oficial de 28 de outubro sobre o sandbox de serviços ancilares fixa contribuições à consulta externa de 5 a 18 de novembro e um segundo workshop em 24 de novembro; os dois entraram com fonte oficial. (3) Lançado em 16 de novembro o portal do novo modelo computacional do setor, com uso oficial na formação de preços previsto a partir de janeiro de 2028. (4) Saíram os dois itens de 16 de novembro, já vencidos. Cronograma do leilão de armazenamento e páginas de consultas e tomadas reconferidos hoje, sem alteração.",
-    "nota_run_2026_11_18": "Varredura de 18 de novembro, cobrindo a janela desde 16 de novembro; o bloco de ação alcança prazos de até dez dias, até 28 de novembro. (1) A diretoria da agência reguladora aprovou em 17 de novembro três consultas públicas que abrem em 19 de novembro: a nº 42/2026, sobre o excesso de micro e minigeração distribuída na carga das distribuidoras, até 4 de janeiro de 2027; a nº 43/2026, sobre a geração compartilhada, até 31 de janeiro de 2027; e a nº 44/2026, sobre o sandbox de acionamento intermediário da micro e minigeração distribuída, até 31 de janeiro de 2027. (2) Aprovadas as regras operacionais e de faturamento do encargo complementar de recursos. (3) Audiência pública virtual sobre o plano anual do programa de conservação de energia em 26 de novembro, às 10 horas. (4) Saíram os itens de 16 e 17 de novembro, já vencidos. Cronograma do leilão de armazenamento reconferido hoje, sem alteração."
+    "nota_run_2026_11_18": "Varredura de 18 de novembro, cobrindo a janela desde 16 de novembro; o bloco de ação alcança prazos de até dez dias, até 28 de novembro. (1) A diretoria da agência reguladora aprovou em 17 de novembro três consultas públicas que abrem em 19 de novembro: a nº 42/2026, sobre o excesso de micro e minigeração distribuída na carga das distribuidoras, até 4 de janeiro de 2027; a nº 43/2026, sobre a geração compartilhada, até 31 de janeiro de 2027; e a nº 44/2026, sobre o sandbox de acionamento intermediário da micro e minigeração distribuída, até 31 de janeiro de 2027. (2) Aprovadas as regras operacionais e de faturamento do encargo complementar de recursos. (3) Audiência pública virtual sobre o plano anual do programa de conservação de energia em 26 de novembro, às 10 horas. (4) Saíram os itens de 16 e 17 de novembro, já vencidos. Cronograma do leilão de armazenamento reconferido hoje, sem alteração.",
+    "nota_run_2026_11_20": "Varredura de 20 de novembro, cobrindo a janela desde 18 de novembro; o bloco de ação alcança prazos de até dez dias, até 30 de novembro. Reabertas as notícias da agência reguladora, da câmara de comercialização, do ministério e da empresa de pesquisa energética, e o cronograma dos leilões de armazenamento no banco nacional de desenvolvimento, sem alteração. Nenhum evento datado novo entrou. Saiu a abertura das consultas públicas nº 42, 43 e 44 de 2026, ocorrida em 19 de novembro. As páginas do operador nacional e o portal de consultas do ministério não carregaram nesta rodada."
   },
   "recentes": [
     {
@@ -307,18 +308,10 @@
     {
       "data": "2026-11-18",
       "titulo": "Inscrição nos leilões de reserva de capacidade de armazenamento, até 20 de novembro",
-      "detalhe": "Das oito horas de 18 de novembro às vinte e três horas de 20 de novembro. As garantias de proposta vão de 18 a 23 de novembro. Cronograma reconferido em 19 de novembro.",
+      "detalhe": "Das oito horas de 18 de novembro às vinte e três horas de 20 de novembro. As garantias de proposta vão de 18 a 23 de novembro. Cronograma reconferido em 20 de novembro.",
       "status": "CONFIRMADO",
       "fonte": "Página do leilão no banco nacional de desenvolvimento",
       "url": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/servicos-online/credenciamento-de-equipamentos/leilao-reserva-capacidade-forma-de-potencia-lrcap-2026"
-    },
-    {
-      "data": "2026-11-19",
-      "titulo": "Abrem as consultas públicas nº 42, nº 43 e nº 44 de 2026 da agência reguladora",
-      "detalhe": "Excesso de micro e minigeração distribuída na carga das distribuidoras, até 4 de janeiro de 2027; geração compartilhada, até 31 de janeiro de 2027; sandbox de acionamento intermediário da micro e minigeração distribuída, até 31 de janeiro de 2027. Aprovadas na reunião de diretoria de 17 de novembro.",
-      "status": "CONFIRMADO",
-      "fonte": "gov.br da agência reguladora",
-      "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/aneel-aprova-consulta-publica-sobre-aprimoramentos-regulatorios-na-geracao-compartilhada"
     },
     {
       "data": "2026-11-20",
@@ -391,9 +384,7 @@
       "status": "CONFIRMADO",
       "fonte": "Câmara de comercialização de energia elétrica",
       "url": "https://www.ccee.org.br/web/guest/-/ccee-abre-inscricoes-para-webinar-sobre-a-evolucao-dos-modelos-de-liquidacao-financeira-e-operacionalizacao-de-garantias-financeiras"
-    }
-  ],
-  "proximos_30d": [
+    },
     {
       "data": "2026-11-30",
       "titulo": "Encontro técnico sobre transformadores e subestações, em Belo Horizonte, até 2 de dezembro",
@@ -417,7 +408,9 @@
       "status": "CONFIRMADO",
       "fonte": "Página de consultas públicas da agência reguladora",
       "url": "https://antigo.aneel.gov.br/web/guest/consultas-publicas"
-    },
+    }
+  ],
+  "proximos_30d": [
     {
       "data": "2026-12-01",
       "titulo": "Reunião pública ordinária da diretoria da agência reguladora",
@@ -473,9 +466,7 @@
       "status": "CONFIRMADO",
       "fonte": "gov.br da agência reguladora",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/mercado-livre-de-energia-consulta-publica-propoe-regulamentacao-do-fim-do-desconto-nas-tarifas-de-uso-dos-sistemas"
-    }
-  ],
-  "horizonte": [
+    },
     {
       "data": "2026-12-18",
       "titulo": "Encerra a consulta pública nº 241/2026, do ministério, sobre a garantia física das usinas eólicas e solares",
@@ -499,7 +490,9 @@
       "status": "CONFIRMADO",
       "fonte": "Página do leilão no banco nacional de desenvolvimento",
       "url": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/servicos-online/credenciamento-de-equipamentos/leilao-reserva-capacidade-forma-de-potencia-lrcap-2026"
-    },
+    }
+  ],
+  "horizonte": [
     {
       "data": "2026-12-21",
       "titulo": "Encerra a segunda fase da tomada de subsídios nº 22/2024, sobre a ferramenta de cálculo das tarifas de uso da transmissão e da distribuição para geradores",

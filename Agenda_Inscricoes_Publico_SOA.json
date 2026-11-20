@@ -1,8 +1,8 @@
 {
   "_meta": {
     "titulo": "Inscrições — Eventos do Setor Elétrico em SP — Monitor SOA/SOS",
-    "atualizado_em": "2026-11-19",
-    "links_verificados_em": "2026-11-19",
+    "atualizado_em": "2026-11-20",
+    "links_verificados_em": "2026-11-20",
     "fonte": "Monitor de Eventos SOA/SOS · páginas oficiais de credenciamento dos eventos + associações do setor (COGEN, ABEEólica, ABGD, ABSOLAR, ABESCO, ANE, ABCE, APINE, CIGRE-Brasil, CCEE)",
     "nota": "Trilho de inscrições dos eventos do setor em São Paulo. Cada item leva ao link oficial de credenciamento. Datas e valores confirmar na página oficial. Eventos com credenciamento a abrir levam à página oficial do evento ou da entidade organizadora. O monitor regenera este JSON: eventos já encerrados saem sozinhos e a data de verificação dos links é atualizada quando os links são reabertos.",
     "nota_run_2026_10_12": "Varredura de 12 de outubro. Os sete links de inscrição do trilho foram reabertos e confirmados nesta rodada: ingressos do encontro do setor solar de outubro, formulário do simpósio jurídico, inscrição da feira de energia eólica, inscrição do seminário de cibersegurança (aberta no navegador, depois de duas rodadas sem conferência), inscrição do encontro de líderes ambientais, notícia e credenciamento do fórum da câmara de comercialização e página do congresso de data centers e energia crítica. A página de eventos da associação do setor solar também foi reaberta e segue sem data para o encontro nacional. Nenhum evento entrou e nenhum saiu.",
@@ -14,14 +14,15 @@
     "nota_run_2026_11_16": "Varredura de 16 de novembro. Reabertos e confirmados nesta rodada todos os links que seguem no trilho: inscrição do congresso de eficiência energética, página do fórum da câmara de comercialização e página do congresso de data centers e energia crítica. Por isso a data geral de verificação dos links passa a 16 de novembro. Entrou no trilho a semana de operação e manutenção de usinas renováveis, de 25 a 27 de novembro, com inscrições abertas na página oficial do evento. Nenhum evento saiu.",
     "nota_run_2026_11_17": "Varredura de 17 de novembro. Reabertos e confirmados nesta rodada todos os links que seguem no trilho: inscrição do congresso de eficiência energética (ingressos até 17 de novembro), página do fórum da câmara de comercialização (17 de novembro), página da semana de operação e manutenção de usinas renováveis (terceiro lote disponível) e página do congresso de data centers e energia crítica (terceiro lote até 1º de dezembro). Por isso a data geral de verificação dos links passa a 17 de novembro. Nenhum evento entrou e nenhum saiu; o congresso e o fórum terminam hoje e saem na próxima rodada.",
     "nota_run_2026_11_18": "Varredura de 18 de novembro. Reabertos e confirmados nesta rodada todos os links que seguem no trilho: página da semana de operação e manutenção de usinas renováveis (terceiro lote disponível) e página do congresso de data centers e energia crítica (terceiro lote até 1º de dezembro). Por isso a data geral de verificação dos links passa a 18 de novembro. Saíram do trilho o congresso de eficiência energética e o fórum da câmara de comercialização, realizados até 17 de novembro. Nenhum evento entrou.",
-    "nota_run_2026_11_19": "Varredura de 19 de novembro. Reabertos e confirmados nesta rodada todos os links que seguem no trilho: página da semana de operação e manutenção de usinas renováveis (terceiro lote disponível) e página do congresso de data centers e energia crítica (1º e 2 de dezembro, terceiro lote listado). Por isso a data geral de verificação dos links passa a 19 de novembro. Nenhum evento entrou e nenhum saiu."
+    "nota_run_2026_11_19": "Varredura de 19 de novembro. Reabertos e confirmados nesta rodada todos os links que seguem no trilho: página da semana de operação e manutenção de usinas renováveis (terceiro lote disponível) e página do congresso de data centers e energia crítica (1º e 2 de dezembro, terceiro lote listado). Por isso a data geral de verificação dos links passa a 19 de novembro. Nenhum evento entrou e nenhum saiu.",
+    "nota_run_2026_11_20": "Varredura de 20 de novembro. Reabertos e confirmados nesta rodada todos os links que seguem no trilho: página da semana de operação e manutenção de usinas renováveis (terceiro lote disponível) e página do congresso de data centers e energia crítica (1º e 2 de dezembro, venda de ingressos aberta). Por isso a data geral de verificação dos links passa a 20 de novembro. Nenhum evento entrou e nenhum saiu."
   },
   "abertos": [
     {
       "data_ini": "2026-11-25",
       "data_fim": "2026-11-27",
       "titulo": "O&M Week 2026 — Fóruns de Operação e Manutenção Eólica, Solar, Hidrelétrica e HSE",
-      "quando": "25–27/11 · Novotel Center Norte, Av. Zaki Narchi 500, Vila Guilherme, São Paulo/SP · terceiro lote aberto · página oficial reaberta em 19/11",
+      "quando": "25–27/11 · Novotel Center Norte, Av. Zaki Narchi 500, Vila Guilherme, São Paulo/SP · terceiro lote aberto · página oficial reaberta em 20/11",
       "badges": [
         {
           "label": "Pago",
@@ -35,7 +36,7 @@
       "data_ini": "2026-12-01",
       "data_fim": "2026-12-02",
       "titulo": "CDEC 2026 — Congresso de Data Centers e Energia Crítica",
-      "quando": "01–02/12 · Novotel Center Norte, Av. Zaki Narchi 500, Vila Guilherme, São Paulo/SP · terceiro lote até 01/12 · página oficial reaberta em 19/11",
+      "quando": "01–02/12 · Novotel Center Norte, Av. Zaki Narchi 500, Vila Guilherme, São Paulo/SP · terceiro lote até 01/12 · página oficial reaberta em 20/11",
       "badges": [
         {
           "label": "Pago",
