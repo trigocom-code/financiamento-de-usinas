@@ -3,7 +3,7 @@
     "orgao": "ANEEL",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ANEEL — schema v1.3 com tipo_fato, qsv_cor, fontes independentes, associacao_origem, ancoragem numérica. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-11-20",
+    "verificado_em": "2026-11-14",
     "proxima_revisao_sugerida": "2026-11-10",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ANEEL conforme QSV-R v3.0",
     "nota_run_2026_07_16": "Varredura de 16/07: nenhuma reabertura F1 efetiva → NENHUM fato teve verificado_em bumpado (postura conservadora, R2). _meta.verificado_em reflete a data da varredura, não a de reconferência de fato. Página-mãe de notícias da ANEEL veio JS-truncada (inconclusiva para 08–16/07); a subpasta /noticias/2026-defeso-eleitoral carimba 'Atualizado em 07/07/2026 17h39' e vale como negativo APENAS para essa subpasta. Detectados 6 itens novos via F3 (ABSOLAR GTGD 15/07 + Agência iNFRA 13/07), todos em _pendentes_verificacao. A run de 15/07 escreveu JSON mas não escreveu digest — lacuna reportada ao CEO.",
@@ -125,6 +125,20 @@
           "_pendentes_verificacao[4]"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-20",
+        "relidos": [
+          "fatos[10]",
+          "fatos[11]",
+          "fatos[12]",
+          "_pendentes_verificacao[6]"
+        ],
+        "corrigidos": [],
+        "sem_f1_tentados": [
+          "_pendentes_verificacao[5]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 7, CONFIRMADO 6. _meta.verificado_em = data do item publicado mais antigo.",
@@ -141,7 +155,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.161/2026 · assinada 02/06/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.161-de-2-de-junho-de-2026-714430510",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -192,7 +206,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.162/2026 (altera RENs 846/2019, 875/2020, 905/2020, 921/2021, 1.000/2021, 1.009/2022, 1.029/2022, 1.030/2022, 1.031/2022 e 1.071/2023) · assinada 02/06/2026 · DOU 24/06/2026",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-aneel-n-1.162-de-2-de-junho-de-2026-714416734",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -243,7 +257,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.170/2026 · assinada 06/10/2026 · DOU 09/10/2026, Ed. 192, Seção 1, p. 122 · Processo 48500.900375/2019-83 · resultado da 3ª fase da CP ANEEL 045/2019",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-normativa-n-1.170-de-6-de-outubro-de-2026-737462879",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 17,
       "vetores_afetados": [
@@ -321,7 +335,7 @@
       "status": "ENCERRADA — resultado em vigor nas RENs 1.161/2026 e 1.162/2026",
       "norma": "CP ANEEL 039/2023 · NT Conjunta 3/2026-SGM-SCE-STD-STR-SFT/ANEEL · RENs 1.161/2026 e 1.162/2026",
       "url": "https://www.gov.br/aneel/pt-br/acesso-a-informacao/participacao-social/consultas-publicas",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -373,7 +387,7 @@
       "status": "VIGENTE",
       "norma": "Despacho ANEEL 3.431, de 18/11/2025 · DOU 25/11/2025, Ed. 224, Seção 1, p. 93 · Processo 48500.033898/2025-54",
       "url": "https://www.in.gov.br/web/dou/-/despacho-n-3.431-de-18-de-novembro-de-2025-670734868",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 13,
       "vetores_afetados": [
@@ -417,7 +431,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.059/2023 (Lei 14.300/2022)",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -462,7 +476,7 @@
       "status": "VIGENTE",
       "norma": "MME · Portarias Normativas 111/2025 (DOU 23/06/2025) e 126/2026 (DOU 29/01/2026) (regulamentação ANEEL pendente)",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-17",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -505,7 +519,7 @@
       "status": "VIGENTE",
       "norma": "REN ANEEL 1.062/2023 · Resolução Autorizativa ANEEL 16.539/2025 · Edital SA-SR/001/2025-ONS",
       "url": "https://www.ons.org.br/paginas/energia-amanha/sandbox-controle-de-tensao",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-16",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -547,7 +561,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 046/2025",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/tarifa-hora-certa-proposta-preve-enquadramento-automatico-de-consumidores-que-usam-mais-de-500-kwh-mes",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -597,7 +611,7 @@
       "status": "PRAZO DE CONTRIBUIÇÕES ENCERRADO",
       "norma": "TS ANEEL 23/2025",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-tomada-de-subsidios-n-23/2025-673263430",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -650,7 +664,7 @@
         "sHEC"
       ],
       "verificado_em": "2026-11-20",
-      "pendencia_verificacao": "ANDAIME MOVIDO DO CAMPO RENDERIZADO EM 28/07/2026 (exigencia do gate validar_fatos.py, regra E1). Marcacoes originais: [A VERIFICAR no Aviso do DOU]. Sentido inalterado: os elementos assim marcados NAO estao ancorados em fonte primaria reaberta e nao podem ser citados externamente ate a leitura do ato no DOU."
+      "pendencia_verificacao": "conferido em 20/11/2026: Aviso de 2a fase da CP 1/2026, DOU de 01/07/2026, Ed. 121, S3, p. 181, envio de 01/07 a 14/08/2026; busca no DOU ate 20/11 sem 3a fase, prorrogacao nem REN. Os 5 temas do Relatorio do Diretor-Relator NAO conferidos em F1. Processo grafado 48500.902339/2024-11 na 1a fase e 48500.002339/2024-11 na 2a (https://www.in.gov.br/web/dou/-/aviso-de-2-fase-de-consulta-publica-n-1/2026-715882096) | ANDAIME MOVIDO DO CAMPO RENDERIZADO EM 28/07/2026 (exigencia do gate validar_fatos.py, regra E1). Marcacoes originais: [A VERIFICAR no Aviso do DOU]. Sentido inalterado: os elementos assim marcados NAO estao ancorados em fonte primaria reaberta e nao podem ser citados externamente ate a leitura do ato no DOU."
     },
     {
       "fato_id": "ANEEL-CP-020-2026-FATOR-X",
@@ -710,7 +724,8 @@
         "verificado_em": "2026-07-20"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "pendencia_verificacao": "conferido em 20/11/2026: Aviso CP 20/2026, processo 48500.027624/2025-26, envio 16/07 a 31/08/2026, DOU 15/07/2026, Ed. 131, S3, p. 104; sem prorrogacao nem resultado no DOU ate 20/11 (https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-20/2026-719154741)"
     },
     {
       "fato_id": "ANEEL-CP-018-2026-PEE",
@@ -745,7 +760,7 @@
         "verificado_em": "2026-08-07"
       },
       "gatilho_revisao": "publicacao do relatorio da AIR ou de nova etapa da ANEEL (sem data; Agenda Regulatoria preve edicao em 2027, plano)",
-      "pendencia_verificacao": "A pagina interna da noticia devolveu HTTP 404 no slug testado e o numero da CP nao aparece no titulo da listagem: a associacao entre a materia de 06/08 e a CP no 18/2026, bem como o numero do processo, vem de fonte secundaria que reproduz o comunicado. Abrir a pagina da noticia e a ficha da CP no sistema de participacao publica da ANEEL para carimbar numero de CP e de processo antes de citar externamente. | 14/11/2026: resolvido no DOU. O Aviso de Prorrogacao da CP no 18/2026 (DOU de 05/08/2026, Secao 3, p. 105) traz o numero da CP, o Processo 48500.019238/2025-61 e o prazo final de 9 de setembro de 2026; o Aviso de Consulta Publica no 18/2026 (DOU de 25/06/2026, Secao 3, p. 111) traz o periodo original de 25/6 a 10/8/2026. O Relatorio de AIR nao foi lido.",
+      "pendencia_verificacao": "conferido em 20/11/2026: Aviso de Prorrogacao da CP 18/2026 (processo 48500.019238/2025-61) ate 09/09/2026, DOU 05/08/2026, S3, p. 105; Portaria ANEEL 7.157/2026 lista P&E22-02; sem ato novo ate 20/11 (https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-723324899) | A pagina interna da noticia devolveu HTTP 404 no slug testado e o numero da CP nao aparece no titulo da listagem: a associacao entre a materia de 06/08 e a CP no 18/2026, bem como o numero do processo, vem de fonte secundaria que reproduz o comunicado. Abrir a pagina da noticia e a ficha da CP no sistema de participacao publica da ANEEL para carimbar numero de CP e de processo antes de citar externamente. | 14/11/2026: resolvido no DOU. O Aviso de Prorrogacao da CP no 18/2026 (DOU de 05/08/2026, Secao 3, p. 105) traz o numero da CP, o Processo 48500.019238/2025-61 e o prazo final de 9 de setembro de 2026; o Aviso de Consulta Publica no 18/2026 (DOU de 25/06/2026, Secao 3, p. 111) traz o periodo original de 25/6 a 10/8/2026. O Relatorio de AIR nao foi lido.",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-723324899"
     },
     {
@@ -755,7 +770,7 @@
       "status": "PRAZO DE CONTRIBUICOES ENCERRADO em 13/10/2026 (23h59; o aviso fixava 12/10/2026, prorrogacao automatica)",
       "norma": "Aviso de Consulta Publica ANEEL no 29/2026 — DOU de 26/08/2026, Secao 3, p. 124 · Processo no 48500.006650/2023-59",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-29%2F2026-727896573",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -793,7 +808,7 @@
       "status": "PRAZO DE CONTRIBUICOES ENCERRADO",
       "norma": "Aviso de Consulta Publica ANEEL no 26/2026 — DOU de 06/08/2026, Secao 3, p. 107 · Processo no 48500.019929/2026-45",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-26%2F2026-723652899",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 3,
       "vetores_afetados": [
@@ -831,7 +846,7 @@
       "status": "PRAZO DE CONTRIBUIÇÕES ENCERRADO — contribuições de 17/09/2026 a 12/11/2026 (prorrogada); em análise na ANEEL",
       "norma": "Aviso de Consulta Publica ANEEL no 34/2026 — DOU de 17/09/2026, Secao 3, p. 108 · Processo no 48500.033896/2025-65 — prazo prorrogado ate 12/11/2026 (Aviso de Prorrogacao, DOU de 29/10/2026, Secao 3)",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-34/2026-732288687",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 12,
       "vetores_afetados": [
@@ -1139,8 +1154,9 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Ler a NT 107/2026 (PDF anexo, SEI 0398228) antes de qualquer uso — é documento primário chegado por ponteiro F3. Confirmar o processo no SEI/ANEEL. Acompanhar a apresentação do ONS de 29/07.",
-      "pendencia_verificacao": "14/11/2026: o SEI 0398228 foi lido em F1 (página oficial da CP 033/2026 na ANEEL) e é a NT 107/2026-STD do Processo 48500.002211/2026-10, sem relação com este tema; a numeração 107/2026 pode coincidir entre superintendências ou o F3 pode ter confundido os documentos. Seguem pendentes, só no SEI da ANEEL (CAPTCHA): a existência da NT 107/2026-SFT, o Processo 48500.015900/2026-94 e a realização da apresentação do ONS prevista para 29/07/2026. As pautas, atas e listas de sorteio da Diretoria publicadas pela ANEEL de maio a novembro de 2026, varridas nesta run, não citam o processo.",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://antigo.aneel.gov.br/web/guest/consultas-publicas?p_p_id=participacaopublica_WAR_participacaopublicaportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2&_participacaopublica_WAR_partic"
+      "pendencia_verificacao": "sem F1 acessivel em 20/11/2026: NT 107/2026-SFT e processo 48500.015900/2026-94 so no SEI da ANEEL (HTTP 403 e CAPTCHA); nenhum ato no DOU cita o processo | 14/11/2026: o SEI 0398228 foi lido em F1 (página oficial da CP 033/2026 na ANEEL) e é a NT 107/2026-STD do Processo 48500.002211/2026-10, sem relação com este tema; a numeração 107/2026 pode coincidir entre superintendências ou o F3 pode ter confundido os documentos. Seguem pendentes, só no SEI da ANEEL (CAPTCHA): a existência da NT 107/2026-SFT, o Processo 48500.015900/2026-94 e a realização da apresentação do ONS prevista para 29/07/2026. As pautas, atas e listas de sorteio da Diretoria publicadas pela ANEEL de maio a novembro de 2026, varridas nesta run, não citam o processo.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://antigo.aneel.gov.br/web/guest/consultas-publicas?p_p_id=participacaopublica_WAR_participacaopublicaportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2&_participacaopublica_WAR_partic",
+      "tentado_em": "2026-11-20"
     },
     {
       "fato_id": "ANEEL-PROC-48500-002211-2026-10-PRODIST-M3",
@@ -1149,7 +1165,7 @@
       "status": "CP ABERTA — contribuições até 30/11/2026",
       "norma": "CP ANEEL 033/2026 · Processo ANEEL nº 48500.002211/2026-10 · Módulo 3 do PRODIST · NT nº 107/2026-STD/ANEEL · Relatório de AIR nº 002/2026-STD/ANEEL",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-20",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 11,
       "vetores_afetados": [
@@ -1177,7 +1193,7 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "CP ANEEL 033/2026 aberta (Aviso no DOU de 10/09/2026, Seção 3, p. 93), com contribuições até 30/11/2026 (Aviso de prorrogação no DOU de 05/11/2026, Seção 3, p. 136); acompanhar o fim das contribuições e a análise da ANEEL. Fio de convergência estrutural com V2/V3 — acompanhar de perto.",
-      "pendencia_verificacao": "14/11/2026 - RESOLVIDA EM F1: abertura da CP 033/2026 (DOU de 10/09/2026, Seção 3, p. 93), prorrogação do prazo para 30/11/2026 (DOU de 05/11/2026, Seção 3, p. 136), número do processo (nos dois Avisos e na NT 107/2026-STD) e prazos de adequação da minuta (art. 8º, § 1º: 120 e 180 dias) conferidos. Os prazos são proposta da minuta, ainda não norma. Acompanhar o fim das contribuições em 30/11/2026 e a análise da ANEEL.",
+      "pendencia_verificacao": "conferido em 20/11/2026: Aviso CP 33/2026 (processo 48500.002211/2026-10), DOU 10/09/2026, S3, p. 93; prorrogada ate 30/11/2026 (DOU 05/11/2026, S3, p. 136); sem nova prorrogacao ate 20/11 (https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-da-consulta-publica-n-33/2026-742072056) | 14/11/2026 - RESOLVIDA EM F1: abertura da CP 033/2026 (DOU de 10/09/2026, Seção 3, p. 93), prorrogação do prazo para 30/11/2026 (DOU de 05/11/2026, Seção 3, p. 136), número do processo (nos dois Avisos e na NT 107/2026-STD) e prazos de adequação da minuta (art. 8º, § 1º: 120 e 180 dias) conferidos. Os prazos são proposta da minuta, ainda não norma. Acompanhar o fim das contribuições em 30/11/2026 e a análise da ANEEL.",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-da-consulta-publica-n-33/2026-742072056 ; https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-33/2026-730889553"
     },
     {

@@ -3,7 +3,7 @@
     "orgao": "ONS",
     "schema_version": "1.3",
     "descricao": "Monitor exclusivo ONS — schema v1.3. Aplicada Precedência v1.2.",
-    "verificado_em": "2026-11-20",
+    "verificado_em": "2026-11-14",
     "proxima_revisao_sugerida": "2026-11-10",
     "responsavel_atualizacao": "Monitor Regulatório SOA — sub-rotina ONS conforme QSV-R v3.0",
     "regra_curadoria": "score_soa ≥ 5 E qsv_cor ∈ {AZUL, VERDE} → fatos[]. Dados Abertos vão direto pro banco SOA.",
@@ -118,6 +118,21 @@
           "_pendentes_verificacao[0]"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-20",
+        "relidos": [
+          "fatos[4]",
+          "fatos[5]",
+          "_pendentes_verificacao[1]"
+        ],
+        "corrigidos": [
+          "fatos[5]"
+        ],
+        "sem_f1_tentados": [
+          "_pendentes_verificacao[3]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 1, CONFIRMADO 1. _meta.verificado_em = data do item publicado mais antigo.",
@@ -136,7 +151,7 @@
       "status": "VIGENTE",
       "norma": "NT-ONS DPL 0111/2025 = EPE-DEE-NT-095/2025 (conexão/grid-forming) · limiares na Portaria MME 136/2026 Art. 7º + Art. 4º §13",
       "url": "https://www.ons.org.br/",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-17",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 15,
       "vetores_afetados": [
@@ -180,7 +195,7 @@
       "status": "VIGENTE",
       "norma": "ONS · Procedimentos de Rede (REN ANEEL 903/2020) · Lei 10.848/2004, art. 1º-B, §§ 3º e 4º",
       "url": "https://www.ons.org.br/paginas/sobre-o-ons/procedimentos-de-rede/vigentes",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-18",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 10,
       "vetores_afetados": [
@@ -223,7 +238,7 @@
       "status": "VIGENTE",
       "norma": "ONS · REN ANEEL 903/2020 · proposta: CP ANEEL 34/2026 (contribuições até 12/11/2026)",
       "url": "https://www.ons.org.br/paginas/sobre-o-ons/procedimentos-de-rede/vigentes",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -268,7 +283,7 @@
       "status": "VIGENTE",
       "norma": "NT-ONS DPL 0083/2026, Revisão 00, de 31/08/2026 (Nota Técnica 02 da 1ª Temporada de Acesso de 2026) · art. 11 da Portaria Normativa MME 129/2026 · Comunicado Relevante ONS nº 02/2026 e notícia do ONS de 06/07/2026: 367 cadastramentos admitidos, 20,31 GW = 14,56 GW geração + 5,74 GW consumo",
       "url": "https://www.ons.org.br/paginas/energia-no-futuro/transmissao/pnast",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-19",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 14,
       "vetores_afetados": [
@@ -367,12 +382,13 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-976/NT-ONS%20DPL%200095-2026-R1%20%E2%80%93%20LRCAP%20Armazenamento%202026.pdf"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-976/NT-ONS%20DPL%200095-2026-R1%20%E2%80%93%20LRCAP%20Armazenamento%202026.pdf",
+      "pendencia_verificacao": "conferido em 20/11/2026: NT-ONS DPL 0095/2026 Revisao 1 de 23/10/2026 (Milagres 69 kV de 0 para ate 50 MW); sem Revisao 2 (https://www.epe.gov.br/sites-pt/publicacoes-dados-abertos/publicacoes/PublicacoesArquivos/publicacao-976/NT-ONS%20DPL%200095-2026-R1%20%E2%80%93%20LRCAP%20Armazenamento%202026.pdf)"
     },
     {
       "fato_id": "ONS-SANDBOX-TENSAO",
       "tema": "Ato ONS · Sandbox Controle de Tensão — primeiro mecanismo competitivo",
-      "valor": "Sandbox Regulatório de Suporte de Potência Reativa para Controle de Tensão: a Resolução Autorizativa ANEEL nº 16.539, de 21/10/2025, autorizou o ONS a operar mecanismo competitivo para adquirir esse serviço ancilar. O primeiro mecanismo competitivo (Edital nº SA-SR/001/2025-ONS, atualizado em 18/11/2025) é limitado à absorção de potência reativa por geradores, para controle de tensão na área Minas Gerais. A página do ONS reúne o edital, o contrato (CPSA-SR), a rotina operacional (RO-CT.BR.02), as perguntas e respostas e o material dos workshops. Em 2026 o ONS prepara o 2º Mecanismo Competitivo, que amplia a abrangência para absorção e injeção de potência reativa nas áreas de Minas Gerais, São Paulo e Paraná; as minutas do Edital, do CPSA-SR e da Rotina Operacional estão em consulta externa de 5 a 18/11/2026, e o workshop ONS/CCEE foi realizado em 05/11/2026. A camada QSV + telemetria da SOA pode servir de evidência de prestação.",
+      "valor": "Sandbox Regulatório de Suporte de Potência Reativa para Controle de Tensão: a Resolução Autorizativa ANEEL nº 16.539, de 21/10/2025, autorizou o ONS a operar mecanismo competitivo para adquirir esse serviço ancilar. O primeiro mecanismo competitivo (Edital nº SA-SR/001/2025-ONS, atualizado em 18/11/2025) é limitado à absorção de potência reativa por geradores, para controle de tensão na área Minas Gerais. A página do ONS reúne o edital, o contrato (CPSA-SR), a rotina operacional (RO-CT.BR.02), as perguntas e respostas e o material dos workshops. Em 2026 o ONS prepara o 2º Mecanismo Competitivo, que amplia a abrangência para absorção e injeção de potência reativa nas áreas de Minas Gerais, São Paulo e Paraná; as minutas do Edital, do CPSA-SR e da Rotina Operacional estiveram em consulta externa de 5 a 18/11/2026, e o workshop ONS/CCEE foi realizado em 05/11/2026. A camada QSV + telemetria da SOA pode servir de evidência de prestação.",
       "status": "VIGENTE",
       "norma": "Resolução Autorizativa ANEEL nº 16.539, de 21/10/2025 · REN ANEEL nº 1.062/2023 · Edital nº SA-SR/001/2025-ONS (Sandbox Controle de Tensão)",
       "url": "https://www.ons.org.br/paginas/energia-amanha/sandbox-controle-de-tensao",
@@ -409,7 +425,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ons.org.br/paginas/energia-amanha/sandbox-controle-de-tensao"
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.ons.org.br/paginas/energia-amanha/sandbox-controle-de-tensao",
+      "pendencia_verificacao": "corrigido e conferido em 20/11/2026: REA 16.539/2025 e edital SA-SR/001/2025 conferem; consulta externa do 2o mecanismo foi de 5 a 18/11/2026 (encerrada) (https://www.ons.org.br/paginas/energia-amanha/sandbox-controle-de-tensao)"
     },
     {
       "fato_id": "ONS-RESOLUCAO-CMSE-1-2026-DEVERES",
@@ -418,7 +435,7 @@
       "status": "VIGENTE",
       "norma": "Resolução CMSE nº 1, de 6 de julho de 2026, arts. 2º, II; 3º, I; 4º, I; e 6º, I — DOU 08/07/2026, Ed. 126, Seção 1, p. 134",
       "url": "https://www.in.gov.br/web/dou/-/resolucao-cmse-n-1-de-6-de-julho-de-2026-717484289",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-15",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 11,
       "vetores_afetados": [
@@ -459,7 +476,7 @@
       "status": "VIGENTE",
       "norma": "Portaria Normativa MME no 140, de 18/07/2026, arts. 4o, 5o e 11 · DOU de 21/07/2026, Edicao Extra, Secao 1",
       "url": "https://www.gov.br/mme/pt-br/acesso-a-informacao/legislacao/portarias/2026/portaria-normativa-mme-n-140-2026.pdf",
-      "verificado_em": "2026-11-20",
+      "verificado_em": "2026-11-14",
       "tipo_fato": "REGULATORIO_NORMATIVO",
       "score_soa": 20,
       "vetores_afetados": [
@@ -522,12 +539,12 @@
       "status": "DETERMINACAO EM VIGOR (Despacho ANEEL 4.065/2026, DOU 26/10/2026) — termo inicial dos 45 dias nao fixado no texto",
       "norma": "Despacho ANEEL no 4.065, de 06/10/2026 (DOU 26/10/2026) · Decreto no 12.772/2025 · REN 905/2020, Modulos 1 e 5",
       "url": "https://www.in.gov.br/web/dou/-/despacho-n-4.065-de-6-de-outubro-de-2026-740386313",
-      "verificado_em": "2026-11-18",
+      "verificado_em": "2026-11-20",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "qsv_cor": "LARANJA",
       "qsv_origem_classificacao": "F1_DOU_despacho_ANEEL_4065_2026_relido_18nov2026",
       "gatilho_revisao": "envio efetivo das propostas pelo ONS; abertura de consulta sobre os Procedimentos de Rede",
-      "pendencia_verificacao": "conferido em 18/11/2026: Despacho ANEEL 4.065/2026 relido no DOU (26/10/2026, Ed. 202, Secao 1, p. 62): item (ii) manda o ONS enviar em ate 45 dias as propostas de alteracao dos Procedimentos de Rede ligadas ao Decreto 12.772/2025, sem fixar o termo inicial; itens (iii) a (vii) conferem com a prioridade aos incrementos de MUST de 2029. Sem novidade desde 10/2026. || anterior: sem F1 acessível em 14/11/2026: Concordo. O Despacho ANEEL 4.065/2026 não abriu: WebFetch deu 'socket hang up', e o Chrome não carregou o DOU nem a página de consultas da ANEEL. A busca restrita a gov.br, in.gov.br, aneel.gov.br e ons.org.br não achou o despacho. Confirmei só o entorno: a notícia da",
+      "pendencia_verificacao": "conferido em 20/11/2026: Despacho 4.065 (DOU 26/10/2026, S1, p. 62), item (ii): ate 45 dias, sem termo inicial; envio pelo ONS nao confirmado (https://www.in.gov.br/web/dou/-/despacho-n-4.065-de-6-de-outubro-de-2026-740386313) | conferido em 18/11/2026: Despacho ANEEL 4.065/2026 relido no DOU (26/10/2026, Ed. 202, Secao 1, p. 62): item (ii) manda o ONS enviar em ate 45 dias as propostas de alteracao dos Procedimentos de Rede ligadas ao Decreto 12.772/2025, sem fixar o termo inicial; itens (iii) a (vii) conferem com a prioridade aos incrementos de MUST de 2029. Sem novidade desde 10/2026. || anterior: sem F1 acessível em 14/11/2026: Concordo. O Despacho ANEEL 4.065/2026 não abriu: WebFetch deu 'socket hang up', e o Chrome não carregou o DOU nem a página de consultas da ANEEL. A busca restrita a gov.br, in.gov.br, aneel.gov.br e ons.org.br não achou o despacho. Confirmei só o entorno: a notícia da",
       "nota_reconferencia_2026_11_18": "F1 relida em 18/11/2026: https://www.in.gov.br/web/dou/-/despacho-n-4.065-de-6-de-outubro-de-2026-740386313",
       "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www.in.gov.br/web/dou/-/despacho-n-4.065-de-6-de-outubro-de-2026-740386313 | Despacho 4.065, DOU 26/10/2026, ed. 202, S1, p. 62; itens (ii) a (vii) conferem"
     },
@@ -587,8 +604,8 @@
       },
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
-      "tentado_em": "2026-11-19",
-      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: Sem F1 público para o texto da NT e da revisão (SINtegre com login; busca no acervo sem resultado). | fora do ar publico desde 18/11/2026: sem conferencia na fonte desde 06/11/2026 (sem F1 acessivel em 18/11/2026: NT DPL 0031/2024 revisada e funcoes de produtividade revisadas so no SINtegre (login); noticias do ONS sem texto (JS, 502/404); so imprensa descreve a correcao)"
+      "tentado_em": "2026-11-20",
+      "pendencia_verificacao": "sem F1 acessivel em 20/11/2026: NT DPL 0031/2024 revisada so no SINtegre (login); a PN MME 140, art. 4o par. 1o III, da prazo de 40 dias da publicacao (~30/08/2026), nao 31/08 | sem F1 acessivel em 19/11/2026: Sem F1 público para o texto da NT e da revisão (SINtegre com login; busca no acervo sem resultado). | fora do ar publico desde 18/11/2026: sem conferencia na fonte desde 06/11/2026 (sem F1 acessivel em 18/11/2026: NT DPL 0031/2024 revisada e funcoes de produtividade revisadas so no SINtegre (login); noticias do ONS sem texto (JS, 502/404); so imprensa descreve a correcao)"
     }
   ],
   "_historico_caidos": []

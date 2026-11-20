@@ -86,14 +86,33 @@
           "_pendentes_verificacao[0]"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-20",
+        "relidos": [
+          "beneficios[24]",
+          "beneficios[25]",
+          "beneficios[26]",
+          "beneficios[27]",
+          "beneficios[28]",
+          "beneficios[29]",
+          "beneficios[30]"
+        ],
+        "corrigidos": [
+          "beneficios[28]"
+        ],
+        "sem_f1_tentados": [
+          "_pendentes_verificacao[0]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ]
   },
   "_carimbo": {
     "atualizado_em": "2026-10-13T00:00:00-03:00",
-    "hash": "sha256:5bc44b0ac1c2c7db81db3123724adf35012642e20b34f84b65a7a6ecfb474633",
+    "hash": "sha256:95b2955d4530a32346a7c2b1871bbca1264ce158dc456b7cc5e5ae3b03a565d2",
     "fonte": "dossie_beneficios_v1 + verificacao_fontes_primarias",
-    "selado_em": "2026-11-19"
+    "selado_em": "2026-11-20"
   },
   "_schema": {
     "versao": "1.0",
@@ -643,8 +662,9 @@
       "sem_soa": "—",
       "status": "verificado",
       "fonte": "MMA (PAAR 2026) · BNDES (Fundo Clima)",
-      "verificado_em": "2026-11-14",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.gov.br/mma/pt-br/composicao/secex/dfre/fundo-nacional-sobre-mudanca-do-clima/copy_of_PAAR2026.pdf"
+      "verificado_em": "2026-11-20",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.gov.br/mma/pt-br/composicao/secex/dfre/fundo-nacional-sobre-mudanca-do-clima/copy_of_PAAR2026.pdf",
+      "pendencia_verificacao": "conferido em 20/11/2026: PAAR 2026: reembolsavel do Fundo Clima R$ 27.479.183.881,00 (Eco Invest R$ 15 bi a parte); BNDES lista 7 modalidades (https://www.gov.br/mma/pt-br/composicao/secex/dfre/fundo-nacional-sobre-mudanca-do-clima/copy_of_PAAR2026.pdf)"
     },
     {
       "id": "uni_tesouro_soberano",
@@ -662,8 +682,9 @@
       "sem_soa": "rastreabilidade do uso de recursos",
       "status": "verificado",
       "fonte": "Tesouro Nacional (titulos-sustentaveis)",
-      "verificado_em": "2026-11-14",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.gov.br/tesouronacional/pt-br/divida-publica-federal/titulos-sustentaveis"
+      "verificado_em": "2026-11-20",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.gov.br/tesouronacional/pt-br/divida-publica-federal/titulos-sustentaveis",
+      "pendencia_verificacao": "conferido em 20/11/2026: emissoes de 13/11/2023, 20/06/2024 e 06/11/2025 (US$ 2,25 bi); sem emissao em 2026; 3o Relatorio de Alocacao e Impacto em 10/11/2026 (https://www.gov.br/tesouronacional/pt-br/divida-publica-federal/titulos-sustentaveis)"
     },
     {
       "id": "uni_ndc_plano_clima",
@@ -681,7 +702,8 @@
       "sem_soa": "dado verificável",
       "status": "verificado",
       "fonte": "UNFCCC NDC 13/11/2024 · CIM/CC/PR nº 9 (23/03/2026)",
-      "verificado_em": "2026-11-14"
+      "verificado_em": "2026-11-20",
+      "pendencia_verificacao": "conferido em 20/11/2026: NDC: 59 a 67% abaixo de 2005 em 2035 e net-zero em 2050; Res. CIM/CC/PR 9/2026 (DOU 24/03/2026, S1, p. 5) aprova o Plano Clima (https://unfccc.int/sites/default/files/2024-11/Brazil_Second%20Nationally%20Determined%20Contribution%20(NDC)_November2024.pdf)"
     },
     {
       "id": "uni_redata",
@@ -700,8 +722,9 @@
       "sem_soa": "matching 24/7 comprovável",
       "status": "pendente",
       "fonte": "planalto L15504/2026 · LC 237/2026",
-      "verificado_em": "2026-11-14",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/lei-n-15.504-de-15-de-setembro-de-2026-731892072"
+      "verificado_em": "2026-11-20",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/lei-n-15.504-de-15-de-setembro-de-2026-731892072",
+      "pendencia_verificacao": "conferido em 20/11/2026: Lei 15.504/2026: art. 11-B par. 1o III (fontes renovaveis ou de baixa emissao), art. 11-C, art. 11-J par. unico (PIS/Cofins e IPI ate 31/12/2026); LC 237/2026 com art. 3o vetado (https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/L15504.htm)"
     },
     {
       "id": "iptu_municipais_a_confirmar",
@@ -715,13 +738,14 @@
       "canal": "imposto",
       "titulo": "IPTU Verde — municípios a confirmar",
       "base_legal": "lei municipal — ⚠ confirmar artigo no Diário Oficial (Camaçari, Goiânia, Recife, Vitória, Balneário Camboriú)",
-      "mecanismo": "Percentuais consistentes entre fontes, mas exigem confirmação da lei/artigo na origem. Goiânia não é projeto de lei: a LC 235/2012 instituiu o Programa IPTU Verde (desconto de até 20%, por 5 exercícios), mas consta como revogada pela LC 344/2021 em fonte não oficial (a conferir no ato). Curitiba (solar) pode ser projeto de lei.",
+      "mecanismo": "Percentuais consistentes entre fontes, mas exigem confirmação da lei/artigo na origem. Goiânia não é projeto de lei: a LC 235/2012 instituiu o Programa IPTU Verde (desconto de até 20%, por 5 exercícios), revogada pela LC 344/2021 conforme a compilação oficial da Prefeitura (Sileg), que também registra executoriedade negada pelo Decreto 461/2020. Curitiba (solar) pode ser projeto de lei.",
       "vigencia": "a confirmar",
       "sem_soa": "—",
       "status": "pendente",
       "fonte": "a verificar (DOM)",
-      "verificado_em": "2026-11-14",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.goiania.go.gov.br/html/gabinete_civil/sileg/dados/legis/2012/lc_20121228_000000235.pdf"
+      "verificado_em": "2026-11-20",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.goiania.go.gov.br/html/gabinete_civil/sileg/dados/legis/2012/lc_20121228_000000235.pdf",
+      "pendencia_verificacao": "corrigido e conferido em 20/11/2026: Sileg de Goiania marca a LC 235/2012 como revogada pela LC 344/2021 e com executoriedade negada pelo Decreto 461/2020; Camacari, Recife, Vitoria, Balneario Camboriu e Curitiba seguem sem F1 (https://www.goiania.go.gov.br/html/gabinete_civil/sileg/dados/legis/2012/lc_20121228_000000235.html)"
     },
     {
       "id": "bitcoin_verde",
@@ -740,8 +764,9 @@
       "sem_soa": "prova de origem 100% renovável hora a hora",
       "status": "pendente",
       "fonte": "Lei 14.478/2022 + planalto L15504/2026",
-      "verificado_em": "2026-11-14",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/L15504.htm"
+      "verificado_em": "2026-11-20",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/L15504.htm",
+      "pendencia_verificacao": "conferido em 20/11/2026: Lei 14.478/2022 sem incentivo fiscal nem energia renovavel; Lei 15.504 sem mineracao de criptoativos (https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14478.htm)"
     },
     {
       "id": "bess_lrcap_capacidade",
@@ -760,8 +785,9 @@
       "sem_soa": "sem prova horária de disponibilidade ancorada no PMI, a Receita Fixa é cortada por indisponibilidade e o contrato de 15 anos / o DSCR não se sustentam",
       "status": "verificado",
       "fonte": "Portaria MME 136/2026 (art. 5º/7º/9º + Anexo II) · β=0,9 → Anexo I da portaria · REN ANEEL 1.161/1.162/2026 · CP ANEEL 022/023/2026 · ANEEL Editais 05 e 06/2026 (aprovados em 27/10/2026)",
-      "verificado_em": "2026-11-14",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/resolucao-homologatoria-n-3.616-de-27-de-outubro-de-2026-741103804"
+      "verificado_em": "2026-11-20",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/resolucao-homologatoria-n-3.616-de-27-de-outubro-de-2026-741103804",
+      "pendencia_verificacao": "conferido em 20/11/2026: REH 3.616 (DOU 29/10/2026, S1, p. 54) aprova o Edital 5/2026 com base na PN MME 136; leiloes em 02 e 04/12/2026; coeficiente beta/gama nao conferido nem cravado (https://www.in.gov.br/web/dou/-/resolucao-homologatoria-n-3.616-de-27-de-outubro-de-2026-741103804)"
     },
     {
       "id": "pnast_acesso_transmissao",
@@ -1123,8 +1149,8 @@
         "BESS auditável"
       ],
       "porque_certificar": "Preço-teto e TUST do edital definem a receita; a evidência horária protege o DSCR do risco de dupla cobrança.",
-      "tentado_em": "2026-11-19",
-      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: Item analítico pendente: edital do LRCAP de armazenamento (preço-teto e TUST) sem ato aberto nesta run; nada a conferir em fonte oficial. | fora do ar publico desde 18/11/2026: sem conferencia na fonte desde sem data (sem F1 acessivel em 18/11/2026: item analitico; edital do LRCAP de armazenamento (preco-teto e TUST) nao aberto nesta run; FAQ da EPE com 404)"
+      "tentado_em": "2026-11-20",
+      "pendencia_verificacao": "sem F1 acessivel em 20/11/2026: REH 3.616 (art. 2o, TUSDg de referencia so em 88 e 138 kV) aberta, mas o preco inicial do edital e o Anexo I nao foram achados em F1 | sem F1 acessivel em 19/11/2026: Item analítico pendente: edital do LRCAP de armazenamento (preço-teto e TUST) sem ato aberto nesta run; nada a conferir em fonte oficial. | fora do ar publico desde 18/11/2026: sem conferencia na fonte desde sem data (sem F1 acessivel em 18/11/2026: item analitico; edital do LRCAP de armazenamento (preco-teto e TUST) nao aberto nesta run; FAQ da EPE com 404)"
     }
   ]
 }
