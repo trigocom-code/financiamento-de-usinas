@@ -37,9 +37,25 @@ def _write_fatos(root: Path, n: int) -> None:
     (root / FATOS).write_text(json.dumps(doc, ensure_ascii=False), encoding="utf-8")
 
 
-def _write_regressao_json(root: Path) -> None:
+def _write_regressao_json(
+    root: Path,
+    *,
+    arquivo: str = FATOS,
+    contagem_antes: int,
+    contagem_depois: int,
+) -> None:
+    doc = {
+        "_meta": {"aprovado_em": "2026-11-18", "motivo": "teste"},
+        "por_arquivo": {
+            arquivo: {
+                "contagem_antes": contagem_antes,
+                "contagem_depois": contagem_depois,
+                "itens": [],
+            }
+        },
+    }
     (root / REGRESSAO_JSON).write_text(
-        json.dumps({"_meta": {"aprovado_em": "2026-11-18"}}, ensure_ascii=False),
+        json.dumps(doc, ensure_ascii=False),
         encoding="utf-8",
     )
 
@@ -76,7 +92,7 @@ class ErrosRegressaoTests(unittest.TestCase):
             base_sha = _run_git(root, "rev-parse", "HEAD")
 
             _write_fatos(root, 3)
-            _write_regressao_json(root)
+            _write_regressao_json(root, contagem_antes=8, contagem_depois=3)
             subprocess.run(["git", "add", FATOS, REGRESSAO_JSON], cwd=root, check=True)
             subprocess.run(
                 [
@@ -186,7 +202,7 @@ class ErrosRegressaoTests(unittest.TestCase):
             subprocess.run(["git", "commit", "-q", "-m", "base"], cwd=root, check=True)
 
             _write_fatos(root, 5)
-            _write_regressao_json(root)
+            _write_regressao_json(root, contagem_antes=8, contagem_depois=5)
             subprocess.run(["git", "add", FATOS, REGRESSAO_JSON], cwd=root, check=True)
             subprocess.run(
                 [

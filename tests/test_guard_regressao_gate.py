@@ -44,6 +44,8 @@ class GuardRegressaoGateTests(unittest.TestCase):
         )
         body = ast.get_source_segment(src, fn) or ""
         self.assertIn("regressao_aprovada_json_valido", body)
+        self.assertIn("regressao_json_tocado_no_diff", body)
+        self.assertIn("regressao_aprovacao_cobre_arquivos", body)
         self.assertIn(_REGRESSAO_JSON, src)
 
     def test_erros_regressao_nao_dispensa_so_pelo_ultimo_commit(self) -> None:

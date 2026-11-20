@@ -186,6 +186,52 @@ def regressao_aprovada_json_valido(base):
     except Exception:
         return False
 
+def _arquivos_mudados_no_escopo(base):
+    """Arquivos no diff do PR (base..head) ou do ultimo push (HEAD^..HEAD)."""
+    base_sha=os.environ.get("GITHUB_BASE_SHA","").strip()
+    head=os.environ.get("GITHUB_HEAD_SHA","").strip() or "HEAD"
+    rev=base_sha+".."+head if base_sha else "HEAD^..HEAD"
+    try:
+        out=subprocess.check_output(["git","diff","--name-only",rev],cwd=base,
+                                    stderr=subprocess.DEVNULL).decode().split()
+        return [x.strip() for x in out if x.strip()]
+    except Exception:
+        return []
+
+def regressao_json_tocado_no_diff(base):
+    """Dispensa E0 só se o proprio PR alterou _regressao_aprovada.json."""
+    return any(os.path.basename(p)==REGRESSAO_JSON for p in _arquivos_mudados_no_escopo(base))
+
+def _contagem_fatos_relativo(base,rel):
+    p=os.path.join(base,rel)
+    if not os.path.isfile(p): return 0
+    try:
+        with open(p,encoding="utf-8-sig") as f: d=json.load(f)
+        return len(d.get("fatos") or [])
+    except Exception:
+        return None
+
+def regressao_aprovacao_cobre_arquivos(base,arquivos_com_regressao):
+    """Cada Fatos_* com regressao precisa estar em por_arquivo com contagem_depois correta."""
+    if not arquivos_com_regressao: return False
+    p=os.path.join(base,REGRESSAO_JSON)
+    try:
+        with open(p,encoding="utf-8-sig") as f: d=json.load(f)
+    except Exception:
+        return False
+    por=d.get("por_arquivo")
+    if not isinstance(por,dict): return False
+    for rel in arquivos_com_regressao:
+        bn=os.path.basename(rel)
+        ent=por.get(bn)
+        if not isinstance(ent,dict): return False
+        cd=ent.get("contagem_depois")
+        try: cd=int(cd)
+        except Exception: return False
+        real=_contagem_fatos_relativo(base,rel)
+        if real is None or real!=cd: return False
+    return True
+
 def marca_regressao_em_commits(base):
     """Marca em mensagens de commit (head do PR, base..head, ultimo commit)."""
     head=os.environ.get("GITHUB_HEAD_SHA","").strip()
@@ -209,12 +255,15 @@ def marca_regressao_detectada(base):
     """Ordem: HEAD do PR, commits base..head, titulo/corpo do PR, ultimo commit (push/local)."""
     return marca_regressao_em_commits(base) or marca_regressao_em_texto_pr()
 
-def regressao_pode_ser_aprovada(base):
-    """Dispensa E0 somente com JSON valido e marca em qualquer fonte (inclui titulo/corpo do PR)."""
-    return regressao_aprovada_json_valido(base) and marca_regressao_detectada(base)
+def regressao_pode_ser_aprovada(base,arquivos_com_regressao):
+    """Dispensa E0: marca + JSON valido alterado neste diff + por_arquivo alinhado ao head."""
+    if not marca_regressao_detectada(base): return False
+    if not regressao_aprovada_json_valido(base): return False
+    if not regressao_json_tocado_no_diff(base): return False
+    return regressao_aprovacao_cobre_arquivos(base,arquivos_com_regressao)
 
 def erros_regressao(base):
-    e=[]
+    e=[]; arquivos=set()
     try:
         mudados=subprocess.check_output(["git","diff","--name-only","HEAD^","HEAD"],cwd=base,
                                         stderr=subprocess.DEVNULL).decode().split()
@@ -231,7 +280,9 @@ def erros_regressao(base):
             antes=subprocess.check_output(["git","show","HEAD^:"+f],cwd=base,stderr=subprocess.DEVNULL).decode("utf-8","replace")
         except Exception: continue
         p=os.path.join(base,f)
-        if not os.path.exists(p): e.append("%s: REMOVIDO sem [regressao-aprovada]" % f); continue
+        if not os.path.exists(p):
+            e.append("%s: REMOVIDO sem [regressao-aprovada]" % f)
+            arquivos.add(f); continue
         if antes and antes[0]=="﻿": antes=antes[1:]
         sv_a,n_a=parse(antes); sv_d,n_d=parse(open(p,encoding="utf-8-sig").read())
         def num(s):
@@ -239,11 +290,13 @@ def erros_regressao(base):
             except Exception: return (0,)
         if sv_a and sv_d and num(sv_d)<num(sv_a):
             e.append("%s: REGRESSAO schema_version %s -> %s (use [regressao-aprovada] se intencional)" % (f, sv_a, sv_d))
+            arquivos.add(f)
         if n_a is not None and n_d is not None and n_d<n_a:
             e.append("%s: REGRESSAO qtde de fatos %d -> %d (use [regressao-aprovada] se intencional)" % (f, n_a, n_d))
+            arquivos.add(f)
     if not e:
         return []
-    if regressao_pode_ser_aprovada(base):
+    if regressao_pode_ser_aprovada(base,sorted(arquivos)):
         return []
     if marca_regressao_em_commits(base) and not regressao_aprovada_json_valido(base):
         e.append("%s: ausente ou invalido — %s em commit exige arquivo de aprovacao" % (REGRESSAO_JSON,MARCA_REGRESSAO))
