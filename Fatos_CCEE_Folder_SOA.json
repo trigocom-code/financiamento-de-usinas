@@ -75,6 +75,15 @@
         "corrigidos": [],
         "sem_f1_tentados": [],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-20",
+        "relidos": [
+          "fatos[5]"
+        ],
+        "corrigidos": [],
+        "sem_f1_tentados": [],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
@@ -308,7 +317,7 @@
       "status": "VIGENTE",
       "norma": "CCEE · InfoMercado Mensal",
       "url": "https://www.ccee.org.br/web/guest/dados-e-analises/dados-mercado-mensal",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-20",
       "tipo_fato": "FISICO_QUANTITATIVO",
       "score_soa": 7,
       "vetores_afetados": [
@@ -341,7 +350,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "pendencia_verificacao": "conferido em 20/11/2026: pagina Mercado Mensal da CCEE: publicacao mensal, geracao, consumo, contratos, agentes, penalidades e liquidacoes, defasagem de cerca de 40 dias; dados pelo portal Dados Abertos desde jun/2024 (https://www.ccee.org.br/web/guest/dados-e-analises/dados-mercado-mensal)"
     },
     {
       "fato_id": "CCEE-PORTARIA-140-2026-DEVERES",

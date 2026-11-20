@@ -91,6 +91,19 @@
           "_pendentes_verificacao[2]"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-20",
+        "relidos": [
+          "fatos[7]",
+          "fatos[8]",
+          "_pendentes_verificacao[1]"
+        ],
+        "corrigidos": [],
+        "sem_f1_tentados": [
+          "_pendentes_verificacao[2]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_carimbo_engine_2026_11_16": "11 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
@@ -453,7 +466,7 @@
       "status": "VIGENTE",
       "norma": "EPE · Caderno temático PDE 2035",
       "url": "https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-20",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 11,
       "vetores_afetados": [
@@ -487,7 +500,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "pendencia_verificacao": "conferido em 20/11/2026: pagina do PDE 2035 lista o Caderno de MMGD e Baterias Atras do Medidor; PDE aprovado pela Portaria MME 923/2026 (https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2035)"
     },
     {
       "fato_id": "EPE-PNTE-PLANTE",
@@ -496,7 +510,7 @@
       "status": "VIGENTE",
       "norma": "MME · SNTEP",
       "url": "https://www.epe.gov.br/pt/imprensa/noticias/mme-e-epe-lancam-consultas-publicas-do-pde-2035-e-do-pne-2055-e-reforcam-planejamento-estrategico-do-setor-energetico",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-20",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 8,
       "vetores_afetados": [
@@ -536,7 +550,8 @@
         "verificado_em": "2026-06-28"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "pendencia_verificacao": "conferido em 20/11/2026: Portarias MME 923 (30/06/2026, PDE 2035) e 938 (25/09/2026, PNE 2055); Portaria SNTEP/MME 3.128 (DOU 29/04/2026, p. 59), minuta do Plante por 45 dias (https://www.in.gov.br/web/dou/-/portaria-sntep/mme-n-3.128-de-28-de-abril-de-2026-702097869)"
     },
     {
       "fato_id": "EPE-DIRETORIA",
@@ -728,7 +743,7 @@
       "status": "AGENDADO",
       "norma": "EPE · ciclo anual de consulta pública",
       "url": "https://www.gov.br/mme/pt-br/servicos/consultas-publicas",
-      "verificado_em": "2026-11-18",
+      "verificado_em": "2026-11-20",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 6,
       "vetores_afetados": [
@@ -756,7 +771,8 @@
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Previsão futura — aguarda calendário do PDE 2037",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2036",
-      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2036 | CP MME 235 aberta de 08/10 a 06/11/2026; caderno de eficiencia e RED listado"
+      "reconferencia_2026_11_18": "SUSTENTADO em F1: https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2036 | CP MME 235 aberta de 08/10 a 06/11/2026; caderno de eficiencia e RED listado",
+      "pendencia_verificacao": "conferido em 20/11/2026: PDE 2036 esteve aberto na CP MME 235 de 08/10 a 06/11/2026; calendario do PDE 2037 nao publicado (https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/plano-decenal-de-expansao-de-energia-2036)"
     },
     {
       "fato_id": "EPE-STATUS-MONITOR",
@@ -792,8 +808,8 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Fato meta-interno — sem fonte externa independente por design",
-      "tentado_em": "2026-11-19",
-      "pendencia_verificacao": "sem F1 acessivel em 19/11/2026: Fato meta-interno, sem fonte oficial externa por desenho. | sem F1 acessivel em 18/11/2026: fato meta-interno (arquitetura do monitor), sem fonte oficial externa por desenho"
+      "tentado_em": "2026-11-20",
+      "pendencia_verificacao": "sem F1 acessivel em 20/11/2026: fato meta-interno (arquitetura do monitor), sem fonte oficial externa por desenho | sem F1 acessivel em 19/11/2026: Fato meta-interno, sem fonte oficial externa por desenho. | sem F1 acessivel em 18/11/2026: fato meta-interno (arquitetura do monitor), sem fonte oficial externa por desenho"
     }
   ],
   "_historico_caidos": []

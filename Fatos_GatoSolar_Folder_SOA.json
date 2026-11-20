@@ -78,6 +78,20 @@
           "_pendentes_verificacao[1]"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-20",
+        "relidos": [
+          "fatos[2]"
+        ],
+        "corrigidos": [
+          "fatos[2]"
+        ],
+        "sem_f1_tentados": [
+          "_pendentes_verificacao[2]",
+          "_pendentes_verificacao[4]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_carimbo_engine_2026_11_16": "7 carimbos verificado_em=2026-11-16 gravados pelo rotina_fatos_engine (passo 2, 08:20) sem releitura na fonte foram desfeitos pela consolidadora (backup do engine em _backup_reconciliacao/2026-11-16_082005).",
@@ -118,15 +132,16 @@
     },
     {
       "tema": "CP ANEEL 011/2026 — créditos vencidos de MMGD (adjacente)",
-      "valor": "Consulta paralela (aberta 28/04/2026) para definir o tratamento regulatório e contábil dos créditos vencidos de MMGD, revertendo-os à modicidade tarifária. NÃO é gato solar (não é potência irregular), mas integra o mesmo pacote de aperto da ANEEL sobre a MMGD. Registrada para não ser confundida com a CP 009. RECONFIRMADO EM F1 EM 17/09/2026: indice de noticias ANEEL e hub de Geracao Distribuida reabertos; nenhum ato novo de homologacao da CP 009/2026 nem nova NT SFT sobre GD irregular indexado nessas paginas nesta janela. Status/norma mantidos. Prazo de contribuicoes da CP 009/2026 (abertura 22/04/2026, 45 dias) encerrou em 08/06/2026 (prorrogacao automatica a partir de 06/06/2026); deliberacao da Diretoria ainda nao publicada como REN nestas fontes F1 reabertas.",
+      "valor": "Consulta paralela (aprovada pela Diretoria em 28/04/2026; contribuicoes de 30/04 a 15/06/2026, Aviso no DOU de 30/04/2026, Secao 3, p. 149) para definir o tratamento regulatório e contábil dos créditos vencidos de MMGD, revertendo-os à modicidade tarifária. NÃO é gato solar (não é potência irregular), mas integra o mesmo pacote de aperto da ANEEL sobre a MMGD. Registrada para não ser confundida com a CP 009. RECONFIRMADO EM F1 EM 17/09/2026: indice de noticias ANEEL e hub de Geracao Distribuida reabertos; nenhum ato novo de homologacao da CP 009/2026 nem nova NT SFT sobre GD irregular indexado nessas paginas nesta janela. Status/norma mantidos. Prazo de contribuicoes da CP 009/2026 (abertura 22/04/2026, 45 dias) encerrou em 08/06/2026 (prorrogacao automatica a partir de 06/06/2026); deliberacao da Diretoria ainda nao publicada como REN nestas fontes F1 reabertas.",
       "status": "EM DELIBERAÇÃO",
       "norma": "CP ANEEL 011/2026",
       "fonte": "F1 ANEEL (portal)",
       "url": "https://www.gov.br/aneel/pt-br/assuntos/noticias/2026/consulta-publica-vai-tratar-dos-creditos-excedentes-de-mmgd-para-modicidade-tarifaria",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-20",
       "vetores_afetados": [
         "V2"
-      ]
+      ],
+      "pendencia_verificacao": "corrigido e conferido em 20/11/2026: Aviso CP 11/2026 (processo 48500.909318/2022-65), periodo 30/04 a 15/06/2026, DOU 30/04/2026, Ed. 80, S3, p. 149; a noticia ANEEL de 28/04 e da aprovacao pela Diretoria (https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-11/2026-702538294)"
     }
   ],
   "_pendentes_verificacao": [
@@ -172,8 +187,8 @@
         "V2",
         "sHEC"
       ],
-      "tentado_em": "2026-11-18",
-      "pendencia_verificacao": "sem F1 acessível em 18/11/2026: Nucleo do fato no §III.7.2 da NT 107/2026-SFT, so no SEI (HTTP 403 Cloudflare + CAPTCHA em 18/11/2026). || anterior: sem F1 acessível em 17/11/2026: nucleo depende da NT 107/2026-SFT, sem copia oficial acessivel (SEI com CAPTCHA, cedoc 403)",
+      "tentado_em": "2026-11-20",
+      "pendencia_verificacao": "sem F1 acessivel em 20/11/2026: nucleo no par. III.7.2 da NT 107/2026-SFT, so no SEI da ANEEL (HTTP 403 e CAPTCHA) | sem F1 acessível em 18/11/2026: Nucleo do fato no §III.7.2 da NT 107/2026-SFT, so no SEI (HTTP 403 Cloudflare + CAPTCHA em 18/11/2026). || anterior: sem F1 acessível em 17/11/2026: nucleo depende da NT 107/2026-SFT, sem copia oficial acessivel (SEI com CAPTCHA, cedoc 403)",
       "motivo_pendencia": "Retirado da secao publicada (fatos) em 18/11/2026 pela regra do dono: sem conferencia real na fonte oficial nao se carimba data. verificado_em abaixo e historico e nao e exibido. Volta a fatos so com releitura em F1 (data, URL e sha256)."
     },
     {
@@ -203,8 +218,8 @@
         "V2",
         "sHEC"
       ],
-      "tentado_em": "2026-11-18",
-      "pendencia_verificacao": "sem F1 acessível em 18/11/2026: Posicao de associacao (F3 por natureza); a nota conjunta ABSOLAR/ABGD de 12/06/2026 nao aparece no site da ABSOLAR (buscas 'gato solar', 'nota conjunta', 'ABGD' em 18/11/2026). || anterior: sem F1 acessível em 14/11/2026: Concordo. Posição de associação não tem F1 por natureza, e o próprio campo fonte já a classifica como F3. Na minha busca, a nota conjunta de 12/06/2026 só aparece na imprensa (Agência iNFRA, Cenário Energia, Canal Solar), sem o texto original no site da ABSOLAR. Pela ",
+      "tentado_em": "2026-11-20",
+      "pendencia_verificacao": "sem F1 acessivel em 20/11/2026: posicao de associacao (F3 por natureza), sem ato de orgao publico | sem F1 acessível em 18/11/2026: Posicao de associacao (F3 por natureza); a nota conjunta ABSOLAR/ABGD de 12/06/2026 nao aparece no site da ABSOLAR (buscas 'gato solar', 'nota conjunta', 'ABGD' em 18/11/2026). || anterior: sem F1 acessível em 14/11/2026: Concordo. Posição de associação não tem F1 por natureza, e o próprio campo fonte já a classifica como F3. Na minha busca, a nota conjunta de 12/06/2026 só aparece na imprensa (Agência iNFRA, Cenário Energia, Canal Solar), sem o texto original no site da ABSOLAR. Pela ",
       "motivo_pendencia": "Retirado da secao publicada (fatos) em 18/11/2026 pela regra do dono: sem conferencia real na fonte oficial nao se carimba data. verificado_em abaixo e historico e nao e exibido. Volta a fatos so com releitura em F1 (data, URL e sha256)."
     }
   ]

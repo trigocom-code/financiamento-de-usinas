@@ -125,6 +125,20 @@
           "_pendentes_verificacao[4]"
         ],
         "por": "monitores-regulatorios-soa"
+      },
+      {
+        "data": "2026-11-20",
+        "relidos": [
+          "fatos[10]",
+          "fatos[11]",
+          "fatos[12]",
+          "_pendentes_verificacao[6]"
+        ],
+        "corrigidos": [],
+        "sem_f1_tentados": [
+          "_pendentes_verificacao[5]"
+        ],
+        "por": "monitores-regulatorios-soa"
       }
     ],
     "nota_run_2026_11_14_reconferencia": "Cruzamento com o rastreador da Mesa de Consultas (14/11/2026), fonte oficial relida, com segunda leitura independente: ATUALIZAR 7, CONFIRMADO 6. _meta.verificado_em = data do item publicado mais antigo.",
@@ -649,8 +663,8 @@
         "V2",
         "sHEC"
       ],
-      "verificado_em": "2026-11-14",
-      "pendencia_verificacao": "ANDAIME MOVIDO DO CAMPO RENDERIZADO EM 28/07/2026 (exigencia do gate validar_fatos.py, regra E1). Marcacoes originais: [A VERIFICAR no Aviso do DOU]. Sentido inalterado: os elementos assim marcados NAO estao ancorados em fonte primaria reaberta e nao podem ser citados externamente ate a leitura do ato no DOU."
+      "verificado_em": "2026-11-20",
+      "pendencia_verificacao": "conferido em 20/11/2026: Aviso de 2a fase da CP 1/2026, DOU de 01/07/2026, Ed. 121, S3, p. 181, envio de 01/07 a 14/08/2026; busca no DOU ate 20/11 sem 3a fase, prorrogacao nem REN. Os 5 temas do Relatorio do Diretor-Relator NAO conferidos em F1. Processo grafado 48500.902339/2024-11 na 1a fase e 48500.002339/2024-11 na 2a (https://www.in.gov.br/web/dou/-/aviso-de-2-fase-de-consulta-publica-n-1/2026-715882096) | ANDAIME MOVIDO DO CAMPO RENDERIZADO EM 28/07/2026 (exigencia do gate validar_fatos.py, regra E1). Marcacoes originais: [A VERIFICAR no Aviso do DOU]. Sentido inalterado: os elementos assim marcados NAO estao ancorados em fonte primaria reaberta e nao podem ser citados externamente ate a leitura do ato no DOU."
     },
     {
       "fato_id": "ANEEL-CP-020-2026-FATOR-X",
@@ -659,7 +673,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "Aviso de Consulta Pública ANEEL nº 20/2026 · DOU de 15/07/2026, Ed. 131, Seção 3, p. 104 · Processo 48500.027624/2025-26",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-20/2026-719154741",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-20",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 9,
       "vetores_afetados": [
@@ -710,7 +724,8 @@
         "verificado_em": "2026-07-20"
       },
       "especialista_citado_interno": null,
-      "agente_comercial_envolvido": null
+      "agente_comercial_envolvido": null,
+      "pendencia_verificacao": "conferido em 20/11/2026: Aviso CP 20/2026, processo 48500.027624/2025-26, envio 16/07 a 31/08/2026, DOU 15/07/2026, Ed. 131, S3, p. 104; sem prorrogacao nem resultado no DOU ate 20/11 (https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-20/2026-719154741)"
     },
     {
       "fato_id": "ANEEL-CP-018-2026-PEE",
@@ -719,7 +734,7 @@
       "status": "EM DELIBERAÇÃO",
       "norma": "Consulta Publica ANEEL no 18/2026 · Lei no 9.991/2000 · contribuicoes ate 09/09/2026",
       "url": "https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-723324899",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-20",
       "tipo_fato": "REGULATORIO_PROCESSUAL",
       "score_soa": 14,
       "vetores_afetados": [
@@ -745,7 +760,7 @@
         "verificado_em": "2026-08-07"
       },
       "gatilho_revisao": "publicacao do relatorio da AIR ou de nova etapa da ANEEL (sem data; Agenda Regulatoria preve edicao em 2027, plano)",
-      "pendencia_verificacao": "A pagina interna da noticia devolveu HTTP 404 no slug testado e o numero da CP nao aparece no titulo da listagem: a associacao entre a materia de 06/08 e a CP no 18/2026, bem como o numero do processo, vem de fonte secundaria que reproduz o comunicado. Abrir a pagina da noticia e a ficha da CP no sistema de participacao publica da ANEEL para carimbar numero de CP e de processo antes de citar externamente. | 14/11/2026: resolvido no DOU. O Aviso de Prorrogacao da CP no 18/2026 (DOU de 05/08/2026, Secao 3, p. 105) traz o numero da CP, o Processo 48500.019238/2025-61 e o prazo final de 9 de setembro de 2026; o Aviso de Consulta Publica no 18/2026 (DOU de 25/06/2026, Secao 3, p. 111) traz o periodo original de 25/6 a 10/8/2026. O Relatorio de AIR nao foi lido.",
+      "pendencia_verificacao": "conferido em 20/11/2026: Aviso de Prorrogacao da CP 18/2026 (processo 48500.019238/2025-61) ate 09/09/2026, DOU 05/08/2026, S3, p. 105; Portaria ANEEL 7.157/2026 lista P&E22-02; sem ato novo ate 20/11 (https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-723324899) | A pagina interna da noticia devolveu HTTP 404 no slug testado e o numero da CP nao aparece no titulo da listagem: a associacao entre a materia de 06/08 e a CP no 18/2026, bem como o numero do processo, vem de fonte secundaria que reproduz o comunicado. Abrir a pagina da noticia e a ficha da CP no sistema de participacao publica da ANEEL para carimbar numero de CP e de processo antes de citar externamente. | 14/11/2026: resolvido no DOU. O Aviso de Prorrogacao da CP no 18/2026 (DOU de 05/08/2026, Secao 3, p. 105) traz o numero da CP, o Processo 48500.019238/2025-61 e o prazo final de 9 de setembro de 2026; o Aviso de Consulta Publica no 18/2026 (DOU de 25/06/2026, Secao 3, p. 111) traz o periodo original de 25/6 a 10/8/2026. O Relatorio de AIR nao foi lido.",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-723324899"
     },
     {
@@ -1139,8 +1154,9 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "Ler a NT 107/2026 (PDF anexo, SEI 0398228) antes de qualquer uso — é documento primário chegado por ponteiro F3. Confirmar o processo no SEI/ANEEL. Acompanhar a apresentação do ONS de 29/07.",
-      "pendencia_verificacao": "14/11/2026: o SEI 0398228 foi lido em F1 (página oficial da CP 033/2026 na ANEEL) e é a NT 107/2026-STD do Processo 48500.002211/2026-10, sem relação com este tema; a numeração 107/2026 pode coincidir entre superintendências ou o F3 pode ter confundido os documentos. Seguem pendentes, só no SEI da ANEEL (CAPTCHA): a existência da NT 107/2026-SFT, o Processo 48500.015900/2026-94 e a realização da apresentação do ONS prevista para 29/07/2026. As pautas, atas e listas de sorteio da Diretoria publicadas pela ANEEL de maio a novembro de 2026, varridas nesta run, não citam o processo.",
-      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://antigo.aneel.gov.br/web/guest/consultas-publicas?p_p_id=participacaopublica_WAR_participacaopublicaportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2&_participacaopublica_WAR_partic"
+      "pendencia_verificacao": "sem F1 acessivel em 20/11/2026: NT 107/2026-SFT e processo 48500.015900/2026-94 so no SEI da ANEEL (HTTP 403 e CAPTCHA); nenhum ato no DOU cita o processo | 14/11/2026: o SEI 0398228 foi lido em F1 (página oficial da CP 033/2026 na ANEEL) e é a NT 107/2026-STD do Processo 48500.002211/2026-10, sem relação com este tema; a numeração 107/2026 pode coincidir entre superintendências ou o F3 pode ter confundido os documentos. Seguem pendentes, só no SEI da ANEEL (CAPTCHA): a existência da NT 107/2026-SFT, o Processo 48500.015900/2026-94 e a realização da apresentação do ONS prevista para 29/07/2026. As pautas, atas e listas de sorteio da Diretoria publicadas pela ANEEL de maio a novembro de 2026, varridas nesta run, não citam o processo.",
+      "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://antigo.aneel.gov.br/web/guest/consultas-publicas?p_p_id=participacaopublica_WAR_participacaopublicaportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2&_participacaopublica_WAR_partic",
+      "tentado_em": "2026-11-20"
     },
     {
       "fato_id": "ANEEL-PROC-48500-002211-2026-10-PRODIST-M3",
@@ -1149,7 +1165,7 @@
       "status": "CP ABERTA — contribuições até 30/11/2026",
       "norma": "CP ANEEL 033/2026 · Processo ANEEL nº 48500.002211/2026-10 · Módulo 3 do PRODIST · NT nº 107/2026-STD/ANEEL · Relatório de AIR nº 002/2026-STD/ANEEL",
       "url": "https://www.aneel.gov.br/",
-      "verificado_em": "2026-11-14",
+      "verificado_em": "2026-11-20",
       "tipo_fato": "REGULATORIO_DECISORIO",
       "score_soa": 11,
       "vetores_afetados": [
@@ -1177,7 +1193,7 @@
       "especialista_citado_interno": null,
       "agente_comercial_envolvido": null,
       "motivo_pendencia": "CP ANEEL 033/2026 aberta (Aviso no DOU de 10/09/2026, Seção 3, p. 93), com contribuições até 30/11/2026 (Aviso de prorrogação no DOU de 05/11/2026, Seção 3, p. 136); acompanhar o fim das contribuições e a análise da ANEEL. Fio de convergência estrutural com V2/V3 — acompanhar de perto.",
-      "pendencia_verificacao": "14/11/2026 - RESOLVIDA EM F1: abertura da CP 033/2026 (DOU de 10/09/2026, Seção 3, p. 93), prorrogação do prazo para 30/11/2026 (DOU de 05/11/2026, Seção 3, p. 136), número do processo (nos dois Avisos e na NT 107/2026-STD) e prazos de adequação da minuta (art. 8º, § 1º: 120 e 180 dias) conferidos. Os prazos são proposta da minuta, ainda não norma. Acompanhar o fim das contribuições em 30/11/2026 e a análise da ANEEL.",
+      "pendencia_verificacao": "conferido em 20/11/2026: Aviso CP 33/2026 (processo 48500.002211/2026-10), DOU 10/09/2026, S3, p. 93; prorrogada ate 30/11/2026 (DOU 05/11/2026, S3, p. 136); sem nova prorrogacao ate 20/11 (https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-da-consulta-publica-n-33/2026-742072056) | 14/11/2026 - RESOLVIDA EM F1: abertura da CP 033/2026 (DOU de 10/09/2026, Seção 3, p. 93), prorrogação do prazo para 30/11/2026 (DOU de 05/11/2026, Seção 3, p. 136), número do processo (nos dois Avisos e na NT 107/2026-STD) e prazos de adequação da minuta (art. 8º, § 1º: 120 e 180 dias) conferidos. Os prazos são proposta da minuta, ainda não norma. Acompanhar o fim das contribuições em 30/11/2026 e a análise da ANEEL.",
       "nota_reconferencia_2026_11_14": "F1 relida em 14/11/2026: https://www.in.gov.br/web/dou/-/aviso-de-prorrogacao-da-consulta-publica-n-33/2026-742072056 ; https://www.in.gov.br/web/dou/-/aviso-de-consulta-publica-n-33/2026-730889553"
     },
     {
