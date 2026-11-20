@@ -21,3 +21,5 @@ jobs:
         run: python3 tests/test_selo_data_conferencia.py
       - name: Checar allowlist de publicacao (_frescor.json)
         run: python3 scripts/checar_allowlist.py
+      - name: Testes unitarios do gate (discover tests/)
+        run: python3 -m unittest discover -s tests -v
